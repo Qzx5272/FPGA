@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "Vendor OSER10+ELVDS models at25MHz/125MHz:independent three-lane serial bitstream,RGB/sync mapping,reset/recovery,complementary pins. No PLL/25.2MHz timing/physical/HDMI audio acceptance.",
+  "compile_log": "",
+  "simulation_log": "tb.v:15: $finish called at 48640000 (1ps)\n",
+  "segments": [
+    {
+      "first_pixel": 20,
+      "last_pixel_exclusive": 580,
+      "serial_offset": 266,
+      "matched_bits_per_lane": 5600
+    },
+    {
+      "first_pixel": 625,
+      "last_pixel_exclusive": 1180,
+      "serial_offset": 6316,
+      "matched_bits_per_lane": 5550
+    }
+  ],
+  "sources": {
+    "dvi_symbols.v": "2e5fc6b9827a341e25b44af61463e7632bc7cd40791d797c2df2d208e718eb93",
+    "gowin_dvi_tx.v": "4d4063f013d4d383077d9d8deb637f18d777d9fd1769416aad97dd2e4d8e1b89",
+    "starcluster_tmds_encoder.v": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec",
+    "tb.v": "0ed94f85dffa6cf403427ff7a3d26e75072346d9917febb46ba9a3eca291f0d1",
+    "stimulus.hex": "74d3df9dc0edca0d571f502db1258f66347a9d9d1f87b4b3b88e8ed8369e87ed",
+    "prim_sim.v": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+    "tmds_reference.py": "941d7b3365da842c063871cce0e0d32c94a6e5605b9d8fa286cac09feb8b5d3c",
+    "test_gowin_dvi_tx.py": "d925b1e92abf0b734e81fc9b6469b7b5d854c564d7e47461a741bf57cdfcee3d"
+  }
+}

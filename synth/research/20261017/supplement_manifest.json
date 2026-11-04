@@ -1,0 +1,23 @@
+[
+  {
+    "id": "P15",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/1990_SerraS_SpectralModelingSynthesis_CMJ.pdf",
+    "retrieved_utc": "2026-10-17T12:05:43.201366+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "id": "P23",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/2023_SchwaerM_MSSLossRevisited_IEEE-SPL.pdf",
+    "retrieved_utc": "2026-10-17T12:05:44.874241+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "id": "P24",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/2023_YuF_GlottalFlowSVS_ISMIR.pdf",
+    "retrieved_utc": "2026-10-17T12:05:45.789311+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  }
+]

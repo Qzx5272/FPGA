@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "started": "2026-10-24T23:03:21.555916",
+  "scope": "RTL simulation only; not physical microphone, vocoder, pin assignment, PnR, or board integration",
+  "sources": {
+    "synth\\band\\experimental\\audio_input\\i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "synth\\band\\experimental\\audio_input\\i2s_input_bridge.v": "775921afdc4da0f013ea661f8badb3a7cae4686de461120f07d6432cc84de6cb",
+    "synth\\band\\experimental\\audio_input\\tb_i2s24_rx.v": "16d0fe4f16a659884eb411508699e218e780ddf42eb344e8421f3b87c0439709",
+    "synth\\band\\experimental\\audio_input\\tb_input_bridge.v": "9c4e3581209e2e75e4fa4b8f2f4ffcfef594e30d3432a78660a88c354cde14e0",
+    "synth\\band\\rtl\\audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782"
+  },
+  "tests": {
+    "tb_i2s24_rx": "PASS RX:500 random/extreme stereo pairs, MSB delay, nonzero padding ignored, mid-word reset, short/long frames discarded, resync and backpressure exact\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\audio_input\\tb_i2s24_rx.v:57: $finish called at 644557000 (1ps)\n",
+    "tb_input_bridge": "PASS input CDC:100 exact ordered stereo frames across unrelated clocks, congestion detected, FIFO and receiver reset flushed, fresh frame after reset\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\audio_input\\tb_input_bridge.v:34: $finish called at 74126000 (1ps)\n"
+  }
+}

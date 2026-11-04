@@ -1,0 +1,10 @@
+{
+  "level": "Gowin primitive simulation",
+  "returncode": 0,
+  "output": "PASS vendor SDPB16: all 512 addresses, 16-bit words and held read output\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_ram16_vendor.v:14: $finish called at 20640000 (1ps)\n",
+  "hashes": {
+    "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\rtl\\partial_ram16.v": "6dfad1f3092075d7a6085f64dfd02e6f4b53f70b9fb4aea4244ccdaeb0852a4c",
+    "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_ram16_vendor.v": "b53f0e20301a03d4c4b6d544745b0ebdbb0b771fb17f320a0810324861795fa3",
+    "D:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d"
+  }
+}

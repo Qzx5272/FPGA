@@ -1,0 +1,14 @@
+{
+  "status": "same_constraints_only_reports_added",
+  "reference": "9ec62ce73630",
+  "native_constraints_unchanged": true,
+  "report_commands": [
+    "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5",
+    "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5",
+    "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5",
+    "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5",
+    "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5",
+    "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+  ],
+  "scope": "No false path/min/max/clock requirement changed; not timing acceptance"
+}

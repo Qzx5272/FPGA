@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="board_pt8211_controls_top" T_Register="37951(0)" T_Alu="10089(0)" T_Lut="58861(0)" T_MULTALU27X18="71(0)" T_MULT12X12="2(0)" T_MULT27X36="43(0)" T_Bsram="187(0)">
+ <SubModule name="workstation" Register="4" T_Register="37951(4)" T_Alu="10089(0)" T_Lut="58861(0)" T_MULTALU27X18="71(0)" T_MULT12X12="2(0)" T_MULT27X36="43(0)" T_Bsram="187(0)">
+  <SubModule name="video_output" T_Register="109(0)" T_Alu="104(0)" T_Lut="202(0)">
+   <SubModule name="video_clocks" Register="4" Lut="2" T_Register="4(4)" T_Lut="2(2)"/>
+   <SubModule name="transmitter" Register="6" Lut="4" T_Register="105(6)" T_Alu="104(0)" T_Lut="200(4)">
+    <SubModule name="encoder" T_Register="99(0)" T_Alu="104(0)" T_Lut="196(0)">
+     <SubModule name="b" Register="35" Alu="32" Lut="43" T_Register="35(35)" T_Alu="32(32)" T_Lut="43(43)"/>
+     <SubModule name="g" Register="32" Alu="34" Lut="90" T_Register="32(32)" T_Alu="34(34)" T_Lut="90(90)"/>
+     <SubModule name="r" Register="32" Alu="38" Lut="63" T_Register="32(32)" T_Alu="38(38)" T_Lut="63(63)"/>
+    </SubModule>
+   </SubModule>
+  </SubModule>
+  <SubModule name="band" Register="2" Lut="4" T_Register="37838(2)" T_Alu="9985(0)" T_Lut="58659(4)" T_MULTALU27X18="71(0)" T_MULT12X12="2(0)" T_MULT27X36="43(0)" T_Bsram="187(0)">
+   <SubModule name="input_audio" Register="34" Alu="31" Lut="18" T_Register="41(34)" T_Alu="34(31)" T_Lut="24(18)">
+    <SubModule name="transport" Register="2" T_Register="7(2)" T_Alu="3(0)" T_Lut="6(0)">
+     <SubModule name="fifo" Register="5" Alu="3" Lut="6" T_Register="5(5)" T_Alu="3(3)" T_Lut="6(6)"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="engine" Register="356" Alu="28" Lut="664" T_Register="36662(356)" T_Alu="9641(28)" T_Lut="57525(664)" T_MULTALU27X18="66(0)" T_MULT12X12="2(0)" T_MULT27X36="43(0)" T_Bsram="173(0)">
+    <SubModule name="rx" Register="40" Lut="61" T_Register="40(40)" T_Lut="61(61)"/>
+    <SubModule name="receiver" Register="486" Alu="31" Lut="214" T_Register="486(486)" T_Alu="31(31)" T_Lut="214(214)"/>
+    <SubModule name="core" Register="765" Alu="1649" Lut="1287" MULTALU27X18="2" MULT12X12="2" T_Register="31089(765)" T_Alu="9088(1649)" T_Lut="50155(1287)" T_MULTALU27X18="65(2)" T_MULT12X12="2(2)" T_MULT27X36="43(0)" T_Bsram="169(0)">
+     <SubModule name="score" Register="86" Alu="157" Lut="197" T_Register="358(86)" T_Alu="278(157)" T_Lut="419(197)" T_Bsram="42(0)">
+      <SubModule name="storage" Register="272" Alu="121" Lut="222" Bsram="42" T_Register="272(272)" T_Alu="121(121)" T_Lut="222(222)" T_Bsram="42(42)"/>
+     </SubModule>
+     <SubModule name="ownership" Register="622" Alu="16" Lut="2436" T_Register="622(622)" T_Alu="16(16)" T_Lut="2436(2436)"/>
+     <SubModule name="router" Register="169" Alu="31" Lut="217" T_Register="169(169)" T_Alu="31(31)" T_Lut="217(217)"/>
+     <SubModule name="role_controls" Register="1147" Alu="736" Lut="552" T_Register="1147(1147)" T_Alu="736(736)" T_Lut="552(552)"/>
+     <SubModule name="banks[0].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2829(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="675" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="675(675)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1443" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1527(1443)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[1].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2828(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="674" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="674(674)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1443" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1527(1443)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[2].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2830(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="674" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="674(674)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1445" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1529(1445)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[3].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2829(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="674" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="674(674)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1444" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1528(1444)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[4].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2827(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="673" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="673(673)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1443" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1527(1443)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[5].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2828(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="673" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="673(673)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1444" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1528(1444)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[6].unit" Lut="627" T_Register="1695(0)" T_Alu="643(0)" T_Lut="2830(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="674" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="674(674)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="791" Alu="437" Lut="1445" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="871(791)" T_Alu="465(437)" T_Lut="1529(1445)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="banks[7].unit" Lut="627" T_Register="1696(0)" T_Alu="643(0)" T_Lut="2828(627)" T_MULTALU27X18="7(0)" T_MULT27X36="4(0)" T_Bsram="13(0)">
+      <SubModule name="allocator" Register="824" Alu="178" Lut="674" Bsram="5" T_Register="824(824)" T_Alu="178(178)" T_Lut="674(674)" T_Bsram="5(5)"/>
+      <SubModule name="renderer" Register="792" Alu="437" Lut="1443" MULTALU27X18="6" MULT27X36="4" Bsram="6" T_Register="872(792)" T_Alu="465(437)" T_Lut="1527(1443)" T_MULTALU27X18="7(6)" T_MULT27X36="4(4)" T_Bsram="8(6)">
+       <SubModule name="sine" Register="80" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="80(80)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+     </SubModule>
+     <SubModule name="effect" Register="133" Alu="83" Lut="146" MULTALU27X18="4" Bsram="16" T_Register="133(133)" T_Alu="83(83)" T_Lut="146(146)" T_MULTALU27X18="4(4)" T_Bsram="16(16)"/>
+     <SubModule name="electronic_singer" Register="97" Alu="63" Lut="23" T_Register="14334(97)" T_Alu="1151(63)" T_Lut="22469(23)" T_MULTALU27X18="3(0)" T_MULT27X36="11(0)" T_Bsram="7(0)">
+      <SubModule name="notes" Register="73" Alu="32" Lut="41" T_Register="350(73)" T_Alu="209(32)" T_Lut="271(41)" T_Bsram="5(0)">
+       <SubModule name="allocator" Register="277" Alu="177" Lut="230" Bsram="5" T_Register="277(277)" T_Alu="177(177)" T_Lut="230(230)" T_Bsram="5(5)"/>
+      </SubModule>
+      <SubModule name="source" Register="228" Alu="92" Lut="814" MULTALU27X18="1" MULT27X36="5" T_Register="290(228)" T_Alu="120(92)" T_Lut="898(814)" T_MULTALU27X18="2(1)" T_MULT27X36="5(5)" T_Bsram="2(0)">
+       <SubModule name="osc" Register="62" Alu="28" Lut="84" MULTALU27X18="1" Bsram="2" T_Register="62(62)" T_Alu="28(28)" T_Lut="84(84)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+      </SubModule>
+      <SubModule name="audio" Register="123" Alu="79" Lut="64" MULTALU27X18="1" T_Register="13597(123)" T_Alu="759(79)" T_Lut="21277(64)" T_MULTALU27X18="1(1)" T_MULT27X36="6(0)">
+       <SubModule name="voice_core" Register="1" Lut="1" T_Register="13474(1)" T_Alu="680(0)" T_Lut="21213(1)" T_MULT27X36="6(0)">
+        <SubModule name="bank" Register="11854" Alu="31" Lut="15024" T_Register="12358(11854)" T_Alu="543(31)" T_Lut="19549(15024)" T_MULT27X36="4(0)">
+         <SubModule name="shared_engine_0.bq" Register="126" Alu="128" Lut="1134" MULT27X36="1" T_Register="126(126)" T_Alu="128(128)" T_Lut="1134(1134)" T_MULT27X36="1(1)"/>
+         <SubModule name="shared_engine_1.bq" Register="126" Alu="128" Lut="1130" MULT27X36="1" T_Register="126(126)" T_Alu="128(128)" T_Lut="1130(1130)" T_MULT27X36="1(1)"/>
+         <SubModule name="shared_engine_2.bq" Register="126" Alu="128" Lut="1128" MULT27X36="1" T_Register="126(126)" T_Alu="128(128)" T_Lut="1128(1128)" T_MULT27X36="1(1)"/>
+         <SubModule name="shared_engine_3.bq" Register="126" Alu="128" Lut="1133" MULT27X36="1" T_Register="126(126)" T_Alu="128(128)" T_Lut="1133(1133)" T_MULT27X36="1(1)"/>
+        </SubModule>
+        <SubModule name="mixer" Register="1115" Alu="137" Lut="1663" MULT27X36="2" T_Register="1115(1115)" T_Alu="137(137)" T_Lut="1663(1663)" T_MULT27X36="2(2)"/>
+       </SubModule>
+      </SubModule>
+     </SubModule>
+    </SubModule>
+    <SubModule name="dac" Register="201" Alu="62" Lut="138" T_Register="261(201)" T_Alu="66(62)" T_Lut="198(138)">
+     <SubModule name="serializer" Register="60" Alu="4" Lut="60" T_Register="60(60)" T_Alu="4(4)" T_Lut="60(60)"/>
+    </SubModule>
+    <SubModule name="telemetry" Register="763" Lut="583" T_Register="793(763)" T_Lut="632(583)">
+     <SubModule name="sender" Register="30" Lut="49" T_Register="30(30)" T_Lut="49(49)"/>
+    </SubModule>
+    <SubModule name="local_inputs.play_button" Register="36" Alu="31" Lut="16" T_Register="36(36)" T_Alu="31(31)" T_Lut="16(16)"/>
+    <SubModule name="local_inputs.stop_button" Register="36" Alu="31" Lut="16" T_Register="36(36)" T_Alu="31(31)" T_Lut="16(16)"/>
+    <SubModule name="local_inputs.scanner" Register="31" Lut="46" T_Register="31(31)" T_Lut="46(46)"/>
+    <SubModule name="local_inputs.pads" Register="3095" Alu="74" Lut="4979" MULTALU27X18="1" Bsram="2" T_Register="3095(3095)" T_Alu="74(74)" T_Lut="4979(4979)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+    <SubModule name="local_inputs.performer" T_Register="439(0)" T_Alu="292(0)" T_Lut="544(0)" T_Bsram="2(0)">
+     <SubModule name="performer" Register="429" Alu="292" Lut="540" Bsram="2" T_Register="429(429)" T_Alu="292(292)" T_Lut="540(540)" T_Bsram="2(2)"/>
+     <SubModule name="pedal" Register="10" Lut="4" T_Register="10(10)" T_Lut="4(4)"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="analyzer" T_Register="755(0)" T_Alu="287(0)" T_Lut="603(0)" T_MULTALU27X18="5(0)" T_Bsram="14(0)">
+    <SubModule name="analysis" Register="112" Lut="31" MULTALU27X18="1" Bsram="2" T_Register="638(112)" T_Alu="180(0)" T_Lut="565(31)" T_MULTALU27X18="5(1)" T_Bsram="10(2)">
+     <SubModule name="capture" Register="276" Alu="62" Lut="185" Bsram="2" T_Register="276(276)" T_Alu="62(62)" T_Lut="185(185)" T_Bsram="2(2)"/>
+     <SubModule name="transform" Register="250" Alu="118" Lut="349" MULTALU27X18="4" Bsram="6" T_Register="250(250)" T_Alu="118(118)" T_Lut="349(349)" T_MULTALU27X18="4(4)" T_Bsram="6(6)"/>
+    </SubModule>
+    <SubModule name="display_frame" Register="117" Alu="107" Lut="38" Bsram="4" T_Register="117(117)" T_Alu="107(107)" T_Lut="38(38)" T_Bsram="4(4)"/>
+   </SubModule>
+   <SubModule name="raster" Register="20" Lut="29" T_Register="20(20)" T_Lut="29(29)"/>
+   <SubModule name="bars" Register="358" Alu="23" Lut="474" T_Register="358(358)" T_Alu="23(23)" T_Lut="474(474)"/>
+  </SubModule>
+ </SubModule>
+</Module>

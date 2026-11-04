@@ -1,0 +1,16 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "Synthesis only; no physical timing/pin/integration acceptance",
+  "sources": {
+    "double_biquad.sv": "9057c596b49f1ff8c8a786f6bc50489a45e84de52d1f41f36945baad1aef41b0",
+    "filterbank.sv": "b379b0f00024cf6c818aeb23481cf622d304f1c7ea48bdf9063fa417cf4916ff",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "vocoder_core.sv": "98366afbe5d606ba270478817d740e9fa44338bc6e38df4b5ad66cab90660a87",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "build": "D:\\StarclusterBuilds\\vocoder_core_syn_cae732b65d46",
+  "started": "2026-10-26T01:09:00.318350",
+  "reports": {
+    "vocoder_core_syn.rpt.html": "013c74a87af93d634be352037d69836db91e4a1a3b6674ec913cd443781042e6"
+  }
+}

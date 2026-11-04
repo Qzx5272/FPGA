@@ -1,0 +1,7 @@
+{
+  "status": "failed; never published",
+  "build": "band_a51871c52b64",
+  "reason": "setup timing failed",
+  "disk_full_affected_outputs": false,
+  "bitstream_included": false
+}

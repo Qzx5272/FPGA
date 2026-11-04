@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "created": "2026-10-26T13:41:45.508353",
+  "scope": "Synthetic18-pin profiles and negative mutations, plus existing15-pin report parser regression; not new board pins/timing acceptance",
+  "rejected_cases": [
+    "18pins_cannot_use_15pin_profile",
+    "15pins_cannot_use_18pin_profile",
+    "key_panic_n:wrong_pin",
+    "key_panic_n:automatic_pin",
+    "key_panic_n:output_direction",
+    "key_panic_n:wrong_voltage",
+    "key_panic_n:missing_pullup",
+    "key_panic_n:wrong_standard",
+    "key_stop_n:wrong_pin",
+    "key_stop_n:automatic_pin",
+    "key_stop_n:output_direction",
+    "key_stop_n:wrong_voltage",
+    "key_stop_n:missing_pullup",
+    "key_stop_n:wrong_standard",
+    "key_play_n:wrong_pin",
+    "key_play_n:automatic_pin",
+    "key_play_n:output_direction",
+    "key_play_n:wrong_voltage",
+    "key_play_n:missing_pullup",
+    "key_play_n:wrong_standard",
+    "duplicate_port",
+    "missing_panic",
+    "unknown_port"
+  ],
+  "baseline_report_sha256": "0b496d1b380ce1652f4e8ffd97ac77616814294c04f04a54dab0dfb856ca8a77",
+  "sources": {
+    "test_onboard_pin_profiles.py": "d756a1da41e9737cc0be798d0ebd73b9172c0e7799bd666ea330ac039fba8194",
+    "audit_pt8211_onboard.py": "9dbd52d414c47510176440cbfaafc6a5f5e7f1eb207100b670c7b8a54fc27771"
+  }
+}

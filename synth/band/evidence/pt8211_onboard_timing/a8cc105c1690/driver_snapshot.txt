@@ -1,0 +1,143 @@
+"""Route the fixed-pin onboard shell after source-matched functional evidence."""
+from pathlib import Path
+import argparse,datetime,hashlib,json,re,shutil,subprocess
+ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('build',type=Path)
+ap.add_argument('--serial-global-clock',action='store_true',help='Experimental explicit BUFG routing per SUG1018; does not relax timing')
+ap.add_argument('--pixel-global-clock',action='store_true',help='Experimental explicit pixel BUFG routing; native OSER reset timing retained')
+ap.add_argument('--integer-output-clock',action='store_true',help='Source-bound experimental 126.0416667MHz PLL; requires separate release audit')
+ap.add_argument('--pixel-reset',action='store_true',help='Source-bound pixel reset candidate; removes obsolete serial CLEAR exceptions')
+ap.add_argument('--route-quality',action='store_true',help='Try vendor route algorithm1 with explicit hold repair; constraints unchanged')
+ap.add_argument('--reset-min-delay',action='store_true',help='Experimental positive1ns bound on three OSER reset paths; requires separate native timing review')
+ap.add_argument('--timeout-seconds',type=int,default=7200);args=ap.parse_args()
+if args.timeout_seconds<1:ap.error('timeout-seconds must be positive')
+if args.reset_min_delay and not args.pixel_reset:ap.error('reset-min-delay requires reviewed pixel-reset source')
+b=Path(__file__).resolve().parents[1];source=args.build.resolve()
+syn=b/'evidence/pt8211_onboard_synthesis'/source.name.removeprefix('pt8211_onboard_syn_')/'result.json'
+sr=json.loads(syn.read_text());assert sr['status']=='passed_synthesis_only'
+controls=sr.get('onboard_controls',False)
+top=sr.get('top_module','board_pt8211_dvi_top')
+assert top==('board_pt8211_controls_top' if controls else 'board_pt8211_dvi_top')
+vg=source/'impl/gwsynthesis/pt8211_onboard.vg'
+assert hashlib.sha256(vg.read_bytes()).hexdigest()==sr['netlist_sha256']
+for name,h in sr['sources'].items():
+ p=source/('rtl/'+name if not name.endswith('.mem') else name)
+ assert hashlib.sha256(p.read_bytes()).hexdigest()==h,name
+from check_gw138_ram_modes import check as check_ram
+from vocoder_gate import require_vocoder_gate
+from stage_pad_gate import require_stage_pad_gate
+check_ram(vg);vocoder=require_vocoder_gate(source);pads=require_stage_pad_gate(source)
+chain=None
+for report in sorted((b/'evidence/workstation_pt8211_dvi').glob('*/result.json')):
+ r=json.loads(report.read_text())
+ if r.get('status')!='passed' or r.get('serial_bits_checked_per_lane')!=12000:continue
+ match=re.search(r'PT8211 decoded_stereo_frames=(\d+)',r.get('log',''))
+ if not match or int(match[1])<2048:continue
+ if r['sources'].get('test_workstation_pt8211_dvi.py')!=hashlib.sha256((b/'tools/test_workstation_pt8211_dvi.py').read_bytes()).hexdigest():continue
+ expected={n:h for n,h in sr['sources'].items() if n!=top+'.sv'}
+ if not all(r['sources'].get(n)==h for n,h in expected.items()):continue
+ chain=dict(report=str(report),sha256=hashlib.sha256(report.read_bytes()).hexdigest(),
+            decoded_frames=int(match[1]),scope='Generic fulltop with same tied-idle inputs;board shell structurally reviewed,not physical acceptance')
+ break
+if chain is None:raise RuntimeError('No matching passed PT8211 PCM+DVI chain; do not route an unverified export')
+button_gate=None
+if controls:
+ for report in sorted((b/'evidence/onboard_controls').glob('*/result.json')):
+  r=json.loads(report.read_text())
+  if r.get('status')=='passed' and all(r.get('sources',{}).get(n)==h for n,h in sr['sources'].items()):
+   if r['sources'].get('test_onboard_controls.py')!=hashlib.sha256((b/'tools/test_onboard_controls.py').read_bytes()).hexdigest():continue
+   button_gate=dict(report=str(report),sha256=hashlib.sha256(report.read_bytes()).hexdigest());break
+ if button_gate is None:raise RuntimeError('Missing exact-source fulltop button test')
+sdc='''create_clock -name core_clk -period 20.000 [get_ports {clk}]
+create_generated_clock -name serial_clk -source [get_ports {clk}] -multiply_by 63 -divide_by 25 [get_pins {workstation/video_output/video_clocks/pll/CLKOUT0}]
+create_generated_clock -name display_clk -source [get_pins {workstation/video_output/video_clocks/pll/CLKOUT0}] -divide_by 5 [get_pins {workstation/video_output/video_clocks/divider/CLKOUT}]
+set_max_delay 20.000 -from [get_clocks {core_clk}] -to [get_clocks {display_clk}]
+set_min_delay 0.000 -from [get_clocks {core_clk}] -to [get_clocks {display_clk}]
+set_max_delay 20.000 -from [get_clocks {display_clk}] -to [get_clocks {core_clk}]
+set_min_delay 0.000 -from [get_clocks {display_clk}] -to [get_clocks {core_clk}]
+set_false_path -hold -from [get_clocks {display_clk}] -to [get_regs {workstation/band/analyzer/display_frame/ack1* workstation/band/analyzer/analysis/reset_sync*}]
+set_false_path -from [get_clocks {display_clk}] -to [get_pins {workstation/video_output/transmitter/serial_release_0_s0/CLEAR workstation/video_output/transmitter/serial_release_1_s0/CLEAR}]
+set_max_delay 20.000 -from [get_clocks {core_clk}] -to [get_ports {HP_BCK HP_WS HP_DIN}]
+set_min_delay 0.000 -from [get_clocks {core_clk}] -to [get_ports {HP_BCK HP_WS HP_DIN}]
+'''
+if controls:
+ sdc+='''set_false_path -from [get_ports {key_play_n}] -to [get_pins {workstation/band/engine/local_inputs.play_button/synchronized_0_s0/D}]
+set_false_path -from [get_ports {key_stop_n}] -to [get_pins {workstation/band/engine/local_inputs.stop_button/synchronized_0_s0/D}]
+set_false_path -from [get_ports {key_panic_n}] -to [get_pins {workstation/band/engine/local_inputs.panic_sync_0_s0/D}]
+'''
+pins=(source/'board.cst').read_bytes()
+if args.pixel_reset:
+ assert hashlib.sha256((source/'rtl/gowin_dvi_tx.v').read_bytes()).hexdigest() in ('baea99e3f6656b2574af4ab2622bbcb32d1c905513a0861bf292cad4432df796','1320b5fb12aacb57e89d77db6d84aa32f09c03e8ea98a107af80ca597f8b3576'),'Unreviewed pixel-reset source'
+ obsolete='set_false_path -from [get_clocks {display_clk}] -to [get_pins {workstation/video_output/transmitter/serial_release_0_s0/CLEAR workstation/video_output/transmitter/serial_release_1_s0/CLEAR}]\n'
+ assert sdc.count(obsolete)==1
+ sdc=sdc.replace(obsolete,'')
+if args.reset_min_delay:
+ for lane in range(3):
+  sdc+='set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels['+str(lane)+'].serializer/RESET}]\n'
+serial_mhz=126.0
+if args.integer_output_clock:
+ candidate=b/'experimental/audio_visual/clock_trials/integer_output/gowin_video_clock.v'
+ assert (source/'rtl/gowin_video_clock.v').read_bytes()==candidate.read_bytes(),'Integer clock flag requires exact reviewed candidate source'
+ assert hashlib.sha256(candidate.read_bytes()).hexdigest()=='b58db7ac2ef8fbd1942b158513faba8bc7b5fa296f5222e7b5ee0a1a5d328e0a','Candidate changed; re-review clock arithmetic'
+ assert sdc.count('-multiply_by 63 -divide_by 25')==1
+ sdc=sdc.replace('-multiply_by 63 -divide_by 25','-multiply_by 121 -divide_by 48')
+ serial_mhz=50*121/48
+if args.serial_global_clock:
+ pins+=b'\n// SUG1018-1.7E section2.7: explicit serial clock fabric routing.\nCLOCK_LOC "workstation/video_output/serial_clk" BUFG = CLK;\n'
+if args.pixel_global_clock:
+ pins+=b'\n// SUG1018-1.7E section2.7: explicit pixel global clock routing.\nCLOCK_LOC "workstation/video_output/pixel_clk" BUFG = CLK;\n'
+route_options='set_option -route_option 1\nset_option -correct_hold_violation 1\n' if args.route_quality else ''
+digest=hashlib.sha256(vg.read_bytes()+pins+sdc.encode()+route_options.encode()).hexdigest()[:12]
+target=Path('D:/StarclusterBuilds')/('pt8211_onboard_pnr_'+digest)
+out=b/'evidence/pt8211_onboard_timing'/digest
+if target.exists() or out.exists():raise RuntimeError('Preserve existing build: '+str(target))
+shutil.copytree(source,target);out.mkdir(parents=True)
+(target/'board.cst').write_bytes(pins)
+(target/'board.sdc').write_text(sdc)
+tcl=(source/'build.tcl').read_text()
+tcl=tcl.replace('foreach f [glob rtl/*.v rtl/*.sv] {add_file $f}','add_file impl/gwsynthesis/pt8211_onboard.vg')
+assert 'glob rtl' not in tcl and tcl.count('run syn')==1
+tcl=tcl.replace('run syn','add_file board.cst\nadd_file board.sdc\nset_option -cst_warn_to_error 1\n'+route_options+'run pnr')
+(target/'build.tcl').write_text(tcl)
+(target/'NOT_PROGRAMMABLE.txt').write_text('Do not program until final timing, all fixed pin assignments and board release review pass. No automatic IO accepted.\n')
+record=dict(status='running',build=str(target),source=str(source),frozen_netlist_sha256=sr['netlist_sha256'],
+ top_module=top,onboard_controls=controls,button_gate=button_gate,serial_global_clock_trial=args.serial_global_clock,
+ integer_output_clock_trial=args.integer_output_clock,target_serial_mhz=serial_mhz,
+ pixel_reset_trial=args.pixel_reset,
+ pixel_global_clock_trial=args.pixel_global_clock,
+ route_quality_trial=args.route_quality,
+ reset_min_delay_trial=args.reset_min_delay,
+ started=datetime.datetime.now().isoformat(),timeout_seconds=args.timeout_seconds,
+ scope='Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,2asyncCLEAR exceptions;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected.',
+ chain_gate=chain,vocoder_gate=vocoder,pad_gate=pads,
+ inputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (target/'build.tcl',target/'board.cst',target/'board.sdc',Path(__file__))})
+if args.pixel_reset:
+ record['scope']=record['scope'].replace('2asyncCLEAR exceptions','no serial asyncCLEAR exceptions;pixel reset and OSER recovery/removal timed')
+if args.reset_min_delay:
+ record['scope']+=' Experimental1ns minimum bound on OSER reset paths;native recovery/removal requirements and constraint semantics must be independently reviewed before release.'
+report=out/'result.json';report.write_text(json.dumps(record,indent=2));(out/'driver_snapshot.txt').write_bytes(Path(__file__).read_bytes());print(target,flush=True)
+try:
+ with (target/'build.log').open('w') as log:
+  run=subprocess.run(['D:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe',str(target/'build.tcl')],stdout=log,stderr=subprocess.STDOUT,timeout=args.timeout_seconds)
+ log=(target/'build.log').read_text(errors='replace')
+ if run.returncode or 'ERROR' in log:raise RuntimeError('Vendor failure; inspect log')
+ assert hashlib.sha256((target/'impl/gwsynthesis/pt8211_onboard.vg').read_bytes()).hexdigest()==sr['netlist_sha256']
+ timing=(target/'impl/pnr/pt8211_onboard_tr_content.html').read_text(encoding='utf-8')
+ from check_stage_clock_report import check
+ record['actual_clocks']=check(timing,{'core_clk':20.0,'serial_clk':1000/serial_mhz,'display_clk':5000/serial_mhz})
+ for kind in ('Setup','Hold'):
+  m=re.search('Numbers of '+kind+r' Violated Endpoints</td>\s*<td>(\d+)</td>',timing)
+  if not m:raise RuntimeError('Missing final timing summary')
+  record[kind.lower()+'_violations']=int(m[1])
+ from timing_pulse import pulse_rows
+ record['pulse_width_paths']=pulse_rows(timing)
+ record['pulse_width_violations']=sum(p['slack_ns']<0 or p['actual_ns']<p['required_ns'] for p in record['pulse_width_paths'])
+ record['status']='passed_timing_pending_pin_audit' if not(record['setup_violations'] or record['hold_violations'] or record['pulse_width_violations']) else 'failed_timing'
+except Exception as exc:
+ record.update(status='failed_timeout' if isinstance(exc,subprocess.TimeoutExpired) else 'failed',error=str(exc));raise
+finally:
+ for p in (target/'impl/pnr').glob('*'):
+  if p.is_file() and p.suffix in ('.html','.txt','.timing_paths'):shutil.copy2(p,out/p.name)
+ for n in ('build.tcl','board.cst','board.sdc','build.log'):shutil.copy2(target/n,out/n)
+ record['finished']=datetime.datetime.now().isoformat();report.write_text(json.dumps(record,indent=2))
+print(json.dumps({k:v for k,v in record.items() if k!='inputs'},indent=2))
+raise SystemExit(record['status']!='passed_timing_pending_pin_audit')

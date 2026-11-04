@@ -1,0 +1,58 @@
+{
+  "status": "离线算术核对；不是整机综合或板级成绩",
+  "source_archive_sha256": "9617b0c0b20cad4d3100f53c1fc7142bee36ec11baf9bf5a0fa85e161747034b",
+  "fs_hz": 48000,
+  "fabric_hz_model": 50000000,
+  "state_physical_bytes": 36,
+  "device_bsrams": 340,
+  "device_base_dsps": 298,
+  "profiles": [
+    {
+      "partials": 4096,
+      "lanes": 8,
+      "voice_slots": 64,
+      "base_bsrams": 220,
+      "base_dsps": 129,
+      "estimated_cycles": 882,
+      "throughput_partial_samples_per_second": 196608000,
+      "with_provisional_allocation_bsrams": 244,
+      "with_provisional_allocation_dsps": 177,
+      "shortest_frame_cycles": 1041,
+      "base_cycle_margin": 159
+    },
+    {
+      "partials": 8192,
+      "lanes": 16,
+      "voice_slots": 256,
+      "base_bsrams": 300,
+      "base_dsps": 201,
+      "estimated_cycles": 930,
+      "throughput_partial_samples_per_second": 393216000,
+      "with_provisional_allocation_bsrams": 324,
+      "with_provisional_allocation_dsps": 249,
+      "shortest_frame_cycles": 1041,
+      "base_cycle_margin": 111
+    }
+  ],
+  "unverified_vocoder_display_allocation_ceiling": {
+    "bsrams": 24,
+    "dsps": 48
+  },
+  "omissions": "外部DDR/网络等完整集成尚未预算；新增24/48为分配上限，未经实现证明",
+  "procurement_estimate_yuan": 2815,
+  "budget_upper_yuan": 3000,
+  "budget_external_margin_yuan": 185,
+  "contingency_included_yuan": 220,
+  "state_8192_kib": 288.0,
+  "full_state_ddr_bytes_per_second": 28311552000,
+  "event_sequence_bytes": 1048576,
+  "uart_raw_events_per_s": 3125.0,
+  "uart_framed_events_per_s": 2941.176470588235,
+  "adc_per_channel_ideal_sps": 3000.0,
+  "limiter_64sample_ms": 1.3333333333333333,
+  "fft_example": {
+    "samples": 131072,
+    "seconds": 2.7306666666666666,
+    "peak_spacing_hz": 1.8310546875
+  }
+}

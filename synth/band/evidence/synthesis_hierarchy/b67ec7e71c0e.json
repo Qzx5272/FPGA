@@ -1,0 +1,290 @@
+{
+  "status": "analysis_only",
+  "scope": "Hierarchical synthesized primitive attribution;not physical usage,functional equivalence or timing proof",
+  "before": {
+    "path": "D:\\StarclusterBuilds\\pt8211_onboard_syn_5e4f2b059569\\impl\\gwsynthesis\\pt8211_onboard.vg",
+    "sha256": "d7537d484640ff27a9dca00022cc4deb507f908655911c5e69a93ccda1b263c8",
+    "modules": {
+      "double_biquad": {
+        "logic": 578,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_0": {
+        "logic": 612,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_1": {
+        "logic": 579,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_2": {
+        "logic": 614,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_3": {
+        "logic": 616,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_4": {
+        "logic": 608,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_5": {
+        "logic": 611,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_6": {
+        "logic": 615,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_7": {
+        "logic": 610,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_8": {
+        "logic": 614,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_9": {
+        "logic": 620,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_10": {
+        "logic": 616,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_11": {
+        "logic": 616,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_12": {
+        "logic": 617,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_13": {
+        "logic": 582,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_14": {
+        "logic": 614,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "vocoder_core": {
+        "logic": 27162,
+        "ff": 13924,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 18
+        }
+      },
+      "stage_pad_frontend": {
+        "logic": 5201,
+        "ff": 3095,
+        "ram_primitives": {
+          "SDPB": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      },
+      "offline_workstation_top": {
+        "logic": 74567,
+        "ff": 38400,
+        "ram_primitives": {
+          "SDPB": 131,
+          "pROMX9": 52,
+          "SDPX9B": 2,
+          "pROM": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 71,
+          "MULT12X12": 2,
+          "MULT27X36": 55
+        }
+      },
+      "board_pt8211_controls_top": {
+        "logic": 74567,
+        "ff": 38400,
+        "ram_primitives": {
+          "SDPB": 131,
+          "pROMX9": 52,
+          "SDPX9B": 2,
+          "pROM": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 71,
+          "MULT12X12": 2,
+          "MULT27X36": 55
+        }
+      }
+    }
+  },
+  "after": {
+    "path": "D:\\StarclusterBuilds\\pt8211_onboard_syn_9c92ded4e4fe\\impl\\gwsynthesis\\pt8211_onboard.vg",
+    "sha256": "4cf0751ba6ddc7a8f6c159dd3bff76f17a87b6c9f4d7f84577e88982dafa916c",
+    "modules": {
+      "double_biquad": {
+        "logic": 1262,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_0": {
+        "logic": 1258,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_1": {
+        "logic": 1256,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "double_biquad_2": {
+        "logic": 1261,
+        "ff": 126,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 1
+        }
+      },
+      "vocoder_core": {
+        "logic": 21893,
+        "ff": 13474,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 6
+        }
+      },
+      "stage_pad_frontend": {
+        "logic": 5053,
+        "ff": 3095,
+        "ram_primitives": {
+          "SDPB": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      },
+      "offline_workstation_top": {
+        "logic": 68950,
+        "ff": 37951,
+        "ram_primitives": {
+          "SDPB": 131,
+          "pROMX9": 52,
+          "SDPX9B": 2,
+          "pROM": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 71,
+          "MULT12X12": 2,
+          "MULT27X36": 43
+        }
+      },
+      "board_pt8211_controls_top": {
+        "logic": 68950,
+        "ff": 37951,
+        "ram_primitives": {
+          "SDPB": 131,
+          "pROMX9": 52,
+          "SDPX9B": 2,
+          "pROM": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 71,
+          "MULT12X12": 2,
+          "MULT27X36": 43
+        }
+      }
+    }
+  },
+  "comparison_caveat": {
+    "changed_source_files": [
+      "band_board_engine.v",
+      "band_core.v",
+      "band_singer_board_engine.sv",
+      "band_singer_core.sv",
+      "band_stage_engine.sv",
+      "band_stage_i2s_engine.sv",
+      "band_stage_pt8211_engine.sv",
+      "build_identity.vh",
+      "filterbank.sv",
+      "offline_patch_defaults.vh",
+      "song_config.vh",
+      "song_events.vh",
+      "song_storage_init.vh"
+    ],
+    "scope": "Both fulltop candidates, but score ROM/build identity also differ. Whole-top delta is not solely attributable to vocoder. Synthesized primitive counts are not physical PnR resource totals."
+  }
+}

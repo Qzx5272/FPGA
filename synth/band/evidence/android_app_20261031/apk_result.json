@@ -1,0 +1,9 @@
+{
+  "apk": "Starcluster-0.1.0.apk",
+  "sha256": "439430b2552c1237abf270d720f8e8b75df7be753582b9c48917844da2ea3029",
+  "signing": "development only",
+  "package": "cn.starcluster.controller",
+  "version": "0.1.0",
+  "min_sdk": 26,
+  "target_sdk": 35
+}

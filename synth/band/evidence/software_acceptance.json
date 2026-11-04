@@ -1,0 +1,73 @@
+{
+  "updated": "2026-10-27T18:04:02.682756",
+  "status": "passed",
+  "evidence_level": "Baseline synth/band/rtl regression and recorded baseline setup/hold only; not selected shared PT8211/DVI workstation acceptance",
+  "checks": {
+    "baseline_source_setup_hold_bound_release": true,
+    "all_20_module_tests_current_source": true,
+    "whole_song_fast": true,
+    "whole_song_full": true,
+    "whole_song_full_fast_pcm_identity": true,
+    "sustained_256_slots_59_seconds_plus_release": true,
+    "sound_analysis_matrix": true,
+    "sound_analysis_audition_fast": true,
+    "host_interaction_tests": true
+  },
+  "details": {
+    "matching_releases": [
+      "band_57c8f7b5b006"
+    ],
+    "current_module_tests": [
+      "delay",
+      "allocator",
+      "ownership",
+      "partial",
+      "pool",
+      "renderer",
+      "board",
+      "scanner",
+      "pads",
+      "store",
+      "upload",
+      "i2s24",
+      "cdc",
+      "local",
+      "workstation",
+      "controls",
+      "dispatch",
+      "telemetry",
+      "board_burst",
+      "protocol"
+    ],
+    "current_passed_renders": [
+      "band_011fdd8d0016_10s_audition_fast.json",
+      "band_011fdd8d0016_18s_matrix.json",
+      "band_011fdd8d0016_2s_fast.json",
+      "band_011fdd8d0016_2s_full.json",
+      "band_011fdd8d0016_3s_stress.json",
+      "band_011fdd8d0016_60s_stress.json",
+      "band_011fdd8d0016_97s_fast.json",
+      "band_011fdd8d0016_97s_full.json"
+    ],
+    "whole_song_fast": "band_011fdd8d0016_97s_fast.json",
+    "whole_song_full": "band_011fdd8d0016_97s_full.json",
+    "sound_analysis_matrix": [
+      "band_011fdd8d0016_18s_matrix.json"
+    ],
+    "sound_analysis_audition_fast": [
+      "band_011fdd8d0016_10s_audition_fast.json"
+    ]
+  },
+  "final_workstation_accepted": false,
+  "final_workstation_authority": "FINAL_READINESS.json",
+  "not_claimed": [
+    "selected workstation timing",
+    "minimum pulse width acceptance",
+    "physical download",
+    "analog quality",
+    "actual external peripherals",
+    "long-duration thermal stability",
+    "arbitrary lyric singing",
+    "runtime nonvolatile song writes"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "synthesis_resource_comparison_only",
+  "results": {
+    "75b15e98c291": {
+      "logic": 670,
+      "ff": 581,
+      "memory": {},
+      "sha256": "77d13f4b2bab45b735c70b32de836a13cf85ec41b494b3e90722fc409b66e44d"
+    },
+    "720b6ea0d9c0": {
+      "logic": 661,
+      "ff": 581,
+      "memory": {},
+      "sha256": "e494311d72fda7c2b572e45b9cb9307a5ecdc255d5eb79641c2c53d59036660a"
+    }
+  },
+  "scope": "Standalone synthesized primitive counts,not fullband/PnR/physical resource acceptance"
+}

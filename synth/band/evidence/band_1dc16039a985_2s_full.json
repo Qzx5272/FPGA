@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "evidence_level": "RTL simulation only",
+  "mode": "full",
+  "duration_seconds": 2.0,
+  "source_hashes": {
+    "band_core.v": "79d7c5b4fbc8b694b080991c23b8b9569eac2773365711e74bd3f8cb82c607f3",
+    "band_driver.cpp": "6fccc12fd6fa0423ba82bc21189022148fd4d9e909e5c3735f4f123a2305568b",
+    "band_renderer.v": "9abe6463f22f987f42cf6af62428400492de4905d00c5f7385ced4efa0db7bf2",
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "song_config.vh": "bbe7faebcb0f9078f27d460662c78948f14ae2cce76c58214cd38aa91247f54e",
+    "song_events.vh": "d0b30adf14c0c37e73122a9cb5d0a99e02864c6dd1c2da561d9bfeb2b1354141",
+    "song_sequencer.v": "1e64af2d1e040f76efd51ac1a3eabe2200b0f2ca3e372f86d1d0c86934fa0882",
+    "song_storage_init.vh": "43a55ff35a75706596b54d67e9a6c4ea65d594dbb9458e7da9fa78be790c2cd2",
+    "song_store.v": "d5997ff50a88a6efa9e95826e19a2ce50b13789f9fae989a4964199122e4f4b5",
+    "stereo_delay.v": "68c63a25951446a758f2895e19e361c1b105c17c201655eabf65e58193a57895",
+    "tempo_increment.vh": "cd654e17b44bc22b951035182b4464aa49de449e221a9739da202006a43a28a7",
+    "track_ownership.v": "63f7b76a07ee5652832d0cdc48d873274892b9d15c2c93070665641c3df2cf28",
+    "voice_bank.v": "ca64523dcce181a75800d98e4ed5f4383bda4a78e8e0f29b3b6104e45dd93a30"
+  },
+  "executable_sha256": "3aa0827c5cb04e68b61a298e799a55243073c754f6c21403647dff740f2a0489",
+  "returncode": 0,
+  "log": "frames=96000 max_cycles=85 max_voices=2 missing=0 clips=0 peak=2648 takeover_checks=0 return_checks=0 denied=0\nPASS integrated band simulation\n",
+  "elapsed_seconds": 46.125,
+  "pcm_sha256": "00fb0b5e320a24a0a3ca9678e4c14c3e0e1b1182f0981f1288a171bb56797a65",
+  "wav": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\band_1dc16039a985_2s_full.wav"
+}

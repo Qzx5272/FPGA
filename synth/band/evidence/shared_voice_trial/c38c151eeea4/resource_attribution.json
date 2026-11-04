@@ -1,0 +1,528 @@
+{
+  "status": "analysis_only",
+  "scope": "Synthesized module primitive attribution; vendor may merge or move logic across module boundaries. Not an isolated causal savings prediction or physical timing evidence.",
+  "builds": [
+    {
+      "path": "D:\\StarclusterBuilds\\pt8211_onboard_syn_cf4bf042663d\\impl\\gwsynthesis\\pt8211_onboard.vg",
+      "sha256": "31434c1effcded453498d665e610f41bb67fb1fa309c2b32ea88ab71dffad903",
+      "modules": {
+        "note_allocator": {
+          "inclusive": {
+            "logic": 824,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 824,
+            "ff": 820
+          }
+        },
+        "band_renderer": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 760
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 680
+          }
+        },
+        "voice_bank": {
+          "inclusive": {
+            "logic": 2881,
+            "ff": 1718
+          },
+          "direct": {
+            "logic": 375,
+            "ff": 138
+          }
+        },
+        "note_allocator_0": {
+          "inclusive": {
+            "logic": 824,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 824,
+            "ff": 820
+          }
+        },
+        "band_renderer_0": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 760
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 680
+          }
+        },
+        "voice_bank_0": {
+          "inclusive": {
+            "logic": 2870,
+            "ff": 1718
+          },
+          "direct": {
+            "logic": 364,
+            "ff": 138
+          }
+        },
+        "note_allocator_1": {
+          "inclusive": {
+            "logic": 824,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 824,
+            "ff": 820
+          }
+        },
+        "band_renderer_1": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 760
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 680
+          }
+        },
+        "voice_bank_1": {
+          "inclusive": {
+            "logic": 2867,
+            "ff": 1718
+          },
+          "direct": {
+            "logic": 361,
+            "ff": 138
+          }
+        },
+        "note_allocator_2": {
+          "inclusive": {
+            "logic": 823,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 823,
+            "ff": 820
+          }
+        },
+        "band_renderer_2": {
+          "inclusive": {
+            "logic": 1669,
+            "ff": 760
+          },
+          "direct": {
+            "logic": 1558,
+            "ff": 680
+          }
+        },
+        "voice_bank_2": {
+          "inclusive": {
+            "logic": 2856,
+            "ff": 1718
+          },
+          "direct": {
+            "logic": 364,
+            "ff": 138
+          }
+        },
+        "note_allocator_3": {
+          "inclusive": {
+            "logic": 823,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 823,
+            "ff": 820
+          }
+        },
+        "band_renderer_3": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 760
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 680
+          }
+        },
+        "voice_bank_3": {
+          "inclusive": {
+            "logic": 2867,
+            "ff": 1718
+          },
+          "direct": {
+            "logic": 362,
+            "ff": 138
+          }
+        },
+        "note_allocator_4": {
+          "inclusive": {
+            "logic": 823,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 823,
+            "ff": 820
+          }
+        },
+        "band_renderer_4": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 759
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 679
+          }
+        },
+        "voice_bank_4": {
+          "inclusive": {
+            "logic": 2864,
+            "ff": 1717
+          },
+          "direct": {
+            "logic": 359,
+            "ff": 138
+          }
+        },
+        "note_allocator_5": {
+          "inclusive": {
+            "logic": 824,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 824,
+            "ff": 820
+          }
+        },
+        "band_renderer_5": {
+          "inclusive": {
+            "logic": 1682,
+            "ff": 759
+          },
+          "direct": {
+            "logic": 1571,
+            "ff": 679
+          }
+        },
+        "voice_bank_5": {
+          "inclusive": {
+            "logic": 2865,
+            "ff": 1717
+          },
+          "direct": {
+            "logic": 359,
+            "ff": 138
+          }
+        },
+        "note_allocator_6": {
+          "inclusive": {
+            "logic": 825,
+            "ff": 820
+          },
+          "direct": {
+            "logic": 825,
+            "ff": 820
+          }
+        },
+        "band_renderer_6": {
+          "inclusive": {
+            "logic": 1836,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 1725,
+            "ff": 744
+          }
+        },
+        "voice_bank_6": {
+          "inclusive": {
+            "logic": 3035,
+            "ff": 1788
+          },
+          "direct": {
+            "logic": 374,
+            "ff": 144
+          }
+        },
+        "note_allocator_7": {
+          "inclusive": {
+            "logic": 410,
+            "ff": 277
+          },
+          "direct": {
+            "logic": 410,
+            "ff": 277
+          }
+        }
+      }
+    },
+    {
+      "path": "D:\\StarclusterBuilds\\pt8211_onboard_syn_6c7e16e226f6\\impl\\gwsynthesis\\pt8211_onboard.vg",
+      "sha256": "d90f83a37a9fab0770ab50020d3df7caa9c4385f423d5786a0dd45c8ee3815f4",
+      "modules": {
+        "shared_bank_dispatch": {
+          "inclusive": {
+            "logic": 238,
+            "ff": 169
+          },
+          "direct": {
+            "logic": 238,
+            "ff": 169
+          }
+        },
+        "shared_note_allocator": {
+          "inclusive": {
+            "logic": 862,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 862,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank": {
+          "inclusive": {
+            "logic": 6097,
+            "ff": 2854
+          },
+          "direct": {
+            "logic": 3236,
+            "ff": 1158
+          }
+        },
+        "shared_note_allocator_0": {
+          "inclusive": {
+            "logic": 851,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 851,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_0": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_0": {
+          "inclusive": {
+            "logic": 5120,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_1": {
+          "inclusive": {
+            "logic": 852,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 852,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_1": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_1": {
+          "inclusive": {
+            "logic": 5121,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_2": {
+          "inclusive": {
+            "logic": 852,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 852,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_2": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_2": {
+          "inclusive": {
+            "logic": 5121,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_3": {
+          "inclusive": {
+            "logic": 852,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 852,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_3": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_3": {
+          "inclusive": {
+            "logic": 5121,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_4": {
+          "inclusive": {
+            "logic": 852,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 852,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_4": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_4": {
+          "inclusive": {
+            "logic": 5121,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_5": {
+          "inclusive": {
+            "logic": 852,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 852,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_5": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 872
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 792
+          }
+        },
+        "shared_voice_bank_5": {
+          "inclusive": {
+            "logic": 5121,
+            "ff": 2230
+          },
+          "direct": {
+            "logic": 2270,
+            "ff": 534
+          }
+        },
+        "shared_note_allocator_6": {
+          "inclusive": {
+            "logic": 851,
+            "ff": 824
+          },
+          "direct": {
+            "logic": 851,
+            "ff": 824
+          }
+        },
+        "shared_band_renderer_6": {
+          "inclusive": {
+            "logic": 1999,
+            "ff": 873
+          },
+          "direct": {
+            "logic": 1887,
+            "ff": 793
+          }
+        },
+        "shared_voice_bank_6": {
+          "inclusive": {
+            "logic": 5214,
+            "ff": 2231
+          },
+          "direct": {
+            "logic": 2364,
+            "ff": 534
+          }
+        },
+        "note_allocator": {
+          "inclusive": {
+            "logic": 410,
+            "ff": 277
+          },
+          "direct": {
+            "logic": 410,
+            "ff": 277
+          }
+        }
+      }
+    }
+  ]
+}

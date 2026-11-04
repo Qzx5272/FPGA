@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "time": "2026-10-24T23:15:54.385214",
+  "bitstream_sha256": "0af2d6ace36152c8d120125f5b48fb40d7b2b3eefaeb3aacbeed2e35d777b9f1",
+  "identity": {
+    "build_id": 1472788405,
+    "capacity": 256
+  },
+  "stopped": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 0,
+    "cycles": 70,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  "requested_master_gain": 0,
+  "bad_crc": 0,
+  "note": "SRAM restoration; no Flash write or analog sound measurement"
+}

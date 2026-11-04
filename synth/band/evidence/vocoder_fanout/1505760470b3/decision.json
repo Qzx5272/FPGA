@@ -1,0 +1,17 @@
+{
+  "status": "not_adopted",
+  "scope": "Isolated synthesis comparison only; not functional equivalence or whole-top timing proof",
+  "source_baseline_matched": true,
+  "logic_before": 26304,
+  "logic_after": 26621,
+  "ff_before": 14028,
+  "ff_after": 14052,
+  "maximum_lut_input_load_before": 1000,
+  "maximum_lut_input_load_after": 1000,
+  "conclusion": "syn_maxfan64 changes state net distribution but leaves1000-load control nets and increases317logic/24FF. No demonstrated global congestion or timing benefit. Preserve experiment; do not modify production RTL or spend full routing cycle without stronger evidence.",
+  "not_run": [
+    "numerical netlist equivalence",
+    "whole-top synthesis/PnR",
+    "physical validation"
+  ]
+}

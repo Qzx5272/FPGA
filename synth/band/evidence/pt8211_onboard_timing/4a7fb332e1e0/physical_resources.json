@@ -1,0 +1,16 @@
+{
+  "status": "resource_measurement_only_timing_failed",
+  "resources": {
+    "logic": 69473,
+    "ff": 38209,
+    "cls": 48933,
+    "ram": 252,
+    "dsp_primitives": {
+      "MULT12X12": 2,
+      "MULT27X36": 43,
+      "MULTALU27X18": 71
+    }
+  },
+  "source_sha256": "788e1831fde1f5c902bfb5e5f75c7cd794a1c8f653a8b3f0a917a62f1b7f59c0",
+  "scope": "Routed8buffer+cachedlead+fourengine candidate.3native reset removal violations remain; resource occupancy is not usable performance capacity. DSP primitive types retained rather than summing unlike blocks."
+}

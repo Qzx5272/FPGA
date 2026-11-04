@@ -1,0 +1,8 @@
+{
+  "status": "identical_native_constraints_and_pins",
+  "baseline": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_4a7fb332e1e0",
+  "candidate": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_423614c24ba7",
+  "sdc_sha256": "e4aa5f296867641ad60748bf5a3f49c33d20328fc74d0f1c2baf6a4e7336eb91",
+  "cst_sha256": "09b7c7753d79d810ee40a4cd38dd22c19380116eeb9bf1e2dc74009ec1e21448",
+  "scope": "No constraint relaxation or pin changes from8buffer candidate;16buffer native timing not yet known."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "SRAM probe loaded; waiting actual LCD observation",
+  "flash_written": false,
+  "sha256": "7af4d9a40241189e703ef1b080f79873d4bf913a54d2e9e4b1d47ca3622d4118",
+  "user_confirmed": "Full color bars and all four white borders visible on supplied J20 LCD"
+}

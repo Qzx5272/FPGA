@@ -1,0 +1,7 @@
+{
+  "status": "timing_command_failed",
+  "updated": "2026-10-26T07:35:13.972502",
+  "simulation": "synth\\band\\evidence\\workstation_dvi\\20261026_070747\\result.json",
+  "synthesis": "synth\\band\\evidence\\combined_workstation_synthesis\\dccaa8a43dff\\result.json",
+  "returncode": 1
+}

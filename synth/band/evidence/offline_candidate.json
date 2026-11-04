@@ -1,0 +1,14 @@
+{
+  "status": "PnR passed; not programmed",
+  "configuration": "96s original score with autonomous startup; separate exported source snapshot",
+  "build_id": 1778008709,
+  "build_id_hex": "69fa4285",
+  "bitstream_sha256": "60d328c288ece3ba32733e80d4f5359d7ced94294b564929e2e0ca4848701ecc",
+  "frequencies_from_report": [
+    "50.000(MHz)",
+    "50.013(MHz)"
+  ],
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "distinction": "Boot wrapper and parameter-default functions are export-generated; not byte-identical to current development board wrapper."
+}

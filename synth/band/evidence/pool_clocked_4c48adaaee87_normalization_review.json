@@ -1,0 +1,17 @@
+{
+  "status": "passed_corrected_reference",
+  "original_report_sha256": "961a42cda7e71727904b785f567ee39372ffc2a14260d2707565fe6c3bbbce4d",
+  "original_status": "failed",
+  "sample_sha256": "c68a113ec2ea906447dafb2aea692eb330276b7d2d1702a329ccb18717a67fbb",
+  "partials": 37888,
+  "normalization_divisor": 65536,
+  "rtl_gain_expression": "combined >>> (LANE_BITS+ADDRESS_BITS-6)",
+  "old_reference_relative_bias": 0.421875,
+  "maximum_relative_error": 5.2899847974729927e-05,
+  "verified_peaks": 37888,
+  "threshold_unchanged": 0.03,
+  "simulation_rerun": false,
+  "rtl_changed": false,
+  "original_failure_preserved": true,
+  "scope": "Corrected mathematical normalization of existing completed fixed-cadence RTL samples, not board timing or whole-band acceptance"
+}

@@ -1,0 +1,1315 @@
+=== PAGE 1 ===
+ 
+ 
+ 
+ 
+ 
+Edinburgh Research Explorer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Time domain simulation and sound synthesis for the snare drum
+Citation for published version:
+Bilbao, S 2012, 'Time domain simulation and sound synthesis for the snare drum', The Journal of the
+Acoustical Society of America, vol. 131, no. 1, pp. 914-925. https://doi.org/10.1121/1.3651240
+Digital Object Identifier (DOI):
+10.1121/1.3651240
+Link:
+Link to publication record in Edinburgh Research Explorer
+Document Version:
+Publisher's PDF, also known as Version of record
+Published In:
+The Journal of the Acoustical Society of America
+Publisher Rights Statement:
+© Bilbao, S. (2012). Time domain simulation and sound synthesis for the snare drum. Journal of the Acoustical
+Society of America, 131(1), 914-925. 10.1121/1.3651240
+General rights
+Copyright for the publications made accessible via the Edinburgh Research Explorer is retained by the author(s)
+and / or other copyright owners and it is a condition of accessing these publications that users recognise and
+abide by the legal requirements associated with these rights.
+Take down policy
+The University of Edinburgh has made every reasonable effort to ensure that Edinburgh Research Explorer
+content complies with UK legislation. If you believe that the public display of this file breaches copyright please
+contact openaccess@ed.ac.uk providing details, and we will remove access to the work immediately and
+investigate your claim.
+Download date: 17. Oct. 2026
+=== PAGE 2 ===
+Time domain simulation and sound synthesis for the snare drum
+Stefan Bilbaoa)
+Acoustics and Fluid Dynamics Group/Music, University of Edinburgh, Room 7306B, James Clerk Maxwell
+Building, King’s Buildings, Mayﬁeld Road, Edinburgh EH9 3JZ, United Kingdom
+(Received 25 November 2010; revised 2 March 2011; accepted 31 March 2011)
+The snare drum is a complex system, relying on the interaction of multiple components: the
+drumheads, or membranes, a set of snares, the surrounding acoustic ﬁeld and an internal cavity.
+Because these components are multidimensional, and due to a strong distributed non-linearity (the
+snare interaction), many techniques used frequently in physical modeling synthesis applications,
+such as digital waveguides and modal methods are difﬁcult to apply. In this article, ﬁnite difference
+time domain techniques are applied to a full 3D system, and various features of interest, such as the
+coupling between membranes, and the interaction between the membranes and the snares, are
+examined in detail. Also discussed are various numerical features, such as spurious splitting of
+degenerate modes and bandwidth limitation, and estimates of computational complexity are
+provided. Sound examples are presented.
+VC 2012 Acoustical Society of America.
+[DOI: 10.1121/1.3651240]
+PACS number(s): 43.75.Hi, 43.75.Zz, 43.75.Wx, 43.40.Dx [NHF] Pages: 914–925
+I. INTRODUCTION
+Percussion instruments have seen a fair amount of
+investigation at the experimental level, particularly regarding
+the determination of modal frequencies and shapes of com-
+plex structures.
+1–3 To date, however, some of the more deli-
+cate features of such instruments, involving strong
+distributed nonlinearities (of geometric, and contact type),
+and multiple disparate interconnected components, have
+seen mainly experimental investigation,
+4 without an underly-
+ing model of vibration (with some exceptions, in the case of
+gongs
+5). The scarcity of available models has made itself
+felt, not only in musical acoustics research, but also when it
+comes to sound synthesis based on physical models. The pre-
+eminent strategies used in physical modeling synthesis, such
+as digital waveguides and modal methods, are of relatively
+little use: waveguides, which are extremely efﬁcient for lin-
+ear problems in one dimension
+6 are not well-suited to prob-
+lems deﬁned in multiple dimensions (though waveguide
+mesh structures have been used for drum synthesis 7,8), and
+modal methods can become unwieldy, because of the pres-
+ence of strong nonlinearities of distributed type, and because
+of the need for extensive ofﬂine calculation and storage (of
+modal shapes and frequencies). That being said, modal
+methods, in particular, have been used recently for efﬁcient
+synthesis purposes, with good results.
+9
+Time stepping strategies, such as ﬁnite difference
+schemes remain an approach capable of handling very general
+systems; due to great recent increases in computing power, it
+is no longer easy to rule out such techniques as too computa-
+tionally intensive for synthesis for complex structures in a rea-
+sonable amount of time. This article is devoted to time
+domain simulation of coupled distributed systems, and in par-
+ticular the snare drum, which serves as an excellent test case
+for the application of such methods to complex structures.
+While there is some work on such simulation techniques for
+similar systems, such as the kettledrum
+10 in the context of
+pure musical acoustic research, here, the emphasis is on syn-
+thesis. In synthesis, there are many new issues which appear,
+including efﬁciency, the amount of ofﬂine calculation (as in
+the case of modal methods, as mentioned above), generality,
+and ease of programming; increasingly important, currently,
+is the ease with which a given algorithm may be parallelized,
+for implementation on a multicore processor, or graphics
+processing unit. All of these concerns have an inﬂuence on
+the choice of the particular type of time domain method to be
+employed, and will be explored in depth here. The synthesis
+viewpoint naturally leads one to simplify the various systems
+as much as possible, without degrading sound output; such
+simpliﬁcations (as well as examples of oversimpliﬁcations)
+will be presented in detail.
+A model of a snare drum, written in terms of a coupled
+set of partial differential equations (PDEs) for the drum
+membranes, the acoustic ﬁeld and the snares, is presented in
+Sec. II. Finite difference schemes, over uniform Cartesian
+grids, as well as their interconnection are introduced in Sec.
+III. Various issues, such as the choice of grid spacings, and
+interpolation, allowing the connection of disparate compo-
+nents, are discussed in detail. Simulation results, illustrating
+a number of features of interest in the case of the snare
+drum, such as membrane/membrane coupling, acoustic radi-
+ation, the all-important snare-membrane interaction, as well
+as numerical features such as spurious splitting of degerate
+modes, and bandwidth limitation, are given in Sec. IV. Vari-
+ous synthetic sound examples are also available on the
+author’s website and as AIP Supplementary Material.
+11
+II. MODEL SYSTEM
+In this section, the various components of the snare
+drum are described, in a continuous setting; ﬁnite difference
+operations are introduced in the following section.
+a)Author to whom correspondence should be addressed. Electronic address:
+sbilbao@staffmail.ed.ac.uk
+914 J. Acoust. Soc. Am. 131 (1), Pt. 2, January 2012 0001-4966/2012/131(1)/914/12/$30.00 VC 2012 Acoustical Society of America
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 3 ===
+A. Geometry
+A snare drum cavity may be deﬁned over a cylindrical
+region Vint;deﬁned by
+Vint ¼f ðx; y; zÞ2 R3 x2 þ y2 /C20 R2; zjj /C20 L=2g: (1)
+/C12/C12
+Here, R is the drum radius, and L is the height of the cavity,
+both in m. In simulation, it is also necessary to employ a
+computational region containing Vint: in this case, a rectan-
+gular parallelepiped V, deﬁned as
+Vext ¼f ðx; y; zÞ2 R3 xjjj ; yjj /C20 Lxy=2; zjj /C20 Lz=2g; (2)
+for some lengths Lxy and Lz, in m (and, for reasonable com-
+putation time, chosen not much larger than R and L,
+respectively).
+The boundary of the cavity @Vint, may be decomposed
+as @Vint ¼ @V bðÞ [ @V sðÞ [ @Vsh where
+@VðbÞ ¼f ðx; y; zÞ2 R3 x2 þ y2 /C20 R2; z ¼ L=2g;
+/C12/C12 (3a)
+@VðsÞ ¼f ðx; y; zÞ2 R3 x2 þ y2 /C20 R2; z ¼/C0 L=2g;
+/C12/C12 (3b)
+@Vsh ¼f ðx; y; zÞ2 R3 x2 þ y2 ¼ R2; zjj /C20 L=2g:
+/C12/C12 (3c)
+Here, @V bðÞ and @V sðÞ correspond to termination of the cylin-
+der by the batter head and snare head, respectively, and @Vsh
+represents the termination of the sides of the drum by the
+shell. The boundary of the computational region Vext, con-
+sisting of six faces of a regular parallelepiped, is denoted
+@V
+ext. See Fig. 1.
+B. 3D acoustic wave propagation
+The acoustic ﬁeld, both inside the snare drum cavity,
+and outside (i.e., over the region Vext), is described by the
+3D wave equation:
+Wtt ¼ c2Dð3ÞW: (4)
+Here, c is the wave speed in air, in m/s, D(3) is the 3D Lapla-
+cian operator
+Dð3Þ ¼ @2
+@x2 þ @2
+@y2 þ @2
+@z2 ; (5)
+and W ¼ W(x, y, z, t) is the velocity potential of the acoustic
+ﬁeld, both inside and outside the snare drum. Here, and else-
+where, the subscript tt indicates double partial differentiation
+with respect to time. The wave equation written in terms of
+the velocity potential is a more fundamental form than that
+written in terms of pressure, 12 and the resulting coupling to
+the membranes (see Sec. II F ) is somewhat simpliﬁed. To
+this end, note that the acoustic pressure p and the particle
+velocity v may be related to W through
+p ¼ qWt; v ¼/C0 r W; (6)
+where q is the density of air, r is the gradient operation,
+and where the subscript t indicates partial differentiation
+with respect to time. In this article, c ¼ 340 m/s and
+q ¼ 1.2 kg/m3.
+Boundary conditions for the snare drum shell, assumed
+rigid (not entirely realistic, as mentioned by Rossing et al.,1
+but a good ﬁrst approximation), lead to Neumann type, or
+zero normal velocity conditions:
+nsh /C1r W ¼ 0 over @Vsh; (7)
+where nsh is the normal to the shell boundary, both inside
+and outside the drum cavity. Boundary conditions for the
+membrane terminations will be discussed in Sec. II F.
+An absorbing condition is required at the external
+boundary @Vext. There are many possible choices—among
+the most popular are so-called perfectly matched layers. 13,14
+Such methods, though capable of absorbing impinging
+waves at all frequencies and angles of incidence, can require
+somewhat specialized computer implementation at the boun-
+daries, and a fair increase in memory requirements, as the
+layer itself occupies three-dimensional space. In the interest
+of reducing programming complexity and memory require-
+ments, for a problem which is already quite computationally
+demanding, various simpler absorbing boundary conditions,
+of Engquist-Majda type
+15 have been examined here. Over
+the boundary @Vext of the computational region, there is a se-
+ries of such conditions, of increasing order of accuracy,
+expressed in terms of PDEs. The ﬁrst two such conditions
+may be written as
+W
+t þ cWn ¼ 0; (8a)
+Wtt þ cWnt /C0 c2
+2 ðWs1s1 þ Ws2s2 Þ¼ 0; (8b)
+where a subscript n indicates a spatial derivative outward
+normal to the boundary, and where subscripts s1 and s2 indi-
+cate tangential spatial derivatives. Higher order conditions
+are a possibility as well, but the above conditions are easily
+programmed and require little, if any extra memory require-
+ment beyond that required to solve the problem over the
+interior.
+FIG. 1. Snare drum problem geometry, including computational region.
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 915
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 4 ===
+C. Membranes
+The vibration of membranes will here be assumed to be
+fully transverse, a reasonable assumption for very thin struc-
+tures. The dynamics of the two membranes (at the batter
+head and snare head), are described by
+q
+ðbÞHðbÞwðbÞ
+tt ¼ TðbÞDð2ÞwðbÞ þ/C1/C1/C1þ f ðbÞ þ f ðexcÞ; (9a)
+qðsÞHðsÞwðsÞ
+tt ¼ TðsÞDð2ÞwðsÞ þ/C1/C1/C1þ f ðsÞ þ f ðsnareÞ; (9b)
+where here, w(b,s) ¼ w(b, s)(x, y, z) is the transverse displace-
+ment of each membrane, in m, q(b,s) is the density, in kg/m 3,
+H(b,s) is the thickness, in m, and T(b,s) the tension per unit
+length (assumed uniformly distributed over each membrane),
+in kg/s2. D(2) is the 2D Laplacian, deﬁned as
+Dð2Þ ¼ @2
+@x2 þ @2
+@y2 : (10)
+The additional terms ƒ result from coupling. ƒ (b,s) are the
+pressures due to the acoustic ﬁeld on the batter head and the
+snare head, respectively, f
+(exc) results from the excitation,
+and f (snare) from the interaction with the snares. The precise
+forms of these terms will be given in Sec. II F.
+The ellipses above indicate other higher-order terms
+which could be incorporated, with little resulting increase in
+programming complexity or computational cost in the result-
+ing FDTD implementation. For example, for the batter head,
+in Eq. (9a) above, one could include the terms
+/C0 D
+ðbÞDð2ÞDð2ÞwðbÞ /C0 rðbÞ
+0 wtðbÞ
+t þ rðbÞ
+1 Dð2ÞwðbÞ
+t
+þ 6DðbÞ
+pR2ðHðbÞÞ2
+ð
+@VðbÞ
+rwðbÞ/C12/C12 /C12/C122
+dA
+/C18/C19
+Dð2ÞwðbÞ: (11)
+The ﬁrst term, with D(b) ¼ E(H(b))3/(12(1 – (/C23 (b))2)), where
+E(b) and /C23 (b) are Young’s modulus and Poisson’s ratio for the
+membrane, respectively, represents effects of stiffness; in
+the present case of a thin drum membrane, of generally quite
+low stiffness (for example, Young’s modulus is approxi-
+mately 4 GPa for Mylar, as opposed to 200 GPa for steel) the
+effect on the dynamics is quite small; modal frequencies and
+shapes deviate little from the non-stiff case, except at very
+high frequencies. The second and third terms, of coefﬁcients
+r
+ðbÞ
+0 and rðbÞ
+1 , allow for frequency-dependent modeling of in-
+ternal membrane losses; but given that radiation losses, mod-
+eled explicitly here through coupling to the acoustic ﬁeld,
+are much larger, the resulting effect of these terms is rather
+small as well. The ﬁnal term results from a simple averaged
+model of nonlinear membrane vibration, due to Berger,
+16
+and gives rise to the well-known pitch-glide phenomenon at
+high amplitudes,
+17 similar to that which occurs in strings. 18
+This term, incorporated in a recently proposed modal drum
+model,9 is quite important perceptually in the case of certain
+drums, such as toms, 19 though it is anticipated to be much
+less so when a snare interaction is present, and the pitched
+quality of the resulting sound is suppressed.
+The termination of the membranes at the shell boundary
+is assumed to be ﬁxed, i.e.,
+wðb;sÞ ¼ 0; x2 þ y2 ¼ R2: (12)
+If stiffness terms are included, second boundary conditions
+(clamped or pivoting) must be supplied for both membranes
+In the simulation examples in Sec. IV, the densities of
+the batter head and snare heads are taken be 2690 and
+2000 kg/m3, respectively, and are of thicknesses 0.00013 m,
+and under tensions 3200 and 1500 N/m, respectively; such
+values were determined in the laboratory at Edinburgh, are
+in the range of values reported in the literature.
+1
+D. Snares
+Attached to the snare head is a set of snares, which are
+tightly wound helical wires; such helical wires, in contrast to
+straight wires, exhibit string-like behavior (i.e., coherent
+wave propagation) at low frequencies. 20 A good ﬁrst approx-
+imation is thus the 1D wave equation, describing motion of
+the snares in a direction normal to the membrane:
+qðiÞAðiÞmðiÞ
+tt ¼ TðiÞm
+ðiÞ
+nðiÞ nðiÞ þ f ðiÞi ¼ 1; …; NðsnareÞ: (13)
+Here, q(i), A(i) and T(i) are the mass density, in kg/m 3, cross-
+sectional area, in m 2, and tension, in N of a single snare
+(which may be assumed identical across all snares), and m(i)
+is the displacement of the ith snare (of which there are
+N(snare)). f (i) is the force per unit length exerted on the ith
+snare due to interaction with the snare membrane. The forms
+of these terms will be given explicitly in Sec. II F.
+The wave equations above are deﬁned with respect to
+spatial coordinates n
+(i) 2 [0, L(i)], where L(i) is the length of
+the ith snare in m. In terms of the coordinates x and y on the
+membrane itself, assuming that the snares are parallel, and
+aligned with the y direction, and are spaced apart by 2 m,
+the ith snare runs along coordinates
+xðiÞ ¼ ð2i /C0 NðsnareÞ /C0 1Þ2
+2 ; (14a)
+FIG. 2. Computational grid for the acoustic ﬁeld, as well as for the mem-
+branes; the grid spacings are distinct.
+916 J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 5 ===
+yðiÞ ¼ yðiÞðnðiÞÞ¼/C0 LðiÞ=2 þ nðiÞ: (14b)
+See Fig. 3. The ends of the snares are assumed attached to
+the membrane itself (a slight simpliﬁcation from the actual
+situation, in which the snare ends are attached to a small
+rigid bar, which functions as a bridge). The termination con-
+ditions are thus
+m
+ðiÞð0Þ¼ wðsÞðxðiÞ; yðiÞð0ÞÞ; (15)
+mðiÞðLðiÞÞ¼ wðsÞðxðiÞ; yðiÞðLðiÞÞÞ: (16)
+As in the case of membranes, other terms (such as those
+involving internal damping) could well be included in
+Eq. (13) above.
+E. Excitation
+For single strikes of strings or membranes, the typical
+model employed involves a nonlinear collision with a
+mass/spring system. 10,21 In this case, the term f (exc) in
+Eq. (9a) may be written as
+f ðexcÞ ¼/C0 FðmÞðtÞ/ðx; yÞ; (17)
+where F(m) is the force on the stick, and where /(x, y)i sa
+distribution, assumed ﬁxed, representing the spatial extent of
+the contact region of the collision with the membrane. The
+dynamics of the stick itself, with an assumed initial velocity,
+may be written as
+10
+FðmÞ ¼ MðmÞ dwðmÞ
+dt2 (18)
+¼ KðmÞ
+ð
+@VðbÞ
+wðbÞ/dA /C0 wðmÞ
+/C20/C21 þ/C18/C19 aðmÞ
+; (19)
+where w(m)(t) is the vertical displacement of the stick tip
+above the membrane, and where M(m), K(m) and a(m) are the
+mass, stiffness constant, and nonlinear stiffness exponent
+associated with the stick. /C1½/C138 þ indicates the “positive part of.”
+Because the contact region is of dimensions which are very
+small compared to those of audible wavelengths in the mem-
+brane, it is sufﬁcient in practice to use a 2D Dirac delta func-
+tion (i.e., a distribution which integrates to unity over the
+surface of the membrane, and which selects the excitation
+point).
+While such a model may easily be incorporated into a ﬁ-
+nite difference model, and adequately reproduces single
+strikes, it is not sufﬁcient to replicate typical snare gestures,
+such as rolls, which require a more delicate model of the
+stick/membrane interaction. Such a model is as yet unap-
+proached in the literature, and will require a continuous
+external applied force from the player (to maintain an auto-
+oscillation), and the ability of the stick to pivot.
+For single strikes, a great simpliﬁcation, in synthesis, is
+to simply specify F
+(m) as a short pulse, on the order of a
+millisecond in duration. One simple choice 22 is a function of
+the form
+FðmÞðtÞ¼
+F0
+2 ð1 /C0 cosð2pt=T0ÞÞ 0 /C20 t /C20 T0
+0 else :
+(
+(20)
+The duration T0 of the pulse, and amplitude F0 may be
+roughly parameterized in terms of initial strike velocity: F0
+increases, and T0 decreases as strike velocity increases.
+Such a simpliﬁcation is employed in the remainder of
+this article, because (a) it leads to great simpliﬁcation in
+terms of programming, (b) reduces the risk of numerical
+instability, and (c) generates perceptually comparable, if not
+identical results in a synthesis setting, at least for single
+strikes. In the setting of musical acoustics, such a model is
+obviously not sufﬁcient, but then, neither is the model pre-
+sented above, in the case of continuous gestures, because of
+the deﬁciencies noted above.
+F. Distributed coupling
+The system describing a snare drum is composed of var-
+ious interacting components: the acoustic ﬁeld, the two
+membranes, and the snares. In this section, the necessary
+coupling relations among the components are presented.
+The coupling terms ƒ
+(b) and ƒ (s) in Eq. (9) may be writ-
+ten in terms of the velocity potential W as
+f ðbÞ ¼ q lim
+z!L
+2
+/C0 Wt /C0 lim
+z!L
+2
+þ
+Wt
+0
+@
+1
+A @VðbÞ
+/C12/C12 ; (21a)
+f ðsÞ ¼ q lim
+z!/C0 L
+2
+/C0 Wt /C0 lim
+z!/C0 L
+2
+/C0 Wt
+0
+@
+1
+A @VðsÞ
+/C12/C12 : (21b)
+The other required conditions relate membrane velocities to
+the gradient of the acoustic ﬁeld, in the z direction:
+FIG. 3. Computational grid for the snare head, as well as 1D grids for a set
+of snares.
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 917
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 6 ===
+wðbÞ
+t ¼/C0 lim
+z!L
+2
+/C0 Wz @VðbÞ
+/C12/C12 ¼/C0 lim
+z!L
+2
+þ
+Wz @VðbÞ
+/C12/C12 ; (22a)
+wðsÞ
+t ¼/C0 lim
+z!/C0 L
+2
+/C0 Wz @VðsÞ
+/C12/C12 ¼/C0 lim
+z!/C0 L
+2
+þ
+Wz @VðsÞ
+/C12/C12 ; (22b)
+In summary: the pressure exerted on a membrane is the dif-
+ference of the pressures exerted on either side, and the parti-
+cle velocity of the acoustic ﬁeld normal to a membrane must
+be equal to the membrane velocity, on either side of the
+membrane.
+Coupling between the snare membrane and the snares
+involves distributed partial collisions. A useful model is sim-
+ilar to that of a hammer interaction (see Sec. II E ) along the
+length of the snare. For the i th snare,
+f
+ðiÞ ¼/C0 KðiÞ ½mðiÞ /C0 wðsÞðxðiÞ; yðiÞÞ/C138 þ
+/C16/C17 aðiÞ
+; (23)
+where K(i) and a(i) are a compression coefﬁcient and nonlin-
+ear exponent for the ith snare. The coordinates x(i) and y(i)
+along the membrane are as given in Eq. (14). The total force
+exerted on the snare membrane, f (snare) is thus
+f ðsnareÞ ¼/C0
+XNðsnareÞ
+i¼1
+f ðiÞdðxðnðiÞÞ; yðnðiÞÞÞ; (24)
+where d(x(i), y(i)) is the Cartesian product of a 1D Dirac delta
+function with the linear region of the membrane over which
+the ith snare is in partial contact.
+This is a somewhat ad hoc model of snare collision;
+ideally, one would prefer a model for which collision is
+rigid; this formalism, when the stiffness coefﬁcients K(i) are
+chosen large, approaches the ideal, while allowing numerical
+difﬁculties associated with rigid collision to be sidestepped.
+G. Simplified piston model
+In the interest of reducing computational cost, and also
+of simplifying analysis in the problem of coupled mem-
+branes, piston models of the air cavity have been pro-
+posed.1,9 The air cavity is modeled as a uniform slug, with a
+given mass and stiffness. A coupled membrane PDE model
+may be adapted from a standard one membrane cavity
+model, and is of the form given in Eq. (9), where the cou-
+pling terms ƒ (b) and ƒ(s) are written as
+f ðbÞ ¼/C0 f ðsÞ ¼ qc2
+Vintjj
+ð
+@VðsÞ
+wðsÞdA /C0
+ð
+@VðbÞ
+wðbÞdA
+/C18/C19
+: (25)
+This model is thus written purely in terms of the membrane
+displacements w(b) and w(s), but now, radiation effects have
+been neglected [and must be reintroduced, through addi-
+tional terms in Eq. (9)].
+One expects that such a model will indeed lead to inter-
+action of modes between the upper and lower membranes,
+and also that a perceptually important attribute of the result-
+ing sound will be lost, namely the cavity modes, which, in
+the full 3D case, become increasingly dense towards the
+high end of the audio spectrum. See Sec. IV E for further
+discussion of this simpliﬁcation, and comparison with the
+3D case, with regard to the effect on snare motion.
+III. FINITE DIFFERENCE SCHEMES
+In this section, ﬁnite difference schemes for the various
+coupled subsystems are introduced. The emphasis here is on
+sound synthesis, and operation at a reasonable audio sample
+rate f
+s (such as 44.1 kHz). Because the problem is deﬁned
+over a cylindrical geometry, it is tempting to conclude that
+schemes in radial coordinates are a good match, at least for
+the membrane components and the acoustic ﬁeld. Unfortu-
+nately, however, explicit schemes in radial coordinates ex-
+hibit extremely poor frequency domain behavior, including
+severe numerical dispersion, and, what is worse, bandlimit-
+ing of responses over a small range of frequencies (in the
+present case of the snare drum, down to 3 kHz, even if the
+scheme operates at 44.1 kHz). This issue is discussed in
+detail in a recent book.
+23 The bandlimiting effect is espe-
+cially important in the case of nonlinear snare/membrane
+coupling, which generally introduces high-frequency energy,
+which the membrane must be capable of supporting (and
+thus, radiating). See IV A for some exploration of this.
+Though one can use such schemes (perhaps at a higher
+sampling rate, or involving computationally costly implicit
+updates), for audio synthesis purposes, it is more useful to
+employ schemes over multiple Cartesian grids, even if addi-
+tional issues relating to the termination of the grid over a
+cylindrical geometry intervene (such as irregular boundary
+termination). Such regular schemes, especially over the 3D
+acoustic ﬁeld, are also a very good match to parallel com-
+puter architectures—updates are performed identically at
+each point in the domain interior. This is in contrast with the
+case of pure musical acoustics applications, where other
+choices, such as ﬁnite element/ﬁnite volume methods, over
+irregular grids could give better results, especially with
+regard to irregular boundary conditions.
+10
+The schemes for all components presented in this sec-
+tion will operate at a uniform sample rate of fs, and for which
+ts ¼ 1/fs is the time step; grid spacings, however, will in gen-
+eral be different for the various components. Second time
+derivatives of quantities g
+tt(/C1 , t), which appear in the deﬁning
+equations of all the various components will be approxi-
+mated here uniformly by
+1
+t2
+s
+ðgnþ1
+/C1 /C0 2gn
+/C1 þ gn/C0 1
+/C1 Þ ‹ gtt; (26)
+where gn
+: is an approximating grid function for g(/C1 ,t) at time
+nts, for integer n.
+A. Schemes for components
+A simple ﬁnite difference time domain scheme for the
+3D wave Eq. (4) is the following:
+Wnþ1
+l;m;p ¼ð 2 þ c2t2
+s dð3ÞÞWn
+l;m;p /C0 Wn/C0 1
+l;m;p: (27)
+Here, wn
+l;m;p represents an approximation to W(x, y, z, t), at
+times t ¼ nts, where ts is the time step, and at grid points
+indexed by l, m and p, separated from one another by a grid
+918 J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 7 ===
+spacing h. See Fig. 2. A seven point approximation to the 3D
+Laplacian, d(3), is given by
+dð3ÞWn
+l;m;p ¼ 1
+h2 Wn
+lþ1;m;p þ Wn
+l/C0 1;m;p þ Wn
+l;mþ1;p
+/C16
+þ Wn
+l;m/C0 1;p þ Wn
+l;m;pþ1 þ Wn
+l;m;p/C0 1 /C0 6Wn
+l;m;p
+/C17
+:
+(28)
+A necessary stability condition for scheme, Eq. (27), follows,
+from von Neumann analysis, 24 as
+h /C21 hmin ¼
+ﬃﬃ ﬃ
+3
+p
+cts: (29)
+For the least numerical dispersion, it is generally wise to
+choose h (given the time step ts) as close to hmin as possible.
+Geometric constraints intervene, however—for a simple
+implementation of the membrane coupling conditions,
+Eq. (21) and (22), it is useful to choose the grid spacing such
+that the membranes (at heights z ¼ 6 L/2) lie exactly half-
+way between adjacent grid points, and thus an additional
+constraint is that L/h be an integer. This leads to a minor
+deviation of h from h
+min.
+Schemes for the membranes, as deﬁned in Eq. (9), are
+similar; assuming, for simplicity, that the various additional
+terms given in, Eq. (11), are neglected, simple schemes are:
+ðwðbÞÞnþ1
+l;m ¼ð 2 þð cðbÞÞ2t2
+s dð2;bÞÞðwðbÞÞn
+l;m /C0ð wðbÞÞn/C0 1
+l;m
+þ t2
+s
+qðbÞHðbÞ ðf ðbÞÞn þð f ðexcÞÞn
+/C16/C17
+; (30a)
+ðwðsÞÞnþ1
+l;m ¼ð 2 þð cðsÞÞ2t2
+s dð2;sÞÞðwðsÞÞn
+l;m /C0ð wðsÞÞn/C0 1
+l;m
+þ t2
+s
+qðsÞHðsÞ ðf ðsÞÞn þð f ðsnareÞÞn
+/C16/C17
+: (30b)
+Here, w b;sðÞ/C0/C1 n
+l;m is an approximation to ( w(b,s))(x, y, t) at coor-
+dinates x ¼ h(b,s)l, y ¼ h(b,s)m and at time t ¼ nts, and the
+wave speeds c(b,s) are deﬁned by c(b,s) ¼
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+T
+ðb;sÞ
+=q
+ðb;sÞ
+Hðb;sÞ:
+p
+d(2,b) and d(2,s) are ﬁve-point approximations to the 2D
+Laplacian, deﬁned by
+dð2;qÞðwðqÞÞn
+l;m ¼ 1
+ðhðqÞÞ2 ðwðqÞÞn
+lþ1;m þð wðqÞÞn
+l/C0 1;m
+/C16
+þð wðqÞÞn
+l;mþ1 þð wðqÞÞn
+l;m/C0 1 /C0 4ðwðqÞÞn
+l;m
+/C17
+;
+(31)
+where q is either b or s. Notice that the grid spacings h(b) and
+h(s) are in general distinct for the two membranes.
+Necessary stability conditions for the schemes, Eq. (30),
+are
+hðb;sÞ /C21 hðb;sÞ
+min ¼
+ﬃﬃ ﬃ
+2
+p
+cðb;sÞts; (32)
+and should be satisﬁed as close to equality as possible for
+minimal numerical dispersion, and maximal bandwidth. If
+stiffness terms [see Eq. (11)] are included, the bound above
+must be altered—and in general, hðb;sÞ
+min increases, leading to a
+decrease in memory requirements. See Fig. 3.
+Similarly, for the systems, Eq. (13), for the snares, one
+may write the schemes
+ðmðiÞÞnþ1
+l ¼ 2mðmðiÞÞn
+l /C0ð mðiÞÞn/C0 1
+l þð cðiÞÞ2t2
+s dð1;iÞðmðiÞÞn
+l
+þ t2
+s
+qðiÞAðiÞ ðf ðiÞÞn i ¼ 1; … ; NðsnareÞ; (33)
+where m iðÞ/C0/C1 n
+l is an approximation to m(i)(n(i), t), at
+¼ n(i) ¼ lh(i), and t ¼ nts, and where c iðÞ ¼
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ ﬃ
+T iðÞ =q iðÞ A iðÞ
+p
+:
+The second difference operator d(i,1) is deﬁned as
+dði;1ÞðmðiÞÞn
+l ¼ 1
+ðhðiÞÞ2 ðmðiÞÞn
+lþ1 /C0 2ðmðiÞÞn
+l þð mðiÞÞn
+l/C0 1
+/C16/C17
+: (34)
+See Fig. 3
+Necessary stability conditions for the schemes, Eq. (33),
+are that
+hðiÞ /C21 hðiÞ
+min ¼ cðiÞts: (35)
+B. Boundary termination
+Boundary termination of scheme, Eq. (27), for the 3D wave
+equation at the shell boundary @Vsh may be carried out
+through a simple “staircase” approximation. See Fig. 4.
+At points adjacent to @Vsh, the simplest approximation
+to the Neumann condition, Eq. (7), is to reﬂect values
+required on the other side of the boundary back to the central
+update point without sign inversion. Referring to Fig. 4, the
+update at point labeled A requires two such virtual values
+(i.e., values outside the interior of the drum cavity in this
+case), and that at point B requires one.
+At point A, the Laplacian may be approximated as
+FIG. 4. Computational grid for the acoustic ﬁeld, viewed from above, with
+the shell boundary @Vsh indicated as a dark circle. Points at which special-
+ized updating must be performed are indicated by open circles.
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 919
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 8 ===
+dð3ÞWn
+l;m;p ¼ 1
+h2 Wn
+lþ1; m;p þ Wn
+l;m/C0 1; p
+/C16
+þ Wn
+l;m;pþ1 þ Wn
+l;m;p/C0 1 /C0 4Wn
+l;m;p
+/C17
+; (36)
+and at point B,
+dð3ÞWn
+l;m;p ¼ 1
+h2 Wn
+lþ1;m;p þ Wn
+l;m/C0 1;p
+/C16
+þ Wn
+l/C0 1;m;p
+þ Wn
+l;m;pþ1 þ Wn
+l;m;p/C0 1 /C0 5Wn
+l;m;p
+/C17
+: (37)
+Numerical boundary conditions at @Vext, at which an absorb-
+ing boundary condition is applied, may also be easily arrived
+at. For condition, Eq. (8a), for example, at a point on the
+upper face of @Vext, one possible update, obtained through
+centered discretization and insertion in Eq. (27),i s
+Wnþ1
+l;m;p ¼ k2
+1 þ k
+/C16
+ð2=k2 /C0 6ÞWn
+l;m;p þ Wn
+lþ1;m;p
+þ Wn
+l/C0 1;m;p þ Wn
+l;mþ1;p þ Wn
+l;m/C0 1;p
+þ 2Wn
+l;m;p/C0 1 /C0ð 1=k2ÞWn/C0 1
+l;m;p
+/C17
+; (38)
+where k ¼ cts/h. This condition can be generalized, through
+symmetry, at all other faces, and requires a specialized form
+at the domain corners. A similar, slightly more complex
+update may be derived starting from condition, Eq. (8b), but
+is omitted here. Neither method requires an absorbing nu-
+merical layer.
+Numerical ﬁxed boundary conditions for the mem-
+branes, as given in Eq. (12) may be implemented, in the sim-
+plest instance, by setting grid values at points outside @V
+b;sðÞ
+to be zero, or, for greater accuracy, through interpolation. As
+seen in Sec. IV A , this has a negligible effect on calculated
+modal frequencies, except at the upper end of the audio fre-
+quency range.
+C. Coupling and interpolation
+The various schemes for the acoustic ﬁeld, membranes,
+and snares all operate over grids of distinct spacings, and
+thus the coupling relations described in Sec. II F must be
+approached via some form of interpolation.
+Consider ﬁrst the coupling between the upper membrane
+(the batter head) and the acoustic ﬁeld, deﬁned over grids of
+spacings h
+(b) and h, respectively. It is necessary to deﬁne
+two interpolants Ih!hbðÞ and IhbðÞ ! h, operating from a 2D
+subset of the acoustic ﬁeld values to the membrane, and vice
+versa. Interpolation between distributed coupled systems, is
+described in a recent book.
+25 A simple choice in either case
+is bilinear inerpolation. The coupling Eq. (21a) may be dis-
+cretized as
+ðf ðbÞÞn ¼ qIh!hðbÞ Wnþ1
+/C1 ;pðbÞ /C0 Wn/C0 1
+/C1 ;pðbÞ
+2ts
+/C0 qIh!hðbÞ Wnþ1
+/C1 ;pðbÞ þ1 /C0 Wn/C0 1
+/C1 ;pðbÞ þ1
+2ts
+; (39)
+where Wn
+:;p bðÞ and Wn
+:;p bðÞ þ1 indicate the grid points for the
+acoustic ﬁeld directly adjacent to the membrane, below and
+above, respectively.
+Updating Wn
+l;m;p, according to scheme, Eq. (27),a t
+p ¼ p(b), and p ¼ p(b) þ 1, requires access, apparently, to val-
+ues of the grid function on the other side of the membrane;
+call these virtual grid values W/C3 ;n
+:;p bðÞ and W/C3 ;n
+:;p bðÞ þ1. Coupling
+conditions, Eq. (22a), may be discretized as
+IhðbÞ !h ðwðbÞÞnþ1 /C0ð wðbÞÞn/C0 1
+2ts
+¼/C0
+W/C3 ;n
+/C1 ;pðbÞ þ1 /C0 Wn
+/C1 ;pðbÞ
+/C16/C17
+h
+¼/C0
+Wn
+/C1 ;pðbÞ þ1 /C0 W/C3 ;n
+/C1 ;pðbÞ
+/C16/C17
+h : (40)
+In implementation, conditions, Eq. (40), may be used to
+solve for the virtual grid values W/C3 ;n
+:;p bðÞ and W/C3 ;n
+:;p bðÞ þ1, which
+may then be used directly in schemes, Eqs. (27) and (30),
+leading to a fully explicit update.
+The coupling conditions for the snares also require inter-
+polation. Supposing Ih sðÞ !h iðÞ
+is an interpolant from values
+on the grid for the snare head to the corresponding positions
+along the ith snare (possibly bilinear), then condition, Eq.
+(23), may be discretized as
+ðf
+ðiÞÞn ¼/C0 KðiÞ ðmðiÞÞn /C0I hðsÞ !hðiÞ
+ðwðsÞÞn
+hi þ/C18/C19 aðiÞ
+: (41)
+Deﬁning an extrapolant Ih iðÞ !h sðÞ
+from the ith snare to grid
+locations on the snare head, again, perhaps, bilinearly, so
+that values are distributed to adjacent grid locations on the
+membrane grid, then condition, Eq. (24), may be discretized
+as
+ðf
+ðsnareÞÞn ¼/C0
+XNðsnareÞ
+i¼1
+IhðiÞ !hðsÞ
+ðf ðiÞÞn: (42)
+The snare coupling conditions are nonlinear; as such, one
+should expect some danger of instability, especially if the
+stiffness coefﬁcients K
+(i) for the snares are high; a good rem-
+edy involves semi-implicit schemes applied to Eq. (41).
+D. Computational cost
+Computational cost is dominated by the solution of the
+scheme for the 3D wave, Eq. (27), and those for the two
+membranes, Eq. (30). Memory requirements N(3D) and N(b,s)
+follow directly from the stability conditions, Eqs. (29) and
+(32). For a given sample rate fs ¼ 1/ts, and for two step
+schemes, these may be written as
+Nð3DÞ ¼ 2 Vextjj f 3
+s
+33=2c3 ; Nðb;sÞ ¼ pR2f 2
+s
+ðcðb;sÞÞ2 : (43)
+The memory requirement for the membranes is a worst case;
+if stiffness effects are included (see Sec. III A), then the grid
+spacing will increase, and memory requirements will thus
+decrease.
+920 J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 9 ===
+The operation counts per second O(3D) and O(b,s), for
+two-step ﬁnite difference schemes will be, again assuming
+that stiffness is neglected in membranes,
+O
+ð3DÞ ¼ 4Nð3DÞfs; Oðb;sÞ ¼ 3Nðb;sÞfs: (44)
+In the limit of high sample rates, then, the total operation
+count will be dominated by O(3D), which scales with the
+fourth power of the sample rate. For typical snare membrane
+parameters, and at an audio sample rate of f8 ¼ 44 100 kHz,
+and using a small computational region, of Vextjj ¼ 0:53 m3,
+one has
+Oð3DÞ ¼ 1:85 /C2 1010; Oðb;sÞ ¼ 2:89 /C2 109; (45)
+These values are large, but given that typical computer pro-
+cessors now operate at the GHz rate, one should expect that
+an efﬁciently programmed implementation should operate
+near real time, especially if the implementation is multi-
+threaded. Indeed, the use of Cartesian schemes is far more
+amenable to parallelization than, e.g., schemes in radial
+coordinates, because updates are uniform over the problem
+space, both for the 3D region and the membranes. In addi-
+tion, the use of a rectangular parallelepiped as the main com-
+putational region makes for a very good ﬁt to highly parallel
+architectures such as GPUs (Ref. 25). On the other hand,
+special indexing strategies will be required in order to repre-
+sent the cylindrical region over such a grid. It is also interest-
+ing to note that because wave speeds in drum membranes are
+generally much lower than in air, the computational cost of
+the membrane solution is not negligible compared to that of
+the 3D problem, for small computational regions, at typical
+audio sample rates, as mentioned above.
+IV . SIMULATION RESULTS
+In this section, the aim is to demonstrate various fea-
+tures of snare drum vibration, and in particular those which
+it may not be possible to simulate using simpliﬁed models,
+as well as inevitable numerical artifacts of a ﬁnite difference
+treatment. Among these are a comparison between numerical
+results obtained using radial and Cartesian grids, the com-
+plex behavior of modal frequencies of a coupled membrane
+system, acoustic radiation, the snare interaction, including a
+comparison between results obtained using the full 3D
+model, and those obtained using a simpliﬁed piston model.
+All simulation results pres ented in this section are car-
+ried out for a drum with radius R ¼ 0.15 m, and of a height
+of L ¼ 0.3 m, unless otherwise indicated. A set of twelve
+snares is employed, of length L
+(i) ¼ 0.25 m, and with wave
+speed c(i) ¼ 30 m/s, attached to the snare head over a band
+of width 0.05 m. Such parameters correspond roughly to
+those of a drum in the laboratory at Edinburgh. Parameters
+for the acoustic ﬁeld and for the membranes are as given in
+Secs. II B and II C, respectively.
+A. Radial and cartesian schemes
+As a preliminary justiﬁcation for the use of rectangular
+grids, consider the case of a membrane, in isolation, without
+stiffness. In this case, the displacement of the membrane sat-
+isﬁes the 2D wave equation, over a circle of radius R, with
+ﬁxed boundary conditions. In Table I, a comparison between
+exact modal frequencies, and those calculated by a scheme
+over a Cartesian grid, and another scheme over a grid in ra-
+dial coordinates is given; both schemes are run at a sample
+rate of 44.1 kHz, with grid spacings chosen as close to the
+stability condition, Eq. (32), as possible for the Cartesian
+scheme. Though both schemes perform well at low frequen-
+cies, the radial scheme exhibits severe dispersion in the
+range above approximately 1 kHz. Furthermore, as illus-
+trated in Fig. 5, the output of the radial scheme is bandlim-
+ited to approximately 3 kHz. Though such schemes are used
+in investigations in musical acoustics, it is clear that the ra-
+dial scheme will be unable to give a good approximation to
+the dynamics of the snare system at high frequencies, at rea-
+sonable audio sample rates.
+On the other hand, schemes in regular Cartesian coordi-
+nates can introduce artifacts of their own. In the present case
+of the circular membrane, one such artifact is splitting of
+degenerate modes, as illustrated in Fig. 6; this is an entirely
+numerical effect, and is due to the lack of radial symmetry
+of the grid. Such splitting, leading to closely spaced pairs of
+modal frequencies, could potentially lead to audible beating
+TABLE I. Exact modal frequencies, in Hertz, for a circular membrane, with
+radius R ¼ 0.15 m and wave speed c ¼ 95.63 m/s, with ﬁxed boundary condi-
+tions, and frequencies calculated by schemes in Cartesian coordinates, and
+radial coordinates. Numerical modal frequencies are obtained through fre-
+quency domain (i.e., eigenvalue) analysis of the discretized spatial operators
+in conjunction with a two step scheme in either case.
+Mode number Exact Cartesian Radial
+1 244.2 244.3 243.6
+2 389.0 389.2 387.6
+3 521.3 521.8 518.4
+4 560.4 560.8 554.4
+5 647.7 648.2 641.6
+40 1984.8 1988.5 1641.8
+FIG. 5. Output responses, for a scheme operating over a Cartesian grid (top)
+and over a radial grid (bottom).
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 921
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 10 ===
+effects—but in the case of the snare drum, it is likely that
+such effects will be masked entirely by the noise-like charac-
+ter of the resulting sound
+B. Coupled membrane interaction
+The coupled acoustic ﬁeld/membrane/membrane scheme
+allows the explicit investigation of coupling between modes
+in the upper and lower membranes. Indeed, for analysis pur-
+poses, a time stepping algorithm is not necessary; provided
+one has consolidated all of the spatial discretization terms in
+matrices, a standard eigenvalue solver is a possibility, though
+such techniques will obviously not be of use in synthesis
+when distributed nonlinearities such as the snare mechanism
+are present. A full simulation, however, is revealing, even in
+the linear case when the snares are disengaged—see Fig. 7,
+showing the response of the system to an impulsive excitation
+applied at a point off center on the batter head. Visible is the
+slight delay in the excitation of the snare head, as well as the
+concentration of much of the vibration of the snare head in
+axisymmetric modes.
+As a numerical experiment, it is interesting to look at
+the complex trajectories of modal frequencies for the
+coupled system, under increases in mass density of the mem-
+branes, as shown in Fig. 8. In the limit of high densities, the
+frequencies of the coupled system separate into those of two
+uncoupled membranes, as expected.
+C. Acoustic radiation
+In Fig. 9, the time evolution of a vertical cross section
+of the acoustic ﬁeld is shown, when the batter head is again
+subjected to an impulsive excitation. Spurious reﬂection
+from the computational boundary is not evident.
+D. Snare interaction
+The interaction of the snares with the snare head is enor-
+mously complex; so dependent is it on the interaction
+between the membranes, that it is difﬁcult to envisage how
+to simplify the model without losing perceptually important
+features (though this has indeed been attempted, by Avanzini
+et al.
+9 using lumped approximations to the snares
+themselves).
+Figure 10 illustrates this motion. Because it is mainly
+the axisymmetric modes of the snare head which are excited,
+through a strike on the batter head and the subsequent propa-
+gation of acoustic waves through the drum cavity, initially
+the motion of the snares is relatively coherent; once recon-
+tact is made between the snares and the snare head, the
+motion is quickly randomized, leading directly to the noise-
+like timbre of the snare drum. The degree of randomization
+is inﬂuenced strongly by asymmetric mode coupling
+between the membranes, as discussed in the following sec-
+tion. Also shown, in Fig. 11, is the launch of a single snare
+from the snare head, in proﬁle, as well as subsequent recon-
+tact; notice that the motion of the snare is slightly asymmet-
+ric about its center, even after a single bounce off the snare
+head.
+E. Piston model
+Simpliﬁed models of the cavity, such as, e.g., a single
+mode model,9 equivalent to that given here in Sec. II G,o ra
+two-mass model such as that presented by Rossing et al.,1 or
+indeed any model which includes only axisymmetric cavity
+modes, will not allow the transmission of energy between
+asymmetric modes for the two membranes. The motion of
+the snares will be far less randomized, even over very short
+time scales (indeed, the motion of each snare, in this case,
+will necessarily be symmetric about its midpoint!).
+FIG. 6. A region of the output spectrum, for a circular membrane, of radius
+R ¼ 0.15 m, and with wave speed c ¼ 95.63 m/s, illustrating a numerically
+split degenerate mode pair at approximately 1502 Hz. Exact modal frequen-
+cies are shown as grey lines.
+FIG. 7. Snapshots of the response of
+a coupled membrane system (with
+snares dis engaged) to an short impul-
+sive excitation, viewed from above,
+at times as indicated.
+922 J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 11 ===
+Compare, for example, the motion of a single snare in the
+case of a piston model as illustrated in Fig. 12, to that of the
+full 3D model, as in Fig. 11; the displacements for the two
+models do not match one another well. Although such sim-
+pliﬁed, or “lumped” cavity models may be useful in the con-
+text of drums without snares, in synthesis, they may be of
+doubtful utility. Sound examples produced using a simple
+one-mass, or piston model of the cavity are noticeably less
+realistic than those produced using a full 3D model, as the
+reader may verify—see Sec. IV F ; this is due partly to the
+lack of randomness in the snare contact, as well as the lack
+of cavity modes, both of which play a crucial role in deﬁning
+the timbre of the snare drum.
+F. Sound examples
+Various sound examples, illustrating typical snare ges-
+tures, are available on the author’s website, and as AIP Sup-
+plementary Material. Sound output is drawn, in stereo, from
+two locations 2 cm from the snare head, at symmetric loca-
+tions about the drum center. Also included, for the sake of
+comparison, are sound examples produced using a simpliﬁed
+one-mass model of the cavity.
+V . CONCLUDING REMARKS
+In this article, simulation of a complex multi-component
+instrument has been attempted, with the goal of producing
+synthetic sound—the main point here is that though compu-
+tationally intensive, time-stepping methods are an excellent
+match to such problems, and do not require any undue model
+simpliﬁcation (as, for example, in the case of the simpliﬁed
+piston model, which leads to a decrease in computational
+complexity, but for which for which sound synthesis results
+are very poor indeed).
+Although the main emphasis here is on synthesis, this
+work could see use in musical acoustics investigations; the
+analysis of the motion of snares in a 3D model, as compared
+with the more commonly seen piston model is revealing in
+the discrepancy (and perceptual differences in sound synthe-
+sis results are even more striking). It is also possible that this
+tool may be used in conjunction with experimental
+FIG. 8. Output spectrum of dis-
+placement drawn from a point on the
+snare membrane, due to an impul-
+sive strike on the batter head, for
+four different membrane mass den-
+sities. In increasingly dark shades of
+grey, the spectrum of the response
+for densities of 1, 2, 3 and 1000
+times the nominal densities of
+2690 kg/m
+3 and 2000 kg/m 3. Exact
+modal frequencies for the snare head
+and batter head, in isolation, are
+shown as dotted and solid vertical
+lines, respectively.
+FIG. 9. Snapshots of a vertical cross-section of the acoustic ﬁeld generated by a short impulsive excitation applied to the batter head, at times as ind icated.
+Snares are disengaged. The boundary @Vint is shown as a dark rectangle.
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 923
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 12 ===
+investigations into coupled mode vibration and acoustic radi-
+ation of such structures.
+On the other hand, there are many features of snare
+drums, and drums in general, which have not been adequately
+modeled here, or removed from consideration for the sake of
+brevity. The system for the acoustic space should be aug-
+mented by terms modeling viscous loss (as, for example, in
+the model provided in Morse
+27), which has an audible effect
+FIG. 10. Snapshots of the response
+of a coupled membrane system (with
+snares en gaged) to an short impul-
+sive excitation, viewed from below,
+at times as indicated.
+FIG. 11. Snapshots of the interaction between a single snare (in grey) and
+the snare head, in proﬁle (in black), at times as indicated.
+FIG. 12. Snapshots of the interaction between a single snare (in grey) and
+the snare head, in proﬁle (in black), at times as indicated, for a simpliﬁed
+piston model of the drum cavity.
+924 J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46
+=== PAGE 13 ===
+at high frequencies. Additional terms modeling stiffness, in-
+ternal losses, and simple nonlinearities have been indicated in
+Sec. II C, and should be included (in the case of loss, the pa-
+rameters r
+0 and r1 must be set via comparison with measure-
+ment) in any ﬁne-grained implementation used for
+experimental comparison. Also missing here is a full model
+of the shell surrounding the cavity (which may be important
+as a means of storing energy, if not a signiﬁcant source of
+acoustic radiation
+1), as well as a support structure. The exci-
+tation signal used here is designed for synthesis applications,
+and is a simple alternative to a full model of the stick/mem-
+brane interaction, as described in Sec. II E. It is useful for sin-
+gle strikes, but certain typical gestures, such as the drum roll,
+requiring a continuous forcing, are curious examples of an
+auto-oscillatory system
+28 in the world of percussion
+instruments.
+A more general technique highlighted here, in the case
+of the snare drum (and used previously 10 for the kettledrum)
+is that of embedding an object in a 3D computational space,
+so eliminating the need for a general consideration of radia-
+tion conditions (in general, simple approximations are only
+available in cases such as a single membrane in an inﬁnite
+plane bafﬂe). If the computational region is not too large,
+then computational expense is not extreme by today’s stand-
+ards. The technique could reasonably be applied for simula-
+tion of any acoustic musical instrument.
+ACKNOWLEDGMENTS
+Special thanks for the many interesting insights pro-
+vided by Federico Avanzini, from the University of Padova,
+during his visit to Edinburgh in November, 2009. The author
+is also grateful to Antoine Chaigne, for a discussion regard-
+ing the excitation mechanism.
+1T. Rossing, I. Bork, H. Zhao, and D. Fystrom, “Acoustics of snare drums,”
+J. Acoust. Soc. Am. 92, 84–94 (1992).
+2T. Rossing, “Acoustics of percussion instruments: Recent progress,”
+Acoust. Sci. & Tech. 22, 177–188 (2001).
+3L. Tronchin, “Modal analysis and intensity of acoustic radiation of the
+kettledrum,” J. Acoust. Soc. Am. 117, 926–933 (2005).
+4K. Legge and N. Fletcher, “Nonlinearity, chaos, and the sound of shallow
+gongs,” J. Acoust. Soc. Am .8 6, 2439–2443 (1989).
+5C. Touze´, O. Thomas, and A. Chaigne, “Asymmetric nonlinear forced
+vibrations of free-edge circular plates. Part I. Theory,” J. Sound Vib. 258,
+649–676 (2002).
+6J. O. Smith III, Physical Audio Signal Processing (DSPRelated.com, Stan-
+ford, CA, 2004).
+7J. Laird, “The physical modeling of drums using digital waveguides,”
+Ph.D. dissertation, University of York (2001).
+8S. van Duyne and J. O. Smith III, “A simpliﬁed approach to modelling
+dispersion caused by stiffness in strings and plates,” in Proc. Int.
+Comp. Music Conf. ,A˚ rhus, Denmark, (September 12–17, 1994), pp.
+407–410.
+9F. Avanzini and R. Marogna, “A modular physically based approach to
+the sound syn thesis of membrane percussion instruments,” IEEE Trans.
+Audio, Speech, Lang. Process. 18, 891–902 (2010).
+10L. Rhaouti, A. Chaigne, and P. Joly, “Time-domain modeling and numeri-
+cal simulation of a kettledrum,” J. Acoust. Soc. Am. 105, 3545–3562
+(1999).
+11See supplementary material at E-JASMAN-130-018291 for examples
+of sound synthesis using the algorithm described, for snare drum
+synthesis.
+12P. Morse and U. Ingard, Theoretical Acoustics (Princeton University Press,
+Princeton, New Jersey, 1968), p. 247.
+13J.-P. Berenger, “Three-dimensional perfectly matched layer for the
+absorption of electro magnetic waves,” J. Comp. Phys. 127, 363–379
+(1996).
+14F. Hu, “On absorbing boundary conditions for linearized Euler equations
+by a perfectly matched layer,” J. Comp. Phys. 129, 201–219 (1996).
+15B. Engquist and A. Majda, “Absorbing boundary conditions for the numer-
+ical evaluation of waves,” Math. Comput. 31, 629–651 (1977).
+16H. Berger, “A new approach to the analysis of large deﬂections of plates,”
+J. Appl. Math. 22, 465–472 (1955).
+17S. Bilbao, Numerical Sound Synthesis: Finite Difference Schemes and
+Simulation in Musical Acoustics (Wiley, Chichester, UK, 2009), p. 361.
+18C. Erkut, “Aspects in analysis and model-based sound synthesis of
+plucked string in struments,” Ph.D. dissertation, Helsinki University of
+Technology (2002).
+19T. Rossing, The Science of Percussion Instruments (World Scientiﬁc Pub-
+lishing Company, Singapore, 2000), p. 26.
+20L. Della Pietra and S. della Valle, “On the dynamic behaviour of axially
+excited helical springs,” Meccanica 17, 31–43.
+21A. Chaigne and A. Askenfelt, “Numerical simulations of struck strings.
+I. A physical model for a struck string using ﬁnite difference methods,”
+J. Acoust. Soc. Am. 95, 1112–1118 (1994).
+22K. van den Doel and D. Pai, “Modal synthesis for vibrating objects,” in
+Audio Anecdotes III, edited by K. Greenebaum (A. K. Peters, Natick, Mas-
+sachusetts, 2007).
+23S. Bilbao, Numerical Sound Synthesis: Finite Difference Schemes and
+Simulation in Musical Acoustics (Wiley, Chichester, UK, 2009),
+p. 354.
+24J. Strikwerda, Finite Difference Schemes and Partial Differential Equa-
+tions (Wadsworth and Brooks/Cole Advanced Books and Software, Paciﬁc
+Grove, CA, 1989), p. 47.
+25S. Bilbao, Numerical Sound Synthesis: Finite Difference Schemes and
+Simulation in Musical Acoustics (Wiley, Chichester, UK, 2009), p. 101.
+26M. Sosnick and W. Hsu, “Efﬁcient ﬁnite difference based synthesis using
+GPUs,” in Proc. Sound Music Comp. Conf., Barcelona, Spain (July 21–24,
+2010), paper 71.
+27P. Morse and U. Ingard, Theoretical Acoustics (Princeton University Press,
+Princeton, NJ, 1968), p. 270.
+28G. Weinreich, “Mechanical oscillations,” in Mechanics of Musical Instru-
+ments, edited by A. Hirschberg, J. Kergomard, and G. Weinreich,
+(Springer, New York, 1995), pp. 79–114.
+J. Acoust. Soc. Am., Vol. 131, No. 1, Pt. 2, January 2012 Stefan Bilbao: Time domain simulation of the snare drum 925
+ Redistribution subject to ASA license or copyright; see http://acousticalsociety.org/content/terms. Download to IP:  129.215.19.194 On: Thu, 06 Mar 2014 14:44:46

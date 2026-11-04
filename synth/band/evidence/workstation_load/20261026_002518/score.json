@@ -1,0 +1,4145 @@
+{
+  "format": "starcluster-score-2",
+  "engine_profile": "singer-v1",
+  "sample_rate": 48000,
+  "bpm": 120,
+  "duration_samples": 6000,
+  "events": [
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 40,
+      "velocity": 80,
+      "serial": 1
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 41,
+      "velocity": 80,
+      "serial": 2
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 42,
+      "velocity": 80,
+      "serial": 3
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 43,
+      "velocity": 80,
+      "serial": 4
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 44,
+      "velocity": 80,
+      "serial": 5
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 45,
+      "velocity": 80,
+      "serial": 6
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 46,
+      "velocity": 80,
+      "serial": 7
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 47,
+      "velocity": 80,
+      "serial": 8
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 48,
+      "velocity": 80,
+      "serial": 9
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 49,
+      "velocity": 80,
+      "serial": 10
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 50,
+      "velocity": 80,
+      "serial": 11
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 51,
+      "velocity": 80,
+      "serial": 12
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 52,
+      "velocity": 80,
+      "serial": 13
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 53,
+      "velocity": 80,
+      "serial": 14
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 54,
+      "velocity": 80,
+      "serial": 15
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 55,
+      "velocity": 80,
+      "serial": 16
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 56,
+      "velocity": 80,
+      "serial": 17
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 57,
+      "velocity": 80,
+      "serial": 18
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 58,
+      "velocity": 80,
+      "serial": 19
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 59,
+      "velocity": 80,
+      "serial": 20
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 60,
+      "velocity": 80,
+      "serial": 21
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 61,
+      "velocity": 80,
+      "serial": 22
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 62,
+      "velocity": 80,
+      "serial": 23
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 63,
+      "velocity": 80,
+      "serial": 24
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 64,
+      "velocity": 80,
+      "serial": 25
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 65,
+      "velocity": 80,
+      "serial": 26
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 66,
+      "velocity": 80,
+      "serial": 27
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 67,
+      "velocity": 80,
+      "serial": 28
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 68,
+      "velocity": 80,
+      "serial": 29
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 69,
+      "velocity": 80,
+      "serial": 30
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 70,
+      "velocity": 80,
+      "serial": 31
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 71,
+      "velocity": 80,
+      "serial": 32
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 40,
+      "velocity": 80,
+      "serial": 33
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 41,
+      "velocity": 80,
+      "serial": 34
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 42,
+      "velocity": 80,
+      "serial": 35
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 43,
+      "velocity": 80,
+      "serial": 36
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 44,
+      "velocity": 80,
+      "serial": 37
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 45,
+      "velocity": 80,
+      "serial": 38
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 46,
+      "velocity": 80,
+      "serial": 39
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 47,
+      "velocity": 80,
+      "serial": 40
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 48,
+      "velocity": 80,
+      "serial": 41
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 49,
+      "velocity": 80,
+      "serial": 42
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 50,
+      "velocity": 80,
+      "serial": 43
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 51,
+      "velocity": 80,
+      "serial": 44
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 52,
+      "velocity": 80,
+      "serial": 45
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 53,
+      "velocity": 80,
+      "serial": 46
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 54,
+      "velocity": 80,
+      "serial": 47
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 55,
+      "velocity": 80,
+      "serial": 48
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 56,
+      "velocity": 80,
+      "serial": 49
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 57,
+      "velocity": 80,
+      "serial": 50
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 58,
+      "velocity": 80,
+      "serial": 51
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 59,
+      "velocity": 80,
+      "serial": 52
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 60,
+      "velocity": 80,
+      "serial": 53
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 61,
+      "velocity": 80,
+      "serial": 54
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 62,
+      "velocity": 80,
+      "serial": 55
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 63,
+      "velocity": 80,
+      "serial": 56
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 64,
+      "velocity": 80,
+      "serial": 57
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 65,
+      "velocity": 80,
+      "serial": 58
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 66,
+      "velocity": 80,
+      "serial": 59
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 67,
+      "velocity": 80,
+      "serial": 60
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 68,
+      "velocity": 80,
+      "serial": 61
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 69,
+      "velocity": 80,
+      "serial": 62
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 70,
+      "velocity": 80,
+      "serial": 63
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 9,
+      "note": 71,
+      "velocity": 80,
+      "serial": 64
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 40,
+      "velocity": 80,
+      "serial": 65
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 41,
+      "velocity": 80,
+      "serial": 66
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 42,
+      "velocity": 80,
+      "serial": 67
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 43,
+      "velocity": 80,
+      "serial": 68
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 44,
+      "velocity": 80,
+      "serial": 69
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 45,
+      "velocity": 80,
+      "serial": 70
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 46,
+      "velocity": 80,
+      "serial": 71
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 47,
+      "velocity": 80,
+      "serial": 72
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 48,
+      "velocity": 80,
+      "serial": 73
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 49,
+      "velocity": 80,
+      "serial": 74
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 50,
+      "velocity": 80,
+      "serial": 75
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 51,
+      "velocity": 80,
+      "serial": 76
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 52,
+      "velocity": 80,
+      "serial": 77
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 53,
+      "velocity": 80,
+      "serial": 78
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 54,
+      "velocity": 80,
+      "serial": 79
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 55,
+      "velocity": 80,
+      "serial": 80
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 56,
+      "velocity": 80,
+      "serial": 81
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 57,
+      "velocity": 80,
+      "serial": 82
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 58,
+      "velocity": 80,
+      "serial": 83
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 59,
+      "velocity": 80,
+      "serial": 84
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 60,
+      "velocity": 80,
+      "serial": 85
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 61,
+      "velocity": 80,
+      "serial": 86
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 62,
+      "velocity": 80,
+      "serial": 87
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 63,
+      "velocity": 80,
+      "serial": 88
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 64,
+      "velocity": 80,
+      "serial": 89
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 65,
+      "velocity": 80,
+      "serial": 90
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 66,
+      "velocity": 80,
+      "serial": 91
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 67,
+      "velocity": 80,
+      "serial": 92
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 68,
+      "velocity": 80,
+      "serial": 93
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 69,
+      "velocity": 80,
+      "serial": 94
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 70,
+      "velocity": 80,
+      "serial": 95
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 10,
+      "note": 71,
+      "velocity": 80,
+      "serial": 96
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 40,
+      "velocity": 80,
+      "serial": 97
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 41,
+      "velocity": 80,
+      "serial": 98
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 42,
+      "velocity": 80,
+      "serial": 99
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 43,
+      "velocity": 80,
+      "serial": 100
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 44,
+      "velocity": 80,
+      "serial": 101
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 45,
+      "velocity": 80,
+      "serial": 102
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 46,
+      "velocity": 80,
+      "serial": 103
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 47,
+      "velocity": 80,
+      "serial": 104
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 48,
+      "velocity": 80,
+      "serial": 105
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 49,
+      "velocity": 80,
+      "serial": 106
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 50,
+      "velocity": 80,
+      "serial": 107
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 51,
+      "velocity": 80,
+      "serial": 108
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 52,
+      "velocity": 80,
+      "serial": 109
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 53,
+      "velocity": 80,
+      "serial": 110
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 54,
+      "velocity": 80,
+      "serial": 111
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 55,
+      "velocity": 80,
+      "serial": 112
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 56,
+      "velocity": 80,
+      "serial": 113
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 57,
+      "velocity": 80,
+      "serial": 114
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 58,
+      "velocity": 80,
+      "serial": 115
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 59,
+      "velocity": 80,
+      "serial": 116
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 60,
+      "velocity": 80,
+      "serial": 117
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 61,
+      "velocity": 80,
+      "serial": 118
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 62,
+      "velocity": 80,
+      "serial": 119
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 63,
+      "velocity": 80,
+      "serial": 120
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 64,
+      "velocity": 80,
+      "serial": 121
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 65,
+      "velocity": 80,
+      "serial": 122
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 66,
+      "velocity": 80,
+      "serial": 123
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 67,
+      "velocity": 80,
+      "serial": 124
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 68,
+      "velocity": 80,
+      "serial": 125
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 69,
+      "velocity": 80,
+      "serial": 126
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 70,
+      "velocity": 80,
+      "serial": 127
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 11,
+      "note": 71,
+      "velocity": 80,
+      "serial": 128
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 40,
+      "velocity": 80,
+      "serial": 129
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 41,
+      "velocity": 80,
+      "serial": 130
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 42,
+      "velocity": 80,
+      "serial": 131
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 43,
+      "velocity": 80,
+      "serial": 132
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 44,
+      "velocity": 80,
+      "serial": 133
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 45,
+      "velocity": 80,
+      "serial": 134
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 46,
+      "velocity": 80,
+      "serial": 135
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 47,
+      "velocity": 80,
+      "serial": 136
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 48,
+      "velocity": 80,
+      "serial": 137
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 49,
+      "velocity": 80,
+      "serial": 138
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 50,
+      "velocity": 80,
+      "serial": 139
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 51,
+      "velocity": 80,
+      "serial": 140
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 52,
+      "velocity": 80,
+      "serial": 141
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 53,
+      "velocity": 80,
+      "serial": 142
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 54,
+      "velocity": 80,
+      "serial": 143
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 55,
+      "velocity": 80,
+      "serial": 144
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 56,
+      "velocity": 80,
+      "serial": 145
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 57,
+      "velocity": 80,
+      "serial": 146
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 58,
+      "velocity": 80,
+      "serial": 147
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 59,
+      "velocity": 80,
+      "serial": 148
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 60,
+      "velocity": 80,
+      "serial": 149
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 61,
+      "velocity": 80,
+      "serial": 150
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 62,
+      "velocity": 80,
+      "serial": 151
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 63,
+      "velocity": 80,
+      "serial": 152
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 64,
+      "velocity": 80,
+      "serial": 153
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 65,
+      "velocity": 80,
+      "serial": 154
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 66,
+      "velocity": 80,
+      "serial": 155
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 67,
+      "velocity": 80,
+      "serial": 156
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 68,
+      "velocity": 80,
+      "serial": 157
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 69,
+      "velocity": 80,
+      "serial": 158
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 70,
+      "velocity": 80,
+      "serial": 159
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 12,
+      "note": 71,
+      "velocity": 80,
+      "serial": 160
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 40,
+      "velocity": 80,
+      "serial": 161
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 41,
+      "velocity": 80,
+      "serial": 162
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 42,
+      "velocity": 80,
+      "serial": 163
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 43,
+      "velocity": 80,
+      "serial": 164
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 44,
+      "velocity": 80,
+      "serial": 165
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 45,
+      "velocity": 80,
+      "serial": 166
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 46,
+      "velocity": 80,
+      "serial": 167
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 47,
+      "velocity": 80,
+      "serial": 168
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 48,
+      "velocity": 80,
+      "serial": 169
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 49,
+      "velocity": 80,
+      "serial": 170
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 50,
+      "velocity": 80,
+      "serial": 171
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 51,
+      "velocity": 80,
+      "serial": 172
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 52,
+      "velocity": 80,
+      "serial": 173
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 53,
+      "velocity": 80,
+      "serial": 174
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 54,
+      "velocity": 80,
+      "serial": 175
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 55,
+      "velocity": 80,
+      "serial": 176
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 56,
+      "velocity": 80,
+      "serial": 177
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 57,
+      "velocity": 80,
+      "serial": 178
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 58,
+      "velocity": 80,
+      "serial": 179
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 59,
+      "velocity": 80,
+      "serial": 180
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 60,
+      "velocity": 80,
+      "serial": 181
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 61,
+      "velocity": 80,
+      "serial": 182
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 62,
+      "velocity": 80,
+      "serial": 183
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 63,
+      "velocity": 80,
+      "serial": 184
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 64,
+      "velocity": 80,
+      "serial": 185
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 65,
+      "velocity": 80,
+      "serial": 186
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 66,
+      "velocity": 80,
+      "serial": 187
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 67,
+      "velocity": 80,
+      "serial": 188
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 68,
+      "velocity": 80,
+      "serial": 189
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 69,
+      "velocity": 80,
+      "serial": 190
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 70,
+      "velocity": 80,
+      "serial": 191
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 13,
+      "note": 71,
+      "velocity": 80,
+      "serial": 192
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 40,
+      "velocity": 80,
+      "serial": 193
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 41,
+      "velocity": 80,
+      "serial": 194
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 42,
+      "velocity": 80,
+      "serial": 195
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 43,
+      "velocity": 80,
+      "serial": 196
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 44,
+      "velocity": 80,
+      "serial": 197
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 45,
+      "velocity": 80,
+      "serial": 198
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 46,
+      "velocity": 80,
+      "serial": 199
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 47,
+      "velocity": 80,
+      "serial": 200
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 48,
+      "velocity": 80,
+      "serial": 201
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 49,
+      "velocity": 80,
+      "serial": 202
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 50,
+      "velocity": 80,
+      "serial": 203
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 51,
+      "velocity": 80,
+      "serial": 204
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 52,
+      "velocity": 80,
+      "serial": 205
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 53,
+      "velocity": 80,
+      "serial": 206
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 54,
+      "velocity": 80,
+      "serial": 207
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 55,
+      "velocity": 80,
+      "serial": 208
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 56,
+      "velocity": 80,
+      "serial": 209
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 57,
+      "velocity": 80,
+      "serial": 210
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 58,
+      "velocity": 80,
+      "serial": 211
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 59,
+      "velocity": 80,
+      "serial": 212
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 60,
+      "velocity": 80,
+      "serial": 213
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 61,
+      "velocity": 80,
+      "serial": 214
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 62,
+      "velocity": 80,
+      "serial": 215
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 63,
+      "velocity": 80,
+      "serial": 216
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 64,
+      "velocity": 80,
+      "serial": 217
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 65,
+      "velocity": 80,
+      "serial": 218
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 66,
+      "velocity": 80,
+      "serial": 219
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 67,
+      "velocity": 80,
+      "serial": 220
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 68,
+      "velocity": 80,
+      "serial": 221
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 69,
+      "velocity": 80,
+      "serial": 222
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 70,
+      "velocity": 80,
+      "serial": 223
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 14,
+      "note": 71,
+      "velocity": 80,
+      "serial": 224
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 40,
+      "velocity": 80,
+      "serial": 225
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 41,
+      "velocity": 80,
+      "serial": 226
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 42,
+      "velocity": 80,
+      "serial": 227
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 43,
+      "velocity": 80,
+      "serial": 228
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 44,
+      "velocity": 80,
+      "serial": 229
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 45,
+      "velocity": 80,
+      "serial": 230
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 46,
+      "velocity": 80,
+      "serial": 231
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 47,
+      "velocity": 80,
+      "serial": 232
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 48,
+      "velocity": 80,
+      "serial": 233
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 49,
+      "velocity": 80,
+      "serial": 234
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 50,
+      "velocity": 80,
+      "serial": 235
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 51,
+      "velocity": 80,
+      "serial": 236
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 52,
+      "velocity": 80,
+      "serial": 237
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 53,
+      "velocity": 80,
+      "serial": 238
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 54,
+      "velocity": 80,
+      "serial": 239
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 55,
+      "velocity": 80,
+      "serial": 240
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 56,
+      "velocity": 80,
+      "serial": 241
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 57,
+      "velocity": 80,
+      "serial": 242
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 58,
+      "velocity": 80,
+      "serial": 243
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 59,
+      "velocity": 80,
+      "serial": 244
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 60,
+      "velocity": 80,
+      "serial": 245
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 61,
+      "velocity": 80,
+      "serial": 246
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 62,
+      "velocity": 80,
+      "serial": 247
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 63,
+      "velocity": 80,
+      "serial": 248
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 64,
+      "velocity": 80,
+      "serial": 249
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 65,
+      "velocity": 80,
+      "serial": 250
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 66,
+      "velocity": 80,
+      "serial": 251
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 67,
+      "velocity": 80,
+      "serial": 252
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 68,
+      "velocity": 80,
+      "serial": 253
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 69,
+      "velocity": 80,
+      "serial": 254
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 70,
+      "velocity": 80,
+      "serial": 255
+    },
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 7,
+      "note": 71,
+      "velocity": 80,
+      "serial": 256
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 40,
+      "velocity": 0,
+      "serial": 1
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 41,
+      "velocity": 0,
+      "serial": 2
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 42,
+      "velocity": 0,
+      "serial": 3
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 43,
+      "velocity": 0,
+      "serial": 4
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 44,
+      "velocity": 0,
+      "serial": 5
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 45,
+      "velocity": 0,
+      "serial": 6
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 46,
+      "velocity": 0,
+      "serial": 7
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 47,
+      "velocity": 0,
+      "serial": 8
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 48,
+      "velocity": 0,
+      "serial": 9
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 49,
+      "velocity": 0,
+      "serial": 10
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 50,
+      "velocity": 0,
+      "serial": 11
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 51,
+      "velocity": 0,
+      "serial": 12
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 52,
+      "velocity": 0,
+      "serial": 13
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 53,
+      "velocity": 0,
+      "serial": 14
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 54,
+      "velocity": 0,
+      "serial": 15
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 55,
+      "velocity": 0,
+      "serial": 16
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 56,
+      "velocity": 0,
+      "serial": 17
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 57,
+      "velocity": 0,
+      "serial": 18
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 58,
+      "velocity": 0,
+      "serial": 19
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 59,
+      "velocity": 0,
+      "serial": 20
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 60,
+      "velocity": 0,
+      "serial": 21
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 61,
+      "velocity": 0,
+      "serial": 22
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 62,
+      "velocity": 0,
+      "serial": 23
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 63,
+      "velocity": 0,
+      "serial": 24
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 64,
+      "velocity": 0,
+      "serial": 25
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 65,
+      "velocity": 0,
+      "serial": 26
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 66,
+      "velocity": 0,
+      "serial": 27
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 67,
+      "velocity": 0,
+      "serial": 28
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 68,
+      "velocity": 0,
+      "serial": 29
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 69,
+      "velocity": 0,
+      "serial": 30
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 70,
+      "velocity": 0,
+      "serial": 31
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 8,
+      "note": 71,
+      "velocity": 0,
+      "serial": 32
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 40,
+      "velocity": 0,
+      "serial": 33
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 41,
+      "velocity": 0,
+      "serial": 34
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 42,
+      "velocity": 0,
+      "serial": 35
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 43,
+      "velocity": 0,
+      "serial": 36
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 44,
+      "velocity": 0,
+      "serial": 37
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 45,
+      "velocity": 0,
+      "serial": 38
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 46,
+      "velocity": 0,
+      "serial": 39
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 47,
+      "velocity": 0,
+      "serial": 40
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 48,
+      "velocity": 0,
+      "serial": 41
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 49,
+      "velocity": 0,
+      "serial": 42
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 50,
+      "velocity": 0,
+      "serial": 43
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 51,
+      "velocity": 0,
+      "serial": 44
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 52,
+      "velocity": 0,
+      "serial": 45
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 53,
+      "velocity": 0,
+      "serial": 46
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 54,
+      "velocity": 0,
+      "serial": 47
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 55,
+      "velocity": 0,
+      "serial": 48
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 56,
+      "velocity": 0,
+      "serial": 49
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 57,
+      "velocity": 0,
+      "serial": 50
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 58,
+      "velocity": 0,
+      "serial": 51
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 59,
+      "velocity": 0,
+      "serial": 52
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 60,
+      "velocity": 0,
+      "serial": 53
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 61,
+      "velocity": 0,
+      "serial": 54
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 62,
+      "velocity": 0,
+      "serial": 55
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 63,
+      "velocity": 0,
+      "serial": 56
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 64,
+      "velocity": 0,
+      "serial": 57
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 65,
+      "velocity": 0,
+      "serial": 58
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 66,
+      "velocity": 0,
+      "serial": 59
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 67,
+      "velocity": 0,
+      "serial": 60
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 68,
+      "velocity": 0,
+      "serial": 61
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 69,
+      "velocity": 0,
+      "serial": 62
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 70,
+      "velocity": 0,
+      "serial": 63
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 9,
+      "note": 71,
+      "velocity": 0,
+      "serial": 64
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 40,
+      "velocity": 0,
+      "serial": 65
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 41,
+      "velocity": 0,
+      "serial": 66
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 42,
+      "velocity": 0,
+      "serial": 67
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 43,
+      "velocity": 0,
+      "serial": 68
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 44,
+      "velocity": 0,
+      "serial": 69
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 45,
+      "velocity": 0,
+      "serial": 70
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 46,
+      "velocity": 0,
+      "serial": 71
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 47,
+      "velocity": 0,
+      "serial": 72
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 48,
+      "velocity": 0,
+      "serial": 73
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 49,
+      "velocity": 0,
+      "serial": 74
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 50,
+      "velocity": 0,
+      "serial": 75
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 51,
+      "velocity": 0,
+      "serial": 76
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 52,
+      "velocity": 0,
+      "serial": 77
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 53,
+      "velocity": 0,
+      "serial": 78
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 54,
+      "velocity": 0,
+      "serial": 79
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 55,
+      "velocity": 0,
+      "serial": 80
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 56,
+      "velocity": 0,
+      "serial": 81
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 57,
+      "velocity": 0,
+      "serial": 82
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 58,
+      "velocity": 0,
+      "serial": 83
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 59,
+      "velocity": 0,
+      "serial": 84
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 60,
+      "velocity": 0,
+      "serial": 85
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 61,
+      "velocity": 0,
+      "serial": 86
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 62,
+      "velocity": 0,
+      "serial": 87
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 63,
+      "velocity": 0,
+      "serial": 88
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 64,
+      "velocity": 0,
+      "serial": 89
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 65,
+      "velocity": 0,
+      "serial": 90
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 66,
+      "velocity": 0,
+      "serial": 91
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 67,
+      "velocity": 0,
+      "serial": 92
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 68,
+      "velocity": 0,
+      "serial": 93
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 69,
+      "velocity": 0,
+      "serial": 94
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 70,
+      "velocity": 0,
+      "serial": 95
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 10,
+      "note": 71,
+      "velocity": 0,
+      "serial": 96
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 40,
+      "velocity": 0,
+      "serial": 97
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 41,
+      "velocity": 0,
+      "serial": 98
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 42,
+      "velocity": 0,
+      "serial": 99
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 43,
+      "velocity": 0,
+      "serial": 100
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 44,
+      "velocity": 0,
+      "serial": 101
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 45,
+      "velocity": 0,
+      "serial": 102
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 46,
+      "velocity": 0,
+      "serial": 103
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 47,
+      "velocity": 0,
+      "serial": 104
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 48,
+      "velocity": 0,
+      "serial": 105
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 49,
+      "velocity": 0,
+      "serial": 106
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 50,
+      "velocity": 0,
+      "serial": 107
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 51,
+      "velocity": 0,
+      "serial": 108
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 52,
+      "velocity": 0,
+      "serial": 109
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 53,
+      "velocity": 0,
+      "serial": 110
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 54,
+      "velocity": 0,
+      "serial": 111
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 55,
+      "velocity": 0,
+      "serial": 112
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 56,
+      "velocity": 0,
+      "serial": 113
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 57,
+      "velocity": 0,
+      "serial": 114
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 58,
+      "velocity": 0,
+      "serial": 115
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 59,
+      "velocity": 0,
+      "serial": 116
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 60,
+      "velocity": 0,
+      "serial": 117
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 61,
+      "velocity": 0,
+      "serial": 118
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 62,
+      "velocity": 0,
+      "serial": 119
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 63,
+      "velocity": 0,
+      "serial": 120
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 64,
+      "velocity": 0,
+      "serial": 121
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 65,
+      "velocity": 0,
+      "serial": 122
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 66,
+      "velocity": 0,
+      "serial": 123
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 67,
+      "velocity": 0,
+      "serial": 124
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 68,
+      "velocity": 0,
+      "serial": 125
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 69,
+      "velocity": 0,
+      "serial": 126
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 70,
+      "velocity": 0,
+      "serial": 127
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 11,
+      "note": 71,
+      "velocity": 0,
+      "serial": 128
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 40,
+      "velocity": 0,
+      "serial": 129
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 41,
+      "velocity": 0,
+      "serial": 130
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 42,
+      "velocity": 0,
+      "serial": 131
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 43,
+      "velocity": 0,
+      "serial": 132
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 44,
+      "velocity": 0,
+      "serial": 133
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 45,
+      "velocity": 0,
+      "serial": 134
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 46,
+      "velocity": 0,
+      "serial": 135
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 47,
+      "velocity": 0,
+      "serial": 136
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 48,
+      "velocity": 0,
+      "serial": 137
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 49,
+      "velocity": 0,
+      "serial": 138
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 50,
+      "velocity": 0,
+      "serial": 139
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 51,
+      "velocity": 0,
+      "serial": 140
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 52,
+      "velocity": 0,
+      "serial": 141
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 53,
+      "velocity": 0,
+      "serial": 142
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 54,
+      "velocity": 0,
+      "serial": 143
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 55,
+      "velocity": 0,
+      "serial": 144
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 56,
+      "velocity": 0,
+      "serial": 145
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 57,
+      "velocity": 0,
+      "serial": 146
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 58,
+      "velocity": 0,
+      "serial": 147
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 59,
+      "velocity": 0,
+      "serial": 148
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 60,
+      "velocity": 0,
+      "serial": 149
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 61,
+      "velocity": 0,
+      "serial": 150
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 62,
+      "velocity": 0,
+      "serial": 151
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 63,
+      "velocity": 0,
+      "serial": 152
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 64,
+      "velocity": 0,
+      "serial": 153
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 65,
+      "velocity": 0,
+      "serial": 154
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 66,
+      "velocity": 0,
+      "serial": 155
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 67,
+      "velocity": 0,
+      "serial": 156
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 68,
+      "velocity": 0,
+      "serial": 157
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 69,
+      "velocity": 0,
+      "serial": 158
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 70,
+      "velocity": 0,
+      "serial": 159
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 12,
+      "note": 71,
+      "velocity": 0,
+      "serial": 160
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 40,
+      "velocity": 0,
+      "serial": 161
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 41,
+      "velocity": 0,
+      "serial": 162
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 42,
+      "velocity": 0,
+      "serial": 163
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 43,
+      "velocity": 0,
+      "serial": 164
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 44,
+      "velocity": 0,
+      "serial": 165
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 45,
+      "velocity": 0,
+      "serial": 166
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 46,
+      "velocity": 0,
+      "serial": 167
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 47,
+      "velocity": 0,
+      "serial": 168
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 48,
+      "velocity": 0,
+      "serial": 169
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 49,
+      "velocity": 0,
+      "serial": 170
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 50,
+      "velocity": 0,
+      "serial": 171
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 51,
+      "velocity": 0,
+      "serial": 172
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 52,
+      "velocity": 0,
+      "serial": 173
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 53,
+      "velocity": 0,
+      "serial": 174
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 54,
+      "velocity": 0,
+      "serial": 175
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 55,
+      "velocity": 0,
+      "serial": 176
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 56,
+      "velocity": 0,
+      "serial": 177
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 57,
+      "velocity": 0,
+      "serial": 178
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 58,
+      "velocity": 0,
+      "serial": 179
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 59,
+      "velocity": 0,
+      "serial": 180
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 60,
+      "velocity": 0,
+      "serial": 181
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 61,
+      "velocity": 0,
+      "serial": 182
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 62,
+      "velocity": 0,
+      "serial": 183
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 63,
+      "velocity": 0,
+      "serial": 184
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 64,
+      "velocity": 0,
+      "serial": 185
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 65,
+      "velocity": 0,
+      "serial": 186
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 66,
+      "velocity": 0,
+      "serial": 187
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 67,
+      "velocity": 0,
+      "serial": 188
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 68,
+      "velocity": 0,
+      "serial": 189
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 69,
+      "velocity": 0,
+      "serial": 190
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 70,
+      "velocity": 0,
+      "serial": 191
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 13,
+      "note": 71,
+      "velocity": 0,
+      "serial": 192
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 40,
+      "velocity": 0,
+      "serial": 193
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 41,
+      "velocity": 0,
+      "serial": 194
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 42,
+      "velocity": 0,
+      "serial": 195
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 43,
+      "velocity": 0,
+      "serial": 196
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 44,
+      "velocity": 0,
+      "serial": 197
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 45,
+      "velocity": 0,
+      "serial": 198
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 46,
+      "velocity": 0,
+      "serial": 199
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 47,
+      "velocity": 0,
+      "serial": 200
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 48,
+      "velocity": 0,
+      "serial": 201
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 49,
+      "velocity": 0,
+      "serial": 202
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 50,
+      "velocity": 0,
+      "serial": 203
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 51,
+      "velocity": 0,
+      "serial": 204
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 52,
+      "velocity": 0,
+      "serial": 205
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 53,
+      "velocity": 0,
+      "serial": 206
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 54,
+      "velocity": 0,
+      "serial": 207
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 55,
+      "velocity": 0,
+      "serial": 208
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 56,
+      "velocity": 0,
+      "serial": 209
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 57,
+      "velocity": 0,
+      "serial": 210
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 58,
+      "velocity": 0,
+      "serial": 211
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 59,
+      "velocity": 0,
+      "serial": 212
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 60,
+      "velocity": 0,
+      "serial": 213
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 61,
+      "velocity": 0,
+      "serial": 214
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 62,
+      "velocity": 0,
+      "serial": 215
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 63,
+      "velocity": 0,
+      "serial": 216
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 64,
+      "velocity": 0,
+      "serial": 217
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 65,
+      "velocity": 0,
+      "serial": 218
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 66,
+      "velocity": 0,
+      "serial": 219
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 67,
+      "velocity": 0,
+      "serial": 220
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 68,
+      "velocity": 0,
+      "serial": 221
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 69,
+      "velocity": 0,
+      "serial": 222
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 70,
+      "velocity": 0,
+      "serial": 223
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 14,
+      "note": 71,
+      "velocity": 0,
+      "serial": 224
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 40,
+      "velocity": 0,
+      "serial": 225
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 41,
+      "velocity": 0,
+      "serial": 226
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 42,
+      "velocity": 0,
+      "serial": 227
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 43,
+      "velocity": 0,
+      "serial": 228
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 44,
+      "velocity": 0,
+      "serial": 229
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 45,
+      "velocity": 0,
+      "serial": 230
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 46,
+      "velocity": 0,
+      "serial": 231
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 47,
+      "velocity": 0,
+      "serial": 232
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 48,
+      "velocity": 0,
+      "serial": 233
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 49,
+      "velocity": 0,
+      "serial": 234
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 50,
+      "velocity": 0,
+      "serial": 235
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 51,
+      "velocity": 0,
+      "serial": 236
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 52,
+      "velocity": 0,
+      "serial": 237
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 53,
+      "velocity": 0,
+      "serial": 238
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 54,
+      "velocity": 0,
+      "serial": 239
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 55,
+      "velocity": 0,
+      "serial": 240
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 56,
+      "velocity": 0,
+      "serial": 241
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 57,
+      "velocity": 0,
+      "serial": 242
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 58,
+      "velocity": 0,
+      "serial": 243
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 59,
+      "velocity": 0,
+      "serial": 244
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 60,
+      "velocity": 0,
+      "serial": 245
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 61,
+      "velocity": 0,
+      "serial": 246
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 62,
+      "velocity": 0,
+      "serial": 247
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 63,
+      "velocity": 0,
+      "serial": 248
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 64,
+      "velocity": 0,
+      "serial": 249
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 65,
+      "velocity": 0,
+      "serial": 250
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 66,
+      "velocity": 0,
+      "serial": 251
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 67,
+      "velocity": 0,
+      "serial": 252
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 68,
+      "velocity": 0,
+      "serial": 253
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 69,
+      "velocity": 0,
+      "serial": 254
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 70,
+      "velocity": 0,
+      "serial": 255
+    },
+    {
+      "sample": 5000,
+      "kind": 1,
+      "part": 7,
+      "note": 71,
+      "velocity": 0,
+      "serial": 256
+    }
+  ],
+  "performance": {
+    "master": 4,
+    "wet": 24,
+    "tempo": 120,
+    "collaboration": false,
+    "patches": {
+      "8": {
+        "6": 16383,
+        "7": 0
+      },
+      "9": {
+        "6": 16383,
+        "7": 0
+      },
+      "10": {
+        "6": 16383,
+        "7": 0
+      },
+      "11": {
+        "6": 16383,
+        "7": 0
+      },
+      "12": {
+        "6": 16383,
+        "7": 0
+      },
+      "13": {
+        "6": 16383,
+        "7": 0
+      },
+      "14": {
+        "6": 16383,
+        "7": 0
+      },
+      "7": {
+        "6": 16383,
+        "7": 0
+      }
+    }
+  }
+}

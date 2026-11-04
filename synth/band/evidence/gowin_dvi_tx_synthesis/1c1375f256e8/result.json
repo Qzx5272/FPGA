@@ -1,0 +1,14 @@
+{
+  "status": "passed_synthesis_only",
+  "build": "D:\\StarclusterBuilds\\gowin_dvi_tx_syn_1c1375f256e8",
+  "source_hashes": {
+    "dvi_symbols.v": "2e5fc6b9827a341e25b44af61463e7632bc7cd40791d797c2df2d208e718eb93",
+    "gowin_dvi_tx.v": "d10232ca3fdb6ed03ee63dc4b74b38b432749d4c576fc686aff1c296e0dbd1c5",
+    "gowin_video_clock.v": "9a4636932e77a4ccb38951684d901288dae3e69cf6a91fdd598158060924ecd7",
+    "starcluster_tmds_encoder.v": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec"
+  },
+  "scope": "Standalone DVI video-only TMDS encoder/OSER10/ELVDS synthesis;no PLL,fulltop,PnR,HDMI audio or physical acceptance",
+  "started": "2026-10-26T21:46:56.854702",
+  "returncode": 0,
+  "finished": "2026-10-26T21:47:01.388584"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "testbench_mismatch_identified",
+  "cause": "Injected bar_tick was applied only to DUT, not the reference core. Command ready differed 0/1 at1920780000ps; audio,voices,cycles,rejection,error counters matched at failure.",
+  "correction": "Apply/release injected bar tick to both compared cores; keep equality assertions unchanged",
+  "hardware_change": false
+}

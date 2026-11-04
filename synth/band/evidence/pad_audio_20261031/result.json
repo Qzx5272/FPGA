@@ -1,0 +1,21 @@
+{
+  "firmware": "c3-pad-phone-v7.1-pad-audio",
+  "firmware_sha256": "059eef50305901fb5df7647eb591bea11325cd7327756c3b73397ea9ad694a47",
+  "flash_verified": true,
+  "source": 2,
+  "part": 8,
+  "instrument": "plucked string",
+  "mapping": "MIDI 0..47 -> 60+(note%24); 48..127 unchanged",
+  "velocity": "original 1..127",
+  "phone_audio_user_confirmed": true,
+  "pad_audio_user_confirmed": false,
+  "tests": "host C++ state machine passed",
+  "fpga_flash_written": false,
+  "fpga_owner_verified": {
+    "source": 2,
+    "part": 8,
+    "epoch": 2
+  },
+  "v7_user_result": "no audible sound",
+  "v7_1_observation": "MIDI 10 velocity54 mapped to70; note-on/off sent; FPGA voices1 then0"
+}

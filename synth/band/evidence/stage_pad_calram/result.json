@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Stage-only RTL calibration/event simulation; no board or timing acceptance",
+  "sources": {
+    "experimental\\stage\\stage_pad_frontend.sv": "fa7ec7b12a9b6c3c2f0d23f6baac67b6768206421bcde07078c8210caf477a9d",
+    "tools\\test_stage_pad.py": "ed94800eb134c3d13287b20ba0441bf3cd3ced6212576ca8bfe5ee36e80c6b52",
+    "tests\\tb_pads.v": "1a100bea5db8ce45321822224038eb8b42af0159bba29f22f8de099524d7f032",
+    "tests\\tb_stage_pad_priority.sv": "0f99fa5e3a835dde282e1010ef030b31f4edafa153bd405532e7c2b6f8fe2798"
+  },
+  "log": "PASS pad frontend: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad\\tb.v:53: $finish called at 74940000 (1ps)\nPASS2048 complete64-pad priority states:old linear reference,all single-bit positions,release-before-on\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_stage_pad_priority.sv:31: $finish called at 41001000 (1ps)\n"
+}

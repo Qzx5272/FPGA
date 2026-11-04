@@ -1,0 +1,178 @@
+{
+  "updated": "2026-10-26T11:03:09.493804",
+  "goal": "active;完整目标未完成",
+  "goal_started_local": "2026-10-22T19:42:46+08:00",
+  "final_accepted": false,
+  "authoritative_acceptance": "FINAL_READINESS.json",
+  "production_release": {
+    "selector": "CURRENT_RELEASE.json",
+    "release": "band_57c8f7b5b006",
+    "scope": "板载PT8211基础版；既有板端数字证据，不是最新融合DVI或模拟音质验收"
+  },
+  "current_candidate": {
+    "export": "output/final_workstation_20261022/offline_workstation_dvi_domains_confluence",
+    "source_snapshot": "D:/StarclusterBuilds/combined_workstation_syn_6d54c8c2b79f",
+    "profile": "workstation-i2s-dvi-v1",
+    "physical_programming_allowed": false,
+    "scope": "外部24.576MHz I2S+本地ADC/脚踏+歌手/声码器+FFT/DVI；未知外设引脚未填写"
+  },
+  "current_candidate_evidence": {
+    "full_chain": {
+      "path": "evidence/workstation_dvi/20261026_073747/result.json",
+      "sha256": "0f60d0d0d3b5d6df59238f77b8e5fcd52d3d72c5a2de0ee76fafbc80c44bf315",
+      "status": "passed",
+      "scope": "Actual exported band/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. No fullsong/full-load/PnR/physical claim."
+    },
+    "synthesis": {
+      "path": "evidence/combined_workstation_synthesis/6d54c8c2b79f/result.json",
+      "sha256": "042ae381b401855190552757a80942ee7b6edbe1689662d08ab56202b13bfb50",
+      "status": "passed_synthesis_only",
+      "scope": "Actual exported I2S/watchdog/band/ADC/pedal/mic/singer/HannFFT/frozen-display top synthesis only;no timing or physical acceptance"
+    },
+    "small_internal_timing": {
+      "path": "evidence/dvi_output_timing/84a5d66df9f9/result.json",
+      "sha256": "f98658f848beb14c5a7c2a2f6f5c77542e88bc4b7c6c2263917642f4d4daaaf9",
+      "status": "passed_internal_timing_only",
+      "scope": "Small clocked DVI boundary,officialHDMI0 pins and3 explicit related clocks;exception only on2 asynchronous reset-synchronizer CLEAR pins,not data/output paths. No fullband,external RGB input timing,physical display/jitter or programming acceptance."
+    },
+    "full_internal_timing": {
+      "path": "evidence/combined_workstation_timing/be1fe1a74259/result.json",
+      "sha256": "6b09c8cefbd3a73bd4aae1cc59a8d6c2628e22c03dfb35478829a1a70ebd01f1",
+      "status": "failed",
+      "scope": "216unrouted nets;nofinaltiming. Not accepted."
+    }
+  },
+  "current_synthesis_counts": {
+    "logic": 68607,
+    "ff": 39020,
+    "ram_primitives": 173,
+    "scope": "综合原语，不能当作布局布线物理资源"
+  },
+  "prior_serialregs_evidence": {
+    "scope": "以下是无DVI的serialregs融合版本，不能替代当前DVI完整整曲/满载/时序验收",
+    "internal_timing": {
+      "path": "evidence/combined_workstation_timing/006d0f90662f/result.json",
+      "sha256": "7cca34c5999c075e804e35c0996068799d7793c1d38d377eda492d6a7f770b2e",
+      "status": "passed_internal_timing_only",
+      "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance."
+    },
+    "song98s": {
+      "path": "evidence/workstation_render/bf1017bd575c_4704000frames.json",
+      "sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "song_metrics": {
+      "path": "evidence/workstation_render/serialregs_98s_metrics.json",
+      "sha256": "9ce7ca566dc9e25e9a6e54fe2912c2f59a352b3932e8ef45c66ee2b62880bf97",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "load60s": {
+      "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+      "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "load_metrics": {
+      "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+      "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+      "status": "passed",
+      "scope": "Raw PCM metrics of current serialregs60s sustained256-slot simulation;no microphone,DVI/physical or independent-slot audibility claim."
+    }
+  },
+  "host_evidence": {
+    "path": "evidence/host_tests.json",
+    "sha256": "7b3467191e94383d328020d21af6e9e3c45e73ff343a5146105de8264af411a8",
+    "status": "passed",
+    "scope": "Hosttests,including new onboardPT8211 DVI export;notphysical acceptance"
+  },
+  "sessions": {
+    "pt8211_onboard_pnr": 76203
+  },
+  "failed_predecessors": [
+    "evidence/combined_workstation_timing/1a8aa927cffc/result.json",
+    "evidence/combined_workstation_timing/1a8aa927cffc/negative_path_audit.json",
+    "evidence/dvi_output_timing/fa558983b238/result.json",
+    "evidence/combined_workstation_timing/be1fe1a74259/result.json"
+  ],
+  "stopped_pipeline": {
+    "path": "evidence/dvi_pipeline/6d54c8c2b79f/result.json",
+    "reason": "原流程在小模块时序失败后停止；当前小模块已独立通过，整机默认布线8752已失败结束，仅route1会话15920运行中。"
+  },
+  "delivery": {
+    "archive": "output\\final_workstation_20261022\\星群V5.19_复位跨域修复与完整工程候选.zip",
+    "sha256": "6216ffddf45dc11f62f0c240603f9029ed45920965f3ef8a69b101230fa4f19f",
+    "file_count": 4862,
+    "fresh_validation": "42hosttests+基础板UART/CRC/256capacity通过",
+    "validation_record": "output\\final_workstation_20261022\\星群V5.19_复位跨域修复与完整工程候选_源码复现校验.json",
+    "scope": "完整工程候选；含当前domains修复和接口说明；整机route1打包时运行中，不是最终时序或实物验收"
+  },
+  "remaining": [
+    "当前DVI完整内部时序与约束审计",
+    "最终音频方案和外设接线/管脚/IO时序",
+    "真实音质、麦克风、多人操作及延迟",
+    "实屏、Flash与物理冷启动、长期热稳定",
+    "最终源码交接包及全局优化结果"
+  ],
+  "hardware_interface": "HARDWARE_INTERFACE.txt",
+  "reset_exception_scope": "experimental/audio_visual/dvi/RESET_CONSTRAINT_SCOPE.txt",
+  "historical_status": {
+    "path": "evidence/status_history/status_d9c07aa3227ce90e.json",
+    "sha256": "d9c07aa3227ce90e6a9fa784d16b1467069a7695c901698cad92437c3b8b50da",
+    "scope": "完整保留前序迭代记录，包含已被后续结果替代的当时状态"
+  },
+  "alternative_route": {
+    "build": "D:/StarclusterBuilds/combined_workstation_pnr_b8fac186a29f",
+    "status": "terminated_by_driver_timeout",
+    "source_and_constraints_identical": "evidence/combined_workstation_timing/b8fac186a29f/input_comparison.json",
+    "analysis": "evidence/combined_workstation_timing/b8fac186a29f/terminal_analysis.json"
+  },
+  "latest_isolated_optimization": {
+    "report": "evidence/vocoder_fanout/1505760470b3/decision.json",
+    "status": "not_adopted",
+    "scope": "扇出属性实验综合逻辑+317/寄存器+24，高负载控制网仍存在；未改演出源码，未宣称时序收益"
+  },
+  "dvi_short_load": {
+    "status": "passed",
+    "report": "evidence/workstation_dvi_load/20261026_090437/result.json",
+    "metrics": "evidence/workstation_dvi_load/20261026_090437/verified_metrics.json",
+    "scope": "No microphone/ADC input. Fixedpressurepatches,master4,collaborationoff. Not60sload,fullsong,routed timing orphysical acceptance. Source snapshot andexport manifest hashes checked."
+  },
+  "alternative_placement": {
+    "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_9d0b46f818ca",
+    "status": "failed_unrouted1783",
+    "input_comparison": "evidence/combined_workstation_timing/9d0b46f818ca/input_comparison.json"
+  },
+  "coeffmux_experiment": {
+    "status": "isolatedRTL_and_vendor_netlist_passed_not_adopted",
+    "report": "evidence/vocoder_coeffmux/b0b2563dabe7/result.json",
+    "resource_comparison": "evidence/synthesis_hierarchy/fbef0b848c42.json",
+    "netlist_report": "evidence/vocoder_netlist/d33167675134_20261026_094924/result.json",
+    "scope": "Not adopted;production andcurrentPnR sources unchanged. Isolated logic-148,FF-3,DSPsame;4096samples exact153cycles. No fulltop gain claim."
+  },
+  "audio_decision": {
+    "selected": "onboardPT8211",
+    "authorization": "用户：哪个好，哪个方便用哪个；按已有板卡及验证基线选择板载PT8211",
+    "scope": "完整乐队/歌手/FFT/DVI保留；未接麦克风/ADC/脚踏保留扩展模块，板级版本需明确禁用或指定接线",
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_dvi_confluence",
+    "simulation_report": "evidence/workstation_pt8211_dvi/20261026_104538/result.json",
+    "status": "joint_simulation_and_onboard_synthesis_passed_PnR_running",
+    "onboard_synthesis": "evidence/pt8211_onboard_synthesis/0cd05e391715/result.json",
+    "onboard_scope": "Known UART/PT8211/HDMI0 pins only;mic/ADC/pedal tiedidle inphysical shell;full expansion modules retained separately. Not finalfull-peripheral acceptance.",
+    "timing_report": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+    "verified": "3006decodedPT8211stereo frames equalPCM;DVI12000bits/lane;64.18mssimulation,no physical/fullsong/full-load claim"
+  },
+  "latest_board_readonly": {
+    "report": "evidence\\link_probe_20261026_110117.json",
+    "identity": {
+      "build_id": "0x57c8f7b5",
+      "capacity": 256,
+      "sample_rate": 48000
+    },
+    "requests": 10,
+    "valid_frames": 10,
+    "bad_crc": 0,
+    "scope": "Identity only;no playback,parameter orprogramming commands. Does not validate new candidate."
+  }
+}

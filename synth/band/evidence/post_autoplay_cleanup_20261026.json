@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "build_id": 3103104899,
+  "commands_after_identity": [
+    127,
+    10,
+    6
+  ],
+  "master_zero_command_sent": true,
+  "master_readback_available": false,
+  "last_status": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 0,
+    "cycles": 70,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  "bad_crc": 0,
+  "raw_sha256": "910fad4c59028989adef6a4abc179b008f6de811d5e29eb99bfef1a95b5459f5"
+}

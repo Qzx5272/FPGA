@@ -1,0 +1,192 @@
+{
+  "scope": "numerical/arithmetic design estimates only",
+  "dds_coherent_fft_N": 65536,
+  "dds": [
+    {
+      "frequency_hz": 53.466796875,
+      "legacy": {
+        "sfdr_dbc": 48.13058729758907,
+        "sinad_db": 42.99272142884458
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.97327885467428
+      }
+    },
+    {
+      "frequency_hz": 440.185546875,
+      "legacy": {
+        "sfdr_dbc": 48.13058729758906,
+        "sinad_db": 42.992721428844575
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.97327885466885
+      }
+    },
+    {
+      "frequency_hz": 996.826171875,
+      "legacy": {
+        "sfdr_dbc": 48.13058729758907,
+        "sinad_db": 42.992721428844575
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.97327885466981
+      }
+    },
+    {
+      "frequency_hz": 3999.755859375,
+      "legacy": {
+        "sfdr_dbc": 48.13058729758904,
+        "sinad_db": 42.99272142884455
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.97327885466464
+      }
+    },
+    {
+      "frequency_hz": 14649.169921875,
+      "legacy": {
+        "sfdr_dbc": 48.130587297589045,
+        "sinad_db": 42.992721428844575
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.97327885467473
+      }
+    },
+    {
+      "frequency_hz": 21240.966796875,
+      "legacy": {
+        "sfdr_dbc": 48.13058729758906,
+        "sinad_db": 42.99272142884458
+      },
+      "hq4096_linear": {
+        "sfdr_dbc": 128.8301091827379,
+        "sinad_db": 107.9732788546707
+      }
+    }
+  ],
+  "resonator_poles": [
+    {
+      "coefficient_fraction_bits": 15,
+      "cases": 2700,
+      "invalid_or_real_pole_cases": 0,
+      "worst_frequency_error_cents": 422.81985830625945,
+      "worst_bandwidth_error_hz": 0.11813693575788875,
+      "worst_frequency_case": {
+        "f_hz": 54.096358446914365,
+        "bw_hz": 1000,
+        "reconstructed_f_hz": 69.06148531235881
+      }
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "cases": 2700,
+      "invalid_or_real_pole_cases": 0,
+      "worst_frequency_error_cents": 8.574950417821324,
+      "worst_bandwidth_error_hz": 0.0018756571615767825,
+      "worst_frequency_case": {
+        "f_hz": 53.04183306923323,
+        "bw_hz": 1000,
+        "reconstructed_f_hz": 53.30520552287567
+      }
+    },
+    {
+      "coefficient_fraction_bits": 27,
+      "cases": 2700,
+      "invalid_or_real_pole_cases": 0,
+      "worst_frequency_error_cents": 0.14729896339681228,
+      "worst_bandwidth_error_hz": 3.240668002035818e-05,
+      "worst_frequency_case": {
+        "f_hz": 54.096358446914365,
+        "bw_hz": 3000,
+        "reconstructed_f_hz": 54.091755950475026
+      }
+    }
+  ],
+  "coupled_resonator_poles": [
+    {
+      "coefficient_fraction_bits": 15,
+      "cases": 2700,
+      "unstable_cases": 0,
+      "worst_pole_angle_error_cents": 4.121031292463067,
+      "worst_bandwidth_error_hz": 0.35071892161340656
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "cases": 2700,
+      "unstable_cases": 0,
+      "worst_pole_angle_error_cents": 0.06252850508702931,
+      "worst_bandwidth_error_hz": 0.006100286105265695
+    },
+    {
+      "coefficient_fraction_bits": 27,
+      "cases": 2700,
+      "unstable_cases": 0,
+      "worst_pole_angle_error_cents": 0.0010551572029095968,
+      "worst_bandwidth_error_hz": 9.756437339092372e-05
+    }
+  ],
+  "memory": [
+    {
+      "partials": 1024,
+      "assumptions": "SDP depth/width allocation; no external DDR; LUT dual ports shared for adjacent samples",
+      "blocks_by_use": {
+        "partial_state": 64,
+        "dds_lut_copies": 32,
+        "8_string_delays_2048x27": 32,
+        "8_fdn_delays_2048x27": 32,
+        "stereo_echo_4096x27": 16,
+        "event_and_track_state": 12,
+        "voice_and_patch_parameters": 16,
+        "vocal_glottal_parameter_tables": 8,
+        "control_tables_and_scratch": 12
+      },
+      "bsram18k_blocks": 224,
+      "budget_blocks": 340,
+      "free_blocks": 116,
+      "passes_raw_block_budget": true
+    },
+    {
+      "partials": 4096,
+      "assumptions": "SDP depth/width allocation; no external DDR; LUT dual ports shared for adjacent samples",
+      "blocks_by_use": {
+        "partial_state": 64,
+        "dds_lut_copies": 32,
+        "8_string_delays_2048x27": 32,
+        "8_fdn_delays_2048x27": 32,
+        "stereo_echo_4096x27": 16,
+        "event_and_track_state": 12,
+        "voice_and_patch_parameters": 16,
+        "vocal_glottal_parameter_tables": 8,
+        "control_tables_and_scratch": 12
+      },
+      "bsram18k_blocks": 224,
+      "budget_blocks": 340,
+      "free_blocks": 116,
+      "passes_raw_block_budget": true
+    },
+    {
+      "partials": 8192,
+      "assumptions": "SDP depth/width allocation; no external DDR; LUT dual ports shared for adjacent samples",
+      "blocks_by_use": {
+        "partial_state": 128,
+        "dds_lut_copies": 32,
+        "8_string_delays_2048x27": 32,
+        "8_fdn_delays_2048x27": 32,
+        "stereo_echo_4096x27": 16,
+        "event_and_track_state": 12,
+        "voice_and_patch_parameters": 16,
+        "vocal_glottal_parameter_tables": 8,
+        "control_tables_and_scratch": 12
+      },
+      "bsram18k_blocks": 288,
+      "budget_blocks": 340,
+      "free_blocks": 52,
+      "passes_raw_block_budget": true
+    }
+  ]
+}

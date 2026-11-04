@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "RTL unit simulation only:PCM snapshot RAM and bundled-data toggle handshake. No display,FFT,integrated timing or physical CDC/MTBF acceptance",
+  "updated": "2026-10-26T06:28:20.960627",
+  "sources": {
+    "pcm_snapshot.v": "4d233ed38948b78fdd68b7cf8915a1f9228d1aef474aabdc5c8c0e117f37a040",
+    "tb_pcm_snapshot.v": "11d3ecbbc2a13bcc40a6a6b9e8d3ca97f17eb495accfcda7eefcdf54198b18dd"
+  },
+  "compile_log": "",
+  "log": "PASS real PCM snapshot: asynchronous clocks,all stereo samples,negative full scale,stable metadata,37 skipped visualization samples,release/reset/partial-window gates\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\audio_visual\\tb_pcm_snapshot.v:38: $finish called at 92044000 (1ps)\n"
+}

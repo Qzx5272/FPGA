@@ -1,0 +1,19 @@
+{
+  "status": "returned_requires_inspection",
+  "command": [
+    "D:/Gowin/Gowin_V1.9.12.03_x64/Programmer/bin/programmer_cli.exe",
+    "--device",
+    "GW5AST-138B",
+    "--run",
+    "51",
+    "--cable-index",
+    "4",
+    "--location",
+    "0",
+    "--channel",
+    "0"
+  ],
+  "scope": "Vendor operation51 exFlash Detect ID only;no erase/program/QE/OTP commands",
+  "started": "2026-10-26T12:50:33.658553",
+  "returncode": 0
+}

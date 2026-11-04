@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "identity": {
+    "build_id": 3735635258,
+    "capacity": 256
+  },
+  "bad_crc": 0,
+  "states": [
+    {
+      "profile": "band",
+      "playing": true,
+      "owner": 0,
+      "part": 7,
+      "voices": 1,
+      "cycles": 94,
+      "epoch": 1,
+      "song_sample": 1053966,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0
+    },
+    {
+      "profile": "band",
+      "playing": true,
+      "owner": 0,
+      "part": 7,
+      "voices": 4,
+      "cycles": 94,
+      "epoch": 1,
+      "song_sample": 1060657,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0
+    },
+    {
+      "profile": "band",
+      "playing": true,
+      "owner": 0,
+      "part": 7,
+      "voices": 4,
+      "cycles": 94,
+      "epoch": 1,
+      "song_sample": 1067367,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0
+    },
+    {
+      "profile": "band",
+      "playing": true,
+      "owner": 0,
+      "part": 7,
+      "voices": 4,
+      "cycles": 94,
+      "epoch": 1,
+      "song_sample": 1074127,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0
+    }
+  ],
+  "scope": "Read-only UART identity/status after verified Flash write and JTAG reload; no physical power cycle or acoustic acceptance"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "exact_historical_hashes_restored",
+  "records": [
+    {
+      "original_path": "evidence/pcm_spectrum/2048/result.json",
+      "archive": "output\\final_workstation_20261022\\星群V5.25_多人MIDI连接恢复完整工程.zip",
+      "member": "project/synth/band/evidence/pcm_spectrum/2048/result.json",
+      "restored_path": "evidence/readiness_history/333e964195af49f2d4896fc962bcfb64d88e4467964b2e3929cececc0459bfb7/result.json"
+    },
+    {
+      "original_path": "evidence/buffered_spectrum/result.json",
+      "archive": "output\\final_workstation_20261022\\星群V5.25_多人MIDI连接恢复完整工程.zip",
+      "member": "project/synth/band/evidence/buffered_spectrum/result.json",
+      "restored_path": "evidence/readiness_history/bd139ceb706e3328116e01be87d04471d2ecdd49b41a4f94dc716c909a6a4725/result.json"
+    },
+    {
+      "original_path": "evidence/pcm_snapshot/result.json",
+      "archive": "output\\final_workstation_20261022\\星群V5.25_多人MIDI连接恢复完整工程.zip",
+      "member": "project/synth/band/evidence/pcm_snapshot/result.json",
+      "restored_path": "evidence/readiness_history/3a8c54bf19ed5dc7342213202d9ce844cf52e41f55333c45af34239e25fdefec/result.json"
+    },
+    {
+      "original_path": "evidence/spectrum_snapshot/result.json",
+      "archive": "output\\final_workstation_20261022\\星群V5.25_多人MIDI连接恢复完整工程.zip",
+      "member": "project/synth/band/evidence/spectrum_snapshot/result.json",
+      "restored_path": "evidence/readiness_history/a7dd2ac86996a1c92b44c73f469634b20722a82fc61f6075aa837229298a3bfb/result.json"
+    }
+  ],
+  "scope": "Historical unit-test reports only; current overwritten reports preserved; no validation status promoted."
+}

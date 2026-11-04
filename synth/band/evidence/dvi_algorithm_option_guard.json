@@ -1,0 +1,6 @@
+{
+  "status": "passed_default_identity_and_preservation_check",
+  "scope": "New parser default chooses exact existing be1fe1a74259 and refuses overwriting;no alternate PnR executed",
+  "driver_sha256": "d55f5404fbe88a756bfed01d438e63740be0ce78cc6d48f86defca65a5f73f2d",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tools\\build_dvi_workstation_timing.py\", line 68, in <module>\n    if target.exists():raise RuntimeError('Do not overwrite existing build '+str(target))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Do not overwrite existing build D:\\StarclusterBuilds\\combined_workstation_pnr_be1fe1a74259\n"
+}

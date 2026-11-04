@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "build": "423614c24ba7",
+      "accepted": true,
+      "last_error": null
+    },
+    {
+      "build": "4a7fb332e1e0",
+      "accepted": false,
+      "last_error": "AssertionError: Unreviewed pixel reset source"
+    },
+    {
+      "build": "f66680365bc4",
+      "accepted": false,
+      "last_error": "AssertionError: Experimental reset minimum-delay constraints lack native OSER recovery/removal coverage proof; zero summary violations are insufficient for release"
+    }
+  ],
+  "audit_tool_sha256": "c50ecd3eb952b83b41d72a12b631532fa5f827f688f63d419cf34654f507b2a0",
+  "scope": "Actual routed clean16buffer passes; failed8buffer and hidden native reset checks rejected. Digital prerequisite only."
+}

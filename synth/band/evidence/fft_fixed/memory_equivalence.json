@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "All output bins of6fixtures for each16/512/2048point FFT are byte-identical after explicit memory-port mux; no universal formal equivalence claim",
+  "initial": {
+    "16": "f96a8fb1d3f73f9678c13564c852741cd3f8e6daccf210513592d69571977066",
+    "512": "4825264cfa187626fd236deef21c8ec6723e7b95243c1df92d41fbf292df4d7a",
+    "2048": "790758aa2744c27b3bd405832a56289efcd0890f41d0c95d04fd15cd39ac10c9"
+  },
+  "current": {
+    "16": "f96a8fb1d3f73f9678c13564c852741cd3f8e6daccf210513592d69571977066",
+    "512": "4825264cfa187626fd236deef21c8ec6723e7b95243c1df92d41fbf292df4d7a",
+    "2048": "790758aa2744c27b3bd405832a56289efcd0890f41d0c95d04fd15cd39ac10c9"
+  },
+  "ram_primitives_before": 14,
+  "ram_primitives_after": 6
+}

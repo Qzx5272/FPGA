@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_9994028aaaf9",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_b824b22b7fd0",
+  "frozen_netlist_sha256": "2d8c582cb3d6b291f792e1187a654666c4b619cf6ba7b5eb32e084b3ff420f14",
+  "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.",
+  "started": "2026-10-26T01:33:56.564346",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "1e7d1f10fe01272a01e64e57e5ad0c4d77408540e72a451dce4af28a0c856aea",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_combined_workstation_timing.py": "285367e1748af2b5bc9201d6c89c7a30e65db9792ec6e899b9c966e8dba4518b"
+  },
+  "returncode": 1,
+  "error": "Vendor failure;inspect log",
+  "finished": "2026-10-26T02:20:33.389096"
+}

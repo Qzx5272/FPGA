@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "scope": "Actual Qt pump parses normal/experimental CRC identity packets; no board access",
+  "source_sha256": "ffae1a8315d3092f42a3f8bffdf9d186a30ad42ab2dc01ca3cd0bc76b392c89a"
+}

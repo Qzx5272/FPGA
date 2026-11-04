@@ -1,0 +1,14 @@
+{
+  "status": "passed_synthetic_model_and_GUI_regression_only",
+  "sources": {
+    "host/vision_selection.py": "a566381d4e5200023bdbfa7ef64d822ea0d1778daf77d1b7d775e8ddf11138eb",
+    "host/vision_control.py": "8358eaaf66d97748f00f708575e8f97924ef7e40eed882bea63904006383b320",
+    "host/app.py": "104a183e14ee15c8891e563de4a475ca0131d901adcca32278152e2c7c6d2071",
+    "tests/test_vision_control.py": "829945ca2813bb6becea410fad3b2a64d75f992a57a2de808459f6345d9fc2e6"
+  },
+  "host_tests_sha256": "d004f34863f6d20f63ce9e4dbd7e971c8300210d9026d12d0f7d4331af917751",
+  "host_test_count": 68,
+  "vision_test_count": 11,
+  "camera_opened": false,
+  "scope": "Synthetic images, real Qt child-focus Space key events, dwell/expiry/conflict/hide/error checks. Real camera and physical multimodal performance not verified."
+}

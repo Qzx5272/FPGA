@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "VendorPLL/CLKDIV model only:50MHz input,target126MHz/25.2MHz,1000pixels per reset segment,exact5:1 rising-edge ratio,asynchronous ready clear. No jitter/physical lock/PnR/display acceptance.",
+  "compile_log": "D:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14421: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14657: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14752: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14847: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14942: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:15028: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:15114: warning: @* found no sensitivities so it will never trigger.\n",
+  "simulation_log": "PASS segment0 pixel_period_ns=39.680000 serial_edges=5000\nPASS segment1 pixel_period_ns=39.680000 serial_edges=5000\ntb.v:19: $finish called at 180581000 (1ps)\n",
+  "sources": {
+    "tb.v": "51f6caea99c51f3ea50af0272bbc7df59454c5af2e5cab10dd1b3bde5da6fad3",
+    "gowin_video_clock.v": "8da827f9d87bd85b95b90bd20b97bb1cce2f2cc74b30d67ac89e593cfbded5a5",
+    "prim_sim.v": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+    "test_gowin_video_clock.py": "f0cf31781d7fc29ede2b4389ccb09f8f08509af310c6b049405388b2ba6c08ad"
+  }
+}

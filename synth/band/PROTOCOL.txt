@@ -1,0 +1,128 @@
+星群 V4 事件接口（V5 工程候选所用协议）
+=======================================
+权威实现：host/protocol.py、host/score.py、rtl/event_receiver.v、band_board_engine.v。
+旧 V2 位图固件不兼容。串口为 1,000,000 baud，8N1；核心时钟标称 50 MHz。
+所有多字节数均小端。帧长 34 字节：B4 4B + 28 字节正文 + 4 字节 CRC32。
+CRC 为 Python zlib.crc32(body)，不是对帧头计算。接收错误帧不执行。
+
+正文偏移（不含 B4 4B）：
+  0      u8  version=4
+  1      u8  kind
+  2      u8  source：主机 1..4；0 为自动音序；本地 17..20 不由 UART 冒用
+  3      u8  part：0..15
+  4      u8  contact：同一 source 内触点身份
+  5      u8  note：0..127
+  6      u8  velocity：0..127
+  7      u8  flags：按 kind 解释
+  8      u32 epoch
+  12     u32 serial
+  16     u64 sample：当前外部事件只接受 0（立即执行）
+  24     u32 parameter
+
+命令：
+  0 起音；先接管并取得板端 epoch，再用唯一 serial 发送。
+  1 释放；source/contact/part/epoch/serial 必须与原起音匹配。
+  2 释放该 source 的全部音符。
+  3 释放指定 part；受核心归属权限检查。
+  4 轨道指令：flags=0 接管、1 下一小节归还、2 静音、3 恢复。
+    只有 source 1 可经 UART 发静音/恢复；不能夺取另一席位已拥有的轨。
+  5 运输控制：flags=0 开始/重新开始，flags=1 停止。
+  6 查询轨道状态，且续约 source；演奏期间建议每 100 ms 发送。
+  7 延迟干湿比 parameter=0..127，仅 source 1。
+  10 主增益 parameter=0..127，仅 source 1。
+  11 乐手参数：flags=参数号，parameter=参数值；source 1 为指挥控制，
+     其他席位须拥有该轨且 epoch 匹配。
+     0 表情 0..127；1 弯音 0..16383（8192 中心，约 ±2 半音）；
+     2 新起音元音 0..4；3 全局协作开关 0/1（仅 source 1）；
+     4 起音步长 0..16383（0 按最小 1）；5 衰减移位 0..15；
+     6 持续电平 0..16383；7 释放移位 0..15。
+     ADSR 是定点每采样参数，不能直接把数值当毫秒。
+  13 曲谱上传，仅 source 1，见下一节。
+  14 查询上传状态，也续约 source。
+  15 速度 parameter=40..240 BPM，仅 source 1。
+  16 移调 parameter 的低八位为有符号 -24..24，仅 source 1；鼓不移调。
+  17 本地 ADC 校准，仅 source 1，且仅 LOCAL_INPUTS 配置生效：
+     contact=通道0..79，parameter低12位=基线，serial低16位=增益，flags位0=反向。
+     压力=min(127,max(0,定向原始值-基线)*增益/4096)，不是增益倍数直填。
+     上位机校准窗口针对0..63号压力垫；ADC8/9的独立表情通路直接读取原始值，
+     不经过该压力垫校准。作品performance.pad_calibration保存baseline/gain/invert，
+     脱机导出器将它们作为pad_frontend的复位默认值；运行时发送不写Flash。
+  18 只读查询构建身份；上板验收必须与选定 release/manifest.json 一致。
+  127 紧急总停音，绕过普通事件等待；也清除延迟尾音。
+
+曲谱上传：
+  曲谱文件是 starcluster-score-1，48 kHz、120 BPM 参考时间，最多 4096 事件。
+  每事件三字：control、serial、sample，均 u32。
+  control = kind | (part<<2) | (note<<6) | (velocity<<13)。
+  曲谱 kind=0 起音、1 释放、2 元音（note=0..4，velocity=0）。
+  开始：Event(13, flags=3, epoch=事件数, serial=长度采样数,
+              parameter=全部事件字按小端拼接后的 CRC32)。
+  数据：依次 flags=0/1/2，epoch=事件索引，serial=该字；不得乱序。
+  提交：Event(13, flags=4)；随后 Event(14) 查询校验状态。
+  CRC/长度/次序错误保留旧曲谱；通过后在下次开始演出时切换。
+  上传的是事件 RAM，断电丢失；“导出脱机工程”才将所选作品写入待构建源码。
+
+回传正文（同样为 28 字节 + CRC）：
+  type 128/129：停止/播放中的乐队状态。
+    [2] owner，[3] part，[4:6] 活跃槽 u16，[6:8] 完整样本计算周期 u16，
+    [8:12] epoch，[12:16] 曲谱参考采样位置，[16:20] 容量拒绝计数，
+    [20:24] 采样期限失误，[24:28] 数字削波计数。
+    音频周期/计数属于全局，不是当前查询轨道的单轨数值。
+  type 160：上传状态。
+    [2] 位0 ready、位1 pending、位2 uploading；[4:8] 已收事件数，
+    [8:12] 下一个期望字号，[12:16] 上传错误数，[16:20] 已存事件数，
+    [20:24] 已存长度，[24:28] 保留。
+  type 161：构建身份。
+    [3] profile=1；[4:8] 构建ID；[8:12] 槽数=256；[12:16] 标称48000 Hz；
+    [16:20] 标称50000000 Hz；[20:24] 功能位；[24:28] 接收CRC错误数。
+    功能位0 本地输入、位1 外部音频、位2 曲谱存储、位3 多席归属、位4 参数控制。
+    标称采样率不是板级频率测量结果。
+  type 144/145 属于独立性能诊断配置，不能按乐队验收。
+
+控制约定：
+  未取得归属不能猜测 epoch。旧 NoteOff 不得改写成最新 epoch 再发送。
+  每个 source 约500 ms无有效消息会释放音符并申请小节归还。
+  归还在下一小节生效；再次接管同一已拥有轨会取消待归还。
+  每轨回传不是逐包可靠 ACK；高频查询可能合并。主机应重复查询状态并有界超时。
+  总停音优先，普通参数可合并；不要用无限消息队列阻塞释放。
+  包含实时计数的回传只反映对应时刻；验收须保存整个测试区间与固件哈希。
+
+当前实物 USB-UART 发送配置（2026-10-23）：
+  Event.encode() 仍生成 34 字节规范帧。电脑串口发送必须使用 encode_uart()，
+  在规范帧后附加 64 个零字节；这些帧外字节不计入 CRC，FPGA 搜索帧头时忽略它们。
+  1 Mbaud、8N1 下保护字节占 640 us，整次发送占 980 us。
+  上位机每 5 ms 最多发送 4 个事件，理论上限 800 事件/秒；同时持续读取回传。
+  裸连续请求、4 或 16 字节短保护间隔在实物探测中出现过回包截尾，不能当作合格配置。
+  64 字节保护间隔的复测仍须结合 hardware_band.json；未证明根因在 FPGA 或 USB 桥某一方。
+  回包仍为 34 字节且严格校验 CRC；不要通过忽略错误计数来提高宣称吞吐。
+
+Experimental singer extension (afterV5.5): identity FEATURE_FLAGS bit5(0x20) announces read-only singer telemetry; bit31 still marks experiment. Query kind19, valid source1..4,part15; ordinary CRC32 framing/64zero guard unchanged. Reply body byte0=4,byte1=0xA2,byte2bit0=held-note gate,byte3=MIDI note; little-endian uint32 at offsets4=singer dropped,8=stale off,12=DAC dropped,16=DAC underruns,20/24reserved0. Gate is not loudness and says nothing about residual filter/release tails. Only request after advertised support, using the current seat source (never refresh another seat lease). UI expiry2.5seconds. Original band voice count excludes this independent singer; UI must label it accordingly.
+
+V6 extension capability bits (only trust them when returned by identity type 161):
+  bit0 LOCAL_INPUTS / analog ADC front end; bit1 EXTERNAL_AUDIO / I2S output;
+  bit2 onboard event-song storage; bit3 multi-source ownership; bit4 parameter control;
+  bit5 singer status; bit6 extended instrument algorithms; bit7 delay/reverb/chorus selection;
+  bit8 autonomous panel / multi-UART extension; bit9 per-part instrument/pan control;
+  bit10 accepted-event capture telemetry; bit11 onboard song-library status/query.
+  bit12 independent C3 UART transport in the isolated phone-UART candidate
+  (build 0x20261031). This bit does not imply full panel, external I2S, song
+  library, event capture, or audio recording support. Its native feature mask
+  is 0x8000107c. C3 GPIO4/TX -> J23-1/U16; J23-2/V16 -> GPIO5/RX.
+  The fixed-pin PT8211 V6 candidate advertises 0x8000007c (bits2..6 only); local ADC/pedal
+  and external I2S are not wired/enabled in this shell. The pin-free expansion RTL advertises
+  the upper feature set (bits2..11) plus its LOCAL_INPUTS/EXTERNAL_AUDIO parameters; this
+  extension has no frozen CST or downloadable board release.
+
+V6 onboard song library (extension capability bit11): kind20 selects song number from
+  parameter low byte; kind21 queries current library state. Reply type163 (body byte1=0xA3):
+  byte2 bit0=failed, bit1=busy; byte3=current song index. A physical next-song button is
+  an alternate panel input, not a UART requirement.
+
+V6 event capture (extension capability bit10): type C0..D0 is accepted-event telemetry,
+  where low five bits identify original kind; E0 represents panic. Original fields retain
+  their standard offsets; bytes16..23 carry FPGA sample-clock timestamp. Type DF is capture
+  overflow status; body bytes24..27 are the little-endian overflow count (bytes28..31 are
+  CRC and must not be decoded as event data). Capture excludes source1 PC events to avoid
+  duplicate host recording; it includes BLE/USB/panel input. The standard stop/release and
+  panic events have distinct capture meanings. Neither telemetry capture nor upper-host take
+  recording implies WAV/audio recording.

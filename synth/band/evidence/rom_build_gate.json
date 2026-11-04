@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "Actual build entry rejects old2D coefficient source before vendor execution;newexport checker passes. Structural guard only,not numeric/timing acceptance.",
+  "results": {
+    "legacy_rejected": {
+      "returncode": 1,
+      "log": "Traceback (most recent call last):\n  File \"C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tools\\build_combined_workstation.py\", line 7, in <module>\n    check_vocoder_rom(source/'rtl/filterbank.sv')\n  File \"C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\host\\rom_contract.py\", line 9, in check_vocoder_rom\n    raise ValueError('Vocoder coefficient ROM must be one-dimensional: Gowin1.9.12.03 misloads the original2D readmemh array. Use explicit row*10+column;post-synthesis numeric validation is still required.')\nValueError: Vocoder coefficient ROM must be one-dimensional: Gowin1.9.12.03 misloads the original2D readmemh array. Use explicit row*10+column;post-synthesis numeric validation is still required.\n"
+    },
+    "corrected_allowed": {
+      "returncode": 0,
+      "log": "Flat coefficient ROM declaration checked;not functional/timing acceptance\n"
+    }
+  },
+  "sources": {
+    "synth\\band\\host\\rom_contract.py": "c3d17c0bca0bdd743f0429708f80f1385ce5a3a536116455f974ea0b67135914",
+    "synth\\band\\host\\offline_singer.py": "da099cb25c093decf2476124c17273ea77a3553f8b9e5d378d76976ea8db2478",
+    "synth\\band\\tools\\build_combined_workstation.py": "29c8f4ccb1bab15d98310ac807088b300d585ab8b6fb42b850d6f2fdf1ed382a"
+  }
+}

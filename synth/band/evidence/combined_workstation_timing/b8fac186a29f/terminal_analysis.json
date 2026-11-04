@@ -1,0 +1,8 @@
+{
+  "status": "terminated_by_driver_timeout",
+  "runtime_limit_seconds": 3600,
+  "vendor_terminal_error": false,
+  "final_timing_report_present": false,
+  "conclusion": "Process ended at configured driverlimit;no routeability or finaltiming conclusion. Not an observationtimeout. Preserve completed placement artifacts;no programming.",
+  "next_build": "D:\\StarclusterBuilds\\combined_workstation_pnr_9d0b46f818ca"
+}

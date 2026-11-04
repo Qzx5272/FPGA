@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "tests": 28,
+  "elapsed_seconds": 3.478,
+  "timestamp": "2026-10-25T19:55:17.208978",
+  "command": ".venv/Scripts/python.exe -m unittest discover -s synth/band/tests -p test_host.py",
+  "scope": "Actual Qt event dispatch with mocked serial, no physical MIDI pedal or local GPIO claim",
+  "cases": [
+    "seat/channel isolation",
+    "CC64 threshold64",
+    "velocity-zero noteoff",
+    "same-pitch retrigger serial identity and balanced noteoffs",
+    "panic/source release/disconnect clears pedal state"
+  ],
+  "sources": {
+    "synth\\band\\host\\app.py": "81bad2e9075838eb65d41ed075ffc38f487386b25d1de77a89d5b6af41b75ddd",
+    "synth\\band\\tests\\test_host.py": "8ec3c8c91d3b39254b5a0beaf4860a6c5300f17743e9aecb172840197ee2f4a1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed_policy_only",
+  "accepted": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\acf98f9b6f0d_20261026_033521\\result.json",
+    "report_sha256": "9f3c133c5f631afd0b1d02db66591173e40bb20d03056e737a459f4223c0c4e1",
+    "source_sha256": "fa7ec7b12a9b6c3c2f0d23f6baac67b6768206421bcde07078c8210caf477a9d",
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "changed_source_rejected": true,
+  "scope": "Guard behavior only;not extra hardware validation"
+}

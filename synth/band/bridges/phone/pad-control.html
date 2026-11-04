@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>星群 · 打击垫控制</title>
+<style>body{background:#101522;color:#eef2ff;font:17px system-ui;margin:0;padding:24px;max-width:600px;margin:auto}h1{font-size:28px}section{background:#1d2638;padding:20px;border-radius:18px;margin:18px 0}button{font:inherit;padding:16px;border:0;border-radius:12px;background:#9dbbff;color:#102040;margin:8px 8px 8px 0}button:disabled{opacity:.4}small,p{line-height:1.7;color:#c7d3e9}#swatch{display:inline-block;width:24px;height:24px;border:1px solid white;vertical-align:middle;border-radius:6px}output{display:block;line-height:1.7;white-space:pre-wrap}input{width:70px;height:45px;vertical-align:middle}</style>
+<h1>星群 · 打击垫控制</h1><p>手机通过 C3 控制 SMC-PAD Pocket</p>
+<section><button id="connect">连接 C3</button><button id="disconnect" disabled>断开</button><output id="connection">尚未连接</output><output id="pad">等待打击垫状态</output></section>
+<section><h2>单垫颜色测试</h2><p>第 4 组预设中，之前已变蓝的那个垫（音符 24）。请保持打击垫在相应预设和 Bank。</p><button class="color" data-rgb="250,0,0" disabled>红色</button><button class="color" data-rgb="0,0,250" disabled>蓝色</button><br><input id="custom" type="color" value="#00fa00" aria-label="自选颜色"><button id="apply" class="color" disabled>应用颜色</button><p><span id="swatch"></span> <span id="result">尚未发送改色命令</span></p><small>点击后写入配置并回读确认；当前页面不做连续灯光动画。</small></section>
+<section><h2>打击垫活动</h2><output id="midi">等待敲击</output><output id="counts">—</output><small>此页验证蓝牙控制，尚未接入 FPGA 发声。</small></section>
+<p id="help">请用安卓 Chrome 打开 HTTPS 页面，或通过 USB 调试转发的 localhost 页面。点击连接后选择 Starcluster-Control。</p>
+<script src="pad-control.js"></script></html>

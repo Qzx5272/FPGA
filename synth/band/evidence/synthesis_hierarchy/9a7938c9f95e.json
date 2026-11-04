@@ -1,0 +1,326 @@
+{
+  "status": "analysis_only",
+  "scope": "Hierarchical synthesized primitive attribution;not physical usage,functional equivalence or timing proof",
+  "before": {
+    "path": "D:\\StarclusterBuilds\\combined_workstation_syn_2786dc050eec\\impl\\gwsynthesis\\combined_workstation.vg",
+    "sha256": "27090f75aee2666a8798b3ccb966e462849f6b565cd3de5afc06c8c3174f50b8",
+    "modules": {
+      "double_biquad": {
+        "logic": 585,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_0": {
+        "logic": 618,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_1": {
+        "logic": 617,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_2": {
+        "logic": 613,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_3": {
+        "logic": 618,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_4": {
+        "logic": 618,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_5": {
+        "logic": 623,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_6": {
+        "logic": 622,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_7": {
+        "logic": 589,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_8": {
+        "logic": 585,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_9": {
+        "logic": 583,
+        "ff": 134,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_10": {
+        "logic": 26,
+        "ff": 7,
+        "ram_primitives": {},
+        "multiplier_primitives": {}
+      },
+      "double_biquad_11": {
+        "logic": 26,
+        "ff": 7,
+        "ram_primitives": {},
+        "multiplier_primitives": {}
+      },
+      "double_biquad_12": {
+        "logic": 26,
+        "ff": 7,
+        "ram_primitives": {},
+        "multiplier_primitives": {}
+      },
+      "double_biquad_13": {
+        "logic": 26,
+        "ff": 7,
+        "ram_primitives": {},
+        "multiplier_primitives": {}
+      },
+      "double_biquad_14": {
+        "logic": 26,
+        "ff": 7,
+        "ram_primitives": {},
+        "multiplier_primitives": {}
+      },
+      "vocoder_core": {
+        "logic": 18510,
+        "ff": 10124,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 24
+        }
+      },
+      "stage_pad_frontend": {
+        "logic": 8286,
+        "ff": 7425,
+        "ram_primitives": {
+          "SDPB": 3
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      },
+      "offline_workstation_top": {
+        "logic": 62996,
+        "ff": 38876,
+        "ram_primitives": {
+          "SDPB": 132,
+          "pROMX9": 31,
+          "pROM": 9,
+          "SDPX9B": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 72,
+          "MULT12X12": 2,
+          "MULT27X36": 54
+        }
+      }
+    }
+  },
+  "after": {
+    "path": "D:\\StarclusterBuilds\\combined_workstation_syn_5556e1c4f3f4\\impl\\gwsynthesis\\combined_workstation.vg",
+    "sha256": "fded27e8687ef5af085470d1d81e17e40fcf5f4dbf699f9b73f7efd413a8c328",
+    "modules": {
+      "double_biquad": {
+        "logic": 605,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_0": {
+        "logic": 614,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_1": {
+        "logic": 607,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_2": {
+        "logic": 638,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_3": {
+        "logic": 617,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_4": {
+        "logic": 642,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_5": {
+        "logic": 645,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_6": {
+        "logic": 616,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_7": {
+        "logic": 642,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_8": {
+        "logic": 615,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_9": {
+        "logic": 642,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_10": {
+        "logic": 639,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_11": {
+        "logic": 612,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_12": {
+        "logic": 624,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_13": {
+        "logic": 614,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "double_biquad_14": {
+        "logic": 600,
+        "ff": 135,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 2
+        }
+      },
+      "vocoder_core": {
+        "logic": 26198,
+        "ff": 14116,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULT27X36": 34
+        }
+      },
+      "stage_pad_frontend": {
+        "logic": 11035,
+        "ff": 7347,
+        "ram_primitives": {},
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      },
+      "offline_workstation_top": {
+        "logic": 73459,
+        "ff": 42792,
+        "ram_primitives": {
+          "SDPB": 129,
+          "pROMX9": 31,
+          "pROM": 9,
+          "SDPX9B": 2
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 72,
+          "MULT12X12": 2,
+          "MULT27X36": 64
+        }
+      }
+    }
+  }
+}

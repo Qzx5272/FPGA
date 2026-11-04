@@ -1,0 +1,10 @@
+复位同步器时序例外范围（2026-10-26）
+依据本地Gowin SUG940-2.0.4E第5.4.1节：set_false_path可指定get_pins端点；-setup涵盖建立/恢复，-hold涵盖保持/移除，省略二者涵盖全部分析。
+
+设计：gowin_dvi_tx的serial_release[1:0]是负沿两级、异步清零的复位桥接器；serial_ready再在FCLK正沿释放OSER复位。pixel域ready和warmup进入桥接器异步CLEAR。异步复位解除可能靠近接收时钟边沿，允许同步器入口产生恢复/移除违例，设计依靠同步释放链处理，不能用这些入口的违例代表同步数据路径失败。
+
+唯一新增例外：从pixel/display时钟到serial_release_0_s0/CLEAR和serial_release_1_s0/CLEAR两个具体引脚。不包含任何D/Q引脚，不包含serial_ready，也不包含OSER10 RESET。没有整域clock_groups或整域setup假路径。两级桥接器之间的数据路径、负沿到正沿释放路径、OSER恢复/移除以及三个视频数据通道继续计时。
+
+旧小模块fa558983b238在这个异步入口有-0.194ns恢复违例；相同冻结网表51ddc03649a1e9a205af9aece4df0b13a89be0f1d1bb32b79e3dab70e3e3d473，仅调整约束后84a5d66df9f9 Setup/Hold0。它是含明确例外的内部时序结果，不是所有异步入口均满足恢复/移除，更不是实物亚稳态寿命/视频信号完整性证明。
+
+dvi_gate.require_dvi_clock_gate逐项匹配当前RTL、源综合网表、冻结网表、三时钟频率和所有生效SDC；只接受三个时钟约束及这个精确引脚例外。完整整机audit_combined_timing另查33条SDC，包括此前三个限定hold例外和这个引脚例外，不能将其表述为“无假路径通过”。

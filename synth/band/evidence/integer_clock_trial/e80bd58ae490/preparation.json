@@ -1,0 +1,16 @@
+{
+  "status": "prepared",
+  "target": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_integer_clock_e80bd58ae490",
+  "manifest_sha256": "ad39df2e2b323610fa8de2e94e0d19a8859ddbd3ab9bed762db93aeb1079cd7f",
+  "clock_trial": {
+    "status": "experimental_not_release",
+    "serial_mhz": 126.04166666666667,
+    "pixel_mhz": 25.208333333333332,
+    "ratio_multiply": 121,
+    "ratio_divide": 48,
+    "baseline": "output\\final_workstation_20261022\\offline_workstation_shared_custom_f43876353823",
+    "model_proof": "synth\\band\\evidence\\gowin_video_clock\\20261026_175417\\result.json",
+    "model_proof_sha256": "dafbef95ecc5d77dbb8f445fe4d277b8b47dbf1d1d40d548d40e2adbb1f2c81a",
+    "scope": "No physical timing or display acceptance; music core clock unchanged"
+  }
+}

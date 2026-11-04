@@ -1,0 +1,23 @@
+{
+  "status": "passed_visual_review",
+  "reviewed_at": "2026-10-27T02:06:40.925887",
+  "document": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\星群整机交接报告_20261027.docx",
+  "document_sha256": "f6e6c33e3d86533f086546e4c5f3bcb2662812b4976503cfa1f98b796a891ff1",
+  "pages": 5,
+  "renderer": "Native Microsoft Word PDF conversion, packaged render_docx.py rasterizer with explicit preconverted-PDF fallback; LibreOffice absent",
+  "visual_checks": [
+    "All5pages inspected",
+    "No clipping or overlapping text",
+    "No near-empty overflow page",
+    "Title border removed",
+    "Readable Chinese glyphs and source paths"
+  ],
+  "page_sha256": {
+    "page-1.png": "d99559cfe5ba9d55df89d3ad1c060b645674036da562170bd17c77978c1f9f7e",
+    "page-2.png": "bbda39361f34e276dbe7fefc25b4517fc97c9f88da9b9e006e55421209667d99",
+    "page-3.png": "fb8c6e4d620166b20426201b5507917d59313acc0d7f8dbd5318bec4645e2510",
+    "page-4.png": "949e13d102e3d400e834907c1ab5fa7fd29296313dd3b51293122a0b4da0fbd1",
+    "page-5.png": "7b6fac23bac36ad82c88849a704e6479e0e1a426e34865df0539b35d8c10cbde"
+  },
+  "scope": "Five final pages inspected including completed1h and full-load control outcomes;layout only"
+}

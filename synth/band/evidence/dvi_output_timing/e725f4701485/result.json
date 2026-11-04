@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\dvi_output_pnr_e725f4701485",
+  "source_build": "D:\\StarclusterBuilds\\gowin_dvi_output_syn_80ad13faa904",
+  "frozen_netlist_sha256": "e6b4410fcfac026ca7efdf5cb4b2495fb76b12bac3b76d29247ccacbd0d02249",
+  "source_matched_simulation": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_dvi\\20261026_063214\\result.json",
+  "simulation_report_sha256": "bbd9c316039667e6abd027d0a9fc5806fbb1cf15728d6c6cf9fa1d8651458884",
+  "scope": "Small clocked DVI boundary,officialHDMI0 pins and3 explicit related clocks. No fullband,external RGB input timing,physical display/jitter or programming acceptance.",
+  "started": "2026-10-26T06:56:16.033358",
+  "returncode": 1,
+  "error": "Vendor failure",
+  "finished": "2026-10-26T06:56:18.131033"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "mode": "paced",
+  "requests": 1000,
+  "valid_frames": 1000,
+  "bad_crc": 0,
+  "unique_frames": 1,
+  "identities": [
+    "04a10001302ac56e0001000080bb000080f0fa021c0000000000000054608743"
+  ],
+  "bytes": 34000
+}

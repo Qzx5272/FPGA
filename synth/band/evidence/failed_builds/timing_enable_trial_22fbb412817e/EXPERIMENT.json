@@ -1,0 +1,12 @@
+{
+  "scope": "Isolated candidate only, not promoted or programmed",
+  "original_core_sha256": "707dd1425c25b09d9bae500035f160b8a97215457be25739c9fce29ae51e9d00",
+  "trial_core_sha256": "ab5f21f104604aa56d42736163b9de243b4cd42b5c59f98f0d97069087601b9f",
+  "rationale": "Remove unnecessary halt enables on control payload registers; preserve every validity and panic path",
+  "required": [
+    "RTL regressions",
+    "same-score full/fast PCM identity with baseline",
+    "50MHz PnR improvement",
+    "hardware acceptance before release"
+  ]
+}

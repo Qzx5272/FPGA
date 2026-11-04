@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "started": "2026-10-24T18:30:25.129706",
+  "scope": "Live GUI16-part ownership polling and stale display; not physical performance or audio",
+  "sources": {
+    "app.py": "40ab8162b4a8cb316f4dd11649d75f390112fe70d6210c52f737b336657889dd",
+    "calibration_editor.py": "10078881eddd6455ede449f3327bc2e3287ad3c786379d1e1d67ea5c00878e5d",
+    "calibration_model.py": "05fb7cf6f4138282be1e225ab6f62c25d880d09b43f4cb93f4ae4106a66ec7ed",
+    "editor.py": "f8285546398952a20195c11310b3f8c4a201f4fb219b4ae6e966c5b4121fdb1f",
+    "offline.py": "ac0fab61be72efc09d470f83c31e368171dd22831d18e4ce2f871ad54892c3f7",
+    "patch_editor.py": "8bcc7a913e3358036ef0e18cdbce39d7d4fd143deae27c82a93cc813449e4bc0",
+    "protocol.py": "11a46763acf603f97ae1c3dfd78fa417954b833026ca9cbb564270feb05e1241",
+    "score.py": "73f9f129db7ebe35ebd47c51021bd3fc2c89830b15e4395615409301e1e1a142",
+    "stage.py": "3582a142d33a59ca35ee7b21b057a095e46cb1cdc95e7865372ec12c85dd1b15"
+  },
+  "error": "Current band identity not confirmed",
+  "finished": "2026-10-24T18:30:33.270364"
+}

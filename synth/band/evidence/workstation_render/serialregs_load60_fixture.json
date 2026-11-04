@@ -1,0 +1,14 @@
+{
+  "status": "fixture_validated_not_simulation_pass",
+  "scope": "Same current frontend/audio DSP,256 notes held from settledframe500 through2880500 (60s),release then1000score-tail and1000extra capture frames;no microphone excitation or physical claim",
+  "shared_sources": {
+    "stage_pad_frontend.sv": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "filterbank.sv": "f5fe4cb746905a12af680891f4f1fafa0038a7eb9211cc7e0011d388a2145997",
+    "double_biquad.sv": "c6d502f112bedbdd89e390ac20bd0cf386f1e7c642f1041c0735f038a89d2def",
+    "vocoder_core.sv": "9458dd3d05d6863060405d22bb4f79df687f984db8f2a51a7da31d191674bcdd",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "band_workstation_top.sv": "e8eafb47367bbb13acac085019bd1c2f4a5803e23fc83cb5fac038281ad214b0"
+  },
+  "export": "output\\final_workstation_20261022\\offline_workstation_serialregs_load60",
+  "render_session": 91408
+}

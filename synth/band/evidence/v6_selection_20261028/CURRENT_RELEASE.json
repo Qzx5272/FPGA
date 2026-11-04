@@ -1,0 +1,33 @@
+{
+  "release": "pt8211_dvi_81232ed690d3",
+  "build_id": 3735635258,
+  "bitstream_sha256": "81232ed690d3586846426ee058e9c449b4d80be0dff48c3740b0fafe9dc6f6ba",
+  "selected": "2026-10-27T00:54:52.000995",
+  "release_gate": "passed_native_setup_hold_pulse_pins_and_frozen_source_preflight",
+  "hardware_evidence": "evidence/hardware_81232ed690d3_first.json",
+  "collaboration_evidence": "evidence/hardware_ensemble_81232ed690d3_vision.json",
+  "flash_autoplay_evidence": "evidence/hardware_autoplay_81232ed690d3_flash.json",
+  "flash_evidence": "evidence/flash_program_20261027_004943/result.json",
+  "flash_release": "pt8211_dvi_81232ed690d3",
+  "clock_mhz": 50,
+  "physical_resources": {
+    "logic": 69484,
+    "ff": 38209,
+    "cls": 48965,
+    "ram": 252,
+    "dsp": 158
+  },
+  "board_status": "60s single-role256slots,97s song,synthetic visual/GUI seats passed;not acoustic acceptance",
+  "storage": "Flash verify and JTAG reload autoplay passed;physical cold power cycle untested",
+  "post_test_state": "Stopped/zero voices read back;master0 sent;no gain readback",
+  "physical_interface": "PT8211+HDMI0/DVI+S0/S1/S2;microphone/ADC/pedal tied idle",
+  "physical_buttons_verified": false,
+  "final_accepted": false,
+  "serial_transport": {
+    "guard_zero_bytes": 64,
+    "max_batch_per_5ms": 4
+  },
+  "previous_selector": "evidence\\selector_history\\b07b89c489d9dbbf37e3e6ae0a2184f48dff84b2d56a54a7f722d0c35f41a5a3\\CURRENT_RELEASE.json",
+  "one_hour_evidence": "evidence/hardware_81232ed690d3_1h_summary.json",
+  "full_load_control_evidence": "evidence/hardware_81232ed690d3_load_controls.json"
+}

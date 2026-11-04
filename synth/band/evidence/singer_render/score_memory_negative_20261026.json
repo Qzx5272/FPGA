@@ -1,0 +1,6 @@
+{
+  "status": "passed_negative_check",
+  "mutation": "changed first boot event part without changing project",
+  "rejection": "Project and actual boot event memory differ",
+  "fixture": "D:\\StarclusterBuilds\\score_audit_negative_49ol7knn"
+}

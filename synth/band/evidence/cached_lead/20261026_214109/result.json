@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "candidate": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\shared_voices\\cached_lead\\ae826af541b1\\shared_note_allocator.v",
+  "baseline_sha256": "a84806e8d592d39ce5fc68aca57084b936b9224cac43a42fa618f42a1e7b40c3",
+  "candidate_sha256": "500b5b12b9d938bc88106cc583a7edfc40d0279cc2bb0b0b9eb170515b2c2cc9",
+  "tb_sha256": "373c0584e839729d19e770399f8885b87984baca914438622cf2d609f7bd3da8",
+  "log": "PASS cached lead bitmap cycles=199999 lead=177046 empty=22953 allocations=3372 retired=3336\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\cached_lead\\20261026_214109\\tb.sv:41: $finish called at 4000080000 (1ps)\n",
+  "scope": "200000-cycle deterministic transitions compare cached bits with original active&&part==6 combinational definition. RTL invariant only; no synthesis, timing, complete interface equivalence or adoption."
+}

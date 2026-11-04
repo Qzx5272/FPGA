@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Isolated FFT display frame transport RTL; no analyzer integration,HDMI,timing or physical claim",
+  "sources": {
+    "synth\\band\\experimental\\audio_visual\\spectrum_snapshot.v": "92281da2d833c9e991a5a9b1be93cf9474fd3940de62576e8023322a72181259",
+    "synth\\band\\evidence\\spectrum_snapshot\\tb.v": "2c0071e2e91eb83738bf6b8b1bcfe0ed7724bb973a87e9cfa846850638f9a150",
+    "synth\\band\\tools\\test_spectrum_snapshot.py": "89334c2da9036204308dc9d4f0b07bd422d0617576948e3791055ab7280119e2"
+  },
+  "log": "PASS spectrum snapshot2048:two complete frames,all bins,metadata,stopped reader,backpressure,ordering,release collision,reset\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\spectrum_snapshot\\tb.v:40: $finish called at 137696000 (1ps)\n"
+}

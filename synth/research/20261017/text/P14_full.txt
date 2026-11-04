@@ -1,0 +1,1281 @@
+=== PAGE 1 ===
+Karjalainen, Välimäki, and Tolonen 1
+/G30/G44/G57/G57/G4C /G2E/G44/G55/G4D/G44/G4F/G44/G4C/G51/G48/G51/G0F /G39/G48/G56/G44 /G39/G6C/G4F/G4C/G50/G6C/G4E/G4C/G0F /G44/G51/G47
+/G37/G48/G55/G52 /G37/G52/G4F/G52/G51/G48/G51
+Helsinki University of Technology
+Laboratory of Acoustics and
+Audio Signal Processing
+P.O. Box 3000
+FIN-02015 HUT, Finland
+http://www.acoustics.hut.fi/
+matti.karjalainen@hut.fi, vesa.valimaki@hut.fi,
+tero.tolonen@hut.fi
+3OXFNHG6WULQJ
+0RGHOV)URPWKH
+.DUSOXV6WURQJ
+$OJRULWKPWR’LJLWDO
+:DYHJXLGHVDQG
+%H\RQG
+The emergence of what is called physical modeling
+and model-based sound synthesis is closely related to
+the development of computational simulations of
+plucked string instruments. Historically, the first
+physical approaches (Hiller and Ruiz 1971a, 1971b;
+McIntyre and Woodhouse 1979; McIntyre,
+Schumacher, and Woodhouse 1983) were followed
+by the Karplus-Strong (KS) algorithm (Karplus and
+Strong 1983). The KS algorithm was discovered as a
+simple computational technique that seemingly had
+nothing to do with physics. Soon thereafter, Julius
+Smith and David Jaffe showed a deeper
+understanding of its relation to the physics of the
+plucked string (Smith 1983; Jaffe and Smith 1983).
+Later, Julius Smith generalized the underlying
+ideas of the KS algorithm by introducing the theory
+of digital waveguides (Smith 1987). Digital
+waveguides are physically relevant abstractions yet
+computationally efficient models, not only for
+plucked strings, but for a variety of one-, two-, and
+three-dimensional acoustic systems (Van Duyne and
+Smith 1993; Savioja, Rinne, and Takala 1994; Van
+Duyne, Pierce, and Smith 1994). Further
+investigations embodied these ideas in more detailed
+synthesis principles and implementations, resulting
+in high-quality and realistic syntheses of plucked
+string instruments (Sullivan 1990; Karjalainen and
+Laine 1991; Smith 1993; Karjalainen, Välimäki, and
+Jánosy 1993; Välimäki, Huopaniemi, Karjalainen,
+and Jánosy 1996). A recent overview of research in
+this field is given by Smith (1996).
+The equivalence of Karplus-Strong and digital
+waveguide formulations in sound synthesis was al–
+ready known when the waveguide theory appeared
+(Smith 1987, 1992, 1997); however, the relation has
+never been explicated in full detail. The first aim of
+this article is to show how the more “physical”
+waveguide model of a plucked string can be reduced
+to an extended form of the Karplus-Strong type that
+we call the single delay-loop (SDL) model. For a linear
+and time-invariant (LTI) case, this reduction is
+relatively straightforward, and results in a
+computationally more efficient digital filter
+structure. (Note that the historical order of the KS
+algorithm and digital waveguides is the reverse of
+their logical order, since the generalization was not
+developed until after the KS algorithms was
+designed. This article’s title reflects the historical
+evolution: the “beyond” refers to recent
+generalizations and extensions of both concepts.)
+The second aim of this article is to discuss further
+extensions to the basic SDL models that make them
+capable of simulating plucking styles, beats in string
+vibration, sympathetic vibrations, and resonant
+strings. Such techniques have already been proposed
+and studied (Jaffe and Smith 1983; Smith 1993;
+Karjalainen, Välimäki, and Jánosy 1993). Here we
+discuss them in the context of our recent
+implementations of plucked-string models.
+/G29/G58/G51/G47/G44/G50/G48/G51/G57/G44/G4F/G56 /G52/G49 /G36/G57/G55/G4C/G51/G4A /G25/G48/G4B/G44/G59/G4C/G52/G55
+The behavior of a vibrating string with a plucked
+excitation can be described in terms of two traveling
+waves traversing the string in opposite directions
+and reflecting back at the string terminations
+(Elmore and Heald 1969; Fletcher and Rossing 1991).
+When we assume that during autonomous vibration
+the string is an LTI system, we can model it as shown
+in Figure 1 (Smith 1987, 1992). The two delay lines
+This article was originally published in Computer Music Journal,
+22:3, pp. 17-32, Fall 1998. This reprint is available at URL:
+http://www.acoustics.hut.fi/~vpv/publications/cmj98.htm
+=== PAGE 2 ===
+2 Computer Music Journal
+can be interpreted as a digitized d’Alembert’s
+solution to the one-dimensional lossless wave
+equation. The two waveforms travel through the
+delay lines and reflect at reflection filters R
+f (z) and
+Rb (z) which produce phase inversion and slight
+frequency-dependent damping. The input signal x(n)
+is summed into both delay lines just as output signal
+y(n) is taken as a sum of the wave-variable values in
+the two delay lines at the observation point. This
+digital waveguide-modeling approach yields
+efficient implementations for real-time sound
+synthesis. For the digital waveguide of Figure 1, a
+further assumption is needed: All signals to be
+modeled must be bandlimited to below one-half of
+the sampling rate. Owing to the LTI assumption,
+string losses and dispersions can be commuted
+between any driving or observation points (Smith
+1992, 1997). This allows the use of ideal delay lines
+that are computationally very efficient.
+In the string model of Figure 1, the input and
+output signals can be of any wave-variable type,
+such as displacement, velocity, acceleration, or slope
+(Smith 1992; Morse 1976). An interesting case is to
+select acceleration as the wave variable, since then an
+ideal pluck corresponds to a unit impulse (Smith
+1983; Karjalainen and Laine 1991).
+Further using the above simplification principles,
+it is possible to commute the elements of a
+terminated, dispersive, and lossy string into the form
+illustrated in Figure 2, provided that the output
+signal is taken to be a single traveling-wave
+component. In this extreme case, the losses and the
+dispersion are lumped at a single point in the round
+trip along the string: at the loop filter H
+l(z). When the
+loop filter is a two-point average y(n) = [x(n) + x(n –
+1)]/2, and when the initial conditions (i.e., the initial
+contents of the delay line) that are used to pluck the
+string are taken to be random numbers, the well-
+known Karplus-Strong algorithm for plucked-string
+sounds is obtained (Karplus and Strong 1983; Jaffe
+and Smith 1983). Note that the original algorithm
+uses no explicit input signal.
+/G29/G55/G52/G50 /G25/G4C/G47/G4C/G55/G48/G46/G57/G4C/G52/G51/G44/G4F /G27/G4C/G4A/G4C/G57/G44/G4F /G3A/G44/G59/G48/G4A/G58/G4C/G47/G48/G56
+/G57/G52 /G36/G27/G2F /G30/G52/G47/G48/G4F/G56
+Above, we discussed two computational models for
+stringed musical instruments that provide the basis
+for efficient real-time synthesis. The case of extreme
+simplicity and efficiency, the KS model of Figure 2, is
+certainly an oversimplification for anything but
+rudimentary synthesis. More detailed models are
+needed both for high-quality sound synthesis and for
+theoretical understanding in physical modeling. In
+this section, we derive the relations between the
+bidirectional digital waveguide and the SDL
+formulations in detail.
+Let us consider the relation of the two basic
+formulations, the bidirectional digital waveguide
+model and the single delay-loop model. We will
+analyze two cases: a string with (1) a bridge output
+and (2) a pickup output. An excitation—such as a
+pluck—in a real physical string initiates wave
+components that travel independently in opposite
+directions. The output of the string—e.g., the force at
+Figure 1. A bidirectional
+digital waveguide model
+for a terminated string.
+Propagation direction
+Propagation direction
+1/2
+b
+Delay line
+R   z(  )(  )
+Delay line
+R   zf x  n(  ) (  ) y  n
+=== PAGE 3 ===
+Karjalainen, Välimäki, and Tolonen 3
+the bridge of an acoustic instrument, or the pickup
+voltage in an electric guitar—reacts to both wave
+components. The effects of the excitation and pickup
+positions are easily simulated in the waveguide
+model that is based on a dual delay line, as depicted
+in Figure 1. However, for sound-synthesis purposes,
+the SDL realization, such as in Figure 2, is more
+efficient. Also, it is interesting from a theoretical
+point of view to formulate an SDL model that
+includes the effects of the excitation and pickup
+positions. It has been shown that an ideal
+acceleration or velocity input into a string model
+(corresponding to plucking or striking the string,
+respectively) can be approximated by a unit impulse
+(Smith 1992). Thus, by assuming linearity and time
+invariance, we can naturally think in terms of
+impulse responses, and interpret the string model as
+a linear filter.
+Plucked String with Bridge Output
+In the discussion to follow, we describe the transfer
+functions of the model components in the Laplace
+transform domain. The Laplace transform is an
+efficient tool in linear continuous-time systems
+theory. In particular, time-domain integration and
+derivative operations transform respectively into
+division and multiplication by the Laplace variable s.
+We can replace the complex variable s with j
+ω
+(where j is the imaginary unit −1 , ω is the radian
+frequency, which is equal to 2πf, and f is the
+frequency in Hz) to derive the corresponding
+representation in the Fourier transform domain, i.e.,
+the frequency domain. Later, we approximate the
+continuous-time system by a discrete-time system in
+the Z-transform domain. For more information on
+Laplace, Fourier, and Z-transforms, see a standard
+textbook on signal processing, such as that by
+Oppenheim, Willsky, and Young (1983).
+In Figure 3, we redefine the dual delay-line
+waveguide model for an ideally plucked string with
+transversal bridge force as an output. This situation
+is applicable to the simulation of the acoustic guitar,
+for example. In our notation, H
+A,B(s) refers to the
+transfer function from point A to point B. Note that
+we have divided the pluck excitation X(s) into two
+parts, X
+1(s) and X2(s), such that X1(s) = X2(s) = X(s)/2.
+We can first simplify the model by deriving an
+equivalent single excitation at point E1 that
+corresponds to the net effect of the two excitation
+components at points E1 and E2. When we assume
+that the bridge termination point (R1, R2) is to the
+right of the input point (E1, E2) as in Figure 1, the
+equivalent single excitation at E1 can be expressed as
+X
+E1,eq(s) = X1(s) + HE2,L2(s)R f(s)HL1,E1(s)X2(s)
+                       = ½[1 + HE2,E1(s)]X(s) = HE(s)X(s), (1)
+where subscript “eq” stands for “equivalent,” and
+XE2,E1(s) is the left-side transfer function from E2 to
+E1 consisting of the partial transfer functions from E2
+to L2 and L1 to E1, and the reflection function R
+f(s).
+Thus, HE(s) is the equivalent excitation transfer
+function.
+The output signal of interest is the transverse force
+F(s) at the bridge. It can be elaborated as
+F(s) = F+(s) + F–(s) = Z(s)[V+(s) – V–(s)]
+= Z(s)[A1(s) – A2(s)]/s, (2)
+where the “+” and “–“ subscripts denote the two
+opposite propagation directions. Equation 2 states
+that the bridge force is the bridge impedance Z(s)
+times the difference of the string velocity
+components V
++(s) and V–(s) at the bridge. The
+acceleration difference A1(s) – A2(s) is integrated
+(operator 1/s) to yield velocity difference V+(s) – V–
+(s). Hence
+Figure 2. A simplified linear string model as a single
+delay-loop (SDL) structure. The Karplus-Strong
+algorithm is a special case in which the excitation is
+given as the initial state of the delay line.
+H   z(  )l
+Delay lineLoop filter
+I-Lz
+(  )x  n (  )y  n
+=== PAGE 4 ===
+4 Computer Music Journal
+    F(s)=  Z(s)[A1(s) – A2(s)]/s
+ = Z(s)[A1(s) – R b(s)A1(s)]/s
+= Z(s)[1 – R b(s)]A1(s)/s
+ =  HB(s)A1(s), (3)
+where HB(s) is the acceleration-to-force transfer
+function at the bridge. Now
+A1(s) = HE1,R1(s)XE1,eq(s) + Hloop(s)A1(s), (4)
+where
+Hloop(s) = Rb(s)HR2,E2(s)HE2,E1(s)HE1,R1(s), (5)
+i.e., Hloop(s) is the transfer function when the signal is
+circulated once around the loop. Thus, the sum terms
+of Equation 4 correspond respectively to the
+equivalent excitation signal X
+E1,eq(s) transferred to
+point R1, and to the signal A1(s) transferred once
+along the loop. This yields
+AH H X
+HS X
+1
+1
+1() () () ()
+()() () ,
+ss s
+ss s
+= −
+=
+E1,R1
+loop
+E1,eq
+E1,R1 E1,eq
+s (6)
+where S(s) is the string transfer function that
+represents the recursion around the string loop.
+Putting all this together, we can solve for the overall
+transfer function from excitation to bridge output as
+[] []
+H F
+X
+=H H
+H ZR
+E,B() ()
+()
+1
+2 1( ) ()
+1( ) () 1 1( )
+s s
+s
+s s
+s s s s
+=
++ − −E2,R1
+E1,R1
+loop
+b ,
+(7)
+or more compactly, based on the above notation,
+H= H H S HE,B E E1,R1 B() () () () ()ss s s s , (8)
+which represents the cascaded contribution of each
+part in the physical string system.
+At this point, we approximate the continuous-time
+model of the guitar in the Laplace transform domain
+with a discrete-time model in the Z-transform
+domain. This approximation is needed to make the
+model realizable in discrete-time form. Rewriting
+Equation 8 in the Z-transform domain, we obtain
+H z Hz H z S z Hz
+E,B E E1,R1 B() () ()() ()= , (9a)
+where
+[]Hz H zEE 2 , E 1() 1
+2 1( )=+ , (9b)
+and
+Figure 3. Dual delay-line
+waveguide model for a
+plucked string with out-
+put at the bridge.
+force
+BridgeDelay line
+Delay line
+L1
+E2 R2L2
+E1 R1
+1/2
+s
+L1,E1
+A
+H
+X
+E1,R1
+2
+1
+X bf
+X
+H
+H
+2
+E2,L2 R2,E2
+R
+A
+H
+R FZ
+(  )s1
+(  )s
+(  )s (  )s
+(  ) s
+s(  ) s
+(  )s
+(  )s
+(  )
+s
+(  )s
+(  )s (  )
+s(  )
+=== PAGE 5 ===
+Karjalainen, Välimäki, and Tolonen 5
+Sz Hz() ()= −
+1
+1 loop
+, (9c)
+and
+[]Hz Z z I z RzBb() ()() 1 ()=− . (9d)
+Filter I(z) is a discrete-time approximation of the
+time-domain integration operation. We interpret the
+result of Equation 9a by depicting a block diagram in
+Figure 4. It shows qualitatively the delays and the
+discrete-time approximations of the filter
+components of Equation 9 inherent in each part of
+the transfer function. Note that the top block in
+Figure 4 contains the minus sign of the reflection
+function included in H
+E2,E1(z). However, in the
+bottom block, the minus sign included in Rb(z)
+cancels the minus sign of Equation 9d.
+For practical sound synthesis, the model of
+Equation 9 and Figure 4 can be approximated by a
+simplified model depicted in Figure 5, without
+compromising the sound quality. The following
+simplifications have been made in Figure 5. The
+transfer function H
+E2,E1(z) in Equation 9b is almost a
+lossless delay, and we can drop the low-pass filter
+block in the excitation-position filter (or replace it
+with a constant slightly less than 1). Next, we notice
+that in normal playing conditions the wave
+propagation from the excitation point (E1) to the
+bridge position (R1) is also a nearly lossless delay, so
+that it can be left out without perceivable effects. The
+string loop S(z) in Equation 9c cannot be reduced,
+because the delay and the low-pass-type loop filter
+are critical to the sound quality. Finally, the term [1 –
+R
+b(z)] in the bridge block HB(z) in Equation 9d can
+be approximated by the constant 2, since Rb(e
+jω) ≈ –
+1. The errors due to the reductions above can be
+compensated for with the timbre-control filter in
+Figure 5.
+The sound-synthesis model of Figure 5 includes
+several controllable elements. The excitation table
+can contain any useful signals, such as a unit impulse
+or a complex aggregate excitation (Smith 1993;
+Karjalainen, Välimäki, and Jánosy 1993). For
+example, this is an efficient way to implement the
+resonances of the instrument body, since the body
+response can be commuted back to the excitation,
+owing to the LTI assumption. The table can also be a
+set of excitations to choose from or to interpolate
+between. The gain control is a simple multiplier. The
+timbre control may be a first- or second-order
+recursive filter that can be adjusted to attenuate or
+boost high frequencies, for a softer or sharper attack,
+respectively (Jaffe and Smith 1983). Note that the
+timbre-control filter must change with fundamental
+frequency to give a fixed percept of attack sharpness.
+The pluck-position control is an adjustable comb
+filter, where the delay corresponds to the time it
+takes for the excitation to travel the left-side route
+around from E2 to E1 in Figure 3. In practice, one can
+instead use the right-side delay from point E1 to E2
+(which is normally shorter), since it will only slightly
+change the attack part of the model’s impulse
+response. The comb filtering will create a series of
+zeros in the transfer function at frequencies f
+m =
+m/tD, where tD is the delay (in seconds) of the comb
+filter, and m is an integer index (m = 0, 1, 2, ...).
+The bridge-output integrator can be approximated
+by a first-order recursive low-pass filter whose cutoff
+frequency lies below the lowest fundamental
+frequency to be synthesized. One can also consider
+the pluck-position filter and the output integrator
+together, since at zero frequency the zero in the
+former filter will be canceled by a pole in the latter.
+Figure 6 illustrates the effect of both filters as found
+in their combined magnitude transfer function. The
+plucking position is expressed as a distance to the
+bridge relative to the string length, e.g., 50 percent
+refers to the middle point of the string (see Figure
+6a). This effect is equivalent to the traditional
+interpretation of plucked-string behavior (see
+Fletcher and Rossing, Figure 2.5 [page 39] and Figure
+2.7 [page 41]).
+The string loop in Figure 5 is similar to the one in
+Figure 2. The delay block must allow for fine tuning
+of the time delay to achieve all desired pitch values
+(Jaffe and Smith 1983). This is accomplished by
+fractional delay filtering techniques, such as first-
+order all-pass filtering or Lagrange interpolation
+(Laakso, Välimäki, Karjalainen, and Laine 1996).
+Also, the loop filter has to be controllable, so that the
+decay of the harmonic components can be adjusted
+properly according to the string length and other
+varying parameters of the string. One popular choice
+is a one-pole digital loop filter with two parameters:
+a DC gain and a cutoff frequency parameter (Jaffe
+and Smith 1983; Välimäki et al. 1996).
+=== PAGE 6 ===
+6 Computer Music Journal
+Figure 4. A diagram char-
+acterizing the building
+blocks of the plucked
+string with force output
+at the bridge.
+Output
+Input
+Integrator
+S  z
+E
+(  )
+Filtering due to excitation position
+Low-pass
+Filtering due to bridge coupling
+String loop
+H         z
+E1,R1
+Wave propagation, from excitation to bridge
+Low-pass
+(  )
+1/2
+Delay
+Delay
+Low-pass
+Low-pass
+H   z(  )
+B
+H   z(  )
+Delay
+=== PAGE 7 ===
+Karjalainen, Välimäki, and Tolonen 7
+Figure 5. A schematic
+sound-synthesis model for
+plucked string instruments.
+The delay in the string loop
+must be continuously
+variable, which can be
+achieved with a fractional
+delay filter.
+Wavetable
+-
+Integrator
+Delay String loop
+Pluck positionExcitation processing
+Timbre
+-
+Gain
++
+control
++
+Loop
+Delay filter
+Figure 6. Two examples of
+the comb-filter effect caused
+by excitation-position and
+bridge-integrator filtering,
+when the relative distance
+from the plucking point to
+the bridge is 50 percent (a)
+and 22.5 percent (b) of the
+string length.
+0 2 4 6 80
+0.2
+0.4
+0.6
+0.8
+1
+Harmonic index
+Magnitude
+0 2 4 6 80
+0.2
+0.4
+0.6
+0.8
+1
+Harmonic index
+Magnitude
+(a) 50 % (b) 22.5 %
+(a) (b)
+=== PAGE 8 ===
+8 Computer Music Journal
+Plucked String with Pickup Output
+In the next analysis, we derive the transfer function
+and the synthesis block diagram for a plucked string
+when the output is taken by a velocity-sensitive
+sensor, such as a magnetic pickup in an electric
+guitar. Figure 7 shows a dual delay-line waveguide
+model for this case. The pickup position is denoted
+by (O1, O2).
+A comparison of Figures 3 and 7 reveals that the
+excitation transfer function is the same in both cases.
+This implies that Equation 4 is valid also for a string
+with a pickup output, provided that the pickup point
+(O1, O2) is to the right of the excitation point (E1,
+E2).
+The output signal is now a variable, such as
+voltage from a magnetic pickup, that is proportional
+to the transversal string velocity (sum of the left- and
+right-going components) at the pickup position.
+Velocity V(s) is proportional to the time integral of
+acceleration, and the voltage output from the pickup
+U(s) can be expressed as
+ 
+[]
+[]
+[]
+UP V
+= P AA
+P AH R H A
+P HA
+=H A
+() () ()
+() () ()
+() () () () () ()
+() 1( ) ( )
+() () ,
+ss s
+s
+s ss
+s
+s ss s s s
+s
+s ss
+ss
+=
++
+=+
+=+
+o
+o
+12
+o
+1 O1,R1 b O2,E2 1
+o
+O1,O2 1
+P1
+(10)
+where the pickup transfer function Po(s) models the
+effect of the pickup microphone on guitar sound. For
+a magnetic pickup, P
+o(s) is typically a second-order
+low-pass filter. Notice that it is combined with the
+integrator block 1/s at the output in Figure 7.
+Corresponding to Equation 4, we can now write
+A= H X H A1E 1 , O 1 E 1 , e ql o o p 1() () () () ()ss s s s + , (11)
+which yields
+A= H H X
+HS X
+1E 1 , O 1
+loop
+E1,eq
+E1,O1 E1,eq
+() () 1
+1( ) ()
+() () () .
+ss s s
+ss s
+−
+=
+(12)
+Figure 7. Dual delay-line
+waveguide model for a
+plucked string with a
+pickup output.
+s(  ) E1,O1
+H R2,O2
+U
+HH L1,E1
+o
+H O1,R1
+s
+E1L1
+1/2
+Delay line
+R1
+O2E2 R2L2
+O1
+s
+X s(  ) R
+(  )
+s(  )
+X 1 s
+b
+Delay line
+(  ) s(  )R f s
+2
+s(  )H E2,L2 s
+(  )
+(  )s(  )
+P s
+(  )
+A 2 s(  )X
+(  )
+s(  )
+A 1 s
+=== PAGE 9 ===
+Karjalainen, Välimäki, and Tolonen 9
+Based on Equations 1, 10, and 12, we can solve for
+the overall excitation-to-pickup transfer function,
+   
+[] []
+H= U
+X
+=H H
+H
+P H
+E,P
+E2,E1
+E1,O1
+loop
+o
+O1,O2
+() ()
+()
+1
+2 () ()
+()
+() 1( )
+s s
+s
+s s
+s
+s
+s s1 1− − + ,
+(13)
+or more compactly, based on the above notations,
+H= H H S HE,P E E1,O1 P() () () () ()ss s s s . (14)
+If the pickup point O is to the left of the excitation
+point (E1), we can derive a similar formulation
+where the indices 1 and 2 are interchanged, as are
+the string terminations, L and R.
+As with the case of the bridge output, we now
+approximate the continuous-time transfer function in
+the Laplace transform domain with a discrete-time
+transfer function in the Z-domain:
+H z Hz H z S z Hz
+E,P E E1,O1 P( ) = ( ) ( ) ( ) ( ) . (15)
+The differences between the bridge-output model
+(Equation 7) and the pickup-output model (Equation
+13) are twofold. First, the wave propagation from the
+excitation point to the output, H
+E1,R1(s) versus
+HE1,O1(s), covers different distances along the string.
+Due to very low losses of wave propagation during
+normal playing conditions, this difference is
+negligible. Second, the transfer functions related to
+the output couplings are very different. While the
+difference of accelerations at the bridge R has a
+relatively flat response (Equation 3 and Figure 3), the
+summation of the two acceleration waves at the
+pickup point O creates a comb-filter effect (Equation
+10 and Figure 7) similar to the excitation point
+filtering. Thus, a string-instrument model with a
+string-velocity pickup has two cascaded comb filters
+to color the response, instead of just the one in Figure
+4. A block diagram of the string-output stage for a
+pickup is shown in Figure 8. Note that again the
+minus sign due to the reflection from the end of the
+string is explicitly shown with multiplication by – 1
+(compare with Figure 4).
+A sound-synthesis model for a plucked string
+with a pickup output will be the same as the
+diagram shown in Figure 5, except that a pickup-
+position comb filter and a pickup filter, P
+o(s), must
+be cascaded. The comb filter can be similar to the
+pluck-position filter of Figure 5, and the pickup filter
+can be a second-order low-pass filter.
+The synthesis models derived above can be
+further simplified using the commuted aggregate
+excitation techniques (Smith 1993; Karjalainen,
+Välimäki, and Jánosy 1993), whereby the impulse
+responses of other parts, such as the body, are
+preconvolved with the primary excitation and stored
+in a wavetable. If all the components apart from the
+string loop are aggregated, we approach a variant of
+the basic KS algorithm that has an explicit input
+signal. All variations are possible, from a fully
+aggregated excitation containing even the string loop
+(that is, pure wavetable synthesis), to the SDL model
+of Figure 5, or to the full bidirectional waveguide
+model of Figure 3. This shows the compatibility of
+physical modeling with more traditional synthesis
+techniques, such as source-filter modeling or
+sampling. The more simplified versions are
+computationally more efficient, naturally, but the
+price is paid with decreased flexibility of parametric
+control.
+/G30/G52/G55/G48 /G28/G5B/G57/G48/G51/G56/G4C/G52/G51/G56 /G57/G52 /G57/G4B/G48 /G36/G27/G2F /G30/G52/G47/G48/G4F/G56
+The SDL models derived above are flexible building
+blocks when one is developing model-based sound
+synthesis of plucked string instruments. The SDL
+Figure 8. A pickup output
+block for the string model
+of Figure 7. The block LP
+is a low-pass filter.
+H   z(  )
+o
+P
+-1
+1
+(  )y   n(  )
+string loop
+From the
+LPDelay
+u  nP    z (  )I  z (  )
+=== PAGE 10 ===
+10 Computer Music Journal
+models show improved efficiency compared to the
+bidirectional digital waveguides, because the basic
+DSP building blocks are maximally consolidated and
+simplified. For example, a single fractional delay
+filter for fine-tuning the pitch is sufficient. However,
+if the string behavior contains essential nonlinearities
+or time-varying characteristics, bidirectional
+waveguide formulations are needed (see, for
+example, Karjalainen, Backman, and Pölkki 1993).
+It is possible to add further details to the SDL
+models to improve the naturalness and other sound-
+quality features. Figure 9 illustrates an extended
+model in which additional properties are
+implemented (Välimäki et al. 1996). The string
+model’s excitation is realized with wavetables that
+store consolidated pluck excitations and body
+responses, for easy and extremely efficient (but non-
+physical) modeling of the body (Smith 1993;
+Karjalainen, Välimäki, and Jánosy 1993). Alternative
+wavetables can be applied for different pluck styles
+and qualities. A pluck-shaping filter E(z) can be used
+to fine-tune the timbre of a single pluck-table
+excitation. The comb-notch filter effect caused by
+pluck position and pickup position are easy to add.
+The pluck-position filter P(z) is shown in Figure 9,
+but the pickup-position filter is not included.
+The beat effects caused by dual polarization of
+string vibration (horizontal and vertical with respect
+to the top plate) can be realized by mixing the
+outputs of two string models (Jaffe and Smith 1983).
+When the two models are slightly mistuned, a
+natural sounding beat effect results that reduces the
+“synthesizer-like” character. An example of the
+effect of mistuning the two polarization models is
+shown in Figure 10. In Figure10a, the model
+parameters are equal, and exponential decay is
+resulted. In Figure10b, the fundamental frequencies
+of the models are equal, but the loop-filter
+parameters are different, and a two-stage decay is
+produced. In Figure10c, the loop-filter parameters
+are equal, but the frequencies are mistuned to obtain
+a beating effect.
+Several principles to simulate the sympathetic
+coupling between strings have been proposed (Jaffe
+and Smith 1983; Smith 1993; Välimäki et al. 1996). A
+physically correct method is a bridge-coupling filter
+presented by Smith (1993). A simple feedback
+coupling is added in Figure 9 to simulate the
+sympathetic coupling between strings. This
+approach is potentially unstable, because there is a
+feedback from the output of all strings to their
+inputs. When the feedback signals are attenuated
+using small gain coefficients between all outputs and
+inputs, it is possible to reach a stable simulation.
+Nevertheless, it would be safer to use a sympathetic
+coupling model that is inherently stable. Jaffe and
+Smith (1983) proposed using a separate bank of
+sympathetic strings that get their input signal from
+the output of the main strings that are plucked. This
+approach is always stable. However, it would be
+desirable to use the existing strings of the instrument
+model for generating sympathetic vibrations, and
+not implement separate models. In the following
+section, we introduce such a configuration.
+Figure 9. Single delay-loop structure with consolidated
+pluck and body wavetables, pluck-position comb filter,
+dual-polarity string models, and sympathetic couplings
+between strings (Välimäki et al. 1996).
+h
+v( )S  z
+( )
+Vertical polarization
+Horizontal polarization
+out
+to other strings
+couplings
+Sympathetic
+Sympathetic
+other strings
+couplings from
+S  z
+E z
+om
+o
+( ) P z( )Pluck and Body
+Wavetable n
+m
+comb filter
+1-
+shaping
+Pluck
+filter
+Pluck
+position
+=== PAGE 11 ===
+Karjalainen, Välimäki, and Tolonen 11
+Figure 10. An example of
+the effect of mistuning the
+polarization models: equal
+parameter values (a),
+mistuned decay rates (b),
+and mistuned fundamental
+frequencies (c).
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1−1
+−0.5
+0
+0.5
+1
+Amplitude
+Time (sec)
+(a)
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1−1
+−0.5
+0
+0.5
+1
+Amplitude
+Time (sec)
+(b)
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1−1
+−0.5
+0
+0.5
+1
+Time (sec)
+Amplitude
+(c)
+=== PAGE 12 ===
+12 Computer Music Journal
+Coupling Phenomenon
+Figure 11 illustrates a modified version of the
+plucked-string synthesizer for a single dual-
+polarization string. This time, the excitation for
+sympathetic vibrations is taken from one of the
+parallel strings that model the two polarizations (in
+Figure 11, the horizontal one is used). To avoid
+feedback, the input from other strings is added to the
+input of only those parallel strings that do not have
+sympathetic coupling output. This implies that input
+must be fed into the vertical string model in Figure
+11, because the output is taken from the horizontal
+model. This kind of signal coupling is
+unconditionally stable, and produces realistic
+sympathetic coupling phenomena. Furthermore,
+separate sympathetic string models need not be
+implemented, since sympathetic vibrations are now
+produced in a natural manner by all the strings
+included in the synthesis model.
+In the general form of this algorithm, there is a
+matrix C of coupling coefficients that determine the
+proportion of the output signal to be sent to a
+particular parallel string. This matrix can be written
+as
+C =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcc c
+cg c
+ccg
+cg
+cN
+c
+c
+Nc N
+11 21 3 1
+21 2 23
+31 32 3
+1
+/G16
+/G17
+/G17/G19
+/G16
+(16)
+where N is the number of dual-polarization strings,
+the coefficients gck (for k = 1, 2, 3, ..., N) denote the
+gains of the output signal to be sent from the kth
+horizontal string to its parallel vertical string, and
+coefficients c
+mk are the gains of the kth horizontal
+string output to be sent to the mth vertical string.
+There is a physical motivation to use real numbers
+less than 1 for all the elements of matrix C. However,
+the structure’s stability does not depend on these
+values, since there is no feedback.
+The model shown in Figure 11 also divides the
+excitation signal that is sent to the two polarizations,
+by using a mixing coefficient m
+p that is chosen to
+have a value between 0 and 1. A non-zero value of
+parameter g
+ck enables coupling of the two
+polarizations. If at the same time mp = 1, the model
+for the vertical polarization becomes a resonance
+string that receives input only from the upper string
+model in Figure 11.
+An example of sympathetic coupling is pictured in
+Figure 12. The primary vibration (the waveform
+displayed in the upper part of Figure 12) excites
+another string whose output signal is shown in the
+lower part of Figure 12. In this example, the
+fundamental frequency of the secondary string is an
+octave higher than that of the primary string. Notice
+the slow attack of the vibration in the coupled string
+(the lower part of Figure 12).
+/G36/G57/G4C/G4F/G4F /G30/G52/G55/G48 /G28/G5B/G57/G48/G51/G56/G4C/G52/G51/G56/G0F /G44/G51/G47 /G29/G58/G57/G58/G55/G48 /G27/G4C/G55/G48/G46/G57/G4C/G52/G51/G56
+Topics for future work in physical modeling of
+plucked strings includes pluck simulation, different
+kinds of nonlinearities, the interaction between the
+string and the body, modeling of the body response
+Figure 11. A modified
+plucked-string synthesis
+model with a new method
+to include sympathetic
+coupling between strings.
+v
+h
+Sympathetic
+other strings
+Horizontal polarization
+Vertical polarization
+C
+out
+( )
+couplings from
+S  z
+( )S  z
+m
+mp1-
+om
+o
+mp
+1-
+( )Pluck and Body
+Wavetable n P z gc
+Sympathetic couplings
+to other strings
+E z( )
+=== PAGE 13 ===
+Karjalainen, Välimäki, and Tolonen 13
+using a digital filter, and calibration of the model
+parameters. Some of these problems have been
+tackled in recent literature. Rank and Kubin (1997)
+proposed a nonlinear model for cases where the
+amplitude of string vibration is limited by contact
+with frets, such as in slap-bass playing techniques. A
+passive nonlinear filter structure was devised by
+Pierce and Van Duyne (1997). They presented an
+example where the nonlinear generation of missing
+harmonics in string vibrations was successfully
+simulated by their simple digital model. Digital filter
+approximations of the body response were discussed
+by Karjalainen and Smith (1996). In the
+computationally efficient synthesis models, it has
+been advantageous to avoid the use of a body model
+and instead use the principle of commuted
+waveguide synthesis. However, if one wishes to
+simulate the two-way interaction between the strings
+and the body, an explicit model for the body can be
+developed, although this is not required in the LTI
+case.
+Calibration of the parameter values of a plucked-
+string model was tackled by Välimäki et al. (1996).
+The proposed technique was based on short-time
+Figure 12. An example of
+the simulation of sympa–
+thetic coupling using the
+model of Figure 11. The
+primary vibration (top)
+excites vibration in another
+string (bottom).
+0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2−1
+−0.5
+0
+0.5
+1
+Time (s)
+Amplitude
+0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2−1
+−0.5
+0
+0.5
+1
+Time (s)
+Amplitude
+=== PAGE 14 ===
+14 Computer Music Journal
+Fourier analysis of recorded plucked string tones.
+The excitation signal was obtained by inverse-
+filtering a recorded sound using the inverse transfer
+function of the string model. This enabled high-
+quality resynthesis of tones that were well behaved
+in that their harmonics decayed nearly
+exponentially. Problematic cases are tones where
+beats occur in harmonics or the decay rate of
+harmonics changes over time in some other way. A
+recent improvement to this problem is a method
+where the excitation signal is obtained by subtracting
+a sinusoidal model of the harmonics from an
+analyzed tone (Tolonen and Välimäki 1997; Välimäki
+and Tolonen 1998; Tolonen 1998). This method
+accounts for the time-varying decay rate of
+harmonics, and yields a clean excitation signal. A
+remaining problem in parameter calibration is to
+reliably estimate the pluck position from a recording
+of a plucked-string tone (Välimäki et al. 1996). It
+would be useful to extract this information and
+cancel its effect in the excitation signal. Thereafter,
+the excitation position would be a free parameter in
+the synthesis stage.
+The realism of plucked-string synthesis could be
+further improved by including different kinds of side
+effects, such as those generated when the player
+slides his or her finger along a string (friction noise)
+or touches the body of a guitar (Jánosy, Karjalainen,
+and Välimäki 1994). Such sound effects could be
+incorporated by using samples that are triggered at
+the right time according to certain rules or, to obtain
+more expression and variation, by developing
+physical models for these effects. Furthermore, a
+virtual plucked string instrument should allow the
+player to use the complete range of playing styles,
+including the left-hand techniques such as pull-offs,
+hammer-ons, trills, slurs, and the use of a slide, as
+well as right-hand techniques such as fret-tapping.
+Jaffe and Smith (1983) discussed the simulation of
+some of these styles. Nevertheless, realistic and
+computationally efficient physical modeling of these
+playing techniques remains a future challenge.
+/G26/G52/G51/G46/G4F/G58/G56/G4C/G52/G51/G56
+In this article, we focused on algorithms for the
+synthesis of plucked-string tones. The relation and
+equivalence of the bidirectional digital waveguide
+and single delay-loop (SDL) models of plucked
+string instruments were discussed. The derivation of
+SDL models based on the digital waveguide
+approach was given for the cases of a bridge output
+and a pickup output. A further extension of the SDL
+model with several additional features for improved
+sound quality was presented, including a new way
+to simulate sympathetic vibrations.
+/G24/G46/G4E/G51/G52/G5A/G4F/G48/G47/G4A/G50/G48/G51/G57/G56
+This work was originated by the first author when he
+was a visiting scholar at CCRMA, Stanford
+University, during the academic year 1994–1995. The
+authors would like to thank Professor Julius O.
+Smith and his students for many fruitful discussions.
+References
+Elmore, W. C., and M. A. Heald. 1969. Physics of Waves.
+New York: Dover.
+Fletcher, N. H., and T. D. Rossing. 1991. The Physics of
+Musical Instruments. New York: Springer-Verlag.
+Hiller, L., and P. Ruiz. 1971a. “Synthesizing Musical
+Sounds by Solving the Wave Equation for Vibrating
+Objects: Part 1.” Journal of the Audio Engineering Society
+19(6):462–470.
+Hiller, L., and P. Ruiz. 1971b. “Synthesizing Musical
+Sounds by Solving the Wave Equation for Vibrating
+Objects: Part 2.” Journal of the Audio Engineering Society
+19(7):542–550.
+Jaffe, D. A., and J. O. Smith. 1983. “Extensions of the
+Karplus–Strong Plucked-String Algorithm.” Computer
+Music Journal 7(2):76–87. Reprinted in C. Roads, ed.
+1989. The Music Machine. Cambridge, Massachusetts:
+MIT Press.
+Jánosy, Z., M. Karjalainen, and V. Välimäki. 1994.
+“Intelligent Synthesis Control with Applications to a
+Physical Model of the Acoustic Guitar.” Proceedings of
+the 1994 International Computer Music Conference. San
+Francisco, California: International Computer Music
+Association, pp. 402–406.
+Karjalainen, M., J. Backman, and J. Pölkki. 1993. “Analysis,
+Modeling and Real-Time Synthesis of the Kantele, a
+Traditional Finnish String Instrument.” Proceedings of
+the 1993 IEEE International Conference on Acoustics,
+Speech, and Signal Processing, vol. 1. Piscataway, New
+Jersey: IEEE, pp. 229–232.
+Karjalainen, M., and U. K. Laine. 1991. “A Model for Real-
+Time Sound Synthesis of Guitar on a Floating-Point
+Signal Processor.” Proceedings of the 1991 IEEE
+International Conference on Acoustics, Speech, and Signal
+Processing, vol. 5. Piscataway, New Jersey: IEEE, pp.
+3653–3656.
+Karjalainen, M., and J. O. Smith. 1996. “Body Modeling
+Techniques for String Instrument Synthesis.”
+Proceedings of the 1996 International Computer Music
+Conference. San Francisco, California: International
+Computer Music Association, pp. 232–239.
+=== PAGE 15 ===
+Karjalainen, Välimäki, and Tolonen 15
+Karjalainen, M., V. Välimäki, and Z. Jánosy. 1993.
+“Towards High-Quality Sound Synthesis of the Guitar
+and String Instruments.” Proceedings of the 1993
+International Computer Music Conference. San Francisco,
+California: International Computer Music Association,
+pp. 56–63.
+Karplus, K., and A. Strong. 1983. “Digital Synthesis of
+Plucked-String and Drum Timbres”. Computer Music
+Journal 7(2):43–55. Reprinted in C. Roads, ed. 1989. The
+Music Machine. Cambridge, Massachusetts: MIT Press.
+Laakso, T. I., V. Välimäki, M. Karjalainen, and U. K. Laine.
+1996. “Splitting the Unit Delay—Tools for Fractional
+Delay Filter Design.” IEEE Signal Processing Magazine
+13(1):30–60.
+McIntyre, M. E., R. T. Schumacher, and J. Woodhouse.
+1983. “On the Oscillations of Musical Instruments.”
+Journal of the Acoustical Society of America 74(5):1325–
+1345.
+McIntyre, M. E., and J. Woodhouse. 1979. “On the
+Fundamentals of Bowed String Dynamics.” Acustica
+43(10):83–108.
+Morse, P. M. 1976 (reprint). Vibration and Sound. American
+Institute of Physics for the Acoustical Society of
+America (first edition 1936; second edition 1948).
+Oppenheim, A. V., A. S. Willsky, and I. T. Young. 1983.
+Signals and Systems. New York: Prentice-Hall.
+Pierce, J. R., and S. A. Van Duyne. 1997. “A Passive
+Nonlinear Digital Filter Design which Facilitates
+Physics-Based Sound Synthesis of Highly Nonlinear
+Musical Instruments.” Journal of the Acoustical Society of
+America 101(2):1120–1126.
+Rank, E., and G. Kubin. 1997. “A Waveguide Model for
+Slapbass Synthesis.” Proceedings of the 1997 IEEE
+International Conference on Acoustics, Speech, and Signal
+Processing, vol. 1. Los Alamitos, California: IEEE
+Computer Society Press, pp. 443–446.
+Savioja, L., T. J. Rinne, and T. Takala. 1994. “Simulation of
+Room Acoustics with a 3-D Finite Difference Mesh.”
+Proceedings of the 1994 International Computer Music
+Conference. San Francisco, California: International
+Computer Music Association, pp. 463–466.
+Smith, J. O. 1983. “Techniques for Digital Filter Design and
+System Identification with Application to the Violin.”
+PhD thesis, Stanford University. Stanford, California.
+Smith, J. O. 1987. “Music Applications of Digital
+Waveguides.” Technical Report STAN-M-39, CCRMA,
+Department of Music, Stanford University. Stanford,
+California.
+Smith, J. O. 1992. “Physical Modeling Using Digital
+Waveguides.” Computer Music Journal 16(4):74–91.
+Smith, J. O. 1993. “Efficient Synthesis of Stringed Musical
+Instruments.” Proceedings of the 1993 International
+Computer Music Conference. San Francisco, California:
+International Computer Music Association, pp. 64–71.
+Smith, J. O. 1996. “Physical Modeling Synthesis Update.”
+Computer Music Journal 20(2):44–56.
+Smith, J. O. 1997. “Acoustic Modeling Using Digital
+Waveguides.” In C. Roads, S. T. Pope, A. Piccialli, and
+G. De Poli, eds. Musical Signal Processing. Lisse, the
+Netherlands: Swets & Zeitlinger, chapter 7, pp. 221–
+264.
+Sullivan, C. S. 1990. “Extending the Karplus–Strong
+Algorithm to Synthesize Electric Guitar Timbres with
+Distortion and Feedback.” Computer Music Journal
+14(3):26–37.
+Tolonen, T. 1998. “Model-Based Analysis and Resynthesis
+of Acoustic Guitar Tones.” Master’s thesis, Report 46,
+Laboratory of Acoustics and Audio Signal Processing,
+Department of Electrical and Communications
+Engineering, Helsinki University of Technology. Espoo,
+Finland. A PostScript version is available at URL:
+http://www.acoustics.hut.fi/~ttolonen/thesis.html
+Tolonen, T., and V. Välimäki. 1997. “Automated
+Parameter Extraction for Plucked String Synthesis.”
+Proceedings of the 1997 International Symposium on
+Musical Acoustics, book 1. St. Albans, UK: Institute of
+Acoustics, pp. 245–250.
+Välimäki, V., J. Huopaniemi, M. Karjalainen, and Z.
+Jánosy. 1996. “Physical Modeling of Plucked String
+Instruments with Application to Real-Time Sound
+Synthesis.” Journal of the Audio Engineering Society
+44(5):331–353.
+Välimäki, V., and T. Tolonen. 1998. “Development and
+Calibration of a Guitar Synthesizer.” Journal of the Audio
+Engineering Society 46(9):766–778.
+Van Duyne, S. A., J. R. Pierce, and J. O. Smith. 1994.
+“Traveling Wave Implementation of a Lossless Mode-
+Coupling Filter and the Wave Digital Hammer.”
+Proceedings of the 1994 International Computer Music
+Conference. San Francisco, California: International
+Computer Music Association, pp. 411–418.
+Van Duyne, S. A., and J. O. Smith. 1993. “Physical
+Modeling with the 2-D Digital Waveguide Mesh.”
+Proceedings of the 1993 International Computer Music
+Conference. San Francisco, California: International
+Computer Music Association, pp. 40–47.

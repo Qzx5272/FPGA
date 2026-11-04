@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Queued standard I2S24 CDC/serializer RTL pin decode; no stage integration,PLL,external DAC,timing or physical acceptance",
+  "sources": {
+    "synth\\band\\rtl\\audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782",
+    "synth\\band\\rtl\\i2s24_tx.v": "826b3374b394208d16e629192df678013b12b64911958b405321d0ede6145d41",
+    "synth\\band\\experimental\\audio_input\\i2s24_queue_bridge.v": "363084cb639c8c06034317e355d02a639fe25d6afa00b594cb1137d8df320d9a",
+    "synth\\band\\evidence\\i2s24_queue\\tb.v": "ed60c8ba0f74bdfbdc72626a0f07dbc8e3efbd63d60392a3327d0a919f44f120",
+    "synth\\band\\tools\\test_i2s24_queue.py": "91ce39a881412b74505cc97b406abee123f39a43d5a9fee858308d809d0a9fb0"
+  },
+  "log": "PASS I2S queue:32 exact stereo jitter frames200/1094cycles,zero inserted silence,starvation recovery,overflow accounting,stopped-clock panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\i2s24_queue\\tb.v:48: $finish called at 811643430 (1ps)\n"
+}

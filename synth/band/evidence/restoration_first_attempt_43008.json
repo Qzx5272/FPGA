@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "observed": "2026-10-23T16:53:28.836941",
+  "error": "Stop acknowledgement or CRC failed; original helper raised before saving capture. Old restoration evidence must not qualify this test."
+}

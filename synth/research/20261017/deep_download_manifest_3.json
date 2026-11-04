@@ -1,0 +1,22 @@
+[
+  {
+    "id": "P14_full",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/26192418-6b82-4009-a04e-ec035f173856/download",
+    "exit": 0,
+    "error": "",
+    "pages": 15
+  },
+  {
+    "id": "P25_full",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/c2cca37f-c7f8-4401-a508-1b85a4d85435/download",
+    "exit": 0,
+    "error": "",
+    "pages": 11
+  },
+  {
+    "id": "P26_full",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/6023112e-6888-4fb8-b8b0-438795681c7b/download",
+    "exit": 22,
+    "error": "curl: (22) The requested URL returned error: 502\n"
+  }
+]

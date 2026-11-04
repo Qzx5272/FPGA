@@ -1,0 +1,47 @@
+{
+  "status": "passed_timing_pins_sources",
+  "build": "D:\\StarclusterBuilds\\phone_uart_20261031_a",
+  "build_id": 539365425,
+  "features": 2147487868,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "pulse_width_violations": 0,
+  "native_reset_paths": 18,
+  "pins": {
+    "clk": "P16",
+    "uart_rx_pin": "N16",
+    "uart_tx_pin": "P15",
+    "HP_BCK": "E22",
+    "HP_WS": "F24",
+    "HP_DIN": "G24",
+    "PA_EN": "H17",
+    "tmds_clk_p": "Y22",
+    "tmds_clk_n": "Y23",
+    "tmds_d_p[0]": "AB24",
+    "tmds_d_n[0]": "AC24",
+    "tmds_d_p[1]": "V24",
+    "tmds_d_n[1]": "W24",
+    "tmds_d_p[2]": "AA22",
+    "tmds_d_n[2]": "AA23",
+    "key_play_n": "K16",
+    "key_stop_n": "F15",
+    "key_panic_n": "G15",
+    "ble_rx": "U16",
+    "ble_tx": "V16"
+  },
+  "clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "bitstream_sha256": "97add8704d5cdce51fbdb6c64edcfb0577c6f319f004739313bf25a2f9651431",
+  "integrity": {
+    "file_bytes": 42340877,
+    "termination_checked": true,
+    "vendor_checksum_decoded": false
+  },
+  "routing_warnings": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "programmed": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "stopped before programming: user clarified actual screen is J20 RGB LCD, not HDMI",
+  "build": "D:/StarclusterBuilds/hdmi_ui_20261031_b",
+  "build_id": 539365441,
+  "pixel_test": "passed",
+  "state_cdc_test": "passed",
+  "panel_plan": "6 rotary+6 push+4 independent keys",
+  "physical_switches_implemented": false,
+  "flash_written": false,
+  "programmed": false
+}

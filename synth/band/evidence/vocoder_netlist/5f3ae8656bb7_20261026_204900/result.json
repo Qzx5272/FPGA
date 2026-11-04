@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\vocoder_four_syn_cf21fed585f1",
+  "scope": "320post-synthesis vocoder samples against independent fixed-point reference;reset/busy/clip/reject checked. Vendor primitive functional simulation,not routed timing or physical audio acceptance",
+  "netlist_sha256": "5f3ae8656bb723a270d9b4507e770648668f1e711d1bd897b99ea28a2358df85",
+  "vendor_sha256": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+  "reference": {
+    "status": "passed",
+    "sha256": {
+      "filterbank.sv": "2b867f6a125bc079acb9fb04bf7ad5bfc15660b4278d589efffad8822165b611",
+      "double_biquad.sv": "c6d502f112bedbdd89e390ac20bd0cf386f1e7c642f1041c0735f038a89d2def",
+      "vocoder_core.sv": "9458dd3d05d6863060405d22bb4f79df687f984db8f2a51a7da31d191674bcdd",
+      "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+      "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+    },
+    "vectors_sha256": "0fa6b46f383ef4b3bdb21e6f7af9e7f74eb60816bfe0f0fc66f00c6ec1c55d4a",
+    "rtl_log": "PASS full vocoder4096 samples, reset, backpressure, clip/reject counters; maxcycles=519\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_four_engines\\cf21fed585f1\\tb.sv:34: $finish called at 42762540000 (1ps)\n",
+    "rtl_result_sha256": "906b0afd1aadb4ded8581a76e8ebf441c87448a62b7a8c887f1d6ad977da1dfb",
+    "scope": "Independent-reference RTL proof only"
+  },
+  "returncode": 1,
+  "log": "BEGIN vendor netlist\nPROGRESS n=0 time=100000\nFATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\5f3ae8656bb7_20261026_204900\\tb.sv:33: sample 1 got fffffe expected 00000000 clips 0 reject 2\n       Time: 20940000  Scope: tb\n"
+}

@@ -1,0 +1,12 @@
+$ErrorActionPreference = 'Stop'
+$root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+Set-Location -LiteralPath $root
+$programmer = 'D:\Gowin\Gowin_V1.9.12.03_x64\Programmer\bin\programmer_cli.exe'
+$bitstream = Join-Path $root 'synth\release\aurora_synth.fs'
+if (!(Test-Path -LiteralPath $bitstream)) { throw 'Build the bitstream first.' }
+$cables = (& $programmer --scan-cables | Out-String)
+if ($cables -notmatch 'USB Debugger A/0/(\d+)/') { throw 'No channel A download cable found.' }
+$location = $Matches[1]
+& $programmer --device GW5AST-138B --run 2 --fsFile $bitstream --cable-index 4 --location $location
+if ($LASTEXITCODE -ne 0) { throw 'SRAM programming failed.' }
+Write-Host 'Loaded into SRAM. Power cycling restores the original Flash design.'

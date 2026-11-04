@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "20000 cycles three TMDS word lanes;independent encode/decode oracle,all byte values/sync controls/reset/2edge pipeline. No serializer/PLL/pins/display acceptance.",
+  "maximum_oracle_disparity": 8,
+  "compile_log": "",
+  "simulation_log": "PASS 20000 cycles:3 RGB lanes,sync controls,reset flush,disparity coding\ntb.v:13: $finish called at 200006000 (1ps)\n",
+  "sources": {
+    "dvi_symbols.v": "2e5fc6b9827a341e25b44af61463e7632bc7cd40791d797c2df2d208e718eb93",
+    "starcluster_tmds_encoder.v": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec",
+    "tb.v": "8147b43412a519d552a5a0111b5d2df3af24f045102a8352cc8052374474708a",
+    "expected.hex": "a92b446c8358c1554238d29f185123e7597ebcec583bc6c57429ec9f7cb9c1b7",
+    "stimulus.hex": "12399ec6311f1f8101467e27944465030267134248ab5e61e70c8e807fd39177",
+    "test_dvi_symbols.py": "c13314e6496e247eab631abc6d0b4f796dda7ca38bf92b0a55c949792d5d5ff7"
+  }
+}

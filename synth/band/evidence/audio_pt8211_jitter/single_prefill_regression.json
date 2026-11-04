@@ -1,0 +1,5 @@
+{
+  "status": "expected_failure_confirmed",
+  "log": "FATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\vocoder\\tb_audio_pt8211_jitter.v:23: Jitter inserted silence\n       Time: 62590000  Scope: tb_audio_pt8211_jitter\n",
+  "sha256": "fc91840d71dab1bb7792cfc290fa02ea5d0f6b1479a291a2092e2a18033221cb"
+}

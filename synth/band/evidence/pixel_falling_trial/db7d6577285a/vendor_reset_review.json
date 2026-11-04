@@ -1,0 +1,13 @@
+{
+  "status": "reviewed_no_constraint_relaxation",
+  "vendor_model": "D:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_tsim.v",
+  "sha256": "154787b4230a7a9277cf5001599e9dedd73435916770f209c4c55d6f72472bfd",
+  "module": "OSER10",
+  "model_observations": [
+    "RESET affects PCLK data register and FCLK reset release register",
+    "FCLK release drives serializer counter reset",
+    "Removing or masking reset recovery/removal has not been justified"
+  ],
+  "decision": "Keep OSER reset recovery/removal analysis active while unchanged-constraint quality routing runs",
+  "scope": "Vendor behavioral model review, not physical timing proof"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Generated shared hierarchy source checks, manifest hashes, nonempty guard and isolated real preset/reset/release-slew RTL; no fulltop timing or board claim",
+  "export": "D:\\StarclusterBuilds\\shared_export\\20261026_165008\\project",
+  "export_manifest_sha256": "f438763538239de7d9da48697906be91c03cea172769a8f47b0f3882afa4ec47",
+  "log": "PASS exported presets, untouched defaults, release slew\nD:\\StarclusterBuilds\\shared_export\\20261026_165008\\tb.v:14: $finish called at 2640000 (1ps)\n",
+  "source_sha256": {
+    "synth\\band\\tools\\test_shared_export.py": "8c39666d91723ce3fc3ec9f68e1aab015e3d0801035083e558fd7f6cacf81bbf",
+    "synth\\band\\host\\offline_shared.py": "8c372461b0c9db664ece57fdcffb4603401a63c49a37475056a601d89a8cd927",
+    "synth\\band\\host\\editor.py": "7df9325ffd7563fbfe3f688dd17589f826191edb8a418f1fdc6ad9b0991b4bd5"
+  }
+}

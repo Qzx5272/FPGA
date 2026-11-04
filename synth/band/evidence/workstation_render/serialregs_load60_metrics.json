@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "Raw PCM metrics of current serialregs60s sustained256-slot simulation;no microphone,DVI/physical or independent-slot audibility claim.",
+  "source_report": "evidence/workstation_render/009559499d4c_2882500frames.json",
+  "source_report_sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+  "pcm_sha256": "44d1a2fab7e425d04e5c41bedef27aa4ca47b2a85279823d06c80c74e6fc1817",
+  "metrics": {
+    "received": 2882500,
+    "peak": 6928,
+    "max_voices": 256,
+    "max_cycles": 966,
+    "display_available": 1,
+    "playing": 0,
+    "position": 2881500,
+    "drops": 0,
+    "underruns": 0,
+    "deadline": 0,
+    "checked_load_frames": 2880000
+  },
+  "rail_samples": 0,
+  "last_10ms_all_zero": false,
+  "peak_abs": 6928,
+  "rms_channels": [
+    1546.2170757857766,
+    1607.3279630974737
+  ]
+}

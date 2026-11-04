@@ -1,0 +1,17 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "PCM snapshot/Hann/2048FFT/frozen display chain synthesis,no integrated timing/board acceptance",
+  "sources": {
+    "pcm_snapshot.v": "ad7b2b9e46979d1dce6e1199bc723e8af97c99f67c748ce90dc01f5d63b5490a",
+    "pcm_spectrum.v": "081b8ae87f997cb4a53a54678af14460168ac69a8e1a7bcad7822a565cb2d58c",
+    "spectrum_snapshot.v": "dd70e8be4543281205ea898cdb3c2b3abea5b3023541b004c1dafed79971033a",
+    "pcm_spectrum_buffered.v": "aa9b2822484333c8360a14a7c77155c62b847d9f7e3be4ee4a18fde081cc37f0",
+    "fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc"
+  },
+  "build": "D:\\StarclusterBuilds\\buffered_spectrum2048_5dfd542bcf7b",
+  "started": "2026-10-25T23:16:13.661353",
+  "returncode": 0,
+  "finished": "2026-10-25T23:16:17.297037"
+}

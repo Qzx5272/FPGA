@@ -1,0 +1,220 @@
+Deluge - Synthstrom Audible
+Synthstrom Audible
+Toggle site menu
+Deluge
+Shop
+Deluge
+Accessories
+Merch
+Parts
+Dealers
+Retrofit Add-ons
+Retrofit (EU/UK/CAN Add-ons)
+Retrofit (Rest of World Add-ons)
+Community
+Forums
+Music Label
+Open-Source
+About
+News
+Contact
+F.A.Q
+Search
+My shopping cart
+0
+My account
+Portable synthesizer,
+sampler and sequencer
+Watch the videos
+View all features
+Overview
+Features
+Photos
+Downloads
+Accessories
+Reviews
+Videos
+Powerful and robust synthesizer, sampler & sequencer in a portable package
+Deluge is our flagship product. Three years in the making, it is an all-in-one, stand-alone, portable synthesizer, sequencer and sampler designed for the creation, performance and improvisation of electronic music.
+Deluge
+US$
+1,699.00
+Deluge quantity
+Add to cart
+Price above
+INCLUDES
+any applicable import taxes/tariffs – we’ll pay them for you 🙂
+PLEASE READ:
+Order today and your Deluge will be shipped same or next business day.
+Delivery on average takes 4-5 business days.
+* A PDF of the manual/producer guide is included on your SD card, if you’d like a printed version,
+you can purchase here.
+* Every Deluge is shipped with our
+complimentary case
+* To have your import taxes paid by
+us
+your billing and shipping country must be the same.
+Other burning questions are answered over on our
+F.A.Q
+Features
+SYNTHESIZER
+Full-featured internal synthesizer engine (subtractive, wavetable and FM)
+Polyphony limited only by CPU. Up to 64 synth voices may play simultaneously
+Live adjustment of synth and effect parameters with two endless-turn encoders with LED level-meters
+Easy buttons to select the functions these control
+Parameter automation recording
+Full MPE support for connected MIDI controllers. MPE expression can control most parameters
+Arpeggiator
+Dedicated volume and tempo knobs
+LFOs and envelopes on each synth / sample. Highly customizable modulation matrix
+Synthesizer engine features LPF / HPF, FM, portamento, oscillator sync, ring modulation, unison detune, and more
+Four basic digital waveforms, two analog-modeled waveforms, or select any WAV file from SD card
+12dB/oct and 24dB/oct filters, with optional filter drive mode
+FX including delay, reverb, chorus, flanger, phaser, bitcrusher, sidechain effect, live stutter, and more
+Keyboard mode, where the pads become a live instrument on a 2D grid
+Preset or custom scales, or chromatic mode
+Live processing of the audio input including polyphonic pitch shifting (according to sequenced notes), filters, and all FX
+SEQUENCER
+Piano-roll-style sequencing on 128 full RGB pads (16×8) with scrolling and zooming
+Launch, mute and interact with tracks live
+Arranger view, to sequence your instrument parts into a longer composition, and work with audio clips similarly to a DAW
+Euclidean sequencing available, per row / sound.
+Sequencing limited only by device RAM (over 2 million notes)
+Resolution can be set as high as 6144th-notes
+Simultaneously output separate sequences to all 16 MIDI channels, 2 CV / gate channels and 2 additional gate outputs, in addition to internal synthesizers / samples (limited only by CPU)
+CC control and sequencing on all 16 MIDI channels
+MPE support – can record and play back MPE data from external sources, as well as internal synthesizer MPE features
+Probability and iteration based step / note conditions
+Undo / redo note and parameter automation editing and recording. Number of undo steps limited only by RAM
+Advanced syncing capabilities. Non-standard time signatures supported, polymetric
+Adjustable swing
+Horizontal pattern shift and note nudge, and note repeat
+MIDI program change and bank select messages may be output
+SAMPLER
+Streams all samples directly from SD card, without limitations based on RAM size
+Upto 90 unaffected sample voices may play simultaneously
+Multisampling. Fast folder import with automatic pitch detection
+Time-stretching and pitch-shifting
+High quality sample interpolation and rate conversion via 16-point windowed sinc
+Waveform view on main pads, with scrolling, zooming, and loop point editing
+Same filters, modulation matrix and FX as synth engine
+Resampling
+Slicer feature for cutting a sample into evenly sized slices
+AUDIO CLIPS AND LOOPING
+Live looping of audio and instrument / MIDI clips, including easy overdubbing / layering, and automatic tempo setting
+Audio clip live looping includes option to record additional audio “margins” either side of loop (from before you even pressed record), to allow a brief crossfade to eliminate click at loop point
+CONNECTIVITY
+Two ¼” line outputs, and 3.5mm headphone output
+3.5mm mic input, ¼” line input, and built-in microphone
+2x CV outputs. 0 – 10V, individually configurable to between 0.01 and 2.00 volts per octave, or to hertz-per-volt
+4x gate / trigger outputs individually configurable to v-trig or s-trig, with shared voltage switchable between 5V and 12V
+Trigger clock output, configurable up to 192 PPQN
+Trigger clock input, also with adjustable PPQN
+MIDI input and output via hardware connectors or USB. Syncing via MIDI beat clock as leader or follower. Optimized for very low jitter
+Powered via USB B (cable included) or 9 – 12V centre-negative (pedal-style) power supply (500mA) (not included)
+Can host USB MIDI devices via B-to-B cable – up to 4 if using a USB hub. Only powers these devices when powered by 9 – 12V supply
+User-upgradeable firmware – development is ongoing at Synthstrom Audible
+Internal speaker
+Rechargeable Li-ion battery (6+ hours of operation)
+1 x SD slot (1x 32GB V10-speed SD card supplied)
+DIMENSIONS
+Dimensions: 305mm x  208mm x 46mm (12 x 8.2 x 1.8 inches)
+Weight: 1.5kg
+Photos
+Downloads
+Official firmware V4.1.4 - for OLED Deluge
+Released 19 December 2023
+Official firmware V4.1.4 - for classic "numeric" Deluge
+Released 19 December 2023
+Official firmware V4.1.3 for OLED Deluge
+Released 9 February 2023
+Firmware V4.0.1 - for classic "numeric" Deluge
+Released 2 August 2022
+Official firmware V3.1.5 for classic "numeric" Deluge
+Released 16 February 2021. See
+notes
+.
+Deluge factory SD card contents for firmware V2.1 / V3.x / V4.x (322MB)
+For the older ‘numeric’ display Deluges
+Deluge (OLED) factory SD card contents for firmware V4.x
+Deluge Official Guidebook - for firmware V4.0 (Numeric 'old' display)
+This 300 page, full colour, step-by-step manual / producer guide was made in collaboration with
+Synthdawg
+. A full-colour print edition may be ordered from our shop.
+Deluge Official Guidebook - for firmware V4.1 (OLED Edition)
+OLED edition.
+This 300 page, full colour, step-by-step manual / producer guide was made in collaboration with
+Synthdawg
+. A full-colour print edition may be ordered from our shop.
+Deluge Community Guide
+A quick reference guide to the Deluge, adapted from contributions from our users. Updated for V4.0
+Accessories
+Decksaver Cover
+US$
+65.00
+Add to cart
+Official Manual (OLED Edition)
+US$
+23.00
+Read more
+Synthstrom Audible (Wasteland) Hoodie – Midnight
+US$
+60.00
+Select options
+This product has multiple variants. The options may be chosen on the product page
+USB Type A-B Adaptor
+US$
+5.25
+Add to cart
+Reviews
+You can view individual
+customer reviews on Facebook
+Videos
+See all our video playlists at the link below: includes tutorials, demos, performances, our firmware updates, tips & tricks, music videos, our online music festival, walkthroughs and more
+https://www.youtube.com/@SynthstromAudible/playlists
+@synthstrom
+@synthstrom
+Synthstrom Audible
+FAQ
+Warranty
+Shipping & Returns
+Terms & Conditions
+Privacy Policy
+About
+Contact
+© Synthstrom Audible, 2026. All Rights Reserved. Website by
+LVL99
+Deluge
+Shop
+Deluge
+Accessories
+Merch
+Parts
+Dealers
+Retrofit Add-ons
+Retrofit (EU/UK/CAN Add-ons)
+Retrofit (Rest of World Add-ons)
+Community
+Forums
+Music Label
+Open-Source
+About
+News
+Contact
+F.A.Q
+Search
+My account
+Close search
+Search
+Search
+→
+Suggestions:
+Synthstrom TV
+Synthstrom Foundation
+Retrofit Add-ons
+Retrofit (Rest of World Add-ons)
+Retrofit (EU/UK/CAN Add-ons)
+Projects
+Parts
+Merch
+Close newsletter

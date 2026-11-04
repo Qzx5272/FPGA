@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "mode": "burst",
+  "batch_per_5ms": 4,
+  "concurrent_receive": true,
+  "queued_tx_bytes_after_writes": 0,
+  "guard_bytes": 64,
+  "requests": 1000,
+  "valid_frames": 1000,
+  "bad_crc": 0,
+  "unique_frames": 1,
+  "identities": [
+    "04a10001b5f7c8570001000080bb000080f0fa021c0000000000000027a769e6"
+  ],
+  "bytes": 34000
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Current calRAM exported top short 256-slot load; exact PCM identity to prior flat-ROM load. No microphone, long-term, timing or physical acceptance.",
+  "current": "7b868ca08761_7000frames.json",
+  "reference": "0ad57c3b1973_7000frames.json",
+  "pcm_sha256": "788d381216d226a32d278cd297c3f65c1016ebf64770ae904e15e0ec7def5699",
+  "pad_source_sha256": "fa7ec7b12a9b6c3c2f0d23f6baac67b6768206421bcde07078c8210caf477a9d",
+  "checked_load_frames": 4500,
+  "max_cycles": 966
+}

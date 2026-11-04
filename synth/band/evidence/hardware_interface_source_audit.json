@@ -1,0 +1,15 @@
+{
+  "status": "source_interface_audit_only",
+  "created": "2026-10-26T07:25:36.820018",
+  "scope": "Inspected RTL mapping and protocol documentation;not physical wiring or electrical validation",
+  "sources": {
+    "rtl/mcp3208_scanner.v": "9fcc0cfa1e6fef241a6e8b1ecae183a025f2e159ad0bf80c93a30a0e892ed45b",
+    "rtl/local_performer.v": "f702b94f67f426ad429edd6fc06f0a95b7f9617609f25b926f337e388ae6a548",
+    "rtl/local_expression.v": "0b7926144b5a51b4d45bd8e6a66c08fb665a4469edee7537314f6c58c973cd34",
+    "experimental/stage/stage_pad_frontend.sv": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "experimental/stage/stable_selector.sv": "aea237abeb1e67ea1acf262ff4f22da2a8a4871a8eabf328f921b72e5206e9c8",
+    "experimental/local_pedal/pedal_command_gate.v": "bcec37dbebc74d71ecbd58a4f2767f3306a2f067e995ecc6675987b132224fd1",
+    "experimental/audio_input/i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "HARDWARE_INTERFACE.txt": "80ad524ad1c8a64367b57e641e5b3b5bf6afb99f62d668b9616f2f43c0e9e6fb"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim",
+  "report_sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+  "pcm_sha256": "e93f5d87411702cab42f4804359c23791015bdf414e649d1c85b7a872dbc787b",
+  "frames": 4704000,
+  "peak": 6136,
+  "rails": 0,
+  "last_100ms_zero": true,
+  "identical_prior_coeff22_pcm": true
+}

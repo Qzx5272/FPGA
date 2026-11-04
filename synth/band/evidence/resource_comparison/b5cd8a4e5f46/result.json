@@ -1,0 +1,72 @@
+{
+  "status": "analysis_only_not_board_acceptance",
+  "before": {
+    "release": "pt8211_dvi_062a944dcce1",
+    "build_id": 739488645,
+    "hardware_profile": "workstation-pt8211-dvi-v1",
+    "top_module": "board_pt8211_controls_top",
+    "resources": {
+      "logic": 75030,
+      "ff": 38402,
+      "cls": 50993,
+      "ram": 252,
+      "dsp": 182
+    },
+    "reported_negative_pulse_paths": 6,
+    "bitstream_sha256": "062a944dcce1db79746d9734b8441d11edaff6e4a76a09289affb0b92f214212",
+    "manifest_sha256": "0b702a6f1ff0ebefe849c67e7b00ecd4b981381a1fba9553a3a1b795b80e96d3",
+    "resource_report_sha256": "749f378cab36d6014872a1618b5957577b82f8b23b9323f7eaf37dbf74b04e27",
+    "timing_report_sha256": "6e2c408cdb66a05f234abe07a8a633f64f28d388577babc7d2b46400732d751f"
+  },
+  "after": {
+    "release": "pt8211_dvi_81232ed690d3",
+    "build_id": 3735635258,
+    "hardware_profile": "workstation-pt8211-dvi-v1",
+    "top_module": "board_pt8211_controls_top",
+    "resources": {
+      "logic": 69484,
+      "ff": 38209,
+      "cls": 48965,
+      "ram": 252,
+      "dsp": 158
+    },
+    "reported_negative_pulse_paths": 0,
+    "bitstream_sha256": "81232ed690d3586846426ee058e9c449b4d80be0dff48c3740b0fafe9dc6f6ba",
+    "manifest_sha256": "74f4f44a2f91438f99d5006888f8f671b95420457a2001aa530493f612ddbd35",
+    "resource_report_sha256": "8a0817c01f2b326554ae138882e1ad3c7524a20866095ac8005a7e3d4baaf0a9",
+    "timing_report_sha256": "2a7613fe3c0aac816fcdcfa2d0db0d53803b7e655698cb7186af42325c6aa4ec"
+  },
+  "deltas": {
+    "logic": {
+      "before": 75030,
+      "after": 69484,
+      "reduction": 5546,
+      "reduction_percent": 7.391709982673597
+    },
+    "ff": {
+      "before": 38402,
+      "after": 38209,
+      "reduction": 193,
+      "reduction_percent": 0.5025779907296495
+    },
+    "cls": {
+      "before": 50993,
+      "after": 48965,
+      "reduction": 2028,
+      "reduction_percent": 3.97701645323868
+    },
+    "ram": {
+      "before": 252,
+      "after": 252,
+      "reduction": 0,
+      "reduction_percent": 0.0
+    },
+    "dsp": {
+      "before": 182,
+      "after": 158,
+      "reduction": 24,
+      "reduction_percent": 13.186813186813186
+    }
+  },
+  "scope": "Frozen routed resource comparison of same board shell/profile. Firmware, score and mapping differ; do not attribute every delta to one optimization or claim physical audio/stability equivalence. Independent exact96s PCM proof covers the four-engine core render only."
+}

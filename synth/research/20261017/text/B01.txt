@@ -1,0 +1,505 @@
+Push tech specs | Ableton
+Skip to main content
+Skip to footer
+Ableton
+Menu
+Live
+Push
+Move
+Note
+Link
+Shop
+Packs
+Help
+More
+Try Live 12 for free
+Cart
+Account
+Log in or register
+More on Ableton.com:
+Blog
+Ableton for the Classroom
+Ableton for Colleges and Universities
+Certified Training
+About Ableton
+Jobs
+Apprenticeships
+More from Ableton:
+Ableton Learn
+Start making music with beginner-friendly lessons and sounds from experienced artists.
+Learning Music
+Learn the fundamentals of music making right in your browser.
+Learning Synths
+Get started with synthesis using a web-based synth and accompanying lessons.
+Making Music
+Some tips from 74 Creative Strategies for Electronic Producers.
+Overview
+All new features
+Tech specs
+Learn Push
+Upgrade Kit
+Buy now
+Tech specs.
+Push is designed to suit different creative setups, with multiple configurations and ways to connect other gear.
+Push 3 (standalone)
+Use Push as a standalone instrument or connect it to your computer.
+Push 3 (tethered)
+Connect Push to your computer.
+Connectivity
+Audio interface
+2 inputs (line or instrument), 2 balanced outputs, headphone
+Record instruments, synths or effects directly into Push in
+Standalone Mode
+Record into Ableton Live when using
+Control Mode
+Supports class-compliant audio interfaces
+Same I/O: 2 inputs (line or instrument), 2 balanced outputs, headphone
+Record instruments, synths or effects directly into
+Ableton Live
+running on your computer
+MIDI and USB
+Supports class-compliant USB MIDI interfaces
+Connect a MIDI keyboard or controller to play Push’s internal instruments
+Send MIDI out to hardware for a laptop-free setup
+Supports class-compliant USB MIDI interfaces
+Connect a MIDI keyboard or controller to play instruments in Ableton Live
+Send MIDI out to hardware from your Live Set
+ADAT and CV
+Connect an ADAT extender to add eight more inputs and outputs
+Pedal jacks can output
+CV, Trigger, Clock and Gate
+, as well as sending trigger and sustain messages to pedals
+Connect an ADAT extender to add eight more inputs and outputs
+Pedal jacks can output
+CV, Trigger, Clock and Gate
+, as well as sending trigger and sustain messages to pedals
+Ableton Live integration
+Integration with Live
+Access the instruments, devices and effects included in your Live edition
+Compare Live editions ›
+Use Live’s instruments and effects directly on Push in
+Standalone Mode
+(minimum
+Live Intro
+)
+In
+Control Mode
+, Push gives you detailed control over Live on your computer
+Access the instruments, devices and effects included in your Live edition
+Compare Live editions ›
+Must be connected to a computer running Live (minimum
+Live Intro
+)
+Push gives you detailed control over Live on your computer
+Compatible Live versions
+Works best with the latest version of Live
+Authorize Live on Push to use Live’s instruments and effects in
+Standalone Mode
+Works best with the latest version of Live
+Hardware
+Pads
+64 MPE-enabled pads, each with an XY sensor for detecting finger movement
+RGB backlighting
+64 MPE-enabled pads, each with an XY sensor for detecting finger movement
+RGB backlighting
+Processor
+Built-in
+Intel® 11th Gen Core™ i3-1115G4
+processor with
+8 GB RAM
+The Intel® NUC Compute Element powers complex Live Sets in
+Standalone Mode
+No built-in processor; requires connection to a computer via USB 2.0
+A processor can be added later with the
+Upgrade Kit
+Battery life
+Built-in lithium iron phosphate battery
+Provides
+2–2.5 hours
+of play time
+No built-in battery; requires connection to a computer via USB 2.0
+A battery can be added later with the
+Upgrade Kit
+Hard drive
+Built-in
+256 GB SSD
+No built-in drive; requires connection to a computer via USB 2.0
+A hard drive can be added later with the
+Upgrade Kit
+WiFi
+Supports WiFi for cable-free Live Set transfer, Pack downloads, firmware updates, and hardware sync via Ableton Link
+No WiFi support; requires connection to a computer via USB 2.0
+A WiFi module can be added later with the
+Upgrade Kit
+Size and weight
+Size
+Width:
+380 mm / 14.96 in
+Depth:
+318 mm / 12.52 in
+Height (body):
+29 mm / 1.14 in
+Height (body + encoders):
+44.5 mm / 1.75 in
+Width:
+380 mm / 14.96 in
+Depth:
+318 mm / 12.52 in
+Height (body):
+29 mm / 1.14 in
+Height (body + encoders):
+44.5 mm / 1.75 in
+Weight
+3.95 kg / 8.7lbs
+3.1 kg / 6.8lbs
+Price and warranty
+Price
+EUR 1899
+USD 1799
+GBP 1299
+Buy now ›
+EUR 949
+USD 999
+GBP 879
+Buy now ›
+Warranty
+3-year warranty
+3-year warranty
+See the Push manual
+What's in the box?
+Push
+USB-C cable
+Universal power supply
+Regional power cable
+Onboarding guide
+Poster
+Safety and warranty information
+All Push cables are also available to buy separately.
+Need help?
+To learn more about features and functions watch the
+learn Push videos
+or
+read the manual
+. For troubleshooting tips visit the
+knowledge base
+.
+My Push is configured for standalone use. Can I also use it to control Live on my computer?
+Yes, you can connect either configuration of Push to your computer to control Live. Learn about Control Mode in the
+Push Manual
+.
+Can I work in Arrangement View when my Push is in Standalone Mode?
+Push is designed around Session View. Arrangement View isn’t currently supported on Push in Standalone Mode. Live Sets can be loaded and played back, but the Arrangement timeline can’t be edited on Push in Standalone Mode.
+What are the tech specs of Push’s audio interface?
+You can find detailed tech specs for Push’s built-in audio interface in this
+Help Center article
+.
+Will all my Max for Live devices work on Push in Standalone Mode?
+Most Ableton-built Max for Live devices will work on your Push in Standalone Mode, as will many third-party devices. However, there are a few exceptions. You can find the details in this
+Help Center article
+.
+Please note that translating objects for Push is very complex, so we can’t guarantee that all Max for Live devices (including your self-built patches) will work as expected.
+What instruments and effects come with the standalone configuration of Push?
+If you buy your Push with a processor it’ll come with all the Ableton Live Intro instruments and effects pre-installed for standalone use. You can see a list of included devices
+here
+. If you own a Live 12 Standard or Live 12 Suite license already, or buy one with your Push, you can use the instruments and effects belonging to your license.
+Will I be able to use my favorite VSTs on Push in Standalone Mode?
+Push doesn’t support VSTs or Audio Unit plug-ins for use in Standalone Mode. To transfer a Live Set containing plug-ins from your computer to your Push, first freeze any tracks containing plug-ins. Learn more about
+freezing tracks
+.
+Register Live, Push or Move
+About Ableton
+Jobs
+#
+#
+#
+#
+#
+#
+Education
+Offers for students and teachers
+Ableton for the Classroom
+Ableton for Colleges and Universities
+Sign up to our newsletter
+Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.
+Sign up
+Community
+Find Ableton User Groups
+Find Certified Training
+Become a Certified Trainer
+Language and Location
+Language
+English
+Deutsch
+Français
+日本語
+简体中文
+Español
+Country or Region
+Please choose
+United States
+United Kingdom
+France
+Germany
+Canada
+Japan
+China
+Australia
+Afghanistan
+Aland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua And Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire, Sint Eustatius and Saba
+Bosnia And Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Congo, The Democratic Republic Of The
+Cook Islands
+Costa Rica
+Cote D'Ivoire
+Croatia
+Cuba
+Curacao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island And McDonald Islands
+Honduras
+Hong Kong SAR, China
+Hungary
+Iceland
+India
+Indonesia
+Iran (Islamic Republic Of)
+Iraq
+Ireland
+Isle Of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea, Democratic People's Republic
+Korea, Republic Of
+Kuwait
+Kyrgyzstan
+Lao People's Democratic Republic
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macao SAR, China
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia, Federated States Of
+Moldova, Republic Of
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Macedonia, Republic of
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory, Occupied
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena
+Saint Kitts And Nevis
+Saint Lucia
+Saint Martin (French Part)
+Saint Pierre And Miquelon
+Saint Vincent And The Grenadines
+Samoa
+San Marino
+Sao Tome And Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia And The South Sandwich Islands
+South Sudan
+Spain
+Canary Islands (Spain)
+Sri Lanka
+Sudan
+Suriname
+Svalbard And Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syrian Arab Republic
+Taiwan
+Tajikistan
+Tanzania, United Republic Of
+Territory of the French Southern and Antarctic Lands
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad And Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks And Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City State (Holy See)
+Venezuela
+Viet Nam
+Virgin Islands (British)
+Virgin Islands (U.S.)
+Wallis And Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+Contact Us
+Press Resources
+Legal Info
+Corporate Information
+Privacy Policy
+Cookie Settings
+Imprint
+Withdraw from Contract
+Made in Berlin
+Back to top

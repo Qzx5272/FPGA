@@ -1,0 +1,25 @@
+{
+  "release": "pt8211_dvi_620164a544d2",
+  "build_id": 3103104899,
+  "bitstream_sha256": "620164a544d2ecafb3e6f7591de5b10698e96292294efeedb9339fabf4490f08",
+  "selected": "2026-10-26T11:34:46.102127",
+  "software_acceptance": "source-matched short PT8211/DVI chain and43hosttests;bounded coverage",
+  "hardware_evidence": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+  "collaboration_evidence": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+  "board_status": "passed_digital_only_1h256slots_and96s_song_and_synthetic_GUI_seats",
+  "clock_mhz": 50,
+  "fmax_mhz": 50.031,
+  "physical_interface": "fixed onboard PT8211 and HDMI0/DVI;DVI physical display not observed;mic/ADC/pedal tied idle",
+  "storage": "Flash programmed and verified; JTAG reload autonomous96s song passed;physical cold-start untested",
+  "serial_transport": {
+    "guard_zero_bytes": 64,
+    "max_batch_per_5ms": 4,
+    "unguarded_burst_supported": false
+  },
+  "fallback_release": "band_57c8f7b5b006",
+  "final_accepted": false,
+  "post_test_state": "post_flash_cleanup_20261026.json: stopped and zero voices verified; master0 command sent without gain readback",
+  "autoplay_evidence": "evidence/hardware_autoplay_pt8211_dvi_20261026.json",
+  "flash_evidence": "evidence/flash_program_20261026_125833/result.json",
+  "flash_autoplay_evidence": "evidence/hardware_flash_autoplay_pt8211_dvi_20261026.json"
+}

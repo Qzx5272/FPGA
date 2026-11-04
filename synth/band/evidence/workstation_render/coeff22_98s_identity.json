@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "current": "e5de895177f2_4704000frames.json",
+  "reference": "50cf99739a52_4704000frames.json",
+  "pcm_sha256": "e93f5d87411702cab42f4804359c23791015bdf414e649d1c85b7a872dbc787b",
+  "scope": "Frozen coeff22 pre-calRAM top98s PCM exact identity to older fulltop render;notcurrentserialRAM orphysicalacceptance"
+}

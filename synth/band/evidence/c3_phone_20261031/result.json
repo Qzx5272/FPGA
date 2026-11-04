@@ -1,0 +1,8 @@
+{
+  "firmware": "c3-pad-phone-v4",
+  "desktop_ble_test": "passed",
+  "full_config_bytes": 11724,
+  "full_config_unchanged": true,
+  "android_test": "pending USB debugging",
+  "firmware_sha256": "6fd96a94293b0cf43111b42e612a36b20c7c64d285c59e0f0eefde3ab74eabbd"
+}

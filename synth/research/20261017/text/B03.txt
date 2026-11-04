@@ -1,0 +1,209 @@
+Linnstrument
+Linnstrument
+Where to buy
+ONLINE SHOP
+DEALERS
+REGISTRATION
+DISCOUNTS
+Buying USED
+Support
+LINNSTRUMENT
+TEMPEST
+ADRENALINN
+MPC60 V3.10
+LEGACY PRODUCTS
+OTHER
+ABOUT RLD
+Museum
+Roger FAQs
+Press
+Grammy Award
+Stanford Workshop
+Contact
+Limited Time 10% Off Sale!
+For LinnStrument or LinnStrument 128. Only available here.
+For US shipping addresses only. While supplies last.
+At checkout, enter "10off" into he "Coupon Code" field.
+A Music Keyboard for the Modern Era
+Meet LinnStrument, an expressive MIDI controller for musical performance. Unlike a standard piano MIDI keyboard's on/off switches, LinnStrument senses your fingers’ subtle movements in five ways, enabling musical performance expression rivaling that of fine acoustic instruments.
+Join the over
+5600
+LinnStrument owners who have abandoned the simple on/off switches of a MIDI piano keyboard.
+‍
+Available in two sizes:
+LinnStrument (200 pads)
+LinnStrument 128 (128 pads)
+Available in the U.S. exclusively from our online store with 60-Day refund  and free shipping.  Outside the U.S., available from
+these dealers
+or from our online store with 60-day refund and free shipping to
+most countries
+.
+‍
+Five Types of Polyphonic Touch Sensing
+Strike Velocity
+PRESSURE (Z)
+LEft-right (X)
+FrONT-BACK (Y)
+release Velocity
+Unlike the simple on/off switches of a MIDI piano keyboard, LinnStrument's
+patented
+touch-sensing technology permits you to slide in pitch directly from one note to another, tilt your finger forward/backward for subtle timbral variation, and vary note loudness with pressure or velocity, all sensitive to very light touches.
+More:
+Why is expressive touch control important?
+How are the notes arranged?
+Why not a piano note arrangement?
+The piano's note arrangement works well for piano music, but its uneven pitch intervals and rear-positioned black keys make it ill-suited for performing natural pitch bends, slides and other pitch gestures, important elements of expressive performance.
+Stringed instruments don't have this problem because the semitones are uniformly spaced.
+So LinnStrument's notes
+are arranged as on any stringed instrument
+. Each row is a series of consecutive semitones, so bends and pitch slides are simple and intuitive: play a note, slide left or right to the destination note, then wiggle it for vibrato.
+You can tune the rows like a guitar, violin or however you wish. By default they are tuned in musical fourths (five semitones), like a bass guitar with 8 strings. This note arrangement is called the
+4ths String Layout
+and is fast becoming a new standard for expressive musical control, used in Ableton Push and other grid controllers, Roli's LightPad Block, the GeoShred iPad app and now
+over 5600 LinnStruments sold
+.
+To make it easy to find the right notes, the scale notes are lit, with all the C note pads lit in a different color and having a Braille-size bump for tactile feedback. Alternatively, you can light any scale and in any of 10 colors.
+The Fourths String Layout has other advantages over the piano keyboard:
+1) It's isomorphic, meaning that the same chord or scale fingering works in all musical keys.
+2) There are multiple instances of each pitch, permitting solo and accompaniment play in the same pitch range, and a variety of fingerings for each chord or scale.
+3) 5 octaves (on the large model) fit in a playing surface that's only 18.7 inches (475 mm) wide.
+Or if you're a piano keyboard player, do what many LinnStrument players do: place LinnStrument behind your keyboard for expressive solo performance with your right hand.
+More:
+About piano vs. string note layout
+See Videos of LinnStrument
+New: The LinnStrumentalists 3
+A 2023 compilation of videos from LinnStrument owners.
+The LinnStrumentalists 2
+A 2021 compilation of videos from LinnStrument owners.
+The LinnStrumentalists
+A 2018 compilation of videos from LinnStrument owners.
+Introduction to LinnStrument
+A primer for musicians new to LinnStrument.
+LinnStrument's Light Touch
+A demonstration of how sensitive LinnStrument is to light touches
+Up Close with LinnStrument
+Roger gives an up-close description of LinnStrument
+More videos:
+The
+LinnStrument Videos
+page
+‍
+Works with every MIDI synth.
+MPE-compatible.
+LinnStrument sends standard MIDI messages over its
+USB or MIDI output jacks
+, and is configured by default to work out-of-the-box over a single MIDI channel for compatibility with every MIDI sound generator in existence, but with the advantages over a MIDI keyboard of performed vibrato, note-to-note pitch slides, polyphonic pressure sensing, and forward/backward touch control. And
+LinnStrument gets around MIDI's one-channel Pitch Bend limitations
+by automatically quantizing polyphonic pitch slides to semitones, while leaving solo pitch slides continuous.
+To also perform
+fully polyphonic pitch slides and Y-axis gestures
+, you'll need a synth that's compatible with
+MPE
+(MIDI Polyphonic Expression), a new MIDI standard that uses a separate MIDI channel for each touch. It's already supported in
+a long list of major software and hardware instruments
+.
+LinnStrument's official synth is the excellent and free
+Surge XT
+, which includes a library of sounds optimized for LinnStrument. We also provide a free MPE sound library for Apple's MainStage and Logic, plus a free license for the excellent MPE-compatible DAW Bitwig 8-Track.
+More:
+More About LinnStrument's Smart MIDI
+Extraordinarily Versatile
+Step Sequencer
+- Use LinnStrument's RGB note pads as a powerful 2-track
+step sequencer
+with per-note velocity/duration/bend/y-axis values, any time signature, independent track step sizes and loop lengths, scales/drums/notes views, reverse play, live play while sequence plays, swing timing and more. The large LinnStrument model displays 16 steps at a time of 32, whereas the smaller LinnStrument 128 displays 8 steps at a time of 32.
+‍
+Expressive Swing Arpeggiator
+- LinnStrument's built-in Arpeggiator
+responds to all dimensions of movement for entirely new ways of beat-synced play
+. The
+Replay All
+mode creates chordal rhythms merely by varying chord pressure, and
+gives finger drummers entirely new ways to perform beats live
+.
+‍
+Split Keyboard / Strum / CC Faders
+- You can split the keyboard to play two different sounds, and adjust the split point as you like. You can use one split to
+strum
+notes fingered on the other split as on a guitar
+. Or use either split as eight horizontal Control Change Faders to adjust 8 sound parameters in real time as you play.
+‍
+Low Row
+- The lowest row of note pads can be reassigned to act as a Sustain Pedal, a Modulation or Bend strip, to momentarily enable the Arpeggiator (
+sliding your thumb to vary its rate
+), to restrike a fingered chord, or even as a 3D control strip, modulating three parameters at once.
+Sequencer
+Split
+Strum
+CC Faders
+Low Row
+Play on a table or standing -
+you can play it on a table like a keyboard, but at only 5 pounds (large model) and 1" thin, you can also use the included guitar strap pins to
+play it standing up like a guitar
+.
+Single or Dual Foot Switch Input
+- Connect a standard single or dual foot switch for foot control of sustain, Arpeggiator, octaves, Tap Tempo, Control Change messages and more.
+All Settings on front panel / Open Source software
+- All of LinnStrument's settings are available on the front panel so there's no need to fumble with computer editing software. And even with all of LinnStrument's versatility, we didn't want to limit how people would use it. So
+we released the software as open source, allowing you to customize everything
+.
+Specifications
+Models
+LinnStrument
+200 note pads (25 columns, 8 rows)
+Pitch range: 5 octaves (
+60 overlapping pitches, F#0 to F5
+, in default Fourths tuning)
+Size/weight: 22.4” (570 mm) x 8.22” (209 mm) x 1” (25.4 mm), 5 lbs. (2.3 kg)
+Jacks: USB B (data & power), MIDI in/out, single/dual foot switch, power input (DC- or DC+ at 7.5 to 15v; AC at 9 to 15 volts, 300+ mA minimum)
+Included:
+padded folding soft case
+, 4 guitar strap buttons, USB A-to-B cable, introduction letter
+LinnStrument 128
+128 note pads (16 columns, 8 rows)
+Pitch range: 4 octaves (
+51 overlapping pitches
+, F#0 to G#4, in default Fourths tuning)
+Size/weight: 15.7” (399 mm) x 8.22” (209 mm) x 1” (25.4 mm), 3 lbs, 10 oz (1.65 kg)
+Jacks: USB B (data & power), MIDI in/out, single/dual foot switch
+Included:
+neoprene sleeve case
+, 4 guitar strap buttons, USB A-to-B cable, introduction letter
+Both models
+Note pads: 17 mm square, spaced 19mm center-to-center with 2 mm wide, .5 mm deep trough between pads, slightly compressible silicone rubber, and Braille-size tactile bumps on all "C" note pads (in the default row tuning and transposition).
+Minimum touch sensitivity: 50 grams, about the weight of two vertically stacked AA batteries with the positive end placed on the center of a pad.
+Typical latency: 2 ms
+Maximum simultaneous touches: about 50, 15 in MPE mode due to 15-channel limitation of MPE
+Body: steel top panel, aluminum chassis, cherry wood sides
+Warranty: 3 years if you buy direct from my online store. If you buy from a dealer, it's 3 years if you register your purchase within 60 days, or 2 years if not.
+Learn More
+Testimonials, Reviews, Press, Awards
+Pre-Sales FAQs
+Videos
+Owners Manual
+Support Page
+Artist Interviews
+Join the
+Revolution
+There's a revolution brewing. People are starting to understand how limiting it is to play music with on/off switches. Once you've played LinnStrument, it's very difficult to go back. We (Roger and LinnStrument software creator Geert Bevin) invite you to join the revolution.
+LinnStrument
+‍
+200 note pads
+5 octaves
+LinnStrument 128
+‍
+128 note pads
+4 octaves
+$1599 USD
+$1149 USD
+‍
+Available in the U.S. exclusively from our online store with 60-Day refund  and free shipping.  Outside the U.S., available from
+these dealers
+or from our online store with 60-day refund and free shipping to
+most countries
+.
+‍
+About us
+Contact US
+Newsletter
+© 2020 ROGER LINN DESIGN

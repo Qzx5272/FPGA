@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "n": 2048,
+  "scope": "PCM-snapshot/Hann/FFT RTL integration only, synthetic PCM; no fullband synthesis/timing/display/physical acceptance",
+  "compile_log": "",
+  "log": "PASS PCM/Hann/FFT N=2048 asynchronous clocks,stopped analysis,output stalls,metadata,reset,audio continued\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pcm_spectrum\\2048\\tb.v:38: $finish called at 2306850000 (1ps)\n",
+  "max_component_error_lsb": 6.996902230596983,
+  "sources": {
+    "synth\\band\\experimental\\audio_visual\\pcm_snapshot.v": "b8f5ac9898f3b564223f7e536610c123dc5aa81031c608cffe74c7e560d841aa",
+    "synth\\band\\experimental\\audio_visual\\fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum.v": "d77ad578954f80dac93e2b622f1c029f1b94d4755e36591b1d4dd13bacd45b5a",
+    "synth\\band\\experimental\\audio_visual\\hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc",
+    "synth\\band\\experimental\\audio_visual\\fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "synth\\band\\evidence\\pcm_spectrum\\2048\\tb.v": "19f6c38b49bec0ce395a953da43e5ceeee84969e2b54d4cc66f1fd4e954294a5",
+    "synth\\band\\evidence\\pcm_spectrum\\2048\\input.hex": "3896f8f8194a94c507d39143b70c6e5e5919721da7c13f70add3c21940559147",
+    "synth\\band\\tools\\test_pcm_spectrum.py": "8763baf73d8e6aaf5834517e14657a1125cbb9d2321bc52cf2f474c96382063e"
+  }
+}

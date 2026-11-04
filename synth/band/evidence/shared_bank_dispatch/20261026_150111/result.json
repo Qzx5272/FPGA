@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "created": "2026-10-26T15:01:11.852087",
+  "scope": "RTL allocator only:256 same-role identities across8banks, duplicate/full/tail/identity safety, delayed bank completion, blocked probe and panic. No synthesis, integrated musical controls, audio deadlines, physical capacity or adoption claim.",
+  "production_adopted": false,
+  "sources": {
+    "experimental\\shared_voices\\shared_bank_dispatch.v": "dc3e7f31d9993a535923db9eb14063528b2ddba4d54a25ec15754e42525a8935",
+    "experimental\\shared_voices\\shared_note_allocator.v": "a0be269771fdc7f5146bd04444a8f3d5b6afc6b08cb520d27a0db8eb05126b70",
+    "experimental\\shared_voices\\tb_shared_bank_dispatch.sv": "7e183ef485a6a2535e44080d531892573fd7c1cb51cc33d4ff645fad5249af9c",
+    "tools\\test_shared_bank_dispatch.py": "c2c1c0c5a8836064bf49b6bba68b4c397c16525aad981af069840554d4310b41"
+  },
+  "compile_output": "",
+  "simulation_output": "PASS shared256 same-role identities, duplicates, full rejection, tails, stale releases/retirement, source/part release, probe panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\shared_voices\\tb_shared_bank_dispatch.sv:85: $finish called at 207851000 (1ps)\n"
+}

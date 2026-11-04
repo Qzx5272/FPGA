@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "mode": "burst",
+  "concurrent_receive": true,
+  "guard_bytes": 0,
+  "requests": 100,
+  "valid_frames": 1,
+  "bad_crc": 49,
+  "unique_frames": 1,
+  "identities": [
+    "04a10001324b4e4c0000000080bb000080f0fa0200000000000000003119cc46"
+  ],
+  "bytes": 1602
+}

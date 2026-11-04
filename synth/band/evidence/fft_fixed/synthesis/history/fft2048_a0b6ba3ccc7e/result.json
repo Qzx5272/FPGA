@@ -1,0 +1,21 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "Isolated2048FFT synthesis,no integrated timing/board acceptance",
+  "sources": {
+    "fft_fixed.v": "bb6cce7e7d1cabb106240e15146ad0270e58b52ed432da3305f283c74993bb3c",
+    "fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276"
+  },
+  "build": "D:\\StarclusterBuilds\\fft2048_a0b6ba3ccc7e",
+  "started": "2026-10-25T22:36:57.910185",
+  "returncode": 0,
+  "finished": "2026-10-25T22:37:01.576831",
+  "resources": {
+    "logic": 660,
+    "registers": 349,
+    "synthesis_ram_primitives": 14,
+    "SDPB": 12,
+    "pROMX9": 2,
+    "MULTALU27X18": 4,
+    "latches": 0
+  }
+}

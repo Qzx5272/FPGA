@@ -1,0 +1,19 @@
+{
+  "configuration": "silent minimal UART only; no band/audio; new serializer",
+  "build_id": 1280199474,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "bitstream_sha256": "d6bf392893f35331e1889f19b7c7f86d1f0b0396233ab952f5c58af31eb2172e",
+  "snapshot_sha256": {
+    "band_top.v": "1eba6f37832364f750fa83974b5a2457593bac56b80709c93f25b74032f51ed3",
+    "board.cst": "8d0589639bc41aef42c7fb4b6d68a8f29eb1ce1aa23b242a17ea762eb5433f86",
+    "board.sdc": "5a5f9bbc6374b4bb984e13062491985e13e247a34553f5f808ba8e20de8b3fc0",
+    "event_receiver.v": "39e87b65b6f319bf78a65ccbfa747415844ef933a4a592f3ef51846b80996c10",
+    "status_sender.v": "e55d6dab09709bf41135d3657a9f78d54aa022f2b94e66b6ad34d4ba582d50a4",
+    "uart.v": "4fe3a17a5b1e27cd1ff74f8d78f32f25f50b8cbde56e53da121fe915e2e5f907"
+  },
+  "frequencies": [
+    "50.000(MHz)",
+    "121.590(MHz)"
+  ]
+}

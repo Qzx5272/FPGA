@@ -1,0 +1,13 @@
+{
+  "status": "passed_parameter_inspection_only",
+  "netlist_sha256": "f792dfa9b291f61bc74140aedf89356467b997258904e7ad8d9855ed9d29677d",
+  "pll_parameters": {
+    "IDIV_SEL": 1,
+    "FBDIV_SEL": 1,
+    "MDIV_SEL": 15,
+    "MDIV_FRAC_SEL": 1,
+    "ODIV0_SEL": 6,
+    "ODIV0_FRAC_SEL": 0
+  },
+  "scope": "Synthesized PLL parameters only; no physical timing or display acceptance"
+}

@@ -1,0 +1,6 @@
+{
+  "vectors": 116394,
+  "max_adjacent_delta": 202,
+  "seed": 138,
+  "oracle": "rounded analytic math.sin, independent of interpolation"
+}

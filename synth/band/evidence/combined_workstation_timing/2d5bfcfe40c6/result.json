@@ -1,0 +1,24 @@
+{
+  "status": "failed_timing",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_2d5bfcfe40c6",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_2786dc050eec",
+  "frozen_netlist_sha256": "27090f75aee2666a8798b3ccb966e462849f6b565cd3de5afc06c8c3174f50b8",
+  "scope": "Combined workstation exploratory PnR:four explicit clocks,20ns cross-domain maxdelay,zero mindelay,no false paths. No external pins,timing,CDC MTBF or physical acceptance.",
+  "started": "2026-10-26T00:22:27.491578",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "3a9cc835f4c58208cbd5d43f3acf21ddd6af974729dab72a06d5c2a984074faf",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_combined_workstation_timing.py": "91efd6fdc679053d76a2c4fa83050b9a172780eb7f0cd1a8fd8c6e6f078b5bd3"
+  },
+  "returncode": 0,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "mic_clk": 325.521,
+    "audio_clk": 40.69,
+    "display_clk": 20.0
+  },
+  "setup_violations": 518,
+  "hold_violations": 21,
+  "finished": "2026-10-26T00:45:52.767049"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "7000frame no-microphone256slot export:old/new pipeline PCM byte identity only,not whole-song/timing/physical acceptance",
+  "before_report": "b447df786733_7000frames.json",
+  "after_report": "80c39185b995_7000frames.json",
+  "frames": 7000,
+  "pcm_sha256": "788d381216d226a32d278cd297c3f65c1016ebf64770ae904e15e0ec7def5699"
+}

@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "cases": 98304,
+  "scope": "Exhaustive packet kind and readiness/control combinations,source classes0..5; kind11 path equation only,not formal whole-engine equivalence"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Singer note selection after authorization only; not an ownership validator",
+  "log": "PASS singer identity,latest-note,fallback,old releases,source loss,part separation,panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\vocoder\\tb_singer_note_control.v:33: $finish called at 17340000 (1ps)\n",
+  "sha256": {
+    "singer_note_control.v": "c8ac765fb807f94937ab20ba30c5620c414b38be7d4e503f89dec99945fbf475",
+    "note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "tb_singer_note_control.v": "32e32cb5510e431ab86256bf7852cc4291115b0d1358f5fe797528bf43b85a03"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "evidence_level": "RTL-generated digital waveform analysis, not listener or board acceptance",
+  "wav_sha256": "7edd40961c25548a8c5e7d2275badc3c16c543f666cfe62fa5b0db38f9daf2d7",
+  "checks": {
+    "all_segments_nonzero": true,
+    "all_tails_decay": true,
+    "different_vowel_spectra": true,
+    "bend_frequencies": true,
+    "no_integer_clipping": true
+  },
+  "segments": [
+    {
+      "name": "FM electric piano",
+      "rms": 505.5919556569309,
+      "peak_frequency_hz": 440.0000947454574,
+      "power_centroid_hz": 454.77196092785437,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "held reed",
+      "rms": 1475.794227113404,
+      "peak_frequency_hz": 440.0000027027791,
+      "power_centroid_hz": 484.00180034716874,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "vowel a",
+      "rms": 515.2090367632346,
+      "peak_frequency_hz": 219.99998838100586,
+      "power_centroid_hz": 863.140424411062,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "vowel e",
+      "rms": 540.9302083564015,
+      "peak_frequency_hz": 220.00000526404818,
+      "power_centroid_hz": 864.5748798485656,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "vowel i",
+      "rms": 577.4909662442782,
+      "peak_frequency_hz": 220.00000905155727,
+      "power_centroid_hz": 888.9399960262937,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "vowel o",
+      "rms": 589.1647770626228,
+      "peak_frequency_hz": 880.0000021736904,
+      "power_centroid_hz": 780.7928796681272,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "vowel u",
+      "rms": 577.521309671773,
+      "peak_frequency_hz": 219.9999952051486,
+      "power_centroid_hz": 511.877638862561,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "reed centered",
+      "rms": 1475.794227113404,
+      "peak_frequency_hz": 440.0000027027791,
+      "power_centroid_hz": 484.00180034716874,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "reed bend up",
+      "rms": 1474.818184451053,
+      "peak_frequency_hz": 493.47220966391933,
+      "power_centroid_hz": 542.7826083017662,
+      "tail_rms": 0.0
+    },
+    {
+      "name": "reed bend down",
+      "rms": 1476.0927168541955,
+      "peak_frequency_hz": 391.9605717117682,
+      "power_centroid_hz": 431.1964776091436,
+      "tail_rms": 0.0
+    }
+  ],
+  "minimum_vowel_cosine_distance": 0.08066337551833902,
+  "maximum_bend_relative_error": 8.894049976313627e-05
+}

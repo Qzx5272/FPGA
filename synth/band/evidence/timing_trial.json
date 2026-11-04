@@ -1,0 +1,12 @@
+{
+  "status": "rejected_timing",
+  "isolated_project": "D:\\StarclusterBuilds\\timing_enable_trial_20261023\\project",
+  "module_tests_passed": 20,
+  "fast_pcm_matches_accepted_full_pcm": true,
+  "pcm_sha256": "9a75bdb072aa9131241f91c55ac4a0e0aaa8abc533416ba76649cf4143bdb13a",
+  "not_promoted": true,
+  "setup_violations": 23,
+  "hold_violations": 0,
+  "fmax_mhz": 49.316,
+  "full_clock": "intentionally aborted after failed timing"
+}

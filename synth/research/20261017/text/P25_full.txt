@@ -1,0 +1,1082 @@
+=== PAGE 1 ===
+300 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+Modeling of Tension Modulation Nonlinearity in
+Plucked Strings
+Tero Tolonen, Student Member, IEEE, Vesa Välimäki, Senior Member, IEEE, and Matti Karjalainen, Member, IEEE
+Abstract—In this paper, a nonlinear discrete-time model that
+simulates a vibrating string exhibiting tension modulation nonlin-
+earity is developed. The tension modulation phenomenon is caused
+by string elongation during transversal vibration. Fundamental
+frequency variation and coupling of harmonic modes are among
+the perceptually most important effects of this nonlinearity. The
+proposed model extends the linear bidirectional digital waveguide
+model of a string. It is also formulated as a computationally more
+efficient single-delay-loop structure. A method of reducing the
+computational load of the string elongation approximation is
+described, and a technique of obtaining the tension modulation
+parameter from recorded plucked string instrument tones is pre-
+sented. The performance of the model is demonstrated with anal-
+ysis/synthesis experiments and with examples of synthetic tones
+available at http://www.acoustics.hut.fi/~ttolonen/tmstr_SAP/.
+Index Terms— Acoustic signal processing, modeling, musical
+acoustics, musical instruments, nonlinear systems, signal syn-
+thesis.
+I. I NTRODUCTION
+P
+HYSICAL modeling is one of the most rapidly advancing
+areas in computer music and sound synthesis. With multi-
+media applications emerging into desktop computers and other
+interactive terminals, physics-based virtual instruments reach
+a growing consumer group. Algorithms for sound effects and
+sound synthesis are for the first time being standardized in the
+proposed MPEG-4 multimedia standard [2]. No doubt, physical
+modeling is going to play a key role within the area of digital
+audio in the future.
+Physical models are computational algorithms that simulate
+sound generating mechanisms found, e.g., in musical instru-
+ments and the human voice production. From a sound synthesis
+point of view, the most popular physical modeling approach has
+been based on the digital waveguide [3]–[5]. In its basic form it
+is derived from the linear one-dimensional (1-D) wave equation
+and it is an efficient way to simulate wave propagation in res-
+onators that produce harmonic or nearly harmonic signals, such
+as a vibrating string or an air column in a wind instrument. Non-
+linear extensions to the linear digital waveguide have been pre-
+sented for the simulation of nonlinear propagation of waves in a
+Manuscript received October 20, 1998; revised June 22, 1999. This work was
+supported by the GETA Graduate School, Helsinki University of Technology,
+Jenny ja Antti Wihurin rahasto (the Foundation of Jenny and Antti Wihuri), and
+the Academy of Finland. Preliminary results of this study were reported in [1].
+The associate editor coordinating the review of this manuscript and approving
+it for publication was Dr.-Ing. Juergen H. Herre.
+The authors are with the Laboratory of Acoustics and Audio Signal Pro-
+cessing, Helsinki University of Technology, Espoo FIN-02015, Finland (e-mail:
+tero.tolonen@hut.fi; http://www.acoustics.hut.fi/∼ttolonen).
+Publisher Item Identifier S 1063-6676(00)03907-9.
+trombone [6], [7] and for a string that is terminated with a non-
+linear double-spring apparatus [8]. These two cases may be gen-
+eralized to signal-dependent nonlinearities that can be imple-
+mented using a time-varying fractional delay (TVFD) filter [9].
+Other nonlinear string instrument models include the slap-bass
+model of Rank and Kubin [10] and the nonlinear commuted syn-
+thesis model for the violin by Smith [11]. A model with a memo-
+ryless nonlinearity for the kantele, a traditional Finnish plucked
+string instrument, is presented in [12].
+The linear digital waveguide has been extensively used for
+simulation of wave propagation in a string in synthesis of
+plucked and struck string instrument sounds; see, e.g., [5] and
+[13] for references. However, the vibrating string is linear only
+to the first approximation and, consequently, nonlinear phe-
+nomena exhibited by every real string are inherently omitted
+in the simulation. Perceptually, among the most relevant
+nonlinear phenomena of a vibrating string are pitch variation
+and variation of timbre due to nonlinear coupling of the
+harmonic components. They are related to the modulation of
+string tension that is caused by elongation of the string during
+vibration. Other effects caused by tension modulation include
+missing overtone generation and partial intermodulation.
+Nonlinear vibration of an elastic string has been examined
+both analytically and experimentally. In 1945, Carrier studied
+the free undamped motion of a string [14]. His work considered
+planar transversal wave motion and discarded longitudinal
+vibrations. In 1967, Narasimha extended Carrier’s results and
+took into account the longitudinal vibrations [15]. It was shown
+that the two transversal and the longitudinal polarizations are
+nonlinearly coupled (see also [16]). At the same time Anand
+[17] showed that the equations of transversal and longitudinal
+waves are separable if the order of modes of the transverse vi-
+bration is small compared to
+, where is Young’s
+modulus, is the cross-sectional area of the string, and
+is the nominal string tension. He further showed that under
+sinusoidal initial conditions the two transversal polarization
+components possess an oscillatory character. The interaction
+of transversal and longitudinal wave motion was also tackled
+in [18]. More recently, experimental results of nonlinear string
+vibration have been reported. Legge and Fletcher described
+the coupling of vibrating modes in a one-polarization wave
+motion and demonstrated the generation of missing harmonics
+as a result of this coupling [19]. Hansen et al. experimented
+with coupling of polarizations and reported measured results
+of amplitudes and phase differences of transversal components
+under forced motion [20]. More interestingly, they found
+nonlinear coupling of the two transversal polarizations even at
+vibration displacements of only a few microns.
+1063–6676/00$10.00 © 2000 IEEE
+=== PAGE 2 ===
+TOLONEN et al.: MODELING OF TENSION MODULATION NONLINEARITY IN PLUCKED STRINGS 301
+In this paper, we develop a nonlinear discrete-time model that
+simulates the nonlinearity caused by tension modulation in a
+string. Our model extends the bidirectional linear digital wave-
+guide model of a string, and we also formulate the model as
+a computationally efficient single-delay-loop structure. The pa-
+rameters of the model are estimated from recordings of string
+instrument tones. Audio examples available via the WWW [21]
+demonstrate that the synthesized tones are more realistic than
+those produced with a linear model.
+The main guideline applied in developing the nonlinear
+model is perceptual relevance. Our model is not able to ac-
+curately simulate all the nonlinear phenomena exhibited by
+a vibrating string, but it essentially captures the effects that
+tension modulation nonlinearity has on the tone character. In
+particular, the proposed model allows parametric control of
+pitch variation and coupling between the harmonics.
+The paper is organized as follows. The vibration of an elastic
+string exhibiting tension modulation is described in Section II.
+In Section III, a digital waveguide is formulated for waves with
+uniformly distributed time-varying propagation speed. Using
+the results of Section III, the digital waveguide model of a string
+with tension modulation is described in Section IV . A method
+for model parameter estimation based on recordings of string
+instrument tones is described in Section V , and results of syn-
+thesis experiments are reported in Section VI. Conclusions are
+drawn in Section VII.
+II. N
+ONLINEARLY VIBRATING STRING
+In this study, we are interested in autonomous motion of a
+simply terminated string that vibrates transversally in a plane.
+We also assume that the propagation speed of the longitudinal
+vibration is considerably higher than that of the transversal vi-
+bration, as is typically the case with strings of musical instru-
+ments, so that tension is approximately uniform along the string.
+In steel strings, for instance, the speed of the longitudinal vibra-
+tion is approximately 5100 m/s, whereas the speed of transversal
+vibration in the high-E string (330 Hz, length 0.65 m) is 446 m/s.
+The string is taken to be linearly elastic, and the inharmonicity
+caused by string stiffness (dispersion) is assumed negligible. We
+further assume that the cross-sectional area of the string, and
+hence its density, is constant during the vibration.
+It is clear that these assumptions prohibit accurate simulation
+of some of the nonlinear phenomena exhibited by a vibrating
+string, including couplings between the longitudinal and the two
+transversal polarizations. However, as demonstrated below, the
+model derived using these assumptions is capable of qualita-
+tively imitating the essential behavior of a string with tension
+modulation in both functional and perceptual senses. Elabora-
+tion of this model to include the three vibrational polarizations
+remains an interesting future challenge.
+The main cause of nonlinearity in a vibrating string is tension
+modulation that is related to elongation of the string during vi-
+bration. Elongation may be expressed as the deviation from the
+nominal string length
+[19]
+(1)
+where is the displacement of the string and is the spatial co-
+ordinate along the string. It is obvious from (1) that the elonga-
+tion
+every time the string is in its equilibrium position,
+and that it oscillates with a period equal to half the period of
+string vibration.
+Tension along the string is linearly related to the elonga-
+tion and it can be expressed as [19]
+(2)
+where
+nominal tension corresponding to the string at rest;
+Young’s modulus;
+cross sectional area of the string.
+Equation (2) reveals that the tension also oscillates with half the
+period of the string vibration, as illustrated in Fig. 1. The figure
+depicts a simulation of tension in a string that is plucked at its
+midpoint. In this simulation, we assume that the end supports
+are rigid and that there is only frequency-independent damping
+that results in the decay of the tone. The simulation is conducted
+using a dual-delay-line digital waveguide model with distributed
+losses. The oscillating curve shows the time-varying tension of
+the string. The monotonically decaying curve illustrates the av-
+eraged tension, and it is obtained with a running average com-
+putation over segments with length of one tension oscillation
+period. The dashed line shows the constant value of
+, i.e.,
+the nominal tension corresponding to the string at rest. Note that
+when the string is plucked at the midpoint, twice
+during one period of string oscillation. This is intuitively clear
+since the displacement
+for all twice in a period.
+However, when a lossy string is plucked at any other point, the
+tension only approaches the nominal tension with time.
+In the linear case, the propagation speed of the transversal
+wave is , where is the linear mass
+density along the string at rest. When we assume that the longi-
+tudinal wave propagation speed is considerably larger than the
+transversal propagation speed, the linear mass density and the
+tension are approximately spatially constant and we may write
+the propagation speed of the transversal wave as
+(3)
+where is linear mass density of the vibrating string given by
+.
+The time-varying tension modifies the effective frequencies
+of the harmonics. Note that since the propagation velocity of
+the wave is time-varying, the spatially orthogonal eigenmodes
+are not separable to sinusoids with constant frequencies in the
+time variable. Since we are interested in the variation of the
+fundamental frequency, it is more natural to think in terms of the
+effective fundamental frequency of vibration, i.e., a fundamental
+frequency obtained by analysis of the tone or corresponding to
+=== PAGE 3 ===
+302 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+Fig. 1. Tension variation in a simulated vibration of a string is depicted with
+the oscillating solid line for a string plucked at the midpoint. The average tension
+is presented with the monotonic decay curve. The dashed line shows the nominal
+tension that corresponds to the string at rest.
+a perceived pitch. In the linear case, the fundamental period of
+vibration is expressed as
+(4)
+where is twice the distance (in meters) between the string ter-
+minations. In the nonlinear case, the wave propagation speed
+is a function of time and thus using directly (4) we would ob-
+tain a fundamental period that oscillates with approximately
+double the period of the lowest spatial mode. Since this is am-
+biguous, we use the term effective fundamental period to refer
+to a short-time average value of
+. In that sense, we expect
+the effective fundamental frequency and also the perceived pitch
+to behave like the average tension curve of Fig. 1. As an ex-
+ample, Fig. 2 illustrates two fundamental frequency trajecto-
+ries detected from a recorded electric guitar tone (top) and a
+steel-stringed acoustic guitar tone (bottom). The time constant
+of the fundamental frequency drift is related to the time constant
+of the attenuation of the tone [19].
+While the average tension explains the time-varying funda-
+mental frequency of the tone, it is not capable of accounting for
+the coupling between the harmonic modes. Legge and Fletcher
+showed that such a coupling may only occur when, in addition
+to the tension modulation, at least one of the end supports is
+not completely rigid [19]. In the case of rigid end supports, the
+harmonic modes are always spatially orthogonal and thus they
+may not interact with each other. In musical instruments the end
+supports are never completely rigid and mode coupling always
+takes place.
+The assumption that the longitudinal wave propagation ve-
+locity is considerably larger than that of the transversal waves
+leads to a uniform spatial distribution of the transversal velocity.
+This essentially means that the tension modulation is immedi-
+ately spread across the string. From a discrete-time simulation
+viewpoint, this is important since such a wave propagation can
+be accurately simulated with a computationally efficient struc-
+ture [9], as described in Section III.
+III. D
+IGITAL WA VEGUIDE WITHUNIFORMLY TIME-VARYING
+PROPAGATIONSPEED
+In a linear 1-D bidirectional digital waveguide, waves
+and travel to the right and to the left, respectively [3],
+[4]. The output of the waveguide at a discrete time instant
+at position is obtained as
+(5)
+Fig. 2. Time-varying fundamental frequency as detected in (top) a recorded
+electric guitar tone and (bottom) in a recorded tone of a steel-stringed acoustic
+guitar.
+Fig. 3. Wave propagation in a digital waveguide with time-varying velocity
+for the two cases when the velocity is (left) smaller and (right) larger than the
+nominal velocity /99 .
+The wave propagation speed is related to the spatial and
+temporal sampling intervals and as .
+When the propagation speed is spatially uniformly distributed
+and relatively slowly varying in time, the wave travels a dis-
+tance
+between time instances and . Note
+that only when . The time-varying
+wave propagation is illustrated in Fig. 3 for the two cases where
+and . Fig. 3 implies that we have to re-
+sample the content of the delay lines in each sampling period.
+While this may be achieved using fractional delay filtering [22],
+[23], a computationally efficient strategy is required in practice.
+Furthermore, constant resampling of the traveling wave is bound
+to degrade the signal since an error is associated with every in-
+terpolation operation [23].
+A. Efficient Formulation of the Time-Varying Propagation
+Speed
+A more efficient and accurate implementation of the digital
+waveguide with time-varying uniformly distributed propagation
+speed can be developed if we only wish to observe the traveling
+wave at one or a few spatial positions. For reasons of simplicity,
+we only consider the right-going wave
+,
+in the following; it is straightforward to treat the left-going wave
+similarly. For convenience in developing the formulation, we as-
+sume that the waveguide is lossless. When using the formulation
+in the actual synthesis model, we will assume that the losses of
+the string are not significantly altered by the tension modulation
+so that consolidating the losses into a single linear filter results
+in a negligible approximation error. Given an initial distribution
+, , the output at an observation point
+at is given as , and at
+=== PAGE 4 ===
+TOLONEN et al.: MODELING OF TENSION MODULATION NONLINEARITY IN PLUCKED STRINGS 303
+as , and so on. More gen-
+erally
+(6)
+Note that, as before, we assume that the propagation speed
+varies relatively slowly in time so that we allow only to
+change at sample instants.
+We express the time-varying velocity as
+, where is the deviation from the nominal ve-
+locity , and rewrite (6) as
+(7)
+In (7) the term equals a spatial distance , i.e., the
+distance a wave travels with velocity in time . We can
+thus compute
+if the wave propagates with a constant velocity in
+the digital waveguide. This means the digital waveguide is used
+as in the linear case with constant velocity, and that the time-
+varying velocity is taken into account by reading the output with
+a fractional delay filter. This implies that it suffices to utilize a
+single fractional delay filter operating in the vicinity of position
+and approximating the real-valued delay
+(8)
+Notice that the delay is the time integral of the speed devi-
+ations, and if the mean of is nonzero, the value of parameter
+will diverge.
+The delay term depends on the time history of the de-
+viation term . This can be interpreted as comprising the
+locality in time for the locality in position since now we have
+to store the time history of the deviation term but we only
+need to apply the fractional delay at a single position in the dig-
+ital waveguide. When resampling is used, the distance
+depends only on the current velocity value . Note that since
+we have developed the single-fractional-delay formulation for
+the waveguide of infinite length, the time history required is infi-
+nite in general. However, in practical applications, only the time
+history of speed deviation that corresponds to the traveling time
+between two consecutive observation or modification positions
+in the waveguide is required.
+By applying the preceding treatment to the left-going trav-
+eling wave, we can generalize the above result for the bidirec-
+tional digital waveguide. After a straightforward computation
+the waveguide output at position
+is obtained as
+(9)
+i.e., as a sum of the two traveling waves at position .
+B. Time-Varying Propagation in Digital Waveguide of Finite
+Length
+In practical applications, the waveguides are always of finite
+length. Let us consider a unidirectional waveguide where two
+observation points and are separated by a delay of
+samples which is related to a physical distance on the string
+as
+(10)
+where is the sampling rate. Note that the modulation of the
+delay in the digital waveguide implementation corresponds to
+modulation of the propagation speed in actual string vibration,
+i.e., it corresponds to the time it takes the wave to travel the dis-
+tance
+with varying propagation speed. The delay param-
+eter is in this case obtained as
+(11)
+where is the nominal delay rounded to the nearest
+integer. The summation is thus performed over the delay cor-
+responding to the distance between the two observation points.
+Note that, as in (8), the sum in (11) is over time, i.e., the delay
+line corresponds to the delay it takes a wave to travel from
+to
+and that this delay is not constant. However, since the devia-
+tion in delay is small, it is convenient to compute the sum over
+a constant delay of integer-valued length. Note that we assume
+that is defined on the range .I ti s
+convenient to define .
+The summation in (11) may be implemented computation-
+ally efficiently with a delay line of unit delays and a state
+variable that stores the current value . During each sam-
+pling interval we only need to subtract the value exiting the
+delay line from
+and add the value entering the delay line.
+The transfer function for the boxcar summation is
+.
+We may also approximate the boxcar summation of (11) using
+a leaky integrator with a transfer function
+(12)
+where and is a gain term. The parameters of
+the leaky integrator of (12) may be matched to the boxcar inte-
+gration, e.g., by requiring that the sums of the impulse responses
+of the two integrators match, and that the time constant of the
+leaky integrator equals the length of the boxcar summation. The
+time constant is defined to be the time in which the impulse re-
+sponse of the filter in (12) decays into
+of its maximum value
+(first sample) and it is computed as [24]
+(13)
+=== PAGE 5 ===
+304 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+After the parameter is computed using (13), it is straight-
+forward to show that the parameter if we require
+that where and are
+the impulse responses of the leaky integrator of (12) and of the
+boxcar integrator, respectively. In sound synthesis applications,
+the parameters of the leaky integrator may be used to control the
+pitch variation and the coupling of the harmonics separately as
+demonstrated in Section IV .
+The finite-length digital waveguide with uniformly
+time-varying propagation speed may be identified as a
+special case of a general nonlinear delay line with a signal-de-
+pendent time-varying fractional delay (TVFD) filter parameter
+[9]. The TVFD structure is illustrated in Fig. 4. The function
+maps the signal in the delay line into a delay parameter
+that controls the fractional delay filter.
+IV . DISCRETE-TIME SIMULATION OF VIBRATING STRING
+TENSION MODULATION
+With the developments of the previous section, we may now
+proceed to a bidirectional digital waveguide model that simu-
+lates a string with tension modulation. Such a model is depicted
+in Fig. 5. The upper and lower delay lines together with the elon-
+gation approximation and computation of the delay parameter
+may be identified as two TVFD structures presented in
+Fig. 4. The transfer functions and model the wave
+reflections at the fret and at the bridge, respectively. The output
+of the model is taken at the bridge, corresponding to the case of,
+e.g., the acoustic guitar [13]. For the model to be complete we
+need to define the two blocks of elongation approximation and
+delay-parameter
+computation.
+A. Elongation Approximation
+The elongation of a string is given by (1) where it is ob-
+served that it essentially depends on the first spatial derivative
+of the displacement, i.e., the slope. It is thus natural to choose
+slope as the wave variable for the digital waveguide. When slope
+waves are used, the reflection filters
+and are in-
+verting, as would be the case with, e.g., velocity waves. Note
+that while in the linear case the conversion between wave vari-
+ables is straightforward, in the nonlinear case it is not directly
+possible in general. The elongation of the string may be approx-
+imated by developing (1) for the digital waveguide as
+(14)
+where and are, respectively, the right and left
+going slope waves at position and time instant . The slope
+waves thus correspond to the first spatial derivative of the dis-
+placement in samples. The use of the rounded nominal string
+length in (14) is typically sufficiently accurate since the
+discrepancy is always limited to 1/2 samples which is small
+compared to
+with practical sampling frequencies.1
+1For instance, at a sampling frequency of 44 100 Hz, the E tone of 659 Hz
+corresponds to /76 /61/51/51/58/52/54samples, /94/76 /61/51 /51samples, and the discrep-
+ancy is 0.46 samples, i.e., 1.4%.
+Fig. 4. General nonlinear delay line that is implemented with the TVFD
+structure [9]. The function /71maps the contents of the delay line onto the delay
+variable /100/40/110/41that controls the fractional delay filter.
+Fig. 5. Dual-delay line model implementing the tension modulation with
+signal-dependent fractional delay elements.
+While the elongation given by (14) is readily applicable for a
+simulation, it may be advantageous in practical implementations
+to approximate it with a computationally more efficient formula.
+If we assume that
+, we may develop
+a truncated Taylor series approximation of (14). Note that the
+assumption made when developing the linear wave equation is
+which corresponds to
+in the discrete-time formulation. Now we only assume that
+. With the truncated Taylor series approximation
+we obtain
+(15)
+The use of the truncated Taylor series approximation reduces
+the computational complexity of the elongation approximation
+since the square-root operation is removed. In Section IV-B, we
+describe how the approximated elongation is used to compute
+the time-varying delay parameter
+of Fig. 5.
+B. Computation of the Delay Parameter
+The deviation of time-varying propagation speed of (3) from
+the nominal speed may be written for the discrete-time
+case as
+(16)
+=== PAGE 6 ===
+TOLONEN et al.: MODELING OF TENSION MODULATION NONLINEARITY IN PLUCKED STRINGS 305
+where . The time-varying delay parameter is
+obtained using (11) and (16) as
+(17)
+where since is the sampling interval and
+equals the sampling frequency, and is given by either
+(14) or (15), depending on the desired accuracy and computa-
+tional capacity.
+In order to simplify (17) for a computationally more efficient
+implementation, it is useful to examine the range of values the
+parameter
+may have. For a typical high-E string
+of an acoustic guitar with nylon strings N/m ,
+m , and N [25], yielding .
+For a steel string the nominal string tension may be 50% greater
+than that of the nylon string, and Young’s modulus is approxi-
+mately 40 times that of the nylon string [25]. However, the string
+diameter may be ten times smaller than that of the nylon string,
+and thus the value of
+is only several times larger than that
+of the nylon string. The length of the string in a typical acoustic
+guitar is approximately 0.65 m, and the maximum displacement
+may be several millimeters. For a displacement of 2.0 mm at the
+middle of the string, the relative elongation is
+Thus the second-order term is typically
+negligible. If computational efficiency is emphasized, the
+square root in (17) may be approximated by the first terms of a
+Taylor series, assuming ,a s
+(18)
+The output signal of the model may be a force signal at the
+bridge of an acoustic guitar or a pickup voltage in an electric
+guitar. In the first case the output signal is related to the differ-
+ence of the velocity waves at the bridge [4], and in the latter case
+to the velocity output signal, i.e., the sum of the two velocity
+waves. Thus, a conversion from slope waves
+to velocity
+Fig. 6. Initial slope wave variables for the dual-delay-line model
+corresponding to an ideal pluck at a distance of /49/61/51/76 from the
+string termination.
+waves is required. In the linear case the two waves
+are related through the time-invariant propagation speed
+as and
+[4]. The velocity wave can thus be computed by subtracting the
+left-going wave from the right-going wave and multiplying by
+the propagation speed. In the nonlinear case the conversion is
+not so straightforward. However, it still seems reasonable to ap-
+proximate the output velocity signal at position
+as
+, since the
+deviation term is small compared to the nominal prop-
+agation speed .
+In the linear case, the input signal can be fed at a single point
+of the digital waveguide if acceleration waves are used [26],
+[27]. With the nonlinear model using slope variables, the input
+signal is a distribution that is inserted in the two delay lines.
+Similarly, if the virtual string is plucked while it still vibrates,
+the input signal has to be gradually added at all the positions of
+the delay lines. Fig. 6 illustrates the initial slope variable distri-
+bution along the two delay lines corresponding to an ideal pluck
+2
+at a distance of from the termination. The slope vari-
+ables are piecewise constant and identical in the two delay lines.
+It is possible to feed the input signal only to a single position of
+the delay line. However, this results in inaccuracy of the elon-
+gation estimation at the beginning of the signal.
+Methods to obtain the parameter
+from recorded plucked-
+string tones are described in Section V . Synthesis examples of
+the model of Fig. 5 are described in Section VI. In the fol-
+lowing, we reduce the dual-delay-line model into a computa-
+tionally more efficient single-delay-loop model.
+C. Single-Delay-Loop Model with Tension Modulation
+In the linear case it is straightforward to reduce the dual-
+delay-line model of Fig. 5 into a single-delay-loop (SDL) model
+that includes a loop with a delay line, fractional delay filter,
+and a loop filter that consolidates the reflection filters
+and , and a comb-filter for the pluck-position effect [13].
+It is obvious that the SDL model is computationally more ef-
+ficient than the dual-delay-line model. While commutation is
+not allowed in general in nonlinear models, we present an SDL
+model with tension modulation nonlinearity that approximates
+the model of Fig. 5. Examples of synthetic tones obtained with
+the dual-delay-line and the single-delay-loop models are avail-
+able through the Internet [21].
+2By ideal pluck we refer to initial conditions in which the string is released
+with no initial velocity and a displacement distribution in the shape of a triangle.
+=== PAGE 7 ===
+306 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+Combining the two delay lines requires the commuting of one
+of the reflection filters and a delay line. Thereafter the filters
+can be consolidated. In this case the commutation changes the
+contents of the delay lines little since the magnitude of the re-
+flection filters is very close to unity [13]. Fig. 7 shows this inter-
+mediate stage in developing the single-delay-line model. Loop
+filter
+now represents the composite lowpass filtering ef-
+fect of and . Notice also how the output of the
+model is simplified. The output transfer function in
+Fig. 5 may be replaced with a constant multiplier with negligible
+effect in the output signal since the frequency response
+is very close to 1 at all frequencies, as explained in [13].
+The two time-varying FD filters may also be combined into
+a single TVFD unit. This FD element is placed at the end of the
+delay lines which may then be combined into a single delay line
+that is twice as long as each of the delay lines in Fig. 5. The
+resulting single-delay-loop string model is presented in Fig. 8.
+The elongation estimation in Fig. 8 is equivalent to that shown in
+the dual-delay-line model (Fig. 5) and it consists of summing the
+first sample of the delay line with the last one, the second sample
+with the second last one, and so on, squaring all the sums, and
+summing them up according to (15).
+The delay line initialization should account for the fact that
+the reflection filter and the delay line are commuted. Since slope
+waves are used, the initial contents of the delay lines in Fig. 6
+may be directly aggregated. An example of initial contents of
+the single-delay-line model corresponding to an ideal pluck at a
+distance of 1/3
+is depicted in Fig. 9. Note that if, e.g., ve-
+locity waves were used, the reflection filters would be inverting
+and that would have to be taken into account by inverting the
+left-going (or right-going) wave before aggregation.
+D. Reduced-Complexity Estimation of Elongation
+The string-length estimation is the most time-consuming
+operation in both the dual-delay-line model of Fig. 5 and the
+single-delay-loop model of Fig. 8. The computational burden
+of the string-length estimation depends on the nominal string
+length
+as can be seen in (14) and (15), and with low tones
+it requires hundreds of addition and multiplication operations
+per sampling interval. The computational cost of the other
+string model components is independent of
+and they
+typically require only 10–20 operations.
+A simple way to reduce the computational burden of the
+squared sum is to approximate it with a sparse squared sum ,
+where every th sample pair is included but the rest of the
+pairs are excluded. The sparse squared sum must be scaled by
+to compensate the total magnitude. For instance, for a 147
+Hz tone at a sampling frequency of 22 050 Hz, the nominal
+string length is 75 samples. Using (15) we have to complete
+149 additions and 76 multiplications for approximation of the
+elongation. Using the sparse-squared-sum approximation with
+, we have 12 summing points yielding 23 additions
+and 13 multiplications. The sparse-squared-sum approximation
+may be considered a spatial downsampling and it is justified by
+the fact that summing over the string produces a lowpass-fil-
+tering effect on the tension modulation. Examples in Section VI
+illustrate the results of this method.
+Fig. 7. Dual-delay line model where the reflection filters have been commuted
+and combined. The output of the model is also simplified.
+Fig. 8. Single-delay-loop model for simulation of a vibrating string with
+tension modulation.
+Fig. 9. Initial slope wave variables for the single-delay-line model of Fig. 8
+corresponding to an ideal pluck at a distance of /49/61/51/76 from the string
+termination.
+V. PARAMETER ESTIMATION
+If a linear model is used for synthesis, the model parameters
+may be analyzed using a methodology described in [28]–[30].
+The parameter estimation may be divided into three subprob-
+lems, namely, estimation of the fundamental frequency, design
+of a loop filter that optimally reproduces the frequency-depen-
+dent decay of vibration of the autonomously vibrating string,
+and computation of an excitation signal. When the tension mod-
+ulation nonlinearity is added, an additional task is to estimate the
+modulation depth in the original signal. In this study, we have
+used isolated tones of acoustic and electric guitars recorded in
+an anechoic chamber for parameter estimation. We apply the
+previously reported methods that were developed to parameter
+estimation in the linear case [28], [29] and develop a technique
+for estimation of the tension modulation parameters.
+A. Estimation of Parameters for the Linear String Model
+The nominal fundamental frequency
+may be obtained
+from the short-time autocorrelation function that is computed on
+the tail of the tone where the tension modulation effect is small.
+The estimated nominal string length is given by the nominal
+fundamental frequency as
+where is the
+sampling frequency.
+The loop-filter parameters are obtained using techniques pre-
+sented in [28]–[30] that apply sinusoidal modeling [31], [32].
+The amplitude envelopes of the decaying partials are detected
+in a short-time Fourier transform of the recorded signal and the
+loop filter is optimized to yield similar decay-time-constants for
+=== PAGE 8 ===
+TOLONEN et al.: MODELING OF TENSION MODULATION NONLINEARITY IN PLUCKED STRINGS 307
+the partials of the synthetic signal. A one-pole loop filter is used
+in this study since it has been found a good compromise be-
+tween computational efficiency and simulation accuracy [28],
+[29]. Estimation of the loop-filter parameters is detailed in [28],
+[29]; another approach using heterodyne filtering is described
+in [30].
+In the linear case, the excitation signal may be obtained by
+canceling the decaying partials in the recorded tone by inverse
+filtering [28] or by subtraction of the sinusoidal model and
+equalizing the attack part of the residual signal [29], [30]. The
+synthesis technique using this kind of excitation signal is called
+commuted waveguide synthesis (CWS) [33], [34] referring to
+the commuting of the body response with the string model.
+In the nonlinear case the CWS technique is not applicable,
+and we may not aggregate the pluck with the body response.
+The body response may be simulated with a linear filter that
+models the impulse response of the body driven at the bridge.
+In this case it is advantageous to separate the most prominent
+body responses and resynthesize them with, e.g., parametric
+second-order resonators that are in cascade with the digital
+filter modeling the rest of the body response [35], [29], [30].
+Note that we are no longer able to obtain an exact replica of the
+recorded tone since the inverse-filtering technique used in CWS
+is not applicable. However, the proposed method together with
+the parameter estimation methods allow for better control of
+the instrument behavior, in particular, the tension modulation
+nonlinearity.
+Models have recently been presented for plucking a string
+with finger [36]–[38]. In this study we assume an ideally
+plucked string and discard the dynamics of the plucking event.
+Thus, the initial slope distributions in the two waveguides
+are defined by the maximum displacement and the plucking
+position.
+B. Estimation of Parameters for the Tension Modulation Model
+Inspection of (17) reveals that the variation of the delay
+parameter
+depends on the parameter and the string
+length deviation . Since we are only able to observe the
+nonlinearity from a recorded tone via the varying fundamental
+frequency and generation of missing harmonics, estimation of
+these parameters directly is difficult. Rather, we match
+and
+to produce the desired pitch variation. Parameter
+can also be derived from the Young’s modulus , the cross sec-
+tional area , and the nominal tension of the string if such
+data are available. In some cases the maximum displacement
+of the string is estimated during the recording, and estimation
+of by analysis of the recorded tone is straightforward, as
+described below.
+If no information about the maximum displacement is avail-
+able, a suitable value may be chosen according to the recorded
+tone. We compute the average of the elongation over
+the first period of string vibration using the nominal propaga-
+tion speed
+. From the estimated time history of the funda-
+mental frequency we obtain the maximum average delay param-
+eter (corresponding to the maximum fundamental frequency) as
+(19)
+where is the maximum value of the detected funda-
+mental frequency. In (19) the difference is divided by 2 since
+the varying delay is implemented with two fractional delay
+filters when the dual-delay-line model of Fig. 5 is used. For the
+single-delay-loop model, the varying delay is
+.
+By substituting for and for in
+(17), we obtain
+(20)
+Parameter may be solved from (20) as
+(21)
+Similarly, we may estimate the maximum average elongation
+using (21) if is known.
+An example of the determination of the parameter follows.
+The maximum fundamental frequency of the acoustic guitar
+tone in bottom of Fig. 2 is approximately
+Hz
+and the nominal fundamental frequency is Hz;
+thus, from (19) with a sampling frequency
+of 22 050 Hz. The nominal string length corresponds approx-
+imately to
+samples. If we assume that the max-
+imum displacement of the string with a length of 0.65 m is 0.001
+m, . If we assume that the displacement is 0.002 m,
+. Note that our method of detecting parameter is not a
+reliable method to derive information about the string properties
+from the recorded tone. It is only used to derive the tension mod-
+ulation depth for given displacement so that the original pitch
+variation is reproduced in the synthetic tone.
+With the parameter estimation method described above we
+are able to produce synthetic tones that have similar tension
+modulation effects to the original tone. In Section VI we demon-
+strate the performance of the model with analysis/synthesis ex-
+amples.
+VI. A
+NALYSIS/SYNTHESIS EXPERIMENTS
+In this context, we discuss synthetic tones that were obtained
+using
+1) linear model;
+2) nonlinear dual-delay line model of Fig. 5;
+3) nonlinear SDL model of Fig. 8;
+=== PAGE 9 ===
+308 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+4) nonlinear sparse-squared-sum SDL model.
+These signals together with more audio examples are available
+through the WWW [21].
+The signals have a nominal fundamental frequency of 147 Hz,
+the parameter is 766, and the initial displacement is assumed
+2.0 or 4.0 mm on a string with length of 0.65 m. The displace-
+ment of 2.0 mm corresponds to the initial displacement used to
+estimate the parameter
+from the recorded tone in Section V .
+The leaky integrator of (12) is used in the SDL models. We have
+used a sampling frequency of 22 050 Hz in the simulations and
+the nominal string length samples. The loop-filter
+parameters were estimated using the method based on sinu-
+soidal modeling, and they were
+and .
+The plucking position was 1/3 of the string length from the
+bridge. The sparse-squared-sum parameter is . In the
+pitch variation examples of Section VI-A, the parameter of
+the leaky integrator used in the SDL models is obtained using
+(13) and it is . As described in Section III-B, the value
+of parameter is 75.0. In the examples of Section VI-B, these
+parameters are varied. Note that it is practical to combine the
+term
+from (12) with the term from
+(18) into a single multiplying coefficient when implementing
+the SDL model with tension modulation nonlinearity.
+A. Pitch Variation
+Figs. 10 and 11 depict the estimated fundamental frequency
+trajectories of the synthetic tones obtained using the non-
+linear dual-delay-line model (solid line), the nonlinear SDL
+model (dashed line), and the nonlinear sparse-squared-sum
+SDL model (dash-dot line). In Fig. 10 the pitch variation has
+been designed to match the 0.6 Hz deviation detected in the
+steel-stringed acoustic guitar tone of Fig. 2. In Fig. 11 we
+choose the initial displacement larger than when estimating the
+value of the parameter
+. Thus, we expected the pitch variation
+to be larger than in the original recorded guitar tone on the
+bottom Fig. 2. This is indeed the case since all the synthetic
+models exhibit a pitch variation of approximately 2.5 Hz. This
+suggests that our model behaves physically correctly since the
+pitch variation is increased by increasing the initial displace-
+ment. Comparing the results of Fig. 10 to the pitch deviation in
+the original tone shown in the bottom plot of Fig. 2, it is seen
+that the amplitude and decay of deviation of the fundamental
+frequency are relatively well matched to the original tone. The
+nominal fundamental frequencies of the tones are not the same
+since the fundamental frequency trajectory of the recorded tone
+approaches 146 Hz while that of the synthetic tone approaches
+147 Hz. This is easily corrected by adjusting the nominal string
+length in the synthetic tone. In Figs. 10 and 11 the curves
+obtained with different implementations of the model behave
+similarly.
+B. Coupling of Harmonics
+As discussed by Legge and Fletcher, the tension modulation
+nonlinearity together with nonrigid end support provides means
+for coupling of the harmonic modes [19]. Since we have not
+incorporated a detailed model of the bridge in this simulation
+and we assume that there is only slight frequency-dependent
+Fig. 10. Time-varying fundamental frequency as detected from synthesized
+tones obtained using the nonlinear dual-delay-line model (solid line),
+the nonlinear single-delay-loop model (dashed line), and the nonlinear
+single-delay-loop model with the sparse-squared-sum (
+/77 /61/54) computation
+(dash-dot line). The fundamental frequency variation is designed to be 0.6 Hz.
+The initial slope distributions correspond to an initial displacement of 2 mm on
+a string with a length of 0.65 m. The plucking position is one third of a string
+length from the termination.
+Fig. 11. Time-varying fundamental frequency as detected from synthesized
+tones obtained using the nonlinear dual-delay-line model (solid line),
+the nonlinear single-delay-loop model (dashed line), and the nonlinear
+single-delay-loop model with the sparse-squared-sum computation (dash-dot
+line). The initial slope distributions correspond to an initial displacement of 4
+mm on a string with a length of 0.65 m. The plucking position is one third of a
+string length from the termination.
+damping at the terminations, we expect the coupling between
+the harmonic modes to be small. Note that in actual instruments
+the terminations are nonrigid and the harmonic mode coupling
+is more pronounced.
+The coupling of harmonic modes is most clearly detectable
+by the phenomenon of generation of missing harmonics. If a
+linear string is plucked at a position that is exactly at a node of a
+harmonic mode, that mode will not be excited. In the nonlinear
+string where the harmonic modes are coupled, such a harmonic
+will in general start to vibrate since it is effectively driven by
+other harmonic modes. In the simulation, we plucked the virtual
+string at a distance of one third string length from the bridge, and
+thus in the linear case every third harmonic is missing. Fig. 12(a)
+illustrates the magnitude spectrum of a tone obtained using the
+linear dual-delay line model, and Fig. 12(b) the spectrum of a
+tone obtained with the nonlinear dual-delay line model. As ex-
+pected, in the linear case the harmonics are completely missing
+and in the nonlinear case the spatially almost orthogonal har-
+monic modes prohibit any significant coupling; the magnitudes
+of every third harmonic are considerably smaller than those of
+the other harmonic modes.
+=== PAGE 10 ===
+TOLONEN et al.: MODELING OF TENSION MODULATION NONLINEARITY IN PLUCKED STRINGS 309
+Fig. 12. Generation of missing harmonics. Magnitude spectra of synthetic
+tones obtained with (a) the linear dual-delay-line model, (b) the nonlinear
+dual-delay-line model using boxcar integration, (c) the SDL model using the
+leaky integrator with /97/61/0/48/58/57/55, (d) the SDL model with /97/61/0/48/58/57/57/53,
+and (e) the SDL model with /97/61/0/48/58/57/57/57.
+For sound synthesis purposes, it may be attractive to use a
+model that permits the harmonic mode coupling. It turns out
+that if the boxcar integrator is replaced with the leaky integrator
+of (12), the harmonic modes become coupled. Furthermore, the
+extent of coupling may be controlled with the parameters of
+the leaky integrator. Fig. 12(c)–(e) illustrate the harmonic mode
+coupling when the nonlinear SDL model is used with the leaky
+integrator. The leaky integrator parameter
+is , ,
+and in the three plots, respectively, and the parameter
+. It is seen that with , when the effec-
+tive integration length is considerably shorter than in the boxcar
+integration in this case, the magnitudes of the initially missing
+harmonic modes are comparable to those of the neighboring
+harmonics. Increasing the effective length of integration by in-
+creasing the value of
+reduces the harmonic mode coupling
+effect, as illustrated in Fig. 12(d) and (e).
+Note that modification of the leaky integrator parameters re-
+sults in synthetic tones that are not authentic in the sense that the
+tension modulation simulation with altered integration parame-
+ters does not correspond to the physical behavior of the string.
+However, from a sound synthesis and perceptual viewpoint, the
+pitch variation and coupling of harmonic modes may be para-
+metrically and intuitively controlled to obtain synthetic tones
+that retain the string character.
+VII. C
+ONCLUSIONS
+In this paper, a nonlinear model was developed for the sim-
+ulation of a string exhibiting tension modulation nonlinearity.
+It was shown that the tension-modulated string may be simu-
+lated with a digital waveguide model with uniformly distributed
+time-varying propagation velocity that is controlled by the elon-
+gation of the string. The structure was first formulated with two
+time-varying fractional delay filters and it was then simplified
+into a single-delay-loop model with only one TVFD filter. The
+computational complexity was further reduced by simplifying
+the elongation computation using a sparse-squared-sum struc-
+ture. A technique was described for estimation of the modula-
+tion depth parameter from recorded plucked-string instrument
+tones. The validity and performance of the model was demon-
+strated by analysis/synthesis examples and synthetic tones avail-
+able via the WWW [21].
+While the proposed model is not capable of exact resynthesis,
+the synthesized tones demonstrate that it essentially captures
+the two perceptually most important tension modulation effects,
+namely, variation of the fundamental frequency and coupling of
+the harmonic components. With the nonlinear effects, the syn-
+thesized tones appear more lively mainly due to subtle variations
+in the timbre of the tones similar to real plucked-string tones.
+R
+EFERENCES
+[1] V . Välimäki, T. Tolonen, and M. Karjalainen, “Plucked-string synthesis
+algorithms with tension modulation nonlinearity,” in Proc. IEEE
+ICASSP, vol. 2, Phoenix, AZ, Mar. 1999, pp. 977–980.
+[2] Information technology—Coding of audiovisual objects—Part 3: Audio,
+ISO/IEC FCD Std. 14 496-3, 1998.
+[3] J. O. Smith, “Music applications of digital waveguides,” Dept. Music,
+Stanford University, Stanford, CA, Tech. Rep. STAN-M-39, CCRMA,
+May 1987.
+[4] , “Physical modeling using digital waveguides,”Comput. Music J.,
+vol. 16, no. 4, pp. 74–91, 1992.
+[5] , “Physical modeling synthesis update,” Comput. Music J., vol. 20,
+no. 2, pp. 44–56, 1996.
+[6] R. Msallam, S. Dequidt, S. Tassart, and R. Caussè, “Physical model of
+the trombone including nonlinear propagation effects,” in Proc. Inst.
+Acoustics, vol. 19, Edinburgh, U.K., Sept. 1997, pp. 245–250.
+[7] S. Tassart, R. Msallam, P. Depalle, and S. Dequidt, “A fractional delay
+application: Time-varying propagation speed in waveguides,” in Proc.
+Int. Computer Music Conf. , Thessaloniki, Greece, Sept. 1997, pp.
+256–259.
+[8] J. R. Pierce and S. A. Van Duyne, “A passive nonlinear digital filter de-
+sign which facilitates physics-based sound synthesis of highly nonlinear
+musical instruments,” J. Acoust. Soc. Amer., vol. 101, pp. 1120–1126,
+Feb. 1997.
+[9] V . Välimäki, T. Tolonen, and M. Karjalainen, “Signal-dependent non-
+linearities for physical models using time-varying fractional delay fil-
+ters,” in Proc. Int. Computer Music Conf. , Ann Arbor, MI, Oct. 1998,
+pp. 264–267.
+[10] E. Rank and G. Kubin, “A waveguide model for slapbass synthesis,” in
+Proc. IEEE ICASSP, vol. 1, Munich, Germany, Apr. 1997, pp. 443–446.
+[11] J. O. Smith, “Nonlinear commuted synthesis of bowed strings,” in
+Proc. Int. Computer Music Conf., Thessaloniki, Greece, Sept. 1997, pp.
+264–267.
+[12] M. Karjalainen, J. Backman, and J. Pölkki, “Analysis, modeling and
+real-time synthesis of the kantele, a traditional Finnish string instru-
+ment,” in Proc. IEEE ICASSP, vol. 1, Minneapolis, MN, Apr. 1993, pp.
+229–232.
+[13] M. Karjalainen, V . Välimäki, and T. Tolonen, “Plucked string models:
+From Karplus–Strong algorithm to digital waveguides and beyond,”
+Comput. Music J., vol. 22, no. 3, pp. 17–32, 1998.
+[14] G. F. Carrier, “On the nonlinear vibration problem of the elastic string,”
+Q. Appl. Math., vol. 3, pp. 157–165, 1945.
+[15] R. Narasimha, “Non-linear vibration of an elastic string,” J. Sound Vib.,
+vol. 8, no. 1, pp. 134–146, 1968.
+=== PAGE 11 ===
+310 IEEE TRANSACTIONS ON SPEECH AND AUDIO PROCESSING, VOL. 8, NO. 3, MAY 2000
+[16] W. C. Elmore and M. A. Heald, Physics of Waves, New York: Dover,
+1969.
+[17] G. V . Anand, “Large-amplitude damped free vibration of a stretched
+string,” J. Acoust. Soc. Amer., vol. 45, no. 5, pp. 1089–1096, 1969.
+[18] P. M. Morse and U. K. Ingard, Theoretical Acoustics. Princeton, NJ:
+Princeton Univ. Press, 1968.
+[19] K. A. Legge and N. H. Fletcher, “Nonlinear generation of missing modes
+on a vibrating string,”J. Acoust. Soc. Amer., vol. 76, pp. 5–12, July 1984.
+[20] R. J. Hanson, J. M. Anderson, and H. K. Macomber, “Measurements of
+nonlinear effects in a driven vibrating wire,” J. Acoust. Soc. Amer., vol.
+96, pp. 1549–1556, Sept. 1994.
+[21] T. Tolonen, V . Välimäki, and M. Karjalainen. (1999) Sound examples
+for modeling of tension modulation nonlinearity in plucked strings. [On-
+line]http://www.acoustics.hut.fi/∼ttolonen/tmstr_SAP/.
+[22] V . Välimäki, “Discrete-time modeling of acoustic tubes using fractional
+delay filters,” Ph.D. dissertation, Helsinki Univ. Technol., Espoo, Fin-
+land, 1995.
+[23] T. I. Laakso, V . Välimäki, M. Karjalainen, and U. K. Laine, “Splitting
+the unit delay—Tools for fractional delay filter design,” IEEE Signal
+Processing Mag., vol. 13, pp. 30–60, Jan. 1996.
+[24] S. J. Orfanidis, Introduction to Signal Processing. Englewood Cliffs,
+NJ: Prentice-Hall, 1996.
+[25] N. H. Fletcher and T. D. Rossing, The Physics of Musical Instruments,
+New York: Springer-Verlag, 1991.
+[26] J. O. Smith, “Techniques for digital filter design and system identifica-
+tion with application to the violin,” Ph.D. dissertation, Stanford Univ.,
+Stanford, CA, June 1983.
+[27] M. Karjalainen and U. K. Laine, “A model for real-time sound synthesis
+of guitar on a floating-point signal processor,” in Proc. IEEE ICASSP,
+vol. 5, Toronto, Ont., Canada, 1991, pp. 3653–3656.
+[28] V . Välimäki, J. Huopaniemi, M. Karjalainen, and Z. Jánosy, “Physical
+modeling of plucked string instruments with application to real-time
+sound synthesis,” J. Audio Eng. Soc., vol. 44, pp. 331–353, May 1996.
+[29] T. Tolonen, “Model-based analysis and resynthesis of acoustic guitar
+tones,” M.Sc. thesis, Helsinki Univ. Technol., Espoo, Finland, Jan. 1998.
+[30] V . Välimäki and T. Tolonen, “Development and calibration of a guitar
+synthesizer,” J. Audio Eng. Soc., vol. 46, pp. 766–778, Sept. 1998.
+[31] R. J. McAulay and T. F. Quatieri, “Speech analysis/synthesis based
+on a sinusoidal representation,” IEEE Trans. Acoust.. Speech, Signal
+Process., vol. 34, pp. 744–754, Aug. 1986.
+[32] X. Serra, “A system for sound analysis/transformation/synthesis based
+on a deterministic plus stochastic decomposition,” Ph.D. dissertation,
+Stanford Univ., Stanford, CA, 1989.
+[33] J. O. Smith, “Efficient synthesis of stringed musical instruments,” in
+Proc. Int. Computer Music Conf., Tokyo, Japan, Sept. 1993, pp. 64–71.
+[34] M. Karjalainen, V . Välimäki, and Z. Jánosy, “Toward high-quality sound
+synthesis of the guitar and string instruments,” in Proc. Int. Computer
+Music Conf., Tokyo, Japan, Sept. 1993, pp. 56–63.
+[35] M. Karjalainen and J. O. Smith, “Body modeling techniques for string
+instrument synthesis,” in Proc. Int. Computer Music Conf., Hong Kong,
+Aug. 1996, pp. 232–239.
+[36] M. Pavlidou and B. E. Richardson, “The string–finger interaction in
+the classical guitar,” in Proc. Int. Symp. Musical Acoustics , Dourdan,
+France, July 1995, pp. 559–564.
+[37] , “The string–finger interaction in the classical guitar: Theoretical
+model and experiments,” in Proc. Inst. Acoustics , vol. 19, Edinburgh,
+U.K., Sept. 1997, pp. 55–60.
+[38] G. Cuzzucoli and V . Lombardo, “Physical model of the plucking process
+in the classical guitar,” in Proc. Int. Computer Music Conf. , Thessa-
+loniki, Greece, Sept. 1997, pp. 172–179.
+Tero Tolonen (S’98) was born in Oulu, Finland,
+in 1972. He majored in acoustics and audio signal
+processing and received the M.Sc.(Tech.) and
+Lic.Sc.(Tech.) degrees in electrical engineering
+from the Helsinki University of Technology (HUT),
+Espoo, Finland, in January 1998 and December
+1999, respectively. He is currently pursuing a
+postgraduate degree.
+He has been with the HUT Laboratory of Acous-
+tics and Audio Signal Processing since 1996. His re-
+search interests include model-based audio represen-
+tation and coding, physical modeling of musical instruments, and digital audio
+signal processing.
+Mr. Tolonen is a student member of the IEEE Signal Processing Society and
+the Audio Engineering Society.
+Vesa Välimäki (S’90–M’92–SM’99) was born
+in Kuorevesi, Finland, in 1968. He received the
+M.Sc.(Tech.), Lic.Sc.(Tech.), and Dr.Sc.(Tech.)
+degrees in electrical engineering from the Helsinki
+University of Technology (HUT), Espoo, Finland, in
+1992, 1994, and 1995, respectively.
+Since 1990, he has been with the Laboratory of
+Acoustics and Audio Signal Processing, HUT. In
+1996, he spent six months as a Postdoctoral Research
+Fellow with the University of Westminster, London,
+U.K. He then returned to HUT, where he holds
+the position of Senior Assistant. Currently, he is on leave as a Postdoctoral
+Researcher at the Academy of Finland. In April 1999, he was appointed Docent
+in Audio Signal Processing at HUT. His research interests are in musical signal
+processing, active noise control, and digital filter design. He has published
+more than 70 journal articles and conference papers.
+Dr. Välimäki is a senior member of the IEEE Signal Processing Society, the
+Audio Engineering Society, the International Computer Music Association, and
+the Acoustical Society of Finland. He is the Secretary of the IEEE Finland sec-
+tion.
+Matti Karjalainen (M’84) was born in Hankasalmi,
+Finland, in 1946. He received the M.Sc. and the
+Dr.Tech. degrees in electrical engineering from
+the Tampere University of Technology, Tampere,
+Finland, in 1970 and 1978, respectively. His doctoral
+dissertation dealt with speech synthesis by rule in
+Finnish.
+From 1980 to 1986, he was Associate Professor
+and since 1986, he has been a Full Professor of
+acoustics with the Faculty of Electrical Engineering,
+Helsinki University of Technology, Espoo, Finland.
+His research activities cover speech synthesis, analysis, and recognition, audi-
+tory modeling and spatial hearing, DSP hardware, software, and programming
+environments, as well as various branches of acoustics, including musical
+acoustics and modeling of musical instruments.
+Dr. Karjalainen is a fellow of the AES and a member of ASA, EAA, ICMA,
+ESCA, and several Finnish scientific and engineering societies. He was the Gen-
+eral Chair of the 1999 IEEE Workshop on Applications of Audio and Acoustics,
+New Paltz, NY .

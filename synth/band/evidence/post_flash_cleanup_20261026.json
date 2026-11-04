@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "time": "2026-10-26T13:03:06.887808",
+  "build_id": 3103104899,
+  "last_status": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 0,
+    "cycles": 70,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  "crc_errors": 0,
+  "master_zero_command_sent": true,
+  "gain_readback_available": false
+}

@@ -1,0 +1,214 @@
+{
+  "status": "passed",
+  "evidence_level": "RTL waveform numerical checks, not board or perceptual acceptance",
+  "wav_sha256": "82d14b6eda8120d47ce100d0bb7c0c85d459e73c0b83abc89cd8c304d3b14999",
+  "checks": {
+    "all_notes_audible_digital": true,
+    "velocity_monotonic_each_register": true,
+    "fundamental_pitch": true,
+    "released_tails_decay": true,
+    "piano_decays_while_held": true,
+    "reed_sustains_while_held": true,
+    "no_integer_clip": true
+  },
+  "segments": [
+    {
+      "instrument": "piano",
+      "midi_note": 45,
+      "velocity": 32,
+      "rms": 147.070195293778,
+      "early_rms": 372.50468285647094,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 110.00032034940494,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 45,
+      "velocity": 80,
+      "rms": 367.6936033404715,
+      "early_rms": 931.2576617134487,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 110.00003187258338,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 45,
+      "velocity": 127,
+      "rms": 583.7128652535423,
+      "early_rms": 1478.3458340320778,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 110.0000370183029,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 69,
+      "velocity": 32,
+      "rms": 147.09164872622782,
+      "early_rms": 372.4745838644564,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 440.0003257726624,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 69,
+      "velocity": 80,
+      "rms": 367.7190303920916,
+      "early_rms": 931.2262490259819,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 439.99993399684087,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 69,
+      "velocity": 127,
+      "rms": 583.7503094217595,
+      "early_rms": 1478.3206147517526,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 440.0000193582743,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 93,
+      "velocity": 32,
+      "rms": 147.1044303802574,
+      "early_rms": 372.52282060969094,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1760.000027653519,
+      "expected_hz": 1760.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 93,
+      "velocity": 80,
+      "rms": 367.7423690574694,
+      "early_rms": 931.3234172402196,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1760.0000493306147,
+      "expected_hz": 1760.0
+    },
+    {
+      "instrument": "piano",
+      "midi_note": 93,
+      "velocity": 127,
+      "rms": 583.7811959009128,
+      "early_rms": 1478.4549141333327,
+      "held_rms": 0.0,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1759.9999280119835,
+      "expected_hz": 1760.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 45,
+      "velocity": 32,
+      "rms": 268.27449678454343,
+      "early_rms": 268.2740040518276,
+      "held_rms": 269.541808445369,
+      "tail_rms": 0.0,
+      "fundamental_hz": 109.99999999775937,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 45,
+      "velocity": 80,
+      "rms": 670.7794950186685,
+      "early_rms": 670.7799988632637,
+      "held_rms": 673.9922154594963,
+      "tail_rms": 0.0,
+      "fundamental_hz": 109.99999706025027,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 45,
+      "velocity": 127,
+      "rms": 1064.9208901075704,
+      "early_rms": 1064.9190171675027,
+      "held_rms": 1070.0494668472109,
+      "tail_rms": 0.0,
+      "fundamental_hz": 109.99999515325071,
+      "expected_hz": 110.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 69,
+      "velocity": 32,
+      "rms": 268.2765725422181,
+      "early_rms": 268.2765410914641,
+      "held_rms": 268.2765830258019,
+      "tail_rms": 0.0,
+      "fundamental_hz": 439.99999122033313,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 69,
+      "velocity": 80,
+      "rms": 670.8805065453162,
+      "early_rms": 670.877125485733,
+      "held_rms": 670.8905014978227,
+      "tail_rms": 0.0,
+      "fundamental_hz": 439.99999600569816,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 69,
+      "velocity": 127,
+      "rms": 1064.953571831303,
+      "early_rms": 1064.9547552008958,
+      "held_rms": 1064.9551751130184,
+      "tail_rms": 0.0,
+      "fundamental_hz": 439.99999983819345,
+      "expected_hz": 440.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 93,
+      "velocity": 32,
+      "rms": 268.39159822915474,
+      "early_rms": 268.3913327587163,
+      "held_rms": 268.3915423406632,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1759.9998725249427,
+      "expected_hz": 1760.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 93,
+      "velocity": 80,
+      "rms": 670.84040575982,
+      "early_rms": 670.8402995497513,
+      "held_rms": 670.8403833998069,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1759.999949002013,
+      "expected_hz": 1760.0
+    },
+    {
+      "instrument": "reed",
+      "midi_note": 93,
+      "velocity": 127,
+      "rms": 1065.0405097929374,
+      "early_rms": 1065.0402844493724,
+      "held_rms": 1065.0403372642747,
+      "tail_rms": 0.0,
+      "fundamental_hz": 1759.9999379848534,
+      "expected_hz": 1760.0
+    }
+  ]
+}

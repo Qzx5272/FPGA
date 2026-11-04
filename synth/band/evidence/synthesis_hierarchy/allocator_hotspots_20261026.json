@@ -1,0 +1,230 @@
+{
+  "status": "analysis_only",
+  "netlist": "D:\\StarclusterBuilds\\pt8211_onboard_syn_5e4f2b059569\\impl\\gwsynthesis\\pt8211_onboard.vg",
+  "sha256": "d7537d484640ff27a9dca00022cc4deb507f908655911c5e69a93ccda1b263c8",
+  "rows": [
+    {
+      "module": "shared_bank_dispatch",
+      "logic": 239,
+      "ff": 169,
+      "memories": {}
+    },
+    {
+      "module": "shared_role_controls",
+      "logic": 1290,
+      "ff": 1146,
+      "memories": {}
+    },
+    {
+      "module": "shared_note_allocator",
+      "logic": 862,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer",
+      "logic": 2003,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank",
+      "logic": 3492,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_0",
+      "logic": 851,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_0",
+      "logic": 1999,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_0",
+      "logic": 3477,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_1",
+      "logic": 852,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_1",
+      "logic": 1999,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_1",
+      "logic": 3478,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_2",
+      "logic": 852,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_2",
+      "logic": 2003,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_2",
+      "logic": 3482,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_3",
+      "logic": 852,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_3",
+      "logic": 1999,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_3",
+      "logic": 3478,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_4",
+      "logic": 852,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_4",
+      "logic": 1999,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_4",
+      "logic": 3478,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_5",
+      "logic": 852,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_5",
+      "logic": 1999,
+      "ff": 871,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_5",
+      "logic": 3478,
+      "ff": 1695,
+      "memories": {
+        "SDPB": 7
+      }
+    },
+    {
+      "module": "shared_note_allocator_6",
+      "logic": 851,
+      "ff": 824,
+      "memories": {
+        "SDPB": 5
+      }
+    },
+    {
+      "module": "shared_band_renderer_6",
+      "logic": 1999,
+      "ff": 872,
+      "memories": {
+        "SDPB": 2
+      }
+    },
+    {
+      "module": "central_voice_bank_6",
+      "logic": 3477,
+      "ff": 1696,
+      "memories": {
+        "SDPB": 7
+      }
+    }
+  ],
+  "scope": "Per-module synthesis primitive attribution; instances may repeat; not additive physical usage or timing proof",
+  "next_optimization_review": {
+    "filterbank_logic_primitives": 25361,
+    "filterbank_ff_primitives": 12808,
+    "vocoder_core_logic_primitives": 27162,
+    "whole_top_logic_primitives": 74567,
+    "allocator_ram_primitives_per_bank": 5,
+    "decision": "Allocator state is already RAM-backed; do not redesign it on the assumption that all identity state is in FFs.",
+    "candidate": "Evaluate four shared double-biquad engines across sixteen bands, preserving all per-band modulator/envelope/carrier histories.",
+    "budget_estimate": "Each double-biquad has38 calculation states. Four engines require4groups*3passes*38=456 calculation cycles before launch/load/commit/mixer overhead. One engine needs1824 calculation cycles, exceeding1041-cycle shortest sample period.",
+    "not_proven": [
+      "four-engine RTL implementation",
+      "total completion latency",
+      "bit-exact PCM equivalence",
+      "synthesis resource reduction",
+      "physical timing"
+    ],
+    "priority": "Do not replace in-flight accepted-source render or timing candidate; first close current timing and song evidence."
+  }
+}

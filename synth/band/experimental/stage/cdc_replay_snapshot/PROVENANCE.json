@@ -1,0 +1,12 @@
+{
+  "build": "D:\\StarclusterBuilds\\stage_cdc_hold_08f1998827bc",
+  "scope": "Frozen ef5 netlist replay,PT8211 stage only;Setup/Hold0 with targeted hold-only asyncFIFO cuts and20ns crossdomain maxdelays. AutoIO NEVERPROGRAM. Does not include I2S or spectrum variants.",
+  "files": {
+    "build.tcl": "43e2db92604a9a9f19e9e2ec79a3ca808db531ba2c7693f9b6f5f8b648787e95",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab",
+    "NOT_PROGRAMMABLE.txt": "bc7c19207d0bea1d12f65e44f6e34a91f40c34ab01e7d883a0bd3e8789427cbd",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "stage.sdc": "41521cea54585a5853aaf67b123abbc4ccb5734b62f2885176fd901e905e2238",
+    "impl\\gwsynthesis\\band_stage.vg": "4cfeaa831e184d42b9c7145f0b959e138a52551b3aa3cc2f963276ec51dfc948"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "Placed/routed experimental singer engine only; not stage top or actual mic external timing",
+  "logic": 54964,
+  "registers": 30824,
+  "ram": 223,
+  "ram_total": 340,
+  "dsp": 186,
+  "dsp_total": 298,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "target_mhz": 50,
+  "fmax_mhz": 50.016,
+  "report_sha256": "497610e04ecc7f6f280fe090fad4312f501f8d24bc48f904f48cb48cc32a8f21"
+}

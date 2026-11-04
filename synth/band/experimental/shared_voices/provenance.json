@@ -1,0 +1,12 @@
+{
+  "base": "synth\\band\\rtl\\note_allocator.v",
+  "base_sha256": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+  "change": "Read-only probe mode plus match/capacity result; existing token identity and tail retirement preserved",
+  "production_adopted": false,
+  "additional_bases": {
+    "synth\\band\\rtl\\voice_bank.v": "02f73d4fc2ef47bd77291047ab6fb3716fded882ca18e5be148e38109c4b6507",
+    "synth\\band\\rtl\\band_renderer.v": "43ead516940637256b12339c8d20f18994ecb36d727b19cbe19ab7c1e31e90bc",
+    "synth\\band\\rtl\\band_core.v": "707dd1425c25b09d9bae500035f160b8a97215457be25739c9fce29ae51e9d00"
+  },
+  "integration": "Universal16-role banks,all-bank choir,role-aware stereo/lead,ordered two-phase router; shared_band_core elaboration only, behavioral and timing validation pending"
+}

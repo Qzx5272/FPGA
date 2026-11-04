@@ -1,0 +1,5 @@
+{
+  "returncode": 1,
+  "log": "DEBUG skipped=        63 count=      2111 addr=2047 busy=1 wrst=0\nFATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pcm_spectrum\\2048\\debug_tb.v:18: stopped analysis clock did not count skipped visual samples\n       Time: 29610000  Scope: tb\n",
+  "scope": "Frozen existing release under same immediate-post-reset stimulus"
+}

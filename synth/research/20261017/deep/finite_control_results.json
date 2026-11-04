@@ -1,0 +1,11 @@
+{
+  "scope": "finite reference contract, no transport parser or RTL validation",
+  "tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "fixed_contact_slots": 256,
+  "random_reordered_events": 48000,
+  "serial_bits": 32,
+  "epoch_bits": 32,
+  "requires": "dispatch-time lease check, separate release mailboxes, audible tail handling, link quiescence before epoch wrap"
+}

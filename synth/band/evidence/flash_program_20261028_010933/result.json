@@ -1,0 +1,20 @@
+{
+  "release": "pt8211_dvi_8994dbe5e358",
+  "build_id": 539365416,
+  "bitstream_sha256": "8994dbe5e35872febf572bb4d30732f91e3a653c3beffe92f830251103897f3b",
+  "snapshot_files": 98,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "pulse_width_violations": 0,
+  "status": "failed",
+  "flash_written": false,
+  "previous_flash_backup_available": false,
+  "cold_start_verified": false,
+  "started": "2026-10-28T01:09:33.664920",
+  "flash_may_be_modified": true,
+  "error": "Programmer operation failed: program_verify; inspect C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_010933",
+  "finished": "2026-10-28T01:10:04.330720"
+}

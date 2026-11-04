@@ -1,0 +1,71 @@
+TIMING CORRECTION — 2026-10-26
+The selected 062a944dcce1 release has SIX negative minimum-pulse-width paths.
+The historical setup0hold0 result below is NOT full timing acceptance.
+Current freeze/SRAM/Flash preflight rejects this release. Old V5.29 archive
+loaders lack the new gate; do not use their historical pass as authorization.
+Explicit serial BUFG trial 2cfe58afcfc7 also failed: setup2, hold0, pulse6.
+The integer-output PLL candidate e80bd58ae490 is NOT released or programmed.
+Its model and button simulations passed; synthesis and full-chain are running.
+Digital silent endurance on the installed board is separate from timing,
+thermal, acoustic and physical-peripheral acceptance.
+Evidence: evidence/pulse_width_review/bufg_trial.json and STATUS.json.
+
+Shared voice pool milestone — 2026-10-26
+
+UPDATE16:35: central-parameter release pt8211_dvi_062a944dcce1 is now selected
+and installed in SRAM/Flash. Build739488645;50MHz setup0hold0 and18fixedpins pass.
+Physical resources75030logic/38402FF/50993CLS/252RAM/182DSP.
+Single-role256load60s,96s score and synthetic GUI collaboration pass;max966cycles.
+Flash program/verify and JTAG reload autoplay pass;closed serial10.062s continued
+487220samples;score completed4608000samples withCRC0. No physical cold cycle.
+Stopped/zero voices read back;master0 sent without gain readback.
+Reports:hardware_central256_20261026.json,hardware_ensemble_central256_20261026.json,
+hardware_flash_autoplay_central256_20261026.json,post_flash_central256_cleanup_20261026.json
+under evidence/. Physical comparison:central_parameters_trial/2c13b385c9c4/physical_resource_comparison.json.
+
+The following is the earlier unoptimized candidate milestone, retained as history.
+
+Candidate: release/pt8211_dvi_28521f33cc41
+Build identity: 3280737566
+SRAM programmed; production selector and Flash remain pt8211_dvi_59c963cc2112.
+
+The actual singer hierarchy now routes instrument note identities to a shared
+8-bank pool instead of assigning a fixed 32-slot quota to each role. Part15's
+electronic singer remains a separate engine; it is not 256 independent singers.
+
+Verified on this candidate:
+- 50MHz timing: zero setup and hold violations;18 fixed pins and14 constraints.
+- Physical resources:88123 logic,42159 FF,57675 CLS,252 RAM,182 DSP.
+- One choir role(part7) sustained256 active note identities for60 seconds.
+- The autonomous96-second score reached4608000 samples and stopped.
+- Maximum observed load computation966 cycles;151 singer/DAC health checks;
+  zero telemetry CRC errors and zero reported DAC dropped/underrun samples.
+- Ownership, stale releases, source release and500ms disconnect release passed.
+- Real-board GUI test passed:two simulated seats,conflict blocking,independent
+  track return,lease expiry,rejoin and next-bar return;96-second natural end.
+
+Evidence:
+evidence/pt8211_onboard_timing/469379442cc4/result.json
+evidence/pt8211_onboard_timing/469379442cc4/fixed_pin_audit.json
+evidence/program_20261026_161003/
+evidence/hardware_shared256_20261026.json (with raw telemetry and driver sidecars)
+evidence/hardware_ensemble_shared256_20261026.json
+
+Limits: master was zero. Notes repeated32 pitches; this does not demonstrate
+256 resolved spectral peaks, analog quality, thermal endurance, real MIDI seats,
+microphone input or physical buttons. GUI collaboration uses simulated seats,
+not physical MIDI controllers.
+
+Optimization candidate: offline_workstation_pt8211_central_2c13b385c9c4.
+One shared role parameter/slew table replaces replicated per-bank tables.
+Bounded64-frame exact stereo/control comparison and short PT8211/DVI chain pass.
+Synthesized logic86791->74568; FF42159->38402; RAM/multiplier primitive counts
+unchanged. These are synthesis counts, not the physical resource figures above.
+Optimization routing and board acceptance remain pending.
+evidence/synthesis_hierarchy/061aead064d5.json
+evidence/central_parameters/20261026_155430/result.json
+evidence/workstation_pt8211_dvi/20261026_155623/result.json
+
+Neither candidate is the fully accepted final workstation. Physical sound,
+multimodal peripherals, extended stability and capacity/spectral acceptance
+remain governed by FINAL_READINESS.json and the full project requirements.

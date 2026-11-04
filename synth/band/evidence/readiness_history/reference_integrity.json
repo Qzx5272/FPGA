@@ -1,0 +1,11 @@
+{
+  "status": "passed_reference_integrity_only",
+  "checked_references": 60,
+  "final_accepted": false,
+  "scope": "All readiness evidence references resolve to recorded bytes. This does not prove requirements complete or make historical evidence current.",
+  "readiness_sha256": "89c164ae2562d6b6050c7abaaf39d7cf8c2a76bac2e328c63018223ff15eb56b",
+  "restored_sources": {
+    "stage_pad": "output/final_workstation_20261022/星群V5.12_合并版满载验证完整源码包.zip",
+    "software_acceptance": "output/final_workstation_20261022/星群V5.10_满载与频谱链路完整交接包.zip"
+  }
+}

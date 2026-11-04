@@ -1,0 +1,7 @@
+{
+  "status": "prepared_not_validated",
+  "source_dir": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\audio_visual\\reset_buffers\\18267a5a1761",
+  "stages": 8,
+  "source_sha256": "d10232ca3fdb6ed03ee63dc4b74b38b432749d4c576fc686aff1c296e0dbd1c5",
+  "scope": "Even inversion chain preserves reset polarity. Requires preserved physical cells and native recovery/removal checks; no routing, timing or release claim."
+}

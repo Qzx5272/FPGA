@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "returncode": 0,
+  "log": "PASS actual exported calibration:pad0 inversion,pad63 gain,default channel79,live override,panic preserve,reset saved defaults\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_export_calibration\\20261026_043119\\tb.v:23: $finish called at 5320000 (1ps)\n",
+  "export": "D:\\StarclusterBuilds\\stage_calibration_export_20261026_043119",
+  "scope": "Actual exported stage calibration RTL;not physical boot,whole-top timing or musical acceptance",
+  "source_sha256": "8997d503ec9dce008713c6395fd26ca2cb40036cf85430111d08415126c0e80c",
+  "export_manifest_sha256": "77164a145c5d2272311d6ed51d0a4e7d0bb23c19c2119302e04ae89523c1a89b"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed_offline_selected_release_preflight",
+  "checked": "2026-10-26T14:29:31.323293",
+  "selected": {
+    "release": "pt8211_dvi_620164a544d2",
+    "build_id": 3103104899,
+    "bitstream_sha256": "620164a544d2ecafb3e6f7591de5b10698e96292294efeedb9339fabf4490f08",
+    "snapshot_files": 93,
+    "status": "preflight_passed",
+    "flash_written": false,
+    "previous_flash_backup_available": false,
+    "cold_start_verified": false
+  },
+  "usb_accessed": false,
+  "programming_tested": false,
+  "sources": {
+    "synth\\tools\\load_sram.ps1": "e7f36da851473d1cd9c079f588ba41248724b5955ee524459b652a1334ba7d8f",
+    "启动星群演奏台.cmd": "1f5514fe7a7a4f33c60620e237410173143b9538ba9557a474919417379d0e31",
+    "synth\\band\\tools\\package_delivery.py": "352b7161b40e48699a35778cf9acf851e1870d9b0652aa2a8dce76d61f4f966c"
+  },
+  "host_smoke": "Current band Desk constructed/shown/closed offscreen successfully; no USB/MIDI physical test"
+}

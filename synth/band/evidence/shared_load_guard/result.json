@@ -1,0 +1,7 @@
+{
+  "status": "passed_reject_old_quota_release_before_USB",
+  "checked": "2026-10-26T15:36:43.685152",
+  "driver_sha256": "98022a0683bb242b758addad270d7b19711433a2485014606ca53c219d9a7b0c",
+  "command_output": "Traceback (most recent call last):\n  File \"C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tools\\hardware_check.py\", line 20, in <module>\n    raise RuntimeError('Selected release has quota banks, not shared banks; no USB access')\nRuntimeError: Selected release has quota banks, not shared banks; no USB access\n",
+  "scope": "Negative preflight only; no shared board load performed"
+}

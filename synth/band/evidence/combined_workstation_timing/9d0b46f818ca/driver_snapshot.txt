@@ -1,0 +1,123 @@
+"""Explore DVI band timing with generated PLL/divider clocks; NEVER PROGRAM auto peripheral IO."""
+from pathlib import Path
+import sys,hashlib,json,shutil,subprocess,datetime,re,argparse
+ap=argparse.ArgumentParser(description=__doc__)
+ap.add_argument('source',type=Path)
+ap.add_argument('--cdc-hold',action='store_true')
+ap.add_argument('--local-vocoder-control',action='store_true')
+ap.add_argument('--place-option',type=int,choices=range(5),default=0)
+ap.add_argument('--route-option',type=int,choices=range(3),default=0)
+ap.add_argument('--timeout-seconds',type=int,default=7200)
+args=ap.parse_args()
+if args.timeout_seconds<1:ap.error('timeout-seconds must be positive')
+b=Path(__file__).resolve().parents[1];source=args.source.resolve()
+vg=source/'impl/gwsynthesis/combined_workstation.vg';assert vg.is_file()
+from check_gw138_ram_modes import check as check_ram_modes
+check_ram_modes(vg)
+from vocoder_gate import require_vocoder_gate
+vocoder_gate=require_vocoder_gate(source)
+from stage_pad_gate import require_stage_pad_gate
+stage_pad_gate=require_stage_pad_gate(source)
+from dvi_gate import require_dvi_gate,require_dvi_clock_gate
+dvi_gate=require_dvi_gate(source)
+dvi_clock_gate=require_dvi_clock_gate(source)
+profile=json.loads((source/'hardware_profile.json').read_text())['hardware_profile']
+assert profile=='workstation-i2s-dvi-v1'
+clocks={'core_clk':('clk',20.0),'mic_clk':('mic_bck',325.520833),'audio_clk':('audio_clk',40.690104),
+        'serial_clk':('video_output/video_clocks/pll/CLKOUT0',1000/126),
+        'display_clk':('video_output/video_clocks/divider/CLKOUT',1000/25.2)}
+sdc='# DVI internal clock exploration; peripheral IO/electrical timing still pending.\n'
+for name in ('core_clk','mic_clk','audio_clk'):
+ port,period=clocks[name];sdc+=f'create_clock -name {name} -period {period:.6f} [get_ports {{{port}}}]\n'
+sdc+='create_generated_clock -name serial_clk -source [get_ports {clk}] -multiply_by 63 -divide_by 25 [get_pins {video_output/video_clocks/pll/CLKOUT0}]\n'
+sdc+='create_generated_clock -name display_clk -source [get_pins {video_output/video_clocks/pll/CLKOUT0}] -divide_by 5 [get_pins {video_output/video_clocks/divider/CLKOUT}]\n'
+# Preserve native serial/pixel generated-clock timing. Bound CDC transport
+# between core/microphone/audio/display as in the checked FIFO architecture.
+cdc_clocks=('core_clk','mic_clk','audio_clk','display_clk')
+for a in cdc_clocks:
+ for c in cdc_clocks:
+  if a!=c:
+   sdc+=f'set_max_delay -from [get_clocks {{{a}}}] -to [get_clocks {{{c}}}] 20.000\n'
+   sdc+=f'set_min_delay -from [get_clocks {{{a}}}] -to [get_clocks {{{c}}}] 0.000\n'
+
+targeted_hold=args.cdc_hold
+if targeted_hold:
+ # These are the21 negative hold endpoints observed in2d5bfcfe40c6:
+ # first synchronizer stages, plus microphone payload published by Gray FIFO.
+ # Microphone/audio clocks are independent; display is PLL-derived but its
+ # FIFO/reset protocol tolerates stop/rephase. Cut only first-sync hold checks,
+ # retaining generated serial/pixel timing and all second-stage checks.
+ # Added from1a8aa927cffc:under1 is the first asynchronous underrun-toggle
+ # sampler;analysis/reset_sync are async-assert reset synchronizers. Only
+ # hold/removal is excepted; their synchronous output paths remain timed.
+ # Preserve all cross-domain20ns max-delay bounds and sync-stage2 data checks.
+ sdc+='''# Targeted asynchronous hold-only exceptions; never clock_groups/setup cuts.
+set_false_path -hold -from [get_clocks {mic_clk}] -to [get_regs {band/input_audio/transport/fifo/wgray_r1* band/input_audio/latest* band/input_audio/held*}]
+set_false_path -hold -from [get_clocks {audio_clk}] -to [get_regs {band/output_audio/fifo/rgray_w1* band/output_audio/request1* band/output_audio/under1* band/clock_watch/sync1*}]
+set_false_path -hold -from [get_clocks {display_clk}] -to [get_regs {band/analyzer/display_frame/ack1* band/analyzer/analysis/reset_sync*}]
+'''
+# Only asynchronous reset bridge CLEAR pins, never serializer/data endpoints.
+sdc+='set_false_path -from [get_clocks {display_clk}] -to [get_pins {video_output/transmitter/serial_release_0_s0/CLEAR video_output/transmitter/serial_release_1_s0/CLEAR}]\n'
+local_vocoder_control=False
+assert not args.local_vocoder_control,'Previous LOCAL_CLOCK hypothesis was not effective; do not reuse'
+cst='IO_LOC "clk" P16;\nIO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;\n'
+# Fixed only to the official Pro Dock HDMI0 pin reference. Other peripheral
+# pins remain automatic and forbid programming this exploratory result.
+for port,pair in {'tmds_d_p[0]':'AB24,AC24','tmds_d_p[1]':'V24,W24','tmds_d_p[2]':'AA22,AA23','tmds_clk_p':'Y22,Y23'}.items():
+ cst+=f'IO_LOC "{port}" {pair};\nIO_PORT "{port}" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;\n'
+vg_hash=hashlib.sha256(vg.read_bytes()).hexdigest();digest=hashlib.sha256((vg_hash+sdc+'fiveclock-dvi-v1'+cst+(f'|place={args.place_option}|route={args.route_option}' if args.place_option or args.route_option else '')).encode()).hexdigest()[:12]
+target=Path('D:/StarclusterBuilds')/('combined_workstation_pnr_'+digest)
+if target.exists():raise RuntimeError('Do not overwrite existing build '+str(target))
+target.mkdir();shutil.copytree(source/'rtl',target/'rtl')
+(target/'hardware_profile.json').write_text(json.dumps({'hardware_profile':profile,'clocks':clocks},indent=2))
+shutil.copytree(source/'impl/gwsynthesis',target/'impl/gwsynthesis')
+for p in source.iterdir():
+ if p.is_file() and p.suffix in ('.mem','.cst','.txt'):shutil.copy2(p,target/p.name)
+(target/'stage.sdc').write_text(sdc)
+(target/'stage.cst').write_text(cst)
+tcl=(source/'build.tcl').read_text();assert tcl.count('run syn')==1
+tcl=tcl.replace('foreach f [glob rtl/*.v rtl/*.sv] {add_file $f}', 'add_file impl/gwsynthesis/combined_workstation.vg')
+assert 'glob rtl' not in tcl
+# SUG1220-2.0Epp37-38. Default0 preserves the prior flow;variants get unique IDs.
+if args.place_option or args.route_option:
+ tcl=tcl.replace('run syn',f'set_option -place_option {args.place_option}\nset_option -route_option {args.route_option}\nrun syn')
+(target/'build.tcl').write_text(tcl.replace('run syn','add_file stage.sdc\nadd_file stage.cst\nrun pnr'))
+(target/'NOT_PROGRAMMABLE.txt').write_text('NEVER PROGRAM:auto-placed peripheral IO. '+('Targeted hold-only CDC exceptions;' if targeted_hold else '')+'2async reset CLEAR pin exceptions;'+' no physical CDC/MTBF or external timing acceptance.\n')
+out=b/'evidence/combined_workstation_timing'/digest;out.mkdir(parents=True,exist_ok=False)
+record=dict(status='running',build=str(target),source_build=str(source),frozen_netlist_sha256=vg_hash,hardware_profile=profile,requested_clocks=clocks,local_vocoder_control=local_vocoder_control,
+ scope='Combined workstation exploratory PnR:three external plus two generated clocks,20ns cross-domain maxdelay,zero mindelay,2async reset CLEAR pin exceptions. No external pins,timing,CDC MTBF or physical acceptance.',
+ started=datetime.datetime.now().isoformat(),inputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (target/'build.tcl',target/'stage.sdc',target/'stage.cst',target/'hardware_profile.json',Path(__file__))})
+if targeted_hold:
+ record['scope']='Combined workstation exploratory PnR:three external plus two generated clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.'
+record['algorithm_options']={'place_option':args.place_option,'route_option':args.route_option}
+record['timeout_seconds']=args.timeout_seconds
+(out/'driver_snapshot.txt').write_bytes(Path(__file__).read_bytes())
+record['vocoder_numerical_gate']=vocoder_gate
+record['stage_pad_numerical_gate']=stage_pad_gate
+record['dvi_full_chain_gate']=dvi_gate
+record['dvi_clock_boundary_gate']=dvi_clock_gate
+record['reset_bridge_exception']='Only2 asynchronous CLEAR pins;all D/Q and OSER reset paths retained'
+record['scope']+=' Explicit recovery/removal exception on2 async-reset bridge CLEAR pins only.'
+report=out/'result.json';report.write_text(json.dumps(record,indent=2));print(target,flush=True)
+try:
+ with (target/'build.log').open('w') as log:
+  p=subprocess.run(['D:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe',str(target/'build.tcl')],stdout=log,stderr=subprocess.STDOUT,timeout=args.timeout_seconds)
+ log=(target/'build.log').read_text(errors='replace');record['returncode']=p.returncode
+ if p.returncode or 'ERROR' in log:raise RuntimeError('Vendor failure;inspect log')
+ if hashlib.sha256((target/'impl/gwsynthesis/combined_workstation.vg').read_bytes()).hexdigest()!=vg_hash:raise RuntimeError('Frozen netlist changed')
+ text=(target/'impl/pnr/combined_workstation_tr_content.html').read_text(encoding='utf-8',errors='replace')
+ from check_stage_clock_report import check
+ record['actual_clocks']=check(text,{n:v[1] for n,v in clocks.items()})
+ for kind in ('Setup','Hold'):
+  m=re.search('Numbers of '+kind+r' Violated Endpoints</td>\s*<td>(\d+)</td>',text)
+  if not m:raise RuntimeError('Missing final timing summary')
+  record[kind.lower()+'_violations']=int(m[1])
+ record['status']='passed_internal_timing_only' if not(record['setup_violations'] or record['hold_violations']) else 'failed_timing'
+except Exception as exc:
+ record.update(status='failed_timeout' if isinstance(exc,subprocess.TimeoutExpired) else 'failed',error=str(exc));raise
+finally:
+ for p in (target/'impl/pnr').glob('*'):
+  if p.is_file() and p.suffix in ('.html','.txt','.timing_paths'):shutil.copy2(p,out/p.name)
+ for name in ('build.tcl','stage.sdc','stage.cst','build.log','hardware_profile.json'):shutil.copy2(target/name,out/name)
+ record['finished']=datetime.datetime.now().isoformat();report.write_text(json.dumps(record,indent=2))
+print(json.dumps(record,indent=2));raise SystemExit(record['status']!='passed_internal_timing_only')

@@ -1,0 +1,45 @@
+﻿signal,connector,pin,ball,bank,direction,destination,scope,status
+enc_a[0],J24,11,C24,5,IN,旋钮1 主音量 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[0],J24,12,B24,5,IN,旋钮1 主音量 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[1],J24,9,E25,4,IN,旋钮2 速度 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[1],J24,10,D25,4,IN,旋钮2 速度 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[2],J24,7,L17,4,IN,旋钮3 表情 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[2],J24,8,L18,4,IN,旋钮3 表情 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[3],J24,5,H14,5,IN,旋钮4 声部 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[3],J24,6,H15,5,IN,旋钮4 声部 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[4],J26,11,C21,5,IN,旋钮5 起音 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[4],J26,12,B21,5,IN,旋钮5 起音 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[5],J26,9,B20,5,IN,旋钮6 释放 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[5],J26,10,A20,5,IN,旋钮6 释放 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[6],J26,7,B19,5,IN,旋钮7 效果量 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[6],J26,8,A19,5,IN,旋钮7 效果量 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_a[7],J26,5,A17,5,IN,旋钮8 合唱元音 A,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+enc_b[7],J26,6,A18,5,IN,旋钮8 合唱元音 B,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+ble_rx,J23,1,U16,2,IN,ESP32-C3 GPIO4/TX,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+ble_tx,J23,2,V16,2,OUT,ESP32-C3 GPIO5/RX,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+usb_rx,J23,3,U15,2,IN,Teensy 4.1 pin1/TX1,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+usb_tx,J23,4,V17,2,OUT,Teensy 4.1 pin0/RX1,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+i2s_bck,J23,5,W21,2,OUT,DAC BCK + I2S麦克风 SCK/BCLK,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+i2s_ws,J23,6,Y21,2,OUT,DAC LRCK/LCK + 麦克风 WS,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+i2s_sd,J23,7,P21,3,OUT,DAC DIN,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+mic_sd,J23,8,U17,2,IN,I2S麦克风 SD/DOUT,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+audio_clk,J23,39,U22,2,IN,24.576MHz 3.3V CMOS时钟 OUT,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[0],J23,9,P23,3,OUT,C LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[1],J23,10,P24,3,OUT,C# LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[2],J23,13,T23,3,OUT,D LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[3],J23,14,R23,3,OUT,D# LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[4],J23,15,R25,3,OUT,E LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[5],J23,16,T25,3,OUT,F LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[6],J23,17,W23,2,OUT,F# LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[7],J23,18,P25,3,OUT,G LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[8],J23,19,U24,2,OUT,G# LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[9],J23,21,AC26,2,OUT,A LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[10],J23,22,U25,2,OUT,A# LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_pitch[11],J23,23,AB25,2,OUT,B LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+guide_bar,J23,24,AB26,2,OUT,节拍 LED，经独立1kΩ电阻,USB16主方案,Rev1.5原理图规划；实物与扩展固件待确认
+adc_cs_n,J23,25,AA25,2,OUT,3片MCP3208 CS/SHDN pin10,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认
+adc_sclk,J23,26,AA24,2,OUT,3片MCP3208 CLK pin13,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认
+adc_din,J23,27,Y26,2,OUT,3片MCP3208 DIN pin11,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认
+adc_dout[0],J23,28,Y25,2,IN,ADC0 DOUT pin12,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认
+adc_dout[1],J23,31,W26,2,IN,ADC1 DOUT pin12,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认
+adc_dout[2],J23,32,W25,2,IN,ADC2 DOUT pin12,可选FSR16三ADC方案；USB垫不焊,Rev1.5原理图规划；实物与扩展固件待确认

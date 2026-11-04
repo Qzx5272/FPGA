@@ -1,0 +1,32 @@
+{
+  "scope": "Digital PCM descriptive measurements; not perceptual or physical audio acceptance",
+  "source_report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_render\\b447df786733_7000frames.json",
+  "source_scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim",
+  "pcm_sha256": "788d381216d226a32d278cd297c3f65c1016ebf64770ae904e15e0ec7def5699",
+  "frames": 7000,
+  "peak": 3800,
+  "rail_samples": 0,
+  "segments": [
+    {
+      "start_seconds": 0.0,
+      "frames": 7000,
+      "peak": 3800,
+      "rms_dbfs": [
+        -30.007159620857248,
+        -29.67473174603342
+      ],
+      "dc_mean": [
+        -2.2025714285714284,
+        -2.246142857142857
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    }
+  ],
+  "final_stereo_sample": [
+    0,
+    0
+  ],
+  "last_100ms_peak": 3800,
+  "final_second_all_zero": false
+}

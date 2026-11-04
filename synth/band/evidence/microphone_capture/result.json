@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Digital transport test; not ASRC, microphone pins or analog acceptance",
+  "sha256": {
+    "synth\\band\\experimental\\audio_input\\microphone_capture.v": "2342da927b77770c0a2fa4748194821c651f8bcbe40ec8a6a5b05ca7f7d13ef2",
+    "synth\\band\\experimental\\audio_input\\i2s_input_bridge.v": "775921afdc4da0f013ea661f8badb3a7cae4686de461120f07d6432cc84de6cb",
+    "synth\\band\\experimental\\audio_input\\i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "synth\\band\\rtl\\audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782",
+    "synth\\band\\evidence\\microphone_capture\\tb.v": "02f17da50082f1268b8d71d7d0ecad35f6f662431a27c5b55ebad682d3689ded"
+  },
+  "log": "PASS microphone I2S/CDC: signed left PCM,snapshot,skip/repeat counters,stopped BCK timeout,flushed recovery,panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\microphone_capture\\tb.v:33: $finish called at 173920000 (1ps)\n"
+}

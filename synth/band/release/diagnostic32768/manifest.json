@@ -1,0 +1,26 @@
+{
+  "profile": "independent 112-bit partial diagnostic; not full band",
+  "partials": 32768,
+  "sources": {
+    "audio_serial.v": "ed01cb20a8ff51237e01a2ebc4829b51b42f348333d04dc9def768c311ff7b6a",
+    "board.cst": "8d0589639bc41aef42c7fb4b6d68a8f29eb1ce1aa23b242a17ea762eb5433f86",
+    "board.sdc": "5a5f9bbc6374b4bb984e13062491985e13e247a34553f5f808ba8e20de8b3fc0",
+    "diagnostic_top.v": "7544a53283d28c71fe14f03b78d715e8893d45a5a09e68656bcb1b14604a9a36",
+    "event_receiver.v": "39e87b65b6f319bf78a65ccbfa747415844ef933a4a592f3ef51846b80996c10",
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "partial_lane.v": "7f2c9cdb1877af897177a7c017af535263a6b5831134da944aa25ca652721e4e",
+    "partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "partial_ram16.v": "e5234d9e8f641d40f5d77f145ad041967df06bd2bbcf0a45b728efbea09d32e9",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "status_sender.v": "95379b07ddfdfcea3951ba77a87d5da277da801d9497e2a714caea3d73ba78e7",
+    "uart.v": "4fe3a17a5b1e27cd1ff74f8d78f32f25f50b8cbde56e53da121fe915e2e5f907"
+  },
+  "clock_mhz": 50,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "frequencies_from_report": [
+    "50.000(MHz)",
+    "56.874(MHz)"
+  ],
+  "bitstream_sha256": "6180dc8946846a070314721bad604fb3466d582470f1a10b2246e4fb6ae44293"
+}

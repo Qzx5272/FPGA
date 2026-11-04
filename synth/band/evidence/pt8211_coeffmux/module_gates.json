@@ -1,0 +1,18 @@
+{
+  "vocoder": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\d33167675134_20261026_094924\\result.json",
+    "report_sha256": "a8fabe1f72a8f654f19f03cf6adbe66cade0bb257afb8627e63d4cc216dbee4d",
+    "netlist_sha256": "d33167675134c2e42ba7a1d8957c13bc7a417b0643cc191dc5b6a0836ab49f7e",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "pads": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  }
+}

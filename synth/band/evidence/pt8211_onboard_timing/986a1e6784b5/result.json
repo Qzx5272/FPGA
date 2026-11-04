@@ -1,0 +1,45 @@
+{
+  "status": "passed_timing_pending_pin_audit",
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_986a1e6784b5",
+  "source": "D:\\StarclusterBuilds\\pt8211_onboard_syn_0cd05e391715",
+  "frozen_netlist_sha256": "a1fb687461cdf5481e6e062e19de9237836b0df9b407b2baa3b5e28db2602372",
+  "started": "2026-10-26T11:02:34.834912",
+  "timeout_seconds": 7200,
+  "scope": "Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,2asyncCLEAR exceptions;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected.",
+  "chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_pt8211_dvi\\20261026_104538\\result.json",
+    "sha256": "b68ff1e3f9866ac07c1593e2a3901a8cbf0ea5ce5a957d711cec1804c4c219c5",
+    "decoded_frames": 3006,
+    "scope": "Generic fulltop with same tied-idle inputs;board shell structurally reviewed,not physical acceptance"
+  },
+  "vocoder_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "pad_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "inputs": {
+    "build.tcl": "94f9f4bdff60409b9cae639bd6f52679c2d3e912929b4ec26be78f4f21232eb3",
+    "board.cst": "37e50f0c8c35e3832c421165b99c5f737b8a157c46c2b158121205ff4a0212ce",
+    "board.sdc": "68bcb460fe050b96fc3cf201a5b48e2d68afbb711cd1f70d5f1a179825d8d92c",
+    "pnr_pt8211_onboard.py": "d251db8747573270613cf89e47a4d37ee2fd6a78bde4be5102f6dc091ed281ae"
+  },
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "finished": "2026-10-26T11:26:28.539372"
+}

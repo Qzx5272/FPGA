@@ -1,0 +1,12 @@
+{
+  "status": "awaiting_final_report_clock_check",
+  "updated": "2026-10-25T20:50:49.455204",
+  "scope": "PnR invocation references intended SDC; final timing and clock-table acceptance pending",
+  "expected_clock_period_ns": {
+    "core_clk": 20.0,
+    "mic_clk": 325.520833
+  },
+  "sdc_sha256": "757d3ca68b5ab119907ae6428a4e14b3638bd0931b45d96bfc6c97844a537c35",
+  "pnr_command_sha256": "81ce9c37665bf39c1b86c7c5be4a8d403d772c45ee37bb7c7199f7937187270b",
+  "note": "Synthesis report uses default100MHz; do not treat that as actual PnR constraints. Verify final Clock_Report names and periods before accepting zero violation counts."
+}

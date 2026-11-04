@@ -1,0 +1,14 @@
+{
+  "status": "passed_score_memory_identity",
+  "export": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026",
+  "events": 2917,
+  "singer_note_ons": 96,
+  "first_singer_sample": 2304000,
+  "source_sha256": {
+    "output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026\\project.json": "15fed5b6c383189e738ff3458e3b6d75014449fed043c4e51b04877631f98b13",
+    "output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026\\rtl\\song_storage_init.vh": "4339953a1a5116d004b550eab6e117964cef28ff6cdbce539c8bb0da7811b0c5",
+    "output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026\\rtl\\song_config.vh": "fb3185ebf4c9a294b57467c6b2347da3739a423e2e8332b8a74b0b7256cb14ae",
+    "output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026\\rtl\\song_store.v": "9b83181dd6fa678f2b8013d05431b163577333ff9727acde7730dbd8af954577"
+  },
+  "scope": "Decoded boot event array equals project events; not playback, timing or sound acceptance"
+}

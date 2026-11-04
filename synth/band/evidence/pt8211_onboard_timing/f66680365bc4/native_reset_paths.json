@@ -1,0 +1,33 @@
+{
+  "status": "not_accepted",
+  "paths": [],
+  "missing_serial_checks": [
+    {
+      "kind": "recovery",
+      "lane": 0
+    },
+    {
+      "kind": "recovery",
+      "lane": 1
+    },
+    {
+      "kind": "recovery",
+      "lane": 2
+    },
+    {
+      "kind": "removal",
+      "lane": 0
+    },
+    {
+      "kind": "removal",
+      "lane": 1
+    },
+    {
+      "kind": "removal",
+      "lane": 2
+    }
+  ],
+  "negative_paths": 0,
+  "scope": "Native reported OSER reset paths only. Requires full setup/hold/pulse, clock/pin and physical-cell review; not a board release gate.",
+  "report_sha256": "bf30f7b869d297bd68f17c98a488c4cf684357e88c60a7f586cb8fb2004a43fe"
+}

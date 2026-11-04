@@ -1,0 +1,22 @@
+{
+  "status": "passed_internal_timing_only",
+  "build": "D:\\StarclusterBuilds\\stage_cdc_hold_08f1998827bc",
+  "source_build": "D:\\StarclusterBuilds\\stage_timing_ef5b2476b970",
+  "frozen_netlist_sha256": "4cfeaa831e184d42b9c7145f0b959e138a52551b3aa3cc2f963276ec51dfc948",
+  "scope": "Internal stage PnR replay only:targeted async FIFO hold exceptions;20ns cross-domain setup/max-delay retained. No external pins,timing,CDC MTBF or physical acceptance.",
+  "started": "2026-10-25T23:36:56.529063",
+  "inputs": {
+    "build.tcl": "43e2db92604a9a9f19e9e2ec79a3ca808db531ba2c7693f9b6f5f8b648787e95",
+    "stage.sdc": "41521cea54585a5853aaf67b123abbc4ccb5734b62f2885176fd901e905e2238",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_stage_cdc_timing.py": "0b83d06906567c3bd4fc58c51858d562d3583eed627d0eae3e1da20c03b9c5ff"
+  },
+  "returncode": 0,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "mic_clk": 325.521
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "finished": "2026-10-25T23:58:42.280826"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed_clock_table_only",
+  "updated": "2026-10-25T22:44:33.980498",
+  "expected_clock_period_ns": {
+    "core_clk": 20.0,
+    "mic_clk": 325.520833
+  },
+  "scope": "Final internal PnR clock-table validation only; no external timing/physical acceptance",
+  "report": "D:\\StarclusterBuilds\\stage_timing_500bfbf44218\\impl\\pnr\\band_stage_tr_content.html",
+  "report_sha256": "f7802cf01d702d8ffb72954a4f05450a8aa882d165c954dd39cdd21e1df4d87e",
+  "actual_clock_period_ns": {
+    "core_clk": 20.0,
+    "mic_clk": 325.521
+  }
+}

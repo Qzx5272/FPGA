@@ -1,0 +1,13 @@
+{
+  "status": "passed_source_comparison_only",
+  "render_export": "output\\final_workstation_20261022\\offline_workstation_integer_clock_e80bd58ae490",
+  "pixel_reset_export": "output\\final_workstation_20261022\\offline_workstation_pixel_reset_9bc4e8acac49",
+  "differences": [
+    "rtl/build_identity.vh",
+    "rtl/gowin_dvi_tx.v",
+    "rtl/gowin_video_clock.v"
+  ],
+  "identical_files": 113,
+  "render_running": true,
+  "scope": "All score/core/coeff sources byte-identical; full-clock band_singer_core render may support this unchanged core when completed. No equivalence claim for changed display, board identity, clock tree or physical timing. Driver mixer and synthetic microphone scope unchanged."
+}

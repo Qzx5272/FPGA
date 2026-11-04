@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "scope": "Digital transport test; not ASRC, microphone pins or analog acceptance",
+  "sha256": {
+    "synth\\band\\experimental\\audio_input\\microphone_capture.v": "61d1340c5b433019f7a0290462b86ca8a911ed1f4b4030e8711769d1f21d11c0",
+    "synth\\band\\experimental\\audio_input\\i2s_input_bridge.v": "775921afdc4da0f013ea661f8badb3a7cae4686de461120f07d6432cc84de6cb",
+    "synth\\band\\experimental\\audio_input\\i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "synth\\band\\rtl\\audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782",
+    "synth\\band\\evidence\\microphone_capture\\tb.v": "69c0554dfad162578524ad91105d07898c938b92bc9e4febfeff345a5a0d4225"
+  },
+  "log": "FATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\microphone_capture\\tb.v:23: Timeout snapshot retained old PCM\n       Time: 135280000  Scope: tb\n"
+}

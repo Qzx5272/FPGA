@@ -1,0 +1,83 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_b8fac186a29f",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_6d54c8c2b79f",
+  "frozen_netlist_sha256": "a6646d85e248f460128e3003c6ad1e744b39fbc34038a958a2955f19c1998eab",
+  "hardware_profile": "workstation-i2s-dvi-v1",
+  "requested_clocks": {
+    "core_clk": [
+      "clk",
+      20.0
+    ],
+    "mic_clk": [
+      "mic_bck",
+      325.520833
+    ],
+    "audio_clk": [
+      "audio_clk",
+      40.690104
+    ],
+    "serial_clk": [
+      "video_output/video_clocks/pll/CLKOUT0",
+      7.936507936507937
+    ],
+    "display_clk": [
+      "video_output/video_clocks/divider/CLKOUT",
+      39.682539682539684
+    ]
+  },
+  "local_vocoder_control": false,
+  "scope": "Combined workstation exploratory PnR:three external plus two generated clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance. Explicit recovery/removal exception on2 async-reset bridge CLEAR pins only.",
+  "started": "2026-10-26T08:42:29.582203",
+  "inputs": {
+    "build.tcl": "2dbc3bf96602f88350e62dcf5fdeb9de51b64eec601e44919164751654571c0c",
+    "stage.sdc": "4547df0494556b85dc7d98fd5e7ffcb4de6ec3cdb83eebfc3aa13abb935dd1c9",
+    "stage.cst": "0013dbc4545de664d3aa5ba020a5028e3ba4e65c182d956ac1efefa57d261b4b",
+    "hardware_profile.json": "7c98c4a92c8df59c5d499b73774cbe5992cf60092260e166d37df0fe9a8a7d89",
+    "build_dvi_workstation_timing.py": "d55f5404fbe88a756bfed01d438e63740be0ce78cc6d48f86defca65a5f73f2d"
+  },
+  "algorithm_options": {
+    "place_option": 0,
+    "route_option": 1
+  },
+  "vocoder_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "stage_pad_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "dvi_full_chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_dvi\\20261026_073747\\result.json",
+    "report_sha256": "0f60d0d0d3b5d6df59238f77b8e5fcd52d3d72c5a2de0ee76fafbc80c44bf315",
+    "scope": "Actual exported band/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. No fullsong/full-load/PnR/physical claim."
+  },
+  "dvi_clock_boundary_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\dvi_output_timing\\84a5d66df9f9\\result.json",
+    "report_sha256": "f98658f848beb14c5a7c2a2f6f5c77542e88bc4b7c6c2263917642f4d4daaaf9",
+    "synthesis_report_sha256": "7b182b8e044f835e4029ad1b5879628a85541e1eefd0f91ab896ef8d6bfa2d79",
+    "timing_report_sha256": "2657cf5da1aa4bbd81575f725eb9f43233cf08f6c34113fda3c3c6f07039ca50",
+    "sdc_sha256": "818a5fcbd5a5ffd219d71d8436d323312c57332f894295f84a35c2a9d2f008d2",
+    "clocks": {
+      "reference_clk": 20.0,
+      "serial_clk": 7.937,
+      "pixel_clk": 39.683
+    },
+    "reset_pin_exceptions": [
+      "set_false_path -from [get_clocks {pixel_clk}] -to [get_pins {transmitter/serial_release_0_s0/CLEAR transmitter/serial_release_1_s0/CLEAR}]"
+    ],
+    "scope": "Exact-source PLL/serializer boundary internal timing only;no external or full-band acceptance"
+  },
+  "reset_bridge_exception": "Only2 asynchronous CLEAR pins;all D/Q and OSER reset paths retained",
+  "error": "Command '['D:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe', 'D:\\\\StarclusterBuilds\\\\combined_workstation_pnr_b8fac186a29f\\\\build.tcl']' timed out after 3600.0 seconds",
+  "finished": "2026-10-26T09:42:29.868979"
+}

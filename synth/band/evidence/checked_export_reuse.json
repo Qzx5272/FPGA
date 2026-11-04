@@ -1,0 +1,8 @@
+{
+  "status": "passed_source_identity_only",
+  "scope": "New export addsROMguard/provenance;all synthesizedRTL/mem bytes identical to b824b22b7fd0. Reuse synthesis only;no timing/netlist/physical upgrade.",
+  "export": "output\\final_workstation_20261022\\offline_workstation_checked_confluence",
+  "manifest_sha256": "e84678ffa8cfe003429308bcea7d85996a48db135445a60433b02a0778d9277c",
+  "source_count": 80,
+  "synthesis_report": "evidence/combined_workstation_synthesis/b824b22b7fd0/result.json"
+}

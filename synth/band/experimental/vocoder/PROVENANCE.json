@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/Li357/voxos",
+  "commit": "5c624095da0ad42922843ea871a689d617acd5bc",
+  "license": "MIT; upstream/LICENSE retained",
+  "scope": "Isolated 16-band vocoder implementation; not integrated into production band or verified with microphone",
+  "source_hashes": {
+    "double_biquad.sv": "e78be551147231a54b240e3b9d3cc4fa8957d5ce71bd5351b30c391087b1c266",
+    "filterbank.sv": "43ba15b723751334eed9053af1d5d8a68516a92c33b8b7c0bb2d71d956af46fc",
+    "mixer.sv": "b2f8699a62bc3d8ddd9f8a87ff85e949fc463ef4a33764dad8978bb38e2dfe0e",
+    "constants.sv": "1674295135b048d1daae5598c613b76fedf9c03de77fac4e2f0fee615274545f",
+    "coeffs.mem": "9113a5725dc324c7bfc903ce57ac55335e4bad011dab2b66b63e27356e61690e",
+    "LICENSE": "87a6167ff20ea1d0375aff07fe53e8c834de9ba4d95bfede1c905882c430b83f",
+    "vocoder.m": "fa5d158b56224c644a2b5d9417d5b36832a84cc067b31d6b9cef0bf6c10047ee"
+  },
+  "changes": [
+    "double_biquad: second-stage final feedforward term b2_0 replaced with b2_1",
+    "double_biquad: initialize intermediate output and accumulator during reset",
+    "filterbank: coefficient file parameter, ready signal, deterministic control reset and INT_MIN rectifier clamp",
+    "coefficients: preserve 16 original bandpass rows; replace erroneously exported highpass with Q20 100Hz fourth-order Butterworth envelope LPF",
+    "double_biquad: explicitly shared signed multiplier, arithmetic contract unchanged",
+    "Starcluster original vocoder_mixer: registered signed product,68-bit sum,negative envelope clamp,24-bit saturation and clip count",
+    "Starcluster original vocoder_core: input handshake and rejected-input counter",
+    "Starcluster original I2S frontend: independent-clock input-loss watchdog, zero output notification, filter reset and automatic recovery;128sample simulation passed",
+    "2026-10-26:register multiplier operands before product;complete RTL chain latency153cycles,independent numerical contract unchanged",
+    "2026-10-26:flatten coefficient ROM from2D to170linear32bit words;explicit row*10+column avoids confirmed Gowin1.9.12.03 readmemh synthesis mismatch(141wrong2Dwords,zero wrongflatwords)",
+    "2026-10-26:parameterized multiplier coefficient width; core selects signed22 for fixedQ20table range[-2095541,1047014], retaining32bit samples/full product/rounding. Host build andsimulation guards reject coefficient truncation. Candidate under validation after337unroutednets;no timing or physical claim."
+  ],
+  "notes": [
+    "Repository N_FILTERS=16, not24",
+    "upstream files remain immutable with MIT license",
+    "Q20 floor rounding has nonzero limit cycles: bounded one-second silence model ends at output peak2LSB and internal6120; do not claim exact silence without mute/reset",
+    "107cycle baseline retained in evidence/vocoder_baseline_107cycles; current registered mixer chain123cycles",
+    "Optimized synthesis23361logic12562FF30MULT27X36; not physical DSP usage. PnR record separate.",
+    "Earlier pre-flat-ROM experimental synthesis/PnR resource reports do not establish correct vocoder hardware:2D ROM initialization mismatch now reproduced. Never use small inferred filter count as an optimization result. Current flat-ROM post-synthesis numerical validation required.",
+    "Exact original descending [16:0][9:0] ROM reproduction:148/170netlistwords wrong;earlier ascending2D diagnostic141/170wrong. Bothflatcontrols0wrong. Evidence/coefficient_rom_netlist/coefficient_rom_20261026_011446."
+  ]
+}

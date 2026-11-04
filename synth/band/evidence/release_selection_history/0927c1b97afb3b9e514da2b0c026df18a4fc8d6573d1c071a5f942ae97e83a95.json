@@ -1,0 +1,25 @@
+{
+  "release": "pt8211_dvi_59c963cc2112",
+  "build_id": 2874385776,
+  "bitstream_sha256": "59c963cc21122f3ae4f4e530dddefb225181426b7a4d37aa81550e6d98f1d05e",
+  "selected": "2026-10-26T14:48:47.152360",
+  "software_acceptance": "Source-matched controls simulation, PT8211/DVI short chain, clean timing and18fixedpins; physical buttons untested",
+  "hardware_evidence": "evidence/hardware_pt8211_controls_20261026.json",
+  "collaboration_evidence": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+  "board_status": "passed_digital_only_60s256slots_and96s_song_and_synthetic_GUI_seats",
+  "clock_mhz": 50,
+  "fmax_mhz": 50.883,
+  "physical_interface": "PT8211+HDMI0/DVI+S0play/S1stop/S2panic; microphone/ADC/pedal tied idle",
+  "storage": "Flash program/verify and JTAG reload autonomous96s performance passed; physical cold power cycle untested",
+  "flash_release": "pt8211_dvi_59c963cc2112",
+  "serial_transport": {
+    "guard_zero_bytes": 64,
+    "max_batch_per_5ms": 4,
+    "unguarded_burst_supported": false
+  },
+  "fallback_release": "pt8211_dvi_620164a544d2",
+  "final_accepted": false,
+  "post_test_state": "post_flash_controls_cleanup_20261026.json: stopped/zero voices read back; master0 sent without gain readback",
+  "flash_evidence": "evidence/flash_program_20261026_144847/result.json",
+  "flash_autoplay_evidence": "evidence/hardware_flash_autoplay_pt8211_controls_20261026.json"
+}

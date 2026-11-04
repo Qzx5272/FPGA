@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Local performer wrapper and real ownership RTL; no physical pins/full band timing claim",
+  "sources": {
+    "synth\\band\\rtl\\local_performer.v": "f702b94f67f426ad429edd6fc06f0a95b7f9617609f25b926f337e388ae6a548",
+    "synth\\band\\rtl\\track_ownership.v": "ee4ae077cb93068c9f208102406c215c7dea55a2548042d47bfb4059ad588b91",
+    "synth\\band\\experimental\\local_pedal\\local_pedal_performer.v": "14edcd8f5492ce50618b404294ca43f750e15a21253d0813575be04e74f98e06",
+    "synth\\band\\experimental\\local_pedal\\pedal_command_gate.v": "bcec37dbebc74d71ecbd58a4f2767f3306a2f067e995ecc6675987b132224fd1",
+    "synth\\band\\experimental\\local_pedal\\tb_local_pedal.v": "4d9c22e54ec58744c58b8dac4f13da17ad356963e1203b9a1faf39dc71a5161d"
+  },
+  "log": "PASS local pedal + actual ownership: debounce, note release independent of ownership hold, next-bar return, retrigger cancellation, panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\local_pedal\\tb_local_pedal.v:39: $finish called at 11040000 (1ps)\n"
+}

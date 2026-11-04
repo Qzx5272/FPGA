@@ -1,0 +1,21 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "PCM/Hann2048FFT/snapshot/32bars/640x480logicalvideo synthesis;no bandtop,PnR,PLL,HDMI or physical acceptance",
+  "sources": {
+    "pcm_snapshot.v": "ad7b2b9e46979d1dce6e1199bc723e8af97c99f67c748ce90dc01f5d63b5490a",
+    "pcm_spectrum.v": "081b8ae87f997cb4a53a54678af14460168ac69a8e1a7bcad7822a565cb2d58c",
+    "spectrum_snapshot.v": "dd70e8be4543281205ea898cdb3c2b3abea5b3023541b004c1dafed79971033a",
+    "pcm_spectrum_buffered.v": "aa9b2822484333c8360a14a7c77155c62b847d9f7e3be4ee4a18fde081cc37f0",
+    "fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc",
+    "spectrum_bars.v": "75b15e98c291587c592c52123af9aba456702749cc049e11880d1d52e2d1c0b6",
+    "pcm_spectrum_display.v": "6888cb837dae95ca1effbda0417c5ac1cf0d233b876307f64589be43ac73cf1b",
+    "video_timing_640x480.v": "1aaa4968aff1a6a1bffa3fd4d6c476c92f7268e30bad00b2f7c38a284061e073",
+    "pcm_video_640x480.v": "738f5b285b19b373b15adf5a85fe1c080ad05afa45a32943f355d3f36b031cca"
+  },
+  "build": "D:\\StarclusterBuilds\\pcm_video_81d485d5f51a",
+  "started": "2026-10-26T05:38:07.876851",
+  "returncode": 0,
+  "finished": "2026-10-26T05:38:13.222677"
+}

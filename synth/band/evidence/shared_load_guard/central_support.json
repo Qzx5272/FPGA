@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "created": "2026-10-26T16:04:44.949741",
+  "checks": [
+    "replicated_parameters: accepts matching source fixture",
+    "replicated_parameters: rejects modified dependency",
+    "central_parameters: accepts matching source fixture",
+    "central_parameters: rejects modified dependency",
+    "current quota release rejected"
+  ],
+  "scope": "Offline source guard only; no USB access or board acceptance",
+  "sources": {
+    "shared_load_preflight.py": "a77b136711f28c244258b091b671e0ed7fcd4cd31450a34ce25429e29a84915e",
+    "hardware_check.py": "fa47c9e6c2f1fe75cf334e6d0f67faab7f16c9c0c1b61df26462974583b284c6",
+    "test_shared_load_preflight.py": "cd20023e0cf7e617cf624a92003cbebe0af1f55877d1632ab6449f5ad3a91a34"
+  }
+}

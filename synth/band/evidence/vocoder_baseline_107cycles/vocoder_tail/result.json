@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Integer-model bounded 4096 excitation +48000 silence; no hardware or universal stability proof",
+  "coefficient_sha256": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab",
+  "test_sha256": "f8f91fe66e1c74c661583b8311453b83f75d889e178d9aadd113d6ce1862f17d",
+  "arithmetic_wrap_events": 0,
+  "peak_state": 7326023,
+  "output_clip_samples": 0,
+  "final_960_sample_output_peak": 2,
+  "final_960_sample_state_peak": 6120,
+  "completed": "2026-10-24T23:33:30.389110"
+}

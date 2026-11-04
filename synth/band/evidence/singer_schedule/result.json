@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Variable completion schedule only; serial baseline must demonstrate drop",
+  "variants": {
+    "serial": {
+      "returncode": 1,
+      "log": "FATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\singer_schedule\\tb.sv:30: load-transition drop frames=1 dropped=1\n       Time: 51520000  Scope: tb\n",
+      "source_sha256": "08e3a69c9484fd546b94a52f7a9eeeef9f0bc3b66559e4d49314de42f45a1998"
+    },
+    "current": {
+      "returncode": 0,
+      "log": "PASS full-to-light render schedule:147cycle PCM gap,2 ordered frames,no drops,panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\singer_schedule\\tb.sv:33: $finish called at 51540000 (1ps)\n",
+      "source_sha256": "f7145b163459bb140451d0128006ae3d2c658e978db9145ec7884ea64d2c75e9"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-23T13:43:05.089885",
+  "midi_inputs": [],
+  "serial_ports": [
+    {
+      "device": "COM11",
+      "description": "USB Serial Port (COM11)",
+      "hwid": "USB VID:PID=0403:6010 SER=2025071717A"
+    },
+    {
+      "device": "COM4",
+      "description": "\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM4)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_00000010"
+    },
+    {
+      "device": "COM5",
+      "description": "\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM5)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_00000011"
+    },
+    {
+      "device": "COM12",
+      "description": "USB Serial Port (COM12)",
+      "hwid": "USB VID:PID=0403:6010 SER=2025071717B"
+    },
+    {
+      "device": "COM3",
+      "description": "\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM3)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\\A&2E6F9637&0&BDA280BC3A65_C00000000"
+    },
+    {
+      "device": "COM7",
+      "description": "\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM7)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&2E6F9637&0&C82478CD8812_C00000000"
+    }
+  ]
+}

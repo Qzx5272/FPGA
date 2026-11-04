@@ -1,0 +1,46 @@
+{
+  "status": "digital_build_verified_physical_test_pending",
+  "build": "D:\\StarclusterBuilds\\i2s_duplex_184fd6e6ae9a",
+  "pins": {
+    "clk": "P16",
+    "key_play_n": "K16",
+    "key_stop_n": "F15",
+    "key_panic_n": "G15",
+    "mic_sd": "U17",
+    "i2s_bck": "W21",
+    "i2s_ws": "Y21",
+    "i2s_sd": "P21",
+    "mic_bck": "V19",
+    "mic_ws": "W19",
+    "PA_EN": "H17"
+  },
+  "clocks_ns": {
+    "core_clk": 20.0,
+    "audio_clk": 40.69
+  },
+  "sample_rate_hz": 48000.529661016946,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "pulse_width_violations": 0,
+  "bitstream_sha256": "f5e51c00772ee44be14031dfcbcfbf5213819f8efcfc14210167eb242a36e8c4",
+  "programmed": false,
+  "workstation_integrated": false,
+  "limitations": [
+    "No real microphone/DAC audio measured",
+    "70ns input delay is a simulation assumption",
+    "PLL physical startup and audio quality pending",
+    "Board keys share LCD touch pins",
+    "Dedicated tone/monitor image; no UART instrument control or DVI in this image"
+  ],
+  "warnings": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "sources": {
+    "audio_bringup_top.sv": "55f910daf1c068ec21857a554a1a03dafdbbd6031804adfee35f61d4a19ee2c3",
+    "i2s_master_duplex.sv": "f8d78f2baae18b90f7330937b02d3425bc1b9fd456682267f1b49598ae5b49f1",
+    "gowin_audio_clock.v": "b7ceb3d679c1a6237aff4a6e6b0bab222cae405fa6058cb217819b5fc6964ed6",
+    "tone_1k.mem": "ef5a4118b8b5ee2850497935565c61bfb83466b6aa37dee00e9a58d893aaf4d4",
+    "board.cst": "5fa183f195db99e9770f2fbc21b308799c73d228a1408be8cbfe015bdef71ad1",
+    "board.sdc": "38a93cf03ea6345dccbf2c7f2426b252afebf34ab711ce15d24f6c3f89ce4aac"
+  }
+}

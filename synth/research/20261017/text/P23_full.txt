@@ -1,0 +1,446 @@
+=== PAGE 1 ===
+1712 IEEE SIGNAL PROCESSING LETTERS, VOL. 30, 2023
+Multi-Scale Spectral Loss Revisited
+Simon Schwär and Meinard Müller , Fellow, IEEE
+Abstract—The Multi-Scale Spectral (MSS) loss is commonly
+used for comparing audio signals, as it provides a good trade-off
+between temporal and spectral resolution. However, some con-
+ﬁguration choices, including window type and size, magnitude
+compression, as well as the distance between spectrograms, are
+often set implicitly, even though they can signiﬁcantly impact the
+loss properties and the convergence of trained models. Particularly
+in the context of differentiable digital signal processing (DDSP),
+where learned parameters may explicitly control the frequency of
+synthesis components, the MSS loss often fails to provide infor-
+mative gradients. The main goal of this letter is to gain a better
+understanding of how different conﬁgurations of the MSS loss
+affect this problem. As an illustrative example, we analyze the task
+of sinusoid frequency estimation via gradient descent to compare
+different conﬁgurations and their effect on the loss properties. Fur-
+thermore, we show that favorable conﬁgurations can also facilitate
+unsupervised training of a more complex DDSP additive synthesis
+autoencoder . Our results indicate that a careful conﬁguration may
+beneﬁt many applications where the MSS loss is utilized.
+Index Terms —Audio-to-audio distances, audio synthesis,
+differentiable DSP, loss functions.
+I. I NTRODUCTION
+A
+MULTITUDE of machine learning tasks require a loss
+function to compare audio signals, including many end-to-
+end approaches for sound, music and speech synthesis. Spectral
+loss functions are among the most commonly used distances
+between audio signals and rely on an element-wise comparison
+of spectrograms, which can be computed from time-domain
+signals using the short-time Fourier transform (STFT). This
+way, signals are compared in terms of the temporal and spec-
+tral distribution of signal energy, which better correlates with
+human perception than, for example, the numerical similarity
+of waveforms [1]. The spectrogram, however, is limited by the
+fundamental trade-off between time and frequency resolution
+of the STFT and thus—without phase information—cannot
+achieve high temporal and spectral accuracy at the same time.
+This trade-off can be mitigated by comparing multiple spectro-
+grams with different time–frequency resolutions in a combined
+loss function [2], [3], so that signals must conform at all these
+resolutions simultaneously to minimize the loss.
+Manuscript received 24 August 2023; revised 20 October 2023; accepted
+13 November 2023. Date of publication 15 November 2023; date of current
+version 4 December 2023. This work was supported by German Research
+Foundation under Grant DFG MU 2686/13-2 (No. 401198673). The associate
+editor coordinating the review of this manuscript and approving it for publication
+was Dr. Federico Fontana. (Corresponding author: Simon Schwär .)
+The authors are with the International Audio Laboratories (a joint in-
+stitution of the Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
+and Fraunhofer Institute for Integrated Circuits IIS), 91058 Erlangen,
+Germany (e-mail: simon.schwaer@audiolabs-erlangen.de; meinard.mueller@
+audiolabs-erlangen.de).
+Digital Object Identiﬁer 10.1109/LSP .2023.3333205
+This concept of a Multi-Scale Spectral (MSS) loss is used
+extensively in the context of Differentiable Digital Signal Pro-
+cessing (DDSP) [4], [5]. DDSP was introduced as an umbrella
+term for the concept of back-propagating gradients through ﬁxed
+DSP components, which allows for including domain knowl-
+edge (e.g., about the physics of a generative process) in model ar-
+chitectures to restrict them in a meaningful way (inductive bias).
+The DDSP paradigm has recently proven useful for various
+tasks in audio signal processing and music information retrieval,
+including fundamental frequency estimation [6], musical source
+separation [7], as well as estimating parameters for piano [8]
+and singing voice synthesis [9] or artiﬁcial reverberation [10].
+All these applications use a variant of the MSS loss, but in
+most approaches, certain DSP parameters cannot be estimated
+simply by comparing the target and output audio signals. In
+particular, the MSS loss has been shown to be highly irregular
+and non-convex for parameters that directly or indirectly control
+the frequency of tonal synthesis components [11], [12], [13].
+This way, optimization methods like stochastic gradient descent
+are unlikely to converge without additional means like self-
+supervision (e.g. [6], [14]) or external pitch estimation (e.g. [4],
+[7]) that increase the overall complexity of the system. While
+randomizing conﬁgurations of the STFT has been proposed to
+improve training robustness [15], to our knowledge, no system-
+atic analysis of the inﬂuence of different conﬁgurations on the
+loss behavior has been presented.
+In this letter, we show that, in certain situations, the MSS
+loss is able to provide gradients that allow for convergence
+to the true frequency parameter of a sinusoid (we call these
+informative gradients in the following), and that a signiﬁcant
+part of both the favorable and the unfavorable loss characteristics
+can be ascribed to the effects of spectral leakage. Some loss
+conﬁgurations may amplify unfavorable aspects, so that e.g.
+the choice of window type and size, magnitude compression
+or spectrogram distance can inﬂuence convergence behavior. To
+illustrate the differences between conﬁgurations, we consider the
+simple scenario of sinusoidal parameter estimation via gradient
+descent, where we can explicitly analyze the loss landscape for
+the frequency parameter. From this analysis, we derive three
+example conﬁgurations and compare their performance in an
+unsupervised training setup using a DDSP additive synthesis au-
+toencoder [6]. These experiments provide evidence for spectral
+leakage as a possible underlying cause of the MSS loss’ failure
+to provide informative gradients for frequency parameters.
+II. D EFINITIONS &E XPERIMENTAL SETUP
+An autoencoder consists of an encoder E : X→Z and a
+decoder D : Z→X which are chosen so that D(E(x)) ≈x
+for all x ∈X. Often, E and D are NNs that jointly learn a
+suitable encoding and decoding by minimizing a loss function
+L : X×X→ R between x and ˆx = D(E(x)) over a training
+© 2023 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see
+https://creativecommons.org/licenses/by/4.0/
+=== PAGE 2 ===
+SCHW ÄR AND MÜLLER: MULTI-SCALE SPECTRAL LOSS REVISITED 1713
+TABLE I
+CONSIDERED MSS LOSS CONFIGURA TIONCHOICES
+dataset. This minimization is typically achieved by a form of
+stochastic gradient descent on L(x, ˆx).
+A. Multi-Scale Spectral Loss
+IfX = RL is the space of real discrete audio signals of length
+L, the MSS loss is a popular choice for L(x, ˆx). This loss
+function aggregates the distance between multiple spectrograms
+with speciﬁed window types, window sizes, and magnitude
+compressions to achieve a high temporal and spectral accuracy
+without enforcing phase coherence of the compared signals. Let
+Yw,N,p (m,k )
+= p
+(⏐⏐⏐⏐
+N−1∑
+n=0
+x[n +mH]w[n]e x p
+(−i2πkn
+N
+) ⏐⏐⏐⏐
+)
+(1)
+be the spectrogram of x, where N ∈N is the window size in
+samples,H ∈N is the hop size in samples (we set H = ⌊N/2⌋
+throughout all experiments for simplicity, but generally, arbi-
+trary hop sizes can be used), w ∈RN is a discrete window
+function, and p : R+→ R is an (optional) magnitude compres-
+sion function. Each time–frequency coefﬁcient can be accessed
+with the time indexm ∈[0 : M −1] withM = L/H, assuming
+for simplicity that L is a multiple of H, and frequency index
+k ∈[0 : K −1] with K = ⌈(N +1 )/2⌉, discarding negative
+frequencies since spectra of real signals are symmetric. To
+further simplify notation, we consider YN,w,p ∈R+(K×M ) to
+be a matrix. Analogously, we denote the spectrogram matrix of
+ˆx by ˆYw,N,p .
+With this, a generalized MSS loss can be deﬁned as
+LMSS(x, ˆx): =
+∑
+N∈N
+∑
+p∈P
+d(Yw,N,p, ˆYw,N,p ), (2)
+wherew is a window function as deﬁned above,N is a set of suit-
+able window sizes,P is a set of suitable compression functions,
+andd(·,·) is a distance between two matrices. This formulation
+allows for many different conﬁgurations of w, N , P, and d.I n
+Table I, we introduce a coding scheme for the conﬁgurations
+used in our experiments. As an example, the “original” MSS
+loss proposed in [4] is attained by the conﬁguration ( WH, S4,
+C4, D1). The small value εin C1, C3, and C4 is used to avoid
+taking the logarithm of zero. The parameterγ∈R+in C2 can be
+Fig. 1. Loss landscapes Lx(z) (normalized) with different MSS conﬁgura-
+tions. Black: Original MSS ( WH, S4, C4, D1). Orange: Modiﬁed Hann MSS
+(WH, S5, C4, D2). Red: Smooth MSS ( WF, S5, C2, D2). The grey dashed line
+shows an ideal convex loss, the absolute difference between z and ftgt.
+used to control the strength of compression [16].W es e tγ=1
+for comparability with C1.
+B. Sinusoidal Frequency Estimation
+As a deﬁning property of a DDSP autoencoder, D becomes a
+ﬁxed mapping from a latent parameter spaceZ toX , while only
+the encoder E is an NN with learnable parameters. The training
+objective forE given a ﬁxed target signalx can thus be rephrased
+as a loss function Lx : Z→ R deﬁned by
+Lx(z)= L (x,D(z)) (3)
+for an encoder output z = E(x). As opposed to a general au-
+toencoder, the ﬁxed properties of D for a given z considerably
+inﬂuence the convergence of E to a minimizer of L.
+Typically (see e.g. SectionV),D is a non-trivial mapping with
+many control parameters which all have to be learned jointly. In
+the following, we consider a simpler but illustrative scenario
+where D is a single sinusoidal oscillator with ﬁxed amplitude
+A =1 that maps a single frequency parameter z ∈R to an
+output signal ˆx with
+ˆx[n]= A sin(2πzn/Fs), (4)
+for all n ∈[0 : L−1], where Fs = 16000 Hz is the sampling
+rate used in our experiments. We further assume that the target
+signal x is also generated according to (4), with frequency
+ftgt = 1000 Hz. In this setting, we can visualize the loss land-
+scape Lx(z) for different LMSS as shown in Fig. 1. Particularly
+the original MSS loss (in black) appears to be very noisy and
+thus provide uninformative gradientsdLx/dz to ﬁnd the optimal
+value z = ftgt. Understanding the causes for this loss behavior
+and the differences between conﬁgurations in Fig. 1 is a main
+goal of this letter.
+III. S PECTRAL LEAKAGE
+The truncation of x and ˆx in (1) leads to a “blurred” spectral
+representation of the sinusoids, since multiplication with a win-
+dow function w in time domain is equivalent to convolution
+in frequency domain. Spectra of ﬁnite-length windows have
+multiple local maxima separated by zeros [17] that can be
+differentiated into a mainlobe (the central maximum around
+the sinusoid frequency up to the ﬁrst zero on both sides) and
+sidelobes (all other local maxima). This effect of spectral leak-
+age is illustrated in Fig. 2, showing the inﬂuence of different
+conﬁguration choices on the spectrum of a windowed excerpt
+of x (in black) and ˆx with an arbitrarily chosen z (in light
+=== PAGE 3 ===
+1714 IEEE SIGNAL PROCESSING LETTERS, VOL. 30, 2023
+Fig. 2. Inﬂuence of (a) window type, (b) window size, and (c) magnitude
+compression on the spectrum of x (black) and ˆx (light blue). Circles denote
+DFT coefﬁcients and lines the approximate continuous spectra. In (a) and (b),
+some coefﬁcient values are below the y-axis range, indicated by half circles. The
+default conﬁguration is ( WH, S3, C3) unless otherwise speciﬁed.
+blue). Each plot depicts the discrete Fourier transform (DFT)
+bin frequencies as vertical lines and the DFT coefﬁcient values
+as circles. It further shows the (approximate) continuous spectra
+of the sinusoids, illustrating that they are shifted versions of the
+symmetric window spectra centered aroundftgt andz.T h eD F T
+bin frequencies form a “rigid sampling grid” on the frequency
+axis, so that all coefﬁcient values change when the window
+spectrum is shifted relative to the grid. In our example, ftgt is
+equal to a DFT bin frequency, so that most DFT coefﬁcients
+coincide with a zero of the window spectrum, while z lies
+between two bins and the coefﬁcients are non-zero. This can
+lead to large numerical differences between the two DFT spectra,
+especially when sidelobes are prominent.
+IV . SINUSOID FREQUENCY ESTIMA TION
+Without any blurring of the sinusoid spectra,Lx(z) would not
+provide informative gradients at all. In our example, dLx/dz
+would be zero when the spectral peaks do not overlap, since
+LMSS depends on the element-wise difference between spectra
+Fig. 3. Inﬂuence on Lx(z) of (a) window type (light: WR, medium: WH,d a r k :
+WF) compared using ( S3, C2, D2), (b) window size (light: S1, medium: S2,
+dark: S3) compared using (WH, C0, D2), (c) magnitude compression (light: C0,
+medium: C1,d a r k :C2) compared using ( WF, S3, D2), and (d) matrix distance
+(light: D1, medium: D2) compared using ( WH, S3, C0).
+(i.e., the vertical distance between circles in Fig. 2). However,
+an ideal “kernel” for blurring has one unique maximum, since
+in this case Lx(z) could only be reduced when z moves closer
+toftgt and not by other changes of z relative to the DFT bins. In
+other words, when choosing a suitable LMSS conﬁguration for
+frequency estimation via gradient descent, we aim for a wide
+mainlobe and numerically negligible sidelobes. Fig. 3 illustrates
+Lx(z) with different conﬁgurations for LMSS, which we will
+discuss in the following.
+A. Window Type
+The window spectra of three different window types—
+Rectangular (WR), Hann (WH), and Flat Top (WF)—are compared
+in Fig. 2(a) with an otherwise ﬁxed conﬁguration ( S3, C2, D2).
+Many considerations inﬂuence window choices in practice [ 17,
+Ch. 5.3.3], since for example narrower windows have a higher
+sensitivity (i.e., better ability to detect sinusoids in noise), while
+wider windows have a better dynamic range (i.e., sidelobes of
+a loud sinusoid are less likely to mask a weaker sinusoid). For
+frequency estimation, the sidelobe level is a central property
+that inﬂuences the behavior of Lx(z).U s i n gWR (and to a lesser
+extent WH) leads to strong periodic ﬂuctuations of Lx(z) with a
+period of Fs/N (see Fig. 3(a)), due to the changes in spectral
+leakage depending on the relative value of z compared to the
+DFT bin frequencies. The low sidelobe levels of WF result in
+a smoother loss landscape with a unique local minimum at
+z = ftgt.
+B. Window Size
+The width of mainlobe and sidelobes is also inﬂuenced by
+the window size, as illustrated in Fig. 2(b), using ﬁxed (WH, C0,
+D2). The choice of a suitable set of window sizes was originally
+motivated by the resolution of amplitude comparisons, where a
+small window size leads to a better time resolution and a worse
+frequency resolution. For frequency estimation, the width of
+the locally convex sections depend on the maximal difference
+between ftgt and z where the mainlobes still overlap, so that
+=== PAGE 4 ===
+SCHW ÄR AND MÜLLER: MULTI-SCALE SPECTRAL LOSS REVISITED 1715
+TABLE II
+GRADIENT-SIGN RANKING ACCURACY FOR SELECTED CONFIGURA TIONS
+the convex section is wider for smaller window sizes. Larger
+windows, conversely, increase the loss’ ability to discriminate
+sinusoids with similar frequencies.
+C. Magnitude Compression
+Compression enables a comparison of magnitudes over a wide
+dynamic range and is often perceptually motivated. However,
+it may also exacerbate the problem of periodically changing
+spectral leakage by decreasing the relative difference between
+mainlobe and sidelobe levels (see Fig. 2(c)). The simple loga-
+rithmic compression ( C1)a su s e di n[4] leads to large negative
+values at the zeroes of the window function bounded below by
+log(ε). This ampliﬁes the periodic behavior of Lx(z) as shown
+in Fig. 3(c) with ﬁxed ( WF, S3, D2). To mitigate this issue, we
+propose to replaceεwith 1 (C2), so that the compressed value is
+always larger or equal to 0. A factorγ≥0 can further be chosen
+to adjust the compression strength.
+D. Spectrum Norm
+We compare two distances between the spectrogram matrices,
+theℓ1 norm (D1) and the squaredℓ2 norm (D2)i nF i g .3(d) with
+ﬁxed ( WH, S3, C0). Other considerations like outlier sensitiv-
+ity are often relevant for choosing a distance, but D1 slightly
+ampliﬁes the periodic ﬂuctuations in Lx(z).
+E. Considered MSS Loss Conﬁgurations
+Fig. 1 shows Lx(z) with three different conﬁgurations for
+LMSS, which we chose not to represent a “best” conﬁguration,
+but to illustrate how different choices affect the loss landscape.
+In addition to this qualitative comparison, Table II shows the
+Gradient-Sign Ranking Accuracy (GRA) [11] for these loss
+landscapes, specifying how often on average Lx(z) decreases
+when moving towards a random ftgt by c cents from a random
+initial frequency z0. While it is not an analytic evaluation of
+the loss, a larger GRA indicates that Lx(z) tends to provide
+informative gradients, while a value of 0.5 suggests that changes
+in Lx(z) are random. We calculate the GRA for step sizes c of
+0.3, 3, 30, and 300 cents with all other settings as in [11].T h e
+original MSS results in a GRA near 0.5 for smaller step sizes,
+so that gradient descent algorithms are unlikely to converge. In
+fact, for noise-free signals, this loss behavior is entirely a result
+of spectral leakage at different window sizes, ampliﬁed by the
+logarithmic compression C1.T h emodiﬁed Hann MSS uses D2
+and S5, where all window sizes are prime instead of powers of
+two. This way,z does not coincide with the DFT bin frequencies
+of multiple window sizes at the same time, which reduces the
+amplitude of the ﬂuctuations inLx(z). The modiﬁed Hann MSS
+achieves a high GRA for c = 300 cents while some artifacts
+still impact the GRA for smaller step sizes. Smooth MSS results
+in the fewest spectral leakage artifacts by using WF and C2,
+while also having the widest mainlobe overlaps. The high GRA
+Fig. 4. Training loss for Fθ
+sin with original MSS (black), mod. Hann MSS
+(orange), and smooth MSS (red), with mean and variance of three runs each.
+values for small step sizes down to 0.3 cents indicate that this
+conﬁguration also approximates local convexity with a unique
+minimum in these synthetic conditions. However, performance
+decreases for the largest step size due to vanishing gradients
+when the mainlobes do not overlap.
+V. U NSUPERVISED DDSP AUTOENCODER
+The simple scenario above does not consider other inﬂuences
+on the loss like noise or mixed sinusoids with varying am-
+plitudes. To investigate differences between the conﬁgurations
+from Table II in a more practically relevant scenario, we repeat
+a DDSP autoencoder experiment using the encoder ( Fθ
+sin) and
+sinusoidal synthesizer (Ssin)f r o m[6] trained with the NSynth
+dataset [18], which consists of harmonic single notes with
+natural background noise and transients. The task of Fθ
+sin is
+to estimate time-varying parameters for 100 sinusoids that are
+then synthesized by Ssin. Instead of relying on self-supervision
+as in [6], we use only a reconstruction loss ( LMSS with the
+respective conﬁguration), resulting in fully unsupervised train-
+ing. For comparable loss magnitudes, we multiply each LMSS
+with an empirically estimated constant. The training loss with
+the different LMSS conﬁgurations is shown in Fig. 4. With all
+other settings as in [6], only smooth MSS leads to consistent
+convergence ofFθ
+sin.
+To evaluate whether the model also learns to estimate mean-
+ingful parameters, we conduct two experiments. First, we create
+1000 synthetic test signals of one second length with a random
+constant fundamental frequency (F0) between 30 and 800 Hz
+and 10 integer harmonics with random amplitude. Fθ
+sin trained
+on NSynth with smooth MSS estimates the true frequencies with
+a mean error of 27 ±35 cents (original: 838 ±647 cents, mod.
+Hann: 1467±932 cents). Second, we evaluate the similarity
+between the output of Ssin and an input signal from MDB-
+melody-synth [19]. For this, we estimate the F0 of the output
+signal using CREPE [20] and compare it with the reference
+F0 from the dataset. Since CREPE relies on salient frequency
+components in its input, it would yield dissimilar F0 estimates if
+the output signal contained strong erroneous components. The
+raw pitch accuracy [21] for this comparison is 0.81 ±0.09 for
+Fθ
+sin trained with smooth MSS (original: 0.01±0.03, mod. Hann:
+0.27±0.15). While these preliminary experiments suggest that
+differences between conﬁgurations are also relevant for complex
+scenarios, further research is needed to fully understand the loss
+behavior in practice.
+VI. C ONCLUSION
+Our results indicate that the properties of the MSS loss for
+frequency estimation considerably depend on the numerical re-
+lation between mainlobe and sidelobes in the compared spectra.
+=== PAGE 5 ===
+1716 IEEE SIGNAL PROCESSING LETTERS, VOL. 30, 2023
+REFERENCES
+[1] A. R. Müller, “Frequency analysis in the peripheral auditory system,”
+in Auditory Physiology . Orlando, FL, USA: Academic Press, 1983,
+pp. 191–249.
+[2] X. Wang, S. Takaki, and J. Y amagishi, “Neural source-ﬁlter wave-
+form models for statistical parametric speech synthesis,” IEEE/ACM
+Trans. Audio, Speech, Lang. Process. , vol. 28, pp. 402–415,
+2020.
+[3] R. Y amamoto, E. Song, and J.-M. Kim, “Parallel WaveGAN: A fast
+waveform generation model based on generative adversarial networks with
+multi-resolution spectrogram,” inProc. IEEE Int. Conf. Acoustics, Speech,
+Signal Process., 2020, pp. 6199–6203.
+[4] J. Engel, L. Hantrakul, C. Gu, and A. Roberts, “DDSP: Differentiable
+digital signal processing,” inProc. Int. Conf. Learn. Representations, 2020.
+[Online]. Available: https://openreview.net/forum?id=B1x1ma4tDr
+[5] B. Hayes, J. Shier, G. Fazekas, A. McPherson, and C. Saitis, “A review
+of differentiable digital signal processing for music & speech synthesis,”
+Comput. Res. Repository, 2023, arXiv:2308.15422.
+[6] J. Engel, R. Swavely, L. H. Hantrakul, A. Roberts, and C. Hawthorne,
+“Self-supervised pitch detection by inverse audio synthesis,” in Proc.
+Int. Conf. Mach. Learn. Workshop Self-supervision Audio Speech ,
+2020.
+[7] K. Schulze-Forster, C. S. J. Doire, G. Richard, and R. Badeau, “Unsu-
+pervised music source separation using differentiable parametric source
+models,” IEEE/ACM Trans. Audio, Speech, Lang. Process. , vol. 31,
+pp. 1276–1289, 2023, doi: 10.1109/TASLP .2023.3252272.
+[8] L. Renault, R. Mignot, and A. Roebel, “Differentiable piano model for
+MIDI-to-audio performance synthesis,” in Proc. 25th Int. Conf. Digit.
+Audio Effects, 2022, pp. 232–239.
+[9] D.-Y . Wu et al., “DDSP-based singing vocoders: A new subtractive-based
+synthesizer and a comprehensive evaluation,” in Proc. Int. Soc. Music Inf.
+Retrieval Conf., 2022, pp. 76–83.
+[10] S. Lee, H.-S. Choi, and K. Lee, “Differentiable artiﬁcial reverberation,”
+IEEE/ACM Trans. Audio, Speech, Lang. Process., vol. 30, pp. 2541–2556,
+2022.
+[11] J. Turian and M. Henry, “I’m sorry for your loss: Spectrally-based audio
+distances are bad at pitch,” in Proc. Adv. Neural Inf. Process. Syst.,2020.
+[12] B. Hayes, C. Saitis, and G. Fazekas, “Sinusoidal frequency es-
+timation by gradient descent,” in Proc. IEEE Int. Conf. Acous-
+tics, Speech Signal Process. , Rhodes Island, Greece, 2023, pp. 1–5,
+doi: 10.1109/ICASSP49357.2023.10095188.
+[13] F. Caspe, A. McPherson, and M. Sandler, “DDX7: Differentiable FM
+synthesis of musical instrument sounds,” in Proc. Int. Soc. Music Inf.
+Retrieval Conf., 2022, pp. 608–616.
+[14] N. Masuda and D. Saito, “Improving semi-supervised differentiable syn-
+thesizer sound matching for practical applications,” IEEE/ACM Trans.
+Audio, Speech, Lang. Process., vol. 31, pp. 863–875, 2023.
+[15] C. J. Steinmetz and J. D. Reiss, “auraloss: Audio focused loss functions
+in PyTorch,” in Proc. Digit. Music Res. Netw. One-Day Workshop, 2020.
+[16] M. Müller, Fundamentals of Music Processing–Using Python and Jupyter
+Notebooks, 2nd ed. Cham: Springer V erlag, 2021.
+[17] K. M. M. Prabhu, Window Functions and Their Applications in Signal
+Processing. Boca Raton, FL, USA: CRC/Taylor & Francis, 2014.
+[18] J. Engel et al., “Neural audio synthesis of musical notes with wavenet
+autoencoders,” Comput. Res. Repository, 2017, pp. 1068–1077.
+[19] J. Salamon, R. M. Bittner, J. Bonada, J. J. B. Vicente, E. Gémez, and J.
+P . Bello, “An analysis/synthesis framework for automatic f0 annotation of
+multitrack datasets,” in Proc. Int. Soc. Music Inf. Retrieval Conf. , 2017,
+pp. 71–78.
+[20] J. W. Kim, J. Salamon, P . Li, and J. P . Bello, “CREPE: A convolutional
+representation for pitch estimation,” in Proc. IEEE Int. Conf. Acoust.,
+Speech Signal Process., 2018, pp. 161–165.
+[21] C. Raffel et al., “MIR_EV AL: A transparent implementation of com-
+mon MIR metrics,” in Proc. Int. Soc. Music Inf. Retrieval Conf. , 2014,
+pp. 367–372.

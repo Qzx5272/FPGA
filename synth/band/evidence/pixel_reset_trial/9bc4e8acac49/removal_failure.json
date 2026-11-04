@@ -1,0 +1,30 @@
+{
+  "status": "failed_timing",
+  "report_sha256": "0cafedfd2bf1bc3ac999373c4c7299e85361f728b8fe0f331c03ef3c85f66f4c",
+  "paths": [
+    {
+      "slack_ns": -2.777,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer/RESET",
+      "launch_clock": "display_clk:[R]",
+      "capture_clock": "serial_clk:[R]"
+    },
+    {
+      "slack_ns": -2.775,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer/RESET",
+      "launch_clock": "display_clk:[R]",
+      "capture_clock": "serial_clk:[R]"
+    },
+    {
+      "slack_ns": -2.701,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer/RESET",
+      "launch_clock": "display_clk:[R]",
+      "capture_clock": "serial_clk:[R]"
+    }
+  ],
+  "pulse_width_violations": 0,
+  "setup_violations": 0,
+  "next_trial": "Pixel falling-edge release; must retain all OSER recovery/removal checks and prove actual PnR, no success inferred from phase arithmetic."
+}

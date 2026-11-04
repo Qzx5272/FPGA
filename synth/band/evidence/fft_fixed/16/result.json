@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "n": 16,
+  "scope": "Isolated FFT RTL numeric/handshake verification; no synthesis,timing or stage integration claim",
+  "sources": {
+    "synth\\band\\experimental\\audio_visual\\fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "synth\\band\\experimental\\audio_visual\\fft_twiddle_16.mem": "8839e82b6607ef0cd63b41d42979c35fa68da637457b11428f0b228cc4724896",
+    "synth\\band\\evidence\\fft_fixed\\16\\tb.v": "28c9b8a2fa8e7eba0071f945a33b60cb3b9914d135e7318f34c52583230a1712",
+    "synth\\band\\evidence\\fft_fixed\\16\\input.hex": "d148b18a7e5ef6652cc7e3ff581a2daad4ff89d17d34c431713ae39860d49005",
+    "synth\\band\\tools\\test_fft_fixed.py": "50b993dab92dc828f5eaf329b8a7b3dfd1d2fb47f822bb9044cfd815399f59f9"
+  },
+  "compile_log": "",
+  "log": "PASS FFT N=16 transforms=6 max_compute_clocks=290,stall/input gaps/busy start/reset\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\fft_fixed\\16\\tb.v:28: $finish called at 21850000 (1ps)\n",
+  "returncode": 0,
+  "metrics": [
+    {
+      "frame": 0,
+      "max_component_error_lsb": 1.9877366669707328,
+      "largest_bin": 13
+    },
+    {
+      "frame": 1,
+      "max_component_error_lsb": 3.0,
+      "largest_bin": 7
+    },
+    {
+      "frame": 2,
+      "max_component_error_lsb": 2.3125,
+      "largest_bin": 4
+    },
+    {
+      "frame": 3,
+      "max_component_error_lsb": 0.0,
+      "largest_bin": 0
+    },
+    {
+      "frame": 4,
+      "max_component_error_lsb": 0.0,
+      "largest_bin": 0
+    }
+  ],
+  "tolerance_lsb": 10
+}

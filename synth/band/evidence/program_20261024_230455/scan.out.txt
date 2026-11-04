@@ -1,0 +1,4 @@
+ Cable found:  USB Debugger A/0/529/null (USB location:529)
+ Cable found:  USB Debugger A/1/530/null (USB location:530)
+ Cost 0.27 second(s)
+  

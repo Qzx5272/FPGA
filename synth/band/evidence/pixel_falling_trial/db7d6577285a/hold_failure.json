@@ -1,0 +1,38 @@
+{
+  "status": "failed_timing",
+  "negative_paths": [
+    [
+      "1",
+      "-2.900",
+      "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "workstation/video_output/transmitter/channels[2].serializer/RESET",
+      "display_clk:[F]",
+      "serial_clk:[F]",
+      "0.000",
+      "-3.071",
+      "0.342"
+    ],
+    [
+      "2",
+      "-2.816",
+      "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "workstation/video_output/transmitter/channels[1].serializer/RESET",
+      "display_clk:[F]",
+      "serial_clk:[F]",
+      "0.000",
+      "-3.071",
+      "0.426"
+    ],
+    [
+      "3",
+      "-2.812",
+      "workstation/video_output/transmitter/pixel_release_1_s0/Q",
+      "workstation/video_output/transmitter/channels[0].serializer/RESET",
+      "display_clk:[F]",
+      "serial_clk:[F]",
+      "0.000",
+      "-3.071",
+      "0.430"
+    ]
+  ]
+}

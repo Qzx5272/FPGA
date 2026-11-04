@@ -1,0 +1,9 @@
+{
+  "status": "invalid_shared_integration",
+  "reason": "Physical top invokes band_singer_core, which was not replaced in this trial. Shared band_core was unreachable from selected top.",
+  "synthesis": "Manually stopped PID52800 after discovering wrong hierarchy; no resource evidence accepted",
+  "chain": "Stopped vvp PID52476 after confirming parent35952 command matches this trial",
+  "buttons": "Passed original quota path only; cannot establish shared behavior",
+  "production_changed": false,
+  "created": "2026-10-26T15:23:37.159357"
+}

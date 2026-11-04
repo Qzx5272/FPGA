@@ -1,0 +1,22 @@
+{
+  "android_device": "vivo X200 Pro",
+  "installed": true,
+  "user_confirmed": [
+    "BLE connected",
+    "color changed",
+    "recording event count increased"
+  ],
+  "serial_last_status": {
+    "decoded": 42,
+    "dropped": 0,
+    "unsupported": 0,
+    "active": 0
+  },
+  "apk_sha256": "439430b2552c1237abf270d720f8e8b75df7be753582b9c48917844da2ea3029",
+  "limitations": [
+    "FPGA score transfer not integrated",
+    "audio recording return not implemented",
+    "phone file export and HTTPS download not yet device-tested"
+  ],
+  "official_requirement_source": "https://www.gowinsemi.com.cn/university/match2026"
+}

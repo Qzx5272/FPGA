@@ -1,0 +1,943 @@
+{
+  "source": "sources/espeak-ng/phsource/ph_cmn",
+  "warning": "Reference only. Imports and calls need transitive review. No FPGA coefficients generated.",
+  "phonemes": [
+    {
+      "phoneme": "11",
+      "line": 9,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(12, 9, envelope/i_risefall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "5",
+      "line": 14,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(12, 9, envelope/i_risefall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "21",
+      "line": 20,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "//  tone: low fall\n  stress\n  Tone(20, 10, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "214",
+      "line": 26,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(18, 42, envelope/p_214, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "3",
+      "line": 31,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(18, 42, envelope/p_214, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "22",
+      "line": 37,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "//  tone: mid-low level\n  stress\n  Tone(22, 20, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "33",
+      "line": 42,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "//  tone: mid level\n  stress\n  Tone(32, 30, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "35",
+      "line": 48,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(30, 50, envelope/p_rise, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "2",
+      "line": 53,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(30, 50, envelope/p_rise, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "44",
+      "line": 58,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "//  tone: mid-high level\n  stress\n  Tone(38, 41, envelope/p_rise, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "51",
+      "line": 64,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(50, 10, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "4",
+      "line": 69,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(50, 10, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "53",
+      "line": 74,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "//  tone: high fall\n  stress\n  Tone(50, 30, envelope/p_fall, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "55",
+      "line": 80,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(55, 50, envelope/p_level, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "1",
+      "line": 85,
+      "references": [],
+      "uses_recorded_sample_directly": false,
+      "body": "stress\n  Tone(55, 50, envelope/p_level, NULL)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "n",
+      "line": 95,
+      "references": [
+        {
+          "kind": "VowelStart",
+          "asset": "n/n@"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "n/na"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "n/ne"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "n/ni"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "n/no"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "n/nu"
+        },
+        {
+          "kind": "FMT",
+          "asset": "n/n_long_"
+        },
+        {
+          "kind": "FMT",
+          "asset": "n/_n"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vcd alv nas\n  Vowelout f1=2 f2=1700 -300 250  f3=-100 80  rms=20 brk\n  lengthmod 2\n\n  NextVowelStarts\n    VowelStart(n/n@)\n    VowelStart(n/na)\n    VowelStart(n/ne)\n    VowelStart(n/ni)\n    VowelStart(n/no)\n    VowelStart(n/nu)\n  EndSwitch\n\n  IF nextPh(isNotVowel) THEN\n    FMT(n/n_long_)\n  ENDIF\n  FMT(n/_n)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "N",
+      "line": 116,
+      "references": [
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nn@"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nna"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nne"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nni"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nno"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "nn/nnu"
+        },
+        {
+          "kind": "FMT",
+          "asset": "nn/_nn"
+        },
+        {
+          "kind": "FMT",
+          "asset": "nn/nn2_"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vcd vel nas\n  Vowelout f1=2 f2=1900 0 300  f3=400 80  len=50 rms=15 brk\n  lengthmod 7\n\n  NextVowelStarts\n    VowelStart(nn/nn@)\n    VowelStart(nn/nna)\n    VowelStart(nn/nne)\n    VowelStart(nn/nni)\n    VowelStart(nn/nno)\n    VowelStart(nn/nnu)\n  EndSwitch\n\n  IF prevPh(isPause) THEN\n    FMT(nn/_nn)\n  ELIF nextPh(isNotVowel) THEN\n    FMT(nn/nn2_)\n  ENDIF",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "l",
+      "line": 138,
+      "references": [
+        {
+          "kind": "VowelStart",
+          "asset": "l/li"
+        },
+        {
+          "kind": "FMT",
+          "asset": "l/_l"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "liquid\n  lengthmod 2\n\n  CALL vowelstart_l\n\n  IF nextPhW(#i) THEN\n    VowelStart(l/li)\n  ENDIF\n  FMT(l/_l)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "j",
+      "line": 151,
+      "references": [
+        {
+          "kind": "VowelStart",
+          "asset": "j/j@"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "j/ja"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "j/je"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "j/ji"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "j/jo"
+        },
+        {
+          "kind": "VowelStart",
+          "asset": "j/ju"
+        },
+        {
+          "kind": "VowelEnding",
+          "asset": "j/xj"
+        },
+        {
+          "kind": "FMT",
+          "asset": "j/_j"
+        },
+        {
+          "kind": "FMT",
+          "asset": "j/j_"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "liquid pal\n  lengthmod 1\n\n  IF nextPh(isVowel) THEN\n    NextVowelStarts\n      VowelStart(j/j@)\n      VowelStart(j/ja)\n      VowelStart(j/je)\n      VowelStart(j/ji)\n      VowelStart(j/jo)\n      VowelStart(j/ju)\n    EndSwitch\n\n    VowelEnding(j/xj, -30)\n\n    FMT(j/_j)\n  ELSE\n    // no vowel follows\n    Vowelout len=70\n    FMT(j/j_)\n  ENDIF",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "p",
+      "line": 178,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/p_unasp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls blb stp\n  lengthmod 2\n  Vowelin  f1=0  f2=1000 -50 -100  f3=-200 80 amp=11\n  Vowelout f1=0  f2=1000 -500 -350  f3=-300 80 rms=22\n  WAV(ustop/p_unasp)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ph",
+      "line": 186,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/p_asp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls blb stp\n  lengthmod 2\n  Vowelin  f1=0  f2=1000 -50 -100  f3=-200 80 amp=11\n  Vowelout f1=0  f2=1000 -500 -350  f3=-300 80 rms=22\n  WAV(ustop/p_asp)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "f",
+      "line": 194,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ufric/f"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "//not clear before some vowel\n  vls lbd frc\n  lengthmod 2\n  Vowelout f1=0  f2=1000 -500 -350  f3=-200 80\n  WAV(ufric/f)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "t",
+      "line": 201,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/t_unasp2"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alv stp\n  lengthmod 2\n  Vowelin f1=0  f2=1700 -300 300  f3=-100 80  rms=40\n  Vowelout f1=0 f2=1700 -300 250  f3=-100 80  rms=20\n  WAV(ustop/t_unasp2, 40)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "th",
+      "line": 210,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/t_"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alv stp\n  lengthmod 2\n  Vowelin f1=0  f2=1700 -300 300  f3=-100 80\n  Vowelout f1=0 f2=1700 -300 250  f3=-100 80  rms=20\n  WAV(ustop/t_)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "k",
+      "line": 218,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/k_unasp_"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls uvl stp\n  lengthmod 2\n  Vowelin f1=1  f2=1700 0 200  f3=-300 80 f4\n  Vowelout f1=1 f2=1700 0 200  f3=-300 80 f4 rms=30\n  WAV(ustop/k_unasp_, 75)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "kh",
+      "line": 226,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/k_asp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls uvl stp\n  lengthmod 2\n  Vowelin f1=1  f2=1700 0 200  f3=-300 80 f4\n  Vowelout f1=1 f2=1700 0 200  f3=-300 80 f4 rms=30\n  WAV(ustop/k_asp, 80)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "tS;",
+      "line": 234,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/tsh_pzd_unasp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alp sib afr\n  ipa tɕ\n  lengthmod 2\n  Vowelin f1=0  f2=2700 400 600  f3=300 80\n  WAV(ustop/tsh_pzd_unasp)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "tS;h",
+      "line": 242,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/tsh_pzd"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alp sib afr\n  ipa tɕh\n  lengthmod 2\n  Vowelin f1=0  f2=2700 400 600  f3=300 80\n  WAV(ustop/tsh_pzd, 80)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "S;",
+      "line": 250,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ufric/sh_pzd2"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls pla frc sib\n  lengthmod 2\n  ipa ɕ\n  Vowelin f1=0  f2=2700 400 600  f3=300 80\n  WAV(ufric/sh_pzd2, 20)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "s.",
+      "line": 258,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ufric/sh_rfx"
+        },
+        {
+          "kind": "WAV",
+          "asset": "ufric/sh_rfx"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls pla frc sib\n  lengthmod 3\n  Vowelin  f1=0  f2=1800 -100 300  f3=-300 80\n  Vowelout f1=0  f2=1800 -100 300  f3=-300 80\n  IF nextPh(isPause2) THEN\n    WAV(ufric/sh_rfx, 50)\n  ENDIF\n  WAV(ufric/sh_rfx, 50)   // quieter",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ts",
+      "line": 270,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/ts_unasp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alv afr sib\n  lengthmod 2\n  Vowelin f1=0  f2=1700 -300 300  f3=-100 80\n  Vowelout f1=0 f2=1700 -300 250  f3=-100 80  rms=20\n  WAV(ustop/ts_unasp, 70)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "tsh",
+      "line": 278,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/ts"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls alv afr sib\n  lengthmod 2\n  Vowelin f1=0  f2=1700 -300 300  f3=-100 80\n  Vowelout f1=0 f2=1700 -300 250  f3=-100 80  rms=20\n  WAV(ustop/ts, 60)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ts.",
+      "line": 286,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/ts_rfx_unasp"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls pla frc sib\n  lengthmod 3\n  Vowelin  f1=0  f2=1800 -100 300  f3=-300 80\n  Vowelout f1=0  f2=1800 -100 300  f3=-300 80\n  WAV(ustop/ts_rfx_unasp)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ts.h",
+      "line": 294,
+      "references": [
+        {
+          "kind": "WAV",
+          "asset": "ustop/ts_rfx"
+        }
+      ],
+      "uses_recorded_sample_directly": true,
+      "body": "vls pla frc sib\n  lengthmod 3\n  Vowelin  f1=0  f2=1800 -100 300  f3=-300 80\n  Vowelout f1=0  f2=1800 -100 300  f3=-300 80\n  WAV(ustop/ts_rfx)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "N-",
+      "line": 306,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "nn/nn2_"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "// syllabic N\n  vwl starttype N endtype N\n  length 250\n  FMT(nn/nn2_)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "a",
+      "line": 313,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/a_n"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/a"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #a endtype #a\n  length 250\n  IF nextPh(N) THEN\n    FMT(vwl_zh/a_n)\n  ENDIF\n  FMT(vowel/a)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "A",
+      "line": 322,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/aa_2"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/a_3"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #a endtype #a\n  length 250\n  IF nextPh(N) THEN\n    FMT(vowel/aa_2)\n  ENDIF\n  FMT(vowel/a_3)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ai",
+      "line": 331,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph/ai_6"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #a endtype #i\n  length 250\n  FMT(vdiph/ai_6)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "Au",
+      "line": 337,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/aau"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #a endtype #u\n  length 250\n  FMT(vwl_zh/aau)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "@",
+      "line": 343,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/@_bck"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/3_2"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #@  endtype #@\n  length 200\n  IF nextPh(N) THEN\n    FMT(vowel/@_bck)\n  ENDIF\n  FMT(vowel/3_2)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "@r",
+      "line": 352,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowelr/V3_r"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//tmp use V3_r\n  vwl  starttype #@  endtype #@\n  length 350\n  FMT(vowelr/V3_r)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "E",
+      "line": 358,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/ee_2"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #e  endtype #e\n  length 250\n  FMT(vowel/ee_2)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ei",
+      "line": 364,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/ei_4"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #e endtype #i\n  length 250\n  FMT(vdiph2/ei_4)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "i",
+      "line": 370,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/ii_2"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/ii_5"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/i"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #i\n  length 250\n  IF nextPh(N) THEN\n    FMT(vowel/ii_2)\n  ENDIF\n  IF nextPh(n) THEN\n    FMT(vowel/ii_5)\n  ENDIF\n  FMT(vowel/i)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "i[",
+      "line": 382,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/i#_7"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//after ts tsh s\n  vwl  starttype #i  endtype #i\n  length 250\n  FMT(vowel/i#_7)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "i.",
+      "line": 388,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/i#_6"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//after ts. ts.h s. z.\n  vwl  starttype #i  endtype #i\n  length 250\n  FMT(vowel/i#_6)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "iA",
+      "line": 394,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/iaa"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//try more before N\n  vwl  starttype #i  endtype #a\n  length 250\n  FMT(vwl_zh/iaa)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "iAu",
+      "line": 400,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/iaau"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #u\n  length 250\n  FMT(vwl_zh/iaau)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "iE",
+      "line": 406,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/ie"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #e\n  length 250\n  FMT(vwl_zh/ie)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "io",
+      "line": 412,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/iioo"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #i endtype #o\n  length 250\n  FMT(vdiph2/iioo)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "iou",
+      "line": 418,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/iou"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #i endtype #u\n  length 250\n  FMT(vwl_zh/iou)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "o",
+      "line": 424,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vnasal/oo_n2"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/o_oo"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #o endtype #o\n  length 250\n  IF nextPh(N) THEN\n    FMT(vnasal/oo_n2)\n  ENDIF\n  FMT(vdiph2/o_oo)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "o-",
+      "line": 433,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/8"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #o  endtype #o\n  length 250\n  FMT(vowel/8)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ou",
+      "line": 439,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph/8u"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #o endtype #u\n  length 250\n  FMT(vdiph/8u)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ong",
+      "line": 445,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/ong"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #o endtype #o \n  length 500\n  FMT(vwl_zh/ong)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "u",
+      "line": 451,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vnasal/u_n"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/u_bck"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//try more before N\n  vwl starttype #u endtype #u\n  length 250\n  IF nextPh(N) THEN\n    FMT(vnasal/u_n)\n  ENDIF\n  FMT(vowel/u_bck)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "uA",
+      "line": 460,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/uaa"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #a\n  length 250\n  FMT(vwl_zh/uaa)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "ua",
+      "line": 466,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/oa"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #a\n  length 250\n  FMT(vdiph2/oa)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "uai",
+      "line": 472,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/uai"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #i\n  length 511\n  FMT(vwl_zh/uai)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "u@",
+      "line": 478,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/o@"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #@\n  length 230\n  FMT(vdiph2/o@)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "uei",
+      "line": 484,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/uei"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #i\n  length 250\n  FMT(vwl_zh/uei)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "uo",
+      "line": 490,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/uo"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl starttype #u endtype #o\n  length 280\n  FMT(vwl_zh/uo)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "y",
+      "line": 496,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vowel/uu_3"
+        },
+        {
+          "kind": "FMT",
+          "asset": "vowel/y_2"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #u\n  length 250\n  IF nextPh(N) THEN\n    FMT(vowel/uu_3)\n  ENDIF\n  FMT(vowel/y_2)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "yu",
+      "line": 505,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/yu"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//try more before N\n  vwl  starttype #i  endtype #u\n  length 250\n  FMT(vdiph2/yu)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "y&",
+      "line": 511,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/y&"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #e\n  length 250\n  FMT(vwl_zh/y&)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "yE",
+      "line": 517,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vwl_zh/yee"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "//try more so not similar to iE\n  vwl  starttype #i  endtype #e\n  length 250\n  FMT(vwl_zh/yee)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "y@",
+      "line": 523,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph2/y@"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #@\n  length 250\n  FMT(vdiph2/y@)",
+      "fpga_ready": false
+    },
+    {
+      "phoneme": "yi",
+      "line": 529,
+      "references": [
+        {
+          "kind": "FMT",
+          "asset": "vdiph/yi"
+        }
+      ],
+      "uses_recorded_sample_directly": false,
+      "body": "vwl  starttype #i  endtype #i\n  length 250\n  FMT(vdiph/yi)",
+      "fpga_ready": false
+    }
+  ]
+}

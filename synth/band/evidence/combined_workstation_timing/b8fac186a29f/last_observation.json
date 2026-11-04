@@ -1,0 +1,11 @@
+{
+  "checked": "2026-10-26T09:02:07.745077",
+  "classification": "verified_wait",
+  "session_id": 15920,
+  "observed_live_session": true,
+  "process_id": 17016,
+  "process_cpu_seconds_at_090045": 1092.125,
+  "latest_phase": "Routing Phase 0 completed; routing continues",
+  "not_terminal": true,
+  "next_action": "Poll same session; if terminal inspect final vendor reports before starting a new trial."
+}

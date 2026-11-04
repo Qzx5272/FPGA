@@ -1,0 +1,15 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "PCM snapshot/Hann/2048FFT chain synthesis,no integrated timing/board acceptance",
+  "sources": {
+    "pcm_snapshot.v": "ad7b2b9e46979d1dce6e1199bc723e8af97c99f67c748ce90dc01f5d63b5490a",
+    "pcm_spectrum.v": "de7c4e4d79eced0ddee3deac8688ed09f95764f9c27b2c174f33de9bbf15bfec",
+    "fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc"
+  },
+  "build": "D:\\StarclusterBuilds\\spectrum2048_8cc8754dbb63",
+  "started": "2026-10-25T23:00:44.672697",
+  "returncode": 0,
+  "finished": "2026-10-25T23:00:48.061092"
+}

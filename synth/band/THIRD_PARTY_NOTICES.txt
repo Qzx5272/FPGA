@@ -1,0 +1,8 @@
+星群乐队工程来源记录
+
+1. 本轮工程复用已有项目文件 synth/rtl/hq_sine_quarter.v、sine_quarter_init.vh、uart.v、audio_serial.v，保留其原始代码及注释。
+2. I2S 基础模块来自本项目既有研究工程，经本轮异步 FIFO 和整机接口适配。项目历史来源应继续随原交接包保留。
+3. 历史基础乐队阶段未移植上述第三方音源。后续歌手/V6工作站阶段已改编 VOXOS 的滤波器组/biquad，来源 Li357/voxos，commit 5c624095da0ad42922843ea871a689d617acd5bc，MIT；原许可证保存在 experimental/vocoder/upstream/LICENSE，修改记录见 experimental/vocoder/PROVENANCE.json。该来源声明适用于包含 filterbank.sv / double_biquad.sv 的当前 V6 候选；不得把第三方滤波算法写成全自研。Dexed、OPL3、STK、Mutable Instruments、FLOW、Noaidi、Deluge 和 LinnStrument 未因此自动成为已集成组件。
+4. 未将旧 eSpeak 派生的 hello ROM 放入新乐队音源。有限元音来自参数化加法合成，不是录音切片。
+5. Gowin 编译器、Programmer、器件原语仿真库、OSS CAD Suite、MinGW、Python 和 PySide6 等开发工具不作为自研成果，不随此源码包重新授权。使用者应保留并遵守各工具及软件包本身的许可证。
+6. 本文件记录来源和未包含项，不替任何第三方授予许可证。未来纳入的第三方模块必须另附许可证、版本、修改清单及验证记录。

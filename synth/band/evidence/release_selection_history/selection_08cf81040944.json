@@ -1,0 +1,39 @@
+{
+  "release": "band_57c8f7b5b006",
+  "build_id": 1472788405,
+  "bitstream_sha256": "0af2d6ace36152c8d120125f5b48fb40d7b2b3eefaeb3aacbeed2e35d777b9f1",
+  "selected": "2026-10-23T13:35:57.300842",
+  "software_acceptance": "passed",
+  "hardware_evidence": "evidence/hardware_band_1h.json",
+  "board_status": "passed_digital_only_with_guarded_UART",
+  "clock_mhz": 50,
+  "fmax_mhz": 50.037,
+  "physical_interface": "existing PT8211; external standard I2S not board verified",
+  "serial_transport": {
+    "guard_zero_bytes": 64,
+    "max_batch_per_5ms": 4,
+    "unguarded_burst_supported": false
+  },
+  "resource_usage": {
+    "Logic": [
+      29757,
+      138240
+    ],
+    "Register": [
+      17218,
+      139140
+    ],
+    "CLS": [
+      25235,
+      69120
+    ],
+    "BSRAM": [
+      211,
+      340
+    ],
+    "DSP": [
+      112,
+      298
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "build": "D:\\StarclusterBuilds\\stage_pad_syn_fa7ec7b12a9b",
+  "reference": {
+    "status": "passed",
+    "scope": "Stage-only RTL calibration/event simulation; no board or timing acceptance",
+    "sources": {
+      "experimental\\stage\\stage_pad_frontend.sv": "fa7ec7b12a9b6c3c2f0d23f6baac67b6768206421bcde07078c8210caf477a9d",
+      "tools\\test_stage_pad.py": "ed94800eb134c3d13287b20ba0441bf3cd3ced6212576ca8bfe5ee36e80c6b52",
+      "tests\\tb_pads.v": "1a100bea5db8ce45321822224038eb8b42af0159bba29f22f8de099524d7f032",
+      "tests\\tb_stage_pad_priority.sv": "0f99fa5e3a835dde282e1010ef030b31f4edafa153bd405532e7c2b6f8fe2798"
+    },
+    "log": "PASS pad frontend: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad\\tb.v:53: $finish called at 74940000 (1ps)\nPASS2048 complete64-pad priority states:old linear reference,all single-bit positions,release-before-on\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_stage_pad_priority.sv:31: $finish called at 41001000 (1ps)\n"
+  },
+  "source_sha256": "fa7ec7b12a9b6c3c2f0d23f6baac67b6768206421bcde07078c8210caf477a9d",
+  "netlist_sha256": "acf98f9b6f0df05927053be0fb183ae2f898cbe5f9360094d0bc2968f25e51b0",
+  "vendor_sha256": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+  "testbench_sha256": "cbedf572cecaa3f6e518ed81c5a8df18609c0f8e9c275393c87690c5e00531fa",
+  "scope": "Default10lane/64pad vendor-netlist outputs versus validated RTL:256numeric cases,all80 calibration RAM addresses,same-edge read/write,events,panic,reset,busy/config coherence;not timing/physical acceptance",
+  "returncode": 0,
+  "log": "PASS all80 calibration RAM addresses and same-edge old-data lookup\nPASS vendor-pad equivalence: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\acf98f9b6f0d_20261026_033340\\tb.v:98: $finish called at 256880000 (1ps)\n"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "analysis_only",
+  "scope": "Hierarchical synthesized primitive attribution;not physical usage,functional equivalence or timing proof",
+  "before": {
+    "path": "D:\\StarclusterBuilds\\stage_pad_syn_fa7ec7b12a9b\\impl\\gwsynthesis\\stage_pad.vg",
+    "sha256": "acf98f9b6f0df05927053be0fb183ae2f898cbe5f9360094d0bc2968f25e51b0",
+    "modules": {
+      "stage_pad_frontend": {
+        "logic": 7011,
+        "ff": 5249,
+        "ram_primitives": {
+          "SDPB": 1
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      }
+    }
+  },
+  "after": {
+    "path": "D:\\StarclusterBuilds\\stage_pad_syn_e7992717ba8e\\impl\\gwsynthesis\\stage_pad.vg",
+    "sha256": "9c1f54a67a16d48e65c5281914564b9546f4c9360c83fd8f678b8042cc9bae91",
+    "modules": {
+      "stage_pad_frontend": {
+        "logic": 2407,
+        "ff": 1364,
+        "ram_primitives": {
+          "SDPB": 3
+        },
+        "multiplier_primitives": {
+          "MULTALU27X18": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed_unchanged_design_and_constraints_check",
+  "baseline": "D:\\StarclusterBuilds\\combined_workstation_pnr_be1fe1a74259",
+  "variant": "D:\\StarclusterBuilds\\combined_workstation_pnr_9d0b46f818ca",
+  "matching_sha256": {
+    "impl/gwsynthesis/combined_workstation.vg": "a6646d85e248f460128e3003c6ad1e744b39fbc34038a958a2955f19c1998eab",
+    "stage.sdc": "4547df0494556b85dc7d98fd5e7ffcb4de6ec3cdb83eebfc3aa13abb935dd1c9",
+    "stage.cst": "0013dbc4545de664d3aa5ba020a5028e3ba4e65c182d956ac1efefa57d261b4b"
+  },
+  "changed": "place_option1;route_option0 sameasbaseline;executionlimit7200s",
+  "scope": "Inputcomparisononly,not timing/physical acceptance"
+}

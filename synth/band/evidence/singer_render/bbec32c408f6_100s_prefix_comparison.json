@@ -1,0 +1,8 @@
+{
+  "status": "passed_exact_prefix",
+  "frames_compared": 4608000,
+  "candidate_extra_frames": 192000,
+  "reference_report_sha256": "4ecd69bed941e82268984933d78ad2db80517a4481f8dbb8ccccb433dc7c176a",
+  "candidate_report_sha256": "a7489945b6569d8c49cc41df53542b5b74587ae896f4af570119dc6a34cc8dfd",
+  "scope": "Exact completed PCM comparison for same score, patch and render driver; not physical audio, whole-top or timing acceptance"
+}

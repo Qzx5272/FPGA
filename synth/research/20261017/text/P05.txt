@@ -1,0 +1,1122 @@
+=== PAGE 1 ===
+Too Many Notes: Complexity and Culture in Voyager□□□□□
+Lewis, George E.
+Leonardo Music Journal, Volume 10, 2000, pp. 33-39 (Article)
+Published by The MIT Press
+For additional information about this article
+                                      Access Provided by University of California @ Santa Cruz at 09/27/11  9:42PM GMT
+http://muse.jhu.edu/journals/lmj/summary/v010/10.1lewis.html
+
+=== PAGE 2 ===
+© 2000 ISAST LEONARDO MUSIC JOURNAL, Vol. 10, pp. 33–39, 2000 33
+M
+E
+A
+N
+S
+W
+A
+Y
+S
+&
+Voyager [1,2] is a nonhierarchical, interactive mu-
+sical environment that privileges improvisation. In Voyager,
+improvisors engage in dialogue with a computer-driven, inter-
+active “virtual improvising orchestra.” A computer program
+analyzes aspects of a human improvisor’s performance in real
+time, using that analysis to guide an automatic composition
+(or, if you will, improvisation) program that generates both
+complex responses to the musician’s playing and indepen-
+dent behavior that arises from its own internal processes.
+This work, which is one of my most widely performed com-
+positions, deals with the nature of music and, in particular,
+the processes by which improvising musicians produce it.
+These questions can encompass not only technological or
+music-theoretical interests but philosophical, political, cul-
+tural and social concerns as well. This is consistent with the
+instrumental dimension or tendency in African musical orga-
+nization, or what Robert Farris Thompson [3] identifies as
+“songs and dances of social allusion,” one of several “ancient
+African organizing principles of song and dance that crossed
+the seas from the Old World to the New.”
+Voyager’s unusual amalgamation of improvisation, indeter-
+minacy, empathy and the logical, utterly systematic structure
+of the computer program is described throughout this article
+not only as an environment, but as a “program,” a “system”
+and a “composition,” in the musical sense of that term. In
+fact, the work can take on aspects of all of these terms simul-
+taneously—considering the conceptual level, the process of
+creating the software and the real-time, real-world encounter
+with the work as performer or listener. Flowing across these
+seemingly rigid conceptual boundaries encourages both im-
+provisors and listeners to recognize the inherent instability of
+such taxonomies.
+Musical computer programs, like any texts, are not “objec-
+tive” or “universal,” but instead represent the particular ideas
+of their creators. As notions about the nature and function of
+music become embedded into the structure of software-based
+musical systems and compositions, interactions with these sys-
+tems tend to reveal characteristics of the community of thought
+and culture that produced them. Thus, it would be useful here
+to examine the implications of the experience of programming
+and performing with Voyager as a kind of computer music-mak-
+ing embodying African-American cultural practice.
+Among the fair number of studies by artists/theorists who
+have written cogently on issues of race, gender and class in
+new technological media (such as Loretta Todd [4] and
+Cameron Bailey [5]), the ethnographic study of Institut Re-
+cherche et Coordination Acoustique/Musique (IRCAM) by
+the anthropologist and improvisor Georgina Born [6] ap-
+pears to stand practically alone in
+the trenchancy and thoroughness
+of its analysis of these issues with
+respect to computer music. This
+viewpoint contrasts markedly
+with Catherine M. Cameron’s [7]
+rather celebratory ethnography-
+at-a-distance of what she terms
+“American experimentalism,” in
+which the word “race” never ap-
+pears, and in which her notion of
+a “musical class structure” is
+framed largely in terms of a now-
+moribund debate about relative
+privilege between Europe and America.
+In contrast, Born’s explicit identification of the nearly all-
+male, all-white musical and cultural canon articulated not
+only by the French institute, but by its American equivalents,
+traces the outlines of the development of a post-1950s aes-
+thetic of trans-European experimentalism. Given her so far
+unrefuted thesis that the overwhelming majority of computer
+music research and compositional activity locates itself (how-
+ever unsteadily at times) within the belief systems and cul-
+tural practices of European concert music, one can easily
+imagine a work that, like Voyager, exemplifies an area of musi-
+cal discourse using computers that is not viewed culturally
+and historically as a branch of trans-European contemporary
+concert music and, moreover, is not necessarily modeled as a
+narrative about “composition.”
+THE AESTHETICS OF MULTIDOMINANCE
+In an influential 1990s essay, the artist and critic Robert L.
+Douglas [8] sought to formalize an African-American aes-
+thetic, synthesizing visual and musical elements of what the
+painter Jeff Donaldson, founder of the Africobra art move-
+ment [9], has called “Trans-African” culture. The aspect of
+Douglas’s theory that I wish to highlight here is the notion of
+“multidominant elements,” which I will henceforth call
+“multidominance.” According to Douglas, the aesthetics of
+multidominance, involving “the multiple use of colors in in-
+tense degrees, or the multiple use of textures, design pat-
+terns, or shapes” [10] are found quite routinely in musical
+WAYS & MEANS
+Too Many Notes: Computers,
+Complexity and Culture in Voyager
+George E. Lewis
+George E. Lewis (trombonist, composer, computer/installation artist), Department of
+Music, Critical Studies/Experimental Practices Area, University of California, San Di-
+ego, 9500 Gilman Drive, La Jolla, CA 92093-0326, U.S.A. E-mail: <glewis@ucsd.edu>.
+Website: <http://www.ucsd.edu/music/lewis.html>.
+ABSTRACT
+The author discusses his
+computer music composition,
+Voyager, which employs a com-
+puter-driven, interactive “virtual
+improvising orchestra” that ana-
+lyzes an improvisor’s performance
+in real time, generating both com-
+plex responses to the musician’s
+playing and independent behavior
+arising from the program’s own in-
+ternal processes. The author con-
+tends that notions about the na-
+ture and function of music are
+embedded in the structure of soft-
+ware-based music systems and
+that interactions with these sys-
+tems tend to reveal characteris-
+tics of the community of thought
+and culture that produced them.
+Thus, 
+Voyager is considered as a
+kind of computer music-making
+embodying African-American aes-
+thetics and musical practices.
+=== PAGE 3 ===
+34 Lewis, Too Many Notes
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+and visual works of Africa and its
+diaspora.
+By way of introduction to his theory,
+Douglas recalls from his art-student days
+that interviews with “most African-Ameri-
+can artists with Eurocentric art training
+will reveal that they received similar in-
+structions, such as ‘tone down your col-
+ors, too many colors ’” [11]. Apparently,
+these “helpful ” pedagogical interven-
+tions were presented as somehow univer-
+sal and transcendent, rather than as ema-
+nating from a particular culturally or
+historically situated worldview, or as
+based in networks of political or social
+power. Douglas, in observing that “such
+culturally narrow aesthetic views would
+have separated us altogether from our
+rich African heritage if we had accepted
+them without question, ” goes on to com-
+pare this aspect of Eurocentric art train-
+ing to Eurocentric music training, which
+in his view does not equip its students to
+hear music with multidominant rhythmic
+and melodic elements as anything but
+“noise,” “frenzy” or perhaps “chaos” [12].
+In fact, virtually every extant form of
+black music has been characterized as
+“noise.” As historian Jon Cruz notes, the
+history of this trope in the United States
+dates back at least as far as the slavery
+period: “Prior to the mid-19th Century
+black music appears to have been heard
+by captors and overseers primarily as
+noise—that is, as strange, unfathomable,
+and incomprehensible ” [13]. However,
+as Cruz points out, for slaveowners to
+hear only noise is “tantamount to being
+oblivious to the structures of meaning
+that anchored sounding to the herme-
+neutic world of the slaves. ” To hear only
+noise is to “remain removed from how
+slave soundings probed their circum-
+stances and cultivated histories and
+memories” [14].
+The notion identified by Cruz that
+“the production of music and other cul-
+tural forms enabled slaves to collectively
+exercise symbolic control ” [15] ad-
+dresses directly the issue of how a formal
+aesthetic can articulate political and so-
+cial meaning. Such modern-day (soon to
+be old-school) hip-hop groups as Public
+Enemy, in full recognition of the disap-
+probation of their music by powerful
+sectors of the dominant culture of their
+own day, even appropriated and
+ironicized this trope, challenging them-
+selves, their listeners and their detrac-
+tors with their explicit intention and ex-
+hortation to “bring the noise” [16].
+Douglas’s call for a formalist analysis
+does not exclude the realization that the
+border between form and content is dif-
+ficult to police. Moreover, these formal
+abstractions are not universals;
+multidominance is not present in all
+trans-African music and art and cer-
+tainly must not be applied as a sonic lit-
+mus test. In the particular case of Voy-
+ager,  however, the composition ’s
+African-American cultural provenance
+lends particular credence to an identifi-
+cation of multidominance at the levels
+of both the logical structure of the soft-
+ware and its performative articulation.
+Moreover, whether or not these
+multidominant forms have been con-
+sciously conceptualized, exploited and
+extended by artists with full awareness of
+their implications, they must be viewed
+as culturally contingent, historically
+emergent and linked to situated struc-
+tures of power and dialogue.
+The African-American composer Olly
+Wilson [17] has identified a set of ten-
+dencies and principles characteristic of
+African and Afro-American music-mak-
+ing, while quite similar principles are
+identified by Robert Farris Thompson in
+examining African visual forms [18]. In
+particular, Douglas, Wilson and Thomp-
+son all identify rhythm as a critically im-
+portant structural element in African-
+derived music. Wilson notices in
+African-derived music a “principle of
+rhythmic and implied metrical contrast ”
+[19]. Thompson sees the black Atlantic
+visual tradition [20] as displaying “a pro-
+pensity for multiple meter” [21], and his
+references to Mande cloth work as incor-
+porating a conception of “rhythmized
+textiles” makes a direct connection with
+both African and African-American mu-
+sic [22]. Similarly, Douglas connects the
+visual with the sonic: “the predisposition
+to use multiple types of rhythm in musi-
+cal construction speaks equally to a dis-
+tinct aesthetic as does the multiple use
+of visual elements ” [23].
+COMPUTER MUSIC AND
+TRANS-AFRICAN FORMALISM
+I conceived and programmed the first
+version of Voyager  between 1986 and
+1988. The work was created in
+Amsterdam at the Studio for Elektro-
+Instrumentale Muziek (STEIM); I added
+later ameliorations wherever I hap-
+pened to be in the ensuing years. Since
+then, Voyager  has been performed
+around the world, with improvisors such
+as myself (trombone), saxophonists
+Roscoe Mitchell, J.D. Parran, Douglas
+Ewart and Evan Parker, pianist Haruna
+Miyake, and extended cellist Jon Rose.
+The work has been performed in venues
+as diverse as the IRCAM Summer Acad-
+emy, the Groningen Jazz Marathon, In-
+ternational Computer Music Confer-
+ences in 1988 and 1994, Xebec Hall
+(Kobe, Japan) and the Velvet Lounge in
+Chicago [24].
+The various versions of Voyager  have
+all been written in dialects of Forth, the
+curiously hybrid compiled/interpreted
+environment created by Charles Moore
+around 1970 [25,26]. Seemingly anti-au-
+thoritarian in nature, during the early
+1980s Forth appealed to a community of
+composers who wanted an environment
+in which a momentary inspiration could
+quickly lead to its sonic realization —a
+dialogic creative process, emblematic of
+an improvisor ’s way of working. As the
+Forth culture developed, languages
+such as Hierarchical Music Specification
+Language (HMSL) [27] and, later, FOR-
+MULA (FORth MUsic LAnguage)
+[28,29], created by artists working in the
+field, made Forth and its dialects per-
+haps the most widely used language
+group for interactive music before the
+advent of Max, a language that similarly
+centers the dialogic as part of the soft-
+ware construction process.
+My analysis of Voyager as an interactive
+computer music system uses Robert
+Rowe’s taxonomy of “player” and “instru-
+ment ” paradigms [30], although these
+two models of role construction in inter-
+active systems should be viewed as on a
+continuum along which a particular
+system’s model of computer-human inter-
+action can be located. In Rowe ’s terms,
+Voyager functions as an extreme example
+of a “player ” program, where the com-
+puter system does not function as an in-
+strument to be controlled by a performer.
+I conceive a performance of Voyager as
+multiple parallel streams of music gen-
+eration, emanating from both the com-
+puters and the humans —a nonhier-
+archical, improvisational, subject-subject
+model of discourse, rather than a stimu-
+lus/response setup.
+Both the sonic behavior and the pro-
+gram structure of Voyager  exhibit
+multidominance in a number of re-
+spects. First, the Voyager program is con-
+ceived as a set of 64 asynchronously op-
+erating single-voice MIDI-controlled
+“players, ” all generating music in real
+time. Several different (and to some,
+clashing) sonic behavior groupings, or
+ensembles, may be active simulta-
+neously, moving in and out of metric
+synchronicity, with no necessary arith-
+=== PAGE 4 ===
+Lewis, Too Many Notes 35
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+metic correlation between the strongly
+discursive layers of multirhythm. While
+this is happening, a lower-level routine
+parses incoming MIDI data into sepa-
+rate streams for up to two human impro-
+visors, who are either performing on
+MIDI-equipped keyboards or playing
+acoustic instruments through “pitch fol-
+lowers, ” devices that try to parse the
+sounds of acoustic instruments into
+MIDI data streams.
+The aperiodic, asynchronously recur-
+ring global “behavior specification ” sub-
+routine setphrasebehavior, which runs at
+intervals of between 5 and 7 seconds,
+continually recombines the MIDI “play-
+ers” into new ensemble combinations
+with defined behaviors (Fig. 1). This
+subroutine (or “word ” in Forth par-
+lance) first makes determinations as to
+how many players will be part of the
+next ensemble. Additional options in-
+clude turning off all players in all en-
+sembles and starting afresh with this
+new group, turning off just the most re-
+cently instantiated ensemble, or allow-
+ing the new ensemble to enter the fray
+with the groups that are already playing.
+The setphrasebehavior  word also in-
+cludes constituent subroutines that
+specify for the new ensemble choices of
+timbre, the choice of one of 15 melody
+algorithms, the choice of approximately
+150 microtonally specified pitchsets (see
+Fig. 2), and choices of volume range,
+microtonal transposition, tactus (or
+“beat”), tempo, probability of playing a
+note, spacing between notes, interval-
+width range and MIDI-related ornamen-
+tation such as chorusing, reverb and
+portamento, and how such parameters
+as tessitura and tempo can change over
+time. Moreover, each new ensemble
+chooses not only a distinct group sonor-
+ity, but a unique response to input, de-
+ciding which improvisors —one, both or
+none—will influence its output behav-
+ior. Further options include imitating,
+directly opposing or ignoring the infor-
+mation coming from the improvisors.
+The response task word setresponse
+(Fig. 3), which runs asynchronously to
+the phrase behavior task, processes data
+from both the low-level MIDI parser that
+collects and manages the raw data and a
+mid-level smoothing routine that uses
+this raw data to construct averages of
+pitch, velocity, probability of note activ-
+ity and spacing between notes. This in-
+formation is used by setresponse to decide
+in greater detail how each ensemble will
+respond to elements of the input, such
+as tempo (speed), probability of playing
+a note, the spacing between notes, me-
+lodic interval width, choice of primary
+pitch material (including a pitchset
+:ap setphrasebehavior ( -- )
+::ap" general phrasing " ( task recurs at intervals of 5000-7000 ms )
+5000 time-advance 11 irnd 200 * 5000 + to cycle
+begin
+::ev
+bodymusic 0=  \ in this version this red light is always zero
+if calcork  \ set up new group of players, including number and position in space
+else allplayersoff \ turn off all groups and start over with a new group.
+then
+\ set up how system will follow input; set MIDI timbres
+setfollowbehavior setreplies setvoxbehavior
+\ set melody algorithms, pitchsets, reverb and chorus type
+setwavebehavior setscalebehavior setreverbbehavior setchorusbehavior
+computer-solo? \ if no one is playing, I have a solo
+\ set volume and velocity, microtonal tonic transposition
+if setvelbehavior setvolbehavior settonicbehavior
+\ set octave, interval range, duration range
+setoctbehavior setintbehavio setwidbehavior setlegatobehavior
+\ set length of notes
+bodymusic 0= \ in this version this red light is always zero
+if setrestbehavior \ set up average degree of silence
+then
+\ set portamento, whether or not to follow tempo, and tempo ranges
+setportabehavior settempofollow setspdbehavior
+then
+ ;;ev
+cycle time-advance
+again
+;;ap
+;ap
+Fig. 1. Voyager’s top-level phrase behavior word, written as a FORMULA active process.
+=== PAGE 5 ===
+36 Lewis, Too Many Notes
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+based on the last several notes received)
+octave range, microtonal transposition
+and volume.
+Of particular note here is the fact that
+in the absence of outside input, the
+complete specification of the system ’s
+musical behavior is internally generated
+by setphrasebehavior . In practical terms,
+this means that Voyager does not need to
+have real-time human input to generate
+music. In turn, since the program exhib-
+its generative behavior independently of
+the improvisor, decisions taken by the
+computer have consequences for the
+music that must be taken into account
+by the improvisor. With no built-in hier-
+archy of human leader/computer fol-
+lower—no “veto” buttons, footpedals or
+physical cues —all communication be-
+tween the system and the improvisor
+takes place sonically.
+The simultaneous multiplicities of
+available timbres, microtonal pitchsets,
+rhythms, transposition levels and other
+elements in Voyager—all emblematic of
+an aesthetic of multidominance —reflect
+my inheritance from the Association for
+the Advancement of Creative Musicians ’
+notion of “multi-instrumentalism, ”
+where a number of AACM improvisors,
+including Wadada Leo Smith, Henry
+Threadgill, Douglas Ewart, Joseph
+Jarman, Roscoe Mitchell, Anthony
+Braxton and others moved to develop
+multiple voices on a wide variety of in-
+struments [31]. In AACM performances,
+the extreme multiplicity of voices, em-
+bedded within an already highly collec-
+tive ensemble orientation, permitted the
+timbral diversity of a given situation to
+exceed the sum of its instrumental parts,
+affording a wider palette of potential or-
+chestrations to explore.
+The attempt to thoroughly map, parse
+and develop the input data is based on
+the notion that, through the accumula-
+tion and articulation of many small de-
+tails, an interactive, adaptive input struc-
+ture that generates a sufficiently
+detailed representation of its input can
+then produce a musical output percep-
+tible by an improvisor as analogous to
+various states that were experienced dur-
+ing improvisation. This notion of bi-
+directional transfer of intentionality
+through sound —or “emotional trans-
+duction”—constructs performance as an
+intentional act embodying meaning and
+announcing emotional and mental in-
+tention. In this way, I believe, the emo-
+tional state of the improvisor may be
+mirrored in the computer partner, even
+if the actual material played by the com-
+puter does not necessarily preserve the
+pitch, duration or morphological struc-
+tures found in the input.
+In improvised music, improvisors of-
+ten assert both personal narrative and
+difference as critical aspects of their
+work. For me, what Jerry Garcia called
+the “anti-authoritarian ” impulse in im-
+provisation led me to pursue the project
+of de-instrumentalizing the computer. If
+the computer is not treated as a musical
+instrument, but as an independent im-
+provisor, difference is partly grounded
+in the form of program responses that
+are not necessarily predictable on the
+basis of outside input. As we have noted
+earlier, Voyager’s  response to input has
+several modes, from complete commun-
+ion to utter indifference. This seeming
+lack of uniformity is not necessarily cor-
+related with “lack of structure, ” as is so
+often expressed in the vernacular dis-
+course of “randomness. ” Rather, while
+tendencies over a long period of time
+exhibit consistency, moment-to-moment
+choices can shift unpredictably.
+It is a fact, however, that the system is
+designed to avoid the kind of uniformity
+where the same kind of input routinely
+leads to the same result. Voyager’s  aes-
+thetic of variation and difference is at
+variance with the information retrieval
+and control paradigm that late capital-
+ism has found useful in framing its pre-
+ferred approach to the encounter with
+computer technology. As I have observed
+elsewhere, interactivity has gradually be-
+come a metonym for information re-
+trieval rather than dialogue, posing the
+danger of commodifying and ultimately
+reifying the encounter with technology:
+Indeed, the rapid development of stan-
+dardized modes for the relationships
+between humans and computers is un-
+fortunate for such a young and pre-
+sumably quickly changing technology.
+The evolution of the language used to
+reflect the multimedia revolution is a
+compelling testament to the power of
+corporate media. Corporate power as-
+sumes an important, even dominating
+role in conditioning our thinking
+about computers, art, image, and
+sound. Much of the descriptive lan-
+guage surrounding multimedia (and
+related areas, such as “cyberspace ”)
+serves to hide the power exercised by
+corporations [32].
+Finally, Wilson notices in African-de-
+rived music a tendency toward a high
+density of events in a relatively short
+time frame [33]. It is to be noted that
+the work of many important African-
+American improvisors —in particular
+Cecil Taylor, John Coltrane and Albert
+Ayler —exhibit a notion of extended
+form that involves the sustained use, of-
+ten for very long periods, of extremely
+rapid, many-noted intensity structures.
+Donaldson’s 1988 visual work Jam Packed
+and Jelly Tight  [34] exemplifies the ap-
+proach of the Africobra artists, who, ac-
+cording to Douglas,
+used the jampack and jelly-tight con-
+cept as a means of filling up the void,
+to add as much as possible to the act of
+creation. Africobra members accept
+these concepts as an African axiom:
+that to add to life is to ensure that
+there is more to share [35].
+The Voyager  program often combines
+dense, rapid accretions of sonic informa-
+tion with sudden changes of mood,
+tempo and orchestration, eschewing the
+slowly moving timbral narratives charac-
+teristic of much institutionally based com-
+create partch43 43 i,
+0 s, 21 s, 53 s, 84 s, 112 s, 151 s, 165 s, 182 s,
+204 s, 231 s, 267 s, 294 s, 316 s, 347 s, 386 s, 417 s,
+435 s, 471 s, 498 s, 519 s, 551 s, 582 s, 617 s, 649 s,
+680 s, 702 s, 729 s, 765 s, 782 s, 814 s, 853 s, 884 s,
+906 s, 933 s, 969 s, 996 s, 1018 s, 1035 s, 1049 s, 1088 s,
+1115 s, 1147 s, 1178 s,
+Fig. 2. Voyager pitchset construction, written as a Forth table representing the well-known 43-tone scale of Harry Partch, with approximate
+values given in cents (a method of specifying musical intervals in which 100 cents equals a musical semitone). The word “s” translates val-
+ues in cents to MIDI note numbers with 8-bit microtonal pitchbend offsets, and then compiles the 16-bit result into the next av ailable byte
+pair in the table. The word “I” creates a transposition factor that allows the program ’s melody generators to perform a rough mapping of
+the microtonal data in a given pitchset to 12-space data received via MIDI. This permits the program to use these scales with e ffective in-
+terval widths analogous to those in 12-space, if desired.
+=== PAGE 6 ===
+Lewis, Too Many Notes 37
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+puter music. Thus, Voyager is in clear vio-
+lation of the dictum that Douglas identi-
+fies here as Eurocentric: “Don ’t over-
+crowd your composition with too many
+elements ” [36]. These real distinctions
+from much institutionally produced
+trans-European computer music led one
+puzzled Italian listener to ask me “why so
+many things are happening at the same
+time. ” Or, to quote the king from the
+movie Amadeus,  speaking of Mozart ’s
+work, “There are too many notes ” [37].
+EMOTIONAL
+TRANSDUCTION: SOUND,
+PERSONALITY, DIFFERENCE
+In the context of improvised musics that
+exhibit strong influences from African-
+American ways of music-making, musical
+sound—or rather, “one’s own sound ”—
+becomes a carrier for history and cul-
+tural identity. As Yusef Lateef maintains,
+“The sound of the improvisation seems
+to tell us what kind of person is impro-
+vising. We feel that we can hear charac-
+ter or personality in the way the musi-
+cian improvises ” [38]. Essentially the
+same notion was advanced in the 1940s
+by Charlie Parker, who declared that
+“Music is your own experience, your
+thoughts, your wisdom. If you don ’t live
+it, it won’t come out of your horn ” [39].
+The incorporation and welcoming of
+agency, social necessity, personality and
+difference as aspects of “sound” distin-
+guish such music from work that “incor-
+porates” or “uses” improvisation, or that
+features “indeterminacy ” or aleatoric
+practices. “Sound” becomes identifiable,
+not with timbre alone, but with the ex-
+pression of personality, the assertion of
+agency, the assumption of responsibility
+and an encounter with history, memory
+and identity.
+Part of the task of constructing Voyager
+consisted of providing the program with
+its “own sound.” In Voyager, this notion of
+sound appears in tandem with a kind of
+technology-mediated animism, ex-
+pressed as an interactive aesthetic of ne-
+gotiation and independent computer
+agency. This recalls the frequent refer-
+ences by Malachi Favors Maghostut,
+contrabassist and co-founder of the Art
+Ensemble of Chicago, to someone he
+met on his travels as “this African brother
+who had instruments that played them-
+selves.” Further, the trope of musical per-
+formance on an instrument as communi-
+cation between two subject intelligences
+is exemplified by Francis Bebey’s descrip-
+tion of an incident wherein an accom-
+plished African musician, after trying an
+instrument briefly, handed it back to its
+owner with the remark that he had no
+way of communicating with “someone
+who did not speak the same language ” as
+he did. Bebey, in general discussion of
+African music, further maintains that in a
+number of African musical traditions a
+musical instrument “is often regarded as
+a human being. ” As evidence he offers
+the story of another African musician,
+who described his refusal to sell his drum
+(despite his near-destitution) by saying
+that he did not want to “deliver a slave
+into bondage” [40].
+The other important notion that ani-
+mates Voyager is that of the improvising
+orchestra. While Voyager can be seen as
+appropriating or even playing the doz-
+ens with the notion of the nineteenth-
+century European orchestra, my model
+in this regard is the Javanese gamelan
+ensemble, where a large number of play-
+ers playing a relatively fixed composi-
+tion nonetheless have considerable lati-
+tude in interpretation, even at primary
+levels such as pitch, duration and
+rhythm. Control of musical process is
+shared among players; inter-player com-
+munication takes place without neces-
+sarily involving a central authority. Local
+decisions taken by individual players
+percolate up to the global level, at which
+the overall form is maintained.
+The Javanese musician Hardja Susilo
+characterizes “improvisation ” in court
+tradition according to its interactive, so-
+cial or intentional role, acknowledging
+how intentionality of process affects the
+musical result. For example, the
+Javanese term kembangan (literally, “flow-
+ering ”) refers to an improvisation that
+adds beauty. Isen-isen (“filling”) is an im-
+provisation that “pleasantly fills a
+vacuum.” On the other hand, ngambang
+(“floating”) refers to musicians who are
+improvising without clear knowledge of
+where the music is going, and ngawur
+(“blunder”) denotes an out-of-style or ir-
+relevant improvisation [41]. Thus, the
+success of this heterarchically oriented
+approach to large-group musical interac-
+tion can be seen to depend not only on
+the performative skills of the players, but
+upon their real-time analytic capabilities.
+Finally, it is striking to note how an Af-
+rican-American perspective on improvi-
+sation reflects a similarity with recent
+thinking in the game of basketball, an
+area in which African-American players
+have continually presented revolutionary
+possibilities. The situation with improvi-
+sation, conventional classical music wis-
+dom notwithstanding, is remarkably
+similar to basketball coach Phil Jackson’s
+description of the triangle offense, in
+which “there are no set plays, and the
+defense can ’t predict what ’s going to
+happen next.” As with improvisation, the
+ideal of the triangle system is for each
+player to be “acutely aware, at any given
+moment, of what ’s happening on the
+setresponse ( -- )
+ setinputbasedur \ set tempo ranges based on input note durations
+ bodymusic 0= \ in this version this red light is always zero
+if setinputplayprob \ probability of note or rest, based on input
+then
+\ set duration range and length of notes, interval range
+ setinputlegato setinputwid setinputint
+\ use pitchset based on last few input notes; set octave and microtonal tonic transposition
+ setinputscale setinputoct setinputtonic
+\ set MIDI volume and velocity
+ setinputvol setinputvel
+;
+Fig. 3. Voyager’s input response word, written in Forth, sets parameters based on analysis of MIDI input.
+=== PAGE 7 ===
+38 Lewis, Too Many Notes
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+floor” [42]. While in both areas, triangle
+offense author Tex Winter ’s dictum that
+“the offense must utilize the players ’ in-
+dividual skills ” has major relevance, it is
+absolutely crucial that both basketballers
+and experienced improvisors “develop
+an intuitive feel for how their move-
+ments and those of everyone else on the
+floor are interconnected ” [43].
+Thus, continuous awareness is the
+means through which these possibilities
+are articulated in performance. Part of
+the analytic task facing any improvisor
+(whether or not that improvisor is a
+computer) involves discovering or even
+positing ways in which seemingly unre-
+lated material can become part of either
+an existing or a new structure within the
+emergent music. Depending on context,
+the responses of the computer to the
+improvisor ’s input can potentially be
+seen as either related or unrelated, ei-
+ther during the improvisation itself or
+upon further reflection. Moreover, the
+explicit possibility of encountering com-
+pletely unrelated material encourages
+the possibility of changes in the music
+initiated by the computer as well as by
+the humans.
+Thus, with both computers and hu-
+mans, the data gathered must be viewed
+in a variety of contexts and from diverse
+perspectives in order to decide how the
+material to be presented next might
+function in terms of what has already
+been presented. The relatedness of par-
+ticular materials need not be, and quite
+often cannot be, “objectively ” demon-
+strable. Rather, the framing, by all par-
+ties to the music-making, of the relation-
+ship that the new material has to the
+overall piece at that moment is a crucial
+factor in structure formation. This pro-
+cess may be subsumed under the gen-
+eral heading of “creativity.”
+AFTERWORD: STRUCTURE
+AND FREEDOM
+“Structure,” as we understand it in music
+pedagogy, is highly desirable. On the
+other hand, at the same time that most
+students learn fairly early on that “jazz”
+(whatever that might be) is improvised,
+the dominant culture informs them, in
+myriad ways that are continually
+reinscribed across the breadth of daily
+experience, that “improvised ” is a syn-
+onym for “unstructured.” In apparently
+welcome contrast, we are provided with
+the role of the “composer,” which can be
+usefully summarized as “bringer of struc-
+ture.” The structure inevitably arrives in
+the form of a written text, a coded set of
+symbols, intended for realization in per-
+formance by a “performer.”
+This metonymic dialectic between
+“composed ” and “improvised ” ways of
+producing musical texts serves to ob-
+scure a more fundamental constructed
+binary comprising the two most influen-
+tial musical cultures of the twentieth
+century, the trans-European and trans-
+African. Proponents of each form-com-
+plex tend to construct an Other from
+proponents of the complementary
+form—particularly in creating compet-
+ing notions of “art music ”—but the
+asymmetrical distribution of cultural
+power clearly rests, for the moment,
+with the “bringers of structure.” In Euro-
+American art-music culture this binary is
+routinely and simplistically framed as in-
+volving the “effortless spontaneity ” of
+improvisation, versus the careful delib-
+eration of composition —the composer
+as ant, the improvisor as grasshopper.
+To move beyond this tendentiously
+posed opposition, a meaningful distinc-
+tion between these different ways of
+knowing —the improvisational and the
+compositional —must inevitably turn
+upon the axis of interaction. Improvisa-
+tion must be open —that is, open to in-
+put, open to contingency —a real-time
+and (often enough) a real-world mode of
+production. In machine terms, what we
+may have in Voyager is a composing ma-
+chine that allows outside intervention. If
+we do not need to define improvised
+ways of producing knowledge as a subset
+of composition, then we can simply speak
+of an improvising machine as one that
+incorporates a dialogic imagination.
+Thus, if there is to be serious talk
+about “our” identity as humans, those
+identities are continually conditioned
+and reinscribed through processes of
+interactivity, where negotiation, differ-
+ence, partial perspective —and in the
+case of music, sonic signaling—enter the
+picture. Voyager asks questions concern-
+ing ways in which historically contingent
+meanings are exchanged through
+sound. Even given my emphasis on the
+personal conception of “sound,” Voyager
+is not asking whether machines exhibit
+personality or identity, but how person-
+alities and identities become articulated
+through sonic behavior. Instead of ask-
+ing about the value placed (by whom?)
+on artworks made by computers, Voyager
+continually refers to human expression.
+Rather than asking if computers can be
+creative and intelligent —those qualities,
+again, that we seek in our mates, or at
+least in a good blind date —Voyager asks
+us where our own creativity and intelli-
+gence might lie—not “How do we create
+intelligence? ” but “How do we find it? ”
+Ultimately, the subject of Voyager is not
+technology or computers at all, but musi-
+cality itself.
+References and Notes
+1. George Lewis, Voyager, Disk Union-Avan CD 014
+(1992).
+2. George Lewis, Endless Shout, Tzadik TZ CD 7054
+(2000).
+3. Robert Farris Thompson, Flash of the Spirit: Afri-
+can and Afro-American Art and Philosophy  (New York:
+Vintage, 1983).
+4. Loretta Todd, “Aboriginal Narratives in
+Cyberspace, ” in Mary Anne Moser and Douglas
+MacLeod, eds., Immersed in Technology: Art and Vir-
+tual Environments  (Cambridge, MA: MIT Press,
+1996) pp. 179 –194.
+5. Cameron Bailey, “Virtual Skin: Articulating Race
+in Cyberspace, ” in Moser and MacLeod [4] pp. 29 –
+49.
+6. Georgina Born, Rationalizing Culture: IRCAM,
+Boulez and the Institutionalization of the Avant-Garde
+(Berkeley, CA: Univ. of California Press, 1995).
+7. Catherine M. Cameron, Dialectics in the Arts: The
+Rise of Experimentalism in American Music (Westport,
+CT: Praeger, 1996).
+8. Robert L. Douglas, “Formalizing an African-
+American Aesthetic, ” New Art Examiner  (June/Sum-
+mer 1991) pp. 18 –24.
+9. Jeff Donaldson, “Africobra —African Commune
+of Bad Relevant Artists: 10 in Search of a Nation, ”
+Black World (October 1970) pp. 81 –89; Ann Gibson,
+“The African American Aesthetic and Post-
+modernism,” in David C. Driskell, ed., African Ameri-
+can Visual Aesthetics: A Postmodernist View  (Washing-
+ton, D.C.: Smithsonian Institution Press, 1995).
+10. See Douglas [8] p. 18.
+11. See Douglas [8] p. 18.
+12. See Douglas [8] p. 18.
+13. Jon Cruz, Culture on the Margins: The Black
+Diaspora and the Rise of American Cultural Interpreta-
+tion (Princeton, NJ: Princeton Univ. Press, 1999) p.
+43.
+14. See Cruz [13] p. 47.
+15. See Cruz [13] p. 47.
+16. “Bring the Noise ” is the second track on Public
+Enemy’s second album, It Takes a Nation of Millions
+to Hold Us Back (1988).
+17. Olly Wilson, “Black Music as an Art Form, ” in
+Robert G. O’Meally, ed., The Jazz Cadence of American
+Culture (New York: Columbia Univ. Press, 1998) pp.
+82–101.
+18. See Thompson [3] p. xiii.
+19. See Wilson [17] p. 84.
+20. Paul Gilroy describes the “black Atlantic ” as an
+“intercultural and transnational formation ” that
+encompasses Africa and its diasporas, on both sides
+of the Atlantic Ocean, including Europe (especially
+Britain), the United States, the Caribbean and
+South America. In particular, he argues that “the
+literary and philosophical modernisms of the black
+Atlantic have their origins in a well-developed sense
+of the complicity of racialized reason and white su-
+premacist terror. ” See Paul Gilroy, The Black Atlan-
+=== PAGE 8 ===
+Lewis, Too Many Notes 39
+W
+A
+Y
+S
+&
+M
+E
+A
+N
+S
+tic: Modernity and Double Consciousness  (Cambridge,
+MA: Harvard Univ. Press, 1993) pp. ix –x.
+21. See Thompson [3] p. xiii.
+22. See Thompson [3] p. 207.
+23. See Douglas [8] p. 19.
+24. Recent citations and reviews of this work in-
+clude the following: Joel Chadabe, Electric Sound:
+The Past and Promise of Electronic Music  (Upper
+Saddle River, NJ: Prentice Hall, 1997) pp. 299 –301;
+Ben Ratliff, “Improvisers Meet the Machines, ” New
+York Times (14 October 1997); Zane East, “George
+E. Lewis: Voyager,” Computer Music Journal 19, No. 1
+(Spring 1995).
+25. Leo Brodie, Starting FORTH  (Englewood Cliffs,
+NJ: Prentice Hall, 1981).
+26. FORTH was spelled in upper case until the late
+1970s because of the prevalence of upper-case-only
+I/O devices. The usage “Forth ” was generally
+adopted when lower case became widely available,
+because the word was not an acronym. E.D. Ratner,
+D. Colburn and C.H. Moore, “The Evolution of
+Forth, ” ACM SIGPLAN Notices  28, No. 3 (March
+1993); <http://www.forth.com/Content/History/
+History1.htm>.
+27. Phil Burk, Larry Polansky and David
+Rosenboom, “HMSL: A Theoretical Overview, ” Per-
+spectives of New Music  28, No. 2, 136 –178 (Summer
+1990).
+28. D.P. Anderson and R. Kuivila, “Continuous Ab-
+stractions for Discrete Event Languages, ” Computer
+Music Journal 3, No. 13, 11 –23 (1989).
+29. D.P. Anderson and R. Kuivila, “Formula: A Pro-
+gramming Language for Expressive Computer Mu-
+sic,” Computer IEEE 24, No. 7, 12 –21 (July 1991).
+30. Robert Rowe, Interactive Music Systems  (Cam-
+bridge, MA: MIT Press, 1992) p. 8.
+31. References to the AACM, one of the most cre-
+atively diverse organizations of the last 30 years, are
+present in international abundance, so I present
+here just three citations that detail the
+organization ’s structural and cultural strategies:
+George E. Lewis, “Singing Omar ’s Song: A
+(Re)construction of Great Black Music, ” Lenox Av-
+enue  4 (1998) pp. 69 –92; Ronald M. Radano,
+“Jazzin ’ the Classics: The AACM ’s Challenge to
+Mainstream Aesthetics, ” Black Music Research Journal
+12, No. 1, 79–95 (1992); Ekkehard Jost, “The Chica-
+goans,” in Jost, Free Jazz (New York: Da Capo Press,
+1994; originally published 1974).
+32. George E. Lewis, “Singing the Alternative
+Interactivity Blues, ” Front 7, No. 2, 18 –22 (Novem-
+ber/December 1995).
+33. See Wilson [17] p. 84.
+34. Jeff Donaldson, Jam Packed and Jelly Tight,  art-
+work, mixed media on canvas, 36 × 50 in (1988).
+The work is reproduced in Driskell [9] plate 10.
+35. See Douglas [8] p. 21.
+36. See Douglas [8] p. 18.
+37. Amadeus, Milos Forman, director (1984).
+38. Yusef A. Lateef, “The Pleasures of Voice in Im-
+provised Music, ” in Roberta Thelwell, ed., Views on
+Black American Music: Selected Proceedings from the
+Fourteenth, Fifteenth, Sixteenth and Seventeenth Annual
+Black Musicians ’ Conferences, University of Massachu-
+setts at Amherst,  No. 3 (1985 –1988) pp. 43 –46.
+39. Michael Levin and John S. Wilson, “No Bop Roots
+in Jazz: Parker,” Down Beat 61, No. 2, 24–25 (February
+1994; originally published 9 September 1949).
+40. Francis Bebey, African Music: A People ’s Art
+(Westport, CT: Lawrence Hill, 1975) pp. 119 –120.
+41. H. Susilo, “Toward an Appreciation of Javanese
+Gamelan,” (unpublished, 1992).
+42. Phil Jackson, who during the 1990s won six Na-
+tional Basketball Association championships as
+head coach of the Chicago Bulls, as well as the 2000
+NBA championship with the Los Angeles Lakers,
+adopted as part of his winning scheme coach Fred
+“Tex” Winter ’s unusual system of basketball of-
+fense, variously known as the “triple-post” (Winter’s
+term) or the “triangle ” offense. Jackson often de-
+scribes the offense in terms of its spiritual and cul-
+tural implications, as well as its efficacy in basket-
+ball. See Phil Jackson and Hugh Delehanty, Sacred
+Hoops: Spiritual Lessons of a Hardwood Warrior (New
+York: Hyperion, 1995) p. 87. Also see Fred Winter,
+The Triple-Post Offense (Englewood Cliffs, NJ:
+Prentice-Hall, 1962) for the original documenta-
+tion of Winter ’s conception.
+43. Jackson and Delehanty [42] p. 91. See also Win-
+ter [42].
+Selected Discography
+George Lewis, Endless Shout,  Tadik TZ CD 7054
+(2000).
+George Lewis, Homage to Charles Parker,  Black Saint
+BSR 0029 (1980).
+George Lewis, Voyager, Disk Union-Avan CD 014
+(1992).
+George Lewis and Douglas Ewart, George Lewis/Dou-
+glas Ewart, Black Saint SR 0026 (1979).
+Richard Teitelbaum, Concerto Grosso,  hat ART CD
+6004 (1988).
+Manuscript received 30 March 2000.
+The work of George Lewis has explored impro-
+vised music, electronic and computer music,
+computer-based multimedia installations, text-
+sound works and notated forms, and is docu-
+mented on more than 90 recordings. A member
+of the Association for the Advancement of Cre-
+ative Musicians (AACM) since 1971, Lewis
+has worked closely with other genre-busting con-
+temporary musicians, such as Anthony
+Braxton, Anthony Davis, Bertram Turetzky,
+David Behrman, Derek Bailey, Douglas Ewart,
+Evan Parker, Frederic Rzewski, Gil Evans,
+Irene Schweizer, James Newton, Joelle Leandre,
+John Zorn, Leroy Jenkins, Misha Mengelberg,
+Muhal Richard Abrams, Roscoe Mitchell, Steve
+Lacy and Wadada Leo Smith. Lewis has re-
+ceived numerous fellowships from the National
+Endowment for the Arts, and is the 1999 recipi-
+ent of the Cal Arts/Alpert Award in the Arts.
+Lewis now teaches in the Critical Studies/Ex-
+perimental Practices area at the University of
+California, San Diego.

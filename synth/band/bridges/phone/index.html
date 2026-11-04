@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>星群 · 手机演奏台</title><style>
+body{font:16px system-ui;background:#101a25;color:#eaf4ff;max-width:840px;margin:24px auto;padding:16px}button,select,input{font:inherit;padding:12px;margin:5px;border-radius:10px}button{background:#284057;color:white;border:1px solid #60809c;touch-action:none}.pads{display:grid;grid-template-columns:repeat(4,1fr)}.pads button{height:80px}.pads .on{background:#267b71}label{display:block;margin:12px}input{max-width:90%}#status{min-height:3em}small{color:#b4c9da}</style>
+<h1>星群 · 手机演奏台</h1><p>蓝牙发送演奏事件，FPGA 实时合成声音。</p>
+<button id="connect">连接 ESP32-C3</button><button id="stop">停止手机音符</button>
+<p id="status">未连接</p><label>音色声部 <select id="part"></select></label>
+<label>力度 <input id="velocity" type="range" min="1" max="127" value="96"></label>
+<label>表情 <input id="expression" type="range" min="0" max="127" value="110"></label>
+<label>弯音 <input id="bend" type="range" min="0" max="16383" value="8192"></label>
+<label>合唱元音 <select id="vowel"><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option></select></label>
+<div class="pads" id="pads"></div><button id="playSong">开始板载曲目</button><button id="stopSong">停止演出</button><button id="record">开始记录手机动作</button><button id="save">导出手机动作</button>
+<p><small>Android Chrome / 桌面 Chromium 的 Web Bluetooth，需要 HTTPS 或 localhost。iPhone Safari 通常不可直接使用本页面。首次连接需手动选择设备；扩展音色需新版固件。录制文件可在上位机打开并重放。</small></p>
+<script src="controller.js"></script></html>

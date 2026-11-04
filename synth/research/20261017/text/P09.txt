@@ -1,0 +1,2545 @@
+=== PAGE 1 ===
+Software for a cascade/parallel formant synthesizer 
+Dennis H. Klatt 
+Massachusetts Institute of Technology, Cambridge, Massachusetts 02159 
+(Received I July 1979; accepted for publication 12 October 1979) 
+A software formant synthesizer is described that can generate synthetic speech using a laboratory digital 
+computer. A flexible synthesizer configuration permits the synthesis of sohorants by either a cascade or 
+parallel connection of digital resonators, but frication spectra must be synthesized by a set of resonators 
+connected in parallel. A control program lets the user specify variable control parameter data, such as 
+formant frequencies as a function of time, as a sequence of (time, value) points. The synthesizer design 
+is described and motivated in Sees. I-lII, and FORTRAn listings for the synthesizer and control 
+program are provided in an appendix. Computer requirements and necessary support software are 
+described in Sec. IV. Strategies for the imitation of any speech utterance are described in Sec. V, and 
+suggested values of control parameters for the synthesis of many English sounds are presented in tabular 
+form. 
+PACS numbers: 43.70.Jt, 43.70.Qa 
+INTRODUCTION 
+A need exists in psychology and the speech sciences 
+for a flexible research tool in order to study speech 
+perception through the synthesis of speech and speech- 
+like sounds. Since most perceptual experiments are 
+now performed under control of a general purpose digi- 
+tal computer, there are advantages to the use of the 
+same laboratory computer for generating speech-like 
+stimuli (rather than the purchase of special -purpose hard- 
+ware). 
+The cascade/parallel formant synthesizer to be de- 
+scribed can be simulated on a general-purpose digital 
+computer in the manner depicted in Fig. 1. Syn- 
+thesizer control parameter data such as the frequency 
+motions of the first formant as a function of time are 
+specified by the experimenter, using the synthesizer 
+control program HANDSY. FOR. As many as 20 control 
+parameters may be varied as a function of time to 
+serve as input to the waveform generating synthesizer 
+subroutines PARCOE.FOR and COEWAV.FOR. These three 
+FORTRAN programs appear in Appendix B. Output wave- 
+form samples are computed in nonreal time and stored 
+on a disk for subsequent playback through a digital-to- 
+analog converter, analog low-pass filter, and loud- 
+speaker. 
+Software simulation versus hardware construction 
+The advantages of a software implementation over the 
+construction of analog hardware are substantial. The 
+synthesizer does not need repeated calibration, it is 
+stable, and the signal-to-noise ratio (quantization noise 
+in the case of a digital simulation) can be made as large 
+as desired. The configuration can easily be changed as 
+new ideas are proposed. For example, the voices of 
+women and children can be synthesized with appropriate 
+modifications to the voicing source and cascade vocal 
+tract configuration. Display terminals are usually 
+available in a computer facility and can be programmed 
+to view control parameter data or selected portions of 
+the output speech waveform (see Sec. IV). Short-time 
+spectra can also be computed and displayed in order to 
+m3ke detailed spectral comparisons between natural and 
+synthetic waveforms (see Sec. V). 
+Formant synthesis versus articulatory synthesis 
+Speech synthesizers fall into two broad categories: 
+(1) articulatory synthesizers that attempt to model 
+faithfully the mechanical motions of the articulators and 
+the resulting distributions of volume velocity and sound 
+pressure in the lungs, larynx, and vocal and nasal 
+tracts (Flanagan, Ishiz3ka, and Shipley, 1975), and (2) 
+formant synthesizers which derive an approximation to 
+GENERAL- PURPOSE DIGITAL COMPUTER 
+TELETYPE,--- PROGRAM HANOS 
+COMMANDS ; [ FOR 
+ CORE ARRAY OR 
+DISK FILE 
+ SYNTHESIZER t SUBROUTINE CONTROL KLATT. FOR PARAMETERS 
+(UPDATED 
+EVERY 5 ms) 
+I CORE ARRAY [ OR 
+DISK FILE 
+WAVEFORM 
+SAMPLES 
+(IO,OOO/SECON 
+ SITS/SAMPLE) 
+ D/A CONVERTER 
+ 4.9 KH; LOW - PASS 
+FILTER --- LOUDSPEAKE R ] 
+FIG, 1. Relation of the software synthesizer to the hardware and supporting software of a small general-purpose digttal computer. 
+971 J. Acoust. Soc. Am. 67(3), Mar. 1980 0001-4966/80/030971-25500.80 ¸ 1980 Acoustical Society of America 971 
+=== PAGE 2 ===
+SOUND SOURCE 
+- VOICING 
+- ASPIRATION 
+- FRICATION VOCAL TRACT TRANSFER FUNCTION 
+T(f) 
+ RADIATION CHARACTERISTIC 
+R(f) SOURCE LIP RADIATED 
+VOLUME VOLUME SOUND 
+VELOCITY VELOCITY PRESSURE 
+S(f) U(f) P(f) 
+P(f)= S(f) T(f) R(f) 
+FIG. 2. The output spectrum of a speech sound, P(f), can be represented [n the frequency domain as a product of a source spec- 
+trum $(f), a vocal tract transfer function, T(f), and a radiation characteristic, R(f). 
+a speech waveform by a simpler set of rules formulated 
+in the acoustic domain. The present paper is concerned 
+only with formant models of speech generation since 
+current articulartory models require several orders of 
+magnitude more computation, and the resultant speech 
+output cannot be specified with sufficient precision 
+for psychophysical experimentation. 
+The synthesizer design is based on an acoustic theory 
+of speech production presented in Fant (1960), and is 
+summarized in Fig. 2. According to this view, one or 
+more sources of sound energy are activated by the 
+buildup of lung pressure. Treating each sound source 
+separately, we may characterize it in the frequency 
+domain by a source spectrum, $(.f), where.f is fre= 
+quency in Hz. Each sound source excites the vocal 
+tract which acts as a resonating system analogous to 
+an organ pipe. Since the vocal tract is a linear system, 
+it can be characterized in the frequency domain by a 
+linear transfer function, T(f), which is a ratio of lip- 
+plus=nose volume velocity, U(f), to source input, $(f). 
+Finally, the spectrum of the sound pressure that would 
+be recorded some distance from the lips of the talker, 
+_P(f), is related to lip=plus=nose volume velocity, U(f), 
+by a radiation characteristic, R(f), that describes the 
+effects of directional sound propagation from the head. 
+Each of the above relations can also be recast in the 
+time (waveform) domain. This is actually how a wave- 
+form is generated in the computerø The synthesizer 
+includes components to simulate the generation of sev= 
+eral different kinds of sound sources (described in Sec. 
+I), components to simulate the vocal tract transfer 
+function (Sec. II), and a component to simulate sound 
+radiation from the head (Sec. IH). 
+Cascade versus parallel 
+A number of hardware and software speech synthe- 
+sizers have been described (Dudley, Riesz, and Wat- 
+kins, 1939; Cooper, Liberman, and Borer, 1951; Law- 
+rence, 1953; Stevens, Bastide, and Smith, 1955; Fant, 
+1959; Fant and Martony, 1962; FIanagan, Coker, and 
+Bird, 1962; Holmes, Maltingly, and Shearme, 1964; 
+Epstein, 1965; Tomlinson, 1966; Scott, Glace, and Mat- 
+tingly, 1966; Liljencrants, 1968; Rabineretal., 1971; 
+Klatt, 1972; Holmes, 1973). They employdifferent config- 
+urations to achieve what is hopefully the same result: high- 
+quality approximation to human speech. A few of the 
+synthesizers have stability and calibration problems, 
+and a few have design deficiencies that make it im- 
+possible to synthesize a good voiced fricative, but 
+many others have an excellent design. Of the best 
+synthesizers that have been proposed, two general 
+configurations are common. 
+In one type of configuration, called a parallel for- 
+mant synthesizer (see, e.g., Lawrence, 1953; Holmes, 
+1973), the formant resonators that simulate the trans- 
+fer function of the vocal tract are connected in parallel, 
+as shown in the lower portion of Fig. 3. Each formant 
+resonator is preceded by an amplitude control that de- 
+termines the relative amplitude of a spectral peak 
+(formant) in the output spectrum for both voiced and 
+voiceless speech sounds. In the second type of con- 
+figuration, called a cascade formant synthesizer (see, 
+e.g., Fant, 1959; Elatt, 1972), sonorants are synthe- 
+sized using a set of formant resonators connected in 
+cascade, as shown in the upper part of Fig. 3. 
+The advantage of the cascade connection is that the 
+relative amplitudes of formant peaks for vowels come 
+out just right (Fant, 1956) without the need for indivi- 
+dual amplitude controls for each formant. The dis- 
+advantage is that one still needs a parallel formant con- 
+figuration for the generation of fricatives and plosive 
+bursts (the vocal tract transfer function cannot be mod- 
+eled adequately by five cascaded resonators when the 
+sound source is above the larynx) so that cascade syn- 
+thesizers are generally more complex in overall struc- 
+ture. 
+A second advantage of the cascade configuration is that 
+it is a more accurate model of the vocal tract transfer 
+INPUT R5 R4 R3 R2 RI OUTPUT 
+CASCADE 
+INPUT -- OUTPUT 
+PARALLEL 
+FIG. 3. The transfer function of the vocal tract may be sim- 
+ulated by a set of digital formant resonators R connected in 
+cascade (the output of one feeding into the input of the next), 
+or by a set of resonators connected in parallel (where each re- 
+sonator must be preceded by an amplitude controlA). 
+972 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 972 
+=== PAGE 3 ===
+function during the production of non-nasal senDrants 
+(Flanagan, 1957). As will be shown, the transfer func- 
+tions of certain vowels are difficult to match using a 
+parallel formant synthesizer. Although not optimal, a 
+parallel synthesizer is particularly useful for genera- 
+ting stimuli that violate the normal amplitude relations 
+between formants or if one wishes to generate, e.g., 
+single-formant patterns. 
+The software simulation to be described has been 
+programmed for normal use as a hybrid cascade/par- 
+allel synthesizer tFig. 4(a)] or alternatively for special- 
+purpose use as a strictly parallel synthesizer [ Fig. 
+4(b)]. The experimenter must decide beforehand which 
+configuration is to be employed. The change in con- 
+figuration depends on the state of a single switch, and 
+the program is smart enough to avoid performing un- 
+necessary computations for resonators that are not used 
+To the extent that it is possible, the synthesizer has 
+been adjusted so as to generate about the same output 
+waveform whether the cascade/parallel configuration 
+or the all-parallel configuration is selected. 
+Waveform sampling rate 
+Most of the sound energy of speech is contained in 
+frequencies between about 80 and 8000 Hz (Dunn and 
+White, 1940). However, intelligibility tests of band- 
+pass filtered speech indicate that intelligibility is not 
+measurably changed if the energy in frequencies above 
+about 5000 Hz is removed (French and Steinberg, 1947). 
+Speech low-pass filtered in this way sounds perfectly 
+natural. Thus we have selected 5000 Hz (10000 sam,- 
+pies per second) as the digital sampling rate of the 
+synthesizer. 
+Parameter update rate 
+Control parameter values are updated every 5 ms. 
+This is frequent enough to mimic even the most rapid 
+of formant transitions and brief pieslye bursts. If de- 
+sired, the program can be modified to update parame- 
+ter values only every 10 ms with relatively little de- 
+crement in output quality. 
+Digital resonators 
+The basic building block of the synthesizer is a digital 
+resonator having the properties illustrated in Fig. 5. 
+Two parameters are used to specify the input-output 
+characteristics of a resonator, the resonant (formant) 
+frequency F and the resonance bandwidth BW. Samples 
+of the output of a digital resonator, y(nT), are compu- 
+ted from the input sequence, x(nT), by the equation 
+y(nT) =Ax(nT) + By(nT - T) + Cy(nT - 2T), (1) 
+where y(nT-T) and y(nT- 2T) are the previous two 
+sample values of the output sequence y(nT). The con- 
+slants A, B, and C are related to the resonant frequency 
+F and the bandwidth BW of a resonator by the impulse- 
+invariant transformation (Gold and Rabiner, 1968) 
+C = - exp(-2P1BWT), 
+B = 2exp(-Pl BWT) cos(2Pl F T), (2) 
+A=I-B-C , 
+VOICING SOURCE  VOCAL TRACT TRANSFER FUNCTION FOR LARYNGEAL SOURCES 
+ASPIRATION SOURCE (FORMANT RESONATORS IN CASCADE) -VOCAL TRACT TRANSFER FU.CT,O- I FRICATION SOURCE I > FOR FRICATION SOURCES (FORMANT RESONATORS IN PARALLEL) 
+RADIATION 
+CHARACTERISTIC [ OUTPUT SPEECH 
+(A) CASCADE / PARALLEL FORMANT CONFIGURATION 
+[vo,c,.G SOURCE I VOCAL TRACT TRA. SFER FU.CT,O. ]/ ASPIRATION SOURCE / FOR ALL SOURCES --'---1 (FORMANT RESONATORS ,N PARA',E') [[ 
+ FRICATION SOURCE 
+RADIATION 
+CHARACTERISTIC OUTPUT 
+SPEECH 
+(B) SPECIAL-PURPOSE ALL-PARALLEL FORMANT CONFIGURATION 
+FIG. 4. The synthesizer ls normally used in a cascade/parallel configuration shown at the top, but may be used in an all parallel 
+version shown at the bottom if one wishes to exercise independent control ever formant amplitudes for vowels. 
+973 J. Acoust. Soc. Am., Vol. 67, No. 3, March 19B0 Dennis H. Klatt: Software for a formant synthesizer 973 
+=== PAGE 4 ===
+INPUT I 
+SEQUENCE I 
+x(nT) I_ 
+DIGITAL RESONATOR 
+OUTPUT 
+SEQUENCE 
+ y(nT) 
+y(nT) ß Ax(nT} + By(nT-T) + Cy(nT-2T) 
+2O 
+0 
+-2O 
+-4O 
+0 
+FORMANT 
+FREQUENCY 
+F 
+d._-! _ - C=-e -2rBwT 
+\"f-,; ..,;- B = 2e-rBWTcos(27rFT ) 
+ FORMANT  
+ BANDWIDTH  
+I 2 3 4 5 
+FREQUENCY ( kHz} 
+FIG. 5. The digital resonator shown in the form of a block 
+diagram in the upper pert of the figure has a transfer function 
+(magnitude of the ratio of output to Input in the frequency do- 
+main) as shown. In this example, Y-1000 Hz andBW=50 Hz. 
+The transfer function of a earresponding analog resonator 
+is shown by the dotted line. 
+where PI is the familiar ratio of the circumference of 
+a circle to its diameter. The constant T is one over the 
+sampling rate and equals 0.0001 s in the present õ-kHz 
+simulation. 
+The values of the resonator control parameters F and 
+BW are updated every 5 ms, causing the difference 
+equation constants to change discretely in small steps 
+every 5 ms as an utterance is synthesized. Large sud- 
+den changes to these constants may introduce clicks 
+and burps in the synthesizer output. Fortunately, 
+acoustic theory indicates that formant frequencies must 
+always change slowly and continuously relative to the 
+5-ms undate interval for control parameters. 
+A digital resonator is a second-order difference equa- 
+tion. The transfer function of a 11gttal resonalor has a 
+sampled frequency response given by 
+A 
+T(.f) = l. -Bz - - Cz -2 ' (3) 
+where z = exp(j 2PIf T), j is an imaginary number car- 
+responding to the square root of - 1, and / is frequency 
+in Hz and ranges from 0 to 5 kHz. The transfer function 
+has a (sampled) impulse response identical to a car- 
+responding analog resonator circuit at sample times 
+aT (Gold and Rabiner, 1968), but the frequency re- 
+spanses of an analog and digital resonator are not ex- 
+actly the same, as can be seen in Fig. 5. 
+Digital antiresonator 
+An antiresonance (also called an antiformant or trans- 
+fer-function zero pair) can be realized by slight modif- 
+ications to these equations. The frequency response of 
+an antiresonator is the mirror image of the response 
+plotted in Fig. 5(i.e., replace dB by -dB). An anti- 
+resonator is used in the synthesizer to shape the spec- 
+trum of the voicing source and another is used to simu- 
+late the effects of nasalization in the cascade model of 
+the vocal tract transfer function. 
+The output of an antiformant resonator, y(nT), is re- 
+lated to the input x(nT) by the equation 
+y(nT)=A' x(nT)+ B' x(nT - T)+ C' x(nT - 2T), (4) 
+where x(nT - T) and x(nT - 2T) are the previous two 
+samples of the input x(nT), the constants A', B', and 
+C' are defined by the equations: 
+A'=I.0/A, B'=-B/A, C'=-CA, (5) 
+and whereA, B, and C are obtained by inserting the 
+antiresonance center frequency F and bandwidth BW 
+into Eqs. (2). 
+Low-pass resonator 
+As a special case, the frequency F of a digital reso- 
+nator can be set to zero, producing, in effect, a low- 
+pass filter which has a nominal attentuation skirt of 
+-12 dB per octave of frequency increase and a 3 dB 
+down break frequency equal to BW/2. The voicing 
+source contains a digital resonator RGP used as a low- 
+pass filter that transforms a glottal impulse into a 
+pulse having a waveform and spectrum similar to nor- 
+real voicing. A second digital resonator RGS is used 
+to low-pass filter the normal voicing waveform to pro- 
+duce the quasi-sinusoidal glottal waveform seen during 
+the closure interal for an intervocalic voiced plosive. 
+Synthesizer block diagram 
+A block diram of the synthesizer is shown in Fig. 
+6. There are 39 control parameters that determine 
+the characteristics of the output. The name and range 
+of values for each parameter are given in Table I. As 
+can be seen from the table, one might wish to vary as 
+many as 20 of the 39 parameters to achieve optimum 
+matches to an arbitrary English utterance. The con- 
+slant parameters in Table I have been given values ap- 
+propriate for a particular male voice, and would have 
+to adjusted slightly to approximate the speech of other 
+male or female talkers. The list of variable control 
+prameters is long compared with some synthesizers, 
+but the emphasis here is on defining strategies for the 
+synthesis of high quality speech. We are not concerned 
+with searching for compromises that would minimize 
+the information content in the control parameter spec- 
+ification. 
+I. SOURCES OF SOUND 
+There are two kinds of sound sources that may be 
+activated during speech production (Stevens  Klatt, 
+974 J. Acoust. Sac. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 974 
+=== PAGE 5 ===
+F0 
+xx VOICING SOURCE 
+NOISE SOURCE 
+ FIRST DIFF. . RADIATION 
+CHARACTERISTIC 
+PARALLEL VOCAL TRACT TRANSFER FUNCTION 
+FIG. 6. Block diagram of the cascade/parallel formant synthesizer. Digital resonators are indicated by the prefix R and ampli- 
+tude controls by the preffx A. Each resonator Rn has an associated resonant frequency control parameter Fn and a resonance 
+bandwidth control parameter 
+1972). One involves quasi-periodic vibrations of some 
+structure, usually the vocal foldso Vibration of the 
+vocal folds is called voicing. (Other structures such 
+as the lips, tongue tip, or uvula may be cuased to vi- 
+brate in sound types of some languages, but not in Eng- 
+lish.) 
+The second kind of sound source involves the genera- 
+tion of turbulence noise by the rapid flow of air past a 
+narrow constriction. The resulting noise is called as- 
+piration if the constriction is located at the level of the 
+vocal folds, as for example during the production of the 
+sound [/]. If the constriction is located above the 
+larynx, as for example during the production of sounds 
+such as [s], the resulting noise is called frication 
+noise. The explosion of a plosive release also consists 
+pr.imarily of frication noise. 
+When voicing and turbulence noise generation co-exist, 
+as in a voiced fricative such as [z] or a voiced [hi, the 
+noise is amplitude modulated periodically by the vibra- 
+tions of the vocal folds. In addition, the vocal folds may 
+vibrate without meeting in the midline. In this type of 
+voicing, the amplitude of higher frequency harmonics of 
+the voicing source spectrum is significantly reduced 
+and the waveform looks nearly sinusoidal. Therefore 
+the synthesizer should be capable of generating at least 
+two types of voicing waveforms (normal voicing and 
+quasi-sinusoidal voicing), two types of frication wave- 
+forms (normal frication and amplitude-modulated frica- 
+tion), and two types of aspiration (normal aspiration and 
+amplitude-modulated aspiration). These are the only 
+kinds of sound sources required for English, although 
+trills and clicks of other languages may call for the ad- 
+dition of other source controls to the synthesizer in the 
+future. 
+A. Voicing source 
+The structure of the voicing source is shown at the 
+top left in Fig. 6. Variable control parameters are used 
+to specify the fundamental frequency of voicing (FO), the 
+amplitude of normal voicing (AV), and the amplitude of 
+quasi-sinusoidal voicing (AVS). 
+An impulse train corresponding to normal voicing is 
+generated whenever F0 is greater than zero. The am- 
+plitude of each impulse is determined by AV, the am- 
+plitude of normal voicing in dB. AV ranges from about 
+60 dB in a strong vowel to 0 dB when the voicing source 
+is turned off. Fundamental frequency is specified in 
+Hz; a value of F0 = 100 would produce a 100-Hz impulse 
+train. The number of samples between impulses, TO, 
+is determined by SR/F0, e.g., for a sampling rate of 
+10 000 and a fundamental frequency of 200 Hz, an im- 
+pulse is generated every 50th sample. 
+Under some circumstances, the quantization of the 
+fundamental period to be an integral number of samples 
+might be perceived in a slow prnlonged fundamental 
+frequency transition as a sort of staircase of mechani- 
+cal sounds (similar to the rather unnatural speech one 
+gets by setting F0 to a constant value in a synthetic ut- 
+terance), but the problem is not sufficiently serious 
+to merit running the source model of the synthesizer at 
+a higher sampling rate. If desired, some aspiration 
+noise can be added to the normal voicing waveform to 
+975 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 975 
+=== PAGE 6 ===
+TABLE I. List of. control parameters for the software formant synthesizer. The second 
+column indicates whether the parameter is normally constant (C) or variable (V) during the 
+synthesis of English sentences. Also listed are the permitted range of values for each param- 
+eter, and a typical constant value. 
+N V/C Sym Name Min Max Typ 
+i v AV 
+2 V AF 
+3 P All 
+4 V AVS 
+5 I/ F0 
+6 V F1 
+7 ¾ F2 
+8 V F3 
+9 ¾ F4 
+10 V FNZ 
+11 C AN 
+12 C A1 
+13 ¾ A2 
+14 V A3 
+15 V A4 
+16 V A5 
+17 ¾ A6 
+18 V AB 
+19 V B1 
+20 V B2 
+21 V B3 
+22 C SW 
+23 C FGP 
+24 C BGP 
+25 C FGZ 
+26 C BGZ 
+27 C B4 
+28 V F5 
+29 C B5 
+30 C F6 
+31 C B6 
+32 C FN'P 
+33 C BN'P 
+34 C BNZ 
+35 C BGS 
+36 C SR 
+37 C NWS 
+38 C GO 
+39 C NFC 
+Amplitude of voicing (dB) 0 80 0 
+Amplitude of frication (dB) 0 80 0 
+Amplitude of aspiration (dB) 0 80 0 
+Amplitude of sinusoidal voicing (dB) 0 80 0 
+Fundamental freq. of voicing (Hz) 0 500 0 
+First formant frequency CHz) 150 900 450 
+Second formant frequency (Hz) 500 2500 1450 
+Third formant frequency (Hz) 1300 3500 2450 
+Fourth formant frequency (Hz) 2500 4500 3300 
+Nasal zero frequency (Hz) 200 700 250 
+Nasal formant amplitude (dB) 0 80 0 
+First formant amplitude (dB) 0 80 0 
+Second formant amplitude (dB) 0 80 0 
+Third formant amplitude (riB) 0 80 0 
+Fourth formant amplitude (riB) 0 80 0 
+Fifth formant amplitude (dB) 0 80 0 
+Sixth formant amplitude (dB) 0 80 0 
+Bypass path amplitude (dB) 0 80 0 
+First formant bandwidth (Hz) 40 500 50 
+Second formant bandwidth (Hz) 40 500 70 
+Third formant bandwidth (Hz) 40 500 110 
+Cascade/parallel switch 0(CASC) I(PARA) 0 
+Glottal resonator 1 frequency (Hz) 0 600 0 
+Glottal resonator I bandwidth (Hz) 100 2000 100 
+Glottal zero frequency (Hz) 0 5000 1500 
+Glottal zero bandwidth (Hz) 100 9000 6000 
+Fourth formant bandwidth (Hz) 100 500 250 
+Fifth formant frequency (Hz) 3500 4900 3750 
+Fifth formant bandwidth (Hz) 150 700 200 
+Sixth formant frequency (Hz) 4000 4999 4900 
+Sixth formant bandwidth (Hz) 200 2000 1000 
+Nasal pole frequency (Hz) 200 500 250 
+Nasal pole bandwidth (Hz) 50 500 100 
+Nasal zero bandwidth (Hz) 50 500 100 
+Glottal resonator 2 bandwidth 100 1000 200 
+Sampling rate 5000 20 000 10 000 
+Number of waveform samples per chunk 1 200 50 
+Overall gain control (dB) 0 80 47 
+Number of cascaded formants 4 6 5 
+partially alleviate the problem and create a somewhat 
+breathy voice quality. 
+B. Normal voicing 
+Ignoring for the moment the effects of RGZ, we see 
+that the train of impulses is sent through a low-pass 
+filter, RGP, to produce a smooth waveform that re- 
+sembles a typical glottal volume velocity waveform 
+(Flanagan, 1958). The resonator frequency FGP is set 
+to 0 Hz and BGP to 100 Hz. The filtered impuses thus 
+have a spectrum that falls off smoothly at approximate- 
+ly - 12 dB per octave above 50 Hz. The waveform thus 
+generated does not have the same phase spectrum as a 
+typical glottal pulse, nor does it contain spectral zeros 
+of the kind that often appear in natural voicing. These 
+differences may be of some perceptual importance (for, 
+e.g., naturalness of voice quality), in which case future 
+versions of the program should provide for a more 
+flexible voicing source specification. 
+The antiresonator RGZ is used to modify the detailed 
+shape of the Spectrum of the voicing source for particu- 
+lax individuals with greater precision that would be 
+possible using only a single low-pass filter. The values 
+chosen for FGZ and BGZ in Table I are such as to tfit 
+the general voicing spectrum up somewhat to match the 
+vocal characteristics of the author. The waveform and 
+spectral envelope of normal voicing that is produced by 
+sending an impulse train through RGP and RGZ are 
+shown in Fig. 7(a). 
+C. QuaSi-sinusoidal voicing 
+The amplitude control parameter AVS determines the 
+amount of smoothed voicing generated during voiced 
+fricatives, voiced aspirates, and the voicebars present 
+in intervocalic voiced plosives. An appropriate wave 
+shape for quasi-sinusoidal voicing is obtained by low- 
+pass filtering an impulse by low-pass digital resonators 
+RGP and RGS. The frequency control of RGS is set to 
+zero to produce a low-pass filter, and BGS-- 200 deter- 
+mines the cutoff frequency beyond which harmonics are 
+976 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 976 
+=== PAGE 7 ===
+(0) NORMAL VOICING WAVEFORM 
+(b) SMOOTHED VOICING WAVEFORM 
+O 
+-I0 
+9 -3o 
+ -50 -SO -70 
+-8O I  I I I O I 2 3 4 
+FREQUENCY (kHz) 
+(C)VOICING SOUSE MAGNITUDE SPECTRA 
+IG. ?.  iods fom the setic waveforms of (a) 
+oma[ voicing 
+ß e p, d the eavelos of the ,o esuRig line sct ae 
+shown in (c). 
+strongly attenuated. 
+The waveform and spectral envelope of quasi-sinus- 
+oidal voicing are shown in Fig. 7(b). After the effects 
+of the vocal tract transfer function and radiation char- 
+acteristic are imposed on the source spectrum, the out- 
+put waveform of quasi-sinusoidal voicing contains 
+significant energy only at the first and second harmon- 
+ics of the fundamental frequency. AVS ranges from 
+about 60 dB in a voicebar or strongly voiced fricative 
+to 0 dB if no quasi-sinusoidal voicing is present. Some 
+degree of quasi-sinusoidal voicing can be added to the 
+normal voicing source (in combination with aspiration 
+noise) to produce a breathy voice quality (e.g., AH =AV 
+- 3, AVS = AV - 6). 
+D. Frication source 
+A turbulent noise source is simulated in the synthe- 
+sizer by a pseudo-random number generator, a modu- 
+lator, an amplitude control AF, and a -6 riB/octave 
+low-pass digital filter LPF, as shown previously in 
+Fig. 6. The spectrum of the frication source should be 
+approximately fiat (Stevens, 1971), and the amplitude 
+distribution should be Gaussian. Signals produced by 
+the random number generator have a fiat spectrum, but 
+they have a uniform amplitude distribution between lim- 
+its determined by the value of the amplitude control 
+parameter AF. A pseudo-Gaussian amplitude distribu- 
+tion is obtained in the synthesizer by summing 16 of the 
+numbers produced by the random number generator. 
+In theory, the noise source is an ideal pressure 
+source. The volume velocity of the frication noise de- 
+pends on the impedance seen by the noise source. Since 
+the vocal tract transfer function T(f) relates source 
+volume velocity to lip volume velocity, one must esti- 
+mate noise volume velocity to determine lip output. In 
+the general case, this is a complex calculation, but we 
+will assume that source volume velocity is proportional 
+to the integral of source pressure (an excellent approx- 
+imation for a frication source at the lips because the 
+radiation impedance is largely inductive, but only an 
+approximation for other source locations). The integral 
+is approximated by a first-order low-pass digital filter 
+LPF that is shown in Fig. 6. Output samples from this 
+ffiter, y(nT), are related to the input sequence, x(nT), 
+by the equation 
+y(nr) = x(nr) + y(nT - r). 
+As will be seen later, the radiation characteristic is a 
+digital high-pass filter that exactly cancels out tile ef- 
+fects of LPF. (For computational efficiency, the radia- 
+tion characteristic can be moved into both the voicing 
+source and the noise source; then the combination of 
+radiation characteristic and the low-pass filter LPF 
+can be removed from the noise source.) 
+An example of synthetic frication noise volume veloc- 
+ity that was generated in this way is shown in Fig. 8. 
+The spectrum of this sample of noise fluctuates random- 
+ly about the expected long-term average noise spectrum 
+(dashed line). Short samples of noise vary in their 
+spectral properties due to the nature of random proces- 
+ses. 
+The output of the random number generator is ampli- 
+tude modulated by the component labeled \"IV[OD\" in 
+Fig. 6 whenever the fundamental frequency F0 and the 
+amplitude of voicing AV are both greater than zero. 
+Voiceless sounds (AV= 0) are not amplitude modulated 
+because the vocal folds are spread and stiffened, and 
+do not vibrate to modulate the airflow. The degree of 
+ 25.6 ms 
+ 50 ' - . 
+ o 
+z 
+I 2 3 4 5 
+FREQUENCY 
+(b) 
+FIG. 8. A waveform segment and magnibde spectrum are 
+shown of a 25.6-ms sample of frication noise. he expected 
+lone-term average spectrum of the output of the frication 
+source is shown by the dashed curve. The dashed curve has 
+bep. n shifted up by 10 dB for clarity. 
+977 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 977 
+=== PAGE 8 ===
+amplitude modulation is fixed at 50% in the synthesizer. 
+The modulation envelope is a square wave with a period 
+equal to the fundamental period. Experience has shown 
+that it is not necessary to vary the degree of amplitude 
+modulation over the course of a sentence, but only to 
+ensure that it is present in voiced fricatives and voiced 
+aspirated sounds. 
+The amplitude of the frication noise is determined by 
+AF, which is given in dB. A value of 60 will generate 
+a strong frication noise, while a value of zero effective- 
+ly turns off the frication source. 
+E. Aspiration source 
+Aspiration noise is essentially the same as frication 
+noise, except that it is generated in the larnyx. In a 
+strictly parallel vocal tract model, AF can be used to 
+generate both frication and aspiration noise. However, 
+in the cascade synthesizer configuration, aspiration 
+noise is sent through the cascade vocal tract model 
+(since the cascade configuration is specially designed 
+to model vocal tract characteristics for laryngeal sound 
+sources), while fricatives require a parallel vocal 
+tract configuration. Therefore separate amplitude con- 
+trols are nee.ded for frication and aspiration in a cas- 
+cade/parallel configuration. The amplitude of aspiration 
+noise sent to the cascade vocal tract model is deter- 
+mined by AH, which is given in dB. A value of 60 will 
+generate strong aspiration, while a value of zero ef- 
+œectively turns off the aspiration source. Since frica- 
+tion and aspiration are generated by an identical pro- 
+cess in the synthesizer, Fig. 8 describes the character- 
+istics of the aspiration source as well. 
+F. Control of source amplitudes 
+Parameter values specifying source amplitudes AV, 
+AVS, AF, and AH are adjusted by the user to new values 
+every 5 ms. However, AV and AVS only have an effect 
+on the synthetic waveform when a glottal impulse is is- 
+sued. The reason for adjusting voicing amplitudes dis- 
+continuously at the onset of each glottal period is to 
+prevent the creation of pops and clicks due to waveform 
+discontinuities introduced by the sudden change in an 
+amplitude control in the middle of a voicing period. 
+The noise amplitudes AF and AH are used to inter- 
+polate the intensity of the noise sources linearly over 
+the 5-ms (50-sample) interval. (Thus there is a 5-ms 
+delay in the attainment of a new amplitude value for a 
+noise source.) Interpolation permits a more gradual 
+onset for a fricative or [hi than would otherwise be 
+possible. There is, however, one exception to this in- 
+ternal control strategy. A plosive burst involves a 
+more-rapid source onset than can be achieved by 5-ms 
+linear interpolation. Therefore, if AF increases by 
+more than 50 dB from its value specified in the pre- 
+vious 5-ms segment, AF is (automatically) changed 
+instantaneously to its new target value. We are pres- 
+ently evaluating the desirability of also injecting a step 
+excitation of the vocal tract transfer function at this 
+plosive release time so as to simulate the acoustic ef- 
+fect of a sudden release of the oral pressure behind 
+the plosive occlusion. 
+G. Control of fundamental frequency 
+At times it is desired to specify precisely the timing 
+of the first glottal pulse (voicing onset) relative to a 
+plosive burst. For example, in the syllable [pa , it 
+might be desired to produce a 5-ms burst of frication 
+noise, 40 ms of aspiration noise, and voicing onset 
+exactly 45 ms from the onset of the burst. Usually, a 
+glottal pulse is issued in the synthesizer at a time 
+specified by one over the value of the fundamental fre- 
+quency control parameter value extant when the last 
+glottal pulse was issued. However, if either AV or F0 
+is set to zero, no glottal pulse is issued during this 
+5-ms time interval; in fact no glottal pulses are issued 
+until precisely the moment that both the AV and F0 con- 
+trol parameters become nonzero. In the case of the 
+[pa] example above, both AV and F0 would normally be 
+set to zero during the closure interval, burst, and as- 
+piration phase, and AV would be set to about 60 dB and 
+F0 to about 130 Hz at exactly 45 ms after the synthetic 
+burst onset. 
+Since the update interval in the synthesizer is set to 
+5 ms, voice onset time can be specified exactly in 5-ms 
+steps. If greater precision is needed, it would be nec- 
+essary to change the parameter update interval from 
+5 ms (NWS = 50) to say 2 ms (NWS = 20)ø 
+H. Control of noise samples in a stimulus continuum 
+A pseudo-random number generator is used to gener- 
+ate both burst and aspiration for a plosive such as 
+The spectrum and intensity of a long sample of noise 
+produced by the pseudo-random number generator can 
+be expected to have the desired amplitude and spectral 
+characteristics, but short samples of noise will vary 
+considerably due to the random nature of pseudo-ran- 
+dom numbers (recall Fig. 8). A particular brief noise 
+sequence may have greater or lesser total intensity, or 
+a peculiar spectral peak or valley not shared by other 
+samples of noise that are used to generate a set of 
+stimuli varying in voice onset time or burst frequency. 
+These random fluctuations in noise characteristics 
+can cause some stimuli in a supposed continuum to 
+stand out as different. When performing psychological 
+experiments involving stimuli generated by the pseudo- 
+random number generator, there are two ways to get 
+around this problem. One is to use the same random 
+number sequence in the generation of each member of 
+the continuum by reinitializing the random number 
+function, as is done by default if the synthesizer pro- 
+gram is reloaded each time that a new stimulus is to be 
+generated. The other way to minimize response fluc- 
+tuations due to rmuciom noise is [o generate sever21 
+tokens of each stimulus type with different initial values 
+given-to the random number generator, and average 
+listener responses over each type to try to wash out 
+token variations. 
+II. VOCAL TRACT TRANSFER FUNCTIONS 
+The acoustic characteristics of the vocal tract are 
+determined by its cross-sectional area as a function 
+of distance from the larynx to the lips. The vocal tract 
+forms a nonuniform transmission line whose behavior 
+978 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 978 
+=== PAGE 9 ===
+can be determined for frequencies below about 5 kHz 
+by solving a one-dimensional wave equation (Fant, 
+1960). (Above 5 kHz, three-dimensional resonance 
+modes would have to be considered.) Solutions to the 
+wave equation result in a transfer function that relates 
+samples of the glottal source volume velocity to output 
+volume velocity at the lips. 
+The synthesizer configuration in Fig. 6 includes com- 
+ponents to realize two different types of vocal tract 
+transfer function. The first, a cascade configuration of 
+digital resonators, models the resonant properties of 
+the vocal tract whenever the source of sound is within 
+the larynx. The second, a parallel configuration of dig- 
+ital resonators and amplitude controls, models the res- 
+onmnt properties of the vocal tract during the production 
+of frication noise. The parallel configuration can also 
+be used to model vocal tract characteristics for laryn- 
+geal sound sources, although /he approximation is not 
+quite as good as in the cascade model, see below. 
+A. Cascade vocal tract model 
+Assuming that the one-dimensional wave equation is a 
+valid approximation below 5 kHz, the vocal tract trans- 
+fer function can be represented in the frequency domain 
+by a product of poles and zeros. Furthermore, the 
+transfer function contains only about five complex pole 
+pairs and no zeros in the frequency range of interest, 
+as long as the articulation is non-nasalized and the 
+sound source is at the larynx (Fant, 1960). The trans- 
+fer function conforms to an all-pole model because 
+there are no side-branch resonators or multiple sound 
+paths. (The glottis is partially open during the produc- 
+tion of aspiration so that the poles and zeros of the sub- 
+glottal system are often seen in aspiration spectra; the 
+only way to approximate their effects in the synthesizer 
+is to increase the first formant bandwidth to about 300 
+Hz. The perceptual importance of the remaining spec- 
+tral distortions caused by the poles and zeros of the 
+subglottal system is probably minimal). 
+Five resonators are appropriate for simulating a vo- 
+cal tract with a length of about 17 cm, the length of a 
+typical male vocal tract, because the average spacing 
+between formants is equal to the velocity of sound di- 
+vided by half the wavelength, which works out to be 
+1000 Hz. A typical female vocal tract is 15 to 20% 
+shorter, suggesting that only four formant resonators 
+be used to represent a female voice in a 5 kHz simu- 
+lation (or that the simulation should be extended to about 
+6 kHz). It is suggested that the voices of women and 
+children be approximated by setting the control par- 
+ameter NFC to 4, thus removing the fifth formant from 
+the cascade branch of the block diagram shown in Fig. 
+6. For a male talker with a very long vocal tract, it 
+may be necessary to add a sixth resonator to the cas- 
+cade branch. As currently programmed, NFC can be 
+set to four, five, or six formants in the cascade branch. 
+Any change to NFC implies a change in the effective 
+length of the vocal tract. NFC should not be used simply 
+to remove a formant already present below 5 kHz be- 
+cause the spectrum of the resulting sound is tilted down 
+in an in appropriate way: stimuli with a reduced num- 
+ber of formants must be generated using the all-parallel 
+synthesizer configuration. (So such changes must be 
+made with care.) 
+Ignoring for the moment the nasal pole resonator RNP 
+and the nasal zero anti-resonator RNZ, the cascade 
+model of Fig. 6, consisting of five formant resonators, 
+has a volume velocity transfer function that can be 
+represented in the frequency domain as a product of 
+transfer functions identical to Eq. (3) (Gold and Rabiner, 
+1968): 
+r(f) = I'I A(.) , 1._B(n)z__C(n)z_ 2 , (6) 
+where the constants A(n), B(n), and C(n) are determined 
+by the values of the nth formant frequency F(n) and nth 
+formant bandwidth BW{n) by the relations given earlier 
+in Eq. (2). The constants A() in the numerator of Eq. 
+(6) insure that the transfer function has a value of unity 
+at zero frequency, i.e., the dc airflow is unimpeded. 
+The magnitude of T(f) is ptotted in Fig. 9 for several 
+values of formant frequencies and formant bandwidths 
+20 - UNIFORM TUBE 
+(o) 
+ o 
+ o 
+o -20 - 
+\" (b) 
+ o 
+ o 
+ -20  I I I I I 
+(c} 
+o 
+-io 
+-20 
+-5o - 
+0 I 2 3 4 5 
+FEOOECY 
+() 
+FIG. 9. e maide of the val tract transfer ftion 
+plotd for an ideal unffo v tract, d for the vowels 
+[i], [a], and [u}. 
+979 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer õ79 
+=== PAGE 10 ===
+B. Relation to analog models of the vocal tract 
+The transfer function of the vocal tract can also be 
+expressed in the continuous world of differential equa- 
+tions. Equation (6) is then rewritten as an infinite 
+product of poles in the Laplace transform s plane: 
+ s(n) s*(n T(I) = : [s+ s(n)][s+ s*(n)] ' (6a) 
+where s =j 2 PI f, and the constants s(n) and s*(n) are 
+determined by the values of the nth formant frequency 
+F(n) and the nth formant bandwidth BW(n) by the rela- 
+tions 
+s(n) =pt Bw(n)+ j 
+s*(n) = Pt Bw(n) -) 2Pl F(n) . 
+The two formulations (6) and (6a) are exactly equivalent 
+representation of the transfer function for an ideal vocal 
+tract configuration corresponding to a uniform tube 
+closed at the glottis and having all formant bandwidths 
+equal to, e.g., 100 HZo The two formulations are in- 
+distinguishable at representing vocal tract transfer 
+functions below 5 kHz. However, in a practical syn- 
+thesizer, the infinite product of poles can only be ap- 
+proximated ]e.g., by building five electronic resonators 
+and a higher-pole correction network (Fant, 1959)]. 
+C. Formant frequencies 
+irregularities in the giottal source spectrum. Band- 
+widths have been estimated by other techniques such as 
+using a sinusoidal swept-tone sound source (Fujitours 
+and Lindqvist, 1971). Results indicate that bandwidths 
+vary by a factor of 2 or more as a function of the par- 
+ficular phonetic segment being spoken. The primary 
+perceptual effect of a bandwidth change is an increase 
+or decrease in the effective intensity of a formant ener- 
+gy concentration [see Fig. 11(b) below] because for- 
+mant bandwidths are narrower than a critical band 
+(Carlson, Granstrom, and Klatt, 1979). Bandwidth var- 
+iation is small enough that all formant bandwidths 
+might be held constant in some applications, in which 
+case only F1, F2 and F3 would be varied to simulate 
+the vocal tract transfer functions for non-nasalized 
+vowels and SOhOrant consonants. 
+E. Nasals and nasalization of vowels 
+It is not possible to approximate nasal murmurs and 
+the nasalization of vowels that are adjacent to nasals 
+with a cascade system of five resonators alone. More 
+than five formants are often present in these sounds 
+and formant amplitudes do not conform to the relations 
+inherent in a cascade configuration because of the 
+presence of transfer function zeros (Fujitours, 1961; 
+1962). Typical transfer functions for a nasal murmur 
+and for a nasalized [[1 are shown in Fig. 10. Nasaliza- 
+lion introduces additional poles and zeros into the 
+transfer function of the vocal-nasal tract due to the 
+Each formant resonator introduces a peak in the mag- 60 
+nitude spectra shown in Fig. 9. The frequency of for- 50! mant peak \"n\" is determined by the formant frequency (dB) 40 
+control parameter Fn. (The amplitude of a formant 30 peak depends not only on/% and the formant bandwidth 
+control parameter BWn, but also on the frequencies of 20 I the other formants, as will be discussed below.) 0 
+Formant frequency values are determined by the de- 00 tailed shape of the vocal tract. Formant frequency val- 
+ues associated with different phonetic segments in the 0 0 speech of the author will be presented in Sec. V. The 
+frequencies of the lowest three formants vary substan- (dB)401 
+tially with changes to articulation (e.g., the observed 50 
+range of F1 is from about 180 to 750 Hz, of F2 is 600 20 
+to 2300 Hz, and of F3 is 1300 to 3100 Hz for a typical 
+male talker). The frequencies and bandwidths of the I0 
+4th and 5th formant resonators do not vary as much and O O 
+could be held constant with little decrement in output 
+sound quality. These higher frequency resonators help 
+to shape the overall spectrum, but otherwise contribute 
+little to intelligibility for vowels. The particular values 
+oho.on fo the fourth and fifth formant frluoneiog 
+(Table I) produce an energy concentration around 3 to 
+3.5 kHz and a rapid falloff in spectral energy above 
+about 4 kHz, which is a pattern typical of many talkers. 
+D. Formant bandwadths 
+Formant bandwidths are a function of energy losses 
+due to heat conduction, viscosity, cavity-wall motions, 
+radiation of sound from the lips, and the real part of 
+the glottal source impedance. Bandwidths are difficult 
+to deduce from analyses of natural speech because of 
+I 2 3 4 5 
+I ' 2 5 4 5 
+I 
+o I 2 5 4 5 
+FREQUENCY (kHz) 
+FIG. 10. Spectra are compared of a the vowel [I], the same 
+vowel when nasalized, and a nasal murmur tin], all obtained 
+from the recorded syllable \"dim\". The nasal murmur and 
+the nasalized ] have an extra transfer function pole pair and 
+zero pair near Fl. The extra peak and valley are not appear- 
+ant in the linear prediction spectrum, but can be discerned in 
+the pattern of harmonic amplitudes near F1 in the discrete 
+Fourier transform spectrum. 
+980 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 980 
+=== PAGE 11 ===
+presence of a side-branch resonator. The oral cavity 
+forms the side-branch resonator in the case of a nasal 
+murmur, while the nose should be considered a side- 
+branch resonator in a nasalized vowel (because the 
+amount of sound radiated through the nostrils is in- 
+significant compared to the effect of the lowered velum 
+on the formant structure of the sound output from the 
+lips). 
+Nasalization of adjacent vowels is an important ele- 
+ment in the synthesis of nasal consonants. The per- 
+ceptually most important change associated with nasal- 
+ization of a vowel is the reduction in amplitude of the 
+first formant, brought on by the presence of a nearby 
+low-frequency pole pair and zero pair. The first for- 
+mant frequency also tends to shift slightly higher in 
+most nasalized vowels. 
+Nasal murmurs and vowel nasalization are approxi- 
+mated by the insertion of an additional resonator RNP 
+and anti-resonator RNZ into the cascade vocal tract 
+model. The nasal pole frequency FNP can be set to a 
+fixed value of about 270 Hz for all time. The nasal zero 
+frequency FNZ should also be set to a value of about 
+270 Hz during non-nasaiized sounds, but the frequency 
+of the nasal zero must be increased during the produc- 
+tion of nasals and nasaIization. The RNP-RNZ pair is 
+effectively removed from the cascade circuit during 
+the synthesis of non-nasalized speech sounds if FNP 
+= FNZ. Stragegies for controlling FNZ are given in 
+Sec. V. 
+F. Parallel vocal tract model for frication sources 
+During frication excitation, the vocal tract transfer 
+function contains both poles and zeros. The pole fre- 
+quencies are temporally continuous with formant loca- 
+tions of adjacent phonetic segments because, by defi- 
+nition, the poles are the natural resonant frequencies 
+of the entire vocal tract configuration, no matter where 
+the source is located. Thus the use of vocalic formant 
+frequency parameters to control the locations of frica- 
+tion ma.xima is theoretically welt-motivated (and help- 
+ful in preventing the fricalive noises from \"dissocia- 
+ting\" from the rest of the speech signal). 
+The zeros in the transfer function for fricatives are 
+the frequencies for which the impedance looking back 
+toward the larynx from the position of the frication 
+source is infinite, since the series-connected pressure 
+source of turbulence noise cannot produce any output 
+volume velocity under these conditions. The effect of 
+transfer-function zeros is twofold; they introduce notch- 
+es in the spectrum and they modify the amplitudes of 
+the formants. The perceptual importance of spectral 
+notches is not great because masking effects of adjacent 
+energy in format peaks limit the detectability of a 
+spectral notch (Gauffin and Sundberg, ,1974; Carlson, 
+Granstrom, and Klatt, 1979). We have found that a 
+satisfactory approximation to the vocal tract transfer 
+function for frication excitation can be achieved with a 
+parallel set of digital formant resonators having ampli- 
+tude controls, and no antiresonators. 
+Formant amplitudes are set to provide frication ex- 
+citation for selected formants, usually those associated 
+with the cavity in front of the constriction (Stevens, 
+1972). The presence of any transfer function zeros is 
+accounted for by appropriate settings of the formant 
+amplitude controls. Relatively simple rules for deter- 
+mination of the formant amplitude settings (and bypass 
+path amplitude values) as a function of place of articu- 
+lation can be derived from a quantal theory of speech 
+production (Stevens, 1972). The theory states that only 
+formants associated with the cavity in front of the oral 
+constriction are strongly excited. The theory is 
+supported by the formant amplitude specifications for 
+fricatives and plosive bursts in Sec. V. These ampli- 
+tude control data were derived from trial-and-error 
+attempts to match natural frication spectra. 
+There are six formant resonators in the parallel 
+configuration of Fig. 6. A sixth formant has been added 
+to the parallel branch specifically for the synthesis of 
+very high frequency noise in is, z]. The main energy 
+concentration in these alveolar fricatives is centered 
+on a frequency of about 6 kHz. This is above the highest 
+frequency (5 kHz) that can be synthesized in a 10 000 
+sample/second simulation. However, in an [s], there 
+is gradually increasing frication noise in the frequenc- 
+ies immediately below 5 kHz due to the low-frequency 
+skirt of the 6-kHz formant resonance, and this noise 
+spectrum can be approximated quite well by a resona- 
+tor positioned at about 4900 Hz. We have found it better 
+to include an extra resonator to simulate high-frequency 
+noise than to move F5 up in frequency whenever a sibi- 
+lant is to be synthesized because clicks and moving 
+energy concentrations are thereby avoided. 
+Also included in the parallel vocal tract model is a 
+bypass path. The bypass path with amplitude control 
+AB is present because the transfer functions for if, v, 
+8, 5, p, b] contain no prominent resonant peaks, and the 
+synthesizer should include a means of bypassing all of 
+the resonators to produce a flat transfer function. 
+During the production of a voiced fricative, there are 
+two active sources of sound, one located at the glottis 
+(voicing) and one at a constriction in the vocal tract 
+(frication). The output of the quasi-sinusoidal voicing 
+source is sent through the cascade vocal tract model, 
+while the frication source excites the parallel branch 
+to generate a voiced fricative. 
+G. Simualtion of the cascade configuration by the parallel 
+configuration 
+The transfer function of the laryngeatty excited vocal 
+tract can also be approximated by five digital formant 
+resonators connected in parallel. The same resonators 
+that form the parallel branch for frication excitation 
+can be used to synthesize any SOhorant if suitable values 
+are chosen for the formant amplitude controls. 
+The following rules summarize what happens to for- 
+mant amplitudes in the transfer function T(f) of a cas- 
+cade model as the lowest five formant frequencies and 
+bandwidths are changed. These relations follow direct- 
+ly from Eq. (6) under the assumption that each formant 
+frequency F(z) is at least 5 to 10 times as large as the 
+formant bandwidth BW(n): 
+981 J. Acoust. Soc. Am.. VoL 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 981 
+=== PAGE 12 ===
+1. The formant peaks in the transfer function are 
+equal for the case that formant frequencies are set to 
+500, 1500, 2500, 3500, and 4500 Hz and formant band- 
+widths are set to be equal at 100 Hz. This corresponds 
+to a vocal tract having a uniform cross-sectional area, 
+a closed glottis, open lips (and a nonrealistic set of 
+bandwidth values), as shown in part (a) of Fig. 11. 
+2. The amplitude of a formant peak is inversely pro- 
+portional to its bandwidth. If a formant bandwidth is 
+doubled, that formant peak is reduced in amplitude by 
+6 dB. If the bandwidth is halved, the peak is increased 
+by 6 dB, as shown in part (b) of Fig. 11. 
+3. The amplitude of a formant peak is proportional to 
+formant frequency. If a formant frequency is doubled, 
+that formant peak is increased by 6 dB, as shown in 
+part (c) of Fig. 11. [This is true of T(f) but not of the 
+resulting speech output spectrum since the glottal 
+source spectrum falls off at about -12 dB/octave of fre- 
+quency increase and the radiation characteristic impos- 
+es a + 6 dB octave spectral tilt, resulting in a net change 
+in formant amplitude of +6 -12 +6=0 
+4. Changes to a formant frequency also affect the am- 
+20 r- UNIFORM TUBE: 
+20 BW2 ß 50 
+I]3 
+ io 
+- 0 
+_ -io I i i I i I u (b) z 
+20 
+-'oF ¾ ¾ ¾ ¾ ' '- -20 
+- (c) < 
+>o 30- 
+Io .. 
+o  x.._. ' -20 I I 
+o I 2 3 4 5 
+FREQUENCY (kHz) 
+(d) 
+. ]Z. Val taet taasfe netion t=tin () the 
+ ch  = fot bdwidth, (c) cheats  forest m- 
+pHides cused by a shi[t i the [rueacy o[ a ]owe½ [omaa, 
+and (d) e incase ia forest amp]ides 
+t cose in uency, see 
+plitudes of higher formant peaks by a factor propor- 
+tional to frequency squared. For example, if a formant 
+frequency is halved, amplitudes of all higher formants 
+are decreased by 12 dB. i.e., one half squared, as 
+shown in part (c) of Fig. 11. 
+5. The frequencies of two adjacent formants cannot 
+come any closer than about 200 Hz because of coupling 
+between the natural modes of the vocal tract. However, 
+if two formants approach each other by about this 
+amount, both formant peaks are increased by an addi- 
+tional 3 to 6 dB, as shown in part (d) of Fig. 11. 
+The amplitudes of the formant peaks generated by the 
+parallel vocal tract model have been constrained such 
+that, if A1 to A5 are all set to 60 dB, the transfer func- 
+tion will approximate that found in the cascade model. 
+This is accomplished (1) by adjusting the gain of the 
+higher frequency formants to take into account frequen- 
+cy changes in lower formants [since a higher formant 
+rides on the skirts of the transfer function of all lower 
+formants in a cascade model (Fant, 1960)], (2) by in- 
+corporation rules to cause formant amplitudes to in- 
+crease whenever two formant frequencies come into 
+proximity, and (3) by using a first difference calcula- 
+tion to remove low-frequency energy from the higher 
+formants; this energy would otherwise distort the spec- 
+trum in the region if F1 during the synthesis of some 
+vowels (Holmes, 1973). 
+The magnitude of the vocal tract transfer functions of 
+the cascade and parallel vocal tract models are com- 
+pared in Fig. 12 for several vowels. The match is 
+quite good in the vicinity of formant peaks, but the par- 
+allel model introduces transfer function zeros (notches) 
+in the spectrum between form ant peaks. The notches 
+axe of relatively little perceptual importance because 
+energy in the formant peak adjacent to the notch on the 
+low frequency side tends to make the detectability of a 
+spectral notch (Gaulfin and Sundberg, 1974). 
+Many early parallel synthesizers were programmed to 
+add together formant outputs without filtering out the 
+energy at low frequencies from resonators other than 
+Fl. In other cases, formant outputs were combined in 
+alternating sign. The deleterious effects of these choic- 
+es are illustrated in Fig. 13. As can be seen, some 
+vowel spectra are poorly modeled in both of these par- 
+allel methods of synthesis. The perceptual degradation 
+is less in the alternating-sign case because spectral 
+notches are less perceptible than energy fill in a spec- 
+tral valley between two formants. Comparison of Fig. 
+12 and Fig. 13 indicates that our parallel configuration 
+is better than either of those shown in Fig. 13. 
+A nasal formant resonator RNP appears in the par- 
+allel branch to assist in the approximation of nasal mur- 
+murs and vowel nasalization during parallel formant 
+synthesis of vowels. Neither the parallel nasal formant 
+nor the parallel first formant resonator are needed in 
+the normal cascade/parallel synthesizer configuration 
+(SW= 0), but they are required for the simulation of 
+nasalization in the special-purpose all-parallel configu- 
+ration ($W= 0). 
+982 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 982 
+=== PAGE 13 ===
+6O I 
+50 
+(dR) 
+40 
+50 
+2O 
+0 
+o 
+6O 
+5O 
+(dB) 
+4O 
+3C 
+20 
+I0 
+0 
+0 
+o 
+i! 50 
+o 
+8o 
+o 
+o  
+i 2 3 4 5 0 
+6o 
+/el 50 
+3O 
+2O 
+I0 
+ 0 I 2 3 4 5 C 
+// 
+i 2 3 4 5 
+I I i I i 
+i 2 3 4 5 
+IO I 
+0  - I 
+O I ? 3 4 5 0 I 2 3 4 .5 
+UNIFORM 
+5. UNIFORM 50 TRACT 
+20 2 
+I 01  I I I 
+0 I  3 4  0 I   
+FREQUENCY [ kHz) FREQUENCY (kHz) 
+CASCADE PARALLEL 
+FIG. 12. Preemphasized output spectra (the DFT spectrum 
+and a 14-pole LPC approximation) are shown for the vowels 
+[i], [a], [u], and a uniform vocal tract when simulated by the 
+theoretically correct cascade model snd by the parallel ap- 
+proximation to the cascade model. 
+III. RADIATION CHARACTERISTIC 
+The box labeled radiation characteristic in Fig. 6 
+models the effect of directivity patterns of sound radia- 
+ting from the head as function of frequency. The sound 
+pressure measured directly in front of and about a me- 
+ter from the lips is proportional to the temporal deri- 
+vative of the lip-plus-nose volume velocity, am_d inver- 
+sely proportional to r, the distance from the lips (Fant, 
+1960). The transformation is simulated in the synthe- 
+sizer by taking the first difference of lip-nose volume 
+velocity: 
+p(nT) :u(nT) -u(nT - T) . (7) 
+The radiation characteristic adds a gradual rise in the 
+overall spectrum, as shown in Fig. 14. 
+IV. HOST COMPUTER 
+The computer on which the software of Appendix B is 
+installed must have digital-to-analog and analog-to- 
+digital converters capable of transferring 10 000 12-bit 
+waveform samples per second with precise control over 
+the time between each sample. The computer should 
+also have the appropriate audio equipment such as am- 
+puffers, speaker, earphones, and tape recorder, as 
+weft as an external low-pass filter. The anatog low- 
+pass filter must have a sharp frequency cutoff near 
+5000 Hz, no appreciable ripple in the passband, and a 
+nearly linear phase response in the passband. A filter 
+that we constructed for this purpose is described in 
+Appendix A. 
+A. Execution time 
+The synthesizer program is written in FORTRAN using 
+floating point variables, so it is rather slow-running on 
+some general-purpose digital computers (about 200 
+times rex[ time on a PDP-11/40, but only about six 
+times real time on a PDP-11/45 which has a faster 
+floating-point multiply instruction). Even on a slower 
+computer, the computational delay is not a serious 
+handicap for most perceptual studies because stimuli 
+can be generated and stored on disk for later presenta- 
+tion to subjects. Ultimately, it is hoped that the pro- 
+gram will be implemented as a real-time digital device 
+(Allen, 1977; Caldwell, 1979). 
+B. Graphical specification of variable control parameter 
+data 
+A user could specify parametric data for an utterance 
+to by synthesized in one of two general ways. One is to 
+type in a sequence of (time-value) points for each vari- 
+able control parameter and have the computer draw 
+straight lines between them. However this is fairly 
+time consuming and subject to error i/no visual feed- 
+back in the form of a time plot of parameter values is 
+provided. 
+In our laboratory, parameter specification can also 
+be accomplished by selecting an individual parameter 
+track for display. The computer is programmed to plot 
+parameter values versus time as points on a refresh 
+display, as shown in Fig. 15. Also displayed is the cur- 
+rent (time-value) position of a cursor that is controlled 
+by a hand-held pen. The pen can be moved over the 
+surface of a graphical tablet (e.g., a Summagraphics 
+model HW-l-ll data tablet digitizer or a Tektronix 
+model 4953) to specify the parameter contour. A three- 
+character symbol and a maximum y-axis value for the 
+control parameter are also displayed, 
+It is relatively easy to watch the screen while moving 
+the pen over the tablet with one hand. The other hand is 
+positioned over three toggle switches which, when 
+raised, have the following functions. 
+1. Continuous input. H the pen is swept horizontally 
+past a õ ms time point while toggle I is up, the stored 
+value corresponding to this time is changed to the ver- 
+tical value indicated by the pen at that moment. 
+2. Straight line segment input. A straight line is 
+983 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 983 
+=== PAGE 14 ===
+6O 
+Ill 
+(dB)50 i 4O 
+30 
+2O 
+';, 0 i z 3 4 5 
+60 
+50 
+40 
+30 
+20 
+i0 
+/i/ 
+i 2 3 4 5 
+60 
+(dB) 5ø 40 
+30 
+20 
+0 
+60 
+ 40 
+3O 
+20 
+I0 
+I 2 3 4 5 I 2 3 4 5 
+50[ /u/ 50 /u/ (dB) 30 
+I I0 
+-O I 2 3 4 5 O I 2 3 4 5 
+60 
+50  /i/ 
+30 
+20 
+0 
+0  
+0 i 2 3 4 5 
+6O 
+50 
+40 
+30 
+2O 
+I0 
+0 
+0 
+/O/ 
+i 2 3 4 5 
+50F /u/ 
+3O 
+2O 
+I 
+-0 i Z 3 4 5 
+60 
+UNIFORM UNIFORM 
+50 [- A A TRACT 50 50[ A / TRACT 
+20 20 20 
+0 I mo 
+0 m 0 o m 2 3 4 5 0 
+FREQUENCY (kHz) FREQUENCY (kHz) 
+UNIFORM 
+TRACT 
+i 2 3 4 5 
+FREQUENCY (kHz) 
+CASCADE PARALLEL +-+ PARALLEL +++ 
+drawn from the previous (time-value) point to the point 
+nearest the cursor at the moment the toggle is raised. 
+The display is frozen until the toggle is returned to a 
+down position. If no previous (time-value) point had 
+been established, the action taken is to simply set the 
+nearest point to the value of the cursor at the moment 
+the toggle was raised. 
+3. Set parameter track to a constant. All time points 
+are set to the value of the cursor at the moment the 
+toggle is raised, and the displayed cursor position is 
+frozen until the toggle is lowered. 
+o 
+(dB) 
+-20 
+-30 
+-40 
+-50 
+FIG. 14. 
+RADIATION 
+CHARACTERISTIC 
+FIG. 13. Outputs from two 
+common parallel synthesis 
+configurations (in which re- 
+sonator outputs are added 
+with the same sign, or with 
+alternating (+-+) signs, but 
+without the first-difference 
+preemphasis for R2 and R3, 
+as in our model) are com- 
+pared with the theoretically 
+correct cascade output. 
+I I I I I I I [ I 
+o I 2 3 4 
+FREQUENCY (kHz) 
+Transfer function of the radiation characteristic. 
+In most experimental situations, we have found it ad- 
+vantageous to specify parameter contours in term of 
+straight line segments, using toggle 2. 
+IOOO 
+- 750 -3- 
+ 500 
+J 
+a: 250 
+n 
+'1\" F=375 T=Iõ5 
+0 50 I00 150 200 250 
+TIME (ms) 
+FIG. 15. A display of the first formant control parameter for 
+the synthesis of the syllable (ba) is shown as it would appear on 
+the computer scope. Formant frequency data are specified 
+every 5 ms. The pen-controlled cursor position is indicated 
+by a cross near the center of the plot. 
+984 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 984 
+=== PAGE 15 ===
+C. Oher software 
+The following executive commands are available for 
+the manipulation of synthetic and natural waveforms: 
+1. Select a waveform buffer. At the beginning of a 
+session, the user specifies the number and length of a 
+set of disk waveform buffers. At any point in the ses- 
+sion, one of these buffers is \"current\" and may be 
+viewed or otherwise manipulated. 
+2. Synthesize a waveform. Take the control par- 
+ameter files that have been drawn, and compute a syn- 
+thetic waveform which is placed in the current wave- 
+form buffer. 
+3. Display the waveform. A 50-ms segment of the 
+current waveform buffer is displayed. A variable knob 
+is used to select the desired portion of the waveform for 
+viewing. 
+4. Listen. The contents of the current waveform buffer 
+are played out through the digital-to-analog converter. 
+5. Listen to all. The contents of each waveform buf- 
+fer are played out in turn through the A/D converter 
+with pauses of NPAUSE ms between waveforms. 
+6. Digitize. Begin to digitize a waveform obtained 
+from a tape recorder or microphone and place it into 
+the current waveform buffer. Stop digitizing when the 
+duration of the buffer is exceeded. 
+7. Edit waoeform beginning lime. Chop off that por- . 
+tion of the current waveform before a centrally display- 
+ed waveform cursor, i.e., redefine the beginning of the 
+waveform buffer. Use the knob to position the wave- 
+form relative to the fixed central waveform cursor be- 
+fore executing this command. 
+8. Edit waoeform ergling time. Chop off that portion 
+. of the current waveform after a centrally displayed 
+cursor. 
+9. Generate DFT spectrum. Compute and display the 
+magnitude of the discrete Fourier transform of a seg- 
+ment of waveform centered on the waveform display 
+(see below for details). 
+10. Generate LP spectrum. Compute and display the 
+magnitude of the linear prediction spectrum of a seg- 
+ment of waveform centered about the waveform display 
+cursor (see below for details). Also list estimates of 
+the five lowest formant frequencies. 
+11. Plot estimated fundamental frequency contour. 
+Use the autocorrelation method to plot fundamental 
+frequency versus time for the contents of the current 
+waveform buffer. 
+12. Plot intensity contour. Compute rms intensity 
+every 10 ms using a smooth time weighting window, 
+and plot in decibels as a function of time for the con- 
+tents of the current waveform buffer. 
+13. Generate an identification test. Randomire the 
+set of waveform buffers to generate an identification 
+test consisting of NTRIAL trials of each waveform buf- 
+fer, with pauses of NPAUSE ms between triais. 
+14. Generate an AX discrimination test. Compare 
+adjacent waveform buffers in a randomized order of 
+NTRIAL trials with NPAUSE ms. between trials and 
+MPAUSE ms between members of an AX stimulus pair. 
+15. Generate an AXB discrimination test. Same as 
+abeve, except the task is to detect whether X =A or 
+Although not listed above, it is also desirabte to have 
+some means of saving parametric data and synthetic 
+waveforms in digital form between computer sessions. 
+D. Spectral analysis 
+A spectral analysis capability is needed to verify that 
+the output synthetic waveform has the desired spectral 
+characteristics. Spectral analysis is particularly use- 
+ful when attempting to mimic a digitized natural utter- 
+ance. In our experience, if synthesis and natural spec- 
+tral peaks are matched to within a couple of dB through- 
+out the utterance, and the F0 contour and overall inten- 
+sity contour are accurately duplicated, the synthetic 
+utterance will be virtually indistinguishabte from the 
+original in both intelligibility and naturalness. Based 
+on experience with several alternative spectral dis- 
+plays, we have found the following strategy to result in 
+maximally useful spectral information. 
+A 25.6-ms segment of waveform is selected, the 
+first difference of waveform samples is computed (to 
+remove de components and tilt the spectrum up slight- 
+ly, somewhat analogous to the processing that takes 
+place in the human peripheral auditory system), the 
+differenced waveform is multiplied by a 25.6-ms Kai- 
+ser window with BETA= 7.0 (Kaiser, 1966) (so as to 
+minimize the deleterious effects of having a noninte- 
+gral number of periods within the waveform segment), 
+the discrete Fourier transform is computed, the mag- 
+nitude of each spectral sample is converted to decibels 
+and plotted as a set of lines connecting the (riB, fre- 
+quency) samples, as shown in Fig. 16. 
+More useful in most cases is the linear prediction 
+spectrum, which is obtained in the same way, except 
+the discrete Fourier transform step is preceeded by 
+a linear prediction analysis. The algorithm that we use 
+is called the autocorrelation method (Makhoul, 1975) 
+and uses 14 poles. The linear prediction coefficients 
+are placed in the waveform buffer and padded with 
+zeros before computing the discrete Fourier trans- 
+form. Both DFT and linear prediction spectra can be 
+superimposed, as in the figure, if there is some ques- 
+tion as to the interpretation of the idealized spectra 
+produced by the linear prediction algorithm. 
+Formant frequencies can often be estimated from the 
+peaks observed in the linear prediction spectrum, such 
+as is shown in Fig. 16, or by a root-solving technique 
+(Markel and Gray, 1976). Plots of formant frequency 
+trajectories can be obtained in this way, although the 
+computations required make formant tracking of natu- 
+ral digitized waveforms a fairly lengthy process on 
+most computers. One such plot is shown in Fig. 18 be- 
+low. Extra points and missing points in this plot indi- 
+cate that these quasi-formant tracks must be interpre- 
+ted with care. 
+985 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 985 
+=== PAGE 16 ===
+(b) 
+$0 
+40 
+3O 
+- 20 
+0 
+0 
+(d) 
+$o 
+- 20 
+0 
+ LP 2690 
+ 3080 
+ 30 F 
+2 3 4 5 
+FREQ. (KHZ) 
+(e! 
+FIG. 16. The 25.6-ms (256 point) waveform segment extract- 
+ed from a natural [0] with a fundamental frequency of 122 Hz, 
+shown in (a) has been first differenced in (b), and multiplied by 
+a Kaiser window in (c). The magnitude of the discrete Four- 
+ier transform of the non-preemphasized windowed waveform 
+is shown in (d) and the DFT and magnitude of a linear predic- 
+tion spectrum of the preemphasized windowed waveform is 
+plotted in (e). Also listed are the frequencies of local maxima 
+in the linear prediction spectrum; these mxxima are usually 
+good estimates of formant frequencies. 
+V. SYNTHESIS STRATEGY 
+General strategies for the synthesis of English syl- 
+lables are beyond the scope of this paper, but the fol- 
+lowing paragraphs are intended to provide typical par- 
+ameter values for a number of static speech sounds. 
+The values presented below in Tables II and III should 
+constitute a good starting point for the synthesis of an 
+utterance if the procedures outlined below are adopted. 
+The steps used to synthesize an utterance in our labor- 
+atory are described and a simple example is presented. 
+A. Synthesis of vowels 
+The control parameters that are usually varied to 
+generate an isolated vowel are the amplitude of voicing 
+AV, the fundamental frequency of vocal fold vibrations 
+F0, the lowest three formant frequencies F1, F2, and 
+F3, and bandwidths B1, B2, and B3. The fourth and 
+fifth formant frequencies may be varied to simulate 
+spectral details, but this is not essential for high in- 
+telligibility. To create a natural breathy vowel termi- 
+nation, the amplitude of aspiration AH and the ampli- 
+tude of quasi-sinusoidal voicing AVS can be activated. 
+Table II includes suggested target values for variable 
+TABLE II. Parameter values for the synthesis of se- 
+lected vowels. If two values are given, the vowel is 
+diphthougized or has a schwa-like offglide in the speech 
+of the author. The amplitude of voicing, AV, and fun- 
+damental frequency, F0, must also be given contours 
+appropriate for an isolated vowel. 
+Vowel F1 2 3 B1 B2 B3 
+[iY] 310 2020 2960 45 200 400 
+290 2070 2960 60 200 400 
+[I ] 400 1800 2570 50 100 140 
+470 1600 2600 50 100 140 
+[e 480 1720 2520 70 100 200 
+330 2020 2600 55 100 200 
+[e ] 530 1680 2500 60 90 200 
+620 1530 2530 60 90 200 
+[] 620 1660 2430 70 150 320 
+650 1490 2470 70 100 320 
+[a] 700 1220 2600 130 70 160 
+[a] 600 990 2570 90 100 80 
+630 1040 2600 90 100 80 
+[A] 620 1220 2550 80 50 140 
+[o ] 540 1100 2300 80 70 70 
+450 900 2300 80 70 70 
+[u e] 450 1100 2350 80 100 80 
+500 1180 2390 80 100 80 
+[u ] 350 1250 2200 65 110 140 
+320 900 2200 65 110 140 
+[] 470 1270 1540 100 60 110 
+420 1310 1540 100 60 110 
+laY] 660 1200 2550 100 70 200 
+400 1880 2500 70 100 200 
+[a 640 1230 2550 80 70 140 
+420 940 2350 80 70 80 
+[o 550 960 2400 80 50 130 
+360 1820 2450 60 50 160 
+986 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 986 
+=== PAGE 17 ===
+control parameters that are used to differentiate among 
+English vowels (Klatt, in preparation). Formant fre- 
+quency and bandwidth targets were obtained by trial- 
+and-error spectral matching to a large set of CV syl- 
+lables spoken by the author. Bandwidth values are often 
+larger than closed-glottis values obtained by Fujimute 
+and Lindqvist (1971) because the bandwidths of Table II 
+have been adjusted to take into account changes to ob- 
+served formanl amplitudes caused by factors such as 
+glottal losses and irregularities in the voicing source 
+spectrum. 
+The amplitude of the voicing source, AV, is set to 
+about 60 dB for a stressed vowel. and falls gradually 
+by a few dB near the end of the syllable. The funda- 
+mental frequency contour for an isolated vowel can be 
+approximated by a linear falling F0, e.g., from 130 to 
+100 Hz. 
+B. Synthesis of consonants 
+If the vowel is to be preceded by a consonant, addi- 
+tional control parameters may have to be varied. Table 
+IH includes target values for variable control parame- 
+ters that are used to synthesize portions of English con- 
+sonants (frication spectra of fricatives, burst spectra 
+of plosives, nasal murmurs for nasals, and steady por- 
+tions of sonorahis). 
+The sonorant consonants [w], [y], [r], and [1] are 
+similar to vowels and require the same set of control 
+parameters to be varied in order to differentiate among 
+them. Formant values given in Table III for the pre- 
+vocatic sonorants [r] and [1] depend somewhat on the 
+following vowel. The source amplitude, AV, for a pre- 
+vocalic sonorant should be about 10 dB less than in the 
+vowel. The sonorant [hi (not shown in Table III) can be 
+synthesized by tking formant frequency and bandwidth 
+parameters from the following vowel, increasing the 
+first formant bandwidth to about 300 Hz, and replacing 
+voicing by aspiration. 
+The fricatives characterized in Table III include both 
+voiceless fricatives (AF = 60, AV: 0, AVS = 0) and 
+voiced fricatives (AF= 50, AV= 47, AVS = 47). For- 
+mants to be excited by the frication noise source are 
+determined by the amplitude controls A2, A3, A4, A5, 
+A6, and AB. Values presented in the table are appro- 
+priate only for consonants before front vowels. 
+The amplitude of the parallel second formant, A2, is 
+zero for all of these consonants before front vowels, 
+but the second formant is a front cavity resonance for 
+velars before nonfront vowels and A 2 is should be set 
+to about 60 dBo The values given for F2 and F3 are not 
+only valid during the fricative, but also can serve as 
+\"loci\" for the characterization of the consonant-vowel 
+formant transitions before front vowels (Klatt, in 
+preparation). These are virtual loci in that formant 
+frequency values observed at the onset of voicing are 
+somewhere between the locus and the vowel target fre- 
+TABLE HI. Parameter values for the synthesis of selected components of English conso- 
+nants before front vowels (see text for source amplitude values). 
+Sonor F1 72 3 B1 B2 B3 
+[w] 290 610 2150 50 80 60 
+[y] 260 2070 3020 40 250 500 
+[4 310 1060 1380 70 100 120 
+[1] 310 1050 2880 50 100 280 
+Fric. F1 /72 F3 B1 B2 B3 A2 A3 A4 A5 A6 AB 
+[fl 340 1100 2080 200 120 150 0 0 0 0 0 57 
+[v] 220 1100 2080 60 90 120 0 0 0 0 0 57 
+[0] 320 1290 2540 200 90 200 0 0 0 28 48 
+[] 270 1290 2540 60 80 170 0 0 0 0 28 48 
+[s] 320 1390 2530 200 80 200 0 0 0 0 52 0 
+[z] 240 1390 2530 70 60 180 0 0 0 0 52 0 
+[] 300 1840 2750 200 100 300 0 57 48 48 46 0 
+Affricate 
+[] 350 1800 2820 200 90 300 0 44 60 53 53 0 
+[j] 260 1800 2820 60 80 270 0 44 60 53 53 0 
+Plosive 
+[p] 400 1100 2150 300 150 220 0 0 0 0 0 63 
+[b] 200 1100 2150 60 110 130 0 0 0 0 0 63 
+[fl 400 1600 2600 300 120 250 0 30 45 57 63 0 
+[d] 200 1600 2600 60 100 170 0 47 60 62 60 0 
+[k] 300 1990 2850 250 160 330 0 53 43 45 45 0 
+[g] 200 1990 2850 60 150 280 0 53 43 45 45 0 
+[m! 270 450 480 1270 2130 40 200 200 
+[n] 270 450 480 1340 2470 40 300 300 
+987 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 987 
+=== PAGE 18 ===
+quency--the amount of virtual transition being depend- 
+ent on formant-cavity affiliations. The specification of 
+frication spectra in the table is accurate only before 
+front vowels in the speech of the author. Before back 
+and rounded vowels, systematic changes are observed 
+to the fricative spectra because of anticipatory coartic- 
+ulation. Specification of control parameter values for 
+consonants in any phonetic environment is beyond the 
+scope of the present paper, but appropriate values are 
+easily found by trial-and-error matching to natural 
+speech. 
+The affricate parameters in Table III refer to the 
+fricative portion of the affricate. Similarly, the plos- 
+ire parameters in Table III refer to the brief burst of 
+frication noise generated at plosive release. Formant 
+frequency values again serve as loci for predicting 
+formant positions at voicing onset. In addition to dif- 
+ferences in source amplitudes, voiced and voiceless 
+consonants differ in that F1 is higher and B1 is larger 
+when the glottis is open. 
+Tile parameters that are used to generate a nasal 
+murmur include the nasal pole and zero frequencies 
+FNP and FNZ. The nasal pole and zero are used pri- 
+marily to approximate vowel nasalization at nasal 
+release by splitting F1 into a pole-zero-pole complex. 
+The details of nasal murmurs that have been described 
+by Fujimura (1962) are approximated by formant bard- 
+width adjustments rather than by the theoretically cor- 
+rect method of pole-zero insertion. The reason is that 
+it is not possible to simulate both the higher-frequency 
+pole-zero details of nasal murmurs and vowel nasali- 
+zation simultaneously without moving the frequency of 
+tile nasal pole and zero very fast at release,. which 
+would generate an objectionable click in the output, and 
+vowel nasalization has been found to be perceptually 
+more important. A nasalized vowel is generated by 
+increasing F1 by about 100 Hz, and by setting the fre- 
+quency of the nasal zero to be the average of this new 
+F1 value and .270 Hz (the frequency of the fixed nasal 
+pole). 
+Not included in Tables II and III are unstressed allo- 
+phones, postvocalic allophones, flaps, glottal stops, 
+voicebars, and consonant clusters. Characterization 
+of even the static properties of these phonetic seg- 
+ments is beyond the scope of the present paper, but it 
+it hoped that the information contained in the tables can 
+be combined with the synthesis strategy described 
+below for the rapid synthesis of an arbitrary utterance. 
+C. Synthesis of a novel utterance 
+The first step in the preparation of a new utterance 
+is to obtain a natural model. The availability of a 
+naturally spoken utterance is important because ex- 
+perience has shown that not all of the synthesis control 
+parameter values can be deduced from theoretical con- 
+siderations, and an unnatural, marginally intelligible 
+synthetic utterance often results if one relies entirely 
+on available theory. 
+A broadband spectrogram of the spoken word is then 
+produced in order to visualize general acoustic charac- 
+teristics of the utterance and determine the approxi- 
+mate duration of its component acoustic events. Com- 
+puter analyses described below can provtde much of 
+the same information, but it is easier to visualize the 
+time-frequency-intensity relations in the recording 
+if a spectrogram is available. 
+The utterance is then 5-kHz low-pass filtered, digi- 
+tized at 10000 sample/s, and saved as a disk file for 
+subsequent direct comparisons with the synthetic im- 
+itation that is to be created. The utterance \"string\", 
+as spoken by a female talker, will be used as an illus- 
+tration of the steps required to achieve a close acous- 
+tic match to a natural model of a word. A spectrogram 
+of the recorded word is shown at the left in Fig. 17. 
+The intensity-versus-time plot shown in Fig. 18(a) 
+was obtained by computing rms energy in dB every 10 
+ms, using a 25.6-ms Kaiser weighting window centered 
+on the time of each displayed point. Ultimately, the 
+synthetic utterance should have a matching intensity 
+pattern, although it is not eady to deduce values for the 
+various amplitude controls that will result in a close 
+match to this contour on the first try. 
+The voiced portion of the word \"string\" was further 
+analyzed by computer routines that extract an estimate 
+of voicing fundamental frequency, as shown in Fig. 
+18(b), and formant frequency trajectories, as shown in 
+Fig. 18(c). Observed formant motions can be used di- 
+rectly to specify formant frequency control parameters 
+F1 through F5 during voiced portions of the utterance 
+(only four formants are seen below 5 kHz for many fe- 
+male speakers, in which case the control parameter 
+NFC that controls the number of formants in the cas- 
+cade branch of the synthesizer would be set to 4). The 
+third formant is invisible in the formant track of Fig. 
+18, but its position can be deduced by examination of 
+the spectra in Fig. 19. 
+Linear prediction spectra sampled at various times 
+in the natural utterance are plotted in Fig. 19. The 
+spectra were all obtained in the manner described pre- 
+viously, except that the average spectrum of the [s] 
+frication noise that is shown in Fig. 19(a) was obtained 
+using a time weighting window having a longer effective 
+duration of 40 ms. The longer duration window pro- 
+vides a better estimate of stationary spectra. 
+The general procedure for synthesis of voiced son- 
+orants (the [rl q] of \"string\") is to use information such 
+as appears in Figs. 17-19 to (1) set the number of for- 
+mants in the cascade vocal tract model, (2) adjust the 
+fundamental frequency contour to within 2 Hz and for- 
+mant frequencies to within about 5% by matching dig- 
+4- t 
+- 
+FIG. 17. Broadband spectrograms are compared of a natural 
+,qnd synthetic word, \"string,\" spoken by a female talker. 
+988 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 988 
+=== PAGE 19 ===
+30C (a) 
+ . OC 
+ ,oc 
+LL 
+o 
+õ0 r ' 40? -1- 
+:z 
+ o 
+LIJ 
+5C 
+4C 
+>- 3c 
+.z, o I- 
+-- I0 
+I L I .L L 
+(c) 
+0 .i .2 .3 A .5 
+TIME (s) 
+FIG. 18. The natural utterance \"string\" was analyzed by corn- 
+purer programs that produce plots of (a) fundamental frequency, 
+(b) formant frequencies, and (c) intensity versus time. 
+itized waveform and spectra every 10 ms during transi- 
+tions and every 50 ms during quasi-stationary inter- 
+vals, (3) modify the source spectrum and/or formant 
+bandwidths in order to set relative formant amplitudes 
+to within about 2 dB, and (4) use the voicing source 
+amplitude control, AV, to set the overall intensity 
+contour to within about 2 dB. An intelligible utterance 
+and a convincing imitation of the speaker are likely to 
+result from satisfying these criteria (Holmes, 1961). 
+Detailed examination of the Fourier spectra of son- 
+orant intervals indicates the presence of some aspira- 
+tion noise during voicing for this speaker, i.e., the 
+spectrum is less than perfectly harmonic at higher fre- 
+quencies. Therefore, AH was adjusted to follow the 
+same contour as AV, but with a value about 3 dB less. 
+This produces a somewhat breathy voice qualily that 
+is typical of many female talkers. It also (fortunately) 
+alleviates a fundamental problem of digital synthesis 
+having to do with the perfect periodicity of portions of 
+the synthesis when control parameter values do not 
+change very much. Voiced sounds are often observed 
+to become unpleasantly mechanical sounding as funda- 
+mental frequency is increased for female and children's 
+voices, but a little aspiration noise breaks up the reg- 
+ularity of the harmonic structure. 
+The general procedure for synthesis of fricatives, 
+affricates, and plosive bursts is to use the information 
+in Figs. 17-19 to (1) select which formants are excited 
+on the basis of continuity between the spectral peaks of 
+the noise and formant peaks in adjacent voiced inter- 
+vals, (2) set formant frequencies, (3) use formant 
+bandwidth controls and parallel-branch formant am- 
+plitude controls to adjust the amplitude and width of 
+peaks in the frication spectra, and (4) use AF, AV, and 
+AVS to adjust the overall intensity contour and the mix- 
+hare of periodic voicing to aperiodic noise (the discrete 
+Fourier transform is useful for this purpose since it 
+60 (a) /R/ 
+40 
+(a) 30 
+6o[- is,' 
+40 ß IO 
+IO 
+o I 2 3 4 5 
+5o 
+o 
+(b) /T/BURST 
+o i 2 3 4 5 
+-0 I 2 3 4 5 If) 5 ms BEFORE 60 
+50 F () VOICING ONSET 50 NASAL ONSET 
+40   t ß 210 ms 401 I1t'385 ms 
+0 I 2 3 4 5 -0 I 2 3 4 5 
+FREQUENCY (kHz) FREQUENCY (kHz) 
+4ør-^ (g) h /NG/ ,0 L/ / \ t-410 mß 
+I 
+3Or-^ |h) /NG/ 
+0 I 2 3 4 5 
+FREQUENCY (kHz) 
+FIG. 19. Linear prediction spectra are 
+plotted (a) during [s] noise, (b) center- 
+ed on the [t] burst, (c) at voicing onset 
+for the [r], (d) during the sonoran[- 
+vowel transition, (e) at the midpoint of 
+the vowel, (f) just prior to closure, and 
+(g)-(h) during the nasal murmur. 
+989 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 989 
+=== PAGE 20 ===
+indicates individual harmonic amplitudes). For those 
+formants that are invisible during frication generation, 
+formant frequencies are filled in from continuity con- 
+straints and theoretical considerations. 
+For example, in order to synthesize the observed 
+is] spectrum, it is necessary to produce a strong spec- 
+tral peak near 5 kHz. To do this, F6 can be positioned 
+to 4.9 kHz and turned on at the appropriate time. De- 
+fault values are chosen for the other formrant frequen- 
+cies and formant bandwidths are adjusted on a trial-and- 
+error basis in order to match the is] spectrum of Fig. 
+19. 
+quence of English with excellent intelligibility if the 
+steps outlined in the previous section are followed. A 
+consonant-vowel synthesis cookbook that is based on 
+this synthesizer is in preparation (Klatt, in prepara- 
+tion). Intelligibility tests of 337 different CV syllables 
+produced by the rules contained in the cookbook indi- 
+cate that better than 98% of the vowels and 95% of the 
+consonants are identified correctly by trained phoneti- 
+ctans who are unfamiliar with synthetic speech. 
+ACKNOWLEDGMENT 
+This research was supported by an NIH grant. 
+Vl. CONCLUSIONS 
+We have described a flexible software synthesizer 
+that can run on any laboratory computer having suf- 
+ficient core, peripheral equipment, and a Fortran 
+compiler. The software is included as an appendix. 
+The synthesizer and an associated control program can 
+be used by a novice with minimal training and thus can 
+serve as a research tool for those whose primary in- 
+terest is not speech synthesis per se, but, e.g., the 
+perception of speech and the relative perceptual im- 
+portance of different acoustic cues to phonetic con- 
+trasts. It should be easier to replicate the results of 
+perceptual experiments performed using this synthe- 
+sizer because the synthesizer is fully documented here, 
+and hopefully the control parameter values for the 
+stimuli of an experiment will be carefully specified in 
+the publication. The synthesizer may also find applica- 
+tion in programs for speech synthesis by rule (Klatt, 
+1976a), for computer audio response, and in a reading 
+machine for the blind (Allen, 1977). 
+Experience over the past few years suggest that the 
+synthesizer is sufficiently flexible to generate good im- 
+itations to most if not all male and female voices. It 
+also appears possible to synthesize any phonetic se- 
+APPENDIX A: EXTERNAL 5000 Hz LOW-PASS FILTER 
+An external low-pass filter is required to convert the 
+staircase waveform that comes from the D/A converter 
+into an analog signal containing energy only below 
+5000 Hz. A suitable filter for this purpose has been 
+designed and built by Dr. Joe Teirney of the M. I. T. 
+Lincoln Laboratories. It is a seventh-order passive 
+cliptic low-pass filter with component values that are 
+indicated in Fig. A1. 
+The steps required to fabricate this filter are (1) wind 
+the coils on something like Ferroxcube Corp. 3622A- 
+600387 to plus-or-minus 0.5% (coils should have ('s of 
+over 100 at the frequencies to which they are tuned), 
+(2) use trim capacitors to tune the three L-C combina- 
+tions along the top of the ladder network to have reso- 
+nant frequencies in isolation of 7765, 5030, and 5427 
+Hz, respectively, (3) trim the remaining capacitors of 
+the circuit to 0.5%, and (4) use 1% resisters. 
+The magnitude of the filter transfer function is 
+shown at the bottom of Fig. A1. All frequency compo- 
+nents in the input signal above 5 kHz are attenuated by 
+at least 40 dB, while frequency components below 
+4780 Hz are within 0.6 dB of no attenuation at all. 
+135 mH 52 mH 72 mH 
+E/ R 500011 ,, ,, .. FROM LOW OUTPUT 1 ........ I $ 
+co.v.. o, 
+HIGH O INPUT I TO 
+IMPEDANCE I LOUDSPEAKER 
+AMPLIFIER O 
+0 
+-4O 
+4780 Hz 
+ I I I i I 
+ .% 4 5 6 7 
+FREQUENCY (kHz) 
+FIG. A1. The passive elipt[c low-pass filter shown at the top has a transfer function with a very sharp cut/off near 5000 Hz, as 
+shown in the lower panel. 
+990 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 990 
+=== PAGE 21 ===
+APPENDIX B. FORTRAN LISTINGS 
+This appendix contains listings of (1) the synthesizer 
+control program, HANDSY.FOR, (2) the subroutine for 
+converting user-oriented control parameter data into 
+difference equation coefficients, PARCOE.FOR, and 
+(3) the subroutine for converting these coefficients in- 
+to a synthetic waveform, COEWAV.FOR . Also included 
+are two small subroutines for converting from decibels 
+to linear amplitudes, GETAMP.F¸R, 3_rid for converting 
+from formant frequency and bandwidth to difference- 
+equation coefficients, SETABC.FOR. 
+As listed below, the programs should compile and run 
+on, e.g., any Digital Equipment Corporation PDP-11 
+having sufficient core. Some of the Fortran input-out- 
+put instructions may have to be changed for other com- 
+puter environments. For a machine with insufficient 
+core, it may be possible to rewrite the routine 
+HANDSY.FOR so as to use the disk for storage of par- 
+ameter/waveform data instead of the 10 050-word core 
+array IWAVE. The arrays MAXVAL and MINVAL in 
+HANDSY.FOR are included primarily to detect accident- 
+al typing errors and conceptual errors on the part of 
+naive users; these values may have to be changed in 
+order to synthesize unusual stimuli. 
+C HANDSY.FOR D. KLATT 6/1/','9 
+c 
+c SPECIFY AN ARRAY OF CONtROl PARAMETER OA1A 
+C AND SYNTHESIZE A SPEECN WAVERORM 
+C 
+C LOAD WITiI PARCOE.FOR, COEWAV.FOR, SETABE.FOR, SETAMP,FOR C 
+IWAVE(]0050), AND WSIZE ALL H¾ THE SAME FRRHTION 
+C 
+REAL DB,DDLPNT,EPSLON,XMAXWA 
+C ' EACH OF THE FOLLOWING VARIABLRS HOLD UP TO R ASCII œHARACTERS 
+DIMENSION MAXVAL(O),MINVAL(tB),VAL]ES(!9),IPAR(39) 
+DIMENSION VARPAR(39),LOC(39),LOCRAV(39),D(10050),IWAVE(10080) 
+DIMENSION COEFIC(RO) 
+COMMON /PASS/IPAR 
+COMMON /COEES/ COEFiC 
+EQUIVALENCE (D(1),IWAVE(])) 
+C 
+C 3-CHARACTER SYMBOL FOR EACH OE 39 CONTROL PARAMETER VALUES 
+C 
+DATA MAXVAL/80,80,80,80,500,900,2500,3500,4500,?00 
+1,2000,1,608,2000,5000,10000,3000,900,4000,4999 
+12000,500,500,500,1000,20000,200,80,6/ 
+MINIMUM POSSIBLE VALUE FOR EACH OF 39 CONTROL PARAMETERS 
+DATA 
+DETERMINATION OF VARIABLE (=1 OR =2) OR CONSTANT (=0) PRAMETERS 
+DEFAULT VALUES FOR EACH OF 39 CONTROL PARAMEPERS 
+DATA VALUES/O,O,O,O,O,450,1450,2450,3300,250 
+DATA WS[ZE/10050/ 
+C 
+C NAMES OF SOME RESPONSE] CHARA(:TER2 
+DATA QUIT,QUIT1,YES,NO,VAR,CON/'Q','Q','Y','N','V','C'/ C 
+1ooo WRITE (5,1010) 
+lOlO FORMAT (/' KLATT CASCADE/PARALLEL FDRMANI OYNTBESTZFR 6/1/79 
+C 
+c SEE IF FILE PARAM,DOC EXISTS; fF so, READ CONFIGURATION 
+OPEN(UNiT=I,NAME='PARAM.OOC',ACCESD=,SEQHENTIAL,,ERR=ll40) OPENPA=I 
+WRITE (5,lORD) 
+N=M+13 
+C 
+C CHANCE CONFIGURATION, CHANCE WHICH PARS ARE VARIABLE 1140 
+1160 FORMAT (' PRINT AND/OR CHANGE CDNFiDURAT[ON (y,¸):,$) 
+1170 READ (5,180,ERR=1140) ANSWER 
+1180 FORMAT (A1) 
+1185 IF (ANSWER.gO.QUIll) GO TO 1740 
+1190 WRITE (5,1220) 
+1220 FORMAT (/' NAME OF PARAMETER TO BECOME VAR OR CON (QUIT=\"Q\"):'$) 
+1240 READ (5,260,ERR=19O) NAMEV 
+1260 FORMAT (A3) 
+1270 IF (NAMEV.EQ,QUiT) GO TO 1500 
+DO 1280 N:1,39 
+IF (NAMEV.EQ.NAMES(N)) 00 TO 1320 
+280 CONTINUE 
+WRITE (5,1300) NAMEV 
+1300 FORMAT (' ',A5,', TYPING ERROR, TRY AGAIR') 
+W8ITE (5,1855) (NAMES(M),M=I,]9) 
+GO TO 1190 
+1320 HODPAR=YES 
+IF (N.LT.35) GO TO 1330 
+WRITE (5,1325) NAMES(N) 
+1325 FORMAT (' PARAMETER ',A3,' CANNOT BE MADFi VARIABLE') 
+1330 IF (VARPAR(N).NE.O) GO TO 1380 
+1340 VARPAR(N)=I 
+WRITE (5,1360)NAMEV 
+1!60 FORMAT Fi'93',At , ' iS NOW A VARFRB].E') GG [(, 1 
+138o IF (VARPAR(N).E.2) GO lO 139o 
+WRITF (5,1185) NAMEV 
+185 FORMAT (' ',A!,' CAN NO LONOER BE MACE A CONSTANT') 
+c 
+1685 
+1690 
+GO TC ICOH 
+1720 CONTIN[rE 
+GO TC 119o 
+C 
+C COdNT NUMBER OF VARIABLE PARAMETERS, NVAR, 
+C AND PLACE NAMES IN NAMFX(NVAR) 
+1740 NSAMP=VALUES3?) 
+DENOP=VALiIES(6)/10 
+DELTAT-(NSAMPmOO)/DENOM 
+IF (VARPAR(N).EQ.O) GO TO 1760 
+NVAR=NVAR+I 
+LOCINVAR)=N 
+1760 CONTINUE 
+IF (NVAR.OT.O) GO TO 1800 
+WRITE(5,1780) 
+1780 FORMAT (' ILLEGAL CONFIG, NO VARIABLE PARAMS, TRY GAIN') 
+GO TO 1680 
+1800 MAXDUR_((WSIEE/NSAMP).DELTAT)-20 
+WRITE (5,1820) NVAR 
+991 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 991 
+=== PAGE 22 ===
+c ON LINE PRINTEH 
+2600 CONTINUE 
+OPEN(UNIT=I,NAME:'PAHAM.'DOC',ACCESS:'SEQUENTIAL',ERH:2600) 
+DO 2620 M:113 
+DUMMY:' 
+WRITE (1,26]?) DUMMY,NAMES(M),VAHPAH(M),VALUES(M) 
+1,DUMMY,NAMES(N),VARPAR(N),VALUES(N) 
+1,DUMMY,NAMES(N1),VARPAR(N1),VALUES(N1) 
+2625 FORMAT (' ',I5) 
+NVARI:O 
+DO 2630 N:I,NVAR 
+IF (VARPAR(COC(N)).NE.2) 00 TO 2630 
+NVARI:NVARI+I 
+LOCSAV(NVAR1):N 
+2630 CONTINUE 
+IF (NVAR.GT.O) GO TO 2640 
+WRIIœ (5,1780) 
+GO TO 2900 
+2GAD IF (NVAH1.GT.26) NVARl:26 
+WRITE (1,2650) (NAMEN(LOCSAV(M)),M=I,NVARI) 
+265G FORMAT (' ',26A5) 
+NSAMTI:(UTTDUR/DELTAT)-I 
+TIME:H'DELTAT 
+MI:MINSAMP 
+WRITE (1,2660) TIME,(D(LOCSAV(N)+M1),N=,NVAR1) 
+2660 FORMAT /I3,2615) 
+2665 UONTINUE 
+CLOSE(UNIT:l) 
+WHITE (5,2667) 
+2667 FORMAT (' PARAMETER FILE \"PARAMDOC\" SAVED') 
+C 
+C SET ALL PARAMETERS IN ARRAY IPAR TO DEFAULT VALUES 
+2670 IF [PPSW.EQ.1) GO TO 2676 
+WRITE (5,2675) 
+2675 FOHMA7 (/' BEGIN WAVEFORM GENERATION') 
+2676 DO 2680 N=1,39 
+2680 IPAR(N)=VALUES(N) 
+C 
+c INITIALIZE SYNTUESIZER 
+XMAXWA=-I. 
+C 
+C MAIM SYNTHESIZER LOOP, PUT WAVEFORM IR IWAVE(WSIZE]) 
+c ADD 20 NSEC TO DURATION TO ENSURE SIGNAL WILL DECAY TO ZœRO 
+NPTS=(UTTDUR+20)/DELTA7 
+TIME]:O 
+DO 2?40 M=I,NPTS 
+POINTR=(M-1)*NSAMP 
+DO 2700 N-1,NVAH 
+2700 IPAR(LOC(N))-D(POINTR+N) 
+CALL PAHCOE(MAXWR) 
+CALL COEWAV(IWAVE(WSIZEI),XMANWA) 
+2740 WSIZEI:WSIZEI+NSAMP 
+C MAKE SURE SIGNAL IS LESS TUAN OR EQUAL TO O.C DB 
+DS=20.*ALOG1O(AMAXWA/32767.) 
+WRITE (5,2760) DB 
+276[] FORMAT (' PEAK SIGNAL LEVEL 
+] IN SYNTHETIC WAVEFORM :',F6.1,' DR') 
+c SAVE WAVEFORM FILE IWAVE(WSIZE]) ON DISK 
+OPEN(UNIT=I,NAME='WAVE.IG',ACCESS='SEQUENTIAL',ERR=2800) 
+WRITE (,2775) WSIZE1 
+2775 FORMAT (I5) 
+WRITE (1,2785) (IWAVE(M),M=I,WSIZE1) 
+2?85 FORMAT 
+CLOSE (UNIT=l) 
+WRIIE (5,2795) 
+2795 FORMAT (/' WAVEFORM FILE \"WAVE.I6\" SAVED'//) 
+GO TO 290Q 
+2800 WRITE (5,2805) 
+2805 FORMAT (' DISK ACCESS ERROR DURING ATTEMPT TO SAVE WAVEFORM') 
+29Q0 STOP 
+END 
+C PARCOE.FOR D.H. KLATT 8/1/78 
+C 
+C \"PARAM-TO-COEF\" TRANSFORMATION SUBROUTINE 
+C 
+C THIS PROGRAM CONVERTS SYNTHESIZER CONTROL PARAMETERS FROM ARRAY I(39) 
+C INTO DIFFERENCE EQUATION CONSTANTS FOR SYNTHESIZER HARDWARE 
+C STORED IN ARRAY C($0) 
+C 
+SUBROUTINE PARCOE(INITPC) 
+C INITPC INITIALIZES THIS ROUTINE IF =-l 
+C 
+REAL IMPULS 
+DIMENSION I(39),NDBSCA(lP),NDBCOR(10),C(50) 
+C INPUT PARAMETER VALUES (CONSTANT AND VARIABLE) PASSED THROUGH I 
+COMMON /PARS/ I 
+COMMON /COEFS/ C 
+COMMON /PIXX/ PIT,TWOPIT 
+C COEFICIENT VALUES IN C(50) ARE REAL 
+EQUIVALENCE (C(1),IMPULS),(C(2),SINAMP),(C(3),AFF) 
+EQUIVALENCE (C(N),ABM),(C(5),A1P),(C(6),A2P) 
+EQUIVALENCE (C(7),A3P),(C(8),A4P),(C(9),A5P) 
+EQUIVALENCE (C(10),A6P),(C(ll),ABP),(C(12),ANPP) 
+EQUIVALENCE (C(13),AOP),(C(1R),BGP),(E(15),CGP) 
+EQUIVALENCE (C(16),AGZ),(C(l?)BGZ),(C(18),CS) 
+EQUIVALENCE (C(19),AGS),(C(20),BOS),(C(21),CGS) 
+EQUIVALENCE (C(22),A1),(C(28),01),(C(24),C1) 
+EQUIVALENCE (C(25),A2),(C(26),02),(C(27),C2) 
+EQUIVALENCE (C(28),A3),(C(29),B3),(C(30),C8) 
+EQUIVALENCE (C(31),AN),(C(32),BR),(C(33),CR) 
+EQUIVALENCE (C(34),A5),(C(35),05),(C(36),C5) 
+EQUIVALENCE (C(87),AH),(C(38),06),(C(39),C6) 
+EQUIVALENCE (C(4G),ANP),(C(41),BNP),(C(42),CNP) 
+EQUIVALENCE (C(HS),ANZ),(C(NH),BNZ),(C(45),CNZ) 
+EQUIVALENCE (C(NH),PLSTEP) 
+C NAMES OF INPUT CONTROL PARAMETERS 
+EQUIVALENCE (I(1),NNAV),(I(2),NNAF),(I(3),NNAH),(I(4),NNAVS) 
+1,(I(5),NNFO),(I(6),NNF1),(I(7),NNF2),(I(8),NNFS),(I(9),NNFH) 
+1,[I(O),NNFNE),(I(ll),NNAN),(I(2),NNAI),(I(3),NNA2) 
+1,(I(1R),NNA3),(I(18),NNAR),(I(16),NNAE),(I(17),NNA6) 
+1,([(22),NNSW),(I(23),NNFGP),(I(Zq),NNBGP),(I(25),NNFGZ) 
+EQUIVALENCE (I(26),NNBGZ),(I(27),NNB4),(I(28),NNFE),(I(29),NNBE) 
+l,(I(30),NNE6),(I(81),NNB6),(I(82),NNENP),(I(33),NNBNP) 
+1,(I(SR),NNBNZ),(I(35),NNBGS),(I(]6),NNSR),(I(37),NNNWS) 
+1,(I(38),NNGO),(I(39),NNNFC) 
+c CONSTANTS NEEDED BY SUBROUTINE SETABC 
+DATA PI/3.1R159265/ 
+C 
+C SCALE FACTOHS IN DB FOR GENERAL ADJUSTMENT TO: 
+c A1 A2 A3 A4 A5 A6 AN AB AV AH AF AV$ 
+DATA NDBSCA/-58,-65,-TS,-T8,-Tg,-80,-58,-84,-72,-102,-72,-NN/ 
+c INCREMENT IN DB TO FORMANT AMPLITUDES OF PARALLEL BRANCH IF 
+c FORMANT FREQUENCY DIFFERENCE 50, lOO, 180, ... HZ 
+DATA NDHCOR/10,9,8,7,6,5,N,3,2,1/ 
+c PRINT INPUT PAR VALUES AT T=NTIMPR, OR AT ALl TIMES IF NTIMPR:O 
+DATA NTIMPR,NPPBEG,NPPEND/-1,l,39/ 
+C INITIALIZE SYNTHESIZER BEFORE COMPUTING WAVEFORM CHUNK IF AHG.LT.O 
+100 IF (INITPC.GE.O) GO TO 130 
+INITPC=O 
+C SET CUMULATIVE TIME COUNTER TO ZERO 
+NTIMEP=O 
+NAFLAS=O 
+992 J. Acoust Soc. Am., Vo!. 67, No. 3, March 1980 Dennis H. Klatt Software for a formant synthesizer 992 
+=== PAGE 23 ===
+C COMPUTE SAMPLING PERIOD T (ALL CONSTANT CONTROL PARAMETERB 
+c MUST BE SET BEFORE CALLING NIT) 
+SAMHAT=NNSR 
+?WOPIT=2.'P1T 
+NTIMED:(NNNWS*lOOO)/NNSR 
+C CONVERT INHERENTLY INTEGER PARAMS TO REAL COEFICIENTS 
+C(HS)=NNNWS 
+C(qg)=NNSW 
+C(50)=NNNFC 
+110 CONTINUE 
+C 
+C 
+C 
+C 
+C 
+C 
+UPDATE ALL COEFICIENTB OF HARDWARE SYNTHESIRER 
+COMPUTE PARALLEL BRANCH AMPLITUDE CORREC10R TO F2 DUE TO F1 
+DELFl=FLOAT(NNFl)/500. 
+A2COR=DELFI*DELFI 
+COMPUTE AMPLITUDE CORRECTION TO F3-5 DUE TO F1 AND F2 
+DELP2=PLOAT(NNF2)/1500. 
+A2SKRT:DELF21DELF2 
+ASCOR:A2COR*A2SKRT 
+c TAKE INTO ACCOUNT FIRST D1FF OF GLOTTAL WAVE FOR F2 
+A2COR:N2COR/DELF2 
+C COMPUTE AMPLITUDE CORRECTIONS DUE TO PROXIMITY OF 2 FORMANTS 
+N12COR=O 
+N23COR:O 
+NSACOR:O 
+NF21=NNF2-NNFl 
+1F (NF21.LT.50) GO TO 135 
+IF (NF21.LT.550) N12COR:NDBCOR(NF21/50) 
+NH32=NNHS-NNH2-50 
+IF (NF32,LT,50) GO TO 135 
+1F (NF32.LT.550) N23COH=NDBCOR(NF32/50) 
+NFqS=NNFA-NNFS-15U 
+1F (NFNS.LT.50) O0 TO R5 
+IF (NF43.LT.550) NSqCOR=NDBCOB(NFAR/50) 
+C PRINT INPUT PARAMETERS IF NTIMPR SET TO ZERO OR TO A SPECIFIC TIME 
+1F (NTIMPR.EQ.U) GO TO 135 
+1F (NTIMPR.NE.NT1MEP) GO TO 146 
+135 WRITE (%140) NTIMEP 
+lAG FORMAT (J INPUT PARS AT T = m,I4,' MS') 
+WRITE (5,141) (I(NPP),NPP:NPPBEO,NPPEND], 
+141 FORMAT (' ',1315) 
+WRITE (5,142) 
+1A2 FORMAT (' ') 
+145 NPAR:I 
+146 NT1MFP=NTIMEP*RTIMED 
+c SE1 AMPLITUDE OF VOICING 
+NDBAV=NNGO+NNAV*NDBSCA(9) 
+IMPULS=GETAMP(NDBAV) 
+C AMPLITUDE OF ASPIRATION 
+150 NDBAH=NNGO+NNAH+NDBSCA(10) 
+AHH:OETAMP(NDBAH} 
+c AMPLITUDE Of FR1CATION 
+C (IN AN ALL-PARALLEL CONFIGURATION, AF=MAX[AF,Atl]) 
+IF ((NNAH.GT.NNAF).AND.(NNSW.EQ.1)) NNAF=NNAH 
+NDBAF=NNGO*NNAF+NDBSCA(ll) 
+AFF:GETAMP(NDBAF) 
+C ADD A STEP TO WAVEFORM AT A PLOSiVE RELEASE 
+PLSTEP=O. 
+1F (NNAF-NAFLAS.LT.q9) GO TO 151 
+PLSTEP:GETAMP(NNGO*NDBSCA(11)+44) 
+151 NAFLAS:NNAF 
+c AMPLITUDE OF QUASI-SINUSOIDAL VOICTNG SOURCE 
+NDBAVS=NNGO+NNAVB+NDBSCA(12) 
+SINAMP=IO.mOETAMP(NDBAVS) 
+c SET AMPLITUDES OF PARALLEL FORMANTS A1 THRU A6 
+NDB=NNAl+R12COR+NDBSCA(I) 
+A1P=GETAMP(ND8) 
+NDB:NNA2+N12COR+N12COR+N23COR+NDBSCA(2) 
+A2P=A2CORIGETAMP(NDB) 
+NDB=NNAS+N83COR+N83CORN34COR*NDBSCA(3) 
+A3P:A3COR*GETANP(NDB) 
+NDB=NNAA+N3qBBN34CORNDBSCA(A) 
+AqP:A3CORmGETAMP(NDB) 
+NDB=NNA5+NDBSCA(5) 
+A5P=A3CORIGETAMP(NDB) 
+NDB:NNA6+NDBSCA(6) 
+A6P=ASCOR#GETAMP(NDB) 
+C SET AMPLITUDE OF PARALLEL NASAL FORMANT 
+NDB=NNAN+NDBSCA(?) 
+ANPP=GETAMP(NDB) 
+C SET AMPLITUDE OF BYPASS PATH OF FRICATION TRACT 
+NDB=NNAB*NDBSEA(8) 
+ABP:GETAMP(NDB) 
+c RESET DIFFERENCE EQUATION CONSTANTS FOR RHSONATORS 
+230 CALL SETABC(NNF1,NNB1,A1,BI,œ1) 
+CALL SETABC(NNF2,NNB2,A2,B2,C2) 
+CALL SETABC(NNF3,NNB3,A3,B3,C3) 
+CALL SETABC(NNFA,NNBA,AA,BR,CA) 
+CALL $ETABC(NNFS,NNBS,AS,B5,CS) 
+CALL SETABC(NNF6,NNBO,A6,BO,C6) 
+CALL SETABC(NNFNP,NNBNP,ANP,BNP,CNP) 
+C AND FOR NASAL ANTIRESONATOR 
+MNFNZ=-NNFNZ 
+IF (MNFNZ,GE.O) MNFNZ=-I 
+CALL SETABC(MNFNZ,NNBNZ,ANZ,BNZ,CNZ) 
+C AND FOR GLOTTAL RESONATORS AND ANTIRESONATOR 
+NPULSN:I 
+1F (NNFO.LE,O) GO TO 245 
+C ISSUE NO PULSE IF NNAV AND NNAVS BOTH ,LE.O 
+IF ((NNAV.LE.O).AND,(NNAVS.LE.O)) GO TO 245 
+c WAVEFORM MORE SINUSSISAL AT HIGH FUNDAMENTAL FREQUENCY 
+NXBUP=(NNBGP*lOO)/NNFO 
+CALL SETABCCNNFGP,NXBGP,AGP,BGP,CGP) 
+CALL SETABC(O,NNBOS,AGS,BGS,CGS) 
+MNFGZ=-NNFOZ 
+IF (MNFGZ.GE.O) MNFOZ=-I 
+CALL SKTABC(MNFCZ,NNBCZ,ACZjRGZ,CCZ/ 
+c SET GAIN TO CONSTANT IN MIDiFREQUENCY BEG[ON FOR BGP 
+ASP=.00? 
+C DO NOT LET FO DROP BELOW HO HZ 
+IF (NNFO.LT.RO) NNFO=NO 
+C MAKE AMPLITUDE OF IMPULSE INCREASE WITH INCREASING FO 
+1MFULS:IMPULB*NNFO 
+C NUMBER OF SAMPLES BEFORE A NEW GLOTTAL PULSE MAY BE GENERATED 
+NPULSN:NNSR/NNFO 
+2N5 CONTINUE 
+C CONVERT INHERENTLY INTEGER PARAMS TO REAL COEFICIENTS 
+C(R7):NPULSN 
+RETURN 
+END 
+COEWAV.FOR D.H. KLATT 
+\"COEFiTO-WAVE\" TRANSFORMATION SUBROUTINE 
+(FOR A 16-BIT PDP-1] COMPUTER) 
+B1MULATION OF THE HARDWARE KLATT SYNTHEBIZER 
+TAKE 50 COEFZECZENTS FROM COMMON ARRAY C, AND 
+8/1/78 
+c SYNDHESIZE NEXT NNXWS SAMPLES OF THE OUTPUT WAVEFORM 
+C 
+SUBROUTINE œOEWAV(IWAVE,OUTMA) 
+IF [NPULSE.GT.O) GO TO 260 
+C AND IF NPULSN.GT.1 (I,E. 1F FO)O AND AV+AVS)O) 
+IF (NPULSN.LE.1) GO TO 260 
+C RESET PULSE COUNTER 
+NPULSE=NPULSN 
+C PULSE COUNTER FOR MODULATED NOISE 
+MPULSE=NPULSE/2 
+C SET AMPLITUDE OF NORMAL VOICING IMPULSE 
+1NPUT=IMPULS 
+c AMPLITUDE OF QUASI-SINUSIODAL VOICING 
+INPDTS=SINAMP 
+GO TO 275 
+C SET INPUT TO ZERO BETWEEN GLOTTAL IMPULSES 
+1NPDTS=O. 
+ RESONATOR RGP: 75 YGP:AGP\"INPUT + BGPYLGP1 + COP*YLGP2 
+YLOP2:YLGP1 
+YLGPI=YGR 
+ GLOTTAL ZERO PAIR RGZ: 90 YGZ=AGZ*YGP + BGZ*YLGZ1 + CGZmYLGZ2 
+YLGZ2=YLGZ1 
+YLG/I:YGP 
+C QUASI-SINUSOIDAL VOICTNG PRODUCED BY IMPULSE INTO RGP AND RGS: 
+YGS=INPUTS AOS + BGSmyLGS1 + CGS*YLGS2 
+993 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 
+=== PAGE 24 ===
+¾2P:A2\"A2PAR\"(UFRZC+UOLOT]/ + B2\"¾L21P *C2\"YL22P 
+¾L22?:¾L21P 
+YL21P:¾2P 
+Y}P:A3A3PAR\"(UFC+UGLOTll * 3*YL}IP *C3#YL32P 
+YL32P:¾L}lP 
+YL31P:Y3P 
+Allen, J. (1977). \"A Modular Audio Response System for 
+Computer Output,\" 1977 IEEE Int. Conf. on Acoust. Speech 
+and Signal Proc., Hartford, IEEE Catalog No. 77CHl197-3 
+ASSP, 579-581. 
+Caldwell, J. (1979). \"Flexible, High-Performance Speech 
+Synthesizer Using Custon NMOS Circuitry,\" J. Acoust. SOc. 
+Am. Suppl. 1 64, S72(A). 
+Carlson, R., Granstrom, B., and Klatt, D. H. (1979). \"Vowel 
+Perception: The Relative Perceptual Salience of Selected 
+Acoustic Manipulations,\" in Speech Transmission Labora- 
+tories QPSR 2-3/1979 (Royal Institute of Technology, Stock- 
+holm, Sweden). 
+Cooper, F. S., Liberman, A.M. and Borst, J. M. (1951). 
+\"The Interconversion of Audible and Visible Patterns as a 
+Basis for Research in the Perception of Speech,\" Proc. Natl. 
+Aced. Sci. (U.S.) 37, 318-325. 
+Dudley, H., Rtesz, R. R., and Watkins, S. A. (1939). \"A 
+Synthetic Speaker,\" J. Franklin Inst. 227, 739-764. 
+Dunn, H. K, and White, S. D. (1940). \"Statistical Measure- 
+ments on Conversational Speech,\" J. Acoust. Soc. Am. 11, 
+278-288. 
+Epstein, R. (1965). \"A Transistorized Formant-Type Syn- 
+thesizer,\" Status Report on Speech Research SR-1, part 7, 
+Haskins Labs. 
+Fant, C. G. M. (1956). \"On the Predictability of Formant 
+Levels and Spectrum Envelopes from Formant Frequencies,\" 
+in For Roman Jahobson (Mouton, The Hague), pp. 109-120. 
+Fant, C. G. M. (1959). \"Acoustic Analysis and Synthesis of 
+Speech with Applications to Swedish,\" Ericsson Technics 1, 
+1-106. 
+Fant, C. G. M. (1960). Acoustic Theory of Speech Production 
+(Mouton, The Hague). 
+Fant, C. G. M. and Martony, J. (1962). \"The Instrumentation 
+for Parametric Synthesis (OVE II]\" Speech Trans. Labs. 
+QPSR 18-24, Royal Inst. of Tech., Stockholm. 
+Flanaggn, J. L. (1957). \"Note on the design of Terminal Ana- 
+log Speech Synthesizers,\" J. Acoust. Soc. Am. 29, 306-310. 
+Fiehagan, J. L. (1958). \"Some Properties of the Glottal Sound 
+Source,\" J. Speech Hear. Res. 1, 99-116. 
+Flanagan, J. L., Coker, C. H., and Bird, C. M. (1_962). 
+\"Computer Simulation of a Formant Vocoder Synthesizer,\" 
+J. Acoust. Soc. Am. 35, 2003(A). 
+Fiehagan, J. L., Ishizaka, K. and ShipIcy, K. L. (1975). \"Syn- 
+thesis of Speech from a Dynamic Model of the Vocal Cords 
+994 J. Acoust. Soc. Am., Vol. 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesizer 994 
+=== PAGE 25 ===
+and Vocal Tract\" Bell System Tech. J. 54, 485--506. 
+French, N. R., and Steinberg, J. C. (1947). \"Factors Gov- 
+erning the Intelligibility of Speech Sounds,\" J. Acoust. Sec. 
+Am. 19, 90-].19. 
+Fujitours, O., and Lindqvist, J. (1971). \"Sweep-Tone Mea- 
+surements of Vocal Tract Characteristics,\" J. Acoust. Sec. 
+Am. 49, 541-558. 
+Fujimura, O. (1961). \"Analysis of Nasilized Vowels\", M. I. T. 
+Res. Lab. Electron. QPR 62, 191-192. 
+Fujimura, O., 0-962). \"Analysis of Nasal Consonants,\" J. 
+Acoust. Sec. Am. 34, 1865-1875. 
+Ganflirt, J., and Sundberg, J. (1974). \"An Attempt to Predict 
+the Masking Effect of Vowel Spectra,\" Speech Trans. Labs. 
+QPSH 4]74, Royal Inst. of Tech., 57-62. 
+Gold, B., and Rabiner, L.R., \"Analysis of Digital and Ana- 
+log Formant Synthesizers,\" IEEE Trans. Audio Electro- 
+acoust. AU-16, 81-94. 
+Holmes, J. N. 0-961). \"Research on Speech Synthesis Car- 
+ried out during a Visit to the Royal Institute of Technology, 
+Stockholm,\" Research Report JUll-4, Joint Speech Research 
+Unit, Eastcote, England. 
+Holmes, J. N. (1973). \"The Influence of the Glottal Waveform 
+on the Naturalhess of Speech From a Parallel Formant Syn- 
+thesizer,\" IEEE Trans. Audio Electroacoust. 298-305. 
+Holmes, J. N., Mattingly, I., and Shearme, J. (1964). 
+\"Speech Synthesis by Rule,\" Language Speech 7, 127-143. 
+Kaiser, J. F. (1966). \"Digital Filters,\" Chap. 7 in System 
+Aalysis by Digital Computer, edited by F. F. Kuo and J. F. 
+Kaiser (Wiley, New York}. 
+Klatt, D. H. (1972). \"Acoustic Theory of Terminal Analog 
+Speech Synthesis,\" Proc. 1972 Int. Conf. on Speech Commun- 
+ication and Processing, IEEE Catalog No. 72 CH0567-7 AE, 
+131-135. 
+Klatt, D. H. {1976a). \"Structure of a Phonelogical Rule Com- 
+penent for a Synthesis-by-Rule Program,\" IEEE Trans. 
+Acenat. Speech Signal Processes ASSP-24, 391-398. 
+Klat-t, D. H. 0-976b). \"A Digital Filter Bank for Spectral 
+Matching,\" Proc. IEEE fnt. Conf. on Acoustics, Speech and 
+Signal Processing, IEEE Catalog No. 76 CH1067-8 ASSP, 
+537-540. 
+Klatt, D. H. (1 preparation). Analysis and Synthesis of Con- 
+sonant-Vowel Syllables in English. 
+Lawrence, W. (1953). \"The Synthesis of Speech Item SignMs 
+which have a Low Information Rate,\" in Communication 
+Theory, edited by W. Jackson (Butterworths, London}, pp. 
+460-469. 
+Liljencrsnts, J. (1968). \"The OVE-III Speech Synthesizer,\" 
+IEEE Trans. Audio Electroacoust. AU-16, 137-140. 
+Makhoul, J. (1975). \"Spectral Linear Prediction: Properties 
+and Applications,\" IEEE Trans. Acoust. Speech Signal Pro- 
+cesses ASSlX-23, 283-296. 
+Markel, J. D., and Gray, A. H. (1976). Linear Prediction of 
+Speech (Springer-Verlag, New York}. 
+Rabiner, L. R., Jackson, L. B., Schafer, B. W., and Coker, 
+C. H. (1971). \"A Hardware Realization of a Digital Formant 
+Speech Synthesizer,\" IEEE Trans. Comm. Tech. COM-19, 
+1016-1070. 
+Scott, H. J., Glace, D. M., and Mattingly, I. G. (1966). \"A 
+Computer-Controlled On-Line Speech Synthesizer System,\" 
+].966 IEEE Int. Commun. Conf., Digest of Tech. Papers, 
+Philadelphia, 104-105. 
+Stevens, K. N. 0-971). \"Airflow and Turbulence Noise for 
+Fricative and Stop Consonants: Static Considerations,\" J. 
+Acoust. Soc. Am. 50, 1180-1192. 
+Stevens, K. N. (1972). \"The Quantal Nature of Speech: Evi- 
+dence form Articulatory-Acoustic Data,\" in Human Commun- 
+ication: A Inified View, edited by E. E. David and P. B. 
+Denes (McGraw-Hill, New York). 
+Stevens, K. N., and Klatt, D. H. (1972). \"Current Models of 
+Sound Sources for Speech,\" in Ventiiatory and Phonatory 
+Control Systems: An Interrational Symposium, edited by 
+B. D. Wyke (Oxford U.P., London), pp. 279-291. 
+Stevens, K. N., Bastide, R. P., and Smith, C. P. (1955). 
+\"Electrical Synthesizer of Continuous Speech, \"J. Acoust. 
+Sec. Am. 27, 207(A). 
+Tomlinson, R. S. (1974). \"SPASS-An improved Terminal An- 
+alog Speech Synthesizer,\" M.I.T. Research Lab. of Electron- 
+ics QPR 80, 198-205. 
+995 J. Acoust. SOc. Am., VoL 67, No. 3, March 1980 Dennis H. Klatt: Software for a formant synthesize 995 

@@ -1,0 +1,1348 @@
+{
+  "updated": "2026-10-28T01:16:26.854705",
+  "goal": "本轮软件与原生板级数字发布完成；整机物理及正式赛项验收未完成",
+  "goal_started_local": "2026-10-22T19:42:46+08:00",
+  "final_accepted": false,
+  "authoritative_acceptance": "FINAL_READINESS.json",
+  "production_release": {
+    "selector": "CURRENT_RELEASE.json",
+    "release": "pt8211_dvi_8994dbe5e358",
+    "scope": "V6 SRAM digital regression, Qt preset/record/replay and Flash verify/reload identity passed. PT8211 native only; no expansion programming."
+  },
+  "current_candidate": {
+    "release": "pt8211_dvi_8994dbe5e358",
+    "source_snapshot": "synth\\band\\release\\pt8211_dvi_8994dbe5e358\\source_snapshot",
+    "profile": "workstation-pt8211-dvi-v1",
+    "physical_programming_allowed": true,
+    "board_changed": true,
+    "scope": "SRAM and Flash verify/reload identity passed; no external peripherals or physical acceptance"
+  },
+  "current_candidate_evidence": {
+    "native_audit": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\native_v6_audit.json",
+    "sram_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_sram_hardware.json",
+    "host_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_host_hardware.json",
+    "flash_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\result.json",
+    "post_reload_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\post_reload_uart.json",
+    "gui_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\gui_startup.json"
+  },
+  "prior_serialregs_evidence": {
+    "scope": "以下是无DVI的serialregs融合版本，不能替代当前DVI完整整曲/满载/时序验收",
+    "internal_timing": {
+      "path": "evidence/combined_workstation_timing/006d0f90662f/result.json",
+      "sha256": "7cca34c5999c075e804e35c0996068799d7793c1d38d377eda492d6a7f770b2e",
+      "status": "passed_internal_timing_only",
+      "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance."
+    },
+    "song98s": {
+      "path": "evidence/workstation_render/bf1017bd575c_4704000frames.json",
+      "sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "song_metrics": {
+      "path": "evidence/workstation_render/serialregs_98s_metrics.json",
+      "sha256": "9ce7ca566dc9e25e9a6e54fe2912c2f59a352b3932e8ef45c66ee2b62880bf97",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "load60s": {
+      "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+      "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+      "status": "passed",
+      "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim"
+    },
+    "load_metrics": {
+      "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+      "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+      "status": "passed",
+      "scope": "Raw PCM metrics of current serialregs60s sustained256-slot simulation;no microphone,DVI/physical or independent-slot audibility claim."
+    }
+  },
+  "host_evidence": {
+    "path": "evidence/host_tests.json",
+    "sha256": "22ca555a89c662668fa8d615a12eb9d84213f784b97b719dbe0625b840c9f042",
+    "status": "passed",
+    "scope": "Current-source acceptance gate passed; 72 recorded host tests; unpacked archive replay pending"
+  },
+  "sessions": {},
+  "failed_predecessors": [
+    "evidence/combined_workstation_timing/1a8aa927cffc/result.json",
+    "evidence/combined_workstation_timing/1a8aa927cffc/negative_path_audit.json",
+    "evidence/dvi_output_timing/fa558983b238/result.json",
+    "evidence/combined_workstation_timing/be1fe1a74259/result.json"
+  ],
+  "delivery": {
+    "archive": "output/final_workstation_20261022/星群V5.30_完整源码与8192验证_整机待验收.zip",
+    "sha256": "2cffc21f8fb53fa0e602edf20fca218db0e037e4b11999849b78a43f5109ed2b",
+    "bytes": 127451238,
+    "file_count": 7506,
+    "fresh_validation": "57hosttests and baseline board UART/CRC/256capacity simulation passed from extracted archive",
+    "validation_record": "output/final_workstation_20261022/星群V5.30_完整源码与8192验证_整机待验收_源码复现校验.json",
+    "scope": "Engineering snapshot including timing blockers and current diagnostic4096/8192fixed-cadence spectra; not final workstation or physical acceptance"
+  },
+  "remaining": [
+    "Reviewed expansion CST/SDC and physical wiring",
+    "I2S DAC/clock/microphone and physical audio/display measurements",
+    "C3/Teensy module flashing, actual BLE pairing/USB-pad enumeration",
+    "Physical cold power cycle and thermal/endurance tests",
+    "Final official competition PDF and actual scoring review"
+  ],
+  "hardware_interface": "HARDWARE_INTERFACE.txt",
+  "reset_exception_scope": "experimental/audio_visual/dvi/RESET_CONSTRAINT_SCOPE.txt",
+  "historical_status": {
+    "path": "evidence/status_history/status_d9c07aa3227ce90e.json",
+    "sha256": "d9c07aa3227ce90e6a9fa784d16b1467069a7695c901698cad92437c3b8b50da",
+    "scope": "完整保留前序迭代记录，包含已被后续结果替代的当时状态"
+  },
+  "alternative_route": {
+    "build": "D:/StarclusterBuilds/combined_workstation_pnr_b8fac186a29f",
+    "status": "terminated_by_driver_timeout",
+    "source_and_constraints_identical": "evidence/combined_workstation_timing/b8fac186a29f/input_comparison.json",
+    "analysis": "evidence/combined_workstation_timing/b8fac186a29f/terminal_analysis.json"
+  },
+  "latest_isolated_optimization": {
+    "report": "evidence/vocoder_fanout/1505760470b3/decision.json",
+    "status": "not_adopted",
+    "scope": "扇出属性实验综合逻辑+317/寄存器+24，高负载控制网仍存在；未改演出源码，未宣称时序收益"
+  },
+  "dvi_short_load": {
+    "status": "passed",
+    "report": "evidence/workstation_dvi_load/20261026_090437/result.json",
+    "metrics": "evidence/workstation_dvi_load/20261026_090437/verified_metrics.json",
+    "scope": "No microphone/ADC input. Fixedpressurepatches,master4,collaborationoff. Not60sload,fullsong,routed timing orphysical acceptance. Source snapshot andexport manifest hashes checked."
+  },
+  "alternative_placement": {
+    "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_9d0b46f818ca",
+    "status": "failed_unrouted1783",
+    "input_comparison": "evidence/combined_workstation_timing/9d0b46f818ca/input_comparison.json"
+  },
+  "coeffmux_experiment": {
+    "status": "isolatedRTL_and_vendor_netlist_passed_not_adopted",
+    "report": "evidence/vocoder_coeffmux/b0b2563dabe7/result.json",
+    "resource_comparison": "evidence/synthesis_hierarchy/fbef0b848c42.json",
+    "netlist_report": "evidence/vocoder_netlist/d33167675134_20261026_094924/result.json",
+    "scope": "Not adopted;production andcurrentPnR sources unchanged. Isolated logic-148,FF-3,DSPsame;4096samples exact153cycles. No fulltop gain claim."
+  },
+  "audio_decision": {
+    "selected": "onboardPT8211",
+    "authorization": "用户：哪个好，哪个方便用哪个；按已有板卡及验证基线选择板载PT8211",
+    "scope": "完整乐队/歌手/FFT/DVI保留；未接麦克风/ADC/脚踏保留扩展模块，板级版本需明确禁用或指定接线",
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_dvi_confluence",
+    "simulation_report": "evidence/workstation_pt8211_dvi/20261026_104538/result.json",
+    "status": "joint_simulation_and_onboard_synthesis_passed_PnR_running",
+    "onboard_synthesis": "evidence/pt8211_onboard_synthesis/0cd05e391715/result.json",
+    "onboard_scope": "Known UART/PT8211/HDMI0 pins only;mic/ADC/pedal tiedidle inphysical shell;full expansion modules retained separately. Not finalfull-peripheral acceptance.",
+    "timing_report": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+    "verified": "3006decodedPT8211stereo frames equalPCM;DVI12000bits/lane;64.18mssimulation,no physical/fullsong/full-load claim"
+  },
+  "latest_board_readonly": {
+    "report": "evidence\\link_probe_20261026_110117.json",
+    "identity": {
+      "build_id": "0x57c8f7b5",
+      "capacity": 256,
+      "sample_rate": 48000
+    },
+    "requests": 10,
+    "valid_frames": 10,
+    "bad_crc": 0,
+    "scope": "Identity only;no playback,parameter orprogramming commands. Does not validate new candidate."
+  },
+  "historical_i2s_candidate": {
+    "current_candidate": {
+      "export": "output/final_workstation_20261022/offline_workstation_dvi_domains_confluence",
+      "source_snapshot": "D:/StarclusterBuilds/combined_workstation_syn_6d54c8c2b79f",
+      "profile": "workstation-i2s-dvi-v1",
+      "physical_programming_allowed": false,
+      "scope": "外部24.576MHz I2S+本地ADC/脚踏+歌手/声码器+FFT/DVI；未知外设引脚未填写"
+    },
+    "current_candidate_evidence": {
+      "full_chain": {
+        "path": "evidence/workstation_dvi/20261026_073747/result.json",
+        "sha256": "0f60d0d0d3b5d6df59238f77b8e5fcd52d3d72c5a2de0ee76fafbc80c44bf315",
+        "status": "passed",
+        "scope": "Actual exported band/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. No fullsong/full-load/PnR/physical claim."
+      },
+      "synthesis": {
+        "path": "evidence/combined_workstation_synthesis/6d54c8c2b79f/result.json",
+        "sha256": "042ae381b401855190552757a80942ee7b6edbe1689662d08ab56202b13bfb50",
+        "status": "passed_synthesis_only",
+        "scope": "Actual exported I2S/watchdog/band/ADC/pedal/mic/singer/HannFFT/frozen-display top synthesis only;no timing or physical acceptance"
+      },
+      "small_internal_timing": {
+        "path": "evidence/dvi_output_timing/84a5d66df9f9/result.json",
+        "sha256": "f98658f848beb14c5a7c2a2f6f5c77542e88bc4b7c6c2263917642f4d4daaaf9",
+        "status": "passed_internal_timing_only",
+        "scope": "Small clocked DVI boundary,officialHDMI0 pins and3 explicit related clocks;exception only on2 asynchronous reset-synchronizer CLEAR pins,not data/output paths. No fullband,external RGB input timing,physical display/jitter or programming acceptance."
+      },
+      "full_internal_timing": {
+        "path": "evidence/combined_workstation_timing/be1fe1a74259/result.json",
+        "sha256": "6b09c8cefbd3a73bd4aae1cc59a8d6c2628e22c03dfb35478829a1a70ebd01f1",
+        "status": "failed",
+        "scope": "216unrouted nets;nofinaltiming. Not accepted."
+      }
+    },
+    "current_synthesis_counts": {
+      "logic": 68607,
+      "ff": 39020,
+      "ram_primitives": 173,
+      "scope": "综合原语，不能当作布局布线物理资源"
+    },
+    "stopped_pipeline": {
+      "path": "evidence/dvi_pipeline/6d54c8c2b79f/result.json",
+      "reason": "原流程在小模块时序失败后停止；当前小模块已独立通过，整机默认布线8752已失败结束，仅route1会话15920运行中。"
+    }
+  },
+  "release_audit_tool": "tools/audit_pt8211_onboard.py;本版固定引脚和时序审计通过，旧自动IO报告被拒绝",
+  "current_synthesis_counts": {
+    "stage": "PnR physical resources",
+    "counts": {
+      "logic": 68247,
+      "ff": 35039,
+      "cls": 46032,
+      "ram": 244,
+      "dsp": 165
+    },
+    "release": "pt8211_dvi_8994dbe5e358"
+  },
+  "active_work": {
+    "classification": "progress_and_verified_wait",
+    "confirmed_live_sessions": [
+      51622,
+      78607,
+      11874,
+      55357
+    ],
+    "observed": "2026-10-26T15:57:15.795728",
+    "next": "Unoptimized shared PnR remains unchanged; centralized parameters must independently pass source-matched fulltop gates and prove resource savings."
+  },
+  "actual_loaded_candidate": {
+    "release": "pt8211_dvi_8994dbe5e358",
+    "build_id": 539365416,
+    "storage": "Flash vendor verify and JTAG reload identity passed; physical cold power cycle untested",
+    "evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\post_reload_uart.json"
+  },
+  "flash_progress": {
+    "status": "passed_vendor_verify_reload_and_UART_identity",
+    "evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\result.json",
+    "cold_power_cycle_verified": false,
+    "initial_failure": "C:/Users/Qzx/Documents/ChatGPT/FPGA/synth/band/evidence/flash_program_20261028_010933/result.json"
+  },
+  "latest_delivery": {
+    "archive": "D:\\StarclusterDeliveries\\20261027\\星群V5.35_完整源码上位机与长测中止记录_整机待验收.zip",
+    "bytes": 169713308,
+    "file_count": 8621,
+    "sha256": "b0fd4fb547b74461a0e06612d185f6e2fd619f5877d378b1e3b78d9a42d046a0",
+    "all_archived_hashes_verified": true,
+    "status": "archive_hashes_325_readiness_references_and_unpacked_source_replay_passed",
+    "replay_host_tests": 72,
+    "validation_record": "D:\\StarclusterDeliveries\\20261027\\星群V5.35_完整源码上位机与长测中止记录_整机待验收_源码复现校验.json",
+    "scope": "Complete engineering snapshot; early stopped endurance is not8h pass; final physical acceptance remains incomplete"
+  },
+  "seat_mapping_update": {
+    "scope": "host MIDI seats 1-4 independent learned mapping; legacy shared fallback; atomic local save and score persistence; no firmware change",
+    "files": [
+      "host/pad_mapping.py",
+      "host/app.py",
+      "host/score.py",
+      "tests/test_host.py"
+    ],
+    "hardware_verified": false
+  },
+  "midi_connection_update": {
+    "scope": "host callbacks and fake native-device failure tests only; real unplugging not tested",
+    "tests": "evidence/host_tests.json",
+    "firmware_changed": false
+  },
+  "physical_midi_inventory": {
+    "evidence": "evidence/midi_inventory_20261026.json",
+    "ports": [],
+    "scope": "read-only API scan; no MIDI opened; collected after V5.25 archive"
+  },
+  "optimization_trial": {
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_coeffmux_4604740fd333",
+    "build_id": 1174696975,
+    "baseline_release": "pt8211_dvi_620164a544d2",
+    "synthesis": "D:/StarclusterBuilds/pt8211_onboard_syn_2cbebb9d398e",
+    "chain": "evidence/workstation_pt8211_dvi/20261026_131403/result.json",
+    "module_gates": "evidence/pt8211_coeffmux/module_gates.json",
+    "changed_rtl": [
+      "filterbank.sv",
+      "build_identity.vh"
+    ],
+    "status": "rejected_failed_timing",
+    "limitations": "联合仿真麦克风输入固定空闲；独立声码器数值与网表测试另有精确源码证据。整机资源/时序/实物效果未证明。",
+    "last_observation": {
+      "time": "2026-10-26T13:52:38.280437",
+      "classification": "verified_wait",
+      "confirmed_live_sessions": [
+        33096,
+        8462
+      ],
+      "release_changed": false
+    },
+    "synthesis_status": "passed_synthesis_only",
+    "resource_comparison": "evidence/synthesis_hierarchy/395177cff539.json",
+    "resource_delta": {
+      "logic_primitives": -94,
+      "ff": -1,
+      "ram_primitive_change": false,
+      "multiplier_primitive_change": false,
+      "physical_usage_proven": false
+    },
+    "chain_status": "passed",
+    "pnr": "D:/StarclusterBuilds/pt8211_onboard_pnr_9d80b0773f4c",
+    "setup_violations": 0,
+    "hold_violations": 59,
+    "diagnosis": "evidence/pt8211_coeffmux/timing_diagnosis.json",
+    "production_adopted": false
+  },
+  "onboard_controls": {
+    "path": "experimental/audio_visual/onboard_controls",
+    "status": "old unmodified-reset experiment failed routing:320 unrouted nets; replaced by reset-release candidate",
+    "next": "验证按键逻辑与18管脚整机时序；确认实际板版本，SRAM验证后再考虑Flash",
+    "current_release_changed": false,
+    "test": "evidence/onboard_controls/20261026_132505/result.json",
+    "synthesis": "D:/StarclusterBuilds/pt8211_onboard_syn_6bd7ec32b1b1",
+    "release_limit": "Experimental synthesis retains baseline build identity for resource exploration only. Before release assign distinct build ID and repeat exact-source release gates. No programming.",
+    "default_debounce_test": "evidence/button_default/result.json",
+    "pin_profile_selftest": "evidence/onboard_pin_profiles/result.json",
+    "pin_audit_scope": "23 unsafe synthetic pin profiles rejected; actual18pin report not yet available",
+    "pnr": "D:/StarclusterBuilds/pt8211_onboard_pnr_47394a5b7937",
+    "comparison": "evidence/synthesis_hierarchy/7feda917eec3.json",
+    "resource_delta": {
+      "logic_primitives": 190,
+      "ff": 74,
+      "ram_and_multiplier_primitives": "unchanged"
+    },
+    "constraints": "14commands:11 baseline plus3 async input-to-first-D falsepaths; matching/activation pending final timing report",
+    "release_guard": "prepare_pt8211_release.py requires matching synthesis/timing top and controls profile, source hashes, clean pin/timing audit and distinct ID from differently shelled released builds; syntax checked only, final success path awaits real reports"
+  },
+  "reset_release_candidate": {
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_reset_release",
+    "build_id": 2874385776,
+    "synthesis": "D:/StarclusterBuilds/pt8211_onboard_syn_cf4bf042663d",
+    "chain": "evidence/workstation_pt8211_dvi/20261026_135929/result.json",
+    "controls_chain": "evidence/onboard_controls/20261026_135929/result.json",
+    "status": "passed_timing_pins_SRAMload_song_GUI_Flashautoplay;physical_acceptance_incomplete",
+    "change": "pcm_snapshot/spectrum_snapshot/pcm_spectrum use asynchronous-assert synchronous-release reset registers without raw rst bypass",
+    "coefficient_optimization_included": false,
+    "unit_tests": [
+      "evidence/pcm_snapshot/result.json",
+      "evidence/spectrum_snapshot/result.json",
+      "evidence/pcm_spectrum/2048/result.json",
+      "evidence/buffered_spectrum/result.json"
+    ],
+    "limitations": "Flash and CURRENT_RELEASE remain previous version. Physical buttons/analog/display not accepted. Core generic clock-routing warning retained.",
+    "controls_chain_status": "passed_accelerated_debounce_fulltop",
+    "last_observation": {
+      "time": "2026-10-26T14:36:47.334126",
+      "confirmed_live_sessions": [
+        15505,
+        8462
+      ],
+      "classification": "verified_wait",
+      "phase": "routing phase1 at70percent; no final timing yet"
+    },
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/e0459ec50503.json",
+    "primitive_counts": {
+      "logic": 66445,
+      "ff": 37209,
+      "ram_and_multiplier_change": "unchanged versus old controls synthesis",
+      "physical_usage_proven": false
+    },
+    "chain_status": "passed",
+    "pnr": "D:/StarclusterBuilds/pt8211_onboard_pnr_5150087010ce",
+    "release": "release/pt8211_dvi_59c963cc2112",
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "fmax_mhz": 50.883,
+    "physical_resources": {
+      "logic": 66853,
+      "ff": 37209,
+      "cls": 46643,
+      "ram": 245,
+      "dsp": 168
+    },
+    "sram_program": "evidence/program_20261026_144152",
+    "hardware_test": "evidence/hardware_pt8211_controls_20261026.json",
+    "hardware_status": "passed_digital_only",
+    "maximum_stress_cycles": 966,
+    "singer_health_checks": 151,
+    "crc_errors": 0,
+    "resource_comparison": "evidence/pt8211_onboard_timing/5150087010ce/resource_comparison.json"
+  },
+  "sram_launcher_fix": {
+    "evidence": "evidence/sram_launcher_20261026/result.json",
+    "status": "passed_offline_selected_release_preflight",
+    "change": "Root SRAM launcher now uses selected-release hash/snapshot preflight and bounded band loader; legacy aurora path removed; no programming performed."
+  },
+  "shared_voice_experiment": {
+    "path": "experimental/shared_voices",
+    "status": "passed_synthesis_actualsharedhierarchy_shortPTDVI_andbuttons;fixedpinPNRrunning",
+    "evidence": "evidence/shared_bank_dispatch/20261026_150523/result.json",
+    "production_adopted": false,
+    "next": "Wait actual routed setup/hold and18pin/14constraint audit. If clean freeze release and SRAM single-part256 load + song/GUI. Physical controls still pending operator.",
+    "bank_evidence": "evidence/shared_voice_bank/20261026_150738/result.json",
+    "core_evidence": "evidence/shared_singer_core/20261026_152300/result.json",
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_shared_c38c151eeea4",
+    "build_id": 3280737566,
+    "synthesis": "D:/StarclusterBuilds/pt8211_onboard_syn_6c7e16e226f6",
+    "fullchain": "evidence/workstation_pt8211_dvi/20261026_152350/result.json",
+    "rejected_export": "offline_workstation_pt8211_shared_124aa1aed486:unreachable shared core;not shared capacity evidence",
+    "buttons": "evidence/onboard_controls/20261026_152350/result.json",
+    "button_status": "passed accelerated-debounce actual corrected fulltop simulation; not physical button acceptance",
+    "hardware_test_prepared": {
+      "tool": "tools/hardware_check.py --single-part-load",
+      "negative_guard": "evidence/shared_load_guard/result.json",
+      "status": "old quota release rejected before USB; positive hardware run pending new release",
+      "scope": "256 identities on part7;32repeated pitches, not256spectral peaks or acoustic proof"
+    },
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/abe2248ebd34.json",
+    "netlist_hierarchy": "evidence/shared_voice_trial/c38c151eeea4/netlist_hierarchy.json",
+    "primitive_counts": {
+      "logic": 86791,
+      "ff": 42159,
+      "logic_delta_vs_current": 20346,
+      "ff_delta_vs_current": 4950,
+      "MULT27X36_delta": 7,
+      "physical_usage_proven": false
+    },
+    "fullchain_status": "passed64.1796ms_simulation_only",
+    "pnr": "D:/StarclusterBuilds/pt8211_onboard_pnr_469379442cc4",
+    "resource_attribution": "evidence/shared_voice_trial/c38c151eeea4/resource_attribution.json",
+    "optimization_observation": "Shared dispatcher238logic/169FF; representative universal bank direct3236logic/1158FF vsquota375logic/138FF. Prioritize role-parameter replication after routed evidence; synthesis movement/merging prevents isolated causal claims."
+  },
+  "button_observer": {
+    "tool": "tools/observe_onboard_buttons.py",
+    "status": "syntax_and_help_checked_only;not_run_on_board",
+    "operator_request": "User deferred physical button acceptance; continue software",
+    "scope": "Identity/status queries only;operator-assisted transport transitions,not raw GPIO/electrical/audio proof"
+  },
+  "central_parameter_experiment": {
+    "path": "experimental/shared_voices/central_parameters",
+    "status": "selected board release;SRAM,Flash verify,reload autoplay and synthetic GUI passed",
+    "proof": "evidence/central_parameters/20261026_155430/result.json",
+    "export": "output/final_workstation_20261022/offline_workstation_pt8211_central_2c13b385c9c4",
+    "build_id": 739488645,
+    "synthesis": "D:/StarclusterBuilds/pt8211_onboard_syn_4cbf8afe3fd4",
+    "chain": "evidence/workstation_pt8211_dvi/20261026_155623/result.json",
+    "buttons": "evidence/onboard_controls/20261026_155623/result.json",
+    "production_adopted": true,
+    "resource_savings_proven": false,
+    "synthesis_resource_comparison": "evidence/synthesis_hierarchy/061aead064d5.json",
+    "synthesized_logic": 74568,
+    "synthesized_ff": 38402,
+    "logic_saved_vs_shared": 12223,
+    "ff_saved_vs_shared": 3757,
+    "physical_resource_savings_proven": true,
+    "netlist_hierarchy": "evidence\\central_parameters_trial\\2c13b385c9c4\\netlist_hierarchy.json",
+    "pnr": "D:/StarclusterBuilds/pt8211_onboard_pnr_e9fc0f6e32a3",
+    "release": "pt8211_dvi_062a944dcce1",
+    "physical_resources": {
+      "logic": 75030,
+      "ff": 38402,
+      "cls": 50993,
+      "ram": 252,
+      "dsp": 182
+    },
+    "physical_resource_delta": {
+      "logic": -13093,
+      "ff": -3757,
+      "cls": -6682,
+      "ram": 0,
+      "dsp": 0
+    },
+    "resource_comparison": "evidence/central_parameters_trial/2c13b385c9c4/physical_resource_comparison.json",
+    "hardware": "evidence/hardware_central256_20261026.json",
+    "max_cycles": 966,
+    "collaboration": "evidence/hardware_ensemble_central256_20261026.json",
+    "sram_release": "pt8211_dvi_062a944dcce1",
+    "flash_release": "pt8211_dvi_062a944dcce1",
+    "collaboration_status": "passed",
+    "flash_program": "evidence/flash_program_20261026_163031",
+    "flash_status": "verified_autoplay_passed",
+    "cleanup": "evidence/post_flash_central256_cleanup_20261026.json",
+    "slew_proof": "evidence/central_parameters_slew/20261026_164340/result.json",
+    "slew_scope": "256exactstereo/controlframes;expression50 andbend218 convergence;not acoustic/fullsong proof"
+  },
+  "shared_load_guard": {
+    "status": "passed5offlinechecks",
+    "report": "evidence/shared_load_guard/central_support.json",
+    "scope": "No USB or board load"
+  },
+  "shared_voice_experiment_update": {
+    "status": "passed real-board60s single-role256load,96s song and synthetic-seat GUI collaboration",
+    "release": "pt8211_dvi_28521f33cc41",
+    "build_id": 3280737566,
+    "program": "evidence/program_20261026_161003",
+    "hardware": "evidence/hardware_shared256_20261026.json",
+    "flash_unchanged": "pt8211_dvi_59c963cc2112",
+    "max_cycles": 966,
+    "health_checks": 151,
+    "crc_errors": 0,
+    "collaboration": "evidence/hardware_ensemble_shared256_20261026.json",
+    "scope": "Digital silent test,32 repeated pitches;not acoustic/spectral/physical seats acceptance",
+    "collaboration_status": "passed",
+    "cleanup": "evidence/post_shared256_cleanup_20261026.json"
+  },
+  "current_production_release": {
+    "release": "pt8211_dvi_8994dbe5e358",
+    "build_id": 539365416,
+    "bitstream_sha256": "8994dbe5e35872febf572bb4d30732f91e3a653c3beffe92f830251103897f3b",
+    "selected": "2026-10-28T01:14:42.423687",
+    "release_gate": "passed_native_setup_hold_pulse_pins_SRAM_and_Flash_verify",
+    "hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_sram_hardware.json",
+    "host_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_host_hardware.json",
+    "flash_evidence": "synth/band/evidence/flash_program_20261028_011113/result.json",
+    "post_reload_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\post_reload_uart.json",
+    "flash_release": "pt8211_dvi_8994dbe5e358",
+    "physical_resources": {
+      "logic": 68247,
+      "ff": 35039,
+      "cls": 46032,
+      "ram": 244,
+      "dsp": 165
+    },
+    "board_status": "V6 real-board digital 256slots,96s song,4 families,Qt record/save/replay passed",
+    "storage": "Flash vendor verify and JTAG reload identity passed; physical cold power cycle untested",
+    "post_test_state": "Stopped/zero voices read back;master0 sent;no gain readback",
+    "physical_interface": "PT8211+HDMI0/DVI+S0/S1/S2;external microphone/ADC/pedal unconnected",
+    "physical_buttons_verified": false,
+    "final_accepted": false,
+    "serial_transport": {
+      "guard_zero_bytes": 64,
+      "max_batch_per_5ms": 4
+    },
+    "previous_selector": "synth/band/evidence/v6_selection_20261028/CURRENT_RELEASE.json"
+  },
+  "current_endurance_test": {
+    "status": "not_run_for_V6",
+    "scope": "Short targeted tests only; previous release one-hour result does not apply to V6"
+  },
+  "shared_export_gap": {
+    "identified": "2026-10-26T16:47:58.347499",
+    "status": "Shared arbitrary-score exporter implemented and simulation passed; physical timing failed; not released",
+    "scope": "Explicit shared editor/CLI export preserves role defaults; default older quota export remains separate; new export not board accepted",
+    "current_score_patches": {
+      "15": {
+        "0": 80
+      }
+    },
+    "current_score_singer_preset_preserved": true,
+    "board_reprogramming_deferred_during_endurance": true,
+    "proof": "evidence/shared_export/20261026_165008/result.json",
+    "tool": "host/offline_shared.py",
+    "board_reprogrammed": false,
+    "host_tests": "54passed; source/constraint pairing and pulse gates included",
+    "fullchain_status": "passed3006stereo_frames12000bits_per_DVI_lane",
+    "fullchain_session": 27411,
+    "fullchain_report": "evidence/workstation_pt8211_dvi/20261026_165237/result.json",
+    "last_delivered_archive_contains_change": false,
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_session": 27676,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_b8171614cf57",
+    "button_status": "passed_simulation_only",
+    "button_session": 90506,
+    "button_report": "evidence/onboard_controls/20261026_170211/result.json",
+    "archivable_export": "output\\final_workstation_20261022\\offline_workstation_shared_custom_f43876353823",
+    "export_build_id": 3347439326,
+    "netlist_hierarchy": "evidence/shared_export/20261026_165008/netlist_hierarchy.json",
+    "pnr_status": "failed2setup0hold",
+    "pnr_session": 19539,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_df360eb47b57",
+    "timing_failure": "evidence/shared_export/20261026_165008/timing_failure.json",
+    "next_work": "Review serializer reset release implementation and negative pulse-width report;preserve constraints;no candidate programming"
+  },
+  "pulse_width_repair": {
+    "status": "failed_explicit_BUFG_trial",
+    "session_id": 92659,
+    "build": "D:/StarclusterBuilds/pt8211_onboard_pnr_2cfe58afcfc7",
+    "basis": "Installed Gowin SUG1018-1.7E section2.7",
+    "scope": "Same source netlist/frequency/SDC/pins;only explicit serial BUFG route. Baseline already lists PRIMARY and HCLK;this experiment may not improve pulse slack. Must inspect actual result,not assume correction.",
+    "board_changed": false,
+    "result": "evidence/pt8211_onboard_timing/2cfe58afcfc7/result.json",
+    "setup_violations": 2,
+    "hold_violations": 0,
+    "pulse_width_violations": 6,
+    "next_work": "Investigate PLL fractional output and serializer reset timing; preserve all gates; no programming"
+  },
+  "integer_clock_trial": {
+    "status": "failed_timing",
+    "export": "output/final_workstation_20261022/offline_workstation_integer_clock_e80bd58ae490",
+    "model_proof": "evidence/gowin_video_clock/20261026_175417/result.json",
+    "serial_mhz": 126.04166666666667,
+    "pixel_mhz": 25.208333333333332,
+    "chain_session": 99902,
+    "buttons_session": 54079,
+    "synthesis_session": 44385,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_48841564264d",
+    "pnr_required_flag": "--integer-output-clock",
+    "scope": "Experimental PLL integer output divider; exact source bound timing constraints; no board or physical timing acceptance",
+    "board_changed": false,
+    "button_status": "passed_simulation_only",
+    "button_report": "evidence/onboard_controls/20261026_175546/result.json",
+    "release_gate_changes": "PLL profile/hash and clock table pairing; actual setup/hold and pulse report recheck before programming",
+    "synthesis_status": "passed_synthesis_only",
+    "netlist_clock_proof": "synth\\band\\evidence\\integer_clock_trial\\e80bd58ae490\\netlist_clock.json",
+    "chain_status": "passed_short_fullchain_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_175546/result.json",
+    "pnr_session": 35119,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_967ffc6b74ed",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/389f92837499.json",
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "pulse_width_violations": 6,
+    "report": "synth\\band\\evidence\\pt8211_onboard_timing\\967ffc6b74ed\\result.json"
+  },
+  "shared_core_song_render": {
+    "status": "failed_wrong_score_fixture",
+    "session_id": 88387,
+    "build": "D:/StarclusterBuilds/singer_render_d75060cfbe63",
+    "export": "output/final_workstation_20261022/offline_workstation_integer_clock_e80bd58ae490",
+    "seconds": 96,
+    "scope": "Exact exported band_singer_core full clock, synthetic microphone, driver overrides master64 wet24 tempo120 singer_mix127; no board/display/physical audio or saved mixer preset acceptance",
+    "initial_compile_failure": "8c0ec80a786d: ROM simulation startup delay required explicit timing mode; ROM contract checked and no-timing used as existing full-clock renderer",
+    "report": "synth\\band\\evidence\\singer_render\\d75060cfbe63_96s.json",
+    "executable_sha256": "7e216b077ca590a4c624a0fd07151380f10d8615ea02124f2a9fcbef6c431c47",
+    "diagnosis": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\singer_render\\wrong_score_diagnosis_20261026.json",
+    "returncode": 6
+  },
+  "pixel_reset_trial": {
+    "status": "failed_timing",
+    "source": "synth\\band\\experimental\\audio_visual\\clock_trials\\pixel_reset",
+    "scope": "Pixel-domain release replaces serial fabric registers; all OSER recovery/removal still require timing; not released",
+    "export": "output/final_workstation_20261022/offline_workstation_pixel_reset_9bc4e8acac49",
+    "model_report": "evidence/gowin_dvi_clocked/20261026_182431/result.json",
+    "chain_session": 66398,
+    "button_session": 56872,
+    "synthesis_session": 43177,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_1926cb9868d1",
+    "pnr_flag": "--pixel-reset",
+    "board_changed": false,
+    "synthesis_status": "passed_synthesis_only",
+    "button_status": "passed_simulation_only",
+    "button_report": "evidence/onboard_controls/20261026_182512/result.json",
+    "netlist_proof": "synth\\band\\evidence\\pixel_reset_trial\\9bc4e8acac49\\netlist_reset.json",
+    "chain_status": "passed_short_fullchain_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_182512/result.json",
+    "pnr_session": 16239,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_dabdf6aa59f5",
+    "setup_violations": 0,
+    "hold_violations": 3,
+    "pulse_width_violations": 0,
+    "timing_report": "evidence/pt8211_onboard_timing/dabdf6aa59f5/result.json",
+    "next_work": "Locate and repair three hold/removal paths; no programming",
+    "failure_diagnosis": "synth\\band\\evidence\\pixel_reset_trial\\9bc4e8acac49\\removal_failure.json"
+  },
+  "pixel_falling_trial": {
+    "status": "failed_timing",
+    "export": "output/final_workstation_20261022/offline_workstation_pixel_falling_db7d6577285a",
+    "model_report": "evidence/gowin_dvi_clocked/20261026_185903/result.json",
+    "chain_session": 66852,
+    "button_session": 66740,
+    "synthesis_session": 18113,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_5e4f2b059569",
+    "pnr_flag": "--pixel-reset",
+    "board_changed": false,
+    "button_status": "passed_simulation_only",
+    "button_report": "evidence/onboard_controls/20261026_185937/result.json",
+    "synthesis_status": "passed_synthesis_only",
+    "netlist_proof": "synth\\band\\evidence\\pixel_falling_trial\\db7d6577285a\\netlist_reset.json",
+    "chain_status": "passed_short_fullchain_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_185937/result.json",
+    "pnr_session": 48192,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_30f67dbd230f",
+    "setup_violations": 0,
+    "hold_violations": 3,
+    "pulse_width_violations": 0,
+    "timing_report": "evidence/pt8211_onboard_timing/30f67dbd230f/result.json"
+  },
+  "route_quality_trial": {
+    "status": "running",
+    "session_id": 24704,
+    "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_de1ae349b1ef",
+    "baseline": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_30f67dbd230f",
+    "unchanged": [
+      "frozen netlist",
+      "SDC",
+      "CST"
+    ],
+    "changes": [
+      "route_option1",
+      "correct_hold_violation1 explicit"
+    ],
+    "reference": "Installed SUG100-4.4.6E p39; SUG1220-2.0E route_option/correct_hold_violation",
+    "scope": "Physical routing experiment only; no relaxed constraint or programming"
+  },
+  "acceptance_shared_song_render": {
+    "status": "running",
+    "session_id": 53615,
+    "export": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026",
+    "seconds": 96,
+    "scope": "Correct singer score; full-clock core only, synthetic microphone, not physical audio or final integrated board timing",
+    "build": "D:/StarclusterBuilds/singer_render_54a917663812",
+    "report": "synth/band/evidence/singer_render/54a917663812_96s.json",
+    "score_memory_audit": "evidence/singer_render/acceptance_score_memory_20261026.json",
+    "score_memory_negative_check": "evidence/singer_render/score_memory_negative_20261026.json"
+  },
+  "diagnostic_spectrum_reaudit": {
+    "report": "evidence/pool_spectrum_reaudit_20261026.json",
+    "finding": "Raw spectra reproduced; old4096/8192sources stale;37888diverse source hashes current, but no board/fixed-cadence/full-band claim",
+    "current_4096_session": 95651,
+    "current_4096_report": "evidence/pool4096_diverse_verilated.json",
+    "status": "fixed_cadence4096_and8192_passed",
+    "current_4096_status": "passed4096peaks135168frames518maxcycles",
+    "scope": "Current diagnostic RTL only; not fixed-cadence/board/full-band acceptance",
+    "current_8192_session": 38931,
+    "current_8192_report": "evidence/pool8192_diverse_verilated.json",
+    "current_8192_status": "passed8192peaks135168frames518maxcycles",
+    "clocked_4096_session": 74257,
+    "clocked_4096_report": "evidence/pool_clocked_e39dfdaa1d7c.json",
+    "clocked_4096_status": "passed135168frames520maxlatency4096peaks",
+    "clocked_8192_session": 45977,
+    "clocked_8192_report": "evidence/pool_clocked_b685184d0709.json",
+    "clocked_4096_pcm_equals_continuous_driver": true,
+    "clocked_8192_status": "passed135168frames520maxlatency8192peaks",
+    "clocked_8192_pcm_equals_continuous_driver": true
+  },
+  "four_engine_vocoder_experiment": {
+    "status": "failed_vendor_netlist",
+    "filterbank_report": "evidence/filterbank_four_engines/20261026_202623/result.json",
+    "candidate": "experimental/vocoder/four_engines/cf7cf45ddad7",
+    "filterbank_max_cycles": 486,
+    "fullcore_session": 81783,
+    "fullcore_report": "evidence/vocoder_four_engines/730360287a46/result.json",
+    "scope": "Experimental resource optimization; no selected-source/board change, no physical resource or timing claim",
+    "fullcore_max_cycles": 519,
+    "netlist_report": "evidence/vocoder_netlist/17adb2724c58_20261026_203046/result.json",
+    "failure": "sample2 got00bb0c expected0 despite RTL pass; not eligible for integration",
+    "isolated_comparison": "evidence/synthesis_hierarchy/6392844a00c0.json",
+    "next_work": "Investigate dynamic coefficient indexing; no board/source promotion"
+  },
+  "four_engine_flat_coefficient_trial": {
+    "status": "failed_vendor_netlist_same_sample2",
+    "scope": "Diagnostic change from2D to1D coefficient holding array only; hypothesis about vendor indexing, not proven fix",
+    "filterbank_report": "evidence/filterbank_four_engines/20261026_203318/result.json",
+    "session_id": 13591,
+    "report": "evidence/vocoder_four_engines/c6cdeed0c0d4/result.json",
+    "board_changed": false,
+    "netlist_session": 69573,
+    "netlist_report": "evidence/vocoder_netlist/9ce1ce5fedd0_20261026_203719/result.json",
+    "diagnosis_session": 20386,
+    "diagnosis_report": "evidence/vocoder_four_diagnosis/20261026_204032/result.json",
+    "finding": "Flattening coefficient holding registers did not change failure; no promotion"
+  },
+  "four_engine_static_selector_trial": {
+    "status": "failed_vendor_netlist",
+    "filterbank_report": "evidence/filterbank_four_engines/20261026_204457/result.json",
+    "session_id": 88267,
+    "report": "evidence/vocoder_four_engines/cf21fed585f1/result.json",
+    "diagnosis": "Prior netlist carrier outputs diverged at sample0 before mixer; replace variable index input selection and result writes with statically indexed selections",
+    "board_changed": false,
+    "scope": "Isolated candidate, not netlist or integration accepted",
+    "netlist_session": 70080,
+    "netlist_report": "evidence/vocoder_netlist/5f3ae8656bb7_20261026_204900/result.json",
+    "failure": "sample1 gotfffffe expected0; not eligible for integration",
+    "diagnosis_session": 78666,
+    "diagnosis_report": "evidence/vocoder_four_diagnosis/20261026_205206/result.json"
+  },
+  "reset_min_delay_trial": {
+    "status": "not_release_accepted_missing_native_reset_coverage",
+    "session_id": 4019,
+    "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_f66680365bc4",
+    "report": "evidence/pt8211_onboard_timing/f66680365bc4/result.json",
+    "unchanged": {
+      "board.cst": true,
+      "impl/gwsynthesis/pt8211_onboard.vg": true
+    },
+    "additional_constraints": [
+      "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}]",
+      "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}]",
+      "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}]"
+    ],
+    "scope": "Targeted1ns reset min bound;must inspect actual constraints/native recovery/removal before any release",
+    "review": "evidence\\pt8211_onboard_timing\\f66680365bc4\\reset_coverage_review.json",
+    "reported_setup_hold_pulse": [
+      0,
+      0,
+      0
+    ],
+    "finding": "All three targeted constraints report no paths in exception sections. Summary zero cannot prove native OSER recovery/removal. Existing release gate remains closed."
+  },
+  "four_engine_unrolled_trial": {
+    "status": "passed_RTL4096_synthesis_vendor_netlist320_and_exported_core64frames",
+    "filterbank_report": "evidence/filterbank_four_engines/20261026_205606/result.json",
+    "session_id": 87832,
+    "report": "evidence/vocoder_four_engines/f890f9df40ce/result.json",
+    "change": "Explicit four instances, constant input indices, constant result destinations; preserve numerical and scheduler behavior",
+    "scope": "Isolated diagnostic candidate, not netlist/integration/physical accepted",
+    "board_changed": false,
+    "netlist_session": 90652,
+    "netlist_report": "evidence/vocoder_netlist/f98747e0a290_20261026_205900/result.json",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/e30f64d685b1.json",
+    "integration": {
+      "status": "passed_RTL_only",
+      "report": "evidence/shared_singer_core/20261026_211651/result.json",
+      "frames": 64,
+      "shared_slots": 256,
+      "dedicated_singer": true,
+      "maxcycles": 966,
+      "scope": "Actual exported central-role core with candidate vocoder; controls, identity, tails, source loss, panic; not full song or physical timing"
+    },
+    "portable_replay": {
+      "status": "passed",
+      "report": "evidence\\portable_vocoder_replay\\20261026_212742\\replay_result.json",
+      "driver_sha256": "a2309f7e438616d60a42b6f5b632470bc96d08337bacf75899c7d3604cc0c091",
+      "scope": "Packaged source4096 sample replay from a separate directory; no external synthesis build paths read"
+    }
+  },
+  "pixel_global_clock_trial": {
+    "status": "failed_timing",
+    "session_id": 87742,
+    "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_a8cc105c1690",
+    "report": "evidence/pt8211_onboard_timing/a8cc105c1690/result.json",
+    "unchanged": {
+      "board.sdc": true,
+      "impl/gwsynthesis/pt8211_onboard.vg": true
+    },
+    "scope": "Only pixel BUFG physical constraint added; native recovery/removal retained; no programming",
+    "setup_violations": 0,
+    "hold_violations": 3,
+    "pulse_width_violations": 0
+  },
+  "four_engine_workstation_trial": {
+    "status": "fullchain_synthesis_and100s_core_render_passed_native_timing_failed",
+    "export": "output/final_workstation_20261022/offline_workstation_four_engine_dc2667ea8098",
+    "preparation": "evidence/four_engine_workstation/dc2667ea8098/preparation.json",
+    "chain_session": 31345,
+    "buttons_session": 27091,
+    "synthesis_session": 92365,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_9c92ded4e4fe",
+    "scope": "Four-engine candidate:100s full-clock band_singer_core render passed; whole-top timing9ec62ce73630 still has3hold violations; physical audio unverified.",
+    "board_changed": false,
+    "buttons_report": "evidence/onboard_controls/20261026_212230/result.json",
+    "buttons_status": "passed_simulation_only",
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_report": "evidence/pt8211_onboard_synthesis/9c92ded4e4fe/result.json",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/b67ec7e71c0e.json",
+    "synthesized_logic": 68950,
+    "synthesized_ff": 37951,
+    "physical_resources_verified": false,
+    "song_render": {
+      "status": "passed_core_RTL_only",
+      "session_id": 87745,
+      "build": "D:/StarclusterBuilds/singer_render_bbec32c408f6",
+      "expected_report": "evidence/singer_render/bbec32c408f6_100s.json",
+      "seconds": 100,
+      "scope": "Full96s score plus4s tail, full-clock core, synthetic microphone; no physical audio claim",
+      "post_completion_checks": [
+        "tools/analyze_singer_render.py",
+        "tools/compare_completed_singer_renders.py against54a917663812_96s.json"
+      ],
+      "report": "evidence/singer_render/bbec32c408f6_100s.json",
+      "metrics": "evidence/singer_render/bbec32c408f6_100s_audio_metrics.json",
+      "comparison": "evidence/singer_render/bbec32c408f6_100s_prefix_comparison.json",
+      "frames": 4800000,
+      "clips": 0,
+      "singer_dropped": 0,
+      "deadline": 0,
+      "max_latency_clocks": 646,
+      "last_100ms_peak": 1,
+      "final_stereo": [
+        0,
+        0
+      ],
+      "final_second_all_zero": false
+    },
+    "chain_status": "passed_simulation_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_212231/result.json",
+    "pnr_session": 22190,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_9ec62ce73630",
+    "pnr_report": "evidence/pt8211_onboard_timing/9ec62ce73630/result.json",
+    "pnr_result": {
+      "status": "failed_timing",
+      "setup_violations": 0,
+      "hold_violations": 3,
+      "pulse_width_violations": 0
+    },
+    "physical_resource_measurement": {
+      "logic": 69416,
+      "ff": 37951,
+      "cls": 48633,
+      "ram": 252,
+      "dsp": 158,
+      "report": "evidence/pt8211_onboard_timing/9ec62ce73630/physical_resources.json",
+      "scope": "Routed resources measured while3reset hold violations remain; not release accepted"
+    }
+  },
+  "correct_singer_song_completed": {
+    "status": "passed_core_RTL_only",
+    "report": "evidence/singer_render/54a917663812_96s.json",
+    "metrics": "evidence/singer_render/54a917663812_96s_audio_metrics.json",
+    "frames": 4608000,
+    "clips": 0,
+    "deadline": 0,
+    "singer_dropped": 0,
+    "scope": "Previous central shared core, synthetic microphone, driver mixer overrides; not four-engine candidate or physical sound",
+    "tail_followup": "96s ends with nonzero audio; candidate100s render to include4s tail"
+  },
+  "pixel_reset_quality_route_completed": {
+    "status": "failed_timing",
+    "setup_violations": 11,
+    "hold_violations": 3,
+    "pulse_width_violations": 0,
+    "report": "evidence/pt8211_onboard_timing/de1ae349b1ef/result.json"
+  },
+  "cached_lead_trial": {
+    "status": "invariant_and_core_passed_fulltop_synthesis_running",
+    "proof": "evidence/cached_lead/20261026_214109/result.json",
+    "integration": "evidence/shared_singer_core/20261026_214153/result.json",
+    "preparation": "evidence/cached_lead_workstation/a027bdf237e2/preparation.json",
+    "export": "output/final_workstation_20261022/offline_workstation_cached_lead_a027bdf237e2",
+    "synthesis_session": 27512,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_b262c1492677",
+    "chain_session": 10778,
+    "buttons_session": 70810,
+    "board_changed": false,
+    "scope": "Cache exact lead identity at allocation/retirement; no new event latency. Timing benefit unproven.",
+    "buttons_status": "passed_simulation_only",
+    "buttons_report": "evidence/onboard_controls/20261026_214258/result.json",
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_report": "evidence/pt8211_onboard_synthesis/b262c1492677/result.json",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/72086801565a.json",
+    "synthesized_logic": 69000,
+    "synthesized_ff": 38209,
+    "resource_note": "Net+50logic/+258FF; no RAM or multiplier count reduction. Timing benefit unproven.",
+    "chain_status": "passed_simulation_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_214259/result.json"
+  },
+  "reset_buffer_trial": {
+    "status": "clocked_functional_and_isolated_synthesis_passed_not_timing_accepted",
+    "source_dir": "synth/band/experimental/audio_visual/reset_buffers/18267a5a1761",
+    "source_sha256": "d10232ca3fdb6ed03ee63dc4b74b38b432749d4c576fc686aff1c296e0dbd1c5",
+    "clocked_report": "evidence/gowin_dvi_clocked/20261026_214655/result.json",
+    "synthesis_report": "evidence/gowin_dvi_tx_synthesis/1c1375f256e8/result.json",
+    "structure_report": "evidence\\reset_buffer_trial\\18267a5a1761\\netlist_structure.json",
+    "scope": "8preserved LUT1 reset stages; no new SDC exceptions; fulltop native timing still required",
+    "board_changed": false
+  },
+  "buffered_reset_workstation_trial": {
+    "status": "failed_native_timing_not_programmable",
+    "export": "output/final_workstation_20261022/offline_workstation_reset_buffer_9170e801792b",
+    "preparation": "evidence/buffered_reset_workstation/9170e801792b/preparation.json",
+    "synthesis_session": 32478,
+    "synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_fec4481bb23a",
+    "chain_session": 6476,
+    "buttons_session": 16750,
+    "scope": "Four-engine vocoder plus cached lead plus8reset buffers; native timing required; release audit still rejects this new reset source pending review",
+    "board_changed": false,
+    "buttons_status": "passed_simulation_only",
+    "buttons_report": "evidence/onboard_controls/20261026_214927/result.json",
+    "synthesis_status": "passed_synthesis_only",
+    "synthesis_report": "evidence/pt8211_onboard_synthesis/fec4481bb23a/result.json",
+    "reset_structure": "evidence/pt8211_onboard_synthesis/fec4481bb23a/reset_structure.json",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/01dc93f5d27d.json",
+    "synthesized_logic": 69008,
+    "synthesized_ff": 38209,
+    "buffer_overhead_logic": 8,
+    "chain_status": "passed_simulation_only",
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_214926/result.json",
+    "pnr_session": 50369,
+    "pnr_build": "D:/StarclusterBuilds/pt8211_onboard_pnr_4a7fb332e1e0",
+    "pnr_report": "evidence/pt8211_onboard_timing/4a7fb332e1e0/result.json",
+    "setup_violations": 0,
+    "hold_violations": 3,
+    "pulse_width_violations": 0,
+    "native_reset_review": "evidence/pt8211_onboard_timing/4a7fb332e1e0/native_reset_paths.json"
+  },
+  "delivery_v531": {
+    "status": "archive_hashes_source_replay_and_readiness_index_verified",
+    "archive": "output/final_workstation_20261022/星群V5.31_完整源码与人声整曲_整机待验收.zip",
+    "sha256": "05b2b033eb2f570506a47b17bccea677cd8b16bc6fa485ea5092b2cc19e7b44f",
+    "bytes": 147137362,
+    "files": 8151,
+    "scope": "Engineering snapshot, not final accepted or timing-clean board release"
+  },
+  "pool16384_fixed_cadence_trial": {
+    "status": "passed_diagnostic_RTL_only",
+    "session_id": 98702,
+    "report": "evidence/pool_clocked_a412b7dc074c.json",
+    "partials": 16384,
+    "scope": "Independent diagnostic RTL,50MHz clock and48kHz frame cadence,16384separate FFT bins. Not whole-band or physical-board capacity proof.",
+    "frames": 135168,
+    "max_latency": 520,
+    "verified_peaks": 16384
+  },
+  "pool32768_fixed_cadence_trial": {
+    "status": "passed_diagnostic_RTL_only",
+    "session_id": 24426,
+    "report": "evidence/pool_clocked_6b81d34aa84b.json",
+    "partials": 32768,
+    "scope": "32lanes x1024states,50MHz/48kHz full-clock diagnostic only; no board/whole-band capacity claim",
+    "frames": 135168,
+    "max_latency": 1032,
+    "shortest_frame_margin": 9,
+    "verified_peaks": 32768
+  },
+  "native_reset_review_tool": {
+    "tool": "tools/review_native_reset_paths.py",
+    "checks": [
+      "evidence/pt8211_onboard_timing/9ec62ce73630/native_reset_paths.json",
+      "evidence/pt8211_onboard_timing/f66680365bc4/native_reset_paths.json"
+    ],
+    "finding": "Known3negative paths rejected; superficially zero summary without6native serial checks rejected",
+    "scope": "Report review helper, not release approval",
+    "edge_coverage_regression": "evidence/native_reset_review_checks/20261026_230111/result.json",
+    "coverage": "Per lane recovery/removal for both serial edges and pixel rising edge;18checks required"
+  },
+  "pool37888_fixed_cadence_trial": {
+    "status": "fixed_cadence_passed_spectrum_passed_after_reference_correction",
+    "session_id": 14315,
+    "report": "evidence/pool_clocked_4c48adaaee87.json",
+    "partials": 37888,
+    "scope": "37lanes x1024states; full-clock diagnostic only; no board, live-control or whole-band claim",
+    "correction_report": "evidence/pool_clocked_4c48adaaee87_normalization_review.json",
+    "frames": 135168,
+    "max_latency": 1032,
+    "verified_peaks": 37888,
+    "reference_fix": "Expected gain uses65536address slots, not37888active units; original failure preserved, RTL unchanged"
+  },
+  "reset_buffer_16_trial": {
+    "status": "native_timing_fixed_pins_and_frozen_preflight_passed_not_programmed",
+    "source": "experimental/audio_visual/reset_buffers/bc659327ca6c/gowin_dvi_tx.v",
+    "clocked_proof": "evidence/gowin_dvi_clocked/20261026_223629/result.json",
+    "synthesis_session": 23019,
+    "scope": "Next isolated trial after8stages improved but did not eliminate removal violations. No physical timing or release claim.",
+    "export": "output/final_workstation_20261022/offline_workstation_reset_buffer_dea9453a599e",
+    "synthesis_report": "evidence/gowin_dvi_tx_synthesis/3f974a756065/result.json",
+    "fulltop_synthesis_session": 15866,
+    "fulltop_synthesis_build": "D:/StarclusterBuilds/pt8211_onboard_syn_9b6a92ade912",
+    "chain_session": 78243,
+    "chain_report": "evidence/workstation_pt8211_dvi/20261026_223729/result.json",
+    "buttons_session": 13512,
+    "buttons_report": "evidence/onboard_controls/20261026_223729/result.json",
+    "buttons_status": "passed_simulation_only",
+    "structure_negative_test": "evidence/reset_buffer_gate/20261026_223916/result.json",
+    "release_audit": "passed_digital_prerequisite_only",
+    "fulltop_synthesis_report": "evidence/pt8211_onboard_synthesis/9b6a92ade912/result.json",
+    "fulltop_reset_structure": "evidence/pt8211_onboard_synthesis/9b6a92ade912/reset_structure.json",
+    "synthesis_comparison": "evidence/synthesis_hierarchy/d860b275ad2e.json",
+    "synthesized_logic": 69016,
+    "synthesized_ff": 38209,
+    "buffer_overhead_logic_vs_8": 8,
+    "chain_status": "passed_simulation_only",
+    "pnr_session": 10011,
+    "pnr_build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_423614c24ba7",
+    "pnr_report": "evidence/pt8211_onboard_timing/423614c24ba7/result.json",
+    "constraint_comparison": "evidence/pt8211_onboard_timing/423614c24ba7/constraint_delta.json",
+    "release": "pt8211_dvi_81232ed690d3",
+    "release_build_id": 3735635258,
+    "bitstream_sha256": "81232ed690d3586846426ee058e9c449b4d80be0dff48c3740b0fafe9dc6f6ba",
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "pulse_width_violations": 0,
+    "fixed_pin_audit": "evidence/pt8211_onboard_timing/423614c24ba7/fixed_pin_audit.json",
+    "preflight": "evidence/pt8211_onboard_timing/423614c24ba7/frozen_preflight.json",
+    "board_changed": true
+  },
+  "delivery_evidence_integrity": {
+    "status": "historical_references_restored_and_packaging_drift_rejected",
+    "report": "evidence/readiness_reference_repair_20261026.json",
+    "verified_references": 263,
+    "scope": "Exact historical report hashes restored from V5.25; current reports preserved. New package script rejects drift; no new package built yet."
+  },
+  "completed_100s_audio": {
+    "status": "passed_core_render_and_exact96s_prefix",
+    "report": "evidence/singer_render/bbec32c408f6_100s.json",
+    "pcm_sha256": "41f09e3bb9c945729cd3cccceef15a10646eea9d64e4a2e33f49bc319be8f6fb",
+    "scope": "Four-engine core only, synthetic microphone and driver mix overrides; not latest cached/buffered fulltop or physical audio. Final second contains1LSB residual."
+  },
+  "delivery_v532": {
+    "status": "archive_hashes_source_replay_and_readiness_index_verified",
+    "archive": "output/final_workstation_20261022/星群V5.32_完整源码与100秒整曲_整机待验收.zip",
+    "sha256": "5f7881395a1372127f6bda2a56db595b1667a23116ba2ca6c23ce699cd6ac822",
+    "bytes": 161477928,
+    "files": 8391,
+    "evidence_references": 277,
+    "replay_tests": 57,
+    "scope": "Engineering snapshot with100s core audio; timing candidate423614c24ba7 and8h old-board endurance pending; not final accepted or timing-clean release."
+  },
+  "vision_control": {
+    "status": "passed_synthetic_model_and_GUI_regression_only",
+    "report": "evidence/vision_control/20261026_234516/result.json",
+    "host_test_count": 68,
+    "scope": "Synthetic RGBA marker frames and GUI checks, dwell/expiry/conflict/hide/error/panic. Real camera, illumination, latency, false triggers, RK3588 deployment and physical multimodal performance not verified. No RTL or board change.",
+    "included_in_v532": false
+  },
+  "next_board_validation": {
+    "status": "passed_short_load_song_synthetic_vision_cooperation_and_flash_reload_autoplay",
+    "release": "pt8211_dvi_81232ed690d3",
+    "build_id": 3735635258,
+    "hardware_check": [
+      "--port",
+      "COM12",
+      "--release",
+      "synth/band/release/pt8211_dvi_81232ed690d3",
+      "--seconds",
+      "97",
+      "--stress-seconds",
+      "60",
+      "--single-part-load",
+      "--require-singer-health",
+      "--output",
+      "synth/band/evidence/hardware_81232ed690d3_first.json"
+    ],
+    "hardware_ensemble": [
+      "--release",
+      "synth/band/release/pt8211_dvi_81232ed690d3",
+      "--require-singer-health",
+      "--vision-selector",
+      "--output",
+      "synth/band/evidence/hardware_ensemble_81232ed690d3_vision.json"
+    ],
+    "ensemble_driver_sha256": "c369649f0f163233952de499f6144de162731046889420a02a0907b097200004",
+    "scope": "New optical-selector integration added to board regression but not yet executed. Synthetic images, no camera capture. Old endurance results will not certify new firmware.",
+    "cleanup_test": "synth\\band\\evidence\\ensemble_cleanup\\20261027_002826\\result.json",
+    "reports": [
+      "evidence/hardware_81232ed690d3_first.json",
+      "evidence/hardware_ensemble_81232ed690d3_vision.json",
+      "evidence/hardware_autoplay_81232ed690d3_flash.json",
+      "evidence/flash_program_20261027_004943/result.json"
+    ]
+  },
+  "resource_comparison": {
+    "report": "evidence/resource_comparison/b5cd8a4e5f46/result.json",
+    "status": "routed_resources_compared_not_board_acceptance",
+    "logic_reduction_percent": 7.391709982673597,
+    "dsp_reduction_percent": 13.186813186813186,
+    "reference_song_core_latency_clocks": [
+      280,
+      646
+    ],
+    "scope": "Whole firmware resource delta has multiple causes. Exact96s PCM prefix applies separately to same-input core rendering. No new physical test."
+  },
+  "previous_candidate_evidence": {
+    "full_chain": {
+      "path": "evidence/workstation_pt8211_dvi/20261026_104538/result.json",
+      "sha256": "b68ff1e3f9866ac07c1593e2a3901a8cbf0ea5ce5a957d711cec1804c4c219c5",
+      "status": "passed",
+      "scope": "Actual exported PT8211 PCM serial equality plusband/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. No fullsong/full-load/PnR/physical claim."
+    },
+    "synthesis": {
+      "path": "evidence/pt8211_onboard_synthesis/0cd05e391715/result.json",
+      "sha256": "31ed64cbc7b67be86edc1b39492f4128bf8fc2b82c28be5fffc7ff11bb2ea457",
+      "status": "passed_synthesis_only",
+      "scope": "Onboard PT8211+DVI shell synthesis only. UART supports host seats;mic/ADC/pedal unconnected and tiedoff. Full expansion source retained;not full-peripheral orphysical acceptance."
+    },
+    "full_timing": {
+      "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+      "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+      "status": "passed_timing_pending_pin_audit",
+      "scope": "Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,2asyncCLEAR exceptions;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected."
+    },
+    "fixed_pins": {
+      "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+      "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+      "status": "passed_fixed_pins_and_constraints",
+      "scope": "15 fixed physical pins; no automatic IO. Digital timing prerequisite only; board release, analog, display, cold-start and peripherals remain separate."
+    },
+    "short_256slot_serial_load": {
+      "path": "evidence/workstation_pt8211_dvi_load/20261026_111521/result.json",
+      "sha256": "97a8370a035f7c35c1e9cee5eb5b1e435cf9c6e45780ead3d9ce08ba5190fbcd",
+      "status": "passed",
+      "scope": "Actual exported PT8211 PCM serial equality plusband/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. Short256-slot load:each PCM frame after position500 requires256 active slots,at least2048frames. No long-load/fullsong/PnR/physical or individual-slot audibility claim."
+    },
+    "autoplay_without_host_play": {
+      "path": "evidence/hardware_autoplay_pt8211_dvi_20261026.json",
+      "sha256": "de6f7c0f8f9706b345c0261349eb48cbb1708492e86c4ecce71e59b63a8589f0",
+      "recorded_status": "passed",
+      "scope": "Autoplay after SRAM configuration and host serial closure, digital telemetry only"
+    },
+    "long_load_1h": {
+      "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+      "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+      "recorded_status": "passed",
+      "scope": "静音一小时256槽＋整曲，非热/模拟/外设验收"
+    },
+    "flash_autoplay": {
+      "path": "evidence/hardware_flash_autoplay_pt8211_dvi_20261026.json",
+      "sha256": "487bbcabd56ed8d62b458e07e86fa995b13d52c7819e93e79f913ed625773da3",
+      "status": "passed",
+      "scope": "Flash vendor verify plus JTAG reload and autonomous song; not physical cold power cycle"
+    }
+  },
+  "status_reconciliation": {
+    "previous_status": "evidence/status_history/38bc4ef2868b9c6b7897601f8fb4454c8ce7569f1e415de2f4a4b4bd3925f42b/STATUS.json",
+    "reason": "Top-level candidate was stale; replaced with frozen timing-clean candidate, preserving prior evidence and current board selector."
+  },
+  "endurance_8h_completed": {
+    "report": "evidence/endurance_central256_20261026/summary.json",
+    "status": "passed",
+    "scope": "Old062a firmware, silent256 slots8h plus97s song; not new812 firmware, acoustic or thermal acceptance"
+  },
+  "delivery_v533": {
+    "status": "archive_hashes_readiness_references_and_extracted_source_replay_passed",
+    "archive": "output/final_workstation_20261022/星群V5.33_完整源码与新版上板验证_整机待验收.zip",
+    "sha256": "09323b1b6721db08b1ca88ad6a0e2058d078e75f2d5ebc632fc537caa431b295",
+    "bytes": 168770463,
+    "files": 8582,
+    "evidence_references": 300,
+    "replay_host_tests": 68,
+    "scope": "Complete engineering snapshot including selected812Flash firmware, host and board evidence; final acceptance false"
+  },
+  "phrase_patch_restore": {
+    "report": "evidence\\phrase_patch_restore\\20261027_010408\\result.json",
+    "status": "passed_host_regression_only",
+    "included_in_v533": false
+  },
+  "next_load_control_check": {
+    "status": "passed",
+    "driver_sha256": "6f5166846917ebfe3ecac48701a0b7488bfe7d63a0307e3f855479a0b55416b0",
+    "arguments": [
+      "--port",
+      "COM12",
+      "--release",
+      "synth/band/release/pt8211_dvi_81232ed690d3",
+      "--seconds",
+      "97",
+      "--stress-seconds",
+      "30",
+      "--single-part-load",
+      "--require-singer-health",
+      "--exercise-load-controls",
+      "--output",
+      "synth/band/evidence/hardware_81232ed690d3_load_controls.json"
+    ],
+    "scope": "32 bounded expression events at256 slots, emergency silence and fullsong afterpanic; not physical latency or arbitrary overload guarantee",
+    "cleanup_gate": "synth\\band\\evidence\\hardware_cleanup_gate\\20261027_012152\\result.json",
+    "report": "evidence/hardware_81232ed690d3_load_controls.json"
+  },
+  "current_1h_endurance": {
+    "status": "not_run_for_V6",
+    "previous_release_evidence": "evidence/hardware_81232ed690d3_1h_summary.json"
+  },
+  "current43008_fixed_cadence": {
+    "status": "passed_diagnostic_RTL_only",
+    "session_id": 7896,
+    "report": "evidence/pool_clocked_3cbf52402956.json",
+    "scope": "Current source RTL at50MHz/48kHz,135168frames and43008independent bins;not physical/audio/fullband acceptance",
+    "verified_peaks": 43008,
+    "max_latency_clocks": 1032,
+    "frames": 135168,
+    "included_in_v533": false
+  },
+  "diagnostic_ram_bound": {
+    "report": "evidence/diagnostic43008/capacity_bound_20261027.json",
+    "status": "existing_report_capacity_analysis",
+    "scope": "Arithmetic bound for unchanged current per-lane RAM organization; not absolute chip or alternative architecture limit, nor full-band capacity"
+  },
+  "delivery_v534": {
+    "status": "archive_hashes_source_replay_and_evidence_index_passed",
+    "archive": "output\\final_workstation_20261022\\星群V5.34_完整源码上位机与新版一小时验证.zip",
+    "sha256": "20cb8ea4bce46d1b8ae977ad4147133f3d09003fa22d475a8b3c4a73f46269e0",
+    "bytes": 169545563,
+    "files": 8604,
+    "references": 316,
+    "replay_host_tests": 69,
+    "scope": "Complete engineering snapshot; selected812firmware1h and full-load controls passed;final physical acceptance incomplete"
+  },
+  "new_firmware_eight_hour_test": {
+    "status": "interrupted_by_request_not_passed",
+    "last_checkpoint_seconds": 17078,
+    "session_terminal_exit_code": 1,
+    "evidence": "synth/band/evidence/endurance_81232ed690d3_early_stop_20261027/interruption_summary.json",
+    "cleanup": "Board identity matched; panic and digital mute sent; voices=0, playing=false confirmed.",
+    "limitation": "Checkpoint retains last64 records only; complete raw and all-record capture unavailable after termination. Not an8h pass."
+  },
+  "handoff_preparation_20261027": {
+    "status": "packaged_and_verified",
+    "version": "V5.35",
+    "scope": "Merged current host fixes and digital evidence; endurance stopped by request; final physical acceptance incomplete"
+  },
+  "historical_host_evidence": {
+    "path": "evidence/host_tests.json",
+    "sha256": "90605c48cd36709010fa41fc0acad397ff091367b08a96cff3eeaeca6c2bc211",
+    "status": "passed",
+    "scope": "57 host tests passed, including singer-score preflight; not physical acceptance"
+  },
+  "delivery_v535": {
+    "archive": "D:\\StarclusterDeliveries\\20261027\\星群V5.35_完整源码上位机与长测中止记录_整机待验收.zip",
+    "bytes": 169713308,
+    "file_count": 8621,
+    "sha256": "b0fd4fb547b74461a0e06612d185f6e2fd619f5877d378b1e3b78d9a42d046a0",
+    "all_archived_hashes_verified": true,
+    "status": "archive_hashes_325_readiness_references_and_unpacked_source_replay_passed",
+    "replay_host_tests": 72,
+    "validation_record": "D:\\StarclusterDeliveries\\20261027\\星群V5.35_完整源码上位机与长测中止记录_整机待验收_源码复现校验.json",
+    "scope": "Complete engineering snapshot; early stopped endurance is not8h pass; final physical acceptance remains incomplete"
+  },
+  "v6_software_execution": {
+    "updated": "2026-10-28T01:16:26.854705",
+    "status": "software_complete_native_flash_and_gui_verified",
+    "host_tests": {
+      "passed": 105,
+      "failed": 0,
+      "log": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\host_tests_final.log"
+    },
+    "expansion_tests": 5,
+    "customized_export_elaboration": "passed",
+    "phone_controller_behavior": "passed",
+    "bridge_compilation": {
+      "esp32c3": "passed",
+      "teensy41": "passed"
+    },
+    "selected_release": "pt8211_dvi_8994dbe5e358",
+    "native_candidate_build": "D:/StarclusterBuilds/workstation_v6_native_default_route",
+    "board_result": "V6 SRAM digital regression, Qt preset/record/replay and Flash verify/reload identity passed. PT8211 native only; no expansion programming.",
+    "physical_acceptance": false,
+    "compact16_export": "passed eight controls, pad15 release, no phantom pads and full top elaboration",
+    "teensy_actual_callbacks_mock_io": "passed",
+    "c3_actual_callbacks_mock_io": "passed",
+    "usb16_no_adc_export": "passed vendor-primitive top elaboration; ADC disabled, encoder panel retained",
+    "compact16_synthesis": {
+      "logic": 74933,
+      "registers": 40227,
+      "bsram": 248,
+      "scope": "synthesis only, no timing acceptance"
+    },
+    "native_alternate_build": "D:/StarclusterBuilds/workstation_v6_native_default_route",
+    "native_alternate_scope": "Same HDL, constraints and synthesis netlist; route_option0; log confirms skip synthesis",
+    "software_source_complete": true,
+    "native_release_pending": false,
+    "recording_scope": "Observed external held notes seeded at take start; capture-loss refuses a new take until panic; serial reconnect clears old capture state. No retrospective hardware snapshot.",
+    "native_audit": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\native_v6_audit.json",
+    "native_candidate_release": "pt8211_dvi_8994dbe5e358",
+    "native_timing": {
+      "setup": 0,
+      "hold": 0,
+      "pulse": 0,
+      "physical_pins": 18
+    },
+    "redundant_route1_stopped": true,
+    "sram_load_log": "C:/Users/Qzx/Documents/ChatGPT/FPGA/synth/band/evidence/program_20261028_010557",
+    "sram_identity_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_sram_mute.json",
+    "sram_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_sram_hardware.json",
+    "host_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_host_hardware.json",
+    "flash_initial_failure": "C:/Users/Qzx/Documents/ChatGPT/FPGA/synth/band/evidence/flash_program_20261028_010933/result.json",
+    "flash_retry": "C:/Users/Qzx/Documents/ChatGPT/FPGA/synth/band/evidence/flash_program_20261028_011113/result.json",
+    "build_id": 539365416,
+    "flash_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\result.json",
+    "post_reload_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\post_reload_uart.json",
+    "gui_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\gui_startup.json",
+    "gui_process_id": 44728,
+    "previous_release_retained": "pt8211_dvi_81232ed690d3",
+    "native_endurance": "Short targeted tests only; previous release one-hour result does not apply to V6",
+    "deferred_scope": [
+      "Reviewed expansion CST/SDC and physical wiring",
+      "I2S DAC/clock/microphone and physical audio/display measurements",
+      "C3/Teensy module flashing, actual BLE pairing/USB-pad enumeration",
+      "Physical cold power cycle and thermal/endurance tests",
+      "Final official competition PDF and actual scoring review"
+    ],
+    "stable_board_release": "pt8211_dvi_8994dbe5e358"
+  },
+  "software_scope_complete": true,
+  "historical_notes_policy": "Earlier version-specific entries are historical. CURRENT_RELEASE.json and v6_software_execution describe the current V6 release. Pre-selection top-level snapshot: evidence/v6_selection_20261028/STATUS.json"
+}

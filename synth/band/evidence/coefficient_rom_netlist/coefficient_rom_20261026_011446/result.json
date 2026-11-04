@@ -1,0 +1,22 @@
+{
+  "status": "mismatch",
+  "build": "D:\\StarclusterBuilds\\coefficient_rom_20261026_011446",
+  "scope": "170word ROM initialization/indexing through vendor synthesis and primitive simulation;not complete vocoder equivalence",
+  "results": {
+    "rtl": {
+      "returncode": 0,
+      "all_words_match": true
+    },
+    "netlist": {
+      "returncode": 0,
+      "all_words_match": false
+    }
+  },
+  "sources": {
+    "build.tcl": "da6659040a573dfc2741706420f8d1b74c57ecc9d4c343493bc440ecfa816871",
+    "coefficient_rom.sv": "a1392eff7e4118fe5ba9dae93b7764f50148fa89621f0ccc11b15a6eda06fa78",
+    "coefficient_rom.vg": "08c77604217e1871f5cd5b68bcae1d9565a94deb2fb78ba79c858be800d6bf14",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab",
+    "tb.v": "a65c365b1a8bca4e6f8532e45e2d31cf78131d9b3710b47758f009f6675cae06"
+  }
+}

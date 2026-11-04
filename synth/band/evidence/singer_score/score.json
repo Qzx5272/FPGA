@@ -1,0 +1,41 @@
+{
+  "format": "starcluster-score-2",
+  "engine_profile": "singer-v1",
+  "sample_rate": 48000,
+  "bpm": 120,
+  "duration_samples": 320,
+  "events": [
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 15,
+      "note": 60,
+      "velocity": 100,
+      "serial": 1
+    },
+    {
+      "sample": 96,
+      "kind": 1,
+      "part": 15,
+      "note": 60,
+      "velocity": 0,
+      "serial": 1
+    },
+    {
+      "sample": 160,
+      "kind": 0,
+      "part": 15,
+      "note": 67,
+      "velocity": 100,
+      "serial": 2
+    },
+    {
+      "sample": 240,
+      "kind": 1,
+      "part": 15,
+      "note": 67,
+      "velocity": 0,
+      "serial": 2
+    }
+  ]
+}

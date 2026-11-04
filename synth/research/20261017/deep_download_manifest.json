@@ -1,0 +1,56 @@
+[
+  {
+    "id": "P03",
+    "url": "https://opera.media.mit.edu/publications/weinberg_cmj2005_interconnected_musical_networks.pdf",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 17,
+    "sha256": "bc753229ea4f32caace7bd2066e18f5c325c6a83e586ce8c67b2c473ad161482"
+  },
+  {
+    "id": "P12",
+    "url": "https://web.uvic.ca/~aschloss/course_mat/MU307/MUS307_MATERIALS/Chowning_FM.pdf",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 10,
+    "sha256": "b55b2ceb198efcd2b23635ae085d8c239285837eed07e8239be18c5885c0f252"
+  },
+  {
+    "id": "P15",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/1990_SerraS_SpectralModelingSynthesis_CMJ.pdf",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 14,
+    "sha256": "5d4d508c4f9d5e05aa18755db9f29b32c3ea3035e83ff620dfd033cbef59ad50"
+  },
+  {
+    "id": "P16",
+    "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/97ed04a8-cb88-461f-b1a3-e72da5129256/content",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 31,
+    "sha256": "a53e5d8ec591180a8ab93a9093e90c29e08c8999bd563284c7bfb4d147523f20"
+  },
+  {
+    "id": "P23",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/2023_SchwaerM_MSSLossRevisited_IEEE-SPL.pdf",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 5,
+    "sha256": "57864787985209f204db6c62a69c103b953f6694a268f45f0ed601a1c7f40e2a"
+  },
+  {
+    "id": "P24",
+    "url": "https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/02_teaching/2024s-sarntal/02_group_SYNTH/2023_YuF_GlottalFlowSVS_ISMIR.pdf",
+    "method": "curl Schannel certificate validation",
+    "exit": 0,
+    "error": "",
+    "pages": 9,
+    "sha256": "2458b743f69968e51b82b21a8d47cd9d8ecb5f8144924e1458a38b86594b9cbe"
+  }
+]

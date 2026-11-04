@@ -1,0 +1,22 @@
+{
+  "apk_installed": "0.2.0",
+  "c3_firmware": "c3-pad-phone-v6-uart",
+  "c3_flash_verified": true,
+  "user_confirmed_wiring": {
+    "GPIO4": "J23-1",
+    "GPIO5": "J23-2",
+    "GND": "J23-12"
+  },
+  "user_authorized_sram_switch": true,
+  "user_audio_output": "onboard PT8211",
+  "software_tests": [
+    "two UART CRC/arbiter RTL passed",
+    "Java/Python exact event frame and corrupt-byte rejection passed",
+    "Android controller ownership/release/timeout tests passed"
+  ],
+  "fpga_status": "SRAM loaded; user confirmed phone audio",
+  "flash_selector_unchanged": true,
+  "fpga_audit": "passed",
+  "phone_end_to_end_verified": false,
+  "phone_audio_user_confirmed": true
+}

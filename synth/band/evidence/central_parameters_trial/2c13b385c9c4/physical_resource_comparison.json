@@ -1,0 +1,30 @@
+{
+  "status": "measured_physical_resource_comparison",
+  "created": "2026-10-26T16:25:30.561745",
+  "before": {
+    "logic": 88123,
+    "ff": 42159,
+    "cls": 57675,
+    "ram": 252,
+    "dsp": 182
+  },
+  "after": {
+    "logic": 75030,
+    "ff": 38402,
+    "cls": 50993,
+    "ram": 252,
+    "dsp": 182
+  },
+  "delta": {
+    "logic": -13093,
+    "ff": -3757,
+    "cls": -6682,
+    "ram": 0,
+    "dsp": 0
+  },
+  "sources": {
+    "evidence\\pt8211_onboard_timing\\469379442cc4\\fixed_pin_audit.json": "3f81107ec66fc56d299f717ca76298c3bc97f30e8626313c33e50081e6dde20f",
+    "evidence\\pt8211_onboard_timing\\e9fc0f6e32a3\\fixed_pin_audit.json": "e0f08334c73ddc25f678f16c5ac87a35ff187c382c51e6039f5883a3c39b7004"
+  },
+  "scope": "Two complete fixed-pin routed builds at50MHz;not isolated causal attribution or hardware acceptance"
+}

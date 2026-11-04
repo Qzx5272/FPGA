@@ -1,0 +1,11 @@
+{
+  "status": "failed_not_releasable",
+  "setup_violated_endpoints": 2,
+  "hold_violated_endpoints": 0,
+  "negative_path_summaries": [
+    "Path1 Path Summary: Slack -0.166 Data Arrival Time 41.744 Data Required Time 41.578 From workstation/video_output/transmitter/serial_ready_s0 To workstation/video_output/transmitter/channels[1].serializer Launch Clk serial_clk:[R] Latch Clk display_clk:[R]",
+    "Path2 Path Summary: Slack -0.026 Data Arrival Time 41.607 Data Required Time 41.581 From workstation/video_output/transmitter/serial_ready_s0 To workstation/video_output/transmitter/channels[2].serializer Launch Clk serial_clk:[R] Latch Clk display_clk:[R]"
+  ],
+  "notes": "serial_ready to OSER lanes1/2; do not relax constraints. Pulse-width report also has negative entries requiring review; do not conflate with these2 summary endpoints.",
+  "current_board_unchanged": true
+}

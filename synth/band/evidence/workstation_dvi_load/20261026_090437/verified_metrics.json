@@ -1,0 +1,14 @@
+{
+  "status": "passed_short_concurrency_only",
+  "report_sha256": "6426dea736f2489d6c668f354c30679cdde5cbe8d4f51398018bb497062277e2",
+  "checked_256_slot_frames": 2510,
+  "checked_load_seconds": 0.05229166666666667,
+  "max_render_cycles": 966,
+  "serial_bits_per_lane": 12000,
+  "same_lane_offsets": [
+    50,
+    50,
+    50
+  ],
+  "scope": "No microphone/ADC input. Fixedpressurepatches,master4,collaborationoff. Not60sload,fullsong,routed timing orphysical acceptance. Source snapshot andexport manifest hashes checked."
+}

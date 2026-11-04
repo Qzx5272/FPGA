@@ -1,0 +1,153 @@
+{
+  "status": "completed",
+  "checkpoint_utc": "2026-10-17T14:19:53.721109+00:00",
+  "scope": "log grouping; a live checkpoint and flushed log may differ slightly; final run is aligned",
+  "warning_threshold_dbfs": -80,
+  "flushed_warning_records": 19927,
+  "groups": [
+    {
+      "coefficient_fraction_bits": 15,
+      "transition_samples": 1,
+      "trials_at_checkpoint": 21156,
+      "tail_warnings_in_flushed_log": 2790,
+      "warning_fraction_approx": 0.13187748156551332
+    },
+    {
+      "coefficient_fraction_bits": 15,
+      "transition_samples": 16,
+      "trials_at_checkpoint": 21156,
+      "tail_warnings_in_flushed_log": 2899,
+      "warning_fraction_approx": 0.13702968425033088
+    },
+    {
+      "coefficient_fraction_bits": 15,
+      "transition_samples": 240,
+      "trials_at_checkpoint": 21155,
+      "tail_warnings_in_flushed_log": 2550,
+      "warning_fraction_approx": 0.12053887969747104
+    },
+    {
+      "coefficient_fraction_bits": 15,
+      "transition_samples": 960,
+      "trials_at_checkpoint": 21155,
+      "tail_warnings_in_flushed_log": 1574,
+      "warning_fraction_approx": 0.07440321437012526
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "transition_samples": 1,
+      "trials_at_checkpoint": 21156,
+      "tail_warnings_in_flushed_log": 2836,
+      "warning_fraction_approx": 0.1340518056343354
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "transition_samples": 16,
+      "trials_at_checkpoint": 21156,
+      "tail_warnings_in_flushed_log": 2979,
+      "warning_fraction_approx": 0.14081111741349972
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "transition_samples": 240,
+      "trials_at_checkpoint": 21155,
+      "tail_warnings_in_flushed_log": 2575,
+      "warning_fraction_approx": 0.12172063341999527
+    },
+    {
+      "coefficient_fraction_bits": 21,
+      "transition_samples": 960,
+      "trials_at_checkpoint": 21155,
+      "tail_warnings_in_flushed_log": 1724,
+      "warning_fraction_approx": 0.08149373670527062
+    }
+  ],
+  "worst_cases": [
+    {
+      "kind": "dynamic_resonator",
+      "q": 15,
+      "f": [
+        53.073368589165796,
+        2260.038145706265
+      ],
+      "bw": [
+        5.083220664788982,
+        48.89775889218674
+      ],
+      "transition_samples": 240,
+      "samples": 144000,
+      "peak_fs": 0.020989418029785156,
+      "tail_peak_fs": 0.0019506216049194336,
+      "saturations": 0
+    },
+    {
+      "kind": "dynamic_resonator",
+      "q": 15,
+      "f": [
+        54.793800498341916,
+        7631.172188166442
+      ],
+      "bw": [
+        5.062548614737851,
+        23.95377127985562
+      ],
+      "transition_samples": 1,
+      "samples": 144000,
+      "peak_fs": 0.0019506216049194336,
+      "tail_peak_fs": 0.0019506216049194336,
+      "saturations": 0
+    },
+    {
+      "kind": "dynamic_resonator",
+      "q": 15,
+      "f": [
+        50.10685774066732,
+        858.2972912671269
+      ],
+      "bw": [
+        5.150601117356303,
+        218.47846250836875
+      ],
+      "transition_samples": 240,
+      "samples": 144000,
+      "peak_fs": 0.006473898887634277,
+      "tail_peak_fs": 0.0019506216049194336,
+      "saturations": 0
+    },
+    {
+      "kind": "dynamic_resonator",
+      "q": 15,
+      "f": [
+        55.487734508583614,
+        96.56639329380636
+      ],
+      "bw": [
+        5.285680670830652,
+        1128.3744551968225
+      ],
+      "transition_samples": 16,
+      "samples": 144000,
+      "peak_fs": 0.02039182186126709,
+      "tail_peak_fs": 0.0019505023956298828,
+      "saturations": 0
+    },
+    {
+      "kind": "dynamic_resonator",
+      "q": 15,
+      "f": [
+        51.853298559132526,
+        791.0349643214731
+      ],
+      "bw": [
+        5.518744496446003,
+        9.769653984941616
+      ],
+      "transition_samples": 240,
+      "samples": 144000,
+      "peak_fs": 0.002069711685180664,
+      "tail_peak_fs": 0.001950383186340332,
+      "saturations": 0
+    }
+  ],
+  "interpretation": "q groups use independent random draws; no board, listening, or complete V3 validation claim"
+}

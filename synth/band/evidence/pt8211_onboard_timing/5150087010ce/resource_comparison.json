@@ -1,0 +1,41 @@
+{
+  "status": "physical_resource_comparison",
+  "created": "2026-10-26T14:45:03.572382",
+  "before": {
+    "release": "pt8211_dvi_620164a544d2",
+    "resources": {
+      "logic": 68322,
+      "ff": 37133,
+      "cls": 47405,
+      "ram": 245,
+      "dsp": 168
+    }
+  },
+  "after": {
+    "release": "pt8211_dvi_59c963cc2112",
+    "resources": {
+      "logic": 66853,
+      "ff": 37209,
+      "cls": 46643,
+      "ram": 245,
+      "dsp": 168
+    }
+  },
+  "delta": {
+    "logic": -1469,
+    "ff": 76,
+    "cls": -762,
+    "ram": 0,
+    "dsp": 0
+  },
+  "core_clock_mhz": 50,
+  "reported_core_fmax_mhz": 50.883,
+  "warnings": [
+    "PR1014 generic routing used for clk_d; passing constrained timing does not establish clock robustness or physical acceptance"
+  ],
+  "scope": "Different complete builds: reset-release change plus three onboard controls; not isolated proof of causal resource saving or maximum performance. New SRAM acceptance still running.",
+  "source_hashes": {
+    "synth\\band\\release\\pt8211_dvi_620164a544d2\\manifest.json": "b852e400442b72e0f875513f8739e5f55a2919736f2e10883dd1412b61e71c9a",
+    "synth\\band\\release\\pt8211_dvi_59c963cc2112\\manifest.json": "cf1a456b278ca00b624a2a6024ccb884f153031076cb2a83e2c10fc67e8ef0b2"
+  }
+}

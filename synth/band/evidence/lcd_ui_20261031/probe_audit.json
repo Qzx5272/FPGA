@@ -1,0 +1,38 @@
+{
+  "status": "passed_setup_hold_pulse_pins_constraints",
+  "build": "D:\\StarclusterBuilds\\lcd_probe_20261031",
+  "resolution": [
+    800,
+    480
+  ],
+  "clock_MHz": 25,
+  "external_timing_assumption": "5ns setup / 1ns hold budget relative to inverted forwarded pixel clock; exact panel datasheet not identified",
+  "bitstream_sha256": "7af4d9a40241189e703ef1b080f79873d4bf913a54d2e9e4b1d47ca3622d4118",
+  "pins": {
+    "lcd_g[5]": "J16",
+    "lcd_g[4]": "K15",
+    "lcd_g[3]": "F22",
+    "lcd_g[2]": "G22",
+    "lcd_g[1]": "G21",
+    "lcd_g[0]": "G20",
+    "lcd_b[5]": "F20",
+    "lcd_b[4]": "G19",
+    "lcd_b[3]": "F19",
+    "lcd_b[2]": "F18",
+    "lcd_b[1]": "M17",
+    "lcd_b[0]": "M16",
+    "lcd_r[5]": "H19",
+    "lcd_r[4]": "J19",
+    "lcd_r[3]": "G25",
+    "lcd_r[2]": "H18",
+    "lcd_r[1]": "J18",
+    "lcd_r[0]": "K17",
+    "lcd_en": "A24",
+    "lcd_clk": "H21",
+    "clk": "P16",
+    "lcd_hs": "H22",
+    "lcd_vs": "A23",
+    "lcd_bl": "F25"
+  },
+  "flash_written": false
+}

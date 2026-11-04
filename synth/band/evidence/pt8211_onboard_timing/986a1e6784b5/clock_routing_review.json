@@ -1,0 +1,16 @@
+{
+  "status": "reviewed_not_margin_or_physical_acceptance",
+  "created": "2026-10-26T11:28:20.337779",
+  "warning": "PR1014 generic routing resource on clk_d",
+  "core_fmax_mhz": 50.031,
+  "core_high_fanout_worst_slack_ns": 0.012,
+  "clock_max_net_delay_ns": 4.807,
+  "clock_fanout": 37178,
+  "scope": "Final report lists clk_d on PRIMARY global clock network; timing includes routed delays and Setup/Hold violations zero. Generic-routing warning retained, no claim of all-dedicated routing, jitter/analog/temperature or overclock margin. Operate at50MHz and verify board under sustained load.",
+  "evidence": [
+    "pt8211_onboard.log",
+    "pt8211_onboard.rpt.txt",
+    "pt8211_onboard_tr_content.html",
+    "pt8211_onboard.timing_paths"
+  ]
+}

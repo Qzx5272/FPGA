@@ -1,0 +1,8 @@
+{
+  "status": "passed_synthesized_connectivity_only",
+  "stages": 8,
+  "serializer_reset_endpoints": 3,
+  "source_sha256": "d10232ca3fdb6ed03ee63dc4b74b38b432749d4c576fc686aff1c296e0dbd1c5",
+  "netlist_sha256": "36c89bf293dbe196981e00e29166a3c0dd6c4f0bf6fc8ad689dd5a9f1d48ef36",
+  "scope": "8even LUT1 inversions preserved; not proof of physical cell retention or native recovery/removal margins"
+}

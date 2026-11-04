@@ -1,0 +1,30 @@
+{
+  "profile": "cycle-accurate Verilator RTL simulation; not board measurement",
+  "partials": 4096,
+  "state": "passed",
+  "sources": {
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "partial_lane.v": "7f2c9cdb1877af897177a7c017af535263a6b5831134da944aa25ca652721e4e",
+    "partial_pool.v": "c329bb6a362f6295489d4e9c217a2b92611f7dcb2e62b1c5f04bc16bcbd73f3f",
+    "partial_ram16.v": "6dfad1f3092075d7a6085f64dfd02e6f4b53f70b9fb4aea4244ccdaeb0852a4c",
+    "pool_driver.cpp": "8b7fa9a9423a17de9bdb8bb42300292c088e7ea98e9e00d90fcd188cb5c62a22",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc"
+  },
+  "executable_sha256": "0fe59dfa55cb03e9145a45340c4112f0526ccc3a9c4c57fa62578fbb58bc0d54",
+  "elapsed_seconds": 23.280999999959022,
+  "log": "PASS capacity=4096 frames=135168 max_cycles=518\n",
+  "returncode": 0,
+  "normalization_divisor": 4096,
+  "fft_bin_spacing": 5,
+  "diverse_envelopes": true,
+  "verified_peaks": 4096,
+  "minimum_peak": 1406.237653847566,
+  "maximum_peak": 1874.9531835375742,
+  "expected_peak_range": [
+    1406.2392711639404,
+    1874.9544451236725
+  ],
+  "max_relative_error": 5.386949958248155e-06,
+  "sample_peak": 6550980.0,
+  "sample_sha256": "691074338588e7713cdf7f51c9c699d22f7a3e308ffd115afebfed7424e20651"
+}

@@ -1,0 +1,1 @@
+Stopped deliberately after run pnr unexpectedly started synthesis from RTL inputs. No timing result; corrected by using only .vg input.

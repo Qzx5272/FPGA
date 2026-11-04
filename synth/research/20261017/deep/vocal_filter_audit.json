@@ -1,0 +1,468 @@
+{
+  "scope": "static float/quantized coefficient response audit; not time-varying fixed-point singing or listening test",
+  "sample_rate": 48000,
+  "coefficient_fraction_bits": 21,
+  "frequency_grid_points": 131073,
+  "preset_provenance": "engineering seed values, not copied phoneme corpus or measured singer",
+  "sections": [
+    {
+      "name": "a_F1",
+      "a": [
+        1.0,
+        -1.9799751392546108,
+        0.989582664726854
+      ],
+      "b_peak_normalized": [
+        0.0010210777951188941,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -4152309,
+        2075305
+      ],
+      "b_q21": [
+        2141,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9998330666838647,
+      "quantized_impulse_l1": 1.27137839031687,
+      "max_pole_radius": 0.994777632742482,
+      "max_abs_coefficient": 1.9799752235412598,
+      "peak_frequency_hz": 748.9013671875
+    },
+    {
+      "name": "a_F2",
+      "a": [
+        1.0,
+        -1.9637749555084525,
+        0.9882881514896185
+      ],
+      "b_peak_normalized": [
+        0.0018321367685415996,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -4118335,
+        2072590
+      ],
+      "b_q21": [
+        3842,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9999193002432998,
+      "quantized_impulse_l1": 1.2702277017656147,
+      "max_pole_radius": 0.9941267151224813,
+      "max_abs_coefficient": 1.9637751579284668,
+      "peak_frequency_hz": 1199.15771484375
+    },
+    {
+      "name": "a_F3",
+      "a": [
+        1.0,
+        -1.8705339992040337,
+        0.9844147633517139
+      ],
+      "b_peak_normalized": [
+        0.0052024595761347905,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3922794,
+        2064467
+      ],
+      "b_q21": [
+        10910,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9999566337323934,
+      "quantized_impulse_l1": 1.2729585632177565,
+      "max_pole_radius": 0.9921766866259915,
+      "max_abs_coefficient": 1.8705339431762695,
+      "peak_frequency_hz": 2599.365234375
+    },
+    {
+      "name": "a_F4",
+      "a": [
+        1.0,
+        -1.7762215889295583,
+        0.980556556146257
+      ],
+      "b_peak_normalized": [
+        0.008599619640852584,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3725007,
+        2056376
+      ],
+      "b_q21": [
+        18035,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0000130973012786,
+      "quantized_impulse_l1": 1.2726241479575264,
+      "max_pole_radius": 0.9902305226749524,
+      "max_abs_coefficient": 1.776221752166748,
+      "peak_frequency_hz": 3499.32861328125
+    },
+    {
+      "name": "a_F5",
+      "a": [
+        1.0,
+        -1.6413132515156585,
+        0.9741597847140442
+      ],
+      "b_peak_normalized": [
+        0.014356057376374803,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3442083,
+        2042961
+      ],
+      "b_q21": [
+        30107,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0000027432369822,
+      "quantized_impulse_l1": 1.2690188757418188,
+      "max_pole_radius": 0.986995297638147,
+      "max_abs_coefficient": 1.641313076019287,
+      "peak_frequency_hz": 4499.08447265625
+    },
+    {
+      "name": "i_F1",
+      "a": [
+        1.0,
+        -1.9908234714530988,
+        0.9921767802925615
+      ],
+      "b_peak_normalized": [
+        0.000286672525442256,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -4175059,
+        2080746
+      ],
+      "b_q21": [
+        601,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9995419737569335,
+      "quantized_impulse_l1": 1.2700675101944983,
+      "max_pole_radius": 0.9960808248242305,
+      "max_abs_coefficient": 1.9908232688903809,
+      "peak_frequency_hz": 278.50341796875
+    },
+    {
+      "name": "i_F2",
+      "a": [
+        1.0,
+        -1.9013952547618838,
+        0.9869953316576753
+      ],
+      "b_peak_normalized": [
+        0.0037750560258243884,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3987515,
+        2069879
+      ],
+      "b_q21": [
+        7917,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0000093164917685,
+      "quantized_impulse_l1": 1.27211541027316,
+      "max_pole_radius": 0.9934763309633132,
+      "max_abs_coefficient": 1.901395320892334,
+      "peak_frequency_hz": 2249.45068359375
+    },
+    {
+      "name": "i_F3",
+      "a": [
+        1.0,
+        -1.8333036398904907,
+        0.9844147633517139
+      ],
+      "b_peak_normalized": [
+        0.005964212172027882,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3844716,
+        2064467
+      ],
+      "b_q21": [
+        12508,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9999992604547913,
+      "quantized_impulse_l1": 1.2567518144720777,
+      "max_pole_radius": 0.9921766866259916,
+      "max_abs_coefficient": 1.833303451538086,
+      "peak_frequency_hz": 2999.45068359375
+    },
+    {
+      "name": "i_F4",
+      "a": [
+        1.0,
+        -1.7762215889295583,
+        0.980556556146257
+      ],
+      "b_peak_normalized": [
+        0.008599619640852584,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3725007,
+        2056376
+      ],
+      "b_q21": [
+        18035,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0000130973012786,
+      "quantized_impulse_l1": 1.2726241479575264,
+      "max_pole_radius": 0.9902305226749524,
+      "max_abs_coefficient": 1.776221752166748,
+      "peak_frequency_hz": 3499.32861328125
+    },
+    {
+      "name": "i_F5",
+      "a": [
+        1.0,
+        -1.6413132515156585,
+        0.9741597847140442
+      ],
+      "b_peak_normalized": [
+        0.014356057376374803,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3442083,
+        2042961
+      ],
+      "b_q21": [
+        30107,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0000027432369822,
+      "quantized_impulse_l1": 1.2690188757418188,
+      "max_pole_radius": 0.986995297638147,
+      "max_abs_coefficient": 1.641313076019287,
+      "peak_frequency_hz": 4499.08447265625
+    },
+    {
+      "name": "u_F1",
+      "a": [
+        1.0,
+        -1.9900710073427315,
+        0.9921767802925615
+      ],
+      "b_peak_normalized": [
+        0.00035829586287712057,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -4173481,
+        2080746
+      ],
+      "b_q21": [
+        751,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9993970305260932,
+      "quantized_impulse_l1": 1.270811458039527,
+      "max_pole_radius": 0.9960808248242303,
+      "max_abs_coefficient": 1.9900708198547363,
+      "peak_frequency_hz": 348.81591796875
+    },
+    {
+      "name": "u_F2",
+      "a": [
+        1.0,
+        -1.9786563996597246,
+        0.989582664726854
+      ],
+      "b_peak_normalized": [
+        0.0010889096743739314,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -4149543,
+        2075305
+      ],
+      "b_q21": [
+        2284,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 1.0001598780873866,
+      "quantized_impulse_l1": 1.2717207645607476,
+      "max_pole_radius": 0.9947776327424819,
+      "max_abs_coefficient": 1.97865629196167,
+      "peak_frequency_hz": 799.072265625
+    },
+    {
+      "name": "u_F3",
+      "a": [
+        1.0,
+        -1.9026373548449824,
+        0.9844147633517139
+      ],
+      "b_peak_normalized": [
+        0.004426449848633992,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3990120,
+        2064467
+      ],
+      "b_q21": [
+        9283,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9999964826314514,
+      "quantized_impulse_l1": 1.2728730323175061,
+      "max_pole_radius": 0.9921766866259912,
+      "max_abs_coefficient": 1.9026374816894531,
+      "peak_frequency_hz": 2199.27978515625
+    },
+    {
+      "name": "u_F4",
+      "a": [
+        1.0,
+        -1.7985422418240888,
+        0.980556556146257
+      ],
+      "b_peak_normalized": [
+        0.008140187135830035,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3771816,
+        2056376
+      ],
+      "b_q21": [
+        17071,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.9999837995906167,
+      "quantized_impulse_l1": 1.272898412312598,
+      "max_pole_radius": 0.9902305226749525,
+      "max_abs_coefficient": 1.7985420227050781,
+      "peak_frequency_hz": 3299.1943359375
+    },
+    {
+      "name": "u_F5",
+      "a": [
+        1.0,
+        -1.6555278707216492,
+        0.9741597847140442
+      ],
+      "b_peak_normalized": [
+        0.014073593006127821,
+        0.0,
+        0.0
+      ],
+      "a_q21": [
+        2097152,
+        -3471894,
+        2042961
+      ],
+      "b_q21": [
+        29514,
+        0,
+        0
+      ],
+      "quantized_peak_gain": 0.999982066531186,
+      "quantized_impulse_l1": 1.2727057002455922,
+      "max_pole_radius": 0.9869952976381471,
+      "max_abs_coefficient": 1.6555280685424805,
+      "peak_frequency_hz": 4398.92578125
+    },
+    {
+      "name": "illustrative_nasal_pole_zero",
+      "a": [
+        1.0,
+        -1.9884901593957063,
+        0.989582664726854
+      ],
+      "b_peak_normalized": [
+        0.046304310799693583,
+        -0.09161851334570782,
+        0.04570213859492364
+      ],
+      "a_q21": [
+        2097152,
+        -4170166,
+        2075305
+      ],
+      "b_q21": [
+        97107,
+        -192138,
+        95844
+      ],
+      "quantized_peak_gain": 0.9992490637245545,
+      "quantized_impulse_l1": 1.3000922609845313,
+      "max_pole_radius": 0.9947776327424821,
+      "max_abs_coefficient": 1.988490104675293,
+      "peak_frequency_hz": 244.9951171875
+    }
+  ],
+  "conservative_five_section_l1_product": {
+    "a": 3.3200063459020472,
+    "i": 3.2792239908944594,
+    "u": 3.3325732488717996
+  },
+  "required_actions": [
+    "apply source headroom using a proven bound or validated tighter transient bound",
+    "include nasal stage and noise branch in end-to-end headroom",
+    "check fixed-point recursive states and coefficient transitions separately",
+    "recover loudness through bounded output gain, not unchecked internal gain"
+  ]
+}

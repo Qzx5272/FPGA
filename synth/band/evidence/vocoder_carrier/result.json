@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "Monophonic carrier numerical simulation, no voice ownership or physical sound acceptance",
+  "log": "PASS4096 Fourier samples,64harmonic/Nyquist mask,legato,release,panic;maxcycles=73 maxerror24bitLSB=18\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_carrier\\tb.sv:28: $finish called at 6146280000 (1ps)\n",
+  "sha256": {
+    "vocoder_carrier.sv": "b82e0e6465def99b92706faa62c36465b82ef22db562c0516dba4f3b4135b13c",
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "carrier_weights.vh": "cfee5c54e61b46fbce4fa727c6c8abe0d2cd081ef98a262d0fa83c75e6c983a0",
+    "midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "test_vocoder_carrier.py": "adedbc368afce54a9dd353ccb4a4cf3117a6065bf11bdddbe1fbfb4a638d16a1"
+  }
+}

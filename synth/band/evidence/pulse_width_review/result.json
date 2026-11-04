@@ -1,0 +1,182 @@
+{
+  "status": "confirmed_unresolved_violations",
+  "created": "2026-10-26T17:33:35.044977",
+  "checks": [
+    {
+      "build": "e9fc0f6e32a3",
+      "report_sha256": "6e2c408cdb66a05f234abe07a8a633f64f28d388577babc7d2b46400732d751f",
+      "pulse_paths": [
+        {
+          "slack_ns": -0.793,
+          "actual_ns": -0.568,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_ready_s0"
+        },
+        {
+          "slack_ns": -0.793,
+          "actual_ns": -0.568,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_1_s0"
+        },
+        {
+          "slack_ns": -0.793,
+          "actual_ns": -0.568,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_0_s0"
+        },
+        {
+          "slack_ns": -0.72,
+          "actual_ns": -0.495,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_ready_s0"
+        },
+        {
+          "slack_ns": -0.72,
+          "actual_ns": -0.495,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_1_s0"
+        },
+        {
+          "slack_ns": -0.72,
+          "actual_ns": -0.495,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_0_s0"
+        },
+        {
+          "slack_ns": 6.553,
+          "actual_ns": 7.453,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[5].unit/renderer/bent_increment_0_s"
+        },
+        {
+          "slack_ns": 6.567,
+          "actual_ns": 7.467,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[2].unit/renderer/bent_increment_0_s"
+        },
+        {
+          "slack_ns": 6.567,
+          "actual_ns": 7.467,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/electronic_singer/source/received_frequency_0_s"
+        },
+        {
+          "slack_ns": 6.568,
+          "actual_ns": 7.468,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/n3854_s"
+        }
+      ],
+      "status": "blocked"
+    },
+    {
+      "build": "df360eb47b57",
+      "report_sha256": "407ff9d6e52223201e522798f943b863cf84938cbaa2fd91895e02bbb30901f0",
+      "pulse_paths": [
+        {
+          "slack_ns": -0.808,
+          "actual_ns": -0.583,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_ready_s0"
+        },
+        {
+          "slack_ns": -0.808,
+          "actual_ns": -0.583,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_1_s0"
+        },
+        {
+          "slack_ns": -0.808,
+          "actual_ns": -0.583,
+          "required_ns": 0.225,
+          "kind": "High Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_0_s0"
+        },
+        {
+          "slack_ns": -0.739,
+          "actual_ns": -0.514,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_ready_s0"
+        },
+        {
+          "slack_ns": -0.739,
+          "actual_ns": -0.514,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_1_s0"
+        },
+        {
+          "slack_ns": -0.739,
+          "actual_ns": -0.514,
+          "required_ns": 0.225,
+          "kind": "Low Pulse Width",
+          "clock": "serial_clk",
+          "endpoint": "workstation/video_output/transmitter/serial_release_0_s0"
+        },
+        {
+          "slack_ns": 6.553,
+          "actual_ns": 7.453,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[5].unit/renderer/bent_increment_0_s"
+        },
+        {
+          "slack_ns": 6.553,
+          "actual_ns": 7.453,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[7].unit/renderer/bent_increment_0_s"
+        },
+        {
+          "slack_ns": 6.567,
+          "actual_ns": 7.467,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/banks[2].unit/renderer/bent_increment_0_s"
+        },
+        {
+          "slack_ns": 6.567,
+          "actual_ns": 7.467,
+          "required_ns": 0.9,
+          "kind": "High Pulse Width",
+          "clock": "core_clk",
+          "endpoint": "workstation/band/engine/core/electronic_singer/source/received_frequency_0_s"
+        }
+      ],
+      "status": "blocked"
+    }
+  ],
+  "parser_checks": "reject2actual_reports;acceptpositivefixture;rejectmissingandempty",
+  "scope": "Report audit,not physical clock measurement;no constraint relaxation"
+}

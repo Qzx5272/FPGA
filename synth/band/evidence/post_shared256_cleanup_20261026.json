@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "started": "2026-10-26T16:16:14.180239",
+  "build_id": 3280737566,
+  "bitstream_sha256": "28521f33cc4138800ee7ef1ca8397c275a6de881278f8d5915d319d9db343478",
+  "master_zero_command_sent": true,
+  "gain_readback_available": false,
+  "driver_sha256": "67e0466e24404b337be3a6dd5ead4c3a7556c1f34f2983e0d57307aeb93dd17d",
+  "last_status": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 0,
+    "cycles": 70,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  "finished": "2026-10-26T16:16:14.618628",
+  "crc_errors": 0
+}

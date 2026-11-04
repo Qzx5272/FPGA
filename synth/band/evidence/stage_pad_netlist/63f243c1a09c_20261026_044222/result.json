@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "build": "D:\\StarclusterBuilds\\stage_pad_syn_77f6e6be71f4",
+  "reference": {
+    "status": "passed",
+    "scope": "Stage-only RTL calibration/event simulation; no board or timing acceptance",
+    "sources": {
+      "experimental\\stage\\stage_pad_frontend.sv": "e7992717ba8e3938d87d33972362fa2f6e9b55bfb9d6178300c27b833746dfc4",
+      "tools\\test_stage_pad.py": "ed94800eb134c3d13287b20ba0441bf3cd3ced6212576ca8bfe5ee36e80c6b52",
+      "tests\\tb_pads.v": "1a100bea5db8ce45321822224038eb8b42af0159bba29f22f8de099524d7f032",
+      "tests\\tb_stage_pad_priority.sv": "916b2725c831b4f7946a5184097f58f192b581757359a8408e11160394dd459b"
+    },
+    "log": "PASS pad frontend: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad\\tb.v:53: $finish called at 74940000 (1ps)\nPASS2048 complete64-pad priority states:old linear reference,all single-bit positions,release-before-on\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_stage_pad_priority.sv:33: $finish called at 41001000 (1ps)\n"
+  },
+  "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+  "netlist_sha256": "63f243c1a09ca4f7d8d7bbb76d3445d80578f0646415714a6146dafd0c15ace0",
+  "vendor_sha256": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+  "testbench_sha256": "8feb4e3bd7b6af0ab37c626e95bbd1858ecd86fdc3b16b912328acd575ec3ab3",
+  "scope": "Default10lane/64pad vendor-netlist outputs versus validated RTL:256numeric cases,all80 calibration RAM addresses,same-edge read/write,events,panic,reset,busy/config coherence;not timing/physical acceptance",
+  "candidate_differential_proof": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\40dbbe85f2cf\\result.json",
+  "reference_source_sha256": "e7992717ba8e3938d87d33972362fa2f6e9b55bfb9d6178300c27b833746dfc4",
+  "returncode": 0,
+  "log": "PASS all80 calibration RAM addresses and same-edge old-data lookup\nPASS vendor-pad equivalence: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\tb.v:98: $finish called at 256880000 (1ps)\n"
+}

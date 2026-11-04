@@ -1,0 +1,13 @@
+{
+  "status": "diagnosed_wrong_score_fixture",
+  "created": "2026-10-26T19:51:21.946273",
+  "failed_report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\singer_render\\d75060cfbe63_96s.json",
+  "failed_report_sha256": "58bea24960e775fe177abdd9c414084a90bf9b266516a178e7357d011d923c37",
+  "wrong_score_sha256": "b3123f06414e1e113b88e0e812df05a214c4b2f9c67460d4d791858de4f95949",
+  "wrong_score_part15_events": 0,
+  "acceptance_score_sha256": "15fed5b6c383189e738ff3458e3b6d75014449fed043c4e51b04877631f98b13",
+  "acceptance_part15_note_ons": 96,
+  "scope": "The failed test ran a preset-export fixture with no singer events. This explains zero singer gate; it proves neither singer RTL success nor failure. Original failed evidence retained.",
+  "replacement_export": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_shared_singer_acceptance_20261026",
+  "replacement_render_session": 53615
+}

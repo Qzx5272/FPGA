@@ -1,0 +1,15 @@
+{
+  "status": "passed_numeric_and_gui_only",
+  "updated": "2026-10-25T22:03:25.500193",
+  "scope": "5 monitor tests plus29 existing host tests,34 total; preferred format,realQtIO buffer readiness,read error and failed reopen mocked; no physical audio capture validated",
+  "sources": {
+    "host/audio_monitor.py": "5c8e468e4766f9429fc11c2a5ea496254f7450f419cd911e3603b8ecbae00509",
+    "host/stage.py": "9a88fa941d06eb9ce3e13d49beec6f33749b3e5ac94b27a1590d43920ef8374f",
+    "host/app.py": "26c63f2a96c6401d0024c7f43f354ceed39a9d41dc3d271b797b66b6ed090330",
+    "tests/test_audio_monitor.py": "6ce41d94e0ead3d79579e3b7da978ebb1dba4f432d6659bd6afe651d32ce958a"
+  },
+  "host_report_sha256": "af1c92e774543ec50fd411d55de5721739682b8de15b883d427303f57e0c0b5b",
+  "screenshot": "evidence/ui/audio_monitor.png",
+  "screenshot_source": "Synthetic1500Hz quadrature input; not physical audio",
+  "api_reference": "https://doc.qt.io/qtforpython-6/PySide6/QtMultimedia/QAudioSource.html"
+}

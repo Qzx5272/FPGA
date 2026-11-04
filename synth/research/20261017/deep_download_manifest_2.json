@@ -1,0 +1,41 @@
+[
+  {
+    "id": "P01_early",
+    "url": "https://www.nime.org/proceedings/2002/nime2002_088.pdf",
+    "exit": 0,
+    "error": "",
+    "pages": 6
+  },
+  {
+    "id": "P02_early",
+    "url": "https://www.jamodrum.net/Articles/Nime03BF.pdf",
+    "exit": 0,
+    "error": "",
+    "pages": 6
+  },
+  {
+    "id": "P13_full",
+    "url": "https://citeseerx.ist.psu.edu/document?doi=1df6f2bf31d82a334c98e94464e490d1984dcbf8&repid=rep1&type=pdf",
+    "exit": 22,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "id": "HW_DS1239",
+    "url": "https://cdn.gowinsemi.com.cn/DS1239E.pdf",
+    "exit": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "id": "P14_landing",
+    "url": "https://aaltodoc.aalto.fi/items/2a2302cd-d0d7-4390-b531-fc743eff29e2",
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "id": "P06_early",
+    "url": "https://arxiv.org/pdf/2010.01570",
+    "exit": 0,
+    "error": "",
+    "pages": 4
+  }
+]

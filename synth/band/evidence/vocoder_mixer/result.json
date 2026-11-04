@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "log": "PASS256 mixer boundary vectors: positive/negative saturation, negative envelope clamp, input latching, counter/reset,32cycles\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_mixer\\tb.sv:22: $finish called at 174180000 (1ps)\n",
+  "source_sha256": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+  "test_sha256": "d0a1eb522f318c38531add25bde561a776295803c58eea5f087954620e1c509c"
+}

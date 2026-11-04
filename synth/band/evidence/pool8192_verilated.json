@@ -1,0 +1,23 @@
+{
+  "profile": "cycle-accurate Verilator RTL simulation; not board measurement",
+  "partials": 8192,
+  "state": "passed",
+  "sources": {
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "partial_lane.v": "a7bb4bfd485c2dca60d604b5aff9faa2ed5fcb48c18e4ffa9f2d9fc8c52f2d12",
+    "partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "pool_driver.cpp": "a6536039081526639875fe1d72b25dfa59317ffcb0ca102441a43a3c8a915d7e",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc"
+  },
+  "executable_sha256": "37ad5be6864520df0f00ea5cea87390e908bfac7161b1471aa8275f315583c3c",
+  "elapsed_seconds": 28.281000000002678,
+  "log": "PASS capacity=8192 frames=135168 max_cycles=518\n",
+  "returncode": 0,
+  "verified_peaks": 8192,
+  "minimum_peak": 937.4860632728148,
+  "maximum_peak": 937.4985751315035,
+  "expected_peak": 937.492847442627,
+  "max_relative_error": 7.236503009747781e-06,
+  "sample_peak": 7470025.0,
+  "sample_sha256": "4248a9a748838a9eecfb2250b69cda9b69c34b1c6a02458a3f4bad92a8758c00"
+}

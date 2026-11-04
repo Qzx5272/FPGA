@@ -1,0 +1,90 @@
+{
+  "scope": "fixed delay / fixed coefficient integer FDN; excludes lowpass damping, dynamic parameter changes, DAC and listening",
+  "sample_rate": 48000,
+  "state_fraction_bits": 32,
+  "delay_lengths": [
+    1151,
+    1277,
+    1373,
+    1481,
+    1601,
+    1723,
+    1867,
+    1999
+  ],
+  "results": [
+    {
+      "requested_t60_s": 0.3,
+      "schroeder_t30_extrapolated_t60_s": 0.2920982854268,
+      "state_peak_fs": 0.024999999906867743,
+      "output_peak_fs": 0.006249999976716936,
+      "last_second_peak_dbfs": -198.6797971382276,
+      "saturations": 0,
+      "gains_q21": [
+        1207364,
+        1136549,
+        1085396,
+        1030595,
+        972944,
+        917638,
+        856389,
+        803843
+      ]
+    },
+    {
+      "requested_t60_s": 1,
+      "schroeder_t30_extrapolated_t60_s": 1.0021875526579964,
+      "state_peak_fs": 0.024999999906867743,
+      "output_peak_fs": 0.006249999976716936,
+      "last_second_peak_dbfs": -204.70039705150722,
+      "saturations": 0,
+      "gains_q21": [
+        1777020,
+        1745088,
+        1721144,
+        1694600,
+        1665587,
+        1636599,
+        1603032,
+        1572868
+      ]
+    },
+    {
+      "requested_t60_s": 2,
+      "schroeder_t30_extrapolated_t60_s": 1.9999816756202833,
+      "state_peak_fs": 0.024999999906867743,
+      "output_peak_fs": 0.006249999976716936,
+      "last_second_peak_dbfs": -178.6797971382276,
+      "saturations": 0,
+      "gains_q21": [
+        1930461,
+        1913038,
+        1899869,
+        1885161,
+        1868954,
+        1852619,
+        1833522,
+        1816189
+      ]
+    },
+    {
+      "requested_t60_s": 3,
+      "schroeder_t30_extrapolated_t60_s": 2.9999009570154676,
+      "state_peak_fs": 0.024999999906867743,
+      "output_peak_fs": 0.006249999976716936,
+      "last_second_peak_dbfs": -175.15797195711397,
+      "saturations": 0,
+      "gains_q21": [
+        1984498,
+        1972539,
+        1963476,
+        1953330,
+        1942118,
+        1930785,
+        1917494,
+        1905390
+      ]
+    }
+  ],
+  "interpretation": "T30 estimates decay from -5 to -35 dB, not perceptual room similarity; finite-window tail results are not a proof for arbitrary switching"
+}

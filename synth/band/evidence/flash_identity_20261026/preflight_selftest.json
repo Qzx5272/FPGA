@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "offline preflight guard fixtures, no USB calls",
+  "checks": [
+    "valid fixture accepted",
+    "hash rejected",
+    "identity rejected",
+    "path rejected",
+    "top rejected",
+    "timing rejected",
+    "snapshot rejected"
+  ]
+}

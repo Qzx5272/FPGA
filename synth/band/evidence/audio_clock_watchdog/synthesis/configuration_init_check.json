@@ -1,0 +1,15 @@
+{
+  "status": "passed_netlist_initializers",
+  "scope": "Vendor netlist explicitly retained zeroINIT on all8audio-domain heartbeat flops;not physical boot acceptance",
+  "netlist_sha256": "90d710e0055d4677b49f7d3c75aeceb30471cbd249e266ff5da7791afb00c4c8",
+  "checks": {
+    "divider_0_s0": true,
+    "divider_1_s0": true,
+    "divider_2_s0": true,
+    "divider_3_s0": true,
+    "divider_4_s0": true,
+    "divider_5_s0": true,
+    "divider_6_s0": true,
+    "heartbeat_s1": true
+  }
+}

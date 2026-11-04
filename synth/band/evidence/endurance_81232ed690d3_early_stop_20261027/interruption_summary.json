@@ -1,0 +1,40 @@
+{
+  "status": "interrupted_by_request_not_8h_pass",
+  "recorded_at": "2026-10-27T07:02:17.220341",
+  "reason": "User requested shortening testing; terminated ongoing endurance test.",
+  "last_checkpoint_stage": "256-slot sustained load: 17078 seconds",
+  "record_count_reported": 446883,
+  "retained_records": 64,
+  "full_records_and_raw_capture_available": false,
+  "scope": "Only last checkpoint retained; no complete 8h pass or all-record audit. Existing 1h validation remains separate.",
+  "checkpoint_crc": 0,
+  "last_health": {
+    "gate": false,
+    "note": 60,
+    "dropped": 0,
+    "stale_off": 0,
+    "dac_dropped": 0,
+    "dac_underruns": 0
+  },
+  "cleanup": {
+    "identity": 3735635258,
+    "last_status": {
+      "profile": "band",
+      "playing": false,
+      "owner": 1,
+      "part": 7,
+      "voices": 0,
+      "cycles": 70,
+      "epoch": 6,
+      "song_sample": 0,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0
+    },
+    "parser_bad_crc": 0
+  },
+  "files": {
+    "hardware_8h.driver.txt": "6f5166846917ebfe3ecac48701a0b7488bfe7d63a0307e3f855479a0b55416b0",
+    "hardware_8h.json": "6b7a109fcd8475cecfba87aa19425457aaea0225e0abe1574884fadca59c2a20"
+  }
+}

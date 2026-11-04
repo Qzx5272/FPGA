@@ -1,0 +1,25 @@
+{
+  "status": "schematic_reviewed_not_hardware_verified",
+  "time": "2026-10-26T13:22:44.391394",
+  "schematic": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\tmp\\pro_dock_schematic.pdf",
+  "sha256": "153d1c170a7d54e11a5d5e9b128ee9139a07b27249377d909e204cbf56e25cec",
+  "page": 15,
+  "revision": "1.5 / 2025-03-25 / TANG_MEGA-138K-Pro_Dock-4071f",
+  "keys": {
+    "S0": {
+      "pin": "K16",
+      "role": "play"
+    },
+    "S1": {
+      "pin": "F15",
+      "role": "stop"
+    },
+    "S2": {
+      "pin": "G15",
+      "role": "panic"
+    }
+  },
+  "electrical": "3.3V pull-up 1.5k, switch to GND, 10nF shunt; active-low",
+  "limits": "User board revision not physically confirmed. Proposed pins only; no programming. Existing generic engine has LOCAL_INPUTS=1, play/stop5ms debounce and panic2stage synchronizer.",
+  "current_release_changed": false
+}

@@ -1,0 +1,8 @@
+ Target Cable: USB Debugger A/0/None/null@2.5MHz
+ Target Device: GW5AST-138B(0x0001081B)
+ Operation "exFlash Detect ID" for device#1...
+ Status Code is: 0x00020230
+ Detected Flash id: 0xEF4018!
+ Finished.
+ Cost 0.56 second(s)
+  

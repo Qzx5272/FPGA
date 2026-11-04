@@ -1,0 +1,1545 @@
+{
+  "status": "diagnosis_complete",
+  "scope": "Eight-sample intermediate trace of failed netlist, not acceptance",
+  "netlist_sha256": "9ce1ce5fedd05d21c697f12068c8e24765c447507410af76d904097c40778382",
+  "observations": 128,
+  "mismatch_count": 128,
+  "mismatches": [
+    {
+      "sample": 0,
+      "band": 0,
+      "expected": [
+        -2,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 1,
+      "expected": [
+        -4,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 2,
+      "expected": [
+        -6,
+        0
+      ],
+      "observed": [
+        -2436899,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 3,
+      "expected": [
+        -11,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 4,
+      "expected": [
+        -21,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 5,
+      "expected": [
+        -38,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 6,
+      "expected": [
+        -69,
+        0
+      ],
+      "observed": [
+        -2429740,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 7,
+      "expected": [
+        -128,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 8,
+      "expected": [
+        -235,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 9,
+      "expected": [
+        -433,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 10,
+      "expected": [
+        -795,
+        0
+      ],
+      "observed": [
+        -2395869,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 11,
+      "expected": [
+        -1455,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 12,
+      "expected": [
+        -2651,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 13,
+      "expected": [
+        -4803,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 14,
+      "expected": [
+        -8635,
+        0
+      ],
+      "observed": [
+        -2175559,
+        0
+      ]
+    },
+    {
+      "sample": 0,
+      "band": 15,
+      "expected": [
+        -15368,
+        0
+      ],
+      "observed": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 0,
+      "expected": [
+        -6,
+        0
+      ],
+      "observed": [
+        -1963,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 1,
+      "expected": [
+        -12,
+        0
+      ],
+      "observed": [
+        -7720,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 2,
+      "expected": [
+        -20,
+        0
+      ],
+      "observed": [
+        1154904,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 3,
+      "expected": [
+        -38,
+        0
+      ],
+      "observed": [
+        7250,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 4,
+      "expected": [
+        -72,
+        0
+      ],
+      "observed": [
+        -6719,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 5,
+      "expected": [
+        -132,
+        0
+      ],
+      "observed": [
+        -22528,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 6,
+      "expected": [
+        -242,
+        0
+      ],
+      "observed": [
+        1151477,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 7,
+      "expected": [
+        -445,
+        0
+      ],
+      "observed": [
+        24586,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 8,
+      "expected": [
+        -815,
+        0
+      ],
+      "observed": [
+        -22737,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 9,
+      "expected": [
+        -1490,
+        0
+      ],
+      "observed": [
+        -30960,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 10,
+      "expected": [
+        -2700,
+        0
+      ],
+      "observed": [
+        1135037,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 11,
+      "expected": [
+        -4837,
+        0
+      ],
+      "observed": [
+        81658,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 12,
+      "expected": [
+        -8496,
+        0
+      ],
+      "observed": [
+        -74146,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 13,
+      "expected": [
+        -14426,
+        0
+      ],
+      "observed": [
+        372687,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 14,
+      "expected": [
+        -23028,
+        0
+      ],
+      "observed": [
+        1026565,
+        0
+      ]
+    },
+    {
+      "sample": 1,
+      "band": 15,
+      "expected": [
+        -32398,
+        0
+      ],
+      "observed": [
+        286026,
+        0
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 0,
+      "expected": [
+        -9,
+        0
+      ],
+      "observed": [
+        -2425,
+        0
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 1,
+      "expected": [
+        -18,
+        0
+      ],
+      "observed": [
+        10934,
+        969040
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 2,
+      "expected": [
+        -31,
+        0
+      ],
+      "observed": [
+        1468026,
+        2906
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 3,
+      "expected": [
+        -59,
+        0
+      ],
+      "observed": [
+        -2437947,
+        82
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 4,
+      "expected": [
+        -111,
+        0
+      ],
+      "observed": [
+        -8043,
+        0
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 5,
+      "expected": [
+        -203,
+        0
+      ],
+      "observed": [
+        35497,
+        966192
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 6,
+      "expected": [
+        -373,
+        0
+      ],
+      "observed": [
+        1476338,
+        9848
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 7,
+      "expected": [
+        -678,
+        0
+      ],
+      "observed": [
+        -2430896,
+        81
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 8,
+      "expected": [
+        -1231,
+        0
+      ],
+      "observed": [
+        -23649,
+        0
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 9,
+      "expected": [
+        -2207,
+        0
+      ],
+      "observed": [
+        96771,
+        952724
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 10,
+      "expected": [
+        -3877,
+        0
+      ],
+      "observed": [
+        1495043,
+        32702
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 11,
+      "expected": [
+        -6576,
+        0
+      ],
+      "observed": [
+        -2372345,
+        80
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 12,
+      "expected": [
+        -10440,
+        0
+      ],
+      "observed": [
+        -21075,
+        0
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 13,
+      "expected": [
+        -14413,
+        0
+      ],
+      "observed": [
+        38241,
+        865123
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 14,
+      "expected": [
+        -13407,
+        0
+      ],
+      "observed": [
+        1436444,
+        114543
+      ]
+    },
+    {
+      "sample": 2,
+      "band": 15,
+      "expected": [
+        7565,
+        0
+      ],
+      "observed": [
+        -1835114,
+        73
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 0,
+      "expected": [
+        -11,
+        0
+      ],
+      "observed": [
+        2416108,
+        80
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 1,
+      "expected": [
+        -22,
+        0
+      ],
+      "observed": [
+        -532,
+        1920637
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 2,
+      "expected": [
+        -39,
+        0
+      ],
+      "observed": [
+        -246386,
+        969067
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 3,
+      "expected": [
+        -74,
+        0
+      ],
+      "observed": [
+        1142178,
+        163
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 4,
+      "expected": [
+        -138,
+        0
+      ],
+      "observed": [
+        2366472,
+        79
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 5,
+      "expected": [
+        -251,
+        0
+      ],
+      "observed": [
+        -4128,
+        1908222
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 6,
+      "expected": [
+        -459,
+        0
+      ],
+      "observed": [
+        -248216,
+        949173
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 7,
+      "expected": [
+        -824,
+        0
+      ],
+      "observed": [
+        1107268,
+        163
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 8,
+      "expected": [
+        -1476,
+        0
+      ],
+      "observed": [
+        2271093,
+        78
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 9,
+      "expected": [
+        -2567,
+        0
+      ],
+      "observed": [
+        -36996,
+        1859334
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 10,
+      "expected": [
+        -4282,
+        0
+      ],
+      "observed": [
+        -261973,
+        869532
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 11,
+      "expected": [
+        -6568,
+        0
+      ],
+      "observed": [
+        976329,
+        161
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 12,
+      "expected": [
+        -8336,
+        0
+      ],
+      "observed": [
+        2546459,
+        71
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 13,
+      "expected": [
+        -5299,
+        0
+      ],
+      "observed": [
+        -246532,
+        1607187
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 14,
+      "expected": [
+        13566,
+        0
+      ],
+      "observed": [
+        -335145,
+        453174
+      ]
+    },
+    {
+      "sample": 3,
+      "band": 15,
+      "expected": [
+        62760,
+        0
+      ],
+      "observed": [
+        383817,
+        145
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 0,
+      "expected": [
+        -18,
+        0
+      ],
+      "observed": [
+        -1136575,
+        1914758
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 1,
+      "expected": [
+        -35,
+        0
+      ],
+      "observed": [
+        -2439353,
+        1900856
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 2,
+      "expected": [
+        -64,
+        0
+      ],
+      "observed": [
+        -4092546,
+        1929458
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 3,
+      "expected": [
+        -120,
+        0
+      ],
+      "observed": [
+        3883523,
+        3067
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 4,
+      "expected": [
+        -221,
+        0
+      ],
+      "observed": [
+        -1092582,
+        1909131
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 5,
+      "expected": [
+        -402,
+        0
+      ],
+      "observed": [
+        -2432325,
+        1906923
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 6,
+      "expected": [
+        -734,
+        0
+      ],
+      "observed": [
+        -4072684,
+        1903829
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 7,
+      "expected": [
+        -1316,
+        0
+      ],
+      "observed": [
+        3829557,
+        10010
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 8,
+      "expected": [
+        -2344,
+        0
+      ],
+      "observed": [
+        -983746,
+        1882519
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 9,
+      "expected": [
+        -4038,
+        0
+      ],
+      "observed": [
+        -2341345,
+        1929920
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 10,
+      "expected": [
+        -6619,
+        0
+      ],
+      "observed": [
+        -3986229,
+        1791071
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 11,
+      "expected": [
+        -9833,
+        0
+      ],
+      "observed": [
+        3599380,
+        32859
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 12,
+      "expected": [
+        -11759,
+        0
+      ],
+      "observed": [
+        -1090494,
+        1709430
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 13,
+      "expected": [
+        -6695,
+        0
+      ],
+      "observed": [
+        -1456385,
+        2053489
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 14,
+      "expected": [
+        12807,
+        0
+      ],
+      "observed": [
+        -3475900,
+        1114286
+      ]
+    },
+    {
+      "sample": 4,
+      "band": 15,
+      "expected": [
+        25017,
+        0
+      ],
+      "observed": [
+        2477167,
+        114684
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 0,
+      "expected": [
+        -30,
+        0
+      ],
+      "observed": [
+        945904,
+        3792239
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 1,
+      "expected": [
+        -58,
+        0
+      ],
+      "observed": [
+        1142902,
+        873919
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 2,
+      "expected": [
+        -107,
+        0
+      ],
+      "observed": [
+        -2704175,
+        1892438
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 3,
+      "expected": [
+        -198,
+        0
+      ],
+      "observed": [
+        -3802291,
+        969223
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 4,
+      "expected": [
+        -364,
+        0
+      ],
+      "observed": [
+        868853,
+        3760932
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 5,
+      "expected": [
+        -662,
+        0
+      ],
+      "observed": [
+        1115113,
+        879567
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 6,
+      "expected": [
+        -1209,
+        0
+      ],
+      "observed": [
+        -2638146,
+        1883448
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 7,
+      "expected": [
+        -2168,
+        0
+      ],
+      "observed": [
+        -3703510,
+        949326
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 8,
+      "expected": [
+        -3848,
+        0
+      ],
+      "observed": [
+        559994,
+        3642029
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 9,
+      "expected": [
+        -6609,
+        0
+      ],
+      "observed": [
+        1063880,
+        920619
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 10,
+      "expected": [
+        -10778,
+        0
+      ],
+      "observed": [
+        -2388728,
+        1824062
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 11,
+      "expected": [
+        -15957,
+        0
+      ],
+      "observed": [
+        -3331421,
+        869681
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 12,
+      "expected": [
+        -19578,
+        0
+      ],
+      "observed": [
+        -518736,
+        3063950
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 13,
+      "expected": [
+        -16140,
+        0
+      ],
+      "observed": [
+        1278846,
+        1305013
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 14,
+      "expected": [
+        -9015,
+        0
+      ],
+      "observed": [
+        -1428060,
+        1235256
+      ]
+    },
+    {
+      "sample": 5,
+      "band": 15,
+      "expected": [
+        -56860,
+        0
+      ],
+      "observed": [
+        -1692326,
+        453307
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 0,
+      "expected": [
+        -43,
+        0
+      ],
+      "observed": [
+        -8176188,
+        2810417
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 1,
+      "expected": [
+        -82,
+        0
+      ],
+      "observed": [
+        3853007,
+        775869
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 2,
+      "expected": [
+        -152,
+        0
+      ],
+      "observed": [
+        3335774,
+        870069
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 3,
+      "expected": [
+        -280,
+        0
+      ],
+      "observed": [
+        -6787271,
+        1926644
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 4,
+      "expected": [
+        -514,
+        0
+      ],
+      "observed": [
+        -8029776,
+        2841812
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 5,
+      "expected": [
+        -932,
+        0
+      ],
+      "observed": [
+        3726114,
+        752779
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 6,
+      "expected": [
+        -1697,
+        0
+      ],
+      "observed": [
+        3211129,
+        904584
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 7,
+      "expected": [
+        -3029,
+        0
+      ],
+      "observed": [
+        -6635030,
+        1894140
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 8,
+      "expected": [
+        -5328,
+        0
+      ],
+      "observed": [
+        -7347597,
+        2964955
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 9,
+      "expected": [
+        -9010,
+        0
+      ],
+      "observed": [
+        3267488,
+        707144
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 10,
+      "expected": [
+        -14296,
+        0
+      ],
+      "observed": [
+        2784496,
+        1003947
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 11,
+      "expected": [
+        -20111,
+        0
+      ],
+      "observed": [
+        -6066488,
+        1758753
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 12,
+      "expected": [
+        -22316,
+        0
+      ],
+      "observed": [
+        -3799851,
+        3615390
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 13,
+      "expected": [
+        -14937,
+        0
+      ],
+      "observed": [
+        1737874,
+        953970
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 14,
+      "expected": [
+        -10046,
+        0
+      ],
+      "observed": [
+        1447857,
+        1046425
+      ]
+    },
+    {
+      "sample": 6,
+      "band": 15,
+      "expected": [
+        -55935,
+        0
+      ],
+      "observed": [
+        -3842075,
+        1000929
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 0,
+      "expected": [
+        -56,
+        0
+      ],
+      "observed": [
+        3645874,
+        -158749
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 1,
+      "expected": [
+        -106,
+        0
+      ],
+      "observed": [
+        -3762626,
+        2560222
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 2,
+      "expected": [
+        -196,
+        0
+      ],
+      "observed": [
+        6635430,
+        784594
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 3,
+      "expected": [
+        -360,
+        0
+      ],
+      "observed": [
+        4937983,
+        935881
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 4,
+      "expected": [
+        -660,
+        0
+      ],
+      "observed": [
+        3608769,
+        -129223
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 5,
+      "expected": [
+        -1193,
+        0
+      ],
+      "observed": [
+        -3572129,
+        2458210
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 6,
+      "expected": [
+        -2163,
+        0
+      ],
+      "observed": [
+        6536779,
+        797933
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 7,
+      "expected": [
+        -3831,
+        0
+      ],
+      "observed": [
+        4750492,
+        953460
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 8,
+      "expected": [
+        -6648,
+        0
+      ],
+      "observed": [
+        3557543,
+        40067
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 9,
+      "expected": [
+        -10963,
+        0
+      ],
+      "observed": [
+        -2940424,
+        2133479
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 10,
+      "expected": [
+        -16600,
+        0
+      ],
+      "observed": [
+        6151141,
+        842723
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 11,
+      "expected": [
+        -21167,
+        0
+      ],
+      "observed": [
+        4112263,
+        995536
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 12,
+      "expected": [
+        -18084,
+        0
+      ],
+      "observed": [
+        3724754,
+        1381766
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 13,
+      "expected": [
+        -825,
+        0
+      ],
+      "observed": [
+        -1033467,
+        1360855
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 14,
+      "expected": [
+        12985,
+        0
+      ],
+      "observed": [
+        4556702,
+        901781
+      ]
+    },
+    {
+      "sample": 7,
+      "band": 15,
+      "expected": [
+        22274,
+        0
+      ],
+      "observed": [
+        1997029,
+        899941
+      ]
+    }
+  ]
+}

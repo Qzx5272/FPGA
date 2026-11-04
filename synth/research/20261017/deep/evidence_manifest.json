@@ -1,0 +1,339 @@
+{
+  "generated_utc": "2026-10-17T14:20:12.606418+00:00",
+  "turn_started_utc": "2026-10-17T12:14:52+00:00",
+  "long_experiment_status": "completed",
+  "long_experiment_elapsed_seconds": 7200.016000000003,
+  "scope": "research, standalone RTL simulation/synthesis and CPU reference models; no board programming or integrated audio certification",
+  "files": [
+    {
+      "path": "output/pdf/ORCHESTRA138_V3_FPGA_Engineering.pdf",
+      "bytes": 715119,
+      "sha256": "9d920b9a8f6b72e340df236c3efe37ba289ec149ca9e3df7d446766f5e04de0e"
+    },
+    {
+      "path": "synth/research/20261017/architecture_budget.py",
+      "bytes": 3212,
+      "sha256": "53d04b90fb23293fd8a9c6f5e51607b54bc2744c7db08190c46214b136e3c203"
+    },
+    {
+      "path": "synth/research/20261017/arranger_reference.py",
+      "bytes": 7065,
+      "sha256": "8935efc0424b99ec059e517fb680d8e06ecc149aa417360a4e2910ca05a4f511"
+    },
+    {
+      "path": "synth/research/20261017/build_deep_design.py",
+      "bytes": 16212,
+      "sha256": "88d23d8d7a21e0ab689d1f45a997b7b3c6c76af7daeedd8be1a15baa1e9edff4"
+    },
+    {
+      "path": "synth/research/20261017/build_design.py",
+      "bytes": 28492,
+      "sha256": "5434eb6ac4ee656750c02518bd2d3165a47759bd70fa2e027cff8508619dc7be"
+    },
+    {
+      "path": "synth/research/20261017/build_evidence_manifest.py",
+      "bytes": 1472,
+      "sha256": "f02b21ae87d1faad23d37f6099e56d5c2f8016a5fc0526c60bcb3b79210d2b53"
+    },
+    {
+      "path": "synth/research/20261017/collect_sources.py",
+      "bytes": 2583,
+      "sha256": "63a858bfa9fed2b6d4ea48a806f97ce6b725fad0ab5ac0feefbc0987d72ab696"
+    },
+    {
+      "path": "synth/research/20261017/deep/architecture_budget.json",
+      "bytes": 4438,
+      "sha256": "fd77b5ef85a4fd164d2078006a69846ab98124ccabbb9067587d9839a2654264"
+    },
+    {
+      "path": "synth/research/20261017/deep/arranger_90s_events.json",
+      "bytes": 327055,
+      "sha256": "f60f6cba003b40904a5a546957bd867a78a9228b8f6f972b8919e61ce3e080d7"
+    },
+    {
+      "path": "synth/research/20261017/deep/arranger_results.json",
+      "bytes": 1052,
+      "sha256": "997842c5ff8b7624ad07af98cec318ec38d64745871aa206de4c82e4f2cc870c"
+    },
+    {
+      "path": "synth/research/20261017/deep/envelope_results.json",
+      "bytes": 8563,
+      "sha256": "06574f7152956b100b7ed999f40180dcb4a0a9e7f788e6dbabf97d743bc4b2e6"
+    },
+    {
+      "path": "synth/research/20261017/deep/fdn_results.json",
+      "bytes": 2288,
+      "sha256": "d49702f50baa95ea2245aae54ca9ed56d12389d6c35c2f8074e078a60d9161fa"
+    },
+    {
+      "path": "synth/research/20261017/deep/filter_mitigation.json",
+      "bytes": 12980,
+      "sha256": "292c231234470f3140464abb878cfec4798cae742141f6205b1f31b1a8ba7cd2"
+    },
+    {
+      "path": "synth/research/20261017/deep/filter_stress_analysis.json",
+      "bytes": 4206,
+      "sha256": "31966ddf1e6a9214ec938925f46eedeb17a1cf42f2c7179a040b4ca80f35600b"
+    },
+    {
+      "path": "synth/research/20261017/deep/filter_stress_progress.json",
+      "bytes": 533,
+      "sha256": "bc8c479b5ec8e0b114267675ff695a7e7a5884d90aa96582c2523504fbb74ff9"
+    },
+    {
+      "path": "synth/research/20261017/deep/finite_control_results.json",
+      "bytes": 373,
+      "sha256": "dac1a9f33bffca370fa1945d930bf55e28b0d7551b76ddca8f1cd4522fab8c92"
+    },
+    {
+      "path": "synth/research/20261017/deep/numeric_results.json",
+      "bytes": 5649,
+      "sha256": "bbb3483e8b9e01bcca1f6287cf42c3828bd10f44d2ea66639b003729ca98c256"
+    },
+    {
+      "path": "synth/research/20261017/deep/reading_notes.json",
+      "bytes": 26922,
+      "sha256": "f0d1b67e6628787faad2ae0ba7972f710bc7869e508f0e2cb0f343f80c87fe25"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/envelope_step.v",
+      "bytes": 1755,
+      "sha256": "828fd38fad0840b6a5f3b12c15764b842717b8cb3c9a1abbedcf1a4a704859f8"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/envelope_test.log",
+      "bytes": 132,
+      "sha256": "61ad3309ecdb8adfcd794808f93bdf5aec04bfd0499cc82c0942c4ccca28916c"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/hq_quarter_test.log",
+      "bytes": 122,
+      "sha256": "c65685a816dcd8a6488ee4be46da2fbaf660601c6de0aa0b9525e6c7f34f64b6"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/hq_sine.v",
+      "bytes": 1650,
+      "sha256": "d3586c5ad627a170fe45c5632fc5432caac39b4ab0e2d2648ab1dedfbb1afc0a"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/hq_sine_quarter.v",
+      "bytes": 1586,
+      "sha256": "c555d4e9050f31d05106a25cb1db55eae62b7636e6f7519ea7aeffcac4e43d68"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/hq_sine_test.log",
+      "bytes": 122,
+      "sha256": "ec780c20db4aa401ef76eb866b857fe107edb55c0d47d389c273c2842b9f3dda"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/i2s24_test.log",
+      "bytes": 199,
+      "sha256": "8eab4d70395a36203ae1afda2db79024a85a5bcc9c3ecfc7f4c32ee5c3c65a03"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/i2s24_tx.v",
+      "bytes": 1285,
+      "sha256": "826b3374b394208d16e629192df678013b12b64911958b405321d0ede6145d41"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/impl/gwsynthesis/envelope_research_syn.rpt.html",
+      "bytes": 366700,
+      "sha256": "ef1733cf836426d3b1656d9d3ffac44c21a70b5fcda41c1a9191cc22ef4270b9"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/impl/gwsynthesis/hq_quarter_research_syn.rpt.html",
+      "bytes": 131938,
+      "sha256": "261b3db31e2e387d6d65657df40d65bfacf80307f778cac7819db2ac61ded3a0"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/impl/gwsynthesis/hq_sine_research_syn.rpt.html",
+      "bytes": 135239,
+      "sha256": "f451db11f2f93d17f3282e448ebc1fc6a2f0e38c4eda90bbb3448dbaf95f351d"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/impl/gwsynthesis/modal_rotation_research_syn.rpt.html",
+      "bytes": 118834,
+      "sha256": "bd2683d273d8bbe8ed3a9bc111389a1144cbaa7039128bfc5cd46213d4422d91"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/modal_rotation.v",
+      "bytes": 1625,
+      "sha256": "c3c7dbdd7f155763d51c34e6777444bc7cea4d3ecedde619b78c6d7650995500"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/modal_test.log",
+      "bytes": 147,
+      "sha256": "92560eee3e72b254900ba66f6119b77b4af0ad591c0f90f887e40e0d91408d4a"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/synth_envelope.tcl",
+      "bytes": 303,
+      "sha256": "fd9647c3232df9c0061c0de813d91a81a6c11811044b93adb8d656eabe69fa79"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/synth_hq.tcl",
+      "bytes": 290,
+      "sha256": "1d2ae9d9b729614e47bee6b3bf9983bdbb7768d39d75a5e070cc874289a2eb57"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/synth_modal.tcl",
+      "bytes": 311,
+      "sha256": "180f82c7aa8c90485bde8e06a6791dd914556881ecc65874f67683e3488d6a9f"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/synth_quarter.tcl",
+      "bytes": 309,
+      "sha256": "33e07daf210a61d22506e178c173af4606e1145e1036e46b25a571df3b8b94d3"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/tb_envelope.sv",
+      "bytes": 1372,
+      "sha256": "de38dcad1bb06542c97b02740cd823c0b5f097869912ec78221bc57209c36cd2"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/tb_hq_sine.sv",
+      "bytes": 1415,
+      "sha256": "e37a4f575ba88abe0bf9cbcc7b823dd8ef3789752cac17ae0f3235ee58a73f71"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/tb_i2s24.sv",
+      "bytes": 2162,
+      "sha256": "58be7057f0afacb1eac89001b2067ae7d4e2868dcfe48965efb9521f405497cc"
+    },
+    {
+      "path": "synth/research/20261017/deep/rtl/tb_modal.sv",
+      "bytes": 1336,
+      "sha256": "7b381765a4299392dece1512c9f5ee7143ef6d9b2c3bd2876c5aea5a64600787"
+    },
+    {
+      "path": "synth/research/20261017/deep/song_control_example.json",
+      "bytes": 5221,
+      "sha256": "976a83320a41eeed7598eb43e6003a301097d1454047b0db9a897d2908d65a57"
+    },
+    {
+      "path": "synth/research/20261017/deep/song_timing_results.json",
+      "bytes": 124,
+      "sha256": "eb5ed181f7592cfe6079ab19e7eee84285a1174c33fdd5849a9aba7b05365773"
+    },
+    {
+      "path": "synth/research/20261017/deep/string_calibration.json",
+      "bytes": 580218,
+      "sha256": "6aa6478d40e93c3d734604057fe81ba8bbe74eec8346ca4c03008f559e4370ab"
+    },
+    {
+      "path": "synth/research/20261017/deep/string_time_domain_results.json",
+      "bytes": 5289,
+      "sha256": "13f152800e8edb5724c45169670dd51f514004c77cecdd158d5b0046994e625e"
+    },
+    {
+      "path": "synth/research/20261017/deep/vocal_filter_audit.json",
+      "bytes": 10823,
+      "sha256": "509276f01119d62299c935a6fa98e46cd67c450aecce349942071ffa2626670c"
+    },
+    {
+      "path": "synth/research/20261017/deep_chapters.py",
+      "bytes": 39077,
+      "sha256": "01bdd92648d86804c5602ef683384384cf1214088121ef36deede01c054c4758"
+    },
+    {
+      "path": "synth/research/20261017/deep_numeric.py",
+      "bytes": 4582,
+      "sha256": "e89cbd03a9f1343063a3f0a3187ddf802add18963c587092f9ca4b4c4d1e39c0"
+    },
+    {
+      "path": "synth/research/20261017/design_figures.py",
+      "bytes": 5676,
+      "sha256": "c80b3ac9ddcc3f43eb92bcf229d359d6d6f66b242069bda4d24f23ff2cda880c"
+    },
+    {
+      "path": "synth/research/20261017/envelope_reference.py",
+      "bytes": 2554,
+      "sha256": "212dbdae36c9f1f1861f76668dd7cb8b341e4f42ddaff3a02d512ff12467ad3a"
+    },
+    {
+      "path": "synth/research/20261017/fdn_reference.py",
+      "bytes": 2048,
+      "sha256": "23386837cfb27c461f829ba0bfd135a846d4bbdf4ba52cb28c1925d5db9b298f"
+    },
+    {
+      "path": "synth/research/20261017/filter_mitigation.py",
+      "bytes": 1698,
+      "sha256": "b1340c6a407d524679ae7738e08519ae881ee8520e5bdeb926f4583e6c9dfefe"
+    },
+    {
+      "path": "synth/research/20261017/finite_control.py",
+      "bytes": 4561,
+      "sha256": "4059d879db1aa5db265833db80be2fbe624ae693bc0e70328234a565a9825bb6"
+    },
+    {
+      "path": "synth/research/20261017/generate_envelope_fixture.py",
+      "bytes": 636,
+      "sha256": "bff2ae2da81533828a5d96f157e03a69a755d69c738288c5d5b73c7deeffb602"
+    },
+    {
+      "path": "synth/research/20261017/generate_modal_fixture.py",
+      "bytes": 978,
+      "sha256": "c3f41e6247e2ef074fb22f1f0996acb74cd3709d978911b2136fc3ed625bf974"
+    },
+    {
+      "path": "synth/research/20261017/generate_sine_fixture.py",
+      "bytes": 1254,
+      "sha256": "6222747b64758ed5b3456e2cffcf9308ede368800d6bd1eb25ecc4e566b5065e"
+    },
+    {
+      "path": "synth/research/20261017/reading_notes.py",
+      "bytes": 14398,
+      "sha256": "02663b37293bfbdc9b4eb4363d0f4c6d33f26699c6bf68a660a9914245b8cd1d"
+    },
+    {
+      "path": "synth/research/20261017/render_review.py",
+      "bytes": 983,
+      "sha256": "ee58307174f616b8ca146c798674e5b800b3beb63ac64c3f05885d477e394cca"
+    },
+    {
+      "path": "synth/research/20261017/song_timing.py",
+      "bytes": 5260,
+      "sha256": "1a049ae3022fd67ee3d3fb956b024e665d2eea31726bfad3fc73f8b7b1e0d0c3"
+    },
+    {
+      "path": "synth/research/20261017/sources.py",
+      "bytes": 13666,
+      "sha256": "a8bd3108dc3220510490786aa47a44ed8cfbea19d156ce05cccb99eb220d9d7b"
+    },
+    {
+      "path": "synth/research/20261017/stress_filters.py",
+      "bytes": 4807,
+      "sha256": "7e107c1a90389a67a57983befbaba966fbc30c29e5aa10b8060296d0c430f032"
+    },
+    {
+      "path": "synth/research/20261017/string_calibration.py",
+      "bytes": 2106,
+      "sha256": "f561f175688347a606c192008b3f65a7ab1a0939acc4e4ef5a68fe5d7ab78a9a"
+    },
+    {
+      "path": "synth/research/20261017/string_time_domain.py",
+      "bytes": 2015,
+      "sha256": "00274dd6e68126ca33bca1a028be8d9a57cbbe92abd1b4cdc294dffba0f7f1d8"
+    },
+    {
+      "path": "synth/research/20261017/summarize_stress.py",
+      "bytes": 1630,
+      "sha256": "fc7b713d18b7d435fd17d5fd3ac5ed96a9b4f9b8f795cd15cf31066fcbc5b070"
+    },
+    {
+      "path": "synth/research/20261017/V3_REPRODUCE.txt",
+      "bytes": 3336,
+      "sha256": "81776c0b2a3a5592ecbd0e6bdfd85c085da005d540980cae0299591b169c33ad"
+    },
+    {
+      "path": "synth/research/20261017/verify_design.py",
+      "bytes": 5908,
+      "sha256": "6146016a05c0b911f8732471855013884967c24db95eaed4ef5046e967ac9377"
+    },
+    {
+      "path": "synth/research/20261017/vocal_filter_audit.py",
+      "bytes": 3063,
+      "sha256": "15f08a23f7c3d76f310c248a0001ddf6efd949b158b98262368a9e36a17ed0ee"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+IO_LOC "key_play_n" K16;
+IO_PORT "key_play_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "key_stop_n" F15;
+IO_PORT "key_stop_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "key_panic_n" G15;
+IO_PORT "key_panic_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;

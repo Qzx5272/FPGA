@@ -1,0 +1,103 @@
+// Experimental pipelined local calibration;original production pad_frontend unchanged.
+// Calibrated local pressure input with separate release-priority event service.
+// CHIPS 0..7 are 64 pads; remaining ADC lanes are continuous controls.
+module stage_pad_frontend #(parameter CHIPS=10,parameter PADS=64)(
+ input wire clk,rst,panic,input wire sample_valid,input wire [2:0] sample_channel,
+ input wire [CHIPS*12-1:0] samples,
+ input wire config_valid,input wire [6:0] config_channel,input wire [11:0] config_baseline,
+ input wire [15:0] config_gain,input wire config_invert,
+ input wire [6:0] on_threshold,off_threshold,
+ output reg event_valid,input wire event_ready,output reg event_off,
+ output reg [6:0] event_contact,event_pressure,output reg [31:0] event_serial,
+ output reg [CHIPS*8*7-1:0] pressure_values,
+ output reg [31:0] overruns,output reg exhausted
+);
+function [28:0] offline_stage_calibration; input [6:0] channel; begin case(channel)
+7'd0:offline_stage_calibration=29'h11000064;
+7'd63:offline_stage_calibration=29'h00800032;
+default:offline_stage_calibration={1'b0,16'd127,12'd0};endcase end endfunction
+ localparam CHANNELS=CHIPS*8;
+ // Reset validity rather than every calibration word, allowing synchronous RAM.
+ // Unconfigured channels retain the original {invert=0,gain=127,baseline=0}.
+ reg [28:0] calibration[0:CHANNELS-1];reg [CHANNELS-1:0] configured;
+ always @(posedge clk)begin
+  if(!rst&&!panic&&config_valid&&config_channel<CHANNELS)
+   calibration[config_channel]<={config_invert,config_gain,config_baseline};
+ end
+ reg [PADS-1:0] physical,sent,inhibited;reg [31:0] serials[0:PADS-1],sent_serials[0:PADS-1];
+ reg [CHIPS*12-1:0] batch;reg [2:0] channel;reg [3:0] lane;reg busy;
+ wire [6:0] address={lane,channel};
+ // Four cycles per ADC lane:lookup,subtract,multiply,apply.
+ reg[1:0] phase;
+ reg[11:0] raw_stage,baseline_stage,difference_stage;
+ reg[15:0] gain_stage;reg invert_stage;reg[27:0] scaled_stage;
+ reg[31:0] serial_stage,next_serial_stage;reg serial_exhausted_stage;
+ wire[11:0] oriented=invert_stage?12'd4095-raw_stage:raw_stage;
+ wire[6:0] pressure=scaled_stage[27:12]>127?7'd127:scaled_stage[18:12];
+ // Two-level priority selection avoids a serial chain through all64 pads.
+ localparam GROUPS=(PADS+7)/8;
+ wire [PADS-1:0] release_requests,press_requests;
+ genvar p;
+ generate for(p=0;p<PADS;p=p+1)begin:requests
+  assign release_requests[p]=sent[p]&&(!physical[p]||sent_serials[p]!=serials[p]);
+  assign press_requests[p]=!sent[p]&&physical[p];
+ end endgenerate
+ wire any_release=|release_requests;
+ wire [GROUPS*8-1:0] requests_padded=any_release?release_requests:press_requests;
+ function automatic [2:0] first_eight(input[7:0] mask);
+  begin casez(mask)
+   8'b???????1:first_eight=0;8'b??????10:first_eight=1;
+   8'b?????100:first_eight=2;8'b????1000:first_eight=3;
+   8'b???10000:first_eight=4;8'b??100000:first_eight=5;
+   8'b?1000000:first_eight=6;default:first_eight=7;
+  endcase end
+ endfunction
+ integer i;reg found;reg chosen_off;reg [6:0] chosen;
+ always @*begin
+  found=0;chosen=0;chosen_off=0;
+  chosen_off=any_release;
+  for(i=0;i<GROUPS;i=i+1)if(!found&&|requests_padded[i*8+:8])begin
+   chosen=i*8+first_eight(requests_padded[i*8+:8]);found=1;
+  end
+ end
+ integer k;
+ always @(posedge clk)begin
+  if(rst)begin
+   physical<=0;sent<=0;inhibited<={PADS{1'b1}};configured<=0;busy<=0;event_valid<=0;pressure_values<=0;overruns<=0;exhausted<=0;phase<=0;raw_stage<=0;baseline_stage<=0;difference_stage<=0;gain_stage<=0;invert_stage<=0;scaled_stage<=0;
+   for(k=0;k<PADS;k=k+1)begin serials[k]<=0;sent_serials[k]<=0;end
+  end else if(panic)begin physical<=0;sent<=0;inhibited<={PADS{1'b1}};event_valid<=0;busy<=0;phase<=0;end
+  else begin
+   if(config_valid&&config_channel<CHANNELS)begin
+    configured[config_channel]<=1;
+   end
+   if(sample_valid)begin
+    if(busy)overruns<=overruns+1'b1;
+    else begin batch<=samples;channel<=sample_channel;lane<=0;busy<=1;phase<=0;end
+   end
+   if(busy)case(phase)
+    0:begin raw_stage<=batch[lane*12+:12];{invert_stage,gain_stage,baseline_stage}<=configured[address]?calibration[address]:offline_stage_calibration(address);serial_stage<=address<PADS?serials[address]:32'd0;phase<=1;end
+    1:begin difference_stage<=oriented>baseline_stage?oriented-baseline_stage:12'd0;next_serial_stage<=serial_stage+1'b1;serial_exhausted_stage<=&serial_stage;phase<=2;end
+    2:begin scaled_stage<=difference_stage*gain_stage;phase<=3;end
+    3:begin
+    pressure_values[address*7+:7]<=pressure;
+    if(address<PADS)begin
+     if(pressure<=off_threshold)begin physical[address]<=0;inhibited[address]<=0;end
+     else if(pressure>=on_threshold&&!physical[address]&&!inhibited[address])begin
+      if(serial_exhausted_stage)begin exhausted<=1;inhibited[address]<=1;end
+      else begin physical[address]<=1;serials[address]<=next_serial_stage;end
+     end
+    end
+    if(lane==CHIPS-1)busy<=0;else lane<=lane+1'b1;phase<=0;
+    end
+   endcase
+   if(event_valid&&event_ready)begin
+    event_valid<=0;
+    if(event_off)sent[event_contact]<=0;
+    else begin sent[event_contact]<=1;sent_serials[event_contact]<=event_serial;end
+   end else if(!event_valid&&found)begin
+    event_valid<=1;event_contact<=chosen;event_off<=chosen_off;
+    event_pressure<=pressure_values[chosen*7+:7];event_serial<=chosen_off?sent_serials[chosen]:serials[chosen];
+   end
+  end
+ end
+endmodule

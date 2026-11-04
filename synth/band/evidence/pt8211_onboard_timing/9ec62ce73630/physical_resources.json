@@ -1,0 +1,12 @@
+{
+  "status": "resource_measurement_only_timing_failed",
+  "resources": {
+    "logic": 69416,
+    "ff": 37951,
+    "cls": 48633,
+    "ram": 252,
+    "dsp": 158
+  },
+  "source_sha256": "f5f70fe20011c0aeae3cdfc5098cf521a370d6752a06cb34b4d3a3d814f6341b",
+  "scope": "Actual routed resource report;3native reset hold violations prevent release. Not a usable performance limit."
+}

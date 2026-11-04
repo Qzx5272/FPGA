@@ -1,0 +1,69 @@
+{
+  "chip": "ESP32-C3 rev0.4",
+  "mac": "80:53:e0:9f:43:c4",
+  "port": "COM8",
+  "original_flash_bytes": 4194304,
+  "backup_sha256": "3501df7e63899c8862f3767b654d68ca4bcbce86f2fa6a3e71c38f3dcf544543",
+  "build": "passed",
+  "parser_tests": "passed",
+  "flash_write_and_hash_verification": "passed",
+  "runtime": "running, continuous uptime observed after physical reset",
+  "ble_connection": "connected and MIDI notifications subscribed",
+  "pad_events": "real note-on, note-off, velocity and channel pressure received",
+  "FPGA_UART_output": false,
+  "phone_control": false,
+  "files": {
+    "synth\\band\\evidence\\c3_pad_bringup_20261031\\original_flash.bin": "3501df7e63899c8862f3767b654d68ca4bcbce86f2fa6a3e71c38f3dcf544543",
+    "synth\\band\\bridges\\esp32c3_pad\\.pio\\build\\c3-pad-monitor\\firmware.bin": "7e75b590a63e894c00e555acc793b1bad4bc371d2c51ff6d4e2aa290909e96a0",
+    "synth\\band\\bridges\\esp32c3_pad\\.pio\\build\\c3-pad-monitor\\bootloader.bin": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c",
+    "synth\\band\\bridges\\esp32c3_pad\\.pio\\build\\c3-pad-monitor\\partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "synth\\band\\bridges\\esp32c3_pad\\src\\main.cpp": "863d31df719bde51e740b7326e5dd45c0ae29c65257a125d31d1ad85c0bff04e",
+    "synth\\band\\bridges\\esp32c3_pad\\src\\midi_packet.h": "d59183ffad78a75cbe5784ce344b9f6257554620eaf760d5c4c1e17a42b68f25",
+    "synth\\band\\bridges\\esp32c3_pad\\platformio.ini": "ebb7ba6a6f1986e4f7876e836bf71181b91badc4f868caa1ae097ef7bd78812a"
+  },
+  "last_status": {
+    "uptime_ms": "86054",
+    "connected": "1",
+    "subscribed": "1",
+    "packets": "54",
+    "decoded": "54",
+    "dropped": "0",
+    "unsupported": "0",
+    "active": "0",
+    "free_heap": "191760"
+  },
+  "observed_channels": [
+    10
+  ],
+  "observed_note_numbers": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "captured_note_on_count": 8,
+  "captured_note_off_count": 8,
+  "captured_pressure_count": 24,
+  "captured_velocity_range": [
+    44,
+    50
+  ],
+  "limitations": [
+    "Only 8 distinct notes were observed during the requested 16-pad exercise; full mapping not verified.",
+    "Initial 14 decoded events were counted but not fully captured during monitor handoff.",
+    "No FPGA output or audio validation.",
+    "Phone concurrency, reconnect recovery, end-to-end latency and long-run stability not yet tested."
+  ],
+  "logs_sha256": {
+    "after_restart.log": "ee063ba34d578ecde06ca93243b03b64653901a3ac65572a30057dc4c04edd8d",
+    "build.log": "38ac9d4707d7c1bb811040f4739938a951ab5f9a1ed0c94aae9fec3fadee24cb",
+    "first_boot.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "flash.log": "0a0da441d3ee0dfa143442e794e17578007402e4a8c02fea4b563661af05b006",
+    "pad_events.log": "02ac9f568db1b5c97ebbba7a038a2fbcda21faab2c58d5598ec6d9cee7b8e30a",
+    "serial_dtr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

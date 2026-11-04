@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "mode": "burst",
+  "batch_per_5ms": 8,
+  "concurrent_receive": true,
+  "queued_tx_bytes_after_writes": 0,
+  "guard_bytes": 16,
+  "requests": 1000,
+  "valid_frames": 128,
+  "bad_crc": 872,
+  "unique_frames": 1,
+  "identities": [
+    "04a10001324b4e4c0000000080bb000080f0fa0200000000000000003119cc46"
+  ],
+  "bytes": 33117
+}

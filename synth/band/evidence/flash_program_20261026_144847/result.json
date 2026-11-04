@@ -1,0 +1,13 @@
+{
+  "release": "pt8211_dvi_59c963cc2112",
+  "build_id": 2874385776,
+  "bitstream_sha256": "59c963cc21122f3ae4f4e530dddefb225181426b7a4d37aa81550e6d98f1d05e",
+  "snapshot_files": 93,
+  "status": "flash_verified_reload_returned_pending_uart",
+  "flash_written": true,
+  "previous_flash_backup_available": false,
+  "cold_start_verified": false,
+  "started": "2026-10-26T14:48:47.595637",
+  "flash_may_be_modified": true,
+  "finished": "2026-10-26T14:51:28.436085"
+}

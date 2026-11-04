@@ -1,0 +1,12 @@
+{
+  "flash_id": "0xEF4018",
+  "exact_chip_variant_confirmed": false,
+  "read_id_disrupted_sram": true,
+  "restoration": "sram_restored.json",
+  "openfpga_detect": "USB open failed -4; no flash backup obtained",
+  "driver_changed": false,
+  "official_reference": "https://wiki.sipeed.com/hardware/en/tang/tang-mega-138k/mega-138k-pro.html",
+  "official_flash_image": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-138k/assets/flash_mode.png",
+  "route": "vendor operation54 Arora V program and verify; standard default address; explicit spiaddr 0 attempt rejected format",
+  "prior_project_flash_log": "synth/test-output/flash_program.log (historical old synthesizer, not current proof)"
+}

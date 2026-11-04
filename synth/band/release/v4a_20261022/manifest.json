@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-22T12:24:53.366345+00:00",
+  "configuration": "32-slot band, 96-second ROM score, PT8211 audition output",
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "bitstream_sha256": "648483ab655c27657eecf7dd7e362554e40cdfd5e38f241c70f104f7769de034",
+  "source_sha256": {
+    "band\\rtl\\band_core.v": "05ae952bd2783ce3e72db1ff3c31d860ef33e928ab3f07320a4a8fe59874649e",
+    "band\\rtl\\band_renderer.v": "9abe6463f22f987f42cf6af62428400492de4905d00c5f7385ced4efa0db7bf2",
+    "band\\rtl\\band_top.v": "bf8452ea5ee2eb86a0759cdcaad42207ac7b5afe6819bb9b5cf0d24bb60d3472",
+    "band\\rtl\\event_receiver.v": "39e87b65b6f319bf78a65ccbfa747415844ef933a4a592f3ef51846b80996c10",
+    "band\\rtl\\midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "band\\rtl\\note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "band\\rtl\\partial_lane.v": "a7bb4bfd485c2dca60d604b5aff9faa2ed5fcb48c18e4ffa9f2d9fc8c52f2d12",
+    "band\\rtl\\partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "band\\rtl\\song_config.vh": "bbe7faebcb0f9078f27d460662c78948f14ae2cce76c58214cd38aa91247f54e",
+    "band\\rtl\\song_events.vh": "d0b30adf14c0c37e73122a9cb5d0a99e02864c6dd1c2da561d9bfeb2b1354141",
+    "band\\rtl\\song_sequencer.v": "b5916cdba19b0a017a84dc1d35e26a0671cf10fb3225f196e7061ba2e53b7f9f",
+    "band\\rtl\\status_sender.v": "95379b07ddfdfcea3951ba77a87d5da277da801d9497e2a714caea3d73ba78e7",
+    "band\\rtl\\stereo_delay.v": "68c63a25951446a758f2895e19e361c1b105c17c201655eabf65e58193a57895",
+    "band\\rtl\\track_ownership.v": "63f7b76a07ee5652832d0cdc48d873274892b9d15c2c93070665641c3df2cf28",
+    "rtl\\hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "rtl\\sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "rtl\\uart.v": "4fe3a17a5b1e27cd1ff74f8d78f32f25f50b8cbde56e53da121fe915e2e5f907",
+    "rtl\\audio_serial.v": "ed01cb20a8ff51237e01a2ebc4829b51b42f348333d04dc9def768c311ff7b6a",
+    "constraints\\board.cst": "8d0589639bc41aef42c7fb4b6d68a8f29eb1ce1aa23b242a17ea762eb5433f86",
+    "constraints\\board.sdc": "5a5f9bbc6374b4bb984e13062491985e13e247a34553f5f808ba8e20de8b3fc0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "failed_timeout",
+  "build": "D:\\StarclusterBuilds\\vocoder_core_syn_cae732b65d46",
+  "scope": "320post-synthesis vocoder samples against independent fixed-point reference;reset/busy/clip/reject checked. Vendor primitive functional simulation,not routed timing or physical audio acceptance",
+  "netlist_sha256": "dc0e72f80f27849c7bc30f562139a00be7107a3b57d5a5872c97e58d7c008731",
+  "vendor_sha256": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+  "reference": {
+    "status": "passed",
+    "scope": "4096-sample bit-exact standalone chain, not synthesis/timing/audio-quality acceptance",
+    "sha256": {
+      "double_biquad.sv": "9057c596b49f1ff8c8a786f6bc50489a45e84de52d1f41f36945baad1aef41b0",
+      "filterbank.sv": "b379b0f00024cf6c818aeb23481cf622d304f1c7ea48bdf9063fa417cf4916ff",
+      "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+      "vocoder_core.sv": "98366afbe5d606ba270478817d740e9fa44338bc6e38df4b5ad66cab90660a87",
+      "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+    },
+    "log": "PASS full vocoder4096 samples, reset, backpressure, clip/reject counters; maxcycles=153\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_core\\tb.sv:34: $finish called at 12779820000 (1ps)\n"
+  },
+  "error": "Command '['C:\\\\Users\\\\Qzx\\\\Documents\\\\ChatGPT\\\\FPGA\\\\tmp\\\\oss-cad-suite\\\\bin\\\\vvp.exe', 'C:\\\\Users\\\\Qzx\\\\Documents\\\\ChatGPT\\\\FPGA\\\\synth\\\\band\\\\evidence\\\\vocoder_netlist\\\\dc0e72f80f27\\\\test.vvp']' timed out after 600 seconds",
+  "interpretation": "Host killed simulator after600s;no pass/fail numerical conclusion. Replaced bysame320sample fixture withliveprogress and1800s execution bound;old evidence retained."
+}

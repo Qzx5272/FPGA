@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "created": "2026-10-26T15:07:38.378349",
+  "scope": "Single universal bank: eight roles64samples each match original single-note PCM with role-aware stereo; other-role expression isolation; lead identity;32choir64samples at1042clocks/sample. Not full256-voice audio, synthesis, timing or board acceptance.",
+  "production_adopted": false,
+  "sources": {
+    "synth\\band\\experimental\\shared_voices\\shared_note_allocator.v": "a84806e8d592d39ce5fc68aca57084b936b9224cac43a42fa618f42a1e7b40c3",
+    "synth\\band\\experimental\\shared_voices\\shared_voice_bank.v": "fd3b01dd131a2622d42ddfa450e78f23a62da8cb89a0092040b00404e3fa7479",
+    "synth\\band\\experimental\\shared_voices\\shared_band_renderer.v": "58ea9e26facef16c292416e8a7d6e0fdc68d4ad4ad0f9c2be70137385331ab5b",
+    "synth\\band\\experimental\\shared_voices\\tb_shared_voice_bank.sv": "1c75bad2df344d481d57d300349476c4f5592e8d176848f920403948a38e5b72",
+    "synth\\band\\rtl\\voice_bank.v": "02f73d4fc2ef47bd77291047ab6fb3716fded882ca18e5be148e38109c4b6507",
+    "synth\\band\\rtl\\note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "synth\\band\\rtl\\band_renderer.v": "43ead516940637256b12339c8d20f18994ecb36d727b19cbe19ab7c1e31e90bc",
+    "synth\\rtl\\hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "synth\\band\\tools\\test_shared_voice_bank.py": "21b399d5f9988713a8097b5d0f6ebae01c15d321982798b17b5aeaa8356350d0",
+    "synth\\band\\rtl\\bend_ratio.vh": "dd7c2a69f7445ac7cae680f5f5db6cca5a38c5823a392e38386795f7b05212c7",
+    "synth\\band\\rtl\\build_identity.vh": "25922c5e594e8ef200f58d77504e4dd0cd6630234e102a816dd8d2852ec4566e",
+    "synth\\band\\rtl\\midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "synth\\band\\rtl\\song_config.vh": "349be79949841d2a5be3a2216a62d2c7c838da42eac85d25729e1a0d30b99d65",
+    "synth\\band\\rtl\\song_events.vh": "8376146c2647cde58e494998da1b6cd691ec8ee217752cfbd00b444e69765537",
+    "synth\\band\\rtl\\song_storage_init.vh": "275154f8e9ede76fe40ae9efb97777d5c960e8ea08a448b28e8035d3829769e3",
+    "synth\\band\\rtl\\tempo_increment.vh": "cd654e17b44bc22b951035182b4464aa49de449e221a9739da202006a43a28a7",
+    "synth\\band\\rtl\\vowel_harmonics.vh": "d35ebc8024dfc403da1df45accd99964a38b1aff485abbef308cf73abc450fe0",
+    "synth\\rtl\\sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc"
+  },
+  "compile_output": "",
+  "simulation_output": "PASS universal bank all8roles PCM/pan,isolated controls,lead identity,32choir;maxcycles=960\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\shared_voices\\tb_shared_voice_bank.sv:61: $finish called at 12032720000 (1ps)\n"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "created": "2026-10-26T11:22:17.989103",
+  "valid_synthetic_fixture": true,
+  "rejected_cases": [
+    "automatic_pin",
+    "wrong_pin",
+    "wrong_direction",
+    "wrong_io_type",
+    "wrong_voltage",
+    "wrong_pull",
+    "wrong_drive",
+    "wrong_diff_pair",
+    "missing_pin",
+    "extra_pin",
+    "wrong_device"
+  ],
+  "driver_sha256": "b07c004742c07ba0233de135e041514362d5326c748d8d882ff6ef773c181f54",
+  "scope": "Synthetic parser/gate fixtures only; no actual new-board pin or timing acceptance"
+}

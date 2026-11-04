@@ -1,0 +1,387 @@
+{
+  "status": "not_accepted",
+  "paths": [
+    {
+      "kind": "recovery",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 4.956,
+      "arrival_ns": 27.216,
+      "required_ns": 32.172,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": 8.613,
+      "arrival_ns": 27.216,
+      "required_ns": 35.829,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 14.403,
+      "arrival_ns": 27.216,
+      "required_ns": 41.619,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 5.334,
+      "arrival_ns": 26.838,
+      "required_ns": 32.172,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": 8.991,
+      "arrival_ns": 26.838,
+      "required_ns": 35.829,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 14.775,
+      "arrival_ns": 26.838,
+      "required_ns": 41.613,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 4.593,
+      "arrival_ns": 27.578,
+      "required_ns": 32.172,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": 8.251,
+      "arrival_ns": 27.578,
+      "required_ns": 35.829,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "recovery",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 14.038,
+      "arrival_ns": 27.578,
+      "required_ns": 41.616,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -recovery -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": -0.758,
+      "arrival_ns": 23.241,
+      "required_ns": 23.999,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 3.45,
+      "arrival_ns": 23.241,
+      "required_ns": 19.791,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 0,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[0].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 22.315,
+      "arrival_ns": 23.241,
+      "required_ns": 0.926,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": -1.048,
+      "arrival_ns": 22.952,
+      "required_ns": 23.999,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 3.161,
+      "arrival_ns": 22.952,
+      "required_ns": 19.791,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 1,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[1].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 22.039,
+      "arrival_ns": 22.952,
+      "required_ns": 0.913,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[F]",
+      "slack_ns": -0.668,
+      "arrival_ns": 23.331,
+      "required_ns": 23.999,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "serial_clk:[R]",
+      "slack_ns": 3.54,
+      "arrival_ns": 23.331,
+      "required_ns": 19.791,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    },
+    {
+      "kind": "removal",
+      "lane": 2,
+      "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+      "endpoint": "workstation/video_output/transmitter/channels[2].serializer",
+      "launch": "display_clk:[F]",
+      "latch": "display_clk:[R]",
+      "slack_ns": 22.408,
+      "arrival_ns": 23.331,
+      "required_ns": 0.924,
+      "buffer_stages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "command": "report_timing -removal -through [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}] -max_paths 5 -max_common_paths 5"
+    }
+  ],
+  "missing_serial_checks": [],
+  "negative_paths": 3,
+  "scope": "Native reported OSER reset paths only. Requires full setup/hold/pulse, clock/pin and physical-cell review; not a board release gate.",
+  "report_sha256": "2c070c5009cf7a68000696333f1a8c8840fefee5040d2264f53cdd9a99647043"
+}

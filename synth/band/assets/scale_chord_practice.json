@@ -1,0 +1,378 @@
+{
+  "format": "starcluster-score-2",
+  "sample_rate": 48000,
+  "bpm": 120,
+  "bars": 48,
+  "duration_samples": 408000,
+  "title": "音阶与和弦练习",
+  "origin": "Original deterministic event composition for this project; no recorded audio",
+  "roles": [
+    "kick",
+    "snare",
+    "hat",
+    "bass",
+    "electric_piano",
+    "held_reed",
+    "lead",
+    "vowel_choir"
+  ],
+  "rules_enabled": true,
+  "decisions": [],
+  "events": [
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 8,
+      "note": 60,
+      "velocity": 95,
+      "serial": 1
+    },
+    {
+      "sample": 23760,
+      "kind": 1,
+      "part": 8,
+      "note": 60,
+      "velocity": 0,
+      "serial": 1
+    },
+    {
+      "sample": 24000,
+      "kind": 0,
+      "part": 8,
+      "note": 64,
+      "velocity": 95,
+      "serial": 2
+    },
+    {
+      "sample": 47760,
+      "kind": 1,
+      "part": 8,
+      "note": 64,
+      "velocity": 0,
+      "serial": 2
+    },
+    {
+      "sample": 48000,
+      "kind": 0,
+      "part": 8,
+      "note": 67,
+      "velocity": 95,
+      "serial": 3
+    },
+    {
+      "sample": 71760,
+      "kind": 1,
+      "part": 8,
+      "note": 67,
+      "velocity": 0,
+      "serial": 3
+    },
+    {
+      "sample": 72000,
+      "kind": 0,
+      "part": 8,
+      "note": 72,
+      "velocity": 95,
+      "serial": 4
+    },
+    {
+      "sample": 95760,
+      "kind": 1,
+      "part": 8,
+      "note": 72,
+      "velocity": 0,
+      "serial": 4
+    },
+    {
+      "sample": 96000,
+      "kind": 0,
+      "part": 9,
+      "note": 60,
+      "velocity": 95,
+      "serial": 5
+    },
+    {
+      "sample": 119760,
+      "kind": 1,
+      "part": 9,
+      "note": 60,
+      "velocity": 0,
+      "serial": 5
+    },
+    {
+      "sample": 120000,
+      "kind": 0,
+      "part": 9,
+      "note": 64,
+      "velocity": 95,
+      "serial": 6
+    },
+    {
+      "sample": 143760,
+      "kind": 1,
+      "part": 9,
+      "note": 64,
+      "velocity": 0,
+      "serial": 6
+    },
+    {
+      "sample": 144000,
+      "kind": 0,
+      "part": 9,
+      "note": 67,
+      "velocity": 95,
+      "serial": 7
+    },
+    {
+      "sample": 167760,
+      "kind": 1,
+      "part": 9,
+      "note": 67,
+      "velocity": 0,
+      "serial": 7
+    },
+    {
+      "sample": 168000,
+      "kind": 0,
+      "part": 9,
+      "note": 72,
+      "velocity": 95,
+      "serial": 8
+    },
+    {
+      "sample": 191760,
+      "kind": 1,
+      "part": 9,
+      "note": 72,
+      "velocity": 0,
+      "serial": 8
+    },
+    {
+      "sample": 192000,
+      "kind": 0,
+      "part": 12,
+      "note": 60,
+      "velocity": 95,
+      "serial": 9
+    },
+    {
+      "sample": 215760,
+      "kind": 1,
+      "part": 12,
+      "note": 60,
+      "velocity": 0,
+      "serial": 9
+    },
+    {
+      "sample": 216000,
+      "kind": 0,
+      "part": 12,
+      "note": 64,
+      "velocity": 95,
+      "serial": 10
+    },
+    {
+      "sample": 239760,
+      "kind": 1,
+      "part": 12,
+      "note": 64,
+      "velocity": 0,
+      "serial": 10
+    },
+    {
+      "sample": 240000,
+      "kind": 0,
+      "part": 12,
+      "note": 67,
+      "velocity": 95,
+      "serial": 11
+    },
+    {
+      "sample": 263760,
+      "kind": 1,
+      "part": 12,
+      "note": 67,
+      "velocity": 0,
+      "serial": 11
+    },
+    {
+      "sample": 264000,
+      "kind": 0,
+      "part": 12,
+      "note": 72,
+      "velocity": 95,
+      "serial": 12
+    },
+    {
+      "sample": 287760,
+      "kind": 1,
+      "part": 12,
+      "note": 72,
+      "velocity": 0,
+      "serial": 12
+    },
+    {
+      "sample": 288000,
+      "kind": 0,
+      "part": 13,
+      "note": 60,
+      "velocity": 95,
+      "serial": 13
+    },
+    {
+      "sample": 311760,
+      "kind": 1,
+      "part": 13,
+      "note": 60,
+      "velocity": 0,
+      "serial": 13
+    },
+    {
+      "sample": 312000,
+      "kind": 0,
+      "part": 13,
+      "note": 64,
+      "velocity": 95,
+      "serial": 14
+    },
+    {
+      "sample": 335760,
+      "kind": 1,
+      "part": 13,
+      "note": 64,
+      "velocity": 0,
+      "serial": 14
+    },
+    {
+      "sample": 336000,
+      "kind": 0,
+      "part": 13,
+      "note": 67,
+      "velocity": 95,
+      "serial": 15
+    },
+    {
+      "sample": 359760,
+      "kind": 1,
+      "part": 13,
+      "note": 67,
+      "velocity": 0,
+      "serial": 15
+    },
+    {
+      "sample": 360000,
+      "kind": 0,
+      "part": 13,
+      "note": 72,
+      "velocity": 95,
+      "serial": 16
+    },
+    {
+      "sample": 383760,
+      "kind": 1,
+      "part": 13,
+      "note": 72,
+      "velocity": 0,
+      "serial": 16
+    }
+  ],
+  "edited": true,
+  "performance": {
+    "master": 64,
+    "wet": 24,
+    "patches": {
+      "0": {
+        "4": 13653,
+        "5": 9,
+        "6": 0,
+        "7": 8
+      },
+      "1": {
+        "4": 13653,
+        "5": 9,
+        "6": 0,
+        "7": 8
+      },
+      "2": {
+        "4": 13653,
+        "5": 8,
+        "6": 0,
+        "7": 7
+      },
+      "3": {
+        "4": 1365,
+        "5": 11,
+        "6": 4915,
+        "7": 9
+      },
+      "4": {
+        "4": 3413,
+        "5": 13,
+        "6": 0,
+        "7": 10
+      },
+      "5": {
+        "4": 76,
+        "5": 12,
+        "6": 13926,
+        "7": 10
+      },
+      "6": {
+        "4": 171,
+        "5": 12,
+        "6": 14745,
+        "7": 10
+      },
+      "7": {
+        "4": 39,
+        "5": 13,
+        "6": 13926,
+        "7": 11
+      },
+      "8": {
+        "4": 2731,
+        "5": 13,
+        "6": 0,
+        "7": 10
+      },
+      "9": {
+        "4": 62,
+        "5": 12,
+        "6": 14417,
+        "7": 10
+      },
+      "10": {
+        "4": 2731,
+        "5": 14,
+        "6": 0,
+        "7": 12
+      },
+      "11": {
+        "4": 6827,
+        "5": 11,
+        "6": 0,
+        "7": 9
+      },
+      "12": {
+        "4": 21,
+        "5": 13,
+        "6": 14745,
+        "7": 11
+      },
+      "13": {
+        "4": 341,
+        "5": 12,
+        "6": 16383,
+        "7": 9
+      },
+      "14": {
+        "4": 46,
+        "5": 12,
+        "6": 12779,
+        "7": 10
+      }
+    }
+  },
+  "engine_profile": "singer-v1",
+  "timbre_schema": "workstation-v6"
+}

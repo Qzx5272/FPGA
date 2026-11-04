@@ -1,0 +1,10 @@
+{
+  "status": "reference_review_not_hardware_proof",
+  "source": "https://cdn.gowinsemi.com.cn/DS1239E.pdf",
+  "document": "DS1239-1.0.3E Table3-18",
+  "pfd_min_mhz": 19,
+  "pfd_max_mhz": 81.25,
+  "current_pfd_mhz": 50,
+  "rejected_unbuilt_alternative": "IDIV5 would give10MHz PFD,below current specified minimum",
+  "next": "Finish explicit-global-clock PnR;do not change clock frequency or waive pulse checks without validated replacement"
+}

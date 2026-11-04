@@ -1,0 +1,9 @@
+{
+  "status": "passed_host_regression_only",
+  "tests": 69,
+  "scope": "Inserted vowel phrase restores saved choir patch unless earlier score marker overrides it; save/load/upload equality checked. No FPGA RTL or board change; not included inV5.33 archive.",
+  "sources": {
+    "host/score.py": "38089deaaae8fee35eea650b438aee0cbe5346a97c07ef609d2584e72144d9bb",
+    "tests/test_host.py": "ad67dbf4e7b3f7e7f8fa84e2c3388ebe860c744d65f844fb8f576900f5ada620"
+  }
+}

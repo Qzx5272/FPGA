@@ -1,0 +1,9 @@
+{
+  "status": "passed_checker_regression_only",
+  "negative_native_paths_rejected": 3,
+  "missing_falling_edge_checks_detected": 6,
+  "overridden_paths_missing_serial_checks": 12,
+  "report_sha256": "2c070c5009cf7a68000696333f1a8c8840fefee5040d2264f53cdd9a99647043",
+  "override_report_sha256": "bf30f7b869d297bd68f17c98a488c4cf684357e88c60a7f586cb8fb2004a43fe",
+  "scope": "Checker regression including deliberate report corruption. No new positive physical timing evidence."
+}

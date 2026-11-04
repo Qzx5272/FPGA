@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "pin-level digital simulation only",
+  "sources": {
+    "synth\\band\\experimental\\i2s_duplex\\i2s_master_duplex.sv": "f8d78f2baae18b90f7330937b02d3425bc1b9fd456682267f1b49598ae5b49f1",
+    "synth\\band\\experimental\\i2s_duplex\\tb_i2s_master_duplex.sv": "54fba91040262b8df153a6aa10eb69d50ef23af8b2c8a0c1c2c6dd8b71e0ad1f",
+    "synth\\band\\experimental\\i2s_duplex\\audio_bringup_top.sv": "55f910daf1c068ec21857a554a1a03dafdbbd6031804adfee35f61d4a19ee2c3",
+    "synth\\band\\experimental\\i2s_duplex\\tb_audio_bringup.sv": "d99d1d92f620db3bb38463595ac8bacf70dee429c047cdc1875bd2dc25d8313f",
+    "synth\\band\\experimental\\i2s_duplex\\tone_1k.mem": "ef5a4118b8b5ee2850497935565c61bfb83466b6aa37dee00e9a58d893aaf4d4"
+  },
+  "log": "PASS duplex 64 stereo frames, 24-bit signed extremes, I2S delay, 64 clocks/frame, tri-state microphone, 70ns pad delay\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\i2s_duplex\\tb_i2s_master_duplex.sv:56: $finish called at 1352352495 (1ps)\nPASS board modes: mute startup, warmup silence, microphone4x, positive/negative saturation, tone, panic mute, PLL loss/relock mute, amplifier off\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\i2s_duplex\\tb_audio_bringup.sv:66: $finish called at 4168141185 (1ps)\n"
+}

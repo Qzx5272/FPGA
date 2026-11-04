@@ -1,0 +1,12 @@
+{
+  "status": "passed_synthesis_only",
+  "returncode": 0,
+  "build": "D:\\StarclusterBuilds\\pcm_snapshot_ad7b2b9e4697",
+  "source_sha256": "ad7b2b9e46979d1dce6e1199bc723e8af97c99f67c748ce90dc01f5d63b5490a",
+  "scope": "Isolated512stereo16bit PCM snapshot synthesis; no integrated timing/CDC or physical claim",
+  "synthesis_logic": 294,
+  "synthesis_registers": 306,
+  "synthesis_bsram_primitives": 1,
+  "synthesis_latches": 0,
+  "report_sha256": "1884229824263dc5f0b7f70184a9d56dea912f58a4e11f07ce5bd2913c608161"
+}

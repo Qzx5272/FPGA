@@ -1,0 +1,7 @@
+{
+  "scope": "CPU control compiler reference",
+  "tests": 5,
+  "random_cases": 10000,
+  "failures": 0,
+  "errors": 0
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Stage-only RTL calibration/event simulation; no board or timing acceptance",
+  "sources": {
+    "experimental\\stage\\stage_pad_frontend.sv": "d5597a31a8752bfeb62fcf98ed47d7c1ccc4738e1e6f38b31277527f263540cb",
+    "tools\\test_stage_pad.py": "e344ce41cfc8efbb8b252cd8c65aff1bfbe8fa685f8589d93c4a8c6371b82b70",
+    "tests\\tb_pads.v": "1a100bea5db8ce45321822224038eb8b42af0159bba29f22f8de099524d7f032"
+  },
+  "log": "PASS pad frontend: calibration scaling, hysteresis, release priority, identities, panic inhibit\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad\\tb.v:47: $finish called at 74400000 (1ps)\n"
+}

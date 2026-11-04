@@ -1,0 +1,59 @@
+User Experience with Digital Musical Instruments: A Transferable Method for Longitudinal Evaluation – IDMIL
+News
+People
+Projects
+Publications
+Videos
+Presentations
+Demos
+Performances
+Software
+GitHub
+Archive
+Members
+News
+People
+Projects
+Publications
+Videos
+Presentations
+Demos
+Performances
+Software
+GitHub
+Archive
+Members
+User Experience with Digital Musical Instruments: A Transferable Method for Longitudinal Evaluation
+category
+author
+John Sullivan
+Download available
+Authors:
+P. J. Charles Reimer, Atishi Gupta, Catherine Guastavino, Marcelo M. Wanderley
+Publication or Conference Title:
+Journal of New Music Research
+Abstract:
+We present the development and demonstration of a transferable method for studying user experience (UX) with digital musical instruments (DMIs) over time. We introduce DMIs, music interaction, stakeholders, and observable experiential aspects of the user-instrument relationship (UIR), grounding the development of our method in theoretical frameworks from human–computer interaction and music technology. We discuss structured evaluation strategies for studying evolving experiential components of the UIR over time, noting the limitations of current approaches. We describe the development and structure of our method before reporting on the initial execution of the method in a limited context. Using a small sample of individuals with diverse musical backgrounds and a compressed time period, we demonstrate how the method can be used to collect rich qualitative data on dynamic aspects of the UIR with an unfamiliar DMI. Results from this initial demonstration suggest that the method is able to capture comparable experiential data from different perspectives and that participants’ backgrounds played a central role in their emotional and cognitive experience. We reflect on the limitations and successes of the demonstration, and offer specific suggestions for expanding the method in future, to more widely assess its transferability to different DMIs, participants, and real-world musical contexts.
+Publication Details:
+Type:
+Journal Paper
+Date:
+08/12/2025
+Pages:
+344-368
+Info
+Input Devices and Music Interaction Laboratory
+Schulich School of Music
+McGill University
+550 Rue Sherbrooke Ouest, Suite 500
+Montreal, QC, H3A 1E3
+Canada
+CONTACT US!
+Links
+www-archive.idmil.org (archive site)
+McGill University Music Technology Area
+Center for Interdisciplinary Research in Music Media and Technology (CIRMMT)
+Institut national de recherche en informatique et en automatique (INRIA)
+New Interfaces for Musical Expression (NIME)
+Search the site
+Search for:

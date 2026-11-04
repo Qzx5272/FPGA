@@ -1,0 +1,10 @@
+ Target Cable: USB Debugger A/0/None/null@0.5MHz
+ Target Device: GW5AST-138B(0x0001081B)
+ Operation "exFlash Erase,Program,Verify Arora V" for device#1...
+ Status Code is: 0x00020230
+ Try to program spi flash: 0xEF4018!
+
+Error: Flsh format error
+ Finished.
+ Cost 0.72 second(s)
+  

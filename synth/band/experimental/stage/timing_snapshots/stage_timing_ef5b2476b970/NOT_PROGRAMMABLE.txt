@@ -1,0 +1,1 @@
+NEVER PROGRAM. Unassigned/auto-placed peripheral IO. No real external timing or electrical acceptance.

@@ -1,0 +1,37 @@
+cd "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533"
+set_device -name GW5AST-138B GW5AST-LV138FPG676AC1/I0
+set_option -top_module band_top
+set_option -verilog_std v2001
+set_option -use_cpu_as_gpio 1
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/audio_cdc_fifo.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/audio_i2s_bridge.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/audio_serial.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/band_board_engine.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/band_core.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/band_renderer.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/band_top.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/button_pulse.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/diagnostic_top.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/event_receiver.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/hq_sine_quarter.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/i2s24_tx.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/local_expression.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/local_performer.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/mcp3208_scanner.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/note_allocator.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/pad_frontend.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/partial_lane.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/partial_pool.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/partial_ram16.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/song_sequencer.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/song_store.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/status_sender.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/stereo_delay.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/track_ownership.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/uart.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/voice_bank.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/workstation_top.v"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/board.cst"
+add_file "D:/StarclusterBuilds/primitive_rom_trial_20261023/project/synth/band/build/band_09ebdeb5e533/source_snapshot/board.sdc"
+set_option -output_base_name starcluster_band
+run all

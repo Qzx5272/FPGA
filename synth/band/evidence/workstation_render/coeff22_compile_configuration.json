@@ -1,0 +1,9 @@
+{
+  "status": "configuration_corrected_render_running",
+  "failed_compile_build": "D:/StarclusterBuilds/workstation_render_e4df6e3889e5",
+  "log_sha256": "1304496cec98b167254d2221b1552b09f2e80c51ecaba9945d2b9dd811046355",
+  "cause": "NEEDTIMINGOPT on simulation-only coefficient startup #1",
+  "fix": "Explicit--no-timing with coefficient-width check before build;C++ owns all hardware clocks;renderer source now partof buildhash",
+  "current_build": "D:/StarclusterBuilds/workstation_render_e5de895177f2",
+  "scope": "No RTL or livePnR modification;not a completed render result"
+}

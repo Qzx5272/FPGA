@@ -1,0 +1,9 @@
+{
+  "status": "passed_synthesis_only",
+  "build": "D:\\StarclusterBuilds\\stage_pad_syn_20ff972b7d9d",
+  "source_sha256": "20ff972b7d9d50f541c021f29a15951c8ed7b28f5541b9e449753dea0aaabdad",
+  "scope": "Standalone default10ADC-lane/64pad synthesis;no physical resources,timing,or board acceptance",
+  "started": "2026-10-26T04:40:25.652189",
+  "returncode": 0,
+  "finished": "2026-10-26T04:40:34.318731"
+}

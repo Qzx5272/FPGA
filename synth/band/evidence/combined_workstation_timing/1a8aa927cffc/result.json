@@ -1,0 +1,84 @@
+{
+  "status": "failed_timing",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_1a8aa927cffc",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_dccaa8a43dff",
+  "frozen_netlist_sha256": "51fad59cddf9a93d980388a00ad70881a7b90db5214959b38aae94e3b87e13d9",
+  "hardware_profile": "workstation-i2s-dvi-v1",
+  "requested_clocks": {
+    "core_clk": [
+      "clk",
+      20.0
+    ],
+    "mic_clk": [
+      "mic_bck",
+      325.520833
+    ],
+    "audio_clk": [
+      "audio_clk",
+      40.690104
+    ],
+    "serial_clk": [
+      "video_output/video_clocks/pll/CLKOUT0",
+      7.936507936507937
+    ],
+    "display_clk": [
+      "video_output/video_clocks/divider/CLKOUT",
+      39.682539682539684
+    ]
+  },
+  "local_vocoder_control": false,
+  "scope": "Combined workstation exploratory PnR:three external plus two generated clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.",
+  "started": "2026-10-26T07:21:07.740035",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "8f6fafe3630ca9dc77f18a051ea8da34a91c5ef625236ce133c2509d708a896e",
+    "stage.cst": "0013dbc4545de664d3aa5ba020a5028e3ba4e65c182d956ac1efefa57d261b4b",
+    "hardware_profile.json": "7c98c4a92c8df59c5d499b73774cbe5992cf60092260e166d37df0fe9a8a7d89",
+    "build_dvi_workstation_timing.py": "bea21efda5b7e5aa08ca36527a4be8c6faa1f6d4533adade8bd0882ca3734774"
+  },
+  "vocoder_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "stage_pad_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "dvi_full_chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_dvi\\20261026_070747\\result.json",
+    "report_sha256": "5bb768ab69da2a748bb9be91947a82d14f9f36835d6ffa314961505960cbb7ab",
+    "scope": "Actual exported band/PLL/HannFFT/32bars/OSER serial pixels;synthetic no microphone/no external sensors. Display-ready loss injected at interface,not physical PLL failure. No fullsong/full-load/PnR/physical claim."
+  },
+  "dvi_clock_boundary_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\dvi_output_timing\\e46eac9479a7\\result.json",
+    "report_sha256": "3e2c523ca41d66004423ff227cac82b86da92bcdf24e3443bece263822b022dc",
+    "synthesis_report_sha256": "313c243e612cff60469bead47cc064c480f5118a9da115e58b9f4a2b1347e2e3",
+    "timing_report_sha256": "69d5028156157552b77eab188158c55abbc1bb82caf7e12d98d82abd5fde464e",
+    "sdc_sha256": "221c3501975d8d42fff92127be736c83ce01a49bfcf5c69be4ac7f571bf1e9ab",
+    "clocks": {
+      "reference_clk": 20.0,
+      "serial_clk": 7.937,
+      "pixel_clk": 39.683
+    },
+    "scope": "Exact-source PLL/serializer boundary internal timing only;no external or full-band acceptance"
+  },
+  "returncode": 0,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "mic_clk": 325.521,
+    "audio_clk": 40.69,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "setup_violations": 23,
+  "hold_violations": 3,
+  "finished": "2026-10-26T07:35:13.959922"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests": 70,
+  "scope": "Host final partial-measure edit, save/load and upload encoder regression; no new FPGA verification",
+  "source_hashes": {
+    "synth/band/host/editor.py": "0c6327f0a355b604e88966223abdf7db71db612109b83afb59ddf13bc7a1a3a0",
+    "synth/band/tests/test_host.py": "01128d4aa84bf327f7ef1d693a4ebf302ea6637847113db3ccf861d22a8417df"
+  },
+  "final_accepted": false
+}

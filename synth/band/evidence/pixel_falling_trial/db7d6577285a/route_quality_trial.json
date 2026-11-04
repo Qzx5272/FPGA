@@ -1,0 +1,17 @@
+{
+  "status": "running",
+  "session_id": 24704,
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_de1ae349b1ef",
+  "baseline": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_30f67dbd230f",
+  "unchanged": [
+    "frozen netlist",
+    "SDC",
+    "CST"
+  ],
+  "changes": [
+    "route_option1",
+    "correct_hold_violation1 explicit"
+  ],
+  "reference": "Installed SUG100-4.4.6E p39; SUG1220-2.0E route_option/correct_hold_violation",
+  "scope": "Physical routing experiment only; no relaxed constraint or programming"
+}

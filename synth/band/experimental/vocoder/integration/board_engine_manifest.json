@@ -1,0 +1,7 @@
+{
+  "status": "experimental wrapper, requires compile/test and physical top constraints",
+  "baseline_sha256": "426909e82415549c785fad83decf485deff88a0360e74e53c9533e031aef957e",
+  "generated_sha256": "bb8293cbf7c2429c934cada7d3c9ddec0a463470d62e3044bb5015ffb1883c0f",
+  "microphone_contract": "Signed PCM24 stable in clk domain; bridge/watchdog required for actual ADC",
+  "controls": "singer_mix is integration input, not a new UART control"
+}

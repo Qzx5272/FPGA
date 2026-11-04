@@ -1,0 +1,149 @@
+{
+  "status": "passed_timing_pending_pin_audit",
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_423614c24ba7",
+  "source": "D:\\StarclusterBuilds\\pt8211_onboard_syn_9b6a92ade912",
+  "frozen_netlist_sha256": "af6fcf66c5110ab3234e326fdb59244ef95b3fc9a95a5ed7cfd662f6ff21497e",
+  "top_module": "board_pt8211_controls_top",
+  "onboard_controls": true,
+  "button_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\onboard_controls\\20261026_223729\\result.json",
+    "sha256": "bd6ba224a1f52bf03adfcc09469bd38bdf65296470dee9f91f6afb002a5269ca"
+  },
+  "serial_global_clock_trial": false,
+  "integer_output_clock_trial": false,
+  "target_serial_mhz": 126.0,
+  "pixel_reset_trial": true,
+  "reset_buffer_structure": {
+    "status": "passed_synthesized_connectivity_only",
+    "stages": 16,
+    "serializer_reset_endpoints": 3,
+    "source_sha256": "07e54af00ed5cb92a59742f1b12728dc01abab5e73902effc813739cae3f547b",
+    "netlist_sha256": "af6fcf66c5110ab3234e326fdb59244ef95b3fc9a95a5ed7cfd662f6ff21497e",
+    "scope": "16even LUT1 inversions preserved; not proof of physical cell retention or native recovery/removal margins"
+  },
+  "pixel_global_clock_trial": false,
+  "route_quality_trial": false,
+  "reset_min_delay_trial": false,
+  "started": "2026-10-26T22:53:28.547451",
+  "timeout_seconds": 7200,
+  "scope": "Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,no serial asyncCLEAR exceptions;pixel reset and OSER recovery/removal timed;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected. Preserved reset buffer experiment; six explicit native recovery/removal reports requested. Source not release-audited; per-lane physical path review still required.",
+  "chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_pt8211_dvi\\20261026_223729\\result.json",
+    "sha256": "e145bc27a1d4a2a224dd3588bee9d37319b946d61ee81a74f3884b0f73e99619",
+    "decoded_frames": 3006,
+    "scope": "Generic fulltop with same tied-idle inputs;board shell structurally reviewed,not physical acceptance"
+  },
+  "vocoder_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\f98747e0a290_20261026_205900\\result.json",
+    "report_sha256": "565eeb5c868976e7b7b7135a6365d828925ea8bf5b93661d9e7ccd55a7fbe5e2",
+    "netlist_sha256": "f98747e0a2904754b3dd6f10922f4fdb1a581ab2d93befca40909972a42f5d51",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "pad_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "inputs": {
+    "build.tcl": "1302ec94713eefbe5fb1deae43447c4ddecf7600bb71481b4b502a16b96b6be1",
+    "board.cst": "09b7c7753d79d810ee40a4cd38dd22c19380116eeb9bf1e2dc74009ec1e21448",
+    "board.sdc": "e4aa5f296867641ad60748bf5a3f49c33d20328fc74d0f1c2baf6a4e7336eb91",
+    "pnr_pt8211_onboard.py": "aea87e3e905f2ad37ae73765b9c80ec49879d58a94abca9239e40a9751008cea"
+  },
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "pulse_width_paths": [
+    {
+      "slack_ns": 6.553,
+      "actual_ns": 7.453,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[3].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[1].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[0].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[2].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[7].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/electronic_singer/source/n14032_0_s"
+    },
+    {
+      "slack_ns": 6.571,
+      "actual_ns": 7.471,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[1].unit/allocator/source_source_0_0_s"
+    },
+    {
+      "slack_ns": 6.571,
+      "actual_ns": 7.471,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/allocator/source_source_0_1_s"
+    }
+  ],
+  "pulse_width_violations": 0,
+  "finished": "2026-10-26T23:21:33.476774"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_47394a5b7937",
+  "source": "D:\\StarclusterBuilds\\pt8211_onboard_syn_6bd7ec32b1b1",
+  "frozen_netlist_sha256": "37fb07114188f26e64f8322b47d114a4b6ef60c8a25d2b353f51e5d63d86f20b",
+  "top_module": "board_pt8211_controls_top",
+  "onboard_controls": true,
+  "button_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\onboard_controls\\20261026_132505\\result.json",
+    "sha256": "df4ed8d9d6b4e2be40bb25f474fb6917840c8a506bb771aca7f105a0b7617d25"
+  },
+  "started": "2026-10-26T13:41:16.281368",
+  "timeout_seconds": 7200,
+  "scope": "Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,2asyncCLEAR exceptions;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected.",
+  "chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_pt8211_dvi\\20261026_104538\\result.json",
+    "sha256": "b68ff1e3f9866ac07c1593e2a3901a8cbf0ea5ce5a957d711cec1804c4c219c5",
+    "decoded_frames": 3006,
+    "scope": "Generic fulltop with same tied-idle inputs;board shell structurally reviewed,not physical acceptance"
+  },
+  "vocoder_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "pad_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "inputs": {
+    "build.tcl": "1302ec94713eefbe5fb1deae43447c4ddecf7600bb71481b4b502a16b96b6be1",
+    "board.cst": "09b7c7753d79d810ee40a4cd38dd22c19380116eeb9bf1e2dc74009ec1e21448",
+    "board.sdc": "ac584e34a0978f1fafa91a443813dbcae372f96301a72c4e8d4fb550e88b8168",
+    "pnr_pt8211_onboard.py": "779dcd316c8982fa62ca442ec9c33d273495d13318d17112258b4f32c4ee113a"
+  },
+  "error": "Vendor failure; inspect log",
+  "finished": "2026-10-26T14:40:46.584606"
+}

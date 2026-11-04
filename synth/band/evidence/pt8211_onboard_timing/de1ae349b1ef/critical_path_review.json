@@ -1,0 +1,109 @@
+{
+  "status": "failed_timing_diagnosis",
+  "report_sha256": "0f1036c0eb99edaf169ba0398200cb4332570b8e9f7a5c021761cb87d888e416",
+  "paths": {
+    "Setup Analysis Report": [
+      {
+        "slack_ns": -0.422,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_1_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.405,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_2_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.393,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_4_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.385,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_3_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.379,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_5_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.373,
+        "source": "workstation/band/engine/core/banks[6].unit/allocator/active_15_s1",
+        "destination": "workstation/band/engine/core/dispatch_velocity_0_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.178,
+        "source": "workstation/band/engine/core/banks[1].unit/allocator/rejected_0_s2",
+        "destination": "workstation/band/engine/telemetry_snapshot_159_s0",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.111,
+        "source": "workstation/band/engine/receiver/panic_s0",
+        "destination": "workstation/band/engine/core/banks[1].unit/allocator/scan_1_s6",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.078,
+        "source": "workstation/band/engine/receiver/panic_s0",
+        "destination": "workstation/band/engine/core/banks[1].unit/allocator/source_source_0_0_s",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.03,
+        "source": "workstation/band/engine/receiver/payload_26_s0",
+        "destination": "workstation/band/engine/core/ownership/epochs_epochs_RAMREG_1_G[192]_s3",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      },
+      {
+        "slack_ns": -0.017,
+        "source": "workstation/band/engine/local_inputs.pads/generation_changed_17_s1",
+        "destination": "workstation/band/engine/local_inputs.pads/local_inputs.serial_25_s2",
+        "launch": "core_clk:[R]",
+        "latch": "core_clk:[R]"
+      }
+    ],
+    "Removal Analysis Report": [
+      {
+        "slack_ns": -2.895,
+        "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+        "destination": "workstation/video_output/transmitter/channels[2].serializer",
+        "launch": "display_clk:[F]",
+        "latch": "serial_clk:[F]"
+      },
+      {
+        "slack_ns": -2.882,
+        "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+        "destination": "workstation/video_output/transmitter/channels[1].serializer",
+        "launch": "display_clk:[F]",
+        "latch": "serial_clk:[F]"
+      },
+      {
+        "slack_ns": -2.882,
+        "source": "workstation/video_output/transmitter/pixel_release_1_s0",
+        "destination": "workstation/video_output/transmitter/channels[0].serializer",
+        "launch": "display_clk:[F]",
+        "latch": "serial_clk:[F]"
+      }
+    ]
+  },
+  "finding": "Worst setup path originates at active voice bitmap and reaches collaborative velocity capture. All3negative removal paths are pixel-release to OSER reset. Quality routing did not repair native reset skew. New lower-resource core not yet routed."
+}

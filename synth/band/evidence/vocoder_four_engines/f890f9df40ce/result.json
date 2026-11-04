@@ -1,0 +1,17 @@
+{
+  "status": "passed_rtl_and_synthesis_only",
+  "sources": {
+    "filterbank.sv": "24d9a701ca6b0ea37cc808c85593121ce8a59079673642491ffaa96723298d91",
+    "double_biquad.sv": "c6d502f112bedbdd89e390ac20bd0cf386f1e7c642f1041c0735f038a89d2def",
+    "vocoder_core.sv": "9458dd3d05d6863060405d22bb4f79df687f984db8f2a51a7da31d191674bcdd",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "build": "D:\\StarclusterBuilds\\vocoder_four_syn_f890f9df40ce",
+  "started": "2026-10-26T20:56:47.276172",
+  "vectors_sha256": "0fa6b46f383ef4b3bdb21e6f7af9e7f74eb60816bfe0f0fc66f00c6ec1c55d4a",
+  "scope": "Isolated four-engine vocoder RTL and synthesis; no vendor-netlist/full-band/PnR/board claim",
+  "rtl_log": "PASS full vocoder4096 samples, reset, backpressure, clip/reject counters; maxcycles=519\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_four_engines\\f890f9df40ce\\tb.sv:34: $finish called at 42762540000 (1ps)\n",
+  "netlist_sha256": "f98747e0a2904754b3dd6f10922f4fdb1a581ab2d93befca40909972a42f5d51",
+  "finished": "2026-10-26T20:58:36.876735"
+}

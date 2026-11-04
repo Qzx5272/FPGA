@@ -1,0 +1,1691 @@
+=== PAGE 1 ===
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=nnmr20
+Journal of New Music Research
+ISSN: (Print) (Online) Journal homepage: https://www.tandfonline.com/loi/nnmr20
+Surveying digital musical instrument use in active
+practice
+John Sullivan, Catherine Guastavino & Marcelo M. Wanderley
+To cite this article: John Sullivan, Catherine Guastavino & Marcelo M. Wanderley (2022):
+Surveying digital musical instrument use in active practice, Journal of New Music Research, DOI:
+10.1080/09298215.2022.2029912
+To link to this article:  https://doi.org/10.1080/09298215.2022.2029912
+© 2022 The Author(s). Published by Informa
+UK Limited, trading as Taylor & Francis
+Group
+View supplementary material 
+Published online: 18 Feb 2022.
+Submit your article to this journal 
+View related articles 
+View Crossmark data
+
+=== PAGE 2 ===
+JOURNALOFNEWMUSICRESEARCH
+https://doi.org/10.1080/09298215.2022.2029912
+Surveying digital musical instrument use in active practice
+John Sullivan a,c, Catherine Guastavino b,c and Marcelo M. Wanderley a,c
+a InputDevicesandMusicInteractionLaboratory,Montreal,Canada; b MultimodalInformationLaboratory,Montreal,Canada; cCentrefor
+InterdisciplinaryResearchinMusicMediaandTechnology,McGillUniversity,Montreal,Canada
+ABSTRACT
+Digital musical instruments are frequently designed in research and experimental performance con-
+texts but few are taken up into sustained use by active and professional musicians. To identify
+the needs of performers who use novel technologies in their practices, a survey of musicians was
+conducted that identified desirable qualities for instruments to be viable in active use, along with
+attributes for successful uptake and continued use of instruments based on frameworks of long and
+short term user engagement. The findings are presented as a set of design considerations towards
+the development of instruments intended for use by active and professional performers.
+ARTICLE HISTORY
+Received15December2020
+Accepted10January2022
+KEYWORDS
+Digitalmusicalinstruments;
+NIME;survey;engagement;
+design
+1. Introduction
+The field of novel digital musical instrument (DMI)
+design, and much of the music technology domain
+wherein it resides, relies on the existence of musicians
+thatactivelyengageinmusicalpractice.Simplyput,new
+instrumentsneedpeopletoplaythem.Inparticular,DMI
+designers would seem to be especially dependent on
+performers who would take up novel instruments and
+engage with new technologies and methods of music-
+making. The relationship between design and musical
+practice can be mutually beneficial, as innovations in
+instrument design can inspire new musical practices,
+while evolving performance techniques and styles can
+informdesignresearchinnewdirections.
+However, scholars have repeatedly shown that most
+D M I sh a v es h o r tl i f es p a n s ,a n dm a n yf a i lt om a k et h e
+jump from initial designs and prototypes to finished
+instruments put to service in real-world musical appli-
+cations. Mamedes et al. (2014)p r o p o s e dt h r e ep r i m a r y
+reasons for the relative scarcity of established DMIs in
+use:newinstrumentslackestablishedplayingtechniques;
+new forms of musical notation are needed to accommo-
+datenovelformsofmusicaloutputwithnewDMIs;estab-
+lished repertoires don’t yet exist for new instruments.
+McPhersonandKim( 2012)cited‘theproblemofthesec-
+ond performer’, highlighting the challenge of building a
+community for a new instrument beyond an initial sin-
+gle user. Furthermore, Morreale and McPherson (2017)
+f o u n dt h a tw i t h i nt h eN I M Er e s e a r c hc o m m u n i t y ,t h e
+CONTACT JohnSullivan john.d.sullivan@mail.mcgill.ca
+Supplementaldataforthisarticlecanbeaccessedhere. https://doi.org/10.1080/09298215.2022.2029912
+design of new DMIs is frequently carried out in service
+to specific research-based inquiries, resulting in techni-
+cal probes and prototypes that are never intended to be
+puttoreal-worldmusicaluse.
+1.1. What are DMIs, and who uses them?
+The technical definition of a DMI is relatively straight-
+forward,designatedbyMirandaandWanderley( 2006)as
+‘aninstrumentthatusescomputer-generatedsound...and
+consists of a control surface or gestural controller, which
+drives the musical parameters of a sound synthesizer
+i nr e a lt i m e ’( p .1 ) .I np r a c t i c e ,t h et e r mi sm o s tc o m -
+monlyassociatedwithnon-commercial,atypicalmusical
+instrumentsandinterfacesthatarenotgenerallyfoundin
+mainstream music performance. This constrained scope
+tendstobetransferredtotheprevailingresearchonDMI
+users as well, with most scholarship on DMI perfor-
+mancesituatedwithinacademicandexperimentalmusic
+contexts. However, beyond these focused communities
+thereisadiverseecosystemofperformerswhousenovel
+instruments and interfaces that may fit the technical
+definitionofaDMIbutnotthetypicalsocialandcultural
+contextassociatedwiththeterm.
+While studies of DMI-centric musical practice are
+valuable,theymayfailtocaptureuniqueanddiverseper-
+spectivescomingfromothercommunities.Forexample,
+electronic dance music (EDM) and hip hop producers,
+DJs, experimental rock bands and modular synthesiser
+©2022TheAuthor(s).PublishedbyInformaUKLimited,tradingasTaylor&FrancisGroup
+This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives License (http://creativecommons.org/licenses/by-nc-
+nd/4.0/),whichpermitsnon-commercialre-use,distribution,andreproductioninanymedium,providedtheoriginalworkisproperlycited,andisnotalter ed,transformed,orbuiltupon
+inanyway.
+=== PAGE 3 ===
+2 J. SULLIVAN ET AL.
+enthusiasts are just a few highly active areas of practice
+that rely heavily on existing and emerging digital tech-
+nologies for performance but are not typically included
+in the discourse around DMI design and practice. Input
+from these groups can broaden the understanding of
+where and how new instruments and technologies are
+being used in different contexts, and ultimately inform
+the design and evaluation of new DMIs towards their
+successful and long-term use in more widespread active
+musical practices.
+Here we report a study to identify and characterise
+DMI use across diverse musical practices via an online
+survey of musicians, with an aim to develop a set of
+design heuristics to aid the uptake of new instruments.
+We begin with a discussion of performance communi-
+ties in Section2,fi r s tf o c u s i n go nr e s e a r c hw i t h i na n d
+around the International Conference on New Interfaces
+for Musical Expression (NIME)
+1 ,t h e nl o o k i n go u t w a r d
+to consider DMI use in broader contexts. In Section3,
+we review past DMI surveys, including a preliminary
+survey of our own. We then introduce the main contri-
+bution of this paper, the Electronic Musical Instrument
+Survey. The methodology is presented in Section4.W e
+report the results in Section5, providing analysis on the
+respondents’ impressions of the instruments they use,
+factors for uptake and continued use of DMIs based on
+frameworks for short and long term user engagement,
+and an extended analysis to relate findings to specific
+performance characteristics of musical style and level of
+activity.Finally,inSection 6,weconsolidateourfindings
+to present an updated report on DMI use across both
+NIMEandpopularmusiccommunitiesandoffersugges-
+tionsforinstrumentdesignerstofacilitatetheuptakeand
+long-term use of novel DMIs across diverse and active
+performancepractices.
+2. Communities of practice, communities of
+interest
+2.1. NIME and DMI research communities
+OneofthemostcompellingattributesoftheDMIdesign
+communityisthatitoverlapsagreatdealwiththeperfor-
+mancecommunity.ThisisreadilyapparentinNIME,the
+annual International Conference on New Interfaces for
+Musical Expression, which is dedicated to scientific and
+artisticresearchonnewmusicalinterfacedesign.
+Though NIME is perhaps the most recognisable
+researchcommunityarounddesignof,andcreativeprac-
+tice with, novel musical interfaces and instruments, it is
+not alone. NIME began as a workshop at the 2001 ACM
+Conference on Human Factors in Computing Systems
+1 https://nime.org
+(CHI) (Jensenius & Lyons,2017;P o u p y r e ve ta l . ,2001),
+but prior to that the fields of musical interaction and
+interface design were already well established and doc-
+umented. Volumes like the Computer Music Tutorial
+(Roads, 1996), Electric Sound (Chadabe, 1997), and
+Trends in Gestural Control of Music(Wanderley & Bat-
+tier,2000) contained a great deal of information on the
+topic, as did numerous contributions to conferences like
+the International Computer Music Conference (ICMC)
+and journals like the Computer Music Journal and Jour-
+nalofNewMusicResearch,whichgottheirstartsin1974,
+1977,and1972,respectively.
+2 Severalotherjournalsand
+conferences have been established with dedicated schol-
+arship on musical interface design and artistic practice,
+such as Organised Sound, the Leonardo Music Journal,
+the Sound and Music Computing (SMC) Conference,
+the International Symposium on Computer Music Mul-
+tidisciplinary Research (CMMR), and the International
+ConferenceonLiveInterfaces(ICLI),tonamejustafew.
+Thus, while much of the review and associated research
+presented here explicitly references NIME, we may lib-
+erally extend our concept of this community to include
+theseotherassociationsofacademic-basedmusicalinter-
+faceresearchandpractice.
+Historically,communityhasbeenfrequentlydiscussed
+in NIME literature without formal definition. As such,
+the term merely signifies some grouping of researchers
+or practitioners sharing a common pursuit or interest.
+Without a better framework for delineating and charac-
+terising different communities, we may lack the tools to
+adequately examine some of the key ways that commu-
+nitiesformandinteract,andtounderstandstrategiesfor
+buildingandsharingknowledge.
+2.1.1. Communities of practice
+Communities have been a topic of considerable inter-
+estmorerecently.Marquez-BorbonandStapleton( 2015)
+examined the notion of community within NIME
+throughthe communityofpractice (CoP)framework.The
+term ‘community of practice’ comes from the social sci-
+ences and was first coined by Lave and Wenger (1991).
+CoPs are described as ‘groups of people who share a
+concern or a passion for something they do and learn
+how to do it better as they interact regularly’ (Wenger
+&Trayner-Wenger,2015,p.1)andpossessthreeessential
+characteristics: (1) the community’s identity is defined
+byashareddomainofinterest;(2)membersofthecom-
+munity engage in joint activities, share information and
+knowledge, help and support other members, and learn
+from one another; (3) the community is composed of
+practitioners who share a repertoire of resources.
+2 TheJournalofNewMusicResearchwasknownas Interfacefrom1972–1993.
+=== PAGE 4 ===
+JOURNAL OF NEW MUSIC RESEARCH 3
+Ofparticularinterestishowteachingandlearningare
+carried out in CoPs and how this relates to the domain
+of DMI design and performance. The CoP model is
+closelyrelatedtothesituatedlearningframeworkbyLave
+and Wenger (1991), in which ‘knowledge is inextricably
+aproductoftheactivityandsituationsinwhichitispro-
+duced’ (Marquez-Borbon & Stapleton,2015, p. 308), as
+opposedto formallearning,wheretheexchangeofknowl-
+edgeisseparatefromitsactualuseinpracticeandcarried
+outincontrolledteacher/classenvironments.
+2.1.2. Communities of interest
+While learning is a key component in characterising
+the community, another important consideration is the
+range of activitiesthat goeson inthe NIME community.
+In this regard, Marques-Borbon and Stapleton observe
+that NIME may alternately be characterised as acom-
+munity of interest(CoI) (Fischer,2001), a ‘community
+of communities’ in which a common task is approached
+by practitioners from different disciplines (e.g. human-
+computer interaction (HCI), design, computer science,
+engineering, hacking/making, music composition and
+performance,etc.).
+However, the CoI structure may be problematic in
+two ways. First, when knowledge is tacitly distributed
+across different disciplines, a condition is formed where
+stakeholders each ‘possess an important and yet incom-
+pleteunderstandingoftheproblem’(Fischer, 2001,p .2),
+knownasa symmetryofignorance .Differingperspectives
+and vocabularies coming from different domains may
+furtherobfusca tethecommontaskofacomm unity .The
+interdisciplinarynatureofNIMEresearch,wherepracti-
+tionersfreelyoperateacrossandbetweendisciplines,may
+besusceptibletothiscondition.
+Secondly, and perhaps more importantly, with so
+many different disciplines engaged within the NIME
+community, it is no surprise that there is no single
+common task. To this point, Cantrell (2017) extended
+the CoP/CoI analysis by identifying five distinct areas
+of NIME research practice: Practical Research, Artis-
+ticPerformance,Hacking/Making,CommercialProduc-
+tion, and Self Reflexivity. Cantrell provides examples of
+severalNIMEprojectsthatengagethesedifferentareasto
+greater or lesser extents, where scientific research mixes
+freely with creative practice, illustrating the wide diver-
+sityandinterdisciplinarityfoundwithinDMIresearch.
+2.2. Focus on communities of performance
+So far our review of NIME and related research shows
+a strong interdisciplinary community actively involved
+in many facets of DMI design and performance. In the
+next section, we review how surveys have been used
+in these communities to identify and illuminate DMI
+practice, in preparation for our own survey. We make a
+general initial observation here, and a key distinction in
+theaimsofourownstudy:whiledesignandperformance
+roles are deeply interrelated in research-based commu-
+nities like NIME, this is largely not the case in more
+active and professional music communities that are not
+research-based. Generally speaking, performing musi-
+cians perform, and leave the design and development of
+new instruments to others. Therefore, as we prepare our
+own survey that might inform a performance-centred
+DMI design methodology, we are interested to isolate
+performancefromdesign,andfocusspecificallyonthese
+aspectsofcommunitiesusingDMIs.
+3. Past surveys
+In the interest of providing designers with better tools
+and more information to aid the creation of new instru-
+ments,researchershaveutilisedquestionnairestosurvey
+performers about the use of DMIs in their musical prac-
+tice. In this section, we review methods and results of
+several previous surveys, which provide a basis for the
+fo rm ula tio no fo uro wnsurveyinSectio n4.
+3.1. Dual performer-designer roles
+AnonlinesurveywasconductedbyMagnussonandHur-
+tado (2008) to investigate the embodied connections
+between performers and their instruments, and con-
+trast between acoustic and digital instruments. A call
+forparticipationwascirculatedacrossseveralaudiopro-
+gramming mailing lists and by the time of first publica-
+tion, the survey had received over 200 responses. Given
+t h ef o c u so na u d i op r o g r a m m i n g ,w h i c hi n c l u d e da n
+optional evaluation section on the authors’ own audio
+software,ixi,
+3 questionsarounddigitalinstrumentswere
+mainlyfocusedonsoftwareandexcludedspecificdiscus-
+sion about hardware such as physical input devices or
+embeddedinstruments.
+Two particular findings of the survey highlight the
+s p e c i a l i s e dn a t u r eo ft h eD M Iu s e rc o m m u n i t yt h a tw a s
+investigated. First, respondents prize the ability to easily
+createandmodifydigitalinstruments,mainlyviaediting
+softwareandwritingcode,accordingtospecificneedsof
+a performance or composition. These ‘easy’ designs and
+modifications require advanced non-musical skillsets,
+mostimportantlycomputerprogrammingskills,thatare
+notpossessedbymanymusicians.Furthermore,itshows
+that many of the respondents identify as instrument
+designersaswellasperformers.
+Second, the respondents tended to be more critical
+of digital instruments than their acoustic counterparts.
+3 http://www.ixi-audio.net
+=== PAGE 5 ===
+4 J. SULLIVAN ET AL.
+Entropic (non-deterministic) characteristics of digital
+instruments were generally considered to be flaws or
+errors inthe system, whereas entropy in acoustic instru-
+ments was regarded favourably as giving the instrument
+characterleadingtothediscoveryofnewsoundsorplay-
+ing techniques. This outlook indicates adesign-centric
+evaluation of an instrument, understandable given that
+most respondents were instrument builders themselves
+andwell-versedinthecraftofthefield.
+The Taxonomy of Realtime Interfaces for Electronic
+MusicPerformance(TIEM)wasasurveythatwassubse-
+quently conducted by Paine (2010)i np a r t n e r s h i pw i t h
+the Electronic Music Foundation
+4 ,I n f u s i o nS y s t e m s5
+and the Input Devices and Music Interaction Labora-
+tory.
+6 The survey consisted of an online questionnaire
+for DMI designers and performers to submit informa-
+tionabouttheinstrumentstheyhaddesignedorusedin
+practice.Atthetimeoffirstpublication(Paine&Drum-
+mond, 2009), 70 complete responses had been received
+andapublicwebsitewascreatedcontainingadatabaseof
+thesubmittedDMIs.
+7
+As with Magnusson and Hurtado’s survey, respon-
+dents identified as both performers and designers. Fur-
+thermore,theyvariedinhowtheythoughtof,orreferred
+to, the systems they were discussing: instruments, inter-
+faces, compositions, or something else. The authors
+observed that the ‘notion of interface/instrument con-
+sidered also in terms of a composition, while familiar to
+those working in the area, is of course radically differ-
+entfromtheconceptofatraditionalacousticinstrument’
+(Paine & Drummond,2009,s e c .I Vp a r a .6 ) .A g a i nt h i s
+illustrates how select and idiosyncratic typically studied
+DMIperformancecommunitiesare.
+3.2. Surveying the NIME community
+A pair of surveys by Morreale and McPherson (2017)
+and Morreale et al. (2018) elucidate some of the limita-
+tionsaroundperformanceandthecontinueduseofDMIs
+over time. The first surveyed instrument makers whose
+instrumentshadbeenpresentedattheNIMEconference
+overseveralyears.ThiswasfollowedbyasurveyofNIME
+performers to explore and understand the roles of DMIs
+in their practice and understand common values among
+performers.TheyconfirmedthatamajorityofnewDMIs
+fail to be developed or used beyond their initial design
+andinfrequentuseinactualperformance,andidentified
+afewprimaryfactorscontributingtothistrend:DMIsare
+o f t e nd e s i g n e da sr e s e a r c hp r o b e so rw o r k s - i n - p r o g r e s s
+4 https://emﬁnstitute.org/
+5 https://infusionsystems.com/
+6 http://idmil.org
+7 TheTIEMwebsiteanddatabasearenolongeronline.
+notintendedforreal-worlduse;instrumentsaremostfre-
+quently used by only one or two performers (and most
+oftentheprimary/onlyperformeristhedesigner);instru-
+mentsfrequentlysufferfrommaintenanceandreliability
+issues;perspectiveperformerslacktheopportunitytouse
+theminperformance.
+Common themes that were identified around the use
+ofDMIsincludedthedesireforbespokeinstrumentsthat
+could meet personalised and idiosyncratic needs most
+commonlyassociatedwithperformingexperimentaland
+exploratorystylesofmusic.Consistentwiththeothersur-
+veys discussed in this section, they also found that most
+( 7 8 % )o ft h ep e r f o r m e r sw h or e s p o n d e dh a dd e s i g n e d
+theirowninstrument.
+3.3. Investigating DMI performance beyond NIME
+Thestudiesdiscussedaboveillustrateanactive,engaged,
+andhighlyskilledcommunityofperformers,researchers
+and designers moving frequently and fluidly between
+these roles. As such, they embody both the techni-
+cal/engineering and creative artistic roles of DMI prac-
+tice,andcontributegreatlytoinnovationinbothinstru-
+mentdesignandexpandedmusicalpractice.
+These types of practices are well represented in the
+literature and in the academic research community at
+large, most notably NIME. However, the use of novel
+digital instruments and technologies in performance is
+common beyond these typically surveyed communities
+as well. Whether by virtue of certain instruments’ mass
+appeal and commercial availability, or their appropria-
+tionbymoreconventionalandmainstreammusicstyles,
+perspectivesfrommorepopulousandhighlyactivecom-
+munitiesofdigitalinstrumentusersareseldomincluded
+inD MIuserr esea r ch.
+In a previous study, the first author (Sullivan,2015)
+conducted a preliminary survey about musicians’ use
+of technology across different performance communi-
+ties. Musicians of all kinds were invited to complete the
+survey,withacallforparticipationcirculatedacrosssev-
+eraldifferentacademicandcommunitymailinglistsand
+social media platforms. One hundred valid responses
+were collected, mostly from professional and recre-
+ational musicians, with fewer from academic circles
+Table 1. Musicianrolesofrespondentsfromourpreliminarysur-
+vey.Therewere100totalrespondents.
+Musicianroles Respondents
+Professional 43
+Hobbyist/recreational 38
+Student 11
+Instructor/educator 7
+noresponse 1
+=== PAGE 6 ===
+JOURNAL OF NEW MUSIC RESEARCH 5
+Table 2. Themostcommonmusicalstylesplayed (left)andprimaryinstrumentsused (right)byrespondentsfromourpreliminarysurvey.
+Respondentscouldgivemultipleanswersinbothcategories.
+Musicalstylesplayed Responses
+Rock/popular 39%
+Experimental/avant-garde 24%
+Classical 14%
+Jazz/blues/R&B 7%
+Acoustic/folk/country 7%
+Electronic/EDM/House 5%
+...5otherstyles <5%
+Primaryinstruments Responses
+Guitar 66%
+Piano/keyboards 64%
+Drums/percussion 35%
+Bass 33%
+Voice 22%
+Computer/synthesiser(tie) 11%
+...39otherinstruments <11%
+(Figure1).Thesurveycontainedquestionsaboutrespon-
+dents’ background, instrument choices, musical styles
+performed, as well as experiences with, and attitudes
+towards,newDMIs.Overalltheparticipantsrepresented
+a diversity of musical styles, and their primary instru-
+ment choices were highly conventional, illustrating a
+trendtowardmorepopularmodesofmusicperformance
+(Table2).
+The objective of this survey was to gain a general
+overview of trends in DMI use among different perfor-
+mancecommunitiesinordertoidentifyareasoffocusin
+preparation for our current survey. The questions were
+mostly closed-ended (multiple choice and numerical) to
+allow for efficient quantitative analysis. However, some
+ofthefree-formatanswersprovidedespeciallyusefuland
+provocative information for further study in two partic-
+ular areas.
+First,performers’integrationofdigitalmusicalinstru-
+ments and related technologies varied dramatically
+based on musical style. More specifically, a clear dis-
+tinction was shown between users of noncommer-
+cial technology (including DIY instruments and inter-
+faces, user-programmed software, research-based pro-
+totypes, and experimental instruments) and commer-
+cially available mass-marketed hardware and software
+instruments. In contrast to previously mentioned sur-
+veys, in which most participants used noncommercial
+instruments, we found that in our survey with rock and
+popular music styles more heavily represented, com-
+mercial instruments and interfaces were much more
+predominant.
+Second, responses showed that basic issues of instru-
+ment stability, reliability,a n dcompatibility (with other
+instruments,performersandindustrystandards)arepri-
+maryfactorsthatleadtotheabandonmentofnewinstru-
+ments and technologies. This motivated a separate study
+in which a meta-review of DMI design literature was
+conducted that identified fifteen key design areas to be
+addressed for DMIs to be viable for use in professional
+performance situations, such as build quality, versatility,
+t i m i n ga n dl a t e n c y ,s u s t a i n a b i l i t ya n dp r o d u c ts u p p o r t
+(Sullivan&Wanderley, 2018).
+4. The Electronic Musical Instrument Survey
+Followingourpreviouswork,wewereinterestedtocon-
+duct a more comprehensive online survey that again
+targeted performers across a wide variety of perfor-
+mance practices and focused on factors that contribute
+to uptake and long-term engagement with new DMIs
+in performance. Additionally, we wanted to understand
+what types of performers were using DMIs and how
+behaviours and preferences vary between different com-
+munities.
+To do this, we created the Electronic Musical Instru-
+mentSurvey,anonlinesurveyforperformingmusicians.
+To encourage participation by performers from diverse
+musical practices, we chose to use the termelectronic
+musicalinstrument(EMI)asagenericandinclusivename
+for various overlapping terminologies used in the field
+such as DMI, NIME, computer-based instrument, inter-
+face, controller, etc. By avoiding domain-specific jargon
+wehopedtomakethesurveyaccessibleandapplicableto
+anyonewhomightchoose totakeit.
+4.1. Participant criteria and recruitment
+The survey was open to all performers, with no spe-
+cificrequirementthattheyuseelectronicmusicalinstru-
+ments (EMIs) in performance. The questionnaire was
+conditionallyformattedsoonlythosewhoreportedusing
+EMIs weredirectedtothe relevant sections. Participants
+wererequiredtobe18yearsofage.Beyondthat,theonly
+requirement was that respondents identified themselves
+as ‘active musicians’. As an incentive for participating,
+respondents were invited to enter a drawing for a $100
+CADgiftcertifica tetoano nlinem usicr etailer .
+T h ec a l lf o rp a r t i c i p a t i o nw a ss e n tv i at h ef o l l o w i n g
+channels:
+ McGill University Schulich School of Music Student
+mailinglists
+ UniversityofMontrealMusicFacultyStudentmailing
+lists
+ Centre for Interdisciplinary Research in Music Media
+and Technology (CIRMMT) regular and student
+membermailinglists
+=== PAGE 7 ===
+6 J. SULLIVAN ET AL.
+ E a s t e r nB l o cN e wM e d i aa n dP r o d u c t i o nC e n t r e8
+mailinglistandsocialmedia
+ New Music World9 mailinglist
+ social media (Facebook, Twitter and Instagram,
+shared and reposted by friends and colleagues in
+musicperformancecircles)
+ circulated by colleagues in academic and music per-
+formancecommunitiesinNorthAmericaandEurope
+4.2. Questionnaire
+As mentioned before, our previous survey had used
+mostlyclosed-endedandshort-answerquestionstoboth
+minimisethelengthoftimetocompletethesurvey(and
+indoingso,maximisethenumberofrespondents)andto
+optimise and automate analysis of the data. For this sur-
+veywechosetoaskmoreopen-endedquestionsandused
+more qualitative methods of analysis for the free-format
+responsestocollectricherdataaboutperformanceprac-
+tices. The questionnaire is included as Appendix A (see
+supplementary material).
+The questionnaire was organised in two parts. In the
+first part, Sections 1.A and 1.B collected demographic
+and background information about the respondents and
+theirmusicaltraining,includinghowlongtheyhadbeen
+playing music, details on formal training, areas of focus,
+and experience with computer programming and elec-
+tronics. Section 1.C asked for details about their perfor-
+mancepractice:primarygenresandsub-genresofmusic
+that they perform, frequency and types of performance,
+what kinds and sizes of venues, if they play solo or with
+groups/ensembles, and what kinds of instruments and
+setupsareused.
+Part two of the questionnaire was dedicated to
+the use of electronic musical instruments and con-
+trollers. Because the survey was open to all perform-
+ers, Section 2.A started with a filter question, ‘Do you
+use electronic musical instruments in performance?’ If
+a respondent answered no, the survey concluded at that
+point. If they answered yes, they survey continued. In
+Section 2.B, respondents were asked to describe and
+answer several questions about a specific instrument or
+controller they frequently use. They could repeat the
+sectionuptothreetimestogiveinformationonmultiple
+instruments. Section 2.C contained several open-ended
+questionsaskingfortherespondents’opinionsonacqui-
+sitionandcontinueduseofEMIsingeneral.Section2.D
+containedafewconcludingquestions.Respondentswere
+invited to write any additional comments they had, and
+8 https://easternbloc.ca/.
+9 New Music World was a community-based online resource for global new
+musiceventsandcontent,foundedbyJoelChadabeandaﬃliatedwiththe
+ElectronicMusicFoundationInstitute( https://emﬁnstitute.org/).
+w e r ea s k e di ft h e yw a n t e dt oo p t - i nf o rt h eg i f tc e r t i fi -
+catedrawing.Additionally,theywereaskediftheywould
+be interested in participating in a follow-up interview,
+though the interviews we ultimately cut from the study
+giv enthela r g ea mo un to fda tacollectedfr o mthesurv ey
+itself.
+Intotalthesurveycontained32questions,thoughthe
+e x a c tn u m b e rar e s p o n d e n tm i g h ta n s w e rv a r i e d ,b a s e d
+on conditional logic that would skip or reveal additional
+questions depending on respondents’ answers to certain
+questions. Respondents were allowed to skip any ques-
+tions they didn’t care to answer, and we estimated it
+wouldtakebetween10and30minutestocomplete.
+4.3. Data collection and processing
+A website was built to host the survey and put online
+at the domain emisurvey.online.
+10 The survey was open
+for two months. While it ran, responses were saved to a
+databaseonthewebhostserver.
+Beforebeginningthestudy,theentiresurveyprotocol
+had been reviewed and approved by the Research Ethics
+Board of McGill University.
+11 The identities of respon-
+dentswerekeptanonymous:namesandotherpersonally
+identifying data were not recorded on the survey. Email
+addresses (collected if they opted in for prize drawing
+or interview availability) were removed from the dataset
+beforeanalysis.
+When the survey concluded, the full dataset was
+d o w n l o a d e df r o mt h ew e b s i t ed a t a b a s ea sa. c s vfi l e
+and imported into Microsoft Excel for initial processing
+and data cleanup. The data were visually inspected and
+any invalid entries (including abandoned or nonsense
+entries) were removed. Any email addresses that were
+collectedweremovedtoaseparatekeyfileandassociated
+with a corresponding participant ID code (P01– Pn).
+4.4. Analysis methods
+Theinitialintentforanalysiswastousegroundedtheory
+(Strauss & Corbin,1994). In grounded theory and other
+similar qualitative approaches, a fundamental activity is
+coding, where incidents in the data are first identified
+with a code, or simple short description. As the data are
+reviewed,incidentsareeitherassignedanexistingcodeor
+anewcodeiscreated.Similarcodesaregroupedtogether
+and, depending on the exact methodology used, they
+are iteratively reviewed and classified into hierarchical
+categories or themes. While this process of coding and
+classification was appropriate for our needs, The formal
+10 The survey website is presently archived at https://emisurvey.john
+nyvenom.com/.
+11 McGillUniversityREBIICertiﬁcate#254-1117.
+=== PAGE 8 ===
+JOURNAL OF NEW MUSIC RESEARCH 7
+methods of grounded theory felt too rigid and prescrip-
+tive for our desired exploratory analysis of the survey
+responses. Instead, we chose a more flexible thematic
+analysisapproachpresentedbyBraunandClarke( 2006),
+which uses similar methods but is adaptable to the spe-
+cificcontextsforwhichitisapplied.
+The analysis was organised into three parts. The first
+part of the analysis focused on the respondents’ descrip-
+tionsandimpressionsoftheelectronicanddigitalinstru-
+ments they use in performance. Responses were coded
+andgroupedusinganinductive ,orbottom-up ,a pproach
+(Creswell & Creswell,2018), where the groupings devel-
+oped naturally as the codes were generated. Subsequent
+review and classification of the codes yielded several
+themesaroundwhattypesofperformersuseEMIs,char-
+acteristics of their performance practice, instruments
+used desirable features and attributes of EMIs. Braun
+and Clarke (2006) characterise this part of the analysis
+assemantic,intha tthethemesweredra wndirectlyfrom
+the data and we did not attempt to interpret the par-
+ticipants’ responses or make implicit assumptions about
+theirmeaningsbeyondwhattheyhadwritten.
+Parttwooftheanalysisidentifiedfactorsthatinfluence
+uptake, long-term use, and retirement of instruments.
+Responses to this specific section of the survey were
+coded using a top-down,deductive approach (Creswell
+&C r e s w e l l ,2018) to contextualise the results within
+ac o n c e p t u a lf r a m e w o r kb a s e do nt w om o d e l so fu s e r
+engagement found in the literature: We characterise the
+first as short-term, comprised of the following stages:
+initialengagement,sustainedengagement,disengagement,
+and reengagement(O’Brien & Toms,2008). The second
+pertainstolong-termengagement,whichwasdeveloped
+by Wallis et al. (2013)i nas t u d yo fi n s t r u m e n tu s eb y
+amateur musicians and based around intrinsic motiva-
+tionsof mastery,complexity,a ndpurpose.
+In part three, as a follow-up to our main thematic
+analysis and investigation for future work, we crosstab-
+ulated the results from the previous steps across differ-
+ent respondent attributes to explore variations between
+performance communities.
+The analysis was carried out using Nvivo qualitative
+dataanalysissoftware(version12forMac,byQSRInter-
+national)
+12,w i t ha d d i t i o n a ls t e p sc a r r i e do u ti nE x c e l .
+The thematic analysis codebooks and crosstabulation
+sheets are included in Appendix B (see supplementary
+material).
+12 https://www.qsrinternational.com/nvivo-qualitative-data-analysis-
+software/home
+Table 3. Overview of sections and questions in the EMI Survey.
+ThefullquestionnaireisincludedinAppendixA(seesupplemen-
+tarymaterial).
+Surveysections Questions
+1.Informationaboutrespondents
+A.Backgroundinfo 1–3
+B.Musicaltrainingandexperience 4–6
+C.Performancepractice 7–12
+2.Electronicmusicalinstruments
+A.Useofelectronicmusicalinstruments 13–15
+B.Descriptionandfunctionality 16–24
+C.Acquisitionandcontinueduse 25–30
+D.Conclusion 31–32
+5. Results
+An overview of the survey is shown in Table3.W h e r e
+applicable,therelevantsurveysectionsandquestionsare
+indicatednexttothecorrespondingresultsinthetext.
+5.1. Information about respondents
+5.1.1. Demographics (Sec. 1A, 1B)
+A total of 85 people responded. 73% of respondents
+(N = 62) reported that they use EMIs in their perfor-
+mance practice, while 27% (N = 23) stated that they do
+not.
+13 RespondentswereprimarilyNorthAmericanand
+European,reflectingthemaingeographicareaswherethe
+survey call was circulated. The total number of respon-
+dents was short of our goal of 100, however given the
+diversity of responses and qualitative methods used for
+theanalysis,wefeltthatthenumberwassufficientlyade-
+quate to gain many clear insights about the overall pop-
+ulation of EMI users. We reflect further on our survey
+reach and respondent diversityin Section6.2.
+Figure1showsage,musicaltraining,andperformance
+experience distributions for respondents who use EMI
+and those how don’t. Overall the survey population is
+highlyexperienced.89%ofallrespondentsreportedthat
+they have been performing for more than 10 years (64%
+more than 20 years). 85% have received formal training,
+with more than 40% having studied music at or above
+graduatelevel.Thedistributionsvarysomewhatbetween
+EMIusersandnon-users,thoughoveralltheyarelargely
+consistent.
+5.1.2. Performance practice (Sec. 1C, q9-11)
+As shown in Figure2, there was a wide range of diver-
+sity in the frequency and type of performances across
+respondents.Overhalfperform10timesorlessperyear.
+Average audience size varies from less than 100 to over
+1000, with EMI users more likely to perform for smaller
+13 We note that this was self-reported and was subject to the respondents’
+interpretationsofwhatconstitutesanEMI,somethingthatwerevisitinlater
+sections.
+=== PAGE 9 ===
+8 J. SULLIVAN ET AL.
+Figure 1. Percent of respondents by age, formal training and years of experience performing for EMI users (N = 62) and non-users
+(N = 23). Categories of formal training for Figure (b) are:UG: undergraduate, G/C: graduate or conservatory, P/O: Private instruction or
+other, None: self taught.
+audiencesandmuchlesslikelytoperformforlargeaudi-
+ences. Most respondents perform in groups, at least part
+of the time. Only a small percentage of respondents per-
+form solo exclusively, while EMI users are somewhat
+morelikelythannon-userstoperforminbothcontexts.
+5.1.3. Musical style (Sec. 1C, q7 & 8)
+To classify musical style, we used a list of genres from
+AllMusic, an online music database,
+14 with some revi-
+sions to reflect some of the anticipated nuances and par-
+ticularities of our expected respondents. For instance,
+electronicmay mean very different things to popular or
+experimental musicians, so we separated it intoEDM
+(electronic dance music) and electroacoustic.R e s p o n -
+dents were asked to select up to two main styles from
+t h el i s ta n dc o u l dw r i t ei no t h e rs t y l e so rs u b - g e n r e si n
+an additional open text field. To facilitate our analysis,
+t h et o t a l sf o rm u s i c a ls t y l e sw e r ea d j u s t e dt oi n c l u d ea n y
+sub-genres or written-in styles that we felt belonged to
+the givencategoriesifthey hadn’t alreadybeenreported
+by the respondent. Examples included assigning‘house,
+drum’n’bass,jungle,progressivetechno’toEDMand ‘alter-
+n a t i v e ,p o s t - r o c k ,i n d i e ’to pop/rock. Figure3 shows the
+musicalstylesreportedbyEMIusersandnon-users.
+There are two important things to note around the
+selection and categorisation of performance styles and
+ramificationsforourstudy.Forone,whileourlistofstyles
+adapted from AllMusic aims to be comprehensive, it is
+admittedlyEurocentricinbothscopeandcategorisation,
+and acomprehensivelistofstylesoriginatingfromadif-
+ferentgeopoliticalworldviewwouldlikelylookmuchdif-
+ferent. Furthermore, self-identification of musical style
+andgenreishighlysubjectiveandsimilarmusicsmaybe
+assigned to different categories by different respondents.
+14 https://www.allmusic.com/genres
+W ek e e pt h e s ep o i n t si nm i n dt h r o u g h o u tt h ea n a l y s i s ,
+andr et urntotheto p ico fm usicalstyleinSectio n5.4.
+5.2. Use of electronic musical instruments (Sec. 2A)
+In the second half of the survey, participants were asked
+if they use electronic musical instruments (EMIs) in
+performance. Of the 85 total respondents, 23 (27%)
+answered that they do not, bringing them to the end
+of the survey. The remaining 62 participants contin-
+ued to the second half of the survey, where they iden-
+tified and gave information about their primary elec-
+tronic instrument(s) (up to 3), and responded to gen-
+eralquestionsaboutinstrumentuptakeandlongitudinal
+use. The instruments were categorised and are shown in
+Figure4.
+The62respondentswhouseEMIscompriseadiverse
+group of performers active in a variety of different types
+ofpractices.Allplaymultipleinstruments,andmostplay
+amixofconventionalinstrumentsanddigital/electronic
+instruments and interfaces, as well as using computers
+extensively for their performance setups. While many
+respondents play infrequently and to smaller audiences,
+severalreportedhavingactivepracticesthatincludemore
+frequentperformancesandlargervenues.Thereisawide
+musical diversity as well. Most perform avant-garde and
+experimental styles ; however, this varies widely from
+one performer to the next. The other reported styles
+fall across a range of genres from art and folk to popu-
+lar musics. The topics of active performance and musi-
+cal style are further addressed in the final stage of our
+analysis(inSection 5.4).
+5.2.1. Instrument qualities, features and issues
+(Sec. 2B)
+I nt h efi r s tp a r to fo u rt h e m a t i ca n a l y s i s ,w ea n a l y s e d
+responses to questions about the EMIs that performers
+=== PAGE 10 ===
+JOURNAL OF NEW MUSIC RESEARCH 9
+Figure 2. PercentagedistributionsofEMIusers(N = 62)andnon-users( N = 23)forthreeperformancemetrics.Multipleanswerscould
+bechosenforFigure(b).
+Figure 3. PercentagedistributionsofEMIusers(N = 62)andnon-users( N = 23)bymusicalstylesperformed.
+Figure 4. PercentofEMIusers(N = 62)whouseeachtypeofelectronicmusicalinstrument(EMI).
+=== PAGE 11 ===
+10 J. SULLIVAN ET AL.
+use:likesanddislikes,desirableandundesirablefeatures,
+how they configure and use their instruments, over-
+all satisfaction and suggested improvements. The first
+roundofanalysisyieldedaninitialsetofcodes,whichwe
+organisedintosimilargroupings.Thecodingprocesswas
+repeated, checking our initial codes and revising them
+where appropriate. Once complete, we were able to fur-
+ther organise our findings into broader categories out of
+whichwecouldidentifyseveralemergentthemes.
+For this section of the survey, we classified the coded
+responses into three groupings: (1) recurrent quality
+attributes, (2) requested features, and (3) instrument
+issues. The first grouping was further classified into four
+general categories:handling complexity, accommodation,
+appropriation,and otherqualities.T able4showsthemost
+frequently mentioned qualities, features and issues. (See
+supplementary material, Appendix B.1for thefullanaly-
+siscodebooks.)
+Handlingcomplexity: Themostcommonlycitedqual-
+ity mentioned was flexibility and versatility, mentioned
+by48%ofrespondents.Thismeansdifferentthingstodif-
+ferentperformers.Forsomethereasonsareeconomical:
+‘ Am a c h i n et h a td o e so n et h i n gv e r yw e l li sh a l fa sg o o d
+as something that does 10 things reasonably well’ (P84).
+For others, flexibility and versatility affords greater cre-
+ativefreedomandexpressioninperformance: ‘Thehighly
+flexiblemodulardesign...allowsmetobuildmanypossi-
+bilitiesoutofthesameinstrument’(P35). Alsomentioned
+was the ability to configure or program the instrument
+moredeeply: ‘...versatilitytoaddanycodeandmodifythe
+instrument’sbehaviour’(P13).
+On the other hand, 21% of respondents value sim-
+plicity, citing the effectiveness, ease of use, and dedi-
+cated functionality of an instrument:‘It’s all very simple
+and, dare I say, primitive, which is why I like it’ (P59).
+These differing points of view were also reflected in a
+separate question that asked whether respondents pre-
+ferredcomputersordedicatedhardware.Responseswere
+divided between those who favour the versatility and
+configurabilityofcomputersandthosewhofavourdedi-
+cated hardware, while many replied that it depends on a
+number of different factors.
+Accommodation:53%ofrespondentsspecificallycom-
+mentedonthewaytheirinstrumentsaccommodatetheir
+performance practices. Size and portability were most
+frequentlymentioned,by29%ofrespondents(alsomak-
+ing it the 2nd most frequently mentioned attribute):
+‘It’s compact, lightweight and versatile’ (P73); ‘...can go
+inside my bassoon case’ (P58). Playability was second
+mostcommoninaccommodation(19%ofrespondents),
+whichincludedmentionsofexpressiveness,articulation,
+control and ergonomics. Additional accommodation
+qualities were compatibility and interoperability with
+otherinstruments,softwareandsetups,andeaseofsetup
+and use.
+Appropriation: Two general categories of appropri-
+ation were frequently mentioned: embodied connec-
+tions (24%) and personalisation (23%). For embodied
+connections, respondents spoke favourably of tactile
+and physical interactions with their instruments, cit-
+ing control, material connection and ‘muscle memory’
+with an instrument that enhances their performance.
+For personalisation, many mentioned configurability
+and programmability of their instruments that leads
+to ‘ownership’ of highly customised instruments and
+multi-instrument setups. Some respondents expressed
+deep appreciation and even affection for their instru-
+ments:
+‘It’s just part of my family. I love it unconditionally for it’s
+qualitieswhichbothassistmeinachievingasoundandfor
+it’s limitations which push me to think about things criti-
+callyandinspiremetosolveproblemsandbecomeamore
+versatileandcapableartist’(P21).
+Other qualities:Three additional qualities were fre-
+quently mentioned that did not fit the themes above:
+sound quality (26%), cost and affordability (15%), and
+overall pleasing aesthetics of an instrument such as its
+lookandfeel(10%).
+Requested features:Responses in this category were
+mainly focused on incremental enhancements to per-
+formers’existinginstruments–addingorextendingspe-
+cific functionality, adding to or improving the quality
+of controls and adding connectivity to interface with
+other instruments and systems:‘The only thing I would
+add would be more detailed control of the LFO (low fre-
+quency oscillator) [such as] controls for the attack, decay,
+sustain, release, and a better synchronisation of the LFO
+withtheinternalsequencer’(P88) ;‘Iwouldliketheoption
+of outputting control voltages’ (P84).Nearly all requests
+involved features that currently exist on other instru-
+ments, though some described highly specific and tech-
+nicalneeds:
+There are small, modern functionalities that I would very
+much like to incorporate into the instrument’s design.
+Thankfully third-party hardware engineers have created
+optionsavailable,suchasthe208Toolbox
+15 whichunlocks
+additional functionality without requiring modifications
+to the original hardware. I am presently working with an
+engineer to further expand the possibilities offered by the
+208 Toolbox to suit my needs (adding a noise source and
+voltagecontrolledLFO)(P35).
+Instrumentissues: Respondentsdescribedawidevari-
+ety of issues with their current instruments. The most
+common issue was broken or unstable knobs, buttons,
+15 The 208 Toolbox is a third party expansion board for the Buchla Easel
+Commandand208Csynthesisers. www.portabellabz.be/toolbox.html
+=== PAGE 12 ===
+JOURNAL OF NEW MUSIC RESEARCH 11
+Table 4. Most frequently mentioned EMI recurrent quality attributes, requested features and instrument issues. Percentages refer to
+percentoftotalrespondents( N = 62)withresponsescodedateachitem.
+Recurrentqualityattributes
+Handlingcomplexity Accommodation Appropriation Otherqualities
+ﬂexibility/versatility 48% size/portability 29% embodiment 23% soundquality 26%
+simplicity 21% playability 19% personalisation 24% cost/aﬀordability 15%
+compatibility 16% aesthetics 10%
+easeofuse 13%
+Requestedfeatures
+addedfeatures/functionality 19%
+more/improvedcontrols 19%
+more/improvedconnectivity 18%
+high-levelprogramming 6%
+betterfeel/ergonomics 5%
+feedback 5%
+Instrumentissues
+brokenbits,knobs,keys,etc. 18%
+softwareissues 15%
+limitationsofhardware 10%
+cablesandconnections 6%
+pooroverallquality 6%
+generalcomputingdevices 5%
+keys,andsimilarparts.Cablesandconnectionswerealso
+points of failure. However, most described putting up
+with – and working around – these issues and continu-
+i n gt ou s et h ei n s t r u m e n t s .W h i l es o f t w a r ei s s u e s( a n d
+crashes in particular) were the second most mentioned
+issue (by 15%), some were particularly sympathetic and
+forgivingofsoftware: ‘Since2000I’vehadexactly6crashes
+onstage’(P46).
+5.3. User engagement: Uptake and continued use of
+new instruments and technologies (Sec. 2B; q25 &
+28)
+Following our previous survey (summarised in Section
+3.3), we were particularly interested in identifying fac-
+torsthatmotivateperformerstotakeupnewinstruments
+in their practices, and factors that contribute to the long
+term success, or alternately abandonment, of new EMIs.
+Following initial open coding, we investigated two pre-
+vious models of user engagement to see how we could
+contextualise respondents’ views within a more formal
+understandingofbothshort-andlong-termengagement
+withtechnology.
+The survey included two specific questions related to
+engagement:
+2 5 . W h a tf a c t o r si n fl u e n c ey o ut ot a k eu pan e we l e c -
+tronicinstrument?
+28. On average, how long do you typically use an elec-
+tronic musical instrument before retiring it? What
+factorsinfluenceyoutostopusingcertainelectronic
+instruments?
+I n i t i a lo p e nc o d i n gy i e l d e dal i s to ft h e m e st h a tw e
+associated to the three stages of EMI use referred to
+in the questions:uptake, longevity (continued use over
+time)and abandonment(discontinuinguseofaninstru-
+ment). The survey didn’t ask a specific question about
+thefactorsforlongevity,andwhenmentioned,theywere
+often closely connected (or in opposition to) factors
+for abandonment. Therefore the themes for this step of
+analysis are shown in Table5 with these two categories
+combined,followedbyourinitialobservations.
+Uptake:Factors related to taking up new instruments
+primarily fell into three groups. Novelty and variety
+were most frequently mentioned with respondents seek-
+ing out new sounds, exploring new musical possibilities
+and expanding their setups. Second, respondents look
+to upgrade to acquire specific functionality or improve
+certainqualitiesoftheirinstruments.Third,respondents
+cited a number of practical concerns that would influ-
+ence their choice of a new instrument, such as cost and
+availability,andhowitwouldintegrateintotheircurrent
+setupwithotherinstruments.
+Beyondthesemaingroups,differingoutlooksbetween
+hardwareandcomputers/softwarewereapparent.Towards
+hardware, most respondents reported seeking our new
+instruments that provide dedicated functionality and
+impose constraints. In contrast, one respondent high-
+lighted the ephemeral nature of their computer-based
+instrument:
+‘Inasense,IcansaythatIhaven’ttakenanewinstrument
+inyearsbecauseI’vebeenperformingwithacomputerfor
+morethanadecade.Inanothersense,ImaysaythatIoften
+change instruments, as every time I develop a new patch
+myinstrumentisfundamentallytransformed’(P24).
+Longevity and abandonment: Many respondents
+showed great loyalty to the instruments they use, with
+severalstatingthattheyneverretireaninstrument.Inthe
+case of computer-based performance (well conveyed in
+thepreviousquote),thisbringsintoquestiontheblurred
+lines between instrument and composition as discussed
+=== PAGE 13 ===
+12 J. SULLIVAN ET AL.
+Table 5. Identiﬁedfactorsforuptake,andthecombinedcategoriesoflongevityandabandonmentofEMIs.Percentagesrefertopercent
+oftotalEMIusers(N = 62)withresponsescodedateachitem.
+Uptake
+Novelty&variety neworimprovedsounds,exploration,expand
+ordiversifyperformancepractice
+44%
+Upgrading acquire speciﬁc functionality and new
+features,improveinteractionorcontrol
+44%
+Practicalconcerns costandavailability,integrationwithsetup,
+qualityandreliability,sizeandportability
+40%
+Inﬂuence saw/heard the instrument played,
+recommendation
+8%
+Constraints simpliﬁcation,constraintsofhardware 3%
+Otherfactors ﬂexibilityandversatility,learningcurveand
+easeofuse,samecomputer/newpatches
+19%
+Longevity&abandonment
+neverretireinstruments 21%
+brokenorunreliable 21%
+lossofinterestorusefulness 16%
+replacewithbetterormoresuitable 16%
+obsolescence,incompatibility 15%
+constantchange 7%
+streamline setup, eliminate
+redundancy
+7%
+vibe,ﬂow,balance 3%
+newerprototype 2%
+in Section3.1.C o n s i s t e n tw i t hp r e v i o u ss u r v e yfi n d i n g s
+(Sullivan & Wanderley,2018), issues of quality, reliabil-
+ityandcompatibilitywereimportantcontributingfactors
+in the abandonment of instruments. Beyond this, many
+other factors were consistent with the factors for uptake:
+loss of interest or usefulness (complementary to acquir-
+ing new instruments with new features, sounds, etc.),
+upgradingandseekingnoveltyorchange.
+5.3.1. Models of user engagement
+The notion ofengagement is an important concept in
+HCI, and more generally interaction design, and can be
+conceptualisedinsimilartermsasourinquiryhowEMIs
+are taken up and used by performers. To provide a for-
+mal framework for analysis, we associated participant
+responsesforthispartofthesurveywithrelatedconcepts
+ofuserengagementfromHCIliterature.
+Short-termuserengagement: Aprevalentmodelofuser
+engagementwithtechnologywasformulatedbyO’Brien
+andToms(2008).Theyproposethatengagementisapro-
+cess that moves through four distinct stages: an initial
+point of engagement, a sustainedperiod of engagement,
+endingin disengagement,andmayeventuallybefollowed
+byreengagement. Along with these four stages, they also
+recognise the possibility ofnonengagement.T h i sm o d e l
+forengagementcameoutofareviewofpreviousdomain-
+and context-specific frameworks around engagement,
+and an exploratory user study of individuals partici-
+pating in four different computer-based activities: Web
+searching, online shopping, Webcasting and video gam-
+ing. Across the four stages of engagement, O’Brien and
+Tomsidentifiedseveralattributes,leadingtoaconceptual
+and operational definition of engagement as‘a quality
+of user experiences with technology that is characterised
+by challenge, aesthetic and sensory appeal, feedback, nov-
+elty, interactivity, perceived control and time, awareness,
+motivation, interest and affect’(O’Brien & Toms,2008,
+p.949).
+Wecharacterisethistypeofengagementas short-term,
+as it is concerned with engagement at the event level
+(for example, a single practice session or performance).
+Because of this scope, it was difficult to apply this model
+directly to our survey responses, which are concerned
+w i t ht h ee n t i r el i f e s p a no fa ni n s t r u m e n t( o ra tl e a s tt h e
+complete life of use by an individual performer) and not
+asinglesi tting.
+On the other hand, we identified many of the same
+short-term engagement attributes in the respondents’
+attitudes towards uptake, longevity and abandonment of
+their EMIs. We explored this by re-coding the responses
+t oo u rt w oq u e s t i o n so nt h i st o p i c ,t h i st i m ec l a s s i f y -
+ing them according toO’Brien&Toms’s list of engage-
+ment attributes. The results are shown on the left of
+Table6.
+Long-term engagement:Prior research has examined
+long-termengagementwithmusicalinstruments.Draw-
+ing from psychology, Wallis et al. (2013)a p p l i e dt h e
+self-determination theory(SDT) of motivation by Ryan
+and Deci (2000) to identify attributes of musical instru-
+ments and music-making activities that inspire long-
+term engagement by amateur musicians. SDT classifies
+three intrinsic motives that regulate behaviour: mas-
+tery,autonomyandpurpose.Wallisetal. specifically link
+these intrinsic motives to amateur musical practice as
+opposed to professional practice which might also be
+motivatedbyextrinsicmotives(suchastheneedtomake
+money).Furthermore,intrinsicmotivesaremoreclosely
+related to the sense of enjoyment, i.e. playing music for
+pleasure rather than out of duty. Out of their analy-
+sis, Wallisetal. derived seven conceptual and abstract
+attributes of intrinsic motivation that can be seen to
+facilitate long-term engagement with musical instru-
+ments.Were-codedthecorrespondingsurveyresponses
+a l o n gt h e s ea t t r i b u t e s ,w h i c ha r el i s t e di nT a b l e6
+(right).
+5.3.2. Attributes for engagement with EMIs
+Bothmodelscorrelatecloselywithourresponses.Short-
+term attributes, despite focusing on a much narrower
+timescalethanthesurveyquestions,effectivelydescribed
+=== PAGE 14 ===
+JOURNAL OF NEW MUSIC RESEARCH 13
+Table 6. Attributesofuserengagement.Left:Short-termasdeﬁnedbyO’BrienandToms( 2008).Right:long-termasdeﬁnedbyWallis
+etal.( 2013).PercentagesrefertopercentoftotalEMIusers( N = 62)withresponsescodedateachitem.
+Short-termengagement( O’Brien& Toms)
+novelty 44%
+control 18%
+aesthetic&sensoryappeal 16%
+challenge 15%
+interest 15%
+motivation 8%
+interactivity 6%
+aﬀect(negative/positive) 5%
+attention 3%
+awareness(external/self) 3%
+feedback 3%
+perceptionoftime 0%
+Long-termengagement(Walliset al. )
+Mastery complexity 34%
+immediacy 32%
+incrementality 10%
+Autonomy ownership 39%
+operationalfreedom 15%
+Purpose demonstrability 6%
+cooperation 3%
+many of the themes identified in our initial coding (in
+Table5), especially the factors foruptake. On the other
+hand, the long-term attributes, while more theoretical,
+explicitly address the aspect of longitudinal use, which
+is missing from the short-term model and is an impor-
+tantaspectofourinvestigation.Thereforewefoundthem
+bothbeneficialandtheyarebothincludedinourengage-
+mentanalysis.
+We conclude this stage of analysis by comparing
+attributes between the models of long- and short-term
+engagement and the results of our exploratory analysis.
+Table7shows all of the attributes and their associations.
+While there are many interrelated concepts across the
+three groupings, we highlight three main classifications
+thatweremostfrequentlymentionedbyrespondentsand
+discussho wthemodelsa ndda tain tersect.
+Ownership and Novelty:The primary qualities shared
+between the three rounds of coding are closely asso-
+ciated with ownership (long-term attribute) and, more
+narrowly,novelty(short-termattribute).Insummary,the
+mostcompellingfactorsfortheacquisitionofnewinstru-
+ments,andlong-termuseofexistinginstruments,isthat
+they afford novel and ongoing creative and expressive
+possibilities and allow for embodied and highly person-
+alised connections between instrument and performer.
+There are divergent views on how to achieve novelty
+though. For many, this is an external process of experi-
+mentingwithandacquiringnewinstruments,forothers,
+it is a matter of deep exploration and customisation that
+comeswithworkingwithasingleinstrumentorsetupfor
+manyyears.
+Complexity and challenge:Ar e l a t e dq u a l i t yt h a tw a s
+commonly mentioned is the ability of instruments to
+facilitate complexity and successfully navigate thechal-
+lenges associated with assembling and performing with
+elaborateandhighlyspecificassemblagesandinstrumen-
+talsetupsthatallowforrichanddynamicmusicaloutput.
+Most references in this group referred to acquiring new
+instruments, in particular seeking out instruments and
+interfacesthataffordimprovedinteractionandcontrolor
+provideaparticularindispensablefeatures.
+Immediacy, incrementality and reliability:The third
+common category we identified characterises qualities
+that support the successful and functional operation
+of instruments, while minimising or removing obsta-
+cles that would prevent operation. Three related quali-
+ties are recognised, roughly moving from short to long
+term periods of engagement. First, immediacy com-
+prises properties that allow for easy and direct use,
+such as ease of setup, portability, and affordability. Sec-
+ond, incrementality refers to the learning curve of an
+instrument that will ideally afford a gradual manage-
+able progression from simple operation to mastery and
+expert operation. Finally,reliabilitypertains to qualities
+that allow for successful and sustainable operation like
+an instrument’s overall quality, stability and compatibil-
+ity with other instruments and systems (or conversely,
+unwanted characteristics like instrument breakage, fail-
+ureandobsolescence).
+Interestingly, there was little mention ofpurpose,t h e
+third intrinsic motive of long-term engagement. This
+motive, as defined in SDT, is ‘evoked by activities con-
+taining a social element or an element of relatedness
+with other people’ (Wallis et al.,2013,p .5 6 ) .W h i l ei t
+factoredstronglyin Wallisetal. ’sframeworkforengage-
+ment by amateur musicians, there were few mentions by
+ourrespondents.Thosethatdidmainlyspoketoseeingor
+hearinganinstrumentplayedasinspirationforacquiring
+it. Regarding cooperation and playing with others, only
+twomentionsweremadeandinfactonehighlightedthe
+desireforbettertechnologytofacilitate lesscooperation:
+‘[I would start using a new instrument] if the concept of
+performing the instrument myself is more favourable than
+collaborating with someone who is already proficient on
+thatinstrument’(P21).Thelackofcommentonthesocial
+aspectissomewhatsurprising,asfully85%ofEMIusers
+in the survey report that they perform in ensembles or
+groupsatleastpartofthetime.
+=== PAGE 15 ===
+14 J. SULLIVAN ET AL.
+Table 7. Associations of long- and short-term engagement attributes with our coded themes for
+EMIuptake,longevityandabandonment.Themostcommonlyidentiﬁeditemsarehighlightedin
+boldface(mentionedbymorethan20%ofrespondents).
+Long-term Short-term Codedthemes
+complexity challenge acquire speciﬁc functionality
+improvedinteraction,control
+newerprototype
+integrationwiththerestofsetup
+eliminateredundancy,streamlinesetup
+mastery samecomputer,newpatches
+immediacy attention quality,reliability
+incrementality feedback breakage, unreliability
+incompatibility,obsolescence
+costandavailability
+sizeandportability
+simplicity
+constraints(ofhardware)
+learningcurve,easeofuse
+ownership novelty new or improved sounds
+interest do not retire instruments
+motivation lossofinterestorusefulness
+aﬀect exploration
+awareness expandordiversifyperformancepractice
+autonomy aestheticappeal newfeatures
+sensoryappeal constantchange
+vibe,ﬂow,balance(orimbalance)
+neverpickupnewinstruments
+movementaroundstage
+operationalfreedom control replacewithbetter,moresuitable
+options,versatility,ﬂexibility
+purpose demonstrabilitycooperation interactivity heardtheinstrumentplayedrecommendation
+5.4. Understanding performance communities
+Forthethirdand finalsectionofouranalysis, weextend
+o u rr e s u l t so ft h efi r s tt w os e c t i o n sb yr e t u r n i n gt oo u r
+earlier discussion on DMI use (Section1.1) and com-
+munities of performance2. We were interested to see
+if musicians different performance communities priori-
+tise different qualities for instruments that they would
+want to use in their practice. Furthermore, through our
+review of previous surveys in Section3.1,w ef o u n dt h a t
+existing scholarship on DMI performance tends to be
+self-reflective of its own research-oriented communities
+(suchasNIME),andthereisalackofinformationabout
+morepopularandwidespreadpractices.
+To establish some basic distinctions between differ-
+ent types of practices we looked at two attributes of
+respondentsthatuseEMIs:frequencyofperformance(to
+differentiate between active professionals and amateurs
+who perform less often), and performance of ‘NIME’
+versus‘non-NIME’musicalstyles.
+16
+Frequency of performance was quantified directly
+from question #9 of the survey:‘How many times per
+yeardoyouperforminpublic?’ EMIusers( N = 62)were
+16 We started with a third, performers who also design instruments versus
+thosewhodonot;however,thesurveylackedspeciﬁcdataforthisandall
+of the respondents who could be identiﬁed as designers were included in
+the NIME performance category already, making the classiﬁcation largely
+redundant.
+roughly split between two groups: frequent performers
+who perform more than 10 times per year (48%), and
+infrequent performers who perform 10 times or less per
+year(52%).
+To associate reported musical styles with typically
+‘NIME’ and ‘non-NIME’ modes of performance, we
+referred to the most common styles reported in the sur-
+veyofNIMEperformersbyMorrealeetal.( 2018),shown
+in Figure5: experimental, electronic, noise, acousmatic,
+and classical, which were selected by between 19% and
+82%oftheirrespondents.Inourownsurveyweascribed
+analogous musical styles as NIME styles, and the oth-
+e r sa sn o n - N I M E( a ss h o w ni nT a b l e8), then classi-
+fied respondents accordingly: NIME (42%), non-NIME
+(13%), and those who play both (44%). One respon-
+dent who didn’t answer questions about musical style
+was removed. The classifications are shown in Table9,
+along with further subclassification of both attributes.
+These are, of course, imprecise categorisations that were
+self-reportedandsomewhatsubjective.Buttheydoallow
+us some draw some general designations around types
+of practices that may be helpful to our analysis. Addi-
+tionally, we use the term ‘NIME’ in a loose and inclu-
+sive sense, referring not only to the community directly
+associated with the NIME conference and organisation,
+but to all related communities engaged in research-
+based practices around musical interface design and
+performance.
+=== PAGE 16 ===
+JOURNAL OF NEW MUSIC RESEARCH 15
+Figure 5. MusicalstylesreportedbyNIMEperformersinMorrealeetal.( 2018).Usedwithpermission.
+Table 8. NIMEandnon-NIMEmusicalstylesfromtheEMISurvey.
+Category Musicalstyles
+‘NIME’styles Avant-garde/experimental,
+electroacoustic,classical
+‘non-NIME’styles EDM, pop/rock, jazz, folk,
+stage/theatre,blues,international,
+rap,R&B,Latin,country
+Using these two respondent classifications we com-
+puted a crosstabulation of the identified recurrent qual-
+ity attributes (from Section5.2.1,T a b l e4)a n dp r i m a r y
+attributes of uptake and long-term engagement with
+DMIs (Section5.3,T a b l e7). The crosstabulation results
+are shown in Appendix B.2 (see supplementary mate-
+r i a l ) .Ad e t a i l e dd i s c u s s i o no ft h er e s u l t si sw i t h h e l d
+here, as this additional analysis is offered as a supple-
+mentthemainresultsalreadyreportedandanindication
+for future continued work. We can, however, point out a
+fewnoticeablecontrastsbetweenfrequentandinfrequent
+performersofNIMEandnon-NIMEmusicalstyles:
+5.4.1. Performance frequency
+ Infrequentperformers(whichweassociatewithama-
+teurmusiciansandhobbyists)prioritiseflexibilityand
+versatilityinaninstrument,whilemorefrequentper-
+formers (active and professional musicians) spoke
+morefavourablyaboutsimplicityandconstraints.
+ Infrequent performers seem to be more likely to seek
+o u tn o v e l t ya n dc h a n g ei n s t r u m e n t sm o r eo f t e nt h a n
+activeperformers.
+ Frequent performers engage in deeper levels of cus-
+tomisation and personalisation of their instruments,
+and prioritise reliability and quality over novelty and
+variation.
+5.4.2. NIME and non-NIME musical styles
+ Performers working in non-NIME styles value com-
+patibility and interoperability between instruments
+andacrosstheirinstrumentalsetups,whileatthesame
+time prioritising ease of use and size/portability. This
+suggests that they tend to use instruments that indi-
+vidually provide more constrained functionality, but
+incorporate many together into elaborate setups.
+ NIME musicians prioritise the embodied connec-
+tions they have to their instruments, and necessitate
+greater controlfor carrying out complex musical per-
+formance.
+ Non-NIME musicians commented more frequently
+about the importance of their instruments’ sound
+quality and aesthetics than NIME musicians. They
+are also highly motivated to acquire and create new
+sounds. While this was not highlighted in the NIME
+musicians, this may also be a fundamental difference
+in the musical styles themselves, where NIME-style
+musicoftenoperatesonamoreorganiclevelofsound
+production (often working with lower-level synthesis
+Table 9. ClassiﬁcationsofEMIperformersbymusicalstyle(NIME/non-NIME/both)andperformancefrequency( +/−10performances
+peryear).
+Musicalstyle
+NIME non-NIME both notspeciﬁed
+42%(N = 26) 13%(N = 8) 44%(N = 27) 2%(N = 1)
+Frequent48%(N = 30) 27%(N = 17) 8%(N = 5) 11%(N = 7) 2%(N = 1)Performancefrequency Infrequent52%( N = 32) 15%(N = 9) 5%(N = 3) 32%(N = 20) –
+=== PAGE 17 ===
+16 J. SULLIVAN ET AL.
+parameters), where non-NIME styles, especially pop
+and dance music, are more likely to acquire and use
+pre-recordedorprogrammedsamples,presets,etc.
+17
+6. Discussion
+6.1. Considerations for the design of DMIs for
+performance
+In consideration of the challenges that designers face
+towards the creation of new DMIs that would be viable
+and appealing for active musicians to work with in real-
+world performance practices, we summarise our results
+as a set of considerations for DMI designers. The bold-
+faceditemsreferencetheelementsdefinedanddiscussed
+intheprevioussection.
+(1) We define three primary desirable sets of qualities
+f o rD M I st ob ev i a b l ef o ru s ei nr e a l - w o r l dp e r f o r -
+mancepractice:(a)theinstrument’sabilityto handle
+complexity that is appropriate to the user and con-
+text;(b)itscapacitytoadequately accommodatethe
+unique requirements of a performer’s practice; and
+(c) its suitability forappropriation by its user, that
+can facilitate long-term growth and enjoyment.
+(2) Additionally sound quality, cost and affordability,
+and thelook and feelof an instrument are impor-
+tant characteristics that contribute to performers’
+positiveimpressionsoftheirinstruments.
+(3) While acquiring new instruments and retaining
+existing instruments depends on a number of fac-
+tors,performersconsistentlyshowinterestinacquir-
+ing new instruments that provide improved fea-
+tures,controlsandnewsounds .
+(4) Instrument reliability is a persistent concern for
+mostperformers,yetmanyputupwithminorprob-
+lems and continue to use a particular instrument
+despite ongoing issues. In this regard,performers
+often exhibit great loyalty and even affection for
+theirinstruments.
+(5) Weidentifythreesetsofuserengagementattributes
+that contribute to the successful uptake and long-
+term use of DMIs: (a) ownership and novelty,
+through deep exploration and customisation of
+existinginstrumentsaswellasacquiringandexperi-
+mentingwithnewinstruments,thatfacilitatesongo-
+ing creative and expressive performance; (b)com-
+plexity and challenge,t h ea b i l i t yf o ri n s t ru m e n t st o
+accommodate elaborate and highly specific musical
+17 This characterisation of performance style shares some similarities to the
+three levels of music interaction and performance contexts identiﬁed by
+Malloch et al. (2006) based on a model of information processing by Ras-
+mussen(1986)whichmovesfromskill- to rule-and knowledge-basedmodes
+ofinteraction.
+setupsandprocesses,allowingforrichanddynamic
+output;and(c) immediacy,incrementalityandreli-
+ability,whichsupportthesuccessful,functionaland
+long-lasting operation of instruments while min-
+imisingobstaclesthatwouldpreventtheiruse.
+(6) Lastly, and perhaps most importantly, we take
+note of diversity across performance practices
+and between performers. While the high-level
+considerationslistedherearemeanttobeapplicable
+to all performers, they will be exhibited in different
+ways depending on a variety of factors. We pro-
+pose two general ways of classifying performers
+andtypesofpractices:byfrequencyofperformance
+(frequent/infrequent, which suggests a contrast
+b e t w e e na m a t e u ra n dp r o f e s s i o n a lp r a c t i c e )a n d
+musical style (which we categorise between ‘NIME’
+and ‘non-NIME’ styles, characteristic of the DMI
+designandresearchcommunity.)
+6.2. Limitations and future work
+This list of considerations is far from exhaustive, and
+additionalinsightswillberevealedwithcontinuedinves-
+tigation and analysis around DMI performance. How-
+e v e r ,w eh o p et h a tt h e s efi n d i n g ss h e dn e wl i g h to n
+what it means to perform with novel instruments, espe-
+ciallyacrossandbeyondpreviouslystudiedcommunities
+includingthosesurveyedhere.
+6.2.1. Capturing diversity and widespread
+performance practices
+It was hoped that the EMI Survey would reach a num-
+ber of different performance communities, however we
+foundthatmanyrespondentsfitintotypicalNIME-style
+types of practice. More than two-thirds of respondents
+come from formal training and academic backgrounds,
+are involved in experimental music practices, and are
+highly computer literate. As this study was carried out
+in an academic research environment and the call for
+participation was distributed across several university
+networks, accordingly many of the respondents can be
+recognisedasoperatinginoradjacenttoacademicprac-
+tices. Therefore, we recognise the limitations of our sur-
+vey distribution and attempts to capture wide diversity
+across performance communities. We did, however, find
+significant variation in the survey population which col-
+lectively represented a range of different approaches and
+perspectivestoperformance.
+W ec a ne n v i s i o naf u t u r es u r v e yt h a tc o u l de x t e n d
+our current work in a few key ways. First, recruitment
+effortscantargetdiversetypesofperformancecommuni-
+ties based on specific attributes such as professional ver-
+sus amateur musicians; performers of popular, classical
+=== PAGE 18 ===
+JOURNAL OF NEW MUSIC RESEARCH 17
+and experimental styles of music; designers versus non-
+designers; academic researchers versus non-academic
+researchers; and skill versus rule and knowledge-based
+l e v e l so fm u s i c a li n t e r a c t i o n( b a s e do nt h em o d e lb y
+Malloch et al. (2006)). Crosstabulation analysis could
+be extended across all different community attributes to
+provide a more detailed comparison of DMI trends by
+performance type and identify corresponding implica-
+tionsfordesign.However,togeneratemeaningfulresults
+a much larger survey population would be required to
+provideasufficientsamplesizeforeachgroup.
+The survey has also exposed other topics of interest
+that will be beneficial to explore in more detail. For one,
+previous literature has shown the important function of
+community and socialisation towards the success of a
+newinstrument,andithasalsobeenshowntobeafactor
+for long-term engagement. However in the survey, lit-
+tle was mentioned about social aspects of performance
+despitemostrespondentsreportingthattheyperformin
+gr o u psa tleastso meo fthetime.
+6.2.2. Application in design
+Thesurveyanalysisandresultspresentedherearelargely
+performer-focused,andhaveintentionallyescheweddis-
+cussion of specific instruments or instrumental features
+except at an abstract level. However, it is important to
+direct our findings back into tangible instrument design
+and evaluation. In a parallel project, we have run design
+studies leading to the development of novel new instru-
+ments (Sullivan et al.,2020). We can envision new pro-
+totypes or even entirely new instruments that attempt to
+directlyincorporatesomeofthesuggestionswehavepro-
+posed, and the resulting designs tested with musicians
+in actual musical settings to gauge the usefulness of the
+various considerations.
+7. Conclusion
+This article has reported on an investigation to under-
+stand how musicians across different communities use
+DMIs in their performance practice. We began by con-
+ceding that many DMIs see limited use in perfor-
+mance for a variety of reasons. We then reviewed pre-
+vious work that has examined DMI performance, which
+have frequently risen from, and been oriented towards,
+more academic- and research-minded communities like
+NIME.Assuch,theseinvestigationshaveservedtohigh-
+light the dynamic interdisciplinarity of such commu-
+nities, in particular the trait of individuals who oper-
+ate across and between traditionally defined roles of
+designer, composer and performer. Previous survey-
+based studies have shown that, while common among
+NIME-style performance communities, this blending of
+designandperformancemaybepredicatedonadditional
+non-musical proficiencies like computer programming
+or electronics design, that performers from other com-
+munitiesmaybelesslikelytopossess.
+Thus we were motivated to examine how DMIs, and
+m o r eg e n e r a l l yw h a tw eh a v et e r m e delectronic musical
+instruments (EMIs), are used across more diverse and
+widespread performance practices, and especially those
+that are not closely involved with instrument design as
+well. To investigate this, we carried out the Electronic
+Musical Instrument Survey, an online survey on musi-
+cians who use digital and electronic instruments in live
+performance. We conducted a thematic analysis of the
+responsesthatyieldedseveralofhigh-levelinsightsabout
+importantqualitiesforDMIstotakenupintouse.
+W ehopethatourfindingscanbehelpfulfordesigners
+and researchers at multiple levels. At a theoretical level,
+we identified several factors that contribute to perform-
+ers’initialandlastingengagementwithDMIs,andrelated
+themtoexistingmodelsofuserengagementfoundinpre-
+vious HCI research. At a methodological level, we have
+presentedastructuredapproachtotheanalysisofqualita-
+tivesurveydatathatusesbothbottom-upandtop-down
+methods of thematic analysis, as well as crosstabulation
+to observe variations between different types of respon-
+d e n t si no u rs u rv ey .T h i sm e th od o l o gyc o ul dbes u i ta b l e
+for other analyses where both inductive and deductive
+approaches are called for. Finally, at a practical level,
+we provide a summary of considerations for the design
+of new DMIs based on the direct input of performing
+musicians, which may be helpful for designers whose
+instruments are intended for real-world musical use. It
+is our belief that thoughtful consideration of the factors
+thatwehaveidentifiedherecanimprovetheoverallqual-
+ity of designs and viability of new instruments for use in
+real-world, professional performance practices.
+Acknowledgements
+T h ea u th o r sw o u l dl i k et oth a n kD r s .A n d r ewM c P h e r so na n d
+FabioMorrealefortheirvaluableinputanddiscussionsduring
+thisproject.W ewouldalsoliketothankDr .IvanFrancoforthe
+contributions in developing the questionnaire. We would like
+toacknowledgetheNaturalSciencesandEngineeringResearch
+CouncilofCanadaforfundingtothesecondandthirdauthors
+that supported this work.
+Disclosure statement
+No potential conflict of interest was reported by the
+author(s).
+Funding
+ThisworkwassupportedbytheNaturalSciencesandEngineer-
+ingResearchCouncilofCanada.
+=== PAGE 19 ===
+18 J. SULLIVAN ET AL.
+ORCID
+John Sullivan http://orcid.org/0000-0003-1928-5993
+Catherine Guastavino http://orcid.org/0000-0002-5750-
+2015
+Marcelo M. Wanderley http://orcid.org/0000-0002-9169-
+4313
+References
+B r a u n ,V . ,&C l a r k e ,V .(2006). Using thematic analysis in psy-
+chology. Qualitative Research in Psychology, 3(2), 77–101.
+https://doi.org/10.1191/1478088706qp063oa
+C a n t r e l l ,J o e .(2017). Designing intent: Defining critical mean-
+ing for NIME practitioners. Proceedings of the Interna-
+tionalConferenceonNewInterfacesforMusicalExpression,
+Copenhagen,Denmark,(pp.169–173).
+Chadabe, J. (1997). Electric sound: The past and promise of
+electronic music.P r en ticeH all.
+Creswell,J .W .,&Creswell,J .D .(2018).Researchdesign:Quali-
+tative,quantitative,andmixedmethodsapproaches (5thed.).
+SagePublications.
+Fischer, G. (2001).Communities of interest: Learning through
+theinteractionofmultipleknowledgesystems .Proceedingsof
+the24thIRISConference,Bergen,Norway,(pp.1–13).
+Jensenius, A. R., & Lyons, M. J. (2017). AN I M ER e a d e r–F i f -
+teen Years of New Interfaces for Musical Expression.S p rin g er
+InternationalPublishing.
+Lave, J., & Wenger, E. (1991).Situated learning: Legitimate
+peripheralparticipation.Ca m b ridgeU niversi tyP r ess.
+Magnusson, T., & Hurtado, E. (2008). The phenomenology of
+musicalinstruments:Asurvey. eContact!,10(4),6–10.
+Malloch, J., Birnbaum, D., Sinyor, E., & Wanderley, M. M.
+(2006).Towardsanewconceptualframeworkfordigitalmusi-
+calinstruments.ProceedingsoftheInternationalConference
+on Digital Audio Effects (dafx-06), Montreal, Canada, (pp.
+49–52).
+Mamedes, C., Rodrigues, M., Wanderley, M. M., Manzolli, J.,
+G a r c i a ,D .H .L . ,&F e r r e i r a - L o p e s ,P .(2014). Composing
+for DMIs – Entoa, music for intonaspacio. Proceedings of
+theInternationalConferenceonNewInterfacesforMusical
+Expression,London,UK,(pp.509–512).
+Marquez-Borbon, A., & Stapleton, P. (2015).Fourteen years of
+N IM E :T h ev a l u ea n dm e a n i n go f‘ Co m m u n i ty’i ni n t e r a ct i v e
+musicresearch.ProceedingsoftheInternationalConference
+onNewInterfacesforMusicalExpression,BatonRouge,LA,
+(pp.307–312).
+McPherson, A., & Kim, Y. ( 2012). The problem of the
+second performer: Building a community around an
+augmented piano.Computer Music Journal, 36(4), 10–27.
+https://doi.org/10.1162/COMJ_a_00149
+Miranda,E.R.,&Wanderley,M.M.( 2006).Newdigitalmusical
+instruments:Controlandinteractionbeyondthekeyboard .A -
+REdi tio ns.
+M o r r e a l e ,F . ,&M c P h e r s o n ,A .(2017). D
+esign for longevity:
+OngoinguseofinstrumentsfromNIME2010-14 .Proceedings
+oftheInternationalConferenceonNewInterfacesforMusi-
+calExpression,Copenhagen,Denmark,(pp.192–197).
+Morreale, F., McPherson, A. P., & Wanderley, M. M. (2018).
+NIME identity from the performer’s perspective. Proceed-
+ings of the International Conference on New Interfaces for
+MusicalExpression,Blacksburg,VA,(pp.168–173).
+O ’ B r i e n ,H .L . ,&T o m s ,E .G .(2008). What is user engage-
+ment? A conceptual framework for defining user engage-
+ment with technology. Journal of the American Society
+for Information Science and Technology, 59(6), 938–955.
+https://doi.org/10.1002/(ISSN)1532-2890
+Paine, G. (2010).Towards a taxonomy of realtime interfaces for
+electronic music performance. Proceedings of the Interna-
+tionalConferenceonNewInterfacesforMusicalExpression,
+Sydney,Australia,(pp.436–439).
+Paine, G., & Drummond, J. (2009). Developing an ontology of
+newinterfacesforrealtimeelectronicmusicperformance .Pro-
+ceedings of the Electroacoustic Music Studies Conference,
+BuenosAires,Argentina.
+Poupyrev,I.,Lyons,M.J.,Fels,S.,&Blaine,T.( 2001).Newinter-
+facesformusicalexpression .ProceedingsoftheInternational
+ConferenceonHumanFactorsinComputingSystems,Seat-
+tle,WA.
+Rasmussen, J. (1986). Information processing and human-
+machine interaction: An approach to cognitive engineering.
+ElsevierScienceInc.
+Roads,C.(1996). Computer music tutorial.TheMITP r ess.
+Ryan, R. M., & Deci, E. L. (2000). Self-determination theory
+and the facilitation of intrinsic motivation, social develop-
+ment, and well-being.American Psychologist, 55(1), 68–78.
+https://doi.org/10.1037/0003-066X.55.1.68
+Strauss, A., & Corbin, J.. (1994). Grounded theory methodol-
+ogy. In N. K. Denzin & Y. S. Lincoln (Eds.),Handbook of
+qualitative research(pp.273–285).SagePublications.
+Sullivan, J. (2015). Interaction and the art of user-centered dig-
+ital musical instrument design(Master’s thesis). University
+of Maine. https://digitalcommons.library.umaine.edu/etd/
+2330/.
+Sullivan, J., Vanasse, J., Guastavino, C., & Wanderley, M.
+M. (2020). Reinventing the Noisebox: Designing embedded
+instrumentsforactivemusicians .ProceedingsoftheInterna-
+tionalConferenceonNewInterfacesforMusicalExpression,
+Birmingham,UK,(pp.5–10).
+Sullivan, J., & Wanderley, M. M. (2018). Stability, reliability,
+compatibility:Reviewing40yearsofDMIdesign .Proceedings
+ofthe15thSoundandMusicComputingConference(smc),
+L
+imassol,Cyprus,(pp.319–326).
+Wallis, I., Ingalls, T., Campana, E., & Vuong, C.. (2013). Ama-
+teur musicians, long-term engagement, and HCI. In S. Hol-
+land,K.W ilkie,P .Mulholland,&A.Seago(Eds.),Musicand
+human-computer interaction(pp.49–66).Springer.
+Wanderley, M. M., & Battier, M. (2000).Trends in gestural
+controlofmusic .IRCAM–Cen tr eP o m p ido u.
+Wenger,E.,&Trayner-Wenger,B.( 2015).Communitiesofprac-
+tice:Abriefintroduction .NationalScienceFoundation(U.S.).

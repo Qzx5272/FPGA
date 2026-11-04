@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "updated": "2026-10-25T18:55:51.581048",
+  "scope": "Current host interaction regression; no hardware",
+  "sources": {
+    "app.py": "ffae1a8315d3092f42a3f8bffdf9d186a30ad42ab2dc01ca3cd0bc76b392c89a",
+    "calibration_editor.py": "10078881eddd6455ede449f3327bc2e3287ad3c786379d1e1d67ea5c00878e5d",
+    "calibration_model.py": "05fb7cf6f4138282be1e225ab6f62c25d880d09b43f4cb93f4ae4106a66ec7ed",
+    "editor.py": "90f408a58ff359b53c7302131848663a4a51b47e931f118be244375194b5a189",
+    "offline.py": "ac0fab61be72efc09d470f83c31e368171dd22831d18e4ce2f871ad54892c3f7",
+    "patch_editor.py": "8bcc7a913e3358036ef0e18cdbce39d7d4fd143deae27c82a93cc813449e4bc0",
+    "protocol.py": "11a46763acf603f97ae1c3dfd78fa417954b833026ca9cbb564270feb05e1241",
+    "score.py": "9240c2e654c709bee71e70f8599166b08bed639e16b9be10ee7848620bd1a63f",
+    "stage.py": "3582a142d33a59ca35ee7b21b057a095e46cb1cdc95e7865372ec12c85dd1b15",
+    "test_host.py": "96d8eb60219d0e271779ee6826dfe5e30e5c4184b008d52bed8b915a3729f214"
+  },
+  "log": "test_drum_kit_routes_three_roles (__main__.HostTests.test_drum_kit_routes_three_roles) ... ok\ntest_failed_crc_is_rejected (__main__.HostTests.test_failed_crc_is_rejected) ... ok\ntest_identity_retry_is_rate_limited_and_stops_after_reply (__main__.HostTests.test_identity_retry_is_rate_limited_and_stops_after_reply) ... ok\ntest_keyboard_release_survives_seat_change (__main__.HostTests.test_keyboard_release_survives_seat_change) ... ok\ntest_last_contact_returns_track_and_repress_cancels_return (__main__.HostTests.test_last_contact_returns_track_and_repress_cancels_return) ... ok\ntest_note_erase_preserves_other_pitch_and_vowel_identity (__main__.HostTests.test_note_erase_preserves_other_pitch_and_vowel_identity) ... ok\ntest_panic_discards_parameter_backlog (__main__.HostTests.test_panic_discards_parameter_backlog) ... ok\ntest_phrase_editor_inserts_four_notes_in_empty_choir_bar (__main__.HostTests.test_phrase_editor_inserts_four_notes_in_empty_choir_bar) ... ok\ntest_pressure_calibration_fit_persistence_and_wire (__main__.HostTests.test_pressure_calibration_fit_persistence_and_wire) ... ok\ntest_project_roundtrip_and_validation (__main__.HostTests.test_project_roundtrip_and_validation) ... ok\ntest_release_identity_survives_role_and_key_change (__main__.HostTests.test_release_identity_survives_role_and_key_change) ... ok\ntest_stage_accepts_crc_checked_board_frames_only (__main__.HostTests.test_stage_accepts_crc_checked_board_frames_only) ... ok\ntest_stage_expiration_is_per_track_and_disconnect_hides_values (__main__.HostTests.test_stage_expiration_is_per_track_and_disconnect_hides_values) ... ok\ntest_stage_poll_covers_all_tracks_and_yields_to_upload_and_backlog (__main__.HostTests.test_stage_poll_covers_all_tracks_and_yields_to_upload_and_backlog) ... ok\ntest_stale_ownership_reply_is_recovered_for_held_contact (__main__.HostTests.test_stale_ownership_reply_is_recovered_for_held_contact) ... ok\ntest_two_seats_and_learning_do_not_swallow_other_seat_release (__main__.HostTests.test_two_seats_and_learning_do_not_swallow_other_seat_release) ... ok\ntest_uart_guard_preserves_crc_and_frame_boundaries (__main__.HostTests.test_uart_guard_preserves_crc_and_frame_boundaries) ... ok\ntest_vowel_composition_roundtrip_and_atomic_failure (__main__.HostTests.test_vowel_composition_roundtrip_and_atomic_failure) ... ok\ntest_vowel_phrase_orders_articulation_and_restores_prior_vowel (__main__.HostTests.test_vowel_phrase_orders_articulation_and_restores_prior_vowel) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 2.380s\n\nOK\n"
+}

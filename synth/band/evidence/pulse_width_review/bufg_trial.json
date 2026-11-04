@@ -1,0 +1,11 @@
+{
+  "status": "failed_repair_trial",
+  "baseline": "df360eb47b57",
+  "trial": "2cfe58afcfc7",
+  "netlist_sha256": "aeb603571004e8571f0e7339c3470847e201fd0af7c4ef924f752774253ad71d",
+  "changed": "Explicit serial BUFG physical constraint only",
+  "setup_violations": 2,
+  "pulse_violations": 6,
+  "worst_pulse_slack_ns": -0.956,
+  "conclusion": "Explicit BUFG did not repair timing. No programming. Existing board endurance cannot waive pulse failures."
+}

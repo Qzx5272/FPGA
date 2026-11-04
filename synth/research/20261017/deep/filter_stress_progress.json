@@ -1,0 +1,16 @@
+{
+  "scope": "CPU fixed-point numerical experiment; not board validation",
+  "started_utc": "2026-10-17T12:19:53.695910+00:00",
+  "seed": 1382026,
+  "requested_seconds": 7200.0,
+  "trials": 169244,
+  "samples_evaluated": 24371136000,
+  "unstable_static_cases": 0,
+  "saturated_cases": 0,
+  "max_peak_fs": 2.269538402557373,
+  "max_tail_peak_fs": 0.0019506216049194336,
+  "tail_warning_cases": 19927,
+  "status": "completed",
+  "elapsed_seconds": 7200.016000000003,
+  "updated_utc": "2026-10-17T14:19:53.721109+00:00"
+}

@@ -1,0 +1,373 @@
+{
+  "status": "analysis_only",
+  "build": "D:\\StarclusterBuilds\\stage_timing_500bfbf44218",
+  "scope": "Vendor reported top-N path diagnosis; no timing exception applied, no CDC/physical acceptance",
+  "total_violated_endpoints": {
+    "setup": 4656,
+    "hold": 16
+  },
+  "reported_negative_paths": 41,
+  "reported_negative_classes": {
+    "pad_frontend_internal": 24,
+    "unclassified": 1,
+    "async_write_gray_to_first_sync": 4,
+    "async_fifo_payload_to_reader": 12
+  },
+  "paths": [
+    {
+      "check": "SETUP",
+      "slack_ns": -3.716,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[2]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.716,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[1]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.713,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/physical_24_s0",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.71,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[9]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.71,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[8]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.71,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[7]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.71,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[6]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.706,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_ER_CL_s241",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.703,
+      "launch": "band/engine/receiver/payload_16_s0",
+      "capture": "band/engine/telemetry_snapshot_75_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.701,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[18]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.701,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[16]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.701,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_11_G[15]_s115",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.695,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_13_G[1]_s113",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.686,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_13_G[12]_s113",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.686,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_13_G[11]_s113",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.685,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_15_G[22]_s111",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.683,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/physical_47_s0",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.677,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[8]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.676,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[11]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.676,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[10]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.676,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_10_G[9]_s116",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.674,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_25_G[13]_s101",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.674,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_25_G[12]_s101",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.674,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_9_G[30]_s117",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -3.674,
+      "launch": "band/engine/local_inputs.pads/lane_2_s0",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_9_G[29]_s117",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.753,
+      "launch": "band/input_audio/transport/fifo/wgray_1_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_1_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.681,
+      "launch": "band/input_audio/transport/fifo/wgray_2_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_2_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.677,
+      "launch": "band/input_audio/transport/fifo/wgray_0_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_0_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.674,
+      "launch": "band/input_audio/transport/fifo/wgray_3_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_3_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.184,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[18]_s0",
+      "capture": "band/input_audio/latest_18_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.178,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[7]_s0",
+      "capture": "band/input_audio/held_7_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.154,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[7]_s0",
+      "capture": "band/input_audio/latest_7_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.152,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[16]_s0",
+      "capture": "band/input_audio/latest_16_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.093,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[18]_s0",
+      "capture": "band/input_audio/held_18_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.073,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_4_G[20]_s0",
+      "capture": "band/input_audio/latest_20_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.071,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[16]_s0",
+      "capture": "band/input_audio/held_16_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.067,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[6]_s0",
+      "capture": "band/input_audio/held_6_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.066,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[3]_s0",
+      "capture": "band/input_audio/held_3_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.043,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[6]_s0",
+      "capture": "band/input_audio/latest_6_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.021,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_7_G[22]_s0",
+      "capture": "band/input_audio/held_22_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.017,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_7_G[22]_s0",
+      "capture": "band/input_audio/latest_22_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.001,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[10]_s0",
+      "capture": "band/input_audio/latest_10_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.01,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[4]_s0",
+      "capture": "band/input_audio/held_4_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.014,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[4]_s0",
+      "capture": "band/input_audio/latest_4_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.021,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[9]_s0",
+      "capture": "band/input_audio/latest_9_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.029,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[3]_s0",
+      "capture": "band/input_audio/latest_3_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.031,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[14]_s0",
+      "capture": "band/input_audio/latest_14_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.033,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_5_G[8]_s0",
+      "capture": "band/input_audio/latest_8_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.034,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[9]_s0",
+      "capture": "band/input_audio/held_9_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.039,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_2_G[13]_s0",
+      "capture": "band/input_audio/latest_13_s1",
+      "classification": "async_fifo_payload_to_reader"
+    }
+  ],
+  "sources": {
+    "band_stage.timing_paths": "9247ca922888488768ff19de5c94a377b831c393cd69c6404e125d3c8d8bd049",
+    "band_stage_tr_content.html": "f7802cf01d702d8ffb72954a4f05450a8aa882d165c954dd39cdd21e1df4d87e",
+    "analyze_stage_paths.py": "9927b36ce834eff090d95bc5f3dcafa657b10a56e15f3e41513827a202090f65"
+  }
+}

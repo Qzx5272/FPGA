@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "partials": 16384,
+  "lane_bits": 5,
+  "address_bits": 9,
+  "lanes": 32,
+  "frequency_step_bins": 3,
+  "source_sha256": {
+    "synth\\band\\rtl\\partial_pool.v": "c329bb6a362f6295489d4e9c217a2b92611f7dcb2e62b1c5f04bc16bcbd73f3f",
+    "synth\\band\\rtl\\partial_lane.v": "7f2c9cdb1877af897177a7c017af535263a6b5831134da944aa25ca652721e4e",
+    "synth\\band\\rtl\\partial_ram16.v": "6dfad1f3092075d7a6085f64dfd02e6f4b53f70b9fb4aea4244ccdaeb0852a4c",
+    "synth\\rtl\\hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "synth\\rtl\\sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "synth\\band\\tests\\pool_clocked_driver.cpp": "a87e88d7d4a997c28243a1d1b30099ee2d897b427c3fe693e181f34a12bc83e3",
+    "synth\\band\\tools\\test_pool_clocked.py": "9b144a11de77ca3531f75d5cbb0e98c486d889767e47b788a45f110a98c53839"
+  },
+  "build": "D:\\StarclusterBuilds\\pool_clocked_a412b7dc074c",
+  "scope": "Full-clock diagnostic RTL only; not board timing, full-band capacity, analog audibility or live-control proof",
+  "executable_sha256": "8d4b120f4356b66d29da2e3aec21b7146d0a69010eaf82529d79819a92aaa2bb",
+  "returncode": 0,
+  "elapsed_seconds": 123.92200000002049,
+  "log": "PASS capacity=16384 frames=135168 received=135168 audio_clocks=140800000 max_latency=520 max_cycles=518 fixed_core_hz=50000000 sample_rate=48000\n",
+  "verified_peaks": 16384,
+  "maximum_relative_error": 1.572971624040625e-05,
+  "sample_sha256": "87a334aaa2786bf2420ab6a6eed69218d53483535f2a7906e1a6df4ac832c4f0",
+  "sample_peak": 6548945.0
+}

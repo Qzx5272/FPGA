@@ -1,0 +1,39 @@
+{
+  "status": "passed_structural_only",
+  "netlist_sha256": "aeb603571004e8571f0e7339c3470847e201fd0af7c4ef924f752774253ad71d",
+  "banks": [
+    [
+      "central_voice_bank",
+      "\\banks[0].unit"
+    ],
+    [
+      "central_voice_bank_0",
+      "\\banks[1].unit"
+    ],
+    [
+      "central_voice_bank_1",
+      "\\banks[2].unit"
+    ],
+    [
+      "central_voice_bank_2",
+      "\\banks[3].unit"
+    ],
+    [
+      "central_voice_bank_3",
+      "\\banks[4].unit"
+    ],
+    [
+      "central_voice_bank_4",
+      "\\banks[5].unit"
+    ],
+    [
+      "central_voice_bank_5",
+      "\\banks[6].unit"
+    ],
+    [
+      "central_voice_bank_6",
+      "\\banks[7].unit"
+    ]
+  ],
+  "scope": "Eight central voice banks and shared routing in synthesized singer core;not netlist equivalence or timing"
+}

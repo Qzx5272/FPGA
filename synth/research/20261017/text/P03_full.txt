@@ -1,0 +1,1307 @@
+=== PAGE 1 ===
+Weinberg
+Gil Weinberg
+Music Department
+Georgia Institute of Technology
+840 McMillan St.
+Atlanta, Georgia 30332 USA
+gilwein@cc.gatech.edu
+Interconnected Musical
+Networks: Toward a
+Theoretical Framework
+23
+This article attempts to deﬁne and classify the aes-
+thetic and technical principles of interconnected
+musical networks. It presents an historical overview
+of technological innovations that were instrumen-
+tal for the development of the ﬁeld and discusses a
+number of paradigmatic musical networks that are
+based on these technologies. A classiﬁcation of on-
+line and local-area musical networks then leads to
+an attempt to deﬁne a taxonomical and theoretical
+framework for musical interconnectivity, address-
+ing goals and motivations, social organizations and
+perspectives, network architectures and topologies,
+and musical content and control. The article con-
+cludes with a number of design suggestions for the
+development of effective interconnected musical
+networks.
+Interdependent Music Performance
+Music performance is an interdependent art form.
+Musicians’ real-time gestures are constantly inﬂu-
+enced by the music they hear, which are recipro-
+cally inﬂuenced by their own actions. In group
+playing, the interdependent effect bears unique so-
+cial consequences such as the formulation of lead-
+ers and followers or changes in individual players’
+dynamics and timing in correlation to group syn-
+chronization (Rasch 1988). Other manifestations of
+interdependent group routines can be found in a va-
+riety of musical genres such as Western chamber
+music, Jazz, Gamelan, Persian music, and others
+(see details in Weinberg 2002). Performers often
+address the importance of interdependent group col-
+laboration and sharing in their music. Jazz per-
+former Milt Hinton noted, “I was pretty young
+when I realized that music involved more than play-
+ing an instrument; it’s really about cohesiveness
+and sharing . . . I’ve always believed you don’t truly
+know something yourself until you can take it from
+your mind and put it in someone else’s” (Hinton
+and Morgenstern 1988). Cognitive scientists, on the
+other hand, tend to address the perceptual aspects of
+interdependent group play. William Benzon (2001)
+discusses his experience playing Ghanaian Bells in a
+group of four: “melodies would emerge that no one
+was playing . . . it arose from cohesions in the shift-
+ing patterns of tone played by the ensemble....
+Occasionally, something quite remarkable would
+happen. When we were really locked together in
+animated playing, we could hear relatively high-
+pitched tones that no one was playing.” Benzon
+uses this example to strengthen his deﬁnition of
+music as “a medium though which individual
+brains are coupled together in shared activity.”
+But although acoustic-interdependent models
+provide an infrastructure for a variety of approaches
+for interconnections and interdependencies among
+players, they do not allow for actual manipulation
+and control of each other’s explicit musical voices.
+Only by constructing electronic (or mechanical)
+communication channels among players can partic-
+ipants take an active role in determining and inﬂu-
+encing not only their own musical output but also
+that of their peers. For example, consider a player
+who, while controlling the pitch of his or her own
+instrument, continuously manipulates the timbre
+of a peer’s instrument. This manipulation will prob-
+ably lead the second player to modify his or her play
+gestures in accordance to the new timbre that was
+received. These modiﬁed gestures can then be cap-
+tured and transmitted to a third player, inﬂuencing
+this player’s music playing in a reciprocal loop. An-
+other example is a network that allows players to
+share musical motifs with other members of the
+group. By sending a motif to a co-player who can
+transform it and send it back to the group, partici-
+pants can combine their musical ideas into a con-
+stantly evolving collaborative musical outcome.
+The shape of the composition in such systems
+grows from the topology of the network and its in-
+terconnections with the performers. Such an envi-
+ronment that responds to input from individuals in
+a reciprocal loop can be likened to a musical “ecosys-
+tem.” In this metaphor, the network serves as a habi-
+Computer Music Journal, 29:2, pp. 23–39, Summer 2005
+© 2005 Massachusetts Institute of Technology.
+=== PAGE 2 ===
+tat that supports its inhabitants (players) through a
+topology of interconnections and mutual responses
+that can, when successful, lead to new breeds of
+musical life forms. These interdependent connec-
+tions can bring a wide range of new experiences into
+musical group playing. For example, a soloist can
+guide his or her collaborators with a simple interde-
+pendent touch toward a musical idea in which the
+soloist is interested, or change a supporting voice
+into a contrasting one so that a desired musical idea
+will become clearer. Players can shape their peers’
+accompaniment line so they would lead toward a
+new direction when the current one is exhausted,
+send a motif to other players who can manipulate it
+and send their variations back to the group, have a
+musical response accentuated by the player who
+sent the original call, plant a musical “seed” that
+would be picked up by the group in various man-
+ners, etc. Musical networks, therefore, bear the
+promise of using technology to enhance the social
+context of music performance and enrich its social
+ritual roots.
+Technological and Historical Landmarks
+The development of interconnected musical net-
+works during the last half century is closely related
+to several technological developments that occurred
+during that time. In particular, I see four major in-
+novations—analog electronics, the personal com-
+puter, the Internet, and alternate controllers—as
+principal enablers for the various approaches taken
+for interdependent musical connectivity. When
+these technologies became widespread and com-
+mercially available, they inspired musicians who
+were looking for new ways to expand the vocabu-
+lary of socio-musical expression.
+Analog Electronics: The Early Musical Networks
+John Cage was one of the ﬁrst to notice the expres-
+sive potential that lies in using technology to en-
+hance musical group interdependency by treating
+the then-recently invented commercial transistor
+radio as a musical instrument that could be used to
+provide a sonic medium for interdependent proce-
+dures, rules, and processes. Cage’s compositions for
+transistor radios allowed, for the ﬁrst time, for an
+external entity (audio steams from a set of radio sta-
+tions) to generate and support evolving and dynamic
+musical contexts, providing a ﬁrst crude glimpse at
+the concept of musical networks. Cage’s 1951 Imag-
+inary Landscape No. 4 for twelve radio transistors
+played by 24 performers can be considered the ﬁrst
+electronic interdependent musical network. The
+composition’s score indicates the exact tuning and
+volume settings for each performer but with no
+foreknowledge of what might be broadcast at any
+speciﬁc time or whether a station even exists at any
+given dial setting. Inspired by the Chinese book of
+oracles, the I Ching, Cage demonstrated his fascina-
+tion with chance operation, allowing players to con-
+trol only partial aspects of the composition, while
+technology, chance, and performers together deter-
+mined the actual audible content. The role of Cage
+as a composer was narrowed down to setting the
+high-level blueprint of dial-setting instructions.
+The interdependency in the piece was manifested
+in two planes. First, there were the interdependent
+interactions between the players and the network of
+radio stations that provided unknown and dynamic
+musical content. But the system also supported intra-
+player interdependencies, as for every frequency-
+dial player there was a volume-dial player who
+could manipulate the ﬁnal output gain, controlling
+a full continuum from complete muting to maxi-
+mum ampliﬁcation. The volume-dial players, there-
+fore, had a signiﬁcant impact on their peer’s musical
+output, as they could control anything from render-
+ing their actions inaudible, through blending them
+smoothly in the mix, to boosting them as a scream-
+ing solo.
+The explorations of the transistor radio as an in-
+frastructure for interdependency opened the door to
+further experimentation with interdependency. In
+Cartridge Music (1960), for example, Cage made his
+first attempt at a musical network focused on tactile
+generation of sounds and intra-player, ampliﬁcation-
+based interdependencies. Here, players were in-
+structed to pluck small objects (such as toothpicks
+or pins) that have been put into a gramophone car-
+tridge and to hit larger objects (such as chairs) that
+24 Computer Music Journal
+=== PAGE 3 ===
+Weinberg
+were ampliﬁed with contact microphones. The
+simple, intra-player interdependency was generated
+owing to other players who controlled the ampli-
+ﬁers’ volume knobs, leading, again, to a wide dy-
+namic range of output from muting to soloing. On
+Cartridge Music, Cage remarked: “I had been con-
+cerned with composition which was indeterminate
+of its performance; but, in this instance, perfor-
+mance is made indeterminate of itself.” Although
+revolutionary, the level of interdependency in
+Cage’s early experiments were constrained by the
+crude nature of the technology, where, in effect, the
+only possible direct interpersonal connections were
+limited to coarse gain manipulations.
+More elaborate attempts at analog interdependen-
+cies were made by composers such as Stockhausen,
+who in Mikrophonie II (1965), for example, routed
+the sound from four choruses and a Hammond or-
+gan to modulate each other’s spectra through a
+single ring modulator, or David Tudor, who in Rain-
+forest IV (1968) instructed players to attach micro-
+phones and contact loudspeakers to various objects
+on stage to create resonance-based feedback loops.
+The analog synthesizer provided an inspiring infra-
+structure for experimentalists such as David Rosen-
+boom (1976) to use biofeedback methods for
+interconnecting groups of players to generate syn-
+thesized sounds, as well for popular music groups
+such Tangerine Dream to interdependently manipu-
+late multiple synthesized sound parameters.
+The Personal Computer: The Digital Advantage
+The next signiﬁcant breakthrough in technology for
+detailed and controllable interdependent networks
+was achieved thanks to the commercialization of
+the personal computer. One of the ﬁrst commercial
+computers that was used for creating ﬁne-tuned and
+conﬁgurable network topologies was the 1976 Com-
+modore KIM-1. The League of Automatic Music
+Composers, a group of musicians from Oakland,
+California, that included John Bischoff, Jim Horton,
+and Rich Gold (later replaced by Tim Perkis) was
+one of the ﬁrst to use a number of such KIM-1s to
+write interdependent computer compositions (see
+Figure 1.)
+Each member in the group was able to send and
+receive data from and to his personal composition,
+which ran on his personal networked computer.
+The group named this new genre of music perfor-
+mance that allowed programmable and detailed
+musical interconnections “Network Computer
+Music.” In their 1978 performance in Berkeley, Cal-
+ifornia, for example, the group set up a three-node
+network, mapping frequencies from one computer
+to generate notes in another, or mapping intervals
+from one composition to control rests and rhythmic
+patterns in another. On this performance, the group
+wrote: “[W]hen the elements of the network are not
+connected, the music sounds like three completely
+independent processes, but when they are intercon-
+nected, the music seems to present a ‘mindlike’ as-
+pect” (Bischoff, Gold, and Horton 1978). The League
+continued to work until 1986 when it evolved into
+an offspring group, The Hub, which employed more
+accurate communication schemes by using MIDI
+and central computers to facilitate the interaction.
+The Hub also experimented with more hierarchical
+systems, such as in Waxlips (1991), where a “lead
+player” sent cues to initiate new sections and to
+jump-start processes by “spraying” the network
+with requests for note messages. The Hub expanded
+their explorations to other areas such as remote col-
+laboration and audience participation. In their ﬁrst
+1985 remote networking effort, the group was di-
+vided into two sites and communicated via tele-
+phone lines. Other pieces such as HubRenga (1989)
+attempted to involve the general public in on-line,
+remote, interdependent interactions. These early
+musical networks introduced the computer as a ver-
+satile and resourceful partner for interconnected
+group interaction. But the technology at that time
+could not yet support large-scale on-line interac-
+tions, nor was it designed to address novices with a
+wide range of musical backgrounds. Scot Gresham-
+Lancaster, a Hub member, reﬂects on the Hub’s re-
+mote online experiments: “[T]he technology was so
+complex that we were unable to read a satisfactory
+point of expressivity” (Gresham-Lancaster 1998).
+Regarding the Hub’s attempts to allow audience
+participation, he writes: “The varying range of taste
+and innate talent made for a pastiche that lacked ﬁt-
+ness and cohesion, and despite the best intentions
+25
+=== PAGE 4 ===
+of the contributors, the results were mixed.” In the
+next two sections I present more recent approaches
+that were taken by musicians and researchers to use
+new technologies in an effort to allow for large-scale
+online musical networks as well as novice and audi-
+ence participation.
+The Internet: Approaches for Online Networks
+Advanced Internet protocols and on-line applications
+today provide a faster and more reliable platform for
+large-scale interconnected musical networks. These
+developments helped facilitate the recent prolifera-
+tion of on-line musical networks, offering a variety
+of musical activities for diverse audiences. Several
+recent studies attempt to classify and categorize on-
+line networks based on concepts such as location,
+media, timing, physicality, and other factors (see,
+for example, Barbosa 2003). Here, I attempt to map
+the ﬁeld based on what I see as the central innova-
+tive concept of the medium: the level of intercon-
+nectivity among players and the role of the
+computer in enhancing the interdependent social
+relations. Based on these criteria, I have identiﬁed
+four different approaches and have named them
+the Server, the Bridge, the Shaper, and the Construc-
+tion Kit.
+The Server Approach
+This simple approach uses the network merely as a
+means to send musical data to disconnected partici-
+pants and does not take advantage of the opportu-
+nity to interconnect and communicate among
+players. Participants in such a client/server conﬁgu-
+ration cannot listen to or interact with their peers,
+and the musical activities are limited to the com-
+26 Computer Music Journal
+Figure 1. An Early Musical
+Network: The League of
+Automatic Music Com-
+posers. Photo by Peter
+Abramowitsch.
+
+=== PAGE 5 ===
+Weinberg
+munication between each player and the central
+system. A typical example of the Server approach is
+the Sound Pool Web application, which is part of
+the interactive piece “Cathedral” by William Duck-
+worth (Duckworth 1999). Here, a Beatnik-based
+Java applet allows individual players to trigger
+sounds by “accidentally or randomly” clicking on
+hidden nodes on the screen. The interaction occurs
+independently in each player’s browser so that
+“each user can create his or her own unique experi-
+ence.” The original sounds in the piece were com-
+posed by Duckworth, but users can contribute their
+own sounds to the mix. Because there are no con-
+nections between participants, the system can sup-
+port any number of users.
+The Bridge Approach
+The motivation behind the Bridge approach is to
+connect distanced players so that they can play and
+improvise as if they were in the same space. Unlike
+the Server approach, musical collaboration can oc-
+cur in such networks because participants can lis-
+ten and respond to each other while playing.
+However, the role of the network in this approach is
+not to enhance and enrich collaboration but to pro-
+vide a technical solution for imitating traditional
+group collaboration. Aspects of bandwidth, simul-
+taneity, synchronization, impact on host computer,
+and scalability are some of the challenges that are
+usually addressed in this approach. A characteristic
+example of the Bridge approach is the “Distribute
+Musical Rehearsal” project (Konstantas, et al. 1997),
+which focused on remote conducting. Using video
+streaming and a three-dimensional sound system,
+an ensemble of six players in Geneva was connected
+to a conductor in Bonn in an effort to rehearse
+Dèrive by Pierre Boulez. The system’s goal was
+“giving the impression to the participants that they
+are physically in the same room,” and the main
+challenges were minimizing transmission delay and
+accurately reproducing the sound space by using
+multiple microphones and a dummy head. The
+TransMIDI system (Gang, et al. 1997) addressed a
+similar challenge, but instead of sending audio, the
+system used the more efﬁcient MIDI protocol that
+helped minimize latencies. By using the “Transis”
+group communication system, TransMIDI also al-
+lowed easy arrangement of multicast groups so that
+a “conductor” player could determine exactly what
+each participant heard at any time. Here, too, the
+system was aimed at bridging the distance between
+remote participants, allowing them to play, impro-
+vise, and listen to music in a way similar to a tradi-
+tional “jam session.”
+The Shaper Approach
+In the Shaper approach, the network’s central sys-
+tem takes a more active musical role by algorithmi-
+cally generating musical materials and allowing
+participants to collaboratively modify and shape
+these materials. Although players in Shaper net-
+works can continuously listen and respond to the
+music that is modiﬁed by all participants, the ap-
+proach does not support direct algorithmic interde-
+pendencies among players. One of the ﬁrst attempts
+at this approach was the Palette (Yu 1996), which al-
+lowed on-line players to control aspects such as
+“style,” “coherency,” and “energy” of MIDI events
+that were generated based on input from other on-
+line players.
+Another example of the Shaper approach can be
+demonstrated by the Pazellian application (Pazel, et
+al. 2000), a Web-based application that uses “Smart
+Harmony,” an algorithmic mechanism that anno-
+tates each note with harmonic information and
+determines a set of harmonic constraints for the
+composition. Here, players could control parame-
+ters such as pitch range, volume, and instrumenta-
+tion as well as manipulate multiple individual
+parameters for all voices in the composition. Play-
+ers could hear and respond to the musical output
+that was generated by all the participants, but they
+could not directly communicate with any speciﬁc
+player. The “Variations for WWW” project (Yamag-
+ishi 1998) took a similar approach. In this system, a
+Max patch was connected to the Web via the W pro-
+tocol so that remote users could manipulate param-
+eters in an algorithmically generated theme. The
+Max patch sent MIDI commands to a MIDI synthe-
+sizer, which transmitted the audio output back to
+the participants via a Real Networks audio encoder.
+The system’s interconnectivity was derived from its
+27
+=== PAGE 6 ===
+ability to play the combined manipulation of all
+users back to the participants, who could modify
+their musical contribution in response. A recent
+variation on this approach is the PIWeCS project
+(Whalley 2004) in which participants can shape and
+manipulate samples of Maori instruments using a
+multi-agent system. Here, too, the focus is not on
+generating original material but on modifying exist-
+ing musical content.
+The Construction Kit Approach
+This approach offers higher levels of interconnectiv-
+ity among participants, who are usually skilled mu-
+sicians, by allowing them to contribute their music
+to multiple-user composition sessions, manipulate
+and shape their own and other players’ music, and
+take part in a collective creation. Interaction in
+such networks is usually centralized and sequential
+as participants submit their pre-composed tracks to
+a central hub and manipulate their peers’ material
+off-line. Faust Music On Line (Jordà 2002) is a repre-
+sentative example of this approach. Here, a Web-based
+synthesis engine allows players to create musical
+tracks and construct them into a composition that
+then can be downloaded by other participants. If the
+downloaded composition is not complete (i.e., it
+still has empty tracks) a participant can generate
+new tracks locally, add them to the composition,
+edit them, and upload the full piece back to the
+Web. Participants can also reprocess and distort any
+of the previous tracks in the composition by using a
+variety of synthesis generators and modiﬁers.
+The WebDrum application (Burk 2000) demon-
+strates a slightly different take on the Construction
+Kit approach by basing the application on a tradi-
+tional drum-pattern editor in which users turn
+notes on or off in a grid. Synthesized drum sounds
+are used to avoid downloading large audio sample
+ﬁles. Web users can play and listen to others partici-
+pants’ edits and add their instrument sounds to
+their own pallets.
+Several projects attempt to combine the Con-
+struction Kit and the Shaper approaches. The ISX
+project (Helmuth 2000) allows users to algorithmi-
+cally change their peers’ sounds as well as to create
+new tracks from scratch and shape them into a col-
+laborative composition. The project uses Internet2
+as a wideband platform that can support the ex-
+change of large audio ﬁles. The more recent Auracle
+system by Max Neuhaus (Freeman, et al. 2004, see
+www.auracle.org) analyzes vocal gestures from on-
+line players in real-time and uses these gestures to
+synthesize new sounds that can be heard by other
+users and added to in a synchronous multi-track for-
+mat (see Figure 2).
+Alternate Controllers: Gestures, Novices, and Real-
+Time Local Networks
+Early musical networks tended to focus on complex
+interconnections among participants, often leading
+to “high-art” musical products that were not geared
+toward wide audiences. These networks posed high
+entrance barriers for players by requiring specialized
+musical skills and theoretical knowledge in order to
+take part in and follow the interaction in a mean-
+ingful manner. The problem of interaction co-
+herency is accentuated in Internet-based musical
+networks that cannot support clear real-time ges-
+tural performance cues. It is clear that a graphical
+user interface cannot replace the personal, unmedi-
+ated connection provided by tactile interaction
+28 Computer Music Journal
+Figure 2. An online net-
+work: a screenshot from
+Auracle.
+
+=== PAGE 7 ===
+Weinberg
+with physical instruments in a local space. In an ef-
+fort to facilitate expressive and more conveyable in-
+terconnected musical experiences, researchers are
+attempting to address novices and general audi-
+ences by simplifying and restricting the interaction
+and by using physical controllers, sensors, and ges-
+tural input in local spaces. I categorize these local
+networks into two groups: small-scale systems
+and large-scale systems. The two categories differ
+in the design challenges they impose and the ap-
+proaches that designers are taking to address these
+challenges.
+Small-Scale Local Systems
+I deﬁne small-scale collaborative musical networks
+as those that support three to ten players in close
+proximity, which allows for detailed and subtle in-
+terpersonal interactions not possible with large-
+scale systems. Toshio Iwai’s Composition on the
+Table (1998) is a representative example of an effec-
+tive small-scale collaborative musical network for
+novices. The network is composed of four tables
+with various controllers such as switches, dials, and
+sliding boards that players can manipulate to con-
+trol sound and projected images. In one of the appli-
+cations, a grid is projected on the table, and players
+can direct animated objects by setting arrows at
+each node on the grid. When an object hits a node, a
+MIDI note is played so that interlocking loops and
+rhythms can be generated and controlled by the par-
+ticipants. The experience promotes collaboration
+when players follow each other’s gestures and try to
+predict the object’s movement, and therefore the
+music that will be generated.
+Chris Brown’s “Talking Drum,” a local-area-
+network music installation (Brown 1999), is a col-
+laborative system that attempts to address more
+skilled players by promoting thoughtful and intricate
+musical collaborations. Here, four computerized
+stations are installed in a large room or outdoors.
+Computer players (using MIDI instruments or com-
+puter mice) as well as acoustic instrument perform-
+ers (playing to a microphone and an electronic pitch
+follower) interact with software that uses a genetic
+algorithm to create rhythmic units. The software
+responds to various aspects of users’ playing (such
+as timing, loudness, density, and pitch) by changing
+parameters in the algorithms so that the rhythmic
+units are shaped by the players. The central system
+in this network (which runs on one of the four sta-
+tions) coordinates timing and synchronization be-
+tween stations.
+Another approach for a gestural, collaborative
+music performance is taken by Sensorband (Bongers
+1998), a group of three musicians that includes Ed-
+win van der Heide, Zbiniew Karkowski, and Atau
+Tanaka. The group has built the “Soundnet,” a giant
+web, measuring 11 × 11 meters, strung with thick
+shipping ropes. The trio performs on the instrument
+by climbing it as a set of stretch sensors at the end
+of the ropes measure the movements and send the
+data to control processing of recorded natural sounds.
+The instrument was purposely made too large for
+one person to master thoroughly, and the ropes
+“create a physical network of interdependent con-
+nections, so that no single sensor can be moved in a
+predictable way that is independent of the others.”
+Some recent experimentations have also been made
+at a hybrid approach, which attempts to combine lo-
+cal and online networks. The reacTable (Jordà 2003),
+for example, is table-based multi-user instrument
+that can be played collaboratively both off- and on-
+line at the same time.
+A set of local musical networks was developed by
+the author as part of his research into music inter-
+dependency. The Musical Fireﬂies (Weinberg, Lack-
+ner, and Jay 2000) are wireless rhythmic instruments
+that can be synchronized when an infrared link is
+established between them. Players can record rhyth-
+mic patterns and trade timbres and rhythms with
+each other. The collaborative interaction introduces
+players hands-on to complex musical concepts such
+as polyrhythm. The “Squeezables” instrument (Wein-
+berg and Gan 2001) presents a different approach for
+a local, interdependent musical interaction. The in-
+strument, composed of six squeezable and retract-
+able gel balls mounted on a small podium, allows a
+group of players to perform and improvise musical
+compositions using a set of squeezing and pulling
+gestures. The activity level of the “accompaniment
+balls” is measured and mapped to inﬂuence the
+melody ball’s pitch and timbre. The melody player
+can control the accompaniment players’ level of
+29
+=== PAGE 8 ===
+inﬂuence through his or her own squeezing and
+pulling gestures. The Beatbugs network (Weinberg,
+Aimi, and Jennings 2002) features more advanced
+collaborative rhythmic interaction. Here, players
+use instruments called Beatbugs to enter rhythmic
+motifs that can be sent and shared by their peers.
+Receiving players can develop the motifs in real
+time by ornamenting the rhythm and the melodic
+contour through the manipulation of two bend-
+sensor antennae, which leads to the creation of a
+constantly evolving, multi-player, collaborative
+musical composition (see Figure 3). A more recent
+local network installation is “Voice Network”
+(Weinberg 2004). Here, players can record, trans-
+form, and share their voices in a group. A central
+computer system facilitates the interaction as par-
+ticipants interdependently collaborate in developing
+their vocal motifs into a coherent musical composi-
+tion (see Figure 4).
+Large-Scale Local Systems
+I deﬁne large-scale musical networks as systems
+that are designed for more than ten participants.
+Here, the details and subtleties of individual contri-
+butions are often hidden by the large quantities of
+participants. The central system, therefore, often
+focuses on analyzing the large-scale group interac-
+tion patterns and coordinating the multiple input
+sources into a meaningful musical outcome. One of
+the earliest attempts at creating a large-scale collab-
+orative musical system for novices was Tod Mach-
+over’s Brain Opera (see brainop.media.mit.edu).
+In this project, audience members were able to ex-
+periment with a number of new instruments such
+as the “Rhythm Tree,” which included dozens of
+drum pads wired to trigger percussive sounds and
+word fragments; the “Gesture Wall,” where visitors’
+body movements were captured to control the mu-
+sical output; and the “Singing Tree,” which manip-
+ulated MIDI-based accompaniment in correlation to
+the “pureness” of participants’ singing. The physi-
+cal and intuitive operation of these instruments al-
+lowed almost any visitor, from children to senior
+citizens, to take part in an expressive interaction
+with the electronic sound. The Brain Opera instru-
+ments, however, were not designed to communicate
+with each other, and it was left for the players to co-
+ordinate their actions if so desired.
+An example of a computer-coordinated, large-
+scale local musical network is found in Feldmeier,
+Malinowski, and Paradiso (2002). Here, players use
+a set of low-cost, wireless motion sensors that allow
+for a large group of participants (up to hundreds) to
+control and inﬂuence the music that they are danc-
+ing to. The system does not identify each performer
+but measures and reacts to the characteristics of the
+group in general. Algorithms based on temporal and
+frequency analysis of the data are used for detecting
+group behavior and mapping it to the generated mu-
+sical material. Aspects such as tempo, layers, rhyth-
+mic complexity, timbre, and register are controlled
+30 Computer Music Journal
+Figure 3. Using the Beat-
+bug handheld controller,
+players create, share, and
+interdependently modify
+rhythmic patterns in a
+group.
+Figure 4. Voice Networks-
+participants record and
+interdependently trans-
+form their voices to create
+collaborative vocal compo-
+sitions.
+=== PAGE 9 ===
+Weinberg
+and manipulated in correlation to the level of activ-
+ity of the group. Results show that groups are more
+active and synchronized when controlling the mu-
+sic as opposed to a non-interactive control group.
+A different, more centralized approach for a large-
+scale musical network is Golan Levin’s Dialtones:
+Telesymphony (2001; see www.ﬂong.com/
+telesymphony). Here, the musical material was 
+pre-composed and generated by orchestrating the
+dialing and ringing of audience members’s mobile
+phones. The composer downloaded ring tones into
+participants’ cell phones, registered their numbers,
+and set the participants in a grid of 10 × 20 mem-
+bers. During the concert, performers called each
+other’s cell phones in an orchestrated manner, and
+players were asked to raise their cell phones when
+being called to help represent the interaction and
+the music to viewers and other participants. A pro-
+jected grid helped audience and performers follow
+the activity, which led to a coherent musical out-
+come. But to support this coherency, players in Di-
+altones were stripped of any meaningful musical
+contribution and were essentially used as a grid of
+speakers for the composer’s musical ideas. In this
+sense, the work demonstrates the difﬁculty in creat-
+ing a coherent musical outcome while still allowing
+a large group of players to meaningfully participate
+in the musical activity.
+Toward a Theoretical Framework of Musical
+Interconnectivity
+Informed by the historical review and the classiﬁca-
+tion framework proposed above, I here attempt to
+identify the theoretical and practical principles that
+are at the core of musical interconnectivity. I believe
+that the taxonomy that I propose may also be useful
+for musical network designers in thinking and com-
+municating their ideas about the ﬁeld. My investi-
+gation is based on a number of anchoring questions,
+including “Why?” (what are the goals and motiva-
+tions for designing and participating in a musical
+network?), “How?” (what are the different social
+perspectives, architectures, and network topologies
+that can be used to address these goals and motiva-
+tions?), and “What?” (what are the musical parame-
+ters and interdependent algorithms that can be used
+in the network, ﬁlling the architectural form with
+musical content?). As part of this analysis, I will ad-
+dress the advantages and disadvantages of a variety
+of approaches taken by musicians and designers and
+will suggest a scheme for maintaining a well-
+balanced system that maximizes the beneﬁts.
+Goals and Motivations
+The deﬁnition of “Interconnected Musical Net-
+works” as live performance systems that allow
+players to inﬂuence, share, and shape each other’s
+music in real-time (Weinberg 2002) suggests that
+the network should be interdependent, dynamic,
+and function as a facilitator of social interactions.
+An investigation of the rationale behind designing
+and participating in such musical networks leads
+to a further classiﬁcation of these motivations into
+two major network categories: process-centered
+networks and structure-centered networks. This
+differentiation can be related to the tension that
+emerged in the midst of the 20th century between
+the radicalization of musical structure and com-
+poser control, practiced mainly by “avant-garde”
+and “post-serialist” composers such as Karlheinz
+Stockhausen and Pierre Boulez on one hand, and the
+escape from structure toward “process music” as
+was explored mostly by American experimentalists
+such as John Cage and Steve Reich. As opposed to
+the European movements that emphasized com-
+poser control over almost every aspect of the com-
+position, process music came from the belief that
+music can be a procedural and emergent art form
+and that there are many ways of handling form
+other than constructing structures in different sizes.
+In such procedural process-based music, the com-
+poser sacriﬁces certain aspects of direct control to
+create an evolving context by allowing rules (in
+closed systems) and performers (in open ones) to de-
+termine and shape the nature of music. John Cage
+addressed this tension referring to his own experi-
+ence: “I was to move from structure to process,
+from music as an object having parts to music with-
+out beginning, middle or end, music as weather”
+(Cage 1961).
+31
+=== PAGE 10 ===
+The use of technology in musical networks
+pushes the tension between structure and process
+music further into an experience where predeter-
+mined rules and instructions, combined with im-
+provised interdependent group interactions, lead to
+evolving musical behaviors, giving a new meaning
+to Cage’s exploration of unpredictability, chance de-
+termination processes, accidents, and contextual
+music. In my analysis, I will accentuate the differ-
+ences between these categories for argumentative
+clarity. It should be noted, though, that most inves-
+tigated networks combine process and structural el-
+ements in different levels and balances.
+The focus in process-centered networks, as can be
+seen in most of the local networks for novices de-
+scribed above, is on the player’s experience, whether
+it is social, creative, or educational (see Figure 5).
+For designers of such networks, the musical out-
+come of the interaction is usually less important
+than the process participants undertake while creat-
+ing this outcome. Some process-oriented networks,
+such as the Beatbug network, focus on facilitating
+elaborate social dynamics between players; others,
+such as Composition on a Table, emphasize the ex-
+pressive and creative process for individual players;
+and still others, such as the Musical Fireﬂies, center
+on providing a learning experience. The interaction
+in process-centered systems can be further classi-
+ﬁed into two additional subcategories: exploratory
+and goal-oriented interactions. Exploratory net-
+works do not impose speciﬁc directions or goals for
+the participants. These systems are driven by moti-
+vations such as the investigation of novel ways for
+playing in a group or the creation of unexplored
+musical crossbred offspring (as with the League of
+Automatic Music Composers). Goal-oriented inter-
+actions, on the other hand (such as in the Feldmeier’s
+synchronized dancing network), are designed to en-
+courage players to achieve speciﬁc objectives, musi-
+cal or non-musical. Such activities can be designed
+to reward participants for their social skills, musical
+creativity, or learning achievements and can offer
+tasks that are based on encouraging collaboration or
+competition.
+In structure-based systems, on the other hand, the
+main goal of the interaction tends to focus on its
+outcome, whether it is the music or the perfor-
+mance (see Figure 6). For designers of structure-
+centered systems, the player’s experience is relevant
+only in regard to this ﬁnal outcome. Most of the
+early networks, which stem from the “high-art”
+music world, fall under this category. Composers
+and designers of such systems are usually more in-
+terested in aspects such as artistic vision, composi-
+tional arrangement, and performance. Players in
+such networks, on the other hand, are expected to
+realize the artistic vision of the composer. It is
+important to note that although most networks
+combine process and structure-based elements, cre-
+ating a successful balance between these aspects is
+not a trivial task, as many of the elements are con-
+tradictory in nature. For example, it would be a
+difﬁcult task to design a musical network that
+would lead to the creation of an interesting, well-
+structured composition while players are trying to
+win a musical game.
+Social Organization and Perspectives
+Similarly to other social systems, musical net-
+works are based on social organizations, which can
+be informed by “social philosophies.” The main
+conceptual axes at play when designing a “social
+32 Computer Music Journal
+Figure 5: Motivations for a
+process-centered musical
+network.
+Figure 6: Motivations for
+structure-centered musical
+network.
+=== PAGE 11 ===
+Weinberg
+philosophy” for a network are the level of central
+control desired and the level of equality provided to
+the different participants in the interaction. Central-
+ized systems, such as in the case of online networks
+from the “Shaper” variety, tend to be governed by a
+computerized hub that is responsible for generating
+the musical output based on input from participants.
+In decentralized systems such as the Musical Fire-
+ﬂies, players communicate directly with each other
+through instruments or software applications that
+are computationally self-contained. Under the cen-
+tralized and decentralized umbrellas, we can ﬁnd a
+wide range of approaches that are based on the lev-
+els of equality provided to participants in terms of
+their musical role (see Figures 7 and 8). Political
+metaphors may be appropriate. For example, a
+“monarchic” system, such as in Golan Levin’s
+Telesymphony, demonstrates a centralized unequal
+social approach. Here, a leader—a human or in
+some cases the computer—controls and conducts
+the interaction. This leader can provide temporary
+freedom to other players when desired, change and
+manipulates the interconnection gates among play-
+ers, and take control over the interaction in general.
+Although providing a composed and structured
+interdependent outcome, the monarchy approach
+usually fails in providing a true collaborative and
+creative voice to players owing to the leader’s domi-
+nance. Such systems, therefore, would be more ef-
+fective in addressing structure-centered motivations
+than process-centered ones. Democratic networks,
+on the other hand (such as in the Squeezables net-
+work), can be more effective when process is em-
+phasized. Here, the centralized system provides an
+equal, or almost equal, role for each player in deﬁn-
+ing the musical output. In goal-oriented democratic
+systems, participants would have to collaborate to
+create a noticeable and signiﬁcant musical effect.
+Often in such systems, only the collaborative act of
+the majority deﬁnes the ﬁnal musical result. Differ-
+ent participants in democratic networks might have
+different roles and responsibilities (such as control-
+ling the harmony, melody, or rhythm), while indi-
+vidual players might temporarily receive a leading
+role from their peers or from the system.
+In decentralized systems, on the other hand, in-
+teraction occurs directly between participants with-
+out a central control to govern the experience. One
+extreme example of a decentralized unequal musi-
+cal network is an “anarchic” network, which pro-
+vides minimum central control and maximum
+freedom for players to generate and manipulate
+their musical material, such as in Tod Machover’s
+Brain Opera. An interesting hybrid approach is the
+concept of Network Computer Music by The
+League of Automatic Music Composers, which ex-
+perimented with synchronous decentralized but
+democracy-oriented networks. Another unique de-
+centralized approach is a rule-based network where
+high-level musical patterns emerge from the inter-
+action between a large number of participants who
+follow identical simple rules (see Resnick 1999).
+Architectures and Topologies
+The social organization of the network, an abstract,
+high-level notion, is addressed by designing and im-
+plementing the lower-level aspects of the network’s
+topology and architecture. Here too, the categoriza-
+tion into centralized and decentralized networks is
+pivotal. In this classiﬁcation, centralized networks
+allow players to interact through instruments and
+controllers that do not have direct inﬂuence on each
+other. Data from players are sent to a computerized
+hub for analysis and algorithmic generation of the
+musical output (as in the case of most of the online
+networks, the Squeezables, Telesymphony, and oth-
+ers). In decentralized topologies, on the other hand,
+players interact directly with each other using in-
+33
+Figure 7. Centralized
+social perspectives.
+Figure 8. Decentralized
+social perspectives.
+=== PAGE 12 ===
+struments or applications that have their own com-
+putational function (such as with Cage’s Imaginary
+Landscape 4, the League of Automatic Music Com-
+posers, the Musical Fireﬂies, and others).
+Centralized and decentralized topologies can be
+classiﬁed into two additional subcategories: syn-
+chronous (or real-time) and sequential (or non-real-
+time). In synchronous networks, players modify and
+manipulate the music of their peers while it is being
+played. In sequential systems, players generate their
+musical material with no outside inﬂuence and
+only then “submit” it to further transformation and
+development by their peers. At its simplest form, a
+centralized synchronous network can be depicted as
+having a “ﬂower” topology (see Figure 9a). The differ-
+ent input nodes in the network, which represent the
+players, are constantly connected to a computer hub
+that is responsible for creating the interconnections
+among the nodes. A centralized sequential network
+can be depicted as having a “wheelbarrow” topology
+(see Figure 9b). Here the inputs nodes, or players,
+are separated from each other in the time domain,
+as each new input stage builds upon the last one.
+Figures 9c and 9d depict the decentralized versions
+34 Computer Music Journal
+Figure 9a. Synchronous
+centralized network:
+“ﬂower” topology.
+Figure 9b. Synchronous
+centralized network:
+“wheelbarrow” topology.
+Figure 9c. Synchronous de-
+centralized interaction:
+“star” topology.
+Figure 9d. Sequential de-
+centralized interaction:
+“stairs” topology.
+=== PAGE 13 ===
+Weinberg
+of the ﬂower and wheelbarrow topologies and can
+be titled as “star” and “stairs” topologies, respec-
+tively. Synchronous interactions are more likely to
+be supported by local-area networks in which la-
+tency is less of a problem in comparison to remote
+networks. Synchronous networks are also more
+likely to support constantly evolving and immer-
+sive musical experiences, although such an approach
+can also lead individual players to lose the sense of
+coherency and causality if the network topology is
+not designed carefully to maintain aspects of individ-
+ual autonomy. In sequential systems, on the other
+hand, the interdependent interactions occur in an
+ordered manner by turn-taking procedures. This ap-
+proach is more tolerant to latency, can be easily sup-
+ported by remote online networks, and is usually
+simpler to follow for the individual player. How-
+ever, in sequential networks, the real-time group
+experience might involve compromise, because all
+players are not always involved in music-making.
+These generic depictions of synchronous, sequen-
+tial, centralized, and decentralized interactions do
+not represent the directionality and the nature of
+the connections among the nodes in the network. A
+more detailed depiction can be seen in Figures 10–17.
+Figure 10 depicts simple one-way ﬂower architec-
+ture. Here, data is sent synchronously from the play-
+ers to the hub, which is responsible for generating
+the musical output based on algorithmic treatment
+of musical and gestural input. The interdependent
+aspects in this simple network are derived only
+from the players, who listen to the musical output
+from the hub and change their actions accordingly,
+as can be seen in the Pazelian application (Pazel, et
+al. 2000), for example. A higher level of interdepend-
+ency is depicted in Figure 11, which shows a decen-
+tralized star topology where players are connected
+35
+Figure 10. Symmetric, one-
+way “ﬂower.”
+Figure 11. Symmetric, in-
+terdependent “star.”
+Figure 12. Asymmetric,
+weighted interdependent
+“ﬂower.”
+=== PAGE 14 ===
+directly to each other and can interdependently ma-
+nipulate each other’s musical output such as in the
+case of the FMOL project. Cage’s Imaginary Land-
+scape No. 4, on the other hand, can be seen as a syn-
+chrotrons anarchic decentralized network with a
+symmetric interconnection scheme.
+Both Figures 10 and 11 depict symmetric topolo-
+gies, where all nodes are connected to the hub or to
+each other. Such architectures would be best suited
+to support an “equal” social approach. Figure 12, on
+the other hand, presents an asymmetric (unequal)
+network architecture where connections are pos-
+sible only in speciﬁc directions and in between spe-
+ciﬁc nodes. Figure 12 also introduces the concept of
+weighted gates that control the level of inﬂuence at
+each intersection in the network. Normally, gates
+would be open, providing a full level of inﬂuence,
+whether for algorithmic control or musical content.
+The gates, however, can also be partly (or fully)
+shut, allowing only a limited level of functionality
+at each particular intersection. Gates can have dif-
+ferent weights as default values (depicted as num-
+bers next to some intersections in Figure 12) but can
+also be changed and manipulated in real time based
+on a player’s input, such as in the Squeezables net-
+work. This asymmetric weighted ﬂower topology is
+common in democratic networks, as it provides dif-
+ferent roles and levels of importance to the different
+players. An extreme version of this approach can
+lead to a monarchic network where one player can
+control all the weighted gates in the system and
+therefore gain full power in conducting the interac-
+tion, such as in Golan Levin’s Telesymphony.
+Sequential networks have similar kinds of inter-
+connected topologies. In the simplest architecture,
+each node is only connected to the next one so that
+every player can manipulate the musical product of
+the previous player, such as in the case of the Musi-
+cal Fireﬂies. Figure 13 depicts such a symmetric,
+one-level stairs topology. The arrows between steps
+are bidirectional; the outgoing arrows represent the
+musical output that is sent to the next node, and
+the incoming arrows represent the algorithmic ma-
+nipulation that is applied to it. More elaborate se-
+quential topologies allow players to transform not
+only the previous player’s musical output but also
+the musical product of the other participants in dif-
+ferent nodes of the network and at different times.
+These transformations can be applied directly among
+players or through a central hub. Such a symmetric
+multi-level wheelbarrow topology is depicted in
+Figure 14. Similarly to synchronous networks,
+asymmetric sequential networks can facilitate inter-
+dependent interaction only in speciﬁc directions and
+provide idiosyncratic roles to the different players.
+Here too, weighted gates can be assigned to the in-
+tersections (see Figure 15).
+In practice, most elaborate musical networks com-
+bine synchronous and sequential elements in differ-
+ent balances. In such hybrid networks (such as the
+Beatbug network), part of the interaction is sequen-
+tial (as players have autonomous control over their
+own music before sharing it with the group), while
+other parts of the interaction are synchronous, when
+players can inﬂuence their peers’s musical output in
+real-time. In addition, certain sections of the inter-
+action can be centralized, and others can be decen-
+tralized. In general, these hybrid systems can be
+36 Computer Music Journal
+Figure 13. Symmetric, one-
+level “stairs.”
+Figure 14. Symmetric,
+multi-level “wheel-
+barrow.”
+Figure 15. Asymmetric,
+multi-level, weighted
+“wheelbarrow.”
+=== PAGE 15 ===
+Weinberg
+depicted in two manners: “Stairs of Flowers,” where
+synchronous interactions are ordered sequentially in
+time (see Figure 16), and “Flowers of Stairs,” where
+a set of sequential interactions are synchronously
+connected to the system’s hub (see Figure 17). A
+weight system can also be assigned and controlled
+in real time to provide dynamic levels of inﬂuence.
+Musical Content and Control
+Making decisions about the motivations, social
+perspectives, and the network architectures are es-
+sential steps towards setting the framework for an
+effective musical network project. But of great im-
+portance for the ﬁnal musical result are the lower-
+level decisions regarding the actual musical
+parameters and transformation algorithms that
+would infuse such a framework with musical con-
+tent. Of unique importance are decisions regarding
+the musical parameters and functions that would be
+generated and controlled autonomously as opposed
+to those that would be controlled interdependently.
+This aspect of the design bears a subjective aesthetic
+core, as different composers and designers would
+have different ideas, tastes, or artistic interests when
+determining the precise control parameters. The
+musical content and transformation decisions are
+informed by the higher-level design decisions. For
+example, an exploratory, anarchic ﬂower topology
+would be best served by allowing players to gener-
+ate and manipulate a full gamut of pitches, timbres,
+timing, and expression aspects and by applying con-
+stantly changing random transformation algorithms.
+On the other extreme, a system that would limit the
+possibilities for input and manipulation by allowing
+players to choose from a limited bank of presets in
+an effort to achieve a speciﬁc task is likely to sup-
+port a goal-oriented sequential structured topology.
+Generally speaking, every musical parameter, such
+as pitch, rhythm, timbre, or dynamics, is a candi-
+date for autonomous as well as interdependent con-
+trol. However, there are some rules of thumb that
+have been proven to be effective for the creation of a
+coherent yet collaborative and immersive interac-
+tion. For example, allowing players to inﬂuence and
+control parameters such as pitch or contour of a
+peer’s melody may lead to an incoherent experience
+for the peer who may loose control over some of the
+fundamental aspects of the melodic production.
+Such mappings may draw the systems into an anar-
+chic experience that is difﬁcult to follow for partici-
+pants and viewers, even if the architecture supports
+other social perspectives. On the other hand, grant-
+ing a player full autonomous control over his or her
+pitch content while allowing other players to con-
+trol ornamental and expressive aspects such as tim-
+bre or dynamics tend to lead to more coherent
+37
+Figure 16. Hybrid, generic
+“Stairs of Flowers.”
+Figure 17. Hybrid, inter-
+connected “Flower of
+Stairs” with weighted
+gates.
+=== PAGE 16 ===
+experience for the melody player. Here, the melody
+player can interdependently enrich his or her own
+playing experience while attempting to accommo-
+date the melody to the new timbres and dynamics.
+Another important aspect for maintaining the in-
+teraction coherency is preserving the nature of the
+musical material as it was originally created. In se-
+quential networks in particular, it is easy to allow
+co-players to modify their peers’s music beyond
+recognition. This might disconnect the original
+players from the music they created, obscuring their
+detailed idiosyncratic contribution to the group.
+The interdependent transformation algorithms,
+therefore, can be more effective if they attempt to
+modify surface elements and to maintain reversibil-
+ity, so that the original musical output would be
+perceivable and retrievable.
+A Final Note
+The ﬁeld of interconnected musical networks has
+matured and is currently expanding to new audi-
+ences and new platforms such as wireless commu-
+nication devices (see, for example, McAllister et al.
+2004; Tanaka et al. 2004). If the ﬁeld is to continue
+to grow, then composers, performers, and audiences
+will require a solid theoretical framework of refer-
+ence when composing, designing, participating in,
+or listening to interconnected musical networks. In
+this article, I attempted to deﬁne the fundamental
+aspects for such a theoretical framework by map-
+ping the ﬁeld, addressing aesthetics and technical
+concepts and motivations, and providing design sug-
+gestions based on an investigation and analysis of
+historic and current work. I plan to modify and ex-
+pand this theoretical framework in correlation to
+the constantly evolving changes in technology and
+artistic focus in the ﬁeld.
+Acknowledgments
+I would like to thank the Hyperinstrument Group
+at MIT Media Lab and Tod Machover for his support
+and advice.
+References
+Barbosa, A. 2003. “Displaced Soundscapes: A Survey of
+Network Systems for Music and Sonic Art Creation.”
+Leonardo Music Journal 13:53–59.
+Benzon, W. L. 2001. Beethoven’s Anvil: Music in Mind
+and Culture. New York: Basic Books.
+Bischoff, J., R. Gold, and J. Horton. 1978. “Microcomputer
+Network Music.” Computer Music Journal 2(3):24–29.
+Bongers, B. 1998. “An Interview with Sensorband.” Com-
+puter Music Journal 22(1):13–24.
+Brown, C. 1999. “Talking Drum: A Local Area Network
+Music Installation.” Leonardo Music Journal 9:23–28.
+Burk, P. L. 2000. “Jammin’ on the Web—A New Client/
+Server Architecture for Multi-User Performance.” Pro-
+ceedings of the 2000 International Computer Music
+Conference. San Francisco, California: International
+Computer Music Association, pp. 117–120.
+Cage, J. 1961. Silence. Middletown, Connecticut: Wes-
+leyan University Press.
+Duckworth, W. 1999. “Making Music on the Web.”
+Leonardo Music Journal 9:13–18.
+Feldmeier, M., M. Malinowski, and J. Paradiso. 2002.
+“Large Group Musical Interaction Using Disposable
+Wireless Motion Sensors.” Proceedings of the 2002 In-
+ternational Computer Music Conference. San Fran-
+cisco, California: International Computer Music
+Association, pp. 83–87.
+Freeman, J., et al. 2004. “Adaptive High-level Classiﬁca-
+tion of Vocal Gestures Within a Networked Sound In-
+strument.” Proceedings of the 2004 International
+Computer Music Conference. San Francisco, Califor-
+nia: International Computer Music Association,
+pp. 668–671.
+Gang, D., et al. 1997. “TRANSmidi: A System For midi
+Sessions Over the Network Using Transis.” Proceed-
+ings of the 1997 International Computer Music Confer-
+ence. San Francisco, California: International
+Computer Music Association, pp. 283–286.
+Gresham-Lancaster, S. 1998. “The Aesthetics and History
+of the Hub: The Effects of Changing Technology on
+Network Computer Music.” Leonardo Music Journal
+8:39–44.
+Helmuth, M. 2000. “Sound Exchange and Performance on
+Internet2.” Proceedings of the 2000 International Com-
+puter Music Conference.San Francisco, California: Inter-
+national Computer Music Association, pp. 121–124.
+Hinton, M., and D. Morgenstern. 1988. Bass Line: The
+Stories and Photographs of Milt Hinton.Philadelphia,
+Pennsylvania: Temple University Press.
+38 Computer Music Journal
+=== PAGE 17 ===
+Weinberg
+Iwai, T. 1998. Composition on the Table.Exhibition at
+Millennium Dome 2000, London.
+Jordà S. 2002. “FMOL: Toward User-Friendly, Sophis-
+ticated New Musical Instruments.” Computer Music
+Journal 26(1):40–50.
+Jordà, S. 2003. “Sonigraphical Instruments: From FMOL
+to the reacTable.” Proceedings of the 2003 Conference
+on New Interfaces for Musical Expression, Montreal,
+pp. 121–124.
+Konstantas, D., et al. 1997. “Distributed Musical Re-
+hearsal.” Proceedings of the 1997 International Com-
+puter Music Conference. San Francisco, California:
+International Computer Music Association, pp. 279–282.
+Levin, G. (2001) Dialtone: A Telesymphony.Premier at
+Ars Electronica Linz Austria. Available at www.ﬂong
+.com/telesymphony/.
+McAllister, G., M. Alcorn, and P. Strain. 2004. “Interac-
+tive Performance With Wireless PDA.” Proceedings of
+the 2004 International Computer Music Conference.
+San Francisco, California: International Computer
+Music Association, pp. 702–705.
+Pazel, D., et al. 2000. “A Distributed Interactive Music
+Application Using Harmonic Constraint.” Proceedings
+of the 2000 International Computer Music Conference.
+Berlin: International Computer Music Association,
+pp. 113–116.
+Rasch, R. A. 1988. “Timing and Synchronization in En-
+semble Performance.” In J. Sloboda, ed. Generative Pro-
+cesses in Music. Oxford: Clarendon Press, pp. 70–90.
+Resnick, M. 1999. Turtles, Termites and Trafﬁc Jams: Ex-
+plorations in Massively Parallel Microworlds.Cam-
+bridge, Massachusetts: MIT Press.
+Rosenboom, D., ed. 1976. Biofeedback and the Arts:
+Results of Early Experiments. Vancouver: Aesthetics
+Research Centre of Canada.
+Tanaka, A., et al. 2004. “Enhancing Musical Experience
+Through Proximal Interaction.” Proceedings of the
+2004 International Computer Music Conference. San
+Francisco: International Computer Music Association,
+pp. 205–208.
+Weinberg, G. 2002. “The Aesthetics, History, and Future
+Challenges of Interconnected Music Networks.” Pro-
+ceedings of the 2002 International Computer Music
+Conference. San Francisco: International Computer
+Music Association, pp. 349–358.
+Weinberg, G. 2004. “Voice Networks: Exploring the Hu-
+man Voice as a Creative Medium for Musical Collabora-
+tion.” Proceedings of the 2004 International Computer
+Music Conference. San Francisco, California: Interna-
+tional Computer Music Association, pp. 623–626.
+Weinberg, G., R. Aimi, and K. Jennings. 2002. “The Beat-
+bug Network: A Rhythmic System for Interdependent
+Group Collaboration.” Proceedings of the 2002 Confer-
+ence on New Interfaces for Musical Expression.
+Dublin, pp. 107–111.
+Weinberg, G., and S. Gan. 2001. “The Squeezables: Toward
+an Expressive and Interdependent Multi-player Musical
+Instrument.” Computer Music Journal 25(2):37–45.
+Weinberg, G., T. Lackner, and J. Jay. 2000. “The Musical
+Fireﬂies: Learning About Mathematical Patterns in
+Music Through Expression and Play.” Proceedings of
+the 2000 Colloquium on Musical Informatics.
+L’Aquila, Italy: Instituto GRAMMA, pp. 146–149.
+Whalley, I. 2004. “Adding Machine Cognition to Web-
+Based Interactive Composition.” Proceedings of the
+2004 International Computer Music Conference. San
+Francisco, California: International Computer Music
+Association, pp. 196–200.
+Yamagishi, S. 1998. “Variations for WWW.” Proceedings
+of the 1998 International Computer Music Conference.
+San Francisco: International Computer Music Associa-
+tion, pp. 510–513.
+Yu, J. 1996. “Computer Generated Music Composition.”
+Master’s Thesis, MIT.
+39

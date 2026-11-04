@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Synthetic PCM through complete analyzer and frozen reader; no stage top/video output/PnR/physical claim",
+  "sources": {
+    "synth\\band\\experimental\\audio_visual\\pcm_snapshot.v": "b8f5ac9898f3b564223f7e536610c123dc5aa81031c608cffe74c7e560d841aa",
+    "synth\\band\\experimental\\audio_visual\\fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum.v": "d77ad578954f80dac93e2b622f1c029f1b94d4755e36591b1d4dd13bacd45b5a",
+    "synth\\band\\experimental\\audio_visual\\spectrum_snapshot.v": "36fba0cbc5df6c9a7887bdcf270f862c5e430c4f62c9431e0e7991b064a614ca",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum_buffered.v": "aa9b2822484333c8360a14a7c77155c62b847d9f7e3be4ee4a18fde081cc37f0",
+    "synth\\band\\evidence\\buffered_spectrum\\tb.v": "a8f91f8ecbe3ff5443d6e624c4d10f97f614eec2d456db5ee9d117e9cbd58ce5",
+    "synth\\band\\experimental\\audio_visual\\fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "synth\\band\\experimental\\audio_visual\\hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc",
+    "synth\\band\\tools\\test_buffered_spectrum.py": "39234f8bc83b93fb276539c73a812ab13931ea904ab7e456904a8f87db0d6540"
+  },
+  "log": "PASS2048 PCM->Hann/FFT->frozen display,all bins exact,three clocks,stalled reader,continued audio,two frames,reset\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\buffered_spectrum\\tb.v:33: $finish called at 3826030000 (1ps)\n"
+}

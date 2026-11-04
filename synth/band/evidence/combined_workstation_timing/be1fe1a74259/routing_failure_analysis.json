@@ -1,0 +1,14 @@
+{
+  "status": "failed_routing_not_timing_accepted",
+  "unrouted_nets": 216,
+  "resources": {
+    "logic": 69018,
+    "ff": 39020,
+    "cls": 48136,
+    "ram": 245,
+    "dsp": 169
+  },
+  "global_resources": "PRIMARY8/8,LW8/8;previous routed1a8 also had same utilization,not proven root cause",
+  "elapsed": "47m52s;38m10s routing",
+  "next_action": "Same frozen6d54 netlist and constraints;route_option1 perSUG1220-2.0Epp37-38. No synthesis or audio retest because source unchanged."
+}

@@ -1,0 +1,169 @@
+{
+  "scope": "8-second float64 recurrences with quantized coefficients; FFT peak estimates, not state-quantized board audio",
+  "cases": 16,
+  "fft_length": 2097152,
+  "window": "Hann, log-magnitude parabolic peak",
+  "max_abs_rendered_peak_error_cents": 0.06371447092361325,
+  "results": [
+    {
+      "f_hz": 27.5,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 27.499999622407657,
+      "rendered_peak_error_cents": -2.3770935429303795e-05,
+      "loop_phase_hz": 27.49999999780281,
+      "estimated_t60_s": 2.99998766276035,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 27.5,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 27.499999470142185,
+      "rendered_peak_error_cents": -3.335665084006173e-05,
+      "loop_phase_hz": 27.499999998890928,
+      "estimated_t60_s": 2.9999963853581724,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 55,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 55.00000018486461,
+      "rendered_peak_error_cents": 5.818980027114742e-06,
+      "loop_phase_hz": 54.9999999825979,
+      "estimated_t60_s": 2.9999902312074402,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 55,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 54.99999961833127,
+      "rendered_peak_error_cents": -1.201377989825264e-05,
+      "loop_phase_hz": 55.000000027642244,
+      "estimated_t60_s": 2.9999704699700582,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 82.4069,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 82.40689621526079,
+      "rendered_peak_error_cents": -7.951117600712839e-05,
+      "loop_phase_hz": 82.40689996142041,
+      "estimated_t60_s": 2.99995632539062,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 82.4069,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 82.40689489453062,
+      "rendered_peak_error_cents": -0.00010725755596340562,
+      "loop_phase_hz": 82.40690001644668,
+      "estimated_t60_s": 2.9999549159244925,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 220,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 219.99999860341208,
+      "rendered_peak_error_cents": -1.0990093494509169e-05,
+      "loop_phase_hz": 219.99999953028174,
+      "estimated_t60_s": 2.9998717715596723,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 220,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 219.99998936945914,
+      "rendered_peak_error_cents": -8.365433972375813e-05,
+      "loop_phase_hz": 220.00000008164318,
+      "estimated_t60_s": 2.999971264699521,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 440,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 439.999995041884,
+      "rendered_peak_error_cents": -1.9508316464719864e-05,
+      "loop_phase_hz": 440.0000015808349,
+      "estimated_t60_s": 2.9999160106100313,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 440,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 439.9999545989237,
+      "rendered_peak_error_cents": -0.000178636120995624,
+      "loop_phase_hz": 440.0000002944681,
+      "estimated_t60_s": 2.9999105700074233,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 880,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 879.9999595002912,
+      "rendered_peak_error_cents": -7.967554139399168e-05,
+      "loop_phase_hz": 879.9999916831723,
+      "estimated_t60_s": 2.9996638026736164,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 880,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 879.9998157311767,
+      "rendered_peak_error_cents": -0.00036251419827539716,
+      "loop_phase_hz": 880.0000048425229,
+      "estimated_t60_s": 2.9994771216820415,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 1760,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 1759.9998354789445,
+      "rendered_peak_error_cents": -0.00016183208317085377,
+      "loop_phase_hz": 1759.999978953737,
+      "estimated_t60_s": 2.9992156277853077,
+      "gain_clamped": false,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 1760,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 1759.9960294208029,
+      "rendered_peak_error_cents": -0.0039056873036295418,
+      "loop_phase_hz": 1759.9999797906517,
+      "estimated_t60_s": 0.5902251694659789,
+      "gain_clamped": true,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 3520,
+      "loss_weight": 0.05,
+      "rendered_peak_hz": 3519.9955966066987,
+      "rendered_peak_error_cents": -0.0021657128360451344,
+      "loop_phase_hz": 3519.999950753084,
+      "estimated_t60_s": 0.3941288339674051,
+      "gain_clamped": true,
+      "peak_abs": 1.0
+    },
+    {
+      "f_hz": 3520,
+      "loss_weight": 0.5,
+      "rendered_peak_hz": 3519.870456099892,
+      "rendered_peak_error_cents": -0.06371447092361325,
+      "loop_phase_hz": 3520.0000182712847,
+      "estimated_t60_s": 0.07328823279711977,
+      "gain_clamped": true,
+      "peak_abs": 1.0
+    }
+  ]
+}

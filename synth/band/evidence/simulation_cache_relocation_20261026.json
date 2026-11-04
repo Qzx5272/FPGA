@@ -1,0 +1,30 @@
+[
+  {
+    "source": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_four_diagnosis\\20261026_204032\\test.vvp",
+    "destination": "D:\\StarclusterBuilds\\completed_simulation_cache_20261026\\vocoder_four_diagnosis\\20261026_204032\\test.vvp",
+    "sha256": "F35A17CBC3FA675598016AE499022CBF178DDE52B20FCA74C45A1CBE95D0C6E5",
+    "bytes": 838701833,
+    "test_status": "diagnosis_complete"
+  },
+  {
+    "source": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\9ce1ce5fedd0_20261026_203719\\test.vvp",
+    "destination": "D:\\StarclusterBuilds\\completed_simulation_cache_20261026\\vocoder_netlist\\9ce1ce5fedd0_20261026_203719\\test.vvp",
+    "sha256": "EA656DAA005A2E1E244C4D1FABABC5B2D5D0A256AB5EC6E08E6F66282FAE2DCA",
+    "bytes": 838701091,
+    "test_status": "failed"
+  },
+  {
+    "source": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_four_diagnosis\\20261026_205206\\test.vvp",
+    "destination": "D:\\StarclusterBuilds\\completed_simulation_cache_20261026\\vocoder_four_diagnosis\\20261026_205206\\test.vvp",
+    "sha256": "C66A424D0B9541BF0FDD1F4A637AE8A8388BE576F023E106B20A74B44A900372",
+    "bytes": 431639919,
+    "test_status": "diagnosis_complete"
+  },
+  {
+    "source": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\5f3ae8656bb7_20261026_204900\\test.vvp",
+    "destination": "D:\\StarclusterBuilds\\completed_simulation_cache_20261026\\vocoder_netlist\\5f3ae8656bb7_20261026_204900\\test.vvp",
+    "sha256": "A15430E8DEEC29B12384BCA3A598BA2EC8CFDF744465D6C3D9F79AD4F03EF12A",
+    "bytes": 431639177,
+    "test_status": "failed"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "cancelled_due_coefficient_rom_mismatch",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_2565ea905af0",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_5556e1c4f3f4",
+  "frozen_netlist_sha256": "fded27e8687ef5af085470d1d81e17e40fcf5f4dbf699f9b73f7efd413a8c328",
+  "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.",
+  "started": "2026-10-26T01:00:17.821824",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "1e7d1f10fe01272a01e64e57e5ad0c4d77408540e72a451dce4af28a0c856aea",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_combined_workstation_timing.py": "285367e1748af2b5bc9201d6c89c7a30e65db9792ec6e899b9c966e8dba4518b"
+  },
+  "returncode": 4294967295,
+  "error": "Vendor failure;inspect log",
+  "finished": "2026-10-26T01:08:16.498952",
+  "cancellation_reason": "Stopped exactgw_sh PID67060 after170word vendor-netlist ROM experiment:2D141mismatches/flat0. Source snapshot usesaffected2D table. Notrouterfailure andnot timing acceptance."
+}

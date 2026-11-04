@@ -1,0 +1,6 @@
+{
+  "status": "prepared",
+  "target": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_pixel_falling_db7d6577285a",
+  "manifest_sha256": "d2788c204c6f1dc25df8ec289de66c8d3cd4e32144628816f82414cf08bd8eec",
+  "model_proof": "synth\\band\\evidence\\gowin_dvi_clocked\\20261026_185903\\result.json"
+}

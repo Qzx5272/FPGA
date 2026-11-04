@@ -1,0 +1,47 @@
+{
+  "status": "passed_constraint_scope_only",
+  "scope": "Actual vendor SDC table:8active constraints;both20ns crossdomain maxdelay bounds active;only twohold-only FIFO cuts.No physicalCDC/MTBF claim",
+  "report_sha256": "e9aeb4d8da188ab2921cd3436c5f29d82da3cf2fc1c0d4b0dc9eb3d360853839",
+  "constraints": [
+    [
+      "TC_CLOCK",
+      "Actived",
+      "create_clock -name core_clk -period 20.000 [get_ports {clk}]"
+    ],
+    [
+      "TC_CLOCK",
+      "Actived",
+      "create_clock -name mic_clk -period 325.520833 [get_ports {mic_bck}]"
+    ],
+    [
+      "TC_MAX_DELAY",
+      "Actived",
+      "set_max_delay -from [get_clocks {core_clk}] -to [get_clocks {mic_clk}] 20.000"
+    ],
+    [
+      "TC_MAX_DELAY",
+      "Actived",
+      "set_max_delay -from [get_clocks {mic_clk}] -to [get_clocks {core_clk}] 20.000"
+    ],
+    [
+      "TC_MIN_DELAY",
+      "Actived",
+      "set_min_delay -from [get_clocks {core_clk}] -to [get_clocks {mic_clk}] 0.000"
+    ],
+    [
+      "TC_MIN_DELAY",
+      "Actived",
+      "set_min_delay -from [get_clocks {mic_clk}] -to [get_clocks {core_clk}] 0.000"
+    ],
+    [
+      "TC_FALSE_PATH",
+      "Actived",
+      "set_false_path -hold -from [get_clocks {mic_clk}] -to [get_regs {band/input_audio/transport/fifo/wgray_r1* band/input_audio/latest* band/input_audio/held*}]"
+    ],
+    [
+      "TC_FALSE_PATH",
+      "Actived",
+      "set_false_path -hold -from [get_clocks {core_clk}] -to [get_regs {band/input_audio/transport/fifo/rgray_w1*}]"
+    ]
+  ]
+}

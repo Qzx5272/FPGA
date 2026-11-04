@@ -1,0 +1,35 @@
+星群四引擎人声优化：源码复现与证据范围
+更新时间：2026-10-26
+
+1. 当前候选
+   实际验收曲整机源码：output/final_workstation_20261022/offline_workstation_four_engine_dc2667ea8098
+   独立模块证据：synth/band/evidence/vocoder_four_engines/f890f9df40ce
+   综合网表证据：synth/band/evidence/vocoder_netlist/f98747e0a290_20261026_205900
+   256声部联合RTL证据：synth/band/evidence/shared_singer_core/20261026_211651
+   这都是工程候选，不能据此跳过整机时序、固定引脚、冷启动及听音验收。
+
+2. 在另一台电脑复现4096样本数值验证
+   安装Python 3和Icarus Verilog。厂商软件、Icarus及本机Python环境不随源码包分发。
+   在解压后的项目根目录运行（工具已加入PATH时）：
+   python synth/band/tools/replay_vocoder_evidence.py synth/band/evidence/vocoder_four_engines/f890f9df40ce
+
+   如未加入PATH，可附加 --iverilog "安装目录/bin/iverilog.exe" --vvp "安装目录/bin/vvp.exe"。
+   可附加 --output "一个尚不存在的输出目录"；默认使用系统临时目录。
+   不要求D盘，不读取历史报告中的绝对build路径，不修改原证据目录。
+   脚本先检查五个源码文件和独立参考向量的SHA256，复制到新目录，编译并运行。
+   成功条件：replay_result.json的status为passed，simulation.log含PASS full vocoder4096 samples。
+   失败日志保留在输出目录；不得修改期望向量或删除数值断言以得到通过结果。
+
+3. 已有证据说明
+   4096样本RTL检查与320样本厂商原语网表检查覆盖复位、忙时拒绝、削波/拒绝计数等。
+   256共享槽加独立人声的64帧RTL联合测试最大966周期，验证控制广播、身份、尾音、
+   断连及总停音；这是短窗口功能证据，不能替代持续满负载和整曲验证。
+   四引擎隔离综合的MULT27X36由18减为6；整机资源收益必须看新整机综合及布局布线报告。
+   旧的动态索引、仅展平系数、静态选择器版本曾出现网表数值失败，均保留为失败证据。
+   当前通过版本为显式展开四个引擎、常量输入索引和常量结果目的地址的版本。
+
+4. 硬件发布边界
+   当前板上062a944dcce1与新候选不同，前者仍有已知最小脉宽违规。
+   f66680365bc4的零违规摘要不足以证明复位路径通过：三条新增约束没有可报告路径，
+   已被发布审查明确拒绝。不得用这个摘要宣称整机时序完成。
+   最新验收状态以synth/band/FINAL_READINESS.json及STATUS.json为准。

@@ -1,0 +1,2 @@
+`define SONG_EVENTS 2725
+`define SONG_LENGTH 4608000

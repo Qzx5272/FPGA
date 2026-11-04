@@ -1,0 +1,9356 @@
+[
+  {
+    "marked": "a",
+    "syllable": "a",
+    "tone": 5,
+    "numbered": "a5"
+  },
+  {
+    "marked": "ba",
+    "syllable": "ba",
+    "tone": 5,
+    "numbered": "ba5"
+  },
+  {
+    "marked": "bai",
+    "syllable": "bai",
+    "tone": 5,
+    "numbered": "bai5"
+  },
+  {
+    "marked": "ban",
+    "syllable": "ban",
+    "tone": 5,
+    "numbered": "ban5"
+  },
+  {
+    "marked": "bei",
+    "syllable": "bei",
+    "tone": 5,
+    "numbered": "bei5"
+  },
+  {
+    "marked": "beng",
+    "syllable": "beng",
+    "tone": 5,
+    "numbered": "beng5"
+  },
+  {
+    "marked": "bian",
+    "syllable": "bian",
+    "tone": 5,
+    "numbered": "bian5"
+  },
+  {
+    "marked": "bin",
+    "syllable": "bin",
+    "tone": 5,
+    "numbered": "bin5"
+  },
+  {
+    "marked": "biàn",
+    "syllable": "bian",
+    "tone": 4,
+    "numbered": "bian4"
+  },
+  {
+    "marked": "biàng",
+    "syllable": "biang",
+    "tone": 4,
+    "numbered": "biang4"
+  },
+  {
+    "marked": "biào",
+    "syllable": "biao",
+    "tone": 4,
+    "numbered": "biao4"
+  },
+  {
+    "marked": "biáng",
+    "syllable": "biang",
+    "tone": 2,
+    "numbered": "biang2"
+  },
+  {
+    "marked": "biè",
+    "syllable": "bie",
+    "tone": 4,
+    "numbered": "bie4"
+  },
+  {
+    "marked": "bié",
+    "syllable": "bie",
+    "tone": 2,
+    "numbered": "bie2"
+  },
+  {
+    "marked": "biān",
+    "syllable": "bian",
+    "tone": 1,
+    "numbered": "bian1"
+  },
+  {
+    "marked": "biāo",
+    "syllable": "biao",
+    "tone": 1,
+    "numbered": "biao1"
+  },
+  {
+    "marked": "biē",
+    "syllable": "bie",
+    "tone": 1,
+    "numbered": "bie1"
+  },
+  {
+    "marked": "biě",
+    "syllable": "bie",
+    "tone": 3,
+    "numbered": "bie3"
+  },
+  {
+    "marked": "biǎn",
+    "syllable": "bian",
+    "tone": 3,
+    "numbered": "bian3"
+  },
+  {
+    "marked": "biǎo",
+    "syllable": "biao",
+    "tone": 3,
+    "numbered": "biao3"
+  },
+  {
+    "marked": "bo",
+    "syllable": "bo",
+    "tone": 5,
+    "numbered": "bo5"
+  },
+  {
+    "marked": "bu",
+    "syllable": "bu",
+    "tone": 5,
+    "numbered": "bu5"
+  },
+  {
+    "marked": "bà",
+    "syllable": "ba",
+    "tone": 4,
+    "numbered": "ba4"
+  },
+  {
+    "marked": "bài",
+    "syllable": "bai",
+    "tone": 4,
+    "numbered": "bai4"
+  },
+  {
+    "marked": "bàn",
+    "syllable": "ban",
+    "tone": 4,
+    "numbered": "ban4"
+  },
+  {
+    "marked": "bàng",
+    "syllable": "bang",
+    "tone": 4,
+    "numbered": "bang4"
+  },
+  {
+    "marked": "bào",
+    "syllable": "bao",
+    "tone": 4,
+    "numbered": "bao4"
+  },
+  {
+    "marked": "bá",
+    "syllable": "ba",
+    "tone": 2,
+    "numbered": "ba2"
+  },
+  {
+    "marked": "bái",
+    "syllable": "bai",
+    "tone": 2,
+    "numbered": "bai2"
+  },
+  {
+    "marked": "báo",
+    "syllable": "bao",
+    "tone": 2,
+    "numbered": "bao2"
+  },
+  {
+    "marked": "bèi",
+    "syllable": "bei",
+    "tone": 4,
+    "numbered": "bei4"
+  },
+  {
+    "marked": "bèn",
+    "syllable": "ben",
+    "tone": 4,
+    "numbered": "ben4"
+  },
+  {
+    "marked": "bèng",
+    "syllable": "beng",
+    "tone": 4,
+    "numbered": "beng4"
+  },
+  {
+    "marked": "béng",
+    "syllable": "beng",
+    "tone": 2,
+    "numbered": "beng2"
+  },
+  {
+    "marked": "bì",
+    "syllable": "bi",
+    "tone": 4,
+    "numbered": "bi4"
+  },
+  {
+    "marked": "bìn",
+    "syllable": "bin",
+    "tone": 4,
+    "numbered": "bin4"
+  },
+  {
+    "marked": "bìng",
+    "syllable": "bing",
+    "tone": 4,
+    "numbered": "bing4"
+  },
+  {
+    "marked": "bí",
+    "syllable": "bi",
+    "tone": 2,
+    "numbered": "bi2"
+  },
+  {
+    "marked": "bò",
+    "syllable": "bo",
+    "tone": 4,
+    "numbered": "bo4"
+  },
+  {
+    "marked": "bòng",
+    "syllable": "bong",
+    "tone": 4,
+    "numbered": "bong4"
+  },
+  {
+    "marked": "bó",
+    "syllable": "bo",
+    "tone": 2,
+    "numbered": "bo2"
+  },
+  {
+    "marked": "bù",
+    "syllable": "bu",
+    "tone": 4,
+    "numbered": "bu4"
+  },
+  {
+    "marked": "bú",
+    "syllable": "bu",
+    "tone": 2,
+    "numbered": "bu2"
+  },
+  {
+    "marked": "bā",
+    "syllable": "ba",
+    "tone": 1,
+    "numbered": "ba1"
+  },
+  {
+    "marked": "bāi",
+    "syllable": "bai",
+    "tone": 1,
+    "numbered": "bai1"
+  },
+  {
+    "marked": "bān",
+    "syllable": "ban",
+    "tone": 1,
+    "numbered": "ban1"
+  },
+  {
+    "marked": "bāng",
+    "syllable": "bang",
+    "tone": 1,
+    "numbered": "bang1"
+  },
+  {
+    "marked": "bāo",
+    "syllable": "bao",
+    "tone": 1,
+    "numbered": "bao1"
+  },
+  {
+    "marked": "bēi",
+    "syllable": "bei",
+    "tone": 1,
+    "numbered": "bei1"
+  },
+  {
+    "marked": "bēn",
+    "syllable": "ben",
+    "tone": 1,
+    "numbered": "ben1"
+  },
+  {
+    "marked": "bēng",
+    "syllable": "beng",
+    "tone": 1,
+    "numbered": "beng1"
+  },
+  {
+    "marked": "běi",
+    "syllable": "bei",
+    "tone": 3,
+    "numbered": "bei3"
+  },
+  {
+    "marked": "běn",
+    "syllable": "ben",
+    "tone": 3,
+    "numbered": "ben3"
+  },
+  {
+    "marked": "běng",
+    "syllable": "beng",
+    "tone": 3,
+    "numbered": "beng3"
+  },
+  {
+    "marked": "bī",
+    "syllable": "bi",
+    "tone": 1,
+    "numbered": "bi1"
+  },
+  {
+    "marked": "bīn",
+    "syllable": "bin",
+    "tone": 1,
+    "numbered": "bin1"
+  },
+  {
+    "marked": "bīng",
+    "syllable": "bing",
+    "tone": 1,
+    "numbered": "bing1"
+  },
+  {
+    "marked": "bō",
+    "syllable": "bo",
+    "tone": 1,
+    "numbered": "bo1"
+  },
+  {
+    "marked": "bū",
+    "syllable": "bu",
+    "tone": 1,
+    "numbered": "bu1"
+  },
+  {
+    "marked": "bǎ",
+    "syllable": "ba",
+    "tone": 3,
+    "numbered": "ba3"
+  },
+  {
+    "marked": "bǎi",
+    "syllable": "bai",
+    "tone": 3,
+    "numbered": "bai3"
+  },
+  {
+    "marked": "bǎn",
+    "syllable": "ban",
+    "tone": 3,
+    "numbered": "ban3"
+  },
+  {
+    "marked": "bǎng",
+    "syllable": "bang",
+    "tone": 3,
+    "numbered": "bang3"
+  },
+  {
+    "marked": "bǎo",
+    "syllable": "bao",
+    "tone": 3,
+    "numbered": "bao3"
+  },
+  {
+    "marked": "bǐ",
+    "syllable": "bi",
+    "tone": 3,
+    "numbered": "bi3"
+  },
+  {
+    "marked": "bǐn",
+    "syllable": "bin",
+    "tone": 3,
+    "numbered": "bin3"
+  },
+  {
+    "marked": "bǐng",
+    "syllable": "bing",
+    "tone": 3,
+    "numbered": "bing3"
+  },
+  {
+    "marked": "bǒ",
+    "syllable": "bo",
+    "tone": 3,
+    "numbered": "bo3"
+  },
+  {
+    "marked": "bǔ",
+    "syllable": "bu",
+    "tone": 3,
+    "numbered": "bu3"
+  },
+  {
+    "marked": "chang",
+    "syllable": "chang",
+    "tone": 5,
+    "numbered": "chang5"
+  },
+  {
+    "marked": "chen",
+    "syllable": "chen",
+    "tone": 5,
+    "numbered": "chen5"
+  },
+  {
+    "marked": "chi",
+    "syllable": "chi",
+    "tone": 5,
+    "numbered": "chi5"
+  },
+  {
+    "marked": "chu",
+    "syllable": "chu",
+    "tone": 5,
+    "numbered": "chu5"
+  },
+  {
+    "marked": "chuà",
+    "syllable": "chua",
+    "tone": 4,
+    "numbered": "chua4"
+  },
+  {
+    "marked": "chuài",
+    "syllable": "chuai",
+    "tone": 4,
+    "numbered": "chuai4"
+  },
+  {
+    "marked": "chuàn",
+    "syllable": "chuan",
+    "tone": 4,
+    "numbered": "chuan4"
+  },
+  {
+    "marked": "chuàng",
+    "syllable": "chuang",
+    "tone": 4,
+    "numbered": "chuang4"
+  },
+  {
+    "marked": "chuái",
+    "syllable": "chuai",
+    "tone": 2,
+    "numbered": "chuai2"
+  },
+  {
+    "marked": "chuán",
+    "syllable": "chuan",
+    "tone": 2,
+    "numbered": "chuan2"
+  },
+  {
+    "marked": "chuáng",
+    "syllable": "chuang",
+    "tone": 2,
+    "numbered": "chuang2"
+  },
+  {
+    "marked": "chuì",
+    "syllable": "chui",
+    "tone": 4,
+    "numbered": "chui4"
+  },
+  {
+    "marked": "chuí",
+    "syllable": "chui",
+    "tone": 2,
+    "numbered": "chui2"
+  },
+  {
+    "marked": "chuò",
+    "syllable": "chuo",
+    "tone": 4,
+    "numbered": "chuo4"
+  },
+  {
+    "marked": "chuā",
+    "syllable": "chua",
+    "tone": 1,
+    "numbered": "chua1"
+  },
+  {
+    "marked": "chuāi",
+    "syllable": "chuai",
+    "tone": 1,
+    "numbered": "chuai1"
+  },
+  {
+    "marked": "chuān",
+    "syllable": "chuan",
+    "tone": 1,
+    "numbered": "chuan1"
+  },
+  {
+    "marked": "chuāng",
+    "syllable": "chuang",
+    "tone": 1,
+    "numbered": "chuang1"
+  },
+  {
+    "marked": "chuī",
+    "syllable": "chui",
+    "tone": 1,
+    "numbered": "chui1"
+  },
+  {
+    "marked": "chuō",
+    "syllable": "chuo",
+    "tone": 1,
+    "numbered": "chuo1"
+  },
+  {
+    "marked": "chuǎ",
+    "syllable": "chua",
+    "tone": 3,
+    "numbered": "chua3"
+  },
+  {
+    "marked": "chuǎi",
+    "syllable": "chuai",
+    "tone": 3,
+    "numbered": "chuai3"
+  },
+  {
+    "marked": "chuǎn",
+    "syllable": "chuan",
+    "tone": 3,
+    "numbered": "chuan3"
+  },
+  {
+    "marked": "chuǎng",
+    "syllable": "chuang",
+    "tone": 3,
+    "numbered": "chuang3"
+  },
+  {
+    "marked": "chuǐ",
+    "syllable": "chui",
+    "tone": 3,
+    "numbered": "chui3"
+  },
+  {
+    "marked": "chà",
+    "syllable": "cha",
+    "tone": 4,
+    "numbered": "cha4"
+  },
+  {
+    "marked": "chài",
+    "syllable": "chai",
+    "tone": 4,
+    "numbered": "chai4"
+  },
+  {
+    "marked": "chàn",
+    "syllable": "chan",
+    "tone": 4,
+    "numbered": "chan4"
+  },
+  {
+    "marked": "chàng",
+    "syllable": "chang",
+    "tone": 4,
+    "numbered": "chang4"
+  },
+  {
+    "marked": "chào",
+    "syllable": "chao",
+    "tone": 4,
+    "numbered": "chao4"
+  },
+  {
+    "marked": "chá",
+    "syllable": "cha",
+    "tone": 2,
+    "numbered": "cha2"
+  },
+  {
+    "marked": "chái",
+    "syllable": "chai",
+    "tone": 2,
+    "numbered": "chai2"
+  },
+  {
+    "marked": "chán",
+    "syllable": "chan",
+    "tone": 2,
+    "numbered": "chan2"
+  },
+  {
+    "marked": "cháng",
+    "syllable": "chang",
+    "tone": 2,
+    "numbered": "chang2"
+  },
+  {
+    "marked": "cháo",
+    "syllable": "chao",
+    "tone": 2,
+    "numbered": "chao2"
+  },
+  {
+    "marked": "chè",
+    "syllable": "che",
+    "tone": 4,
+    "numbered": "che4"
+  },
+  {
+    "marked": "chèn",
+    "syllable": "chen",
+    "tone": 4,
+    "numbered": "chen4"
+  },
+  {
+    "marked": "chèng",
+    "syllable": "cheng",
+    "tone": 4,
+    "numbered": "cheng4"
+  },
+  {
+    "marked": "ché",
+    "syllable": "che",
+    "tone": 2,
+    "numbered": "che2"
+  },
+  {
+    "marked": "chén",
+    "syllable": "chen",
+    "tone": 2,
+    "numbered": "chen2"
+  },
+  {
+    "marked": "chéng",
+    "syllable": "cheng",
+    "tone": 2,
+    "numbered": "cheng2"
+  },
+  {
+    "marked": "chì",
+    "syllable": "chi",
+    "tone": 4,
+    "numbered": "chi4"
+  },
+  {
+    "marked": "chí",
+    "syllable": "chi",
+    "tone": 2,
+    "numbered": "chi2"
+  },
+  {
+    "marked": "chòng",
+    "syllable": "chong",
+    "tone": 4,
+    "numbered": "chong4"
+  },
+  {
+    "marked": "chòu",
+    "syllable": "chou",
+    "tone": 4,
+    "numbered": "chou4"
+  },
+  {
+    "marked": "chóng",
+    "syllable": "chong",
+    "tone": 2,
+    "numbered": "chong2"
+  },
+  {
+    "marked": "chóu",
+    "syllable": "chou",
+    "tone": 2,
+    "numbered": "chou2"
+  },
+  {
+    "marked": "chù",
+    "syllable": "chu",
+    "tone": 4,
+    "numbered": "chu4"
+  },
+  {
+    "marked": "chú",
+    "syllable": "chu",
+    "tone": 2,
+    "numbered": "chu2"
+  },
+  {
+    "marked": "chún",
+    "syllable": "chun",
+    "tone": 2,
+    "numbered": "chun2"
+  },
+  {
+    "marked": "chā",
+    "syllable": "cha",
+    "tone": 1,
+    "numbered": "cha1"
+  },
+  {
+    "marked": "chāi",
+    "syllable": "chai",
+    "tone": 1,
+    "numbered": "chai1"
+  },
+  {
+    "marked": "chān",
+    "syllable": "chan",
+    "tone": 1,
+    "numbered": "chan1"
+  },
+  {
+    "marked": "chāng",
+    "syllable": "chang",
+    "tone": 1,
+    "numbered": "chang1"
+  },
+  {
+    "marked": "chāo",
+    "syllable": "chao",
+    "tone": 1,
+    "numbered": "chao1"
+  },
+  {
+    "marked": "chē",
+    "syllable": "che",
+    "tone": 1,
+    "numbered": "che1"
+  },
+  {
+    "marked": "chēn",
+    "syllable": "chen",
+    "tone": 1,
+    "numbered": "chen1"
+  },
+  {
+    "marked": "chēng",
+    "syllable": "cheng",
+    "tone": 1,
+    "numbered": "cheng1"
+  },
+  {
+    "marked": "chě",
+    "syllable": "che",
+    "tone": 3,
+    "numbered": "che3"
+  },
+  {
+    "marked": "chěn",
+    "syllable": "chen",
+    "tone": 3,
+    "numbered": "chen3"
+  },
+  {
+    "marked": "chěng",
+    "syllable": "cheng",
+    "tone": 3,
+    "numbered": "cheng3"
+  },
+  {
+    "marked": "chī",
+    "syllable": "chi",
+    "tone": 1,
+    "numbered": "chi1"
+  },
+  {
+    "marked": "chōng",
+    "syllable": "chong",
+    "tone": 1,
+    "numbered": "chong1"
+  },
+  {
+    "marked": "chōu",
+    "syllable": "chou",
+    "tone": 1,
+    "numbered": "chou1"
+  },
+  {
+    "marked": "chū",
+    "syllable": "chu",
+    "tone": 1,
+    "numbered": "chu1"
+  },
+  {
+    "marked": "chūn",
+    "syllable": "chun",
+    "tone": 1,
+    "numbered": "chun1"
+  },
+  {
+    "marked": "chǎ",
+    "syllable": "cha",
+    "tone": 3,
+    "numbered": "cha3"
+  },
+  {
+    "marked": "chǎi",
+    "syllable": "chai",
+    "tone": 3,
+    "numbered": "chai3"
+  },
+  {
+    "marked": "chǎn",
+    "syllable": "chan",
+    "tone": 3,
+    "numbered": "chan3"
+  },
+  {
+    "marked": "chǎng",
+    "syllable": "chang",
+    "tone": 3,
+    "numbered": "chang3"
+  },
+  {
+    "marked": "chǎo",
+    "syllable": "chao",
+    "tone": 3,
+    "numbered": "chao3"
+  },
+  {
+    "marked": "chǐ",
+    "syllable": "chi",
+    "tone": 3,
+    "numbered": "chi3"
+  },
+  {
+    "marked": "chǒng",
+    "syllable": "chong",
+    "tone": 3,
+    "numbered": "chong3"
+  },
+  {
+    "marked": "chǒu",
+    "syllable": "chou",
+    "tone": 3,
+    "numbered": "chou3"
+  },
+  {
+    "marked": "chǔ",
+    "syllable": "chu",
+    "tone": 3,
+    "numbered": "chu3"
+  },
+  {
+    "marked": "chǔn",
+    "syllable": "chun",
+    "tone": 3,
+    "numbered": "chun3"
+  },
+  {
+    "marked": "cui",
+    "syllable": "cui",
+    "tone": 5,
+    "numbered": "cui5"
+  },
+  {
+    "marked": "cuàn",
+    "syllable": "cuan",
+    "tone": 4,
+    "numbered": "cuan4"
+  },
+  {
+    "marked": "cuán",
+    "syllable": "cuan",
+    "tone": 2,
+    "numbered": "cuan2"
+  },
+  {
+    "marked": "cuì",
+    "syllable": "cui",
+    "tone": 4,
+    "numbered": "cui4"
+  },
+  {
+    "marked": "cuò",
+    "syllable": "cuo",
+    "tone": 4,
+    "numbered": "cuo4"
+  },
+  {
+    "marked": "cuó",
+    "syllable": "cuo",
+    "tone": 2,
+    "numbered": "cuo2"
+  },
+  {
+    "marked": "cuān",
+    "syllable": "cuan",
+    "tone": 1,
+    "numbered": "cuan1"
+  },
+  {
+    "marked": "cuī",
+    "syllable": "cui",
+    "tone": 1,
+    "numbered": "cui1"
+  },
+  {
+    "marked": "cuō",
+    "syllable": "cuo",
+    "tone": 1,
+    "numbered": "cuo1"
+  },
+  {
+    "marked": "cuǐ",
+    "syllable": "cui",
+    "tone": 3,
+    "numbered": "cui3"
+  },
+  {
+    "marked": "cuǒ",
+    "syllable": "cuo",
+    "tone": 3,
+    "numbered": "cuo3"
+  },
+  {
+    "marked": "cà",
+    "syllable": "ca",
+    "tone": 4,
+    "numbered": "ca4"
+  },
+  {
+    "marked": "cài",
+    "syllable": "cai",
+    "tone": 4,
+    "numbered": "cai4"
+  },
+  {
+    "marked": "càn",
+    "syllable": "can",
+    "tone": 4,
+    "numbered": "can4"
+  },
+  {
+    "marked": "càng",
+    "syllable": "cang",
+    "tone": 4,
+    "numbered": "cang4"
+  },
+  {
+    "marked": "cào",
+    "syllable": "cao",
+    "tone": 4,
+    "numbered": "cao4"
+  },
+  {
+    "marked": "cái",
+    "syllable": "cai",
+    "tone": 2,
+    "numbered": "cai2"
+  },
+  {
+    "marked": "cán",
+    "syllable": "can",
+    "tone": 2,
+    "numbered": "can2"
+  },
+  {
+    "marked": "cáng",
+    "syllable": "cang",
+    "tone": 2,
+    "numbered": "cang2"
+  },
+  {
+    "marked": "cáo",
+    "syllable": "cao",
+    "tone": 2,
+    "numbered": "cao2"
+  },
+  {
+    "marked": "cè",
+    "syllable": "ce",
+    "tone": 4,
+    "numbered": "ce4"
+  },
+  {
+    "marked": "cèi",
+    "syllable": "cei",
+    "tone": 4,
+    "numbered": "cei4"
+  },
+  {
+    "marked": "cèng",
+    "syllable": "ceng",
+    "tone": 4,
+    "numbered": "ceng4"
+  },
+  {
+    "marked": "cén",
+    "syllable": "cen",
+    "tone": 2,
+    "numbered": "cen2"
+  },
+  {
+    "marked": "céng",
+    "syllable": "ceng",
+    "tone": 2,
+    "numbered": "ceng2"
+  },
+  {
+    "marked": "cì",
+    "syllable": "ci",
+    "tone": 4,
+    "numbered": "ci4"
+  },
+  {
+    "marked": "cí",
+    "syllable": "ci",
+    "tone": 2,
+    "numbered": "ci2"
+  },
+  {
+    "marked": "còng",
+    "syllable": "cong",
+    "tone": 4,
+    "numbered": "cong4"
+  },
+  {
+    "marked": "còu",
+    "syllable": "cou",
+    "tone": 4,
+    "numbered": "cou4"
+  },
+  {
+    "marked": "cóng",
+    "syllable": "cong",
+    "tone": 2,
+    "numbered": "cong2"
+  },
+  {
+    "marked": "cóu",
+    "syllable": "cou",
+    "tone": 2,
+    "numbered": "cou2"
+  },
+  {
+    "marked": "cù",
+    "syllable": "cu",
+    "tone": 4,
+    "numbered": "cu4"
+  },
+  {
+    "marked": "cùn",
+    "syllable": "cun",
+    "tone": 4,
+    "numbered": "cun4"
+  },
+  {
+    "marked": "cú",
+    "syllable": "cu",
+    "tone": 2,
+    "numbered": "cu2"
+  },
+  {
+    "marked": "cún",
+    "syllable": "cun",
+    "tone": 2,
+    "numbered": "cun2"
+  },
+  {
+    "marked": "cā",
+    "syllable": "ca",
+    "tone": 1,
+    "numbered": "ca1"
+  },
+  {
+    "marked": "cāi",
+    "syllable": "cai",
+    "tone": 1,
+    "numbered": "cai1"
+  },
+  {
+    "marked": "cān",
+    "syllable": "can",
+    "tone": 1,
+    "numbered": "can1"
+  },
+  {
+    "marked": "cāng",
+    "syllable": "cang",
+    "tone": 1,
+    "numbered": "cang1"
+  },
+  {
+    "marked": "cāo",
+    "syllable": "cao",
+    "tone": 1,
+    "numbered": "cao1"
+  },
+  {
+    "marked": "cēn",
+    "syllable": "cen",
+    "tone": 1,
+    "numbered": "cen1"
+  },
+  {
+    "marked": "cēng",
+    "syllable": "ceng",
+    "tone": 1,
+    "numbered": "ceng1"
+  },
+  {
+    "marked": "cī",
+    "syllable": "ci",
+    "tone": 1,
+    "numbered": "ci1"
+  },
+  {
+    "marked": "cōng",
+    "syllable": "cong",
+    "tone": 1,
+    "numbered": "cong1"
+  },
+  {
+    "marked": "cōu",
+    "syllable": "cou",
+    "tone": 1,
+    "numbered": "cou1"
+  },
+  {
+    "marked": "cū",
+    "syllable": "cu",
+    "tone": 1,
+    "numbered": "cu1"
+  },
+  {
+    "marked": "cūn",
+    "syllable": "cun",
+    "tone": 1,
+    "numbered": "cun1"
+  },
+  {
+    "marked": "cǎ",
+    "syllable": "ca",
+    "tone": 3,
+    "numbered": "ca3"
+  },
+  {
+    "marked": "cǎi",
+    "syllable": "cai",
+    "tone": 3,
+    "numbered": "cai3"
+  },
+  {
+    "marked": "cǎn",
+    "syllable": "can",
+    "tone": 3,
+    "numbered": "can3"
+  },
+  {
+    "marked": "cǎng",
+    "syllable": "cang",
+    "tone": 3,
+    "numbered": "cang3"
+  },
+  {
+    "marked": "cǎo",
+    "syllable": "cao",
+    "tone": 3,
+    "numbered": "cao3"
+  },
+  {
+    "marked": "cǐ",
+    "syllable": "ci",
+    "tone": 3,
+    "numbered": "ci3"
+  },
+  {
+    "marked": "cǒng",
+    "syllable": "cong",
+    "tone": 3,
+    "numbered": "cong3"
+  },
+  {
+    "marked": "cǒu",
+    "syllable": "cou",
+    "tone": 3,
+    "numbered": "cou3"
+  },
+  {
+    "marked": "cǔ",
+    "syllable": "cu",
+    "tone": 3,
+    "numbered": "cu3"
+  },
+  {
+    "marked": "cǔn",
+    "syllable": "cun",
+    "tone": 3,
+    "numbered": "cun3"
+  },
+  {
+    "marked": "da",
+    "syllable": "da",
+    "tone": 5,
+    "numbered": "da5"
+  },
+  {
+    "marked": "dai",
+    "syllable": "dai",
+    "tone": 5,
+    "numbered": "dai5"
+  },
+  {
+    "marked": "dang",
+    "syllable": "dang",
+    "tone": 5,
+    "numbered": "dang5"
+  },
+  {
+    "marked": "de",
+    "syllable": "de",
+    "tone": 5,
+    "numbered": "de5"
+  },
+  {
+    "marked": "di",
+    "syllable": "di",
+    "tone": 5,
+    "numbered": "di5"
+  },
+  {
+    "marked": "diàn",
+    "syllable": "dian",
+    "tone": 4,
+    "numbered": "dian4"
+  },
+  {
+    "marked": "diào",
+    "syllable": "diao",
+    "tone": 4,
+    "numbered": "diao4"
+  },
+  {
+    "marked": "dián",
+    "syllable": "dian",
+    "tone": 2,
+    "numbered": "dian2"
+  },
+  {
+    "marked": "diè",
+    "syllable": "die",
+    "tone": 4,
+    "numbered": "die4"
+  },
+  {
+    "marked": "dié",
+    "syllable": "die",
+    "tone": 2,
+    "numbered": "die2"
+  },
+  {
+    "marked": "diān",
+    "syllable": "dian",
+    "tone": 1,
+    "numbered": "dian1"
+  },
+  {
+    "marked": "diāo",
+    "syllable": "diao",
+    "tone": 1,
+    "numbered": "diao1"
+  },
+  {
+    "marked": "diē",
+    "syllable": "die",
+    "tone": 1,
+    "numbered": "die1"
+  },
+  {
+    "marked": "diě",
+    "syllable": "die",
+    "tone": 3,
+    "numbered": "die3"
+  },
+  {
+    "marked": "diū",
+    "syllable": "diu",
+    "tone": 1,
+    "numbered": "diu1"
+  },
+  {
+    "marked": "diǎ",
+    "syllable": "dia",
+    "tone": 3,
+    "numbered": "dia3"
+  },
+  {
+    "marked": "diǎn",
+    "syllable": "dian",
+    "tone": 3,
+    "numbered": "dian3"
+  },
+  {
+    "marked": "diǎo",
+    "syllable": "diao",
+    "tone": 3,
+    "numbered": "diao3"
+  },
+  {
+    "marked": "duo",
+    "syllable": "duo",
+    "tone": 5,
+    "numbered": "duo5"
+  },
+  {
+    "marked": "duàn",
+    "syllable": "duan",
+    "tone": 4,
+    "numbered": "duan4"
+  },
+  {
+    "marked": "duì",
+    "syllable": "dui",
+    "tone": 4,
+    "numbered": "dui4"
+  },
+  {
+    "marked": "duò",
+    "syllable": "duo",
+    "tone": 4,
+    "numbered": "duo4"
+  },
+  {
+    "marked": "duó",
+    "syllable": "duo",
+    "tone": 2,
+    "numbered": "duo2"
+  },
+  {
+    "marked": "duān",
+    "syllable": "duan",
+    "tone": 1,
+    "numbered": "duan1"
+  },
+  {
+    "marked": "duī",
+    "syllable": "dui",
+    "tone": 1,
+    "numbered": "dui1"
+  },
+  {
+    "marked": "duō",
+    "syllable": "duo",
+    "tone": 1,
+    "numbered": "duo1"
+  },
+  {
+    "marked": "duǎn",
+    "syllable": "duan",
+    "tone": 3,
+    "numbered": "duan3"
+  },
+  {
+    "marked": "duǐ",
+    "syllable": "dui",
+    "tone": 3,
+    "numbered": "dui3"
+  },
+  {
+    "marked": "duǒ",
+    "syllable": "duo",
+    "tone": 3,
+    "numbered": "duo3"
+  },
+  {
+    "marked": "dà",
+    "syllable": "da",
+    "tone": 4,
+    "numbered": "da4"
+  },
+  {
+    "marked": "dài",
+    "syllable": "dai",
+    "tone": 4,
+    "numbered": "dai4"
+  },
+  {
+    "marked": "dàn",
+    "syllable": "dan",
+    "tone": 4,
+    "numbered": "dan4"
+  },
+  {
+    "marked": "dàng",
+    "syllable": "dang",
+    "tone": 4,
+    "numbered": "dang4"
+  },
+  {
+    "marked": "dào",
+    "syllable": "dao",
+    "tone": 4,
+    "numbered": "dao4"
+  },
+  {
+    "marked": "dá",
+    "syllable": "da",
+    "tone": 2,
+    "numbered": "da2"
+  },
+  {
+    "marked": "dáo",
+    "syllable": "dao",
+    "tone": 2,
+    "numbered": "dao2"
+  },
+  {
+    "marked": "dèn",
+    "syllable": "den",
+    "tone": 4,
+    "numbered": "den4"
+  },
+  {
+    "marked": "dèng",
+    "syllable": "deng",
+    "tone": 4,
+    "numbered": "deng4"
+  },
+  {
+    "marked": "dé",
+    "syllable": "de",
+    "tone": 2,
+    "numbered": "de2"
+  },
+  {
+    "marked": "dì",
+    "syllable": "di",
+    "tone": 4,
+    "numbered": "di4"
+  },
+  {
+    "marked": "dìn",
+    "syllable": "din",
+    "tone": 4,
+    "numbered": "din4"
+  },
+  {
+    "marked": "dìng",
+    "syllable": "ding",
+    "tone": 4,
+    "numbered": "ding4"
+  },
+  {
+    "marked": "dí",
+    "syllable": "di",
+    "tone": 2,
+    "numbered": "di2"
+  },
+  {
+    "marked": "dòng",
+    "syllable": "dong",
+    "tone": 4,
+    "numbered": "dong4"
+  },
+  {
+    "marked": "dòu",
+    "syllable": "dou",
+    "tone": 4,
+    "numbered": "dou4"
+  },
+  {
+    "marked": "dù",
+    "syllable": "du",
+    "tone": 4,
+    "numbered": "du4"
+  },
+  {
+    "marked": "dùn",
+    "syllable": "dun",
+    "tone": 4,
+    "numbered": "dun4"
+  },
+  {
+    "marked": "dú",
+    "syllable": "du",
+    "tone": 2,
+    "numbered": "du2"
+  },
+  {
+    "marked": "dā",
+    "syllable": "da",
+    "tone": 1,
+    "numbered": "da1"
+  },
+  {
+    "marked": "dāi",
+    "syllable": "dai",
+    "tone": 1,
+    "numbered": "dai1"
+  },
+  {
+    "marked": "dān",
+    "syllable": "dan",
+    "tone": 1,
+    "numbered": "dan1"
+  },
+  {
+    "marked": "dāng",
+    "syllable": "dang",
+    "tone": 1,
+    "numbered": "dang1"
+  },
+  {
+    "marked": "dāo",
+    "syllable": "dao",
+    "tone": 1,
+    "numbered": "dao1"
+  },
+  {
+    "marked": "dē",
+    "syllable": "de",
+    "tone": 1,
+    "numbered": "de1"
+  },
+  {
+    "marked": "dēi",
+    "syllable": "dei",
+    "tone": 1,
+    "numbered": "dei1"
+  },
+  {
+    "marked": "dēng",
+    "syllable": "deng",
+    "tone": 1,
+    "numbered": "deng1"
+  },
+  {
+    "marked": "děi",
+    "syllable": "dei",
+    "tone": 3,
+    "numbered": "dei3"
+  },
+  {
+    "marked": "děng",
+    "syllable": "deng",
+    "tone": 3,
+    "numbered": "deng3"
+  },
+  {
+    "marked": "dī",
+    "syllable": "di",
+    "tone": 1,
+    "numbered": "di1"
+  },
+  {
+    "marked": "dīng",
+    "syllable": "ding",
+    "tone": 1,
+    "numbered": "ding1"
+  },
+  {
+    "marked": "dōng",
+    "syllable": "dong",
+    "tone": 1,
+    "numbered": "dong1"
+  },
+  {
+    "marked": "dōu",
+    "syllable": "dou",
+    "tone": 1,
+    "numbered": "dou1"
+  },
+  {
+    "marked": "dū",
+    "syllable": "du",
+    "tone": 1,
+    "numbered": "du1"
+  },
+  {
+    "marked": "dūn",
+    "syllable": "dun",
+    "tone": 1,
+    "numbered": "dun1"
+  },
+  {
+    "marked": "dǎ",
+    "syllable": "da",
+    "tone": 3,
+    "numbered": "da3"
+  },
+  {
+    "marked": "dǎi",
+    "syllable": "dai",
+    "tone": 3,
+    "numbered": "dai3"
+  },
+  {
+    "marked": "dǎn",
+    "syllable": "dan",
+    "tone": 3,
+    "numbered": "dan3"
+  },
+  {
+    "marked": "dǎng",
+    "syllable": "dang",
+    "tone": 3,
+    "numbered": "dang3"
+  },
+  {
+    "marked": "dǎo",
+    "syllable": "dao",
+    "tone": 3,
+    "numbered": "dao3"
+  },
+  {
+    "marked": "dǐ",
+    "syllable": "di",
+    "tone": 3,
+    "numbered": "di3"
+  },
+  {
+    "marked": "dǐng",
+    "syllable": "ding",
+    "tone": 3,
+    "numbered": "ding3"
+  },
+  {
+    "marked": "dǒng",
+    "syllable": "dong",
+    "tone": 3,
+    "numbered": "dong3"
+  },
+  {
+    "marked": "dǒu",
+    "syllable": "dou",
+    "tone": 3,
+    "numbered": "dou3"
+  },
+  {
+    "marked": "dǔ",
+    "syllable": "du",
+    "tone": 3,
+    "numbered": "du3"
+  },
+  {
+    "marked": "dǔn",
+    "syllable": "dun",
+    "tone": 3,
+    "numbered": "dun3"
+  },
+  {
+    "marked": "e",
+    "syllable": "e",
+    "tone": 5,
+    "numbered": "e5"
+  },
+  {
+    "marked": "er",
+    "syllable": "er",
+    "tone": 5,
+    "numbered": "er5"
+  },
+  {
+    "marked": "fa",
+    "syllable": "fa",
+    "tone": 5,
+    "numbered": "fa5"
+  },
+  {
+    "marked": "fang",
+    "syllable": "fang",
+    "tone": 5,
+    "numbered": "fang5"
+  },
+  {
+    "marked": "fiào",
+    "syllable": "fiao",
+    "tone": 4,
+    "numbered": "fiao4"
+  },
+  {
+    "marked": "fu",
+    "syllable": "fu",
+    "tone": 5,
+    "numbered": "fu5"
+  },
+  {
+    "marked": "fà",
+    "syllable": "fa",
+    "tone": 4,
+    "numbered": "fa4"
+  },
+  {
+    "marked": "fàn",
+    "syllable": "fan",
+    "tone": 4,
+    "numbered": "fan4"
+  },
+  {
+    "marked": "fàng",
+    "syllable": "fang",
+    "tone": 4,
+    "numbered": "fang4"
+  },
+  {
+    "marked": "fá",
+    "syllable": "fa",
+    "tone": 2,
+    "numbered": "fa2"
+  },
+  {
+    "marked": "fán",
+    "syllable": "fan",
+    "tone": 2,
+    "numbered": "fan2"
+  },
+  {
+    "marked": "fáng",
+    "syllable": "fang",
+    "tone": 2,
+    "numbered": "fang2"
+  },
+  {
+    "marked": "fèi",
+    "syllable": "fei",
+    "tone": 4,
+    "numbered": "fei4"
+  },
+  {
+    "marked": "fèn",
+    "syllable": "fen",
+    "tone": 4,
+    "numbered": "fen4"
+  },
+  {
+    "marked": "fèng",
+    "syllable": "feng",
+    "tone": 4,
+    "numbered": "feng4"
+  },
+  {
+    "marked": "féi",
+    "syllable": "fei",
+    "tone": 2,
+    "numbered": "fei2"
+  },
+  {
+    "marked": "fén",
+    "syllable": "fen",
+    "tone": 2,
+    "numbered": "fen2"
+  },
+  {
+    "marked": "féng",
+    "syllable": "feng",
+    "tone": 2,
+    "numbered": "feng2"
+  },
+  {
+    "marked": "fó",
+    "syllable": "fo",
+    "tone": 2,
+    "numbered": "fo2"
+  },
+  {
+    "marked": "fóu",
+    "syllable": "fou",
+    "tone": 2,
+    "numbered": "fou2"
+  },
+  {
+    "marked": "fù",
+    "syllable": "fu",
+    "tone": 4,
+    "numbered": "fu4"
+  },
+  {
+    "marked": "fú",
+    "syllable": "fu",
+    "tone": 2,
+    "numbered": "fu2"
+  },
+  {
+    "marked": "fā",
+    "syllable": "fa",
+    "tone": 1,
+    "numbered": "fa1"
+  },
+  {
+    "marked": "fān",
+    "syllable": "fan",
+    "tone": 1,
+    "numbered": "fan1"
+  },
+  {
+    "marked": "fāng",
+    "syllable": "fang",
+    "tone": 1,
+    "numbered": "fang1"
+  },
+  {
+    "marked": "fēi",
+    "syllable": "fei",
+    "tone": 1,
+    "numbered": "fei1"
+  },
+  {
+    "marked": "fēn",
+    "syllable": "fen",
+    "tone": 1,
+    "numbered": "fen1"
+  },
+  {
+    "marked": "fēng",
+    "syllable": "feng",
+    "tone": 1,
+    "numbered": "feng1"
+  },
+  {
+    "marked": "fěi",
+    "syllable": "fei",
+    "tone": 3,
+    "numbered": "fei3"
+  },
+  {
+    "marked": "fěn",
+    "syllable": "fen",
+    "tone": 3,
+    "numbered": "fen3"
+  },
+  {
+    "marked": "fěng",
+    "syllable": "feng",
+    "tone": 3,
+    "numbered": "feng3"
+  },
+  {
+    "marked": "fōu",
+    "syllable": "fou",
+    "tone": 1,
+    "numbered": "fou1"
+  },
+  {
+    "marked": "fū",
+    "syllable": "fu",
+    "tone": 1,
+    "numbered": "fu1"
+  },
+  {
+    "marked": "fǎ",
+    "syllable": "fa",
+    "tone": 3,
+    "numbered": "fa3"
+  },
+  {
+    "marked": "fǎn",
+    "syllable": "fan",
+    "tone": 3,
+    "numbered": "fan3"
+  },
+  {
+    "marked": "fǎng",
+    "syllable": "fang",
+    "tone": 3,
+    "numbered": "fang3"
+  },
+  {
+    "marked": "fǒu",
+    "syllable": "fou",
+    "tone": 3,
+    "numbered": "fou3"
+  },
+  {
+    "marked": "fǔ",
+    "syllable": "fu",
+    "tone": 3,
+    "numbered": "fu3"
+  },
+  {
+    "marked": "ge",
+    "syllable": "ge",
+    "tone": 5,
+    "numbered": "ge5"
+  },
+  {
+    "marked": "gong",
+    "syllable": "gong",
+    "tone": 5,
+    "numbered": "gong5"
+  },
+  {
+    "marked": "gu",
+    "syllable": "gu",
+    "tone": 5,
+    "numbered": "gu5"
+  },
+  {
+    "marked": "guang",
+    "syllable": "guang",
+    "tone": 5,
+    "numbered": "guang5"
+  },
+  {
+    "marked": "guo",
+    "syllable": "guo",
+    "tone": 5,
+    "numbered": "guo5"
+  },
+  {
+    "marked": "guà",
+    "syllable": "gua",
+    "tone": 4,
+    "numbered": "gua4"
+  },
+  {
+    "marked": "guài",
+    "syllable": "guai",
+    "tone": 4,
+    "numbered": "guai4"
+  },
+  {
+    "marked": "guàn",
+    "syllable": "guan",
+    "tone": 4,
+    "numbered": "guan4"
+  },
+  {
+    "marked": "guàng",
+    "syllable": "guang",
+    "tone": 4,
+    "numbered": "guang4"
+  },
+  {
+    "marked": "guá",
+    "syllable": "gua",
+    "tone": 2,
+    "numbered": "gua2"
+  },
+  {
+    "marked": "guì",
+    "syllable": "gui",
+    "tone": 4,
+    "numbered": "gui4"
+  },
+  {
+    "marked": "guò",
+    "syllable": "guo",
+    "tone": 4,
+    "numbered": "guo4"
+  },
+  {
+    "marked": "guó",
+    "syllable": "guo",
+    "tone": 2,
+    "numbered": "guo2"
+  },
+  {
+    "marked": "guā",
+    "syllable": "gua",
+    "tone": 1,
+    "numbered": "gua1"
+  },
+  {
+    "marked": "guāi",
+    "syllable": "guai",
+    "tone": 1,
+    "numbered": "guai1"
+  },
+  {
+    "marked": "guān",
+    "syllable": "guan",
+    "tone": 1,
+    "numbered": "guan1"
+  },
+  {
+    "marked": "guāng",
+    "syllable": "guang",
+    "tone": 1,
+    "numbered": "guang1"
+  },
+  {
+    "marked": "guī",
+    "syllable": "gui",
+    "tone": 1,
+    "numbered": "gui1"
+  },
+  {
+    "marked": "guō",
+    "syllable": "guo",
+    "tone": 1,
+    "numbered": "guo1"
+  },
+  {
+    "marked": "guǎ",
+    "syllable": "gua",
+    "tone": 3,
+    "numbered": "gua3"
+  },
+  {
+    "marked": "guǎi",
+    "syllable": "guai",
+    "tone": 3,
+    "numbered": "guai3"
+  },
+  {
+    "marked": "guǎn",
+    "syllable": "guan",
+    "tone": 3,
+    "numbered": "guan3"
+  },
+  {
+    "marked": "guǎng",
+    "syllable": "guang",
+    "tone": 3,
+    "numbered": "guang3"
+  },
+  {
+    "marked": "guǐ",
+    "syllable": "gui",
+    "tone": 3,
+    "numbered": "gui3"
+  },
+  {
+    "marked": "guǒ",
+    "syllable": "guo",
+    "tone": 3,
+    "numbered": "guo3"
+  },
+  {
+    "marked": "gà",
+    "syllable": "ga",
+    "tone": 4,
+    "numbered": "ga4"
+  },
+  {
+    "marked": "gài",
+    "syllable": "gai",
+    "tone": 4,
+    "numbered": "gai4"
+  },
+  {
+    "marked": "gàn",
+    "syllable": "gan",
+    "tone": 4,
+    "numbered": "gan4"
+  },
+  {
+    "marked": "gàng",
+    "syllable": "gang",
+    "tone": 4,
+    "numbered": "gang4"
+  },
+  {
+    "marked": "gào",
+    "syllable": "gao",
+    "tone": 4,
+    "numbered": "gao4"
+  },
+  {
+    "marked": "gá",
+    "syllable": "ga",
+    "tone": 2,
+    "numbered": "ga2"
+  },
+  {
+    "marked": "gè",
+    "syllable": "ge",
+    "tone": 4,
+    "numbered": "ge4"
+  },
+  {
+    "marked": "gèn",
+    "syllable": "gen",
+    "tone": 4,
+    "numbered": "gen4"
+  },
+  {
+    "marked": "gèng",
+    "syllable": "geng",
+    "tone": 4,
+    "numbered": "geng4"
+  },
+  {
+    "marked": "gé",
+    "syllable": "ge",
+    "tone": 2,
+    "numbered": "ge2"
+  },
+  {
+    "marked": "gén",
+    "syllable": "gen",
+    "tone": 2,
+    "numbered": "gen2"
+  },
+  {
+    "marked": "gòng",
+    "syllable": "gong",
+    "tone": 4,
+    "numbered": "gong4"
+  },
+  {
+    "marked": "gòu",
+    "syllable": "gou",
+    "tone": 4,
+    "numbered": "gou4"
+  },
+  {
+    "marked": "gù",
+    "syllable": "gu",
+    "tone": 4,
+    "numbered": "gu4"
+  },
+  {
+    "marked": "gùn",
+    "syllable": "gun",
+    "tone": 4,
+    "numbered": "gun4"
+  },
+  {
+    "marked": "gú",
+    "syllable": "gu",
+    "tone": 2,
+    "numbered": "gu2"
+  },
+  {
+    "marked": "gā",
+    "syllable": "ga",
+    "tone": 1,
+    "numbered": "ga1"
+  },
+  {
+    "marked": "gāi",
+    "syllable": "gai",
+    "tone": 1,
+    "numbered": "gai1"
+  },
+  {
+    "marked": "gān",
+    "syllable": "gan",
+    "tone": 1,
+    "numbered": "gan1"
+  },
+  {
+    "marked": "gāng",
+    "syllable": "gang",
+    "tone": 1,
+    "numbered": "gang1"
+  },
+  {
+    "marked": "gāo",
+    "syllable": "gao",
+    "tone": 1,
+    "numbered": "gao1"
+  },
+  {
+    "marked": "gē",
+    "syllable": "ge",
+    "tone": 1,
+    "numbered": "ge1"
+  },
+  {
+    "marked": "gēn",
+    "syllable": "gen",
+    "tone": 1,
+    "numbered": "gen1"
+  },
+  {
+    "marked": "gēng",
+    "syllable": "geng",
+    "tone": 1,
+    "numbered": "geng1"
+  },
+  {
+    "marked": "gě",
+    "syllable": "ge",
+    "tone": 3,
+    "numbered": "ge3"
+  },
+  {
+    "marked": "gěi",
+    "syllable": "gei",
+    "tone": 3,
+    "numbered": "gei3"
+  },
+  {
+    "marked": "gěn",
+    "syllable": "gen",
+    "tone": 3,
+    "numbered": "gen3"
+  },
+  {
+    "marked": "gěng",
+    "syllable": "geng",
+    "tone": 3,
+    "numbered": "geng3"
+  },
+  {
+    "marked": "gōng",
+    "syllable": "gong",
+    "tone": 1,
+    "numbered": "gong1"
+  },
+  {
+    "marked": "gōu",
+    "syllable": "gou",
+    "tone": 1,
+    "numbered": "gou1"
+  },
+  {
+    "marked": "gū",
+    "syllable": "gu",
+    "tone": 1,
+    "numbered": "gu1"
+  },
+  {
+    "marked": "gǎ",
+    "syllable": "ga",
+    "tone": 3,
+    "numbered": "ga3"
+  },
+  {
+    "marked": "gǎi",
+    "syllable": "gai",
+    "tone": 3,
+    "numbered": "gai3"
+  },
+  {
+    "marked": "gǎn",
+    "syllable": "gan",
+    "tone": 3,
+    "numbered": "gan3"
+  },
+  {
+    "marked": "gǎng",
+    "syllable": "gang",
+    "tone": 3,
+    "numbered": "gang3"
+  },
+  {
+    "marked": "gǎo",
+    "syllable": "gao",
+    "tone": 3,
+    "numbered": "gao3"
+  },
+  {
+    "marked": "gǒng",
+    "syllable": "gong",
+    "tone": 3,
+    "numbered": "gong3"
+  },
+  {
+    "marked": "gǒu",
+    "syllable": "gou",
+    "tone": 3,
+    "numbered": "gou3"
+  },
+  {
+    "marked": "gǔ",
+    "syllable": "gu",
+    "tone": 3,
+    "numbered": "gu3"
+  },
+  {
+    "marked": "gǔn",
+    "syllable": "gun",
+    "tone": 3,
+    "numbered": "gun3"
+  },
+  {
+    "marked": "hai",
+    "syllable": "hai",
+    "tone": 5,
+    "numbered": "hai5"
+  },
+  {
+    "marked": "han",
+    "syllable": "han",
+    "tone": 5,
+    "numbered": "han5"
+  },
+  {
+    "marked": "hm",
+    "syllable": "hm",
+    "tone": 5,
+    "numbered": "hm5"
+  },
+  {
+    "marked": "hng",
+    "syllable": "hng",
+    "tone": 5,
+    "numbered": "hng5"
+  },
+  {
+    "marked": "hu",
+    "syllable": "hu",
+    "tone": 5,
+    "numbered": "hu5"
+  },
+  {
+    "marked": "huai",
+    "syllable": "huai",
+    "tone": 5,
+    "numbered": "huai5"
+  },
+  {
+    "marked": "huang",
+    "syllable": "huang",
+    "tone": 5,
+    "numbered": "huang5"
+  },
+  {
+    "marked": "hui",
+    "syllable": "hui",
+    "tone": 5,
+    "numbered": "hui5"
+  },
+  {
+    "marked": "huo",
+    "syllable": "huo",
+    "tone": 5,
+    "numbered": "huo5"
+  },
+  {
+    "marked": "huà",
+    "syllable": "hua",
+    "tone": 4,
+    "numbered": "hua4"
+  },
+  {
+    "marked": "huài",
+    "syllable": "huai",
+    "tone": 4,
+    "numbered": "huai4"
+  },
+  {
+    "marked": "huàn",
+    "syllable": "huan",
+    "tone": 4,
+    "numbered": "huan4"
+  },
+  {
+    "marked": "huàng",
+    "syllable": "huang",
+    "tone": 4,
+    "numbered": "huang4"
+  },
+  {
+    "marked": "huá",
+    "syllable": "hua",
+    "tone": 2,
+    "numbered": "hua2"
+  },
+  {
+    "marked": "huái",
+    "syllable": "huai",
+    "tone": 2,
+    "numbered": "huai2"
+  },
+  {
+    "marked": "huán",
+    "syllable": "huan",
+    "tone": 2,
+    "numbered": "huan2"
+  },
+  {
+    "marked": "huáng",
+    "syllable": "huang",
+    "tone": 2,
+    "numbered": "huang2"
+  },
+  {
+    "marked": "huì",
+    "syllable": "hui",
+    "tone": 4,
+    "numbered": "hui4"
+  },
+  {
+    "marked": "huí",
+    "syllable": "hui",
+    "tone": 2,
+    "numbered": "hui2"
+  },
+  {
+    "marked": "huò",
+    "syllable": "huo",
+    "tone": 4,
+    "numbered": "huo4"
+  },
+  {
+    "marked": "huó",
+    "syllable": "huo",
+    "tone": 2,
+    "numbered": "huo2"
+  },
+  {
+    "marked": "huā",
+    "syllable": "hua",
+    "tone": 1,
+    "numbered": "hua1"
+  },
+  {
+    "marked": "huān",
+    "syllable": "huan",
+    "tone": 1,
+    "numbered": "huan1"
+  },
+  {
+    "marked": "huāng",
+    "syllable": "huang",
+    "tone": 1,
+    "numbered": "huang1"
+  },
+  {
+    "marked": "huī",
+    "syllable": "hui",
+    "tone": 1,
+    "numbered": "hui1"
+  },
+  {
+    "marked": "huō",
+    "syllable": "huo",
+    "tone": 1,
+    "numbered": "huo1"
+  },
+  {
+    "marked": "huǎn",
+    "syllable": "huan",
+    "tone": 3,
+    "numbered": "huan3"
+  },
+  {
+    "marked": "huǎng",
+    "syllable": "huang",
+    "tone": 3,
+    "numbered": "huang3"
+  },
+  {
+    "marked": "huǐ",
+    "syllable": "hui",
+    "tone": 3,
+    "numbered": "hui3"
+  },
+  {
+    "marked": "huǒ",
+    "syllable": "huo",
+    "tone": 3,
+    "numbered": "huo3"
+  },
+  {
+    "marked": "hà",
+    "syllable": "ha",
+    "tone": 4,
+    "numbered": "ha4"
+  },
+  {
+    "marked": "hài",
+    "syllable": "hai",
+    "tone": 4,
+    "numbered": "hai4"
+  },
+  {
+    "marked": "hàn",
+    "syllable": "han",
+    "tone": 4,
+    "numbered": "han4"
+  },
+  {
+    "marked": "hàng",
+    "syllable": "hang",
+    "tone": 4,
+    "numbered": "hang4"
+  },
+  {
+    "marked": "hào",
+    "syllable": "hao",
+    "tone": 4,
+    "numbered": "hao4"
+  },
+  {
+    "marked": "há",
+    "syllable": "ha",
+    "tone": 2,
+    "numbered": "ha2"
+  },
+  {
+    "marked": "hái",
+    "syllable": "hai",
+    "tone": 2,
+    "numbered": "hai2"
+  },
+  {
+    "marked": "hán",
+    "syllable": "han",
+    "tone": 2,
+    "numbered": "han2"
+  },
+  {
+    "marked": "háng",
+    "syllable": "hang",
+    "tone": 2,
+    "numbered": "hang2"
+  },
+  {
+    "marked": "háo",
+    "syllable": "hao",
+    "tone": 2,
+    "numbered": "hao2"
+  },
+  {
+    "marked": "hè",
+    "syllable": "he",
+    "tone": 4,
+    "numbered": "he4"
+  },
+  {
+    "marked": "hèn",
+    "syllable": "hen",
+    "tone": 4,
+    "numbered": "hen4"
+  },
+  {
+    "marked": "hèng",
+    "syllable": "heng",
+    "tone": 4,
+    "numbered": "heng4"
+  },
+  {
+    "marked": "hé",
+    "syllable": "he",
+    "tone": 2,
+    "numbered": "he2"
+  },
+  {
+    "marked": "hén",
+    "syllable": "hen",
+    "tone": 2,
+    "numbered": "hen2"
+  },
+  {
+    "marked": "héng",
+    "syllable": "heng",
+    "tone": 2,
+    "numbered": "heng2"
+  },
+  {
+    "marked": "hòng",
+    "syllable": "hong",
+    "tone": 4,
+    "numbered": "hong4"
+  },
+  {
+    "marked": "hòu",
+    "syllable": "hou",
+    "tone": 4,
+    "numbered": "hou4"
+  },
+  {
+    "marked": "hóng",
+    "syllable": "hong",
+    "tone": 2,
+    "numbered": "hong2"
+  },
+  {
+    "marked": "hóu",
+    "syllable": "hou",
+    "tone": 2,
+    "numbered": "hou2"
+  },
+  {
+    "marked": "hù",
+    "syllable": "hu",
+    "tone": 4,
+    "numbered": "hu4"
+  },
+  {
+    "marked": "hùn",
+    "syllable": "hun",
+    "tone": 4,
+    "numbered": "hun4"
+  },
+  {
+    "marked": "hú",
+    "syllable": "hu",
+    "tone": 2,
+    "numbered": "hu2"
+  },
+  {
+    "marked": "hún",
+    "syllable": "hun",
+    "tone": 2,
+    "numbered": "hun2"
+  },
+  {
+    "marked": "hā",
+    "syllable": "ha",
+    "tone": 1,
+    "numbered": "ha1"
+  },
+  {
+    "marked": "hāi",
+    "syllable": "hai",
+    "tone": 1,
+    "numbered": "hai1"
+  },
+  {
+    "marked": "hān",
+    "syllable": "han",
+    "tone": 1,
+    "numbered": "han1"
+  },
+  {
+    "marked": "hāng",
+    "syllable": "hang",
+    "tone": 1,
+    "numbered": "hang1"
+  },
+  {
+    "marked": "hāo",
+    "syllable": "hao",
+    "tone": 1,
+    "numbered": "hao1"
+  },
+  {
+    "marked": "hē",
+    "syllable": "he",
+    "tone": 1,
+    "numbered": "he1"
+  },
+  {
+    "marked": "hēi",
+    "syllable": "hei",
+    "tone": 1,
+    "numbered": "hei1"
+  },
+  {
+    "marked": "hēn",
+    "syllable": "hen",
+    "tone": 1,
+    "numbered": "hen1"
+  },
+  {
+    "marked": "hēng",
+    "syllable": "heng",
+    "tone": 1,
+    "numbered": "heng1"
+  },
+  {
+    "marked": "hě",
+    "syllable": "he",
+    "tone": 3,
+    "numbered": "he3"
+  },
+  {
+    "marked": "hěn",
+    "syllable": "hen",
+    "tone": 3,
+    "numbered": "hen3"
+  },
+  {
+    "marked": "hōng",
+    "syllable": "hong",
+    "tone": 1,
+    "numbered": "hong1"
+  },
+  {
+    "marked": "hōu",
+    "syllable": "hou",
+    "tone": 1,
+    "numbered": "hou1"
+  },
+  {
+    "marked": "hū",
+    "syllable": "hu",
+    "tone": 1,
+    "numbered": "hu1"
+  },
+  {
+    "marked": "hūn",
+    "syllable": "hun",
+    "tone": 1,
+    "numbered": "hun1"
+  },
+  {
+    "marked": "hǎ",
+    "syllable": "ha",
+    "tone": 3,
+    "numbered": "ha3"
+  },
+  {
+    "marked": "hǎi",
+    "syllable": "hai",
+    "tone": 3,
+    "numbered": "hai3"
+  },
+  {
+    "marked": "hǎn",
+    "syllable": "han",
+    "tone": 3,
+    "numbered": "han3"
+  },
+  {
+    "marked": "hǎng",
+    "syllable": "hang",
+    "tone": 3,
+    "numbered": "hang3"
+  },
+  {
+    "marked": "hǎo",
+    "syllable": "hao",
+    "tone": 3,
+    "numbered": "hao3"
+  },
+  {
+    "marked": "hǒng",
+    "syllable": "hong",
+    "tone": 3,
+    "numbered": "hong3"
+  },
+  {
+    "marked": "hǒu",
+    "syllable": "hou",
+    "tone": 3,
+    "numbered": "hou3"
+  },
+  {
+    "marked": "hǔ",
+    "syllable": "hu",
+    "tone": 3,
+    "numbered": "hu3"
+  },
+  {
+    "marked": "hǔn",
+    "syllable": "hun",
+    "tone": 3,
+    "numbered": "hun3"
+  },
+  {
+    "marked": "jia",
+    "syllable": "jia",
+    "tone": 5,
+    "numbered": "jia5"
+  },
+  {
+    "marked": "jian",
+    "syllable": "jian",
+    "tone": 5,
+    "numbered": "jian5"
+  },
+  {
+    "marked": "jiao",
+    "syllable": "jiao",
+    "tone": 5,
+    "numbered": "jiao5"
+  },
+  {
+    "marked": "jie",
+    "syllable": "jie",
+    "tone": 5,
+    "numbered": "jie5"
+  },
+  {
+    "marked": "jing",
+    "syllable": "jing",
+    "tone": 5,
+    "numbered": "jing5"
+  },
+  {
+    "marked": "jiu",
+    "syllable": "jiu",
+    "tone": 5,
+    "numbered": "jiu5"
+  },
+  {
+    "marked": "jià",
+    "syllable": "jia",
+    "tone": 4,
+    "numbered": "jia4"
+  },
+  {
+    "marked": "jiàn",
+    "syllable": "jian",
+    "tone": 4,
+    "numbered": "jian4"
+  },
+  {
+    "marked": "jiàng",
+    "syllable": "jiang",
+    "tone": 4,
+    "numbered": "jiang4"
+  },
+  {
+    "marked": "jiào",
+    "syllable": "jiao",
+    "tone": 4,
+    "numbered": "jiao4"
+  },
+  {
+    "marked": "jiá",
+    "syllable": "jia",
+    "tone": 2,
+    "numbered": "jia2"
+  },
+  {
+    "marked": "jiáo",
+    "syllable": "jiao",
+    "tone": 2,
+    "numbered": "jiao2"
+  },
+  {
+    "marked": "jiè",
+    "syllable": "jie",
+    "tone": 4,
+    "numbered": "jie4"
+  },
+  {
+    "marked": "jié",
+    "syllable": "jie",
+    "tone": 2,
+    "numbered": "jie2"
+  },
+  {
+    "marked": "jiòng",
+    "syllable": "jiong",
+    "tone": 4,
+    "numbered": "jiong4"
+  },
+  {
+    "marked": "jiù",
+    "syllable": "jiu",
+    "tone": 4,
+    "numbered": "jiu4"
+  },
+  {
+    "marked": "jiú",
+    "syllable": "jiu",
+    "tone": 2,
+    "numbered": "jiu2"
+  },
+  {
+    "marked": "jiā",
+    "syllable": "jia",
+    "tone": 1,
+    "numbered": "jia1"
+  },
+  {
+    "marked": "jiān",
+    "syllable": "jian",
+    "tone": 1,
+    "numbered": "jian1"
+  },
+  {
+    "marked": "jiāng",
+    "syllable": "jiang",
+    "tone": 1,
+    "numbered": "jiang1"
+  },
+  {
+    "marked": "jiāo",
+    "syllable": "jiao",
+    "tone": 1,
+    "numbered": "jiao1"
+  },
+  {
+    "marked": "jiē",
+    "syllable": "jie",
+    "tone": 1,
+    "numbered": "jie1"
+  },
+  {
+    "marked": "jiě",
+    "syllable": "jie",
+    "tone": 3,
+    "numbered": "jie3"
+  },
+  {
+    "marked": "jiōng",
+    "syllable": "jiong",
+    "tone": 1,
+    "numbered": "jiong1"
+  },
+  {
+    "marked": "jiū",
+    "syllable": "jiu",
+    "tone": 1,
+    "numbered": "jiu1"
+  },
+  {
+    "marked": "jiǎ",
+    "syllable": "jia",
+    "tone": 3,
+    "numbered": "jia3"
+  },
+  {
+    "marked": "jiǎn",
+    "syllable": "jian",
+    "tone": 3,
+    "numbered": "jian3"
+  },
+  {
+    "marked": "jiǎng",
+    "syllable": "jiang",
+    "tone": 3,
+    "numbered": "jiang3"
+  },
+  {
+    "marked": "jiǎo",
+    "syllable": "jiao",
+    "tone": 3,
+    "numbered": "jiao3"
+  },
+  {
+    "marked": "jiǒng",
+    "syllable": "jiong",
+    "tone": 3,
+    "numbered": "jiong3"
+  },
+  {
+    "marked": "jiǔ",
+    "syllable": "jiu",
+    "tone": 3,
+    "numbered": "jiu3"
+  },
+  {
+    "marked": "ju",
+    "syllable": "ju",
+    "tone": 5,
+    "numbered": "ju5"
+  },
+  {
+    "marked": "juàn",
+    "syllable": "juan",
+    "tone": 4,
+    "numbered": "juan4"
+  },
+  {
+    "marked": "juè",
+    "syllable": "jue",
+    "tone": 4,
+    "numbered": "jue4"
+  },
+  {
+    "marked": "jué",
+    "syllable": "jue",
+    "tone": 2,
+    "numbered": "jue2"
+  },
+  {
+    "marked": "juān",
+    "syllable": "juan",
+    "tone": 1,
+    "numbered": "juan1"
+  },
+  {
+    "marked": "juē",
+    "syllable": "jue",
+    "tone": 1,
+    "numbered": "jue1"
+  },
+  {
+    "marked": "juě",
+    "syllable": "jue",
+    "tone": 3,
+    "numbered": "jue3"
+  },
+  {
+    "marked": "juǎn",
+    "syllable": "juan",
+    "tone": 3,
+    "numbered": "juan3"
+  },
+  {
+    "marked": "jì",
+    "syllable": "ji",
+    "tone": 4,
+    "numbered": "ji4"
+  },
+  {
+    "marked": "jìn",
+    "syllable": "jin",
+    "tone": 4,
+    "numbered": "jin4"
+  },
+  {
+    "marked": "jìng",
+    "syllable": "jing",
+    "tone": 4,
+    "numbered": "jing4"
+  },
+  {
+    "marked": "jí",
+    "syllable": "ji",
+    "tone": 2,
+    "numbered": "ji2"
+  },
+  {
+    "marked": "jù",
+    "syllable": "ju",
+    "tone": 4,
+    "numbered": "ju4"
+  },
+  {
+    "marked": "jùn",
+    "syllable": "jun",
+    "tone": 4,
+    "numbered": "jun4"
+  },
+  {
+    "marked": "jú",
+    "syllable": "ju",
+    "tone": 2,
+    "numbered": "ju2"
+  },
+  {
+    "marked": "jī",
+    "syllable": "ji",
+    "tone": 1,
+    "numbered": "ji1"
+  },
+  {
+    "marked": "jīn",
+    "syllable": "jin",
+    "tone": 1,
+    "numbered": "jin1"
+  },
+  {
+    "marked": "jīng",
+    "syllable": "jing",
+    "tone": 1,
+    "numbered": "jing1"
+  },
+  {
+    "marked": "jū",
+    "syllable": "ju",
+    "tone": 1,
+    "numbered": "ju1"
+  },
+  {
+    "marked": "jūn",
+    "syllable": "jun",
+    "tone": 1,
+    "numbered": "jun1"
+  },
+  {
+    "marked": "jǐ",
+    "syllable": "ji",
+    "tone": 3,
+    "numbered": "ji3"
+  },
+  {
+    "marked": "jǐn",
+    "syllable": "jin",
+    "tone": 3,
+    "numbered": "jin3"
+  },
+  {
+    "marked": "jǐng",
+    "syllable": "jing",
+    "tone": 3,
+    "numbered": "jing3"
+  },
+  {
+    "marked": "jǔ",
+    "syllable": "ju",
+    "tone": 3,
+    "numbered": "ju3"
+  },
+  {
+    "marked": "jǔn",
+    "syllable": "jun",
+    "tone": 3,
+    "numbered": "jun3"
+  },
+  {
+    "marked": "ke",
+    "syllable": "ke",
+    "tone": 5,
+    "numbered": "ke5"
+  },
+  {
+    "marked": "kun",
+    "syllable": "kun",
+    "tone": 5,
+    "numbered": "kun5"
+  },
+  {
+    "marked": "kuà",
+    "syllable": "kua",
+    "tone": 4,
+    "numbered": "kua4"
+  },
+  {
+    "marked": "kuài",
+    "syllable": "kuai",
+    "tone": 4,
+    "numbered": "kuai4"
+  },
+  {
+    "marked": "kuàng",
+    "syllable": "kuang",
+    "tone": 4,
+    "numbered": "kuang4"
+  },
+  {
+    "marked": "kuáng",
+    "syllable": "kuang",
+    "tone": 2,
+    "numbered": "kuang2"
+  },
+  {
+    "marked": "kuì",
+    "syllable": "kui",
+    "tone": 4,
+    "numbered": "kui4"
+  },
+  {
+    "marked": "kuí",
+    "syllable": "kui",
+    "tone": 2,
+    "numbered": "kui2"
+  },
+  {
+    "marked": "kuò",
+    "syllable": "kuo",
+    "tone": 4,
+    "numbered": "kuo4"
+  },
+  {
+    "marked": "kuā",
+    "syllable": "kua",
+    "tone": 1,
+    "numbered": "kua1"
+  },
+  {
+    "marked": "kuān",
+    "syllable": "kuan",
+    "tone": 1,
+    "numbered": "kuan1"
+  },
+  {
+    "marked": "kuāng",
+    "syllable": "kuang",
+    "tone": 1,
+    "numbered": "kuang1"
+  },
+  {
+    "marked": "kuī",
+    "syllable": "kui",
+    "tone": 1,
+    "numbered": "kui1"
+  },
+  {
+    "marked": "kuǎ",
+    "syllable": "kua",
+    "tone": 3,
+    "numbered": "kua3"
+  },
+  {
+    "marked": "kuǎi",
+    "syllable": "kuai",
+    "tone": 3,
+    "numbered": "kuai3"
+  },
+  {
+    "marked": "kuǎn",
+    "syllable": "kuan",
+    "tone": 3,
+    "numbered": "kuan3"
+  },
+  {
+    "marked": "kuǎng",
+    "syllable": "kuang",
+    "tone": 3,
+    "numbered": "kuang3"
+  },
+  {
+    "marked": "kuǐ",
+    "syllable": "kui",
+    "tone": 3,
+    "numbered": "kui3"
+  },
+  {
+    "marked": "kài",
+    "syllable": "kai",
+    "tone": 4,
+    "numbered": "kai4"
+  },
+  {
+    "marked": "kàn",
+    "syllable": "kan",
+    "tone": 4,
+    "numbered": "kan4"
+  },
+  {
+    "marked": "kàng",
+    "syllable": "kang",
+    "tone": 4,
+    "numbered": "kang4"
+  },
+  {
+    "marked": "kào",
+    "syllable": "kao",
+    "tone": 4,
+    "numbered": "kao4"
+  },
+  {
+    "marked": "káng",
+    "syllable": "kang",
+    "tone": 2,
+    "numbered": "kang2"
+  },
+  {
+    "marked": "kè",
+    "syllable": "ke",
+    "tone": 4,
+    "numbered": "ke4"
+  },
+  {
+    "marked": "kèn",
+    "syllable": "ken",
+    "tone": 4,
+    "numbered": "ken4"
+  },
+  {
+    "marked": "ké",
+    "syllable": "ke",
+    "tone": 2,
+    "numbered": "ke2"
+  },
+  {
+    "marked": "kòng",
+    "syllable": "kong",
+    "tone": 4,
+    "numbered": "kong4"
+  },
+  {
+    "marked": "kòu",
+    "syllable": "kou",
+    "tone": 4,
+    "numbered": "kou4"
+  },
+  {
+    "marked": "kù",
+    "syllable": "ku",
+    "tone": 4,
+    "numbered": "ku4"
+  },
+  {
+    "marked": "kùn",
+    "syllable": "kun",
+    "tone": 4,
+    "numbered": "kun4"
+  },
+  {
+    "marked": "kú",
+    "syllable": "ku",
+    "tone": 2,
+    "numbered": "ku2"
+  },
+  {
+    "marked": "kā",
+    "syllable": "ka",
+    "tone": 1,
+    "numbered": "ka1"
+  },
+  {
+    "marked": "kāi",
+    "syllable": "kai",
+    "tone": 1,
+    "numbered": "kai1"
+  },
+  {
+    "marked": "kān",
+    "syllable": "kan",
+    "tone": 1,
+    "numbered": "kan1"
+  },
+  {
+    "marked": "kāng",
+    "syllable": "kang",
+    "tone": 1,
+    "numbered": "kang1"
+  },
+  {
+    "marked": "kāo",
+    "syllable": "kao",
+    "tone": 1,
+    "numbered": "kao1"
+  },
+  {
+    "marked": "kē",
+    "syllable": "ke",
+    "tone": 1,
+    "numbered": "ke1"
+  },
+  {
+    "marked": "kēi",
+    "syllable": "kei",
+    "tone": 1,
+    "numbered": "kei1"
+  },
+  {
+    "marked": "kēn",
+    "syllable": "ken",
+    "tone": 1,
+    "numbered": "ken1"
+  },
+  {
+    "marked": "kēng",
+    "syllable": "keng",
+    "tone": 1,
+    "numbered": "keng1"
+  },
+  {
+    "marked": "kě",
+    "syllable": "ke",
+    "tone": 3,
+    "numbered": "ke3"
+  },
+  {
+    "marked": "kěn",
+    "syllable": "ken",
+    "tone": 3,
+    "numbered": "ken3"
+  },
+  {
+    "marked": "kěng",
+    "syllable": "keng",
+    "tone": 3,
+    "numbered": "keng3"
+  },
+  {
+    "marked": "kōng",
+    "syllable": "kong",
+    "tone": 1,
+    "numbered": "kong1"
+  },
+  {
+    "marked": "kōu",
+    "syllable": "kou",
+    "tone": 1,
+    "numbered": "kou1"
+  },
+  {
+    "marked": "kū",
+    "syllable": "ku",
+    "tone": 1,
+    "numbered": "ku1"
+  },
+  {
+    "marked": "kūn",
+    "syllable": "kun",
+    "tone": 1,
+    "numbered": "kun1"
+  },
+  {
+    "marked": "kǎ",
+    "syllable": "ka",
+    "tone": 3,
+    "numbered": "ka3"
+  },
+  {
+    "marked": "kǎi",
+    "syllable": "kai",
+    "tone": 3,
+    "numbered": "kai3"
+  },
+  {
+    "marked": "kǎn",
+    "syllable": "kan",
+    "tone": 3,
+    "numbered": "kan3"
+  },
+  {
+    "marked": "kǎng",
+    "syllable": "kang",
+    "tone": 3,
+    "numbered": "kang3"
+  },
+  {
+    "marked": "kǎo",
+    "syllable": "kao",
+    "tone": 3,
+    "numbered": "kao3"
+  },
+  {
+    "marked": "kǒng",
+    "syllable": "kong",
+    "tone": 3,
+    "numbered": "kong3"
+  },
+  {
+    "marked": "kǒu",
+    "syllable": "kou",
+    "tone": 3,
+    "numbered": "kou3"
+  },
+  {
+    "marked": "kǔ",
+    "syllable": "ku",
+    "tone": 3,
+    "numbered": "ku3"
+  },
+  {
+    "marked": "kǔn",
+    "syllable": "kun",
+    "tone": 3,
+    "numbered": "kun3"
+  },
+  {
+    "marked": "la",
+    "syllable": "la",
+    "tone": 5,
+    "numbered": "la5"
+  },
+  {
+    "marked": "lang",
+    "syllable": "lang",
+    "tone": 5,
+    "numbered": "lang5"
+  },
+  {
+    "marked": "lao",
+    "syllable": "lao",
+    "tone": 5,
+    "numbered": "lao5"
+  },
+  {
+    "marked": "le",
+    "syllable": "le",
+    "tone": 5,
+    "numbered": "le5"
+  },
+  {
+    "marked": "lei",
+    "syllable": "lei",
+    "tone": 5,
+    "numbered": "lei5"
+  },
+  {
+    "marked": "li",
+    "syllable": "li",
+    "tone": 5,
+    "numbered": "li5"
+  },
+  {
+    "marked": "liang",
+    "syllable": "liang",
+    "tone": 5,
+    "numbered": "liang5"
+  },
+  {
+    "marked": "lie",
+    "syllable": "lie",
+    "tone": 5,
+    "numbered": "lie5"
+  },
+  {
+    "marked": "ling",
+    "syllable": "ling",
+    "tone": 5,
+    "numbered": "ling5"
+  },
+  {
+    "marked": "liàn",
+    "syllable": "lian",
+    "tone": 4,
+    "numbered": "lian4"
+  },
+  {
+    "marked": "liàng",
+    "syllable": "liang",
+    "tone": 4,
+    "numbered": "liang4"
+  },
+  {
+    "marked": "liào",
+    "syllable": "liao",
+    "tone": 4,
+    "numbered": "liao4"
+  },
+  {
+    "marked": "lián",
+    "syllable": "lian",
+    "tone": 2,
+    "numbered": "lian2"
+  },
+  {
+    "marked": "liáng",
+    "syllable": "liang",
+    "tone": 2,
+    "numbered": "liang2"
+  },
+  {
+    "marked": "liáo",
+    "syllable": "liao",
+    "tone": 2,
+    "numbered": "liao2"
+  },
+  {
+    "marked": "liè",
+    "syllable": "lie",
+    "tone": 4,
+    "numbered": "lie4"
+  },
+  {
+    "marked": "lié",
+    "syllable": "lie",
+    "tone": 2,
+    "numbered": "lie2"
+  },
+  {
+    "marked": "liù",
+    "syllable": "liu",
+    "tone": 4,
+    "numbered": "liu4"
+  },
+  {
+    "marked": "liú",
+    "syllable": "liu",
+    "tone": 2,
+    "numbered": "liu2"
+  },
+  {
+    "marked": "liāo",
+    "syllable": "liao",
+    "tone": 1,
+    "numbered": "liao1"
+  },
+  {
+    "marked": "liē",
+    "syllable": "lie",
+    "tone": 1,
+    "numbered": "lie1"
+  },
+  {
+    "marked": "liě",
+    "syllable": "lie",
+    "tone": 3,
+    "numbered": "lie3"
+  },
+  {
+    "marked": "liū",
+    "syllable": "liu",
+    "tone": 1,
+    "numbered": "liu1"
+  },
+  {
+    "marked": "liǎ",
+    "syllable": "lia",
+    "tone": 3,
+    "numbered": "lia3"
+  },
+  {
+    "marked": "liǎn",
+    "syllable": "lian",
+    "tone": 3,
+    "numbered": "lian3"
+  },
+  {
+    "marked": "liǎng",
+    "syllable": "liang",
+    "tone": 3,
+    "numbered": "liang3"
+  },
+  {
+    "marked": "liǎo",
+    "syllable": "liao",
+    "tone": 3,
+    "numbered": "liao3"
+  },
+  {
+    "marked": "liǔ",
+    "syllable": "liu",
+    "tone": 3,
+    "numbered": "liu3"
+  },
+  {
+    "marked": "lo",
+    "syllable": "lo",
+    "tone": 5,
+    "numbered": "lo5"
+  },
+  {
+    "marked": "lou",
+    "syllable": "lou",
+    "tone": 5,
+    "numbered": "lou5"
+  },
+  {
+    "marked": "lu",
+    "syllable": "lu",
+    "tone": 5,
+    "numbered": "lu5"
+  },
+  {
+    "marked": "luo",
+    "syllable": "luo",
+    "tone": 5,
+    "numbered": "luo5"
+  },
+  {
+    "marked": "luàn",
+    "syllable": "luan",
+    "tone": 4,
+    "numbered": "luan4"
+  },
+  {
+    "marked": "luán",
+    "syllable": "luan",
+    "tone": 2,
+    "numbered": "luan2"
+  },
+  {
+    "marked": "luò",
+    "syllable": "luo",
+    "tone": 4,
+    "numbered": "luo4"
+  },
+  {
+    "marked": "luó",
+    "syllable": "luo",
+    "tone": 2,
+    "numbered": "luo2"
+  },
+  {
+    "marked": "luō",
+    "syllable": "luo",
+    "tone": 1,
+    "numbered": "luo1"
+  },
+  {
+    "marked": "luǎn",
+    "syllable": "luan",
+    "tone": 3,
+    "numbered": "luan3"
+  },
+  {
+    "marked": "luǒ",
+    "syllable": "luo",
+    "tone": 3,
+    "numbered": "luo3"
+  },
+  {
+    "marked": "là",
+    "syllable": "la",
+    "tone": 4,
+    "numbered": "la4"
+  },
+  {
+    "marked": "lài",
+    "syllable": "lai",
+    "tone": 4,
+    "numbered": "lai4"
+  },
+  {
+    "marked": "làn",
+    "syllable": "lan",
+    "tone": 4,
+    "numbered": "lan4"
+  },
+  {
+    "marked": "làng",
+    "syllable": "lang",
+    "tone": 4,
+    "numbered": "lang4"
+  },
+  {
+    "marked": "lào",
+    "syllable": "lao",
+    "tone": 4,
+    "numbered": "lao4"
+  },
+  {
+    "marked": "lá",
+    "syllable": "la",
+    "tone": 2,
+    "numbered": "la2"
+  },
+  {
+    "marked": "lái",
+    "syllable": "lai",
+    "tone": 2,
+    "numbered": "lai2"
+  },
+  {
+    "marked": "lán",
+    "syllable": "lan",
+    "tone": 2,
+    "numbered": "lan2"
+  },
+  {
+    "marked": "láng",
+    "syllable": "lang",
+    "tone": 2,
+    "numbered": "lang2"
+  },
+  {
+    "marked": "láo",
+    "syllable": "lao",
+    "tone": 2,
+    "numbered": "lao2"
+  },
+  {
+    "marked": "lè",
+    "syllable": "le",
+    "tone": 4,
+    "numbered": "le4"
+  },
+  {
+    "marked": "lèi",
+    "syllable": "lei",
+    "tone": 4,
+    "numbered": "lei4"
+  },
+  {
+    "marked": "lèn",
+    "syllable": "len",
+    "tone": 4,
+    "numbered": "len4"
+  },
+  {
+    "marked": "lèng",
+    "syllable": "leng",
+    "tone": 4,
+    "numbered": "leng4"
+  },
+  {
+    "marked": "léi",
+    "syllable": "lei",
+    "tone": 2,
+    "numbered": "lei2"
+  },
+  {
+    "marked": "léng",
+    "syllable": "leng",
+    "tone": 2,
+    "numbered": "leng2"
+  },
+  {
+    "marked": "lì",
+    "syllable": "li",
+    "tone": 4,
+    "numbered": "li4"
+  },
+  {
+    "marked": "lìn",
+    "syllable": "lin",
+    "tone": 4,
+    "numbered": "lin4"
+  },
+  {
+    "marked": "lìng",
+    "syllable": "ling",
+    "tone": 4,
+    "numbered": "ling4"
+  },
+  {
+    "marked": "lí",
+    "syllable": "li",
+    "tone": 2,
+    "numbered": "li2"
+  },
+  {
+    "marked": "lín",
+    "syllable": "lin",
+    "tone": 2,
+    "numbered": "lin2"
+  },
+  {
+    "marked": "líng",
+    "syllable": "ling",
+    "tone": 2,
+    "numbered": "ling2"
+  },
+  {
+    "marked": "lòng",
+    "syllable": "long",
+    "tone": 4,
+    "numbered": "long4"
+  },
+  {
+    "marked": "lòu",
+    "syllable": "lou",
+    "tone": 4,
+    "numbered": "lou4"
+  },
+  {
+    "marked": "lóng",
+    "syllable": "long",
+    "tone": 2,
+    "numbered": "long2"
+  },
+  {
+    "marked": "lóu",
+    "syllable": "lou",
+    "tone": 2,
+    "numbered": "lou2"
+  },
+  {
+    "marked": "lù",
+    "syllable": "lu",
+    "tone": 4,
+    "numbered": "lu4"
+  },
+  {
+    "marked": "lùn",
+    "syllable": "lun",
+    "tone": 4,
+    "numbered": "lun4"
+  },
+  {
+    "marked": "lú",
+    "syllable": "lu",
+    "tone": 2,
+    "numbered": "lu2"
+  },
+  {
+    "marked": "lún",
+    "syllable": "lun",
+    "tone": 2,
+    "numbered": "lun2"
+  },
+  {
+    "marked": "lüè",
+    "syllable": "lüe",
+    "tone": 4,
+    "numbered": "lüe4"
+  },
+  {
+    "marked": "lüě",
+    "syllable": "lüe",
+    "tone": 3,
+    "numbered": "lüe3"
+  },
+  {
+    "marked": "lā",
+    "syllable": "la",
+    "tone": 1,
+    "numbered": "la1"
+  },
+  {
+    "marked": "lāng",
+    "syllable": "lang",
+    "tone": 1,
+    "numbered": "lang1"
+  },
+  {
+    "marked": "lāo",
+    "syllable": "lao",
+    "tone": 1,
+    "numbered": "lao1"
+  },
+  {
+    "marked": "lē",
+    "syllable": "le",
+    "tone": 1,
+    "numbered": "le1"
+  },
+  {
+    "marked": "lēi",
+    "syllable": "lei",
+    "tone": 1,
+    "numbered": "lei1"
+  },
+  {
+    "marked": "lēng",
+    "syllable": "leng",
+    "tone": 1,
+    "numbered": "leng1"
+  },
+  {
+    "marked": "lěi",
+    "syllable": "lei",
+    "tone": 3,
+    "numbered": "lei3"
+  },
+  {
+    "marked": "lěng",
+    "syllable": "leng",
+    "tone": 3,
+    "numbered": "leng3"
+  },
+  {
+    "marked": "lī",
+    "syllable": "li",
+    "tone": 1,
+    "numbered": "li1"
+  },
+  {
+    "marked": "līn",
+    "syllable": "lin",
+    "tone": 1,
+    "numbered": "lin1"
+  },
+  {
+    "marked": "līng",
+    "syllable": "ling",
+    "tone": 1,
+    "numbered": "ling1"
+  },
+  {
+    "marked": "lōng",
+    "syllable": "long",
+    "tone": 1,
+    "numbered": "long1"
+  },
+  {
+    "marked": "lōu",
+    "syllable": "lou",
+    "tone": 1,
+    "numbered": "lou1"
+  },
+  {
+    "marked": "lū",
+    "syllable": "lu",
+    "tone": 1,
+    "numbered": "lu1"
+  },
+  {
+    "marked": "lūn",
+    "syllable": "lun",
+    "tone": 1,
+    "numbered": "lun1"
+  },
+  {
+    "marked": "lǎ",
+    "syllable": "la",
+    "tone": 3,
+    "numbered": "la3"
+  },
+  {
+    "marked": "lǎi",
+    "syllable": "lai",
+    "tone": 3,
+    "numbered": "lai3"
+  },
+  {
+    "marked": "lǎn",
+    "syllable": "lan",
+    "tone": 3,
+    "numbered": "lan3"
+  },
+  {
+    "marked": "lǎng",
+    "syllable": "lang",
+    "tone": 3,
+    "numbered": "lang3"
+  },
+  {
+    "marked": "lǎo",
+    "syllable": "lao",
+    "tone": 3,
+    "numbered": "lao3"
+  },
+  {
+    "marked": "lǐ",
+    "syllable": "li",
+    "tone": 3,
+    "numbered": "li3"
+  },
+  {
+    "marked": "lǐn",
+    "syllable": "lin",
+    "tone": 3,
+    "numbered": "lin3"
+  },
+  {
+    "marked": "lǐng",
+    "syllable": "ling",
+    "tone": 3,
+    "numbered": "ling3"
+  },
+  {
+    "marked": "lǒng",
+    "syllable": "long",
+    "tone": 3,
+    "numbered": "long3"
+  },
+  {
+    "marked": "lǒu",
+    "syllable": "lou",
+    "tone": 3,
+    "numbered": "lou3"
+  },
+  {
+    "marked": "lǔ",
+    "syllable": "lu",
+    "tone": 3,
+    "numbered": "lu3"
+  },
+  {
+    "marked": "lǔn",
+    "syllable": "lun",
+    "tone": 3,
+    "numbered": "lun3"
+  },
+  {
+    "marked": "lǘ",
+    "syllable": "lü",
+    "tone": 2,
+    "numbered": "lü2"
+  },
+  {
+    "marked": "lǚ",
+    "syllable": "lü",
+    "tone": 3,
+    "numbered": "lü3"
+  },
+  {
+    "marked": "lǜ",
+    "syllable": "lü",
+    "tone": 4,
+    "numbered": "lü4"
+  },
+  {
+    "marked": "ma",
+    "syllable": "ma",
+    "tone": 5,
+    "numbered": "ma5"
+  },
+  {
+    "marked": "me",
+    "syllable": "me",
+    "tone": 5,
+    "numbered": "me5"
+  },
+  {
+    "marked": "men",
+    "syllable": "men",
+    "tone": 5,
+    "numbered": "men5"
+  },
+  {
+    "marked": "meng",
+    "syllable": "meng",
+    "tone": 5,
+    "numbered": "meng5"
+  },
+  {
+    "marked": "mie",
+    "syllable": "mie",
+    "tone": 5,
+    "numbered": "mie5"
+  },
+  {
+    "marked": "min",
+    "syllable": "min",
+    "tone": 5,
+    "numbered": "min5"
+  },
+  {
+    "marked": "ming",
+    "syllable": "ming",
+    "tone": 5,
+    "numbered": "ming5"
+  },
+  {
+    "marked": "miàn",
+    "syllable": "mian",
+    "tone": 4,
+    "numbered": "mian4"
+  },
+  {
+    "marked": "miào",
+    "syllable": "miao",
+    "tone": 4,
+    "numbered": "miao4"
+  },
+  {
+    "marked": "mián",
+    "syllable": "mian",
+    "tone": 2,
+    "numbered": "mian2"
+  },
+  {
+    "marked": "miáo",
+    "syllable": "miao",
+    "tone": 2,
+    "numbered": "miao2"
+  },
+  {
+    "marked": "miè",
+    "syllable": "mie",
+    "tone": 4,
+    "numbered": "mie4"
+  },
+  {
+    "marked": "mié",
+    "syllable": "mie",
+    "tone": 2,
+    "numbered": "mie2"
+  },
+  {
+    "marked": "miù",
+    "syllable": "miu",
+    "tone": 4,
+    "numbered": "miu4"
+  },
+  {
+    "marked": "miāo",
+    "syllable": "miao",
+    "tone": 1,
+    "numbered": "miao1"
+  },
+  {
+    "marked": "miē",
+    "syllable": "mie",
+    "tone": 1,
+    "numbered": "mie1"
+  },
+  {
+    "marked": "miǎn",
+    "syllable": "mian",
+    "tone": 3,
+    "numbered": "mian3"
+  },
+  {
+    "marked": "miǎo",
+    "syllable": "miao",
+    "tone": 3,
+    "numbered": "miao3"
+  },
+  {
+    "marked": "miǔ",
+    "syllable": "miu",
+    "tone": 3,
+    "numbered": "miu3"
+  },
+  {
+    "marked": "mo",
+    "syllable": "mo",
+    "tone": 5,
+    "numbered": "mo5"
+  },
+  {
+    "marked": "mà",
+    "syllable": "ma",
+    "tone": 4,
+    "numbered": "ma4"
+  },
+  {
+    "marked": "mài",
+    "syllable": "mai",
+    "tone": 4,
+    "numbered": "mai4"
+  },
+  {
+    "marked": "màn",
+    "syllable": "man",
+    "tone": 4,
+    "numbered": "man4"
+  },
+  {
+    "marked": "màng",
+    "syllable": "mang",
+    "tone": 4,
+    "numbered": "mang4"
+  },
+  {
+    "marked": "mào",
+    "syllable": "mao",
+    "tone": 4,
+    "numbered": "mao4"
+  },
+  {
+    "marked": "má",
+    "syllable": "ma",
+    "tone": 2,
+    "numbered": "ma2"
+  },
+  {
+    "marked": "mái",
+    "syllable": "mai",
+    "tone": 2,
+    "numbered": "mai2"
+  },
+  {
+    "marked": "mán",
+    "syllable": "man",
+    "tone": 2,
+    "numbered": "man2"
+  },
+  {
+    "marked": "máng",
+    "syllable": "mang",
+    "tone": 2,
+    "numbered": "mang2"
+  },
+  {
+    "marked": "máo",
+    "syllable": "mao",
+    "tone": 2,
+    "numbered": "mao2"
+  },
+  {
+    "marked": "mèi",
+    "syllable": "mei",
+    "tone": 4,
+    "numbered": "mei4"
+  },
+  {
+    "marked": "mèn",
+    "syllable": "men",
+    "tone": 4,
+    "numbered": "men4"
+  },
+  {
+    "marked": "mèng",
+    "syllable": "meng",
+    "tone": 4,
+    "numbered": "meng4"
+  },
+  {
+    "marked": "méi",
+    "syllable": "mei",
+    "tone": 2,
+    "numbered": "mei2"
+  },
+  {
+    "marked": "mén",
+    "syllable": "men",
+    "tone": 2,
+    "numbered": "men2"
+  },
+  {
+    "marked": "méng",
+    "syllable": "meng",
+    "tone": 2,
+    "numbered": "meng2"
+  },
+  {
+    "marked": "mì",
+    "syllable": "mi",
+    "tone": 4,
+    "numbered": "mi4"
+  },
+  {
+    "marked": "mìng",
+    "syllable": "ming",
+    "tone": 4,
+    "numbered": "ming4"
+  },
+  {
+    "marked": "mí",
+    "syllable": "mi",
+    "tone": 2,
+    "numbered": "mi2"
+  },
+  {
+    "marked": "mín",
+    "syllable": "min",
+    "tone": 2,
+    "numbered": "min2"
+  },
+  {
+    "marked": "míng",
+    "syllable": "ming",
+    "tone": 2,
+    "numbered": "ming2"
+  },
+  {
+    "marked": "mò",
+    "syllable": "mo",
+    "tone": 4,
+    "numbered": "mo4"
+  },
+  {
+    "marked": "mòu",
+    "syllable": "mou",
+    "tone": 4,
+    "numbered": "mou4"
+  },
+  {
+    "marked": "mó",
+    "syllable": "mo",
+    "tone": 2,
+    "numbered": "mo2"
+  },
+  {
+    "marked": "móu",
+    "syllable": "mou",
+    "tone": 2,
+    "numbered": "mou2"
+  },
+  {
+    "marked": "mù",
+    "syllable": "mu",
+    "tone": 4,
+    "numbered": "mu4"
+  },
+  {
+    "marked": "mú",
+    "syllable": "mu",
+    "tone": 2,
+    "numbered": "mu2"
+  },
+  {
+    "marked": "mā",
+    "syllable": "ma",
+    "tone": 1,
+    "numbered": "ma1"
+  },
+  {
+    "marked": "mān",
+    "syllable": "man",
+    "tone": 1,
+    "numbered": "man1"
+  },
+  {
+    "marked": "māng",
+    "syllable": "mang",
+    "tone": 1,
+    "numbered": "mang1"
+  },
+  {
+    "marked": "māo",
+    "syllable": "mao",
+    "tone": 1,
+    "numbered": "mao1"
+  },
+  {
+    "marked": "mē",
+    "syllable": "me",
+    "tone": 1,
+    "numbered": "me1"
+  },
+  {
+    "marked": "mēn",
+    "syllable": "men",
+    "tone": 1,
+    "numbered": "men1"
+  },
+  {
+    "marked": "mēng",
+    "syllable": "meng",
+    "tone": 1,
+    "numbered": "meng1"
+  },
+  {
+    "marked": "měi",
+    "syllable": "mei",
+    "tone": 3,
+    "numbered": "mei3"
+  },
+  {
+    "marked": "měng",
+    "syllable": "meng",
+    "tone": 3,
+    "numbered": "meng3"
+  },
+  {
+    "marked": "mī",
+    "syllable": "mi",
+    "tone": 1,
+    "numbered": "mi1"
+  },
+  {
+    "marked": "mō",
+    "syllable": "mo",
+    "tone": 1,
+    "numbered": "mo1"
+  },
+  {
+    "marked": "mōu",
+    "syllable": "mou",
+    "tone": 1,
+    "numbered": "mou1"
+  },
+  {
+    "marked": "mǎ",
+    "syllable": "ma",
+    "tone": 3,
+    "numbered": "ma3"
+  },
+  {
+    "marked": "mǎi",
+    "syllable": "mai",
+    "tone": 3,
+    "numbered": "mai3"
+  },
+  {
+    "marked": "mǎn",
+    "syllable": "man",
+    "tone": 3,
+    "numbered": "man3"
+  },
+  {
+    "marked": "mǎng",
+    "syllable": "mang",
+    "tone": 3,
+    "numbered": "mang3"
+  },
+  {
+    "marked": "mǎo",
+    "syllable": "mao",
+    "tone": 3,
+    "numbered": "mao3"
+  },
+  {
+    "marked": "mǐ",
+    "syllable": "mi",
+    "tone": 3,
+    "numbered": "mi3"
+  },
+  {
+    "marked": "mǐn",
+    "syllable": "min",
+    "tone": 3,
+    "numbered": "min3"
+  },
+  {
+    "marked": "mǐng",
+    "syllable": "ming",
+    "tone": 3,
+    "numbered": "ming3"
+  },
+  {
+    "marked": "mǒ",
+    "syllable": "mo",
+    "tone": 3,
+    "numbered": "mo3"
+  },
+  {
+    "marked": "mǒu",
+    "syllable": "mou",
+    "tone": 3,
+    "numbered": "mou3"
+  },
+  {
+    "marked": "mǔ",
+    "syllable": "mu",
+    "tone": 3,
+    "numbered": "mu3"
+  },
+  {
+    "marked": "m̀",
+    "syllable": "m",
+    "tone": 4,
+    "numbered": "m4"
+  },
+  {
+    "marked": "m̄",
+    "syllable": "m",
+    "tone": 1,
+    "numbered": "m1"
+  },
+  {
+    "marked": "n",
+    "syllable": "n",
+    "tone": 5,
+    "numbered": "n5"
+  },
+  {
+    "marked": "na",
+    "syllable": "na",
+    "tone": 5,
+    "numbered": "na5"
+  },
+  {
+    "marked": "nai",
+    "syllable": "nai",
+    "tone": 5,
+    "numbered": "nai5"
+  },
+  {
+    "marked": "nang",
+    "syllable": "nang",
+    "tone": 5,
+    "numbered": "nang5"
+  },
+  {
+    "marked": "ne",
+    "syllable": "ne",
+    "tone": 5,
+    "numbered": "ne5"
+  },
+  {
+    "marked": "ng",
+    "syllable": "ng",
+    "tone": 5,
+    "numbered": "ng5"
+  },
+  {
+    "marked": "niao",
+    "syllable": "niao",
+    "tone": 5,
+    "numbered": "niao5"
+  },
+  {
+    "marked": "nin",
+    "syllable": "nin",
+    "tone": 5,
+    "numbered": "nin5"
+  },
+  {
+    "marked": "niàn",
+    "syllable": "nian",
+    "tone": 4,
+    "numbered": "nian4"
+  },
+  {
+    "marked": "niàng",
+    "syllable": "niang",
+    "tone": 4,
+    "numbered": "niang4"
+  },
+  {
+    "marked": "niào",
+    "syllable": "niao",
+    "tone": 4,
+    "numbered": "niao4"
+  },
+  {
+    "marked": "nián",
+    "syllable": "nian",
+    "tone": 2,
+    "numbered": "nian2"
+  },
+  {
+    "marked": "niáng",
+    "syllable": "niang",
+    "tone": 2,
+    "numbered": "niang2"
+  },
+  {
+    "marked": "niè",
+    "syllable": "nie",
+    "tone": 4,
+    "numbered": "nie4"
+  },
+  {
+    "marked": "nié",
+    "syllable": "nie",
+    "tone": 2,
+    "numbered": "nie2"
+  },
+  {
+    "marked": "niù",
+    "syllable": "niu",
+    "tone": 4,
+    "numbered": "niu4"
+  },
+  {
+    "marked": "niú",
+    "syllable": "niu",
+    "tone": 2,
+    "numbered": "niu2"
+  },
+  {
+    "marked": "niā",
+    "syllable": "nia",
+    "tone": 1,
+    "numbered": "nia1"
+  },
+  {
+    "marked": "niān",
+    "syllable": "nian",
+    "tone": 1,
+    "numbered": "nian1"
+  },
+  {
+    "marked": "niē",
+    "syllable": "nie",
+    "tone": 1,
+    "numbered": "nie1"
+  },
+  {
+    "marked": "niě",
+    "syllable": "nie",
+    "tone": 3,
+    "numbered": "nie3"
+  },
+  {
+    "marked": "niū",
+    "syllable": "niu",
+    "tone": 1,
+    "numbered": "niu1"
+  },
+  {
+    "marked": "niǎn",
+    "syllable": "nian",
+    "tone": 3,
+    "numbered": "nian3"
+  },
+  {
+    "marked": "niǎng",
+    "syllable": "niang",
+    "tone": 3,
+    "numbered": "niang3"
+  },
+  {
+    "marked": "niǎo",
+    "syllable": "niao",
+    "tone": 3,
+    "numbered": "niao3"
+  },
+  {
+    "marked": "niǔ",
+    "syllable": "niu",
+    "tone": 3,
+    "numbered": "niu3"
+  },
+  {
+    "marked": "nuàn",
+    "syllable": "nuan",
+    "tone": 4,
+    "numbered": "nuan4"
+  },
+  {
+    "marked": "nuán",
+    "syllable": "nuan",
+    "tone": 2,
+    "numbered": "nuan2"
+  },
+  {
+    "marked": "nuò",
+    "syllable": "nuo",
+    "tone": 4,
+    "numbered": "nuo4"
+  },
+  {
+    "marked": "nuó",
+    "syllable": "nuo",
+    "tone": 2,
+    "numbered": "nuo2"
+  },
+  {
+    "marked": "nuǎn",
+    "syllable": "nuan",
+    "tone": 3,
+    "numbered": "nuan3"
+  },
+  {
+    "marked": "nuǒ",
+    "syllable": "nuo",
+    "tone": 3,
+    "numbered": "nuo3"
+  },
+  {
+    "marked": "nà",
+    "syllable": "na",
+    "tone": 4,
+    "numbered": "na4"
+  },
+  {
+    "marked": "nài",
+    "syllable": "nai",
+    "tone": 4,
+    "numbered": "nai4"
+  },
+  {
+    "marked": "nàn",
+    "syllable": "nan",
+    "tone": 4,
+    "numbered": "nan4"
+  },
+  {
+    "marked": "nàng",
+    "syllable": "nang",
+    "tone": 4,
+    "numbered": "nang4"
+  },
+  {
+    "marked": "nào",
+    "syllable": "nao",
+    "tone": 4,
+    "numbered": "nao4"
+  },
+  {
+    "marked": "ná",
+    "syllable": "na",
+    "tone": 2,
+    "numbered": "na2"
+  },
+  {
+    "marked": "nái",
+    "syllable": "nai",
+    "tone": 2,
+    "numbered": "nai2"
+  },
+  {
+    "marked": "nán",
+    "syllable": "nan",
+    "tone": 2,
+    "numbered": "nan2"
+  },
+  {
+    "marked": "náng",
+    "syllable": "nang",
+    "tone": 2,
+    "numbered": "nang2"
+  },
+  {
+    "marked": "náo",
+    "syllable": "nao",
+    "tone": 2,
+    "numbered": "nao2"
+  },
+  {
+    "marked": "nè",
+    "syllable": "ne",
+    "tone": 4,
+    "numbered": "ne4"
+  },
+  {
+    "marked": "nèi",
+    "syllable": "nei",
+    "tone": 4,
+    "numbered": "nei4"
+  },
+  {
+    "marked": "nèn",
+    "syllable": "nen",
+    "tone": 4,
+    "numbered": "nen4"
+  },
+  {
+    "marked": "nèng",
+    "syllable": "neng",
+    "tone": 4,
+    "numbered": "neng4"
+  },
+  {
+    "marked": "né",
+    "syllable": "ne",
+    "tone": 2,
+    "numbered": "ne2"
+  },
+  {
+    "marked": "néi",
+    "syllable": "nei",
+    "tone": 2,
+    "numbered": "nei2"
+  },
+  {
+    "marked": "néng",
+    "syllable": "neng",
+    "tone": 2,
+    "numbered": "neng2"
+  },
+  {
+    "marked": "nì",
+    "syllable": "ni",
+    "tone": 4,
+    "numbered": "ni4"
+  },
+  {
+    "marked": "nìng",
+    "syllable": "ning",
+    "tone": 4,
+    "numbered": "ning4"
+  },
+  {
+    "marked": "ní",
+    "syllable": "ni",
+    "tone": 2,
+    "numbered": "ni2"
+  },
+  {
+    "marked": "nín",
+    "syllable": "nin",
+    "tone": 2,
+    "numbered": "nin2"
+  },
+  {
+    "marked": "níng",
+    "syllable": "ning",
+    "tone": 2,
+    "numbered": "ning2"
+  },
+  {
+    "marked": "nòng",
+    "syllable": "nong",
+    "tone": 4,
+    "numbered": "nong4"
+  },
+  {
+    "marked": "nòu",
+    "syllable": "nou",
+    "tone": 4,
+    "numbered": "nou4"
+  },
+  {
+    "marked": "nóng",
+    "syllable": "nong",
+    "tone": 2,
+    "numbered": "nong2"
+  },
+  {
+    "marked": "nóu",
+    "syllable": "nou",
+    "tone": 2,
+    "numbered": "nou2"
+  },
+  {
+    "marked": "nù",
+    "syllable": "nu",
+    "tone": 4,
+    "numbered": "nu4"
+  },
+  {
+    "marked": "nùn",
+    "syllable": "nun",
+    "tone": 4,
+    "numbered": "nun4"
+  },
+  {
+    "marked": "nú",
+    "syllable": "nu",
+    "tone": 2,
+    "numbered": "nu2"
+  },
+  {
+    "marked": "nún",
+    "syllable": "nun",
+    "tone": 2,
+    "numbered": "nun2"
+  },
+  {
+    "marked": "nüè",
+    "syllable": "nüe",
+    "tone": 4,
+    "numbered": "nüe4"
+  },
+  {
+    "marked": "nā",
+    "syllable": "na",
+    "tone": 1,
+    "numbered": "na1"
+  },
+  {
+    "marked": "nān",
+    "syllable": "nan",
+    "tone": 1,
+    "numbered": "nan1"
+  },
+  {
+    "marked": "nāng",
+    "syllable": "nang",
+    "tone": 1,
+    "numbered": "nang1"
+  },
+  {
+    "marked": "nāo",
+    "syllable": "nao",
+    "tone": 1,
+    "numbered": "nao1"
+  },
+  {
+    "marked": "něi",
+    "syllable": "nei",
+    "tone": 3,
+    "numbered": "nei3"
+  },
+  {
+    "marked": "něng",
+    "syllable": "neng",
+    "tone": 3,
+    "numbered": "neng3"
+  },
+  {
+    "marked": "nī",
+    "syllable": "ni",
+    "tone": 1,
+    "numbered": "ni1"
+  },
+  {
+    "marked": "nǎ",
+    "syllable": "na",
+    "tone": 3,
+    "numbered": "na3"
+  },
+  {
+    "marked": "nǎi",
+    "syllable": "nai",
+    "tone": 3,
+    "numbered": "nai3"
+  },
+  {
+    "marked": "nǎn",
+    "syllable": "nan",
+    "tone": 3,
+    "numbered": "nan3"
+  },
+  {
+    "marked": "nǎng",
+    "syllable": "nang",
+    "tone": 3,
+    "numbered": "nang3"
+  },
+  {
+    "marked": "nǎo",
+    "syllable": "nao",
+    "tone": 3,
+    "numbered": "nao3"
+  },
+  {
+    "marked": "nǐ",
+    "syllable": "ni",
+    "tone": 3,
+    "numbered": "ni3"
+  },
+  {
+    "marked": "nǐn",
+    "syllable": "nin",
+    "tone": 3,
+    "numbered": "nin3"
+  },
+  {
+    "marked": "nǐng",
+    "syllable": "ning",
+    "tone": 3,
+    "numbered": "ning3"
+  },
+  {
+    "marked": "nǒng",
+    "syllable": "nong",
+    "tone": 3,
+    "numbered": "nong3"
+  },
+  {
+    "marked": "nǒu",
+    "syllable": "nou",
+    "tone": 3,
+    "numbered": "nou3"
+  },
+  {
+    "marked": "nǔ",
+    "syllable": "nu",
+    "tone": 3,
+    "numbered": "nu3"
+  },
+  {
+    "marked": "nǘ",
+    "syllable": "nü",
+    "tone": 2,
+    "numbered": "nü2"
+  },
+  {
+    "marked": "nǚ",
+    "syllable": "nü",
+    "tone": 3,
+    "numbered": "nü3"
+  },
+  {
+    "marked": "nǜ",
+    "syllable": "nü",
+    "tone": 4,
+    "numbered": "nü4"
+  },
+  {
+    "marked": "o",
+    "syllable": "o",
+    "tone": 5,
+    "numbered": "o5"
+  },
+  {
+    "marked": "ou",
+    "syllable": "ou",
+    "tone": 5,
+    "numbered": "ou5"
+  },
+  {
+    "marked": "piàn",
+    "syllable": "pian",
+    "tone": 4,
+    "numbered": "pian4"
+  },
+  {
+    "marked": "piào",
+    "syllable": "piao",
+    "tone": 4,
+    "numbered": "piao4"
+  },
+  {
+    "marked": "pián",
+    "syllable": "pian",
+    "tone": 2,
+    "numbered": "pian2"
+  },
+  {
+    "marked": "piáo",
+    "syllable": "piao",
+    "tone": 2,
+    "numbered": "piao2"
+  },
+  {
+    "marked": "piè",
+    "syllable": "pie",
+    "tone": 4,
+    "numbered": "pie4"
+  },
+  {
+    "marked": "piān",
+    "syllable": "pian",
+    "tone": 1,
+    "numbered": "pian1"
+  },
+  {
+    "marked": "piāo",
+    "syllable": "piao",
+    "tone": 1,
+    "numbered": "piao1"
+  },
+  {
+    "marked": "piē",
+    "syllable": "pie",
+    "tone": 1,
+    "numbered": "pie1"
+  },
+  {
+    "marked": "piě",
+    "syllable": "pie",
+    "tone": 3,
+    "numbered": "pie3"
+  },
+  {
+    "marked": "piǎn",
+    "syllable": "pian",
+    "tone": 3,
+    "numbered": "pian3"
+  },
+  {
+    "marked": "piǎo",
+    "syllable": "piao",
+    "tone": 3,
+    "numbered": "piao3"
+  },
+  {
+    "marked": "po",
+    "syllable": "po",
+    "tone": 5,
+    "numbered": "po5"
+  },
+  {
+    "marked": "pu",
+    "syllable": "pu",
+    "tone": 5,
+    "numbered": "pu5"
+  },
+  {
+    "marked": "pà",
+    "syllable": "pa",
+    "tone": 4,
+    "numbered": "pa4"
+  },
+  {
+    "marked": "pài",
+    "syllable": "pai",
+    "tone": 4,
+    "numbered": "pai4"
+  },
+  {
+    "marked": "pàn",
+    "syllable": "pan",
+    "tone": 4,
+    "numbered": "pan4"
+  },
+  {
+    "marked": "pàng",
+    "syllable": "pang",
+    "tone": 4,
+    "numbered": "pang4"
+  },
+  {
+    "marked": "pào",
+    "syllable": "pao",
+    "tone": 4,
+    "numbered": "pao4"
+  },
+  {
+    "marked": "pá",
+    "syllable": "pa",
+    "tone": 2,
+    "numbered": "pa2"
+  },
+  {
+    "marked": "pái",
+    "syllable": "pai",
+    "tone": 2,
+    "numbered": "pai2"
+  },
+  {
+    "marked": "pán",
+    "syllable": "pan",
+    "tone": 2,
+    "numbered": "pan2"
+  },
+  {
+    "marked": "páng",
+    "syllable": "pang",
+    "tone": 2,
+    "numbered": "pang2"
+  },
+  {
+    "marked": "páo",
+    "syllable": "pao",
+    "tone": 2,
+    "numbered": "pao2"
+  },
+  {
+    "marked": "pèi",
+    "syllable": "pei",
+    "tone": 4,
+    "numbered": "pei4"
+  },
+  {
+    "marked": "pèn",
+    "syllable": "pen",
+    "tone": 4,
+    "numbered": "pen4"
+  },
+  {
+    "marked": "pèng",
+    "syllable": "peng",
+    "tone": 4,
+    "numbered": "peng4"
+  },
+  {
+    "marked": "péi",
+    "syllable": "pei",
+    "tone": 2,
+    "numbered": "pei2"
+  },
+  {
+    "marked": "pén",
+    "syllable": "pen",
+    "tone": 2,
+    "numbered": "pen2"
+  },
+  {
+    "marked": "péng",
+    "syllable": "peng",
+    "tone": 2,
+    "numbered": "peng2"
+  },
+  {
+    "marked": "pì",
+    "syllable": "pi",
+    "tone": 4,
+    "numbered": "pi4"
+  },
+  {
+    "marked": "pìn",
+    "syllable": "pin",
+    "tone": 4,
+    "numbered": "pin4"
+  },
+  {
+    "marked": "pìng",
+    "syllable": "ping",
+    "tone": 4,
+    "numbered": "ping4"
+  },
+  {
+    "marked": "pí",
+    "syllable": "pi",
+    "tone": 2,
+    "numbered": "pi2"
+  },
+  {
+    "marked": "pín",
+    "syllable": "pin",
+    "tone": 2,
+    "numbered": "pin2"
+  },
+  {
+    "marked": "píng",
+    "syllable": "ping",
+    "tone": 2,
+    "numbered": "ping2"
+  },
+  {
+    "marked": "pò",
+    "syllable": "po",
+    "tone": 4,
+    "numbered": "po4"
+  },
+  {
+    "marked": "pòu",
+    "syllable": "pou",
+    "tone": 4,
+    "numbered": "pou4"
+  },
+  {
+    "marked": "pó",
+    "syllable": "po",
+    "tone": 2,
+    "numbered": "po2"
+  },
+  {
+    "marked": "póu",
+    "syllable": "pou",
+    "tone": 2,
+    "numbered": "pou2"
+  },
+  {
+    "marked": "pù",
+    "syllable": "pu",
+    "tone": 4,
+    "numbered": "pu4"
+  },
+  {
+    "marked": "pú",
+    "syllable": "pu",
+    "tone": 2,
+    "numbered": "pu2"
+  },
+  {
+    "marked": "pā",
+    "syllable": "pa",
+    "tone": 1,
+    "numbered": "pa1"
+  },
+  {
+    "marked": "pāi",
+    "syllable": "pai",
+    "tone": 1,
+    "numbered": "pai1"
+  },
+  {
+    "marked": "pān",
+    "syllable": "pan",
+    "tone": 1,
+    "numbered": "pan1"
+  },
+  {
+    "marked": "pāng",
+    "syllable": "pang",
+    "tone": 1,
+    "numbered": "pang1"
+  },
+  {
+    "marked": "pāo",
+    "syllable": "pao",
+    "tone": 1,
+    "numbered": "pao1"
+  },
+  {
+    "marked": "pēi",
+    "syllable": "pei",
+    "tone": 1,
+    "numbered": "pei1"
+  },
+  {
+    "marked": "pēn",
+    "syllable": "pen",
+    "tone": 1,
+    "numbered": "pen1"
+  },
+  {
+    "marked": "pēng",
+    "syllable": "peng",
+    "tone": 1,
+    "numbered": "peng1"
+  },
+  {
+    "marked": "pěi",
+    "syllable": "pei",
+    "tone": 3,
+    "numbered": "pei3"
+  },
+  {
+    "marked": "pěn",
+    "syllable": "pen",
+    "tone": 3,
+    "numbered": "pen3"
+  },
+  {
+    "marked": "pěng",
+    "syllable": "peng",
+    "tone": 3,
+    "numbered": "peng3"
+  },
+  {
+    "marked": "pī",
+    "syllable": "pi",
+    "tone": 1,
+    "numbered": "pi1"
+  },
+  {
+    "marked": "pīn",
+    "syllable": "pin",
+    "tone": 1,
+    "numbered": "pin1"
+  },
+  {
+    "marked": "pīng",
+    "syllable": "ping",
+    "tone": 1,
+    "numbered": "ping1"
+  },
+  {
+    "marked": "pō",
+    "syllable": "po",
+    "tone": 1,
+    "numbered": "po1"
+  },
+  {
+    "marked": "pōu",
+    "syllable": "pou",
+    "tone": 1,
+    "numbered": "pou1"
+  },
+  {
+    "marked": "pū",
+    "syllable": "pu",
+    "tone": 1,
+    "numbered": "pu1"
+  },
+  {
+    "marked": "pǎ",
+    "syllable": "pa",
+    "tone": 3,
+    "numbered": "pa3"
+  },
+  {
+    "marked": "pǎi",
+    "syllable": "pai",
+    "tone": 3,
+    "numbered": "pai3"
+  },
+  {
+    "marked": "pǎn",
+    "syllable": "pan",
+    "tone": 3,
+    "numbered": "pan3"
+  },
+  {
+    "marked": "pǎng",
+    "syllable": "pang",
+    "tone": 3,
+    "numbered": "pang3"
+  },
+  {
+    "marked": "pǎo",
+    "syllable": "pao",
+    "tone": 3,
+    "numbered": "pao3"
+  },
+  {
+    "marked": "pǐ",
+    "syllable": "pi",
+    "tone": 3,
+    "numbered": "pi3"
+  },
+  {
+    "marked": "pǐn",
+    "syllable": "pin",
+    "tone": 3,
+    "numbered": "pin3"
+  },
+  {
+    "marked": "pǐng",
+    "syllable": "ping",
+    "tone": 3,
+    "numbered": "ping3"
+  },
+  {
+    "marked": "pǒ",
+    "syllable": "po",
+    "tone": 3,
+    "numbered": "po3"
+  },
+  {
+    "marked": "pǒu",
+    "syllable": "pou",
+    "tone": 3,
+    "numbered": "pou3"
+  },
+  {
+    "marked": "pǔ",
+    "syllable": "pu",
+    "tone": 3,
+    "numbered": "pu3"
+  },
+  {
+    "marked": "qi",
+    "syllable": "qi",
+    "tone": 5,
+    "numbered": "qi5"
+  },
+  {
+    "marked": "qian",
+    "syllable": "qian",
+    "tone": 5,
+    "numbered": "qian5"
+  },
+  {
+    "marked": "qing",
+    "syllable": "qing",
+    "tone": 5,
+    "numbered": "qing5"
+  },
+  {
+    "marked": "qià",
+    "syllable": "qia",
+    "tone": 4,
+    "numbered": "qia4"
+  },
+  {
+    "marked": "qiàn",
+    "syllable": "qian",
+    "tone": 4,
+    "numbered": "qian4"
+  },
+  {
+    "marked": "qiàng",
+    "syllable": "qiang",
+    "tone": 4,
+    "numbered": "qiang4"
+  },
+  {
+    "marked": "qiào",
+    "syllable": "qiao",
+    "tone": 4,
+    "numbered": "qiao4"
+  },
+  {
+    "marked": "qiá",
+    "syllable": "qia",
+    "tone": 2,
+    "numbered": "qia2"
+  },
+  {
+    "marked": "qián",
+    "syllable": "qian",
+    "tone": 2,
+    "numbered": "qian2"
+  },
+  {
+    "marked": "qiáng",
+    "syllable": "qiang",
+    "tone": 2,
+    "numbered": "qiang2"
+  },
+  {
+    "marked": "qiáo",
+    "syllable": "qiao",
+    "tone": 2,
+    "numbered": "qiao2"
+  },
+  {
+    "marked": "qiè",
+    "syllable": "qie",
+    "tone": 4,
+    "numbered": "qie4"
+  },
+  {
+    "marked": "qié",
+    "syllable": "qie",
+    "tone": 2,
+    "numbered": "qie2"
+  },
+  {
+    "marked": "qiòng",
+    "syllable": "qiong",
+    "tone": 4,
+    "numbered": "qiong4"
+  },
+  {
+    "marked": "qióng",
+    "syllable": "qiong",
+    "tone": 2,
+    "numbered": "qiong2"
+  },
+  {
+    "marked": "qiù",
+    "syllable": "qiu",
+    "tone": 4,
+    "numbered": "qiu4"
+  },
+  {
+    "marked": "qiú",
+    "syllable": "qiu",
+    "tone": 2,
+    "numbered": "qiu2"
+  },
+  {
+    "marked": "qiā",
+    "syllable": "qia",
+    "tone": 1,
+    "numbered": "qia1"
+  },
+  {
+    "marked": "qiān",
+    "syllable": "qian",
+    "tone": 1,
+    "numbered": "qian1"
+  },
+  {
+    "marked": "qiāng",
+    "syllable": "qiang",
+    "tone": 1,
+    "numbered": "qiang1"
+  },
+  {
+    "marked": "qiāo",
+    "syllable": "qiao",
+    "tone": 1,
+    "numbered": "qiao1"
+  },
+  {
+    "marked": "qiē",
+    "syllable": "qie",
+    "tone": 1,
+    "numbered": "qie1"
+  },
+  {
+    "marked": "qiě",
+    "syllable": "qie",
+    "tone": 3,
+    "numbered": "qie3"
+  },
+  {
+    "marked": "qiōng",
+    "syllable": "qiong",
+    "tone": 1,
+    "numbered": "qiong1"
+  },
+  {
+    "marked": "qiū",
+    "syllable": "qiu",
+    "tone": 1,
+    "numbered": "qiu1"
+  },
+  {
+    "marked": "qiǎ",
+    "syllable": "qia",
+    "tone": 3,
+    "numbered": "qia3"
+  },
+  {
+    "marked": "qiǎn",
+    "syllable": "qian",
+    "tone": 3,
+    "numbered": "qian3"
+  },
+  {
+    "marked": "qiǎng",
+    "syllable": "qiang",
+    "tone": 3,
+    "numbered": "qiang3"
+  },
+  {
+    "marked": "qiǎo",
+    "syllable": "qiao",
+    "tone": 3,
+    "numbered": "qiao3"
+  },
+  {
+    "marked": "qiǔ",
+    "syllable": "qiu",
+    "tone": 3,
+    "numbered": "qiu3"
+  },
+  {
+    "marked": "qu",
+    "syllable": "qu",
+    "tone": 5,
+    "numbered": "qu5"
+  },
+  {
+    "marked": "quan",
+    "syllable": "quan",
+    "tone": 5,
+    "numbered": "quan5"
+  },
+  {
+    "marked": "quàn",
+    "syllable": "quan",
+    "tone": 4,
+    "numbered": "quan4"
+  },
+  {
+    "marked": "quán",
+    "syllable": "quan",
+    "tone": 2,
+    "numbered": "quan2"
+  },
+  {
+    "marked": "què",
+    "syllable": "que",
+    "tone": 4,
+    "numbered": "que4"
+  },
+  {
+    "marked": "qué",
+    "syllable": "que",
+    "tone": 2,
+    "numbered": "que2"
+  },
+  {
+    "marked": "quān",
+    "syllable": "quan",
+    "tone": 1,
+    "numbered": "quan1"
+  },
+  {
+    "marked": "quē",
+    "syllable": "que",
+    "tone": 1,
+    "numbered": "que1"
+  },
+  {
+    "marked": "quǎn",
+    "syllable": "quan",
+    "tone": 3,
+    "numbered": "quan3"
+  },
+  {
+    "marked": "qì",
+    "syllable": "qi",
+    "tone": 4,
+    "numbered": "qi4"
+  },
+  {
+    "marked": "qìn",
+    "syllable": "qin",
+    "tone": 4,
+    "numbered": "qin4"
+  },
+  {
+    "marked": "qìng",
+    "syllable": "qing",
+    "tone": 4,
+    "numbered": "qing4"
+  },
+  {
+    "marked": "qí",
+    "syllable": "qi",
+    "tone": 2,
+    "numbered": "qi2"
+  },
+  {
+    "marked": "qín",
+    "syllable": "qin",
+    "tone": 2,
+    "numbered": "qin2"
+  },
+  {
+    "marked": "qíng",
+    "syllable": "qing",
+    "tone": 2,
+    "numbered": "qing2"
+  },
+  {
+    "marked": "qù",
+    "syllable": "qu",
+    "tone": 4,
+    "numbered": "qu4"
+  },
+  {
+    "marked": "qú",
+    "syllable": "qu",
+    "tone": 2,
+    "numbered": "qu2"
+  },
+  {
+    "marked": "qún",
+    "syllable": "qun",
+    "tone": 2,
+    "numbered": "qun2"
+  },
+  {
+    "marked": "qī",
+    "syllable": "qi",
+    "tone": 1,
+    "numbered": "qi1"
+  },
+  {
+    "marked": "qīn",
+    "syllable": "qin",
+    "tone": 1,
+    "numbered": "qin1"
+  },
+  {
+    "marked": "qīng",
+    "syllable": "qing",
+    "tone": 1,
+    "numbered": "qing1"
+  },
+  {
+    "marked": "qū",
+    "syllable": "qu",
+    "tone": 1,
+    "numbered": "qu1"
+  },
+  {
+    "marked": "qūn",
+    "syllable": "qun",
+    "tone": 1,
+    "numbered": "qun1"
+  },
+  {
+    "marked": "qǐ",
+    "syllable": "qi",
+    "tone": 3,
+    "numbered": "qi3"
+  },
+  {
+    "marked": "qǐn",
+    "syllable": "qin",
+    "tone": 3,
+    "numbered": "qin3"
+  },
+  {
+    "marked": "qǐng",
+    "syllable": "qing",
+    "tone": 3,
+    "numbered": "qing3"
+  },
+  {
+    "marked": "qǔ",
+    "syllable": "qu",
+    "tone": 3,
+    "numbered": "qu3"
+  },
+  {
+    "marked": "qǔn",
+    "syllable": "qun",
+    "tone": 3,
+    "numbered": "qun3"
+  },
+  {
+    "marked": "rang",
+    "syllable": "rang",
+    "tone": 5,
+    "numbered": "rang5"
+  },
+  {
+    "marked": "rong",
+    "syllable": "rong",
+    "tone": 5,
+    "numbered": "rong5"
+  },
+  {
+    "marked": "ru",
+    "syllable": "ru",
+    "tone": 5,
+    "numbered": "ru5"
+  },
+  {
+    "marked": "ruàn",
+    "syllable": "ruan",
+    "tone": 4,
+    "numbered": "ruan4"
+  },
+  {
+    "marked": "ruá",
+    "syllable": "rua",
+    "tone": 2,
+    "numbered": "rua2"
+  },
+  {
+    "marked": "ruán",
+    "syllable": "ruan",
+    "tone": 2,
+    "numbered": "ruan2"
+  },
+  {
+    "marked": "ruì",
+    "syllable": "rui",
+    "tone": 4,
+    "numbered": "rui4"
+  },
+  {
+    "marked": "ruí",
+    "syllable": "rui",
+    "tone": 2,
+    "numbered": "rui2"
+  },
+  {
+    "marked": "ruò",
+    "syllable": "ruo",
+    "tone": 4,
+    "numbered": "ruo4"
+  },
+  {
+    "marked": "ruó",
+    "syllable": "ruo",
+    "tone": 2,
+    "numbered": "ruo2"
+  },
+  {
+    "marked": "ruǎn",
+    "syllable": "ruan",
+    "tone": 3,
+    "numbered": "ruan3"
+  },
+  {
+    "marked": "ruǐ",
+    "syllable": "rui",
+    "tone": 3,
+    "numbered": "rui3"
+  },
+  {
+    "marked": "ràn",
+    "syllable": "ran",
+    "tone": 4,
+    "numbered": "ran4"
+  },
+  {
+    "marked": "ràng",
+    "syllable": "rang",
+    "tone": 4,
+    "numbered": "rang4"
+  },
+  {
+    "marked": "rào",
+    "syllable": "rao",
+    "tone": 4,
+    "numbered": "rao4"
+  },
+  {
+    "marked": "rán",
+    "syllable": "ran",
+    "tone": 2,
+    "numbered": "ran2"
+  },
+  {
+    "marked": "ráng",
+    "syllable": "rang",
+    "tone": 2,
+    "numbered": "rang2"
+  },
+  {
+    "marked": "ráo",
+    "syllable": "rao",
+    "tone": 2,
+    "numbered": "rao2"
+  },
+  {
+    "marked": "rè",
+    "syllable": "re",
+    "tone": 4,
+    "numbered": "re4"
+  },
+  {
+    "marked": "rèn",
+    "syllable": "ren",
+    "tone": 4,
+    "numbered": "ren4"
+  },
+  {
+    "marked": "rèng",
+    "syllable": "reng",
+    "tone": 4,
+    "numbered": "reng4"
+  },
+  {
+    "marked": "ré",
+    "syllable": "re",
+    "tone": 2,
+    "numbered": "re2"
+  },
+  {
+    "marked": "rén",
+    "syllable": "ren",
+    "tone": 2,
+    "numbered": "ren2"
+  },
+  {
+    "marked": "réng",
+    "syllable": "reng",
+    "tone": 2,
+    "numbered": "reng2"
+  },
+  {
+    "marked": "rì",
+    "syllable": "ri",
+    "tone": 4,
+    "numbered": "ri4"
+  },
+  {
+    "marked": "ròng",
+    "syllable": "rong",
+    "tone": 4,
+    "numbered": "rong4"
+  },
+  {
+    "marked": "ròu",
+    "syllable": "rou",
+    "tone": 4,
+    "numbered": "rou4"
+  },
+  {
+    "marked": "róng",
+    "syllable": "rong",
+    "tone": 2,
+    "numbered": "rong2"
+  },
+  {
+    "marked": "róu",
+    "syllable": "rou",
+    "tone": 2,
+    "numbered": "rou2"
+  },
+  {
+    "marked": "rù",
+    "syllable": "ru",
+    "tone": 4,
+    "numbered": "ru4"
+  },
+  {
+    "marked": "rùn",
+    "syllable": "run",
+    "tone": 4,
+    "numbered": "run4"
+  },
+  {
+    "marked": "rú",
+    "syllable": "ru",
+    "tone": 2,
+    "numbered": "ru2"
+  },
+  {
+    "marked": "rún",
+    "syllable": "run",
+    "tone": 2,
+    "numbered": "run2"
+  },
+  {
+    "marked": "rāng",
+    "syllable": "rang",
+    "tone": 1,
+    "numbered": "rang1"
+  },
+  {
+    "marked": "rēng",
+    "syllable": "reng",
+    "tone": 1,
+    "numbered": "reng1"
+  },
+  {
+    "marked": "rě",
+    "syllable": "re",
+    "tone": 3,
+    "numbered": "re3"
+  },
+  {
+    "marked": "rěn",
+    "syllable": "ren",
+    "tone": 3,
+    "numbered": "ren3"
+  },
+  {
+    "marked": "rōng",
+    "syllable": "rong",
+    "tone": 1,
+    "numbered": "rong1"
+  },
+  {
+    "marked": "rǎn",
+    "syllable": "ran",
+    "tone": 3,
+    "numbered": "ran3"
+  },
+  {
+    "marked": "rǎng",
+    "syllable": "rang",
+    "tone": 3,
+    "numbered": "rang3"
+  },
+  {
+    "marked": "rǎo",
+    "syllable": "rao",
+    "tone": 3,
+    "numbered": "rao3"
+  },
+  {
+    "marked": "rǒng",
+    "syllable": "rong",
+    "tone": 3,
+    "numbered": "rong3"
+  },
+  {
+    "marked": "rǒu",
+    "syllable": "rou",
+    "tone": 3,
+    "numbered": "rou3"
+  },
+  {
+    "marked": "rǔ",
+    "syllable": "ru",
+    "tone": 3,
+    "numbered": "ru3"
+  },
+  {
+    "marked": "rǔn",
+    "syllable": "run",
+    "tone": 3,
+    "numbered": "run3"
+  },
+  {
+    "marked": "sa",
+    "syllable": "sa",
+    "tone": 5,
+    "numbered": "sa5"
+  },
+  {
+    "marked": "san",
+    "syllable": "san",
+    "tone": 5,
+    "numbered": "san5"
+  },
+  {
+    "marked": "sha",
+    "syllable": "sha",
+    "tone": 5,
+    "numbered": "sha5"
+  },
+  {
+    "marked": "shang",
+    "syllable": "shang",
+    "tone": 5,
+    "numbered": "shang5"
+  },
+  {
+    "marked": "sheng",
+    "syllable": "sheng",
+    "tone": 5,
+    "numbered": "sheng5"
+  },
+  {
+    "marked": "shi",
+    "syllable": "shi",
+    "tone": 5,
+    "numbered": "shi5"
+  },
+  {
+    "marked": "shou",
+    "syllable": "shou",
+    "tone": 5,
+    "numbered": "shou5"
+  },
+  {
+    "marked": "shui",
+    "syllable": "shui",
+    "tone": 5,
+    "numbered": "shui5"
+  },
+  {
+    "marked": "shuà",
+    "syllable": "shua",
+    "tone": 4,
+    "numbered": "shua4"
+  },
+  {
+    "marked": "shuài",
+    "syllable": "shuai",
+    "tone": 4,
+    "numbered": "shuai4"
+  },
+  {
+    "marked": "shuàn",
+    "syllable": "shuan",
+    "tone": 4,
+    "numbered": "shuan4"
+  },
+  {
+    "marked": "shuàng",
+    "syllable": "shuang",
+    "tone": 4,
+    "numbered": "shuang4"
+  },
+  {
+    "marked": "shuì",
+    "syllable": "shui",
+    "tone": 4,
+    "numbered": "shui4"
+  },
+  {
+    "marked": "shuí",
+    "syllable": "shui",
+    "tone": 2,
+    "numbered": "shui2"
+  },
+  {
+    "marked": "shuò",
+    "syllable": "shuo",
+    "tone": 4,
+    "numbered": "shuo4"
+  },
+  {
+    "marked": "shuó",
+    "syllable": "shuo",
+    "tone": 2,
+    "numbered": "shuo2"
+  },
+  {
+    "marked": "shuā",
+    "syllable": "shua",
+    "tone": 1,
+    "numbered": "shua1"
+  },
+  {
+    "marked": "shuāi",
+    "syllable": "shuai",
+    "tone": 1,
+    "numbered": "shuai1"
+  },
+  {
+    "marked": "shuān",
+    "syllable": "shuan",
+    "tone": 1,
+    "numbered": "shuan1"
+  },
+  {
+    "marked": "shuāng",
+    "syllable": "shuang",
+    "tone": 1,
+    "numbered": "shuang1"
+  },
+  {
+    "marked": "shuō",
+    "syllable": "shuo",
+    "tone": 1,
+    "numbered": "shuo1"
+  },
+  {
+    "marked": "shuǎ",
+    "syllable": "shua",
+    "tone": 3,
+    "numbered": "shua3"
+  },
+  {
+    "marked": "shuǎi",
+    "syllable": "shuai",
+    "tone": 3,
+    "numbered": "shuai3"
+  },
+  {
+    "marked": "shuǎng",
+    "syllable": "shuang",
+    "tone": 3,
+    "numbered": "shuang3"
+  },
+  {
+    "marked": "shuǐ",
+    "syllable": "shui",
+    "tone": 3,
+    "numbered": "shui3"
+  },
+  {
+    "marked": "shà",
+    "syllable": "sha",
+    "tone": 4,
+    "numbered": "sha4"
+  },
+  {
+    "marked": "shài",
+    "syllable": "shai",
+    "tone": 4,
+    "numbered": "shai4"
+  },
+  {
+    "marked": "shàn",
+    "syllable": "shan",
+    "tone": 4,
+    "numbered": "shan4"
+  },
+  {
+    "marked": "shàng",
+    "syllable": "shang",
+    "tone": 4,
+    "numbered": "shang4"
+  },
+  {
+    "marked": "shào",
+    "syllable": "shao",
+    "tone": 4,
+    "numbered": "shao4"
+  },
+  {
+    "marked": "shá",
+    "syllable": "sha",
+    "tone": 2,
+    "numbered": "sha2"
+  },
+  {
+    "marked": "shán",
+    "syllable": "shan",
+    "tone": 2,
+    "numbered": "shan2"
+  },
+  {
+    "marked": "sháo",
+    "syllable": "shao",
+    "tone": 2,
+    "numbered": "shao2"
+  },
+  {
+    "marked": "shè",
+    "syllable": "she",
+    "tone": 4,
+    "numbered": "she4"
+  },
+  {
+    "marked": "shèn",
+    "syllable": "shen",
+    "tone": 4,
+    "numbered": "shen4"
+  },
+  {
+    "marked": "shèng",
+    "syllable": "sheng",
+    "tone": 4,
+    "numbered": "sheng4"
+  },
+  {
+    "marked": "shé",
+    "syllable": "she",
+    "tone": 2,
+    "numbered": "she2"
+  },
+  {
+    "marked": "shéi",
+    "syllable": "shei",
+    "tone": 2,
+    "numbered": "shei2"
+  },
+  {
+    "marked": "shén",
+    "syllable": "shen",
+    "tone": 2,
+    "numbered": "shen2"
+  },
+  {
+    "marked": "shéng",
+    "syllable": "sheng",
+    "tone": 2,
+    "numbered": "sheng2"
+  },
+  {
+    "marked": "shì",
+    "syllable": "shi",
+    "tone": 4,
+    "numbered": "shi4"
+  },
+  {
+    "marked": "shí",
+    "syllable": "shi",
+    "tone": 2,
+    "numbered": "shi2"
+  },
+  {
+    "marked": "shòu",
+    "syllable": "shou",
+    "tone": 4,
+    "numbered": "shou4"
+  },
+  {
+    "marked": "shóu",
+    "syllable": "shou",
+    "tone": 2,
+    "numbered": "shou2"
+  },
+  {
+    "marked": "shù",
+    "syllable": "shu",
+    "tone": 4,
+    "numbered": "shu4"
+  },
+  {
+    "marked": "shùn",
+    "syllable": "shun",
+    "tone": 4,
+    "numbered": "shun4"
+  },
+  {
+    "marked": "shú",
+    "syllable": "shu",
+    "tone": 2,
+    "numbered": "shu2"
+  },
+  {
+    "marked": "shā",
+    "syllable": "sha",
+    "tone": 1,
+    "numbered": "sha1"
+  },
+  {
+    "marked": "shāi",
+    "syllable": "shai",
+    "tone": 1,
+    "numbered": "shai1"
+  },
+  {
+    "marked": "shān",
+    "syllable": "shan",
+    "tone": 1,
+    "numbered": "shan1"
+  },
+  {
+    "marked": "shāng",
+    "syllable": "shang",
+    "tone": 1,
+    "numbered": "shang1"
+  },
+  {
+    "marked": "shāo",
+    "syllable": "shao",
+    "tone": 1,
+    "numbered": "shao1"
+  },
+  {
+    "marked": "shē",
+    "syllable": "she",
+    "tone": 1,
+    "numbered": "she1"
+  },
+  {
+    "marked": "shēn",
+    "syllable": "shen",
+    "tone": 1,
+    "numbered": "shen1"
+  },
+  {
+    "marked": "shēng",
+    "syllable": "sheng",
+    "tone": 1,
+    "numbered": "sheng1"
+  },
+  {
+    "marked": "shě",
+    "syllable": "she",
+    "tone": 3,
+    "numbered": "she3"
+  },
+  {
+    "marked": "shěn",
+    "syllable": "shen",
+    "tone": 3,
+    "numbered": "shen3"
+  },
+  {
+    "marked": "shěng",
+    "syllable": "sheng",
+    "tone": 3,
+    "numbered": "sheng3"
+  },
+  {
+    "marked": "shī",
+    "syllable": "shi",
+    "tone": 1,
+    "numbered": "shi1"
+  },
+  {
+    "marked": "shōu",
+    "syllable": "shou",
+    "tone": 1,
+    "numbered": "shou1"
+  },
+  {
+    "marked": "shū",
+    "syllable": "shu",
+    "tone": 1,
+    "numbered": "shu1"
+  },
+  {
+    "marked": "shǎ",
+    "syllable": "sha",
+    "tone": 3,
+    "numbered": "sha3"
+  },
+  {
+    "marked": "shǎi",
+    "syllable": "shai",
+    "tone": 3,
+    "numbered": "shai3"
+  },
+  {
+    "marked": "shǎn",
+    "syllable": "shan",
+    "tone": 3,
+    "numbered": "shan3"
+  },
+  {
+    "marked": "shǎng",
+    "syllable": "shang",
+    "tone": 3,
+    "numbered": "shang3"
+  },
+  {
+    "marked": "shǎo",
+    "syllable": "shao",
+    "tone": 3,
+    "numbered": "shao3"
+  },
+  {
+    "marked": "shǐ",
+    "syllable": "shi",
+    "tone": 3,
+    "numbered": "shi3"
+  },
+  {
+    "marked": "shǒu",
+    "syllable": "shou",
+    "tone": 3,
+    "numbered": "shou3"
+  },
+  {
+    "marked": "shǔ",
+    "syllable": "shu",
+    "tone": 3,
+    "numbered": "shu3"
+  },
+  {
+    "marked": "shǔn",
+    "syllable": "shun",
+    "tone": 3,
+    "numbered": "shun3"
+  },
+  {
+    "marked": "si",
+    "syllable": "si",
+    "tone": 5,
+    "numbered": "si5"
+  },
+  {
+    "marked": "suo",
+    "syllable": "suo",
+    "tone": 5,
+    "numbered": "suo5"
+  },
+  {
+    "marked": "suàn",
+    "syllable": "suan",
+    "tone": 4,
+    "numbered": "suan4"
+  },
+  {
+    "marked": "suì",
+    "syllable": "sui",
+    "tone": 4,
+    "numbered": "sui4"
+  },
+  {
+    "marked": "suí",
+    "syllable": "sui",
+    "tone": 2,
+    "numbered": "sui2"
+  },
+  {
+    "marked": "suò",
+    "syllable": "suo",
+    "tone": 4,
+    "numbered": "suo4"
+  },
+  {
+    "marked": "suó",
+    "syllable": "suo",
+    "tone": 2,
+    "numbered": "suo2"
+  },
+  {
+    "marked": "suān",
+    "syllable": "suan",
+    "tone": 1,
+    "numbered": "suan1"
+  },
+  {
+    "marked": "suī",
+    "syllable": "sui",
+    "tone": 1,
+    "numbered": "sui1"
+  },
+  {
+    "marked": "suō",
+    "syllable": "suo",
+    "tone": 1,
+    "numbered": "suo1"
+  },
+  {
+    "marked": "suǎn",
+    "syllable": "suan",
+    "tone": 3,
+    "numbered": "suan3"
+  },
+  {
+    "marked": "suǐ",
+    "syllable": "sui",
+    "tone": 3,
+    "numbered": "sui3"
+  },
+  {
+    "marked": "suǒ",
+    "syllable": "suo",
+    "tone": 3,
+    "numbered": "suo3"
+  },
+  {
+    "marked": "sà",
+    "syllable": "sa",
+    "tone": 4,
+    "numbered": "sa4"
+  },
+  {
+    "marked": "sài",
+    "syllable": "sai",
+    "tone": 4,
+    "numbered": "sai4"
+  },
+  {
+    "marked": "sàn",
+    "syllable": "san",
+    "tone": 4,
+    "numbered": "san4"
+  },
+  {
+    "marked": "sàng",
+    "syllable": "sang",
+    "tone": 4,
+    "numbered": "sang4"
+  },
+  {
+    "marked": "sào",
+    "syllable": "sao",
+    "tone": 4,
+    "numbered": "sao4"
+  },
+  {
+    "marked": "sè",
+    "syllable": "se",
+    "tone": 4,
+    "numbered": "se4"
+  },
+  {
+    "marked": "sèng",
+    "syllable": "seng",
+    "tone": 4,
+    "numbered": "seng4"
+  },
+  {
+    "marked": "sì",
+    "syllable": "si",
+    "tone": 4,
+    "numbered": "si4"
+  },
+  {
+    "marked": "sí",
+    "syllable": "si",
+    "tone": 2,
+    "numbered": "si2"
+  },
+  {
+    "marked": "sòng",
+    "syllable": "song",
+    "tone": 4,
+    "numbered": "song4"
+  },
+  {
+    "marked": "sòu",
+    "syllable": "sou",
+    "tone": 4,
+    "numbered": "sou4"
+  },
+  {
+    "marked": "sóng",
+    "syllable": "song",
+    "tone": 2,
+    "numbered": "song2"
+  },
+  {
+    "marked": "sù",
+    "syllable": "su",
+    "tone": 4,
+    "numbered": "su4"
+  },
+  {
+    "marked": "sùn",
+    "syllable": "sun",
+    "tone": 4,
+    "numbered": "sun4"
+  },
+  {
+    "marked": "sú",
+    "syllable": "su",
+    "tone": 2,
+    "numbered": "su2"
+  },
+  {
+    "marked": "sā",
+    "syllable": "sa",
+    "tone": 1,
+    "numbered": "sa1"
+  },
+  {
+    "marked": "sāi",
+    "syllable": "sai",
+    "tone": 1,
+    "numbered": "sai1"
+  },
+  {
+    "marked": "sān",
+    "syllable": "san",
+    "tone": 1,
+    "numbered": "san1"
+  },
+  {
+    "marked": "sāng",
+    "syllable": "sang",
+    "tone": 1,
+    "numbered": "sang1"
+  },
+  {
+    "marked": "sāo",
+    "syllable": "sao",
+    "tone": 1,
+    "numbered": "sao1"
+  },
+  {
+    "marked": "sē",
+    "syllable": "se",
+    "tone": 1,
+    "numbered": "se1"
+  },
+  {
+    "marked": "sēn",
+    "syllable": "sen",
+    "tone": 1,
+    "numbered": "sen1"
+  },
+  {
+    "marked": "sēng",
+    "syllable": "seng",
+    "tone": 1,
+    "numbered": "seng1"
+  },
+  {
+    "marked": "sěn",
+    "syllable": "sen",
+    "tone": 3,
+    "numbered": "sen3"
+  },
+  {
+    "marked": "sī",
+    "syllable": "si",
+    "tone": 1,
+    "numbered": "si1"
+  },
+  {
+    "marked": "sōng",
+    "syllable": "song",
+    "tone": 1,
+    "numbered": "song1"
+  },
+  {
+    "marked": "sōu",
+    "syllable": "sou",
+    "tone": 1,
+    "numbered": "sou1"
+  },
+  {
+    "marked": "sū",
+    "syllable": "su",
+    "tone": 1,
+    "numbered": "su1"
+  },
+  {
+    "marked": "sūn",
+    "syllable": "sun",
+    "tone": 1,
+    "numbered": "sun1"
+  },
+  {
+    "marked": "sǎ",
+    "syllable": "sa",
+    "tone": 3,
+    "numbered": "sa3"
+  },
+  {
+    "marked": "sǎi",
+    "syllable": "sai",
+    "tone": 3,
+    "numbered": "sai3"
+  },
+  {
+    "marked": "sǎn",
+    "syllable": "san",
+    "tone": 3,
+    "numbered": "san3"
+  },
+  {
+    "marked": "sǎng",
+    "syllable": "sang",
+    "tone": 3,
+    "numbered": "sang3"
+  },
+  {
+    "marked": "sǎo",
+    "syllable": "sao",
+    "tone": 3,
+    "numbered": "sao3"
+  },
+  {
+    "marked": "sǐ",
+    "syllable": "si",
+    "tone": 3,
+    "numbered": "si3"
+  },
+  {
+    "marked": "sǒng",
+    "syllable": "song",
+    "tone": 3,
+    "numbered": "song3"
+  },
+  {
+    "marked": "sǒu",
+    "syllable": "sou",
+    "tone": 3,
+    "numbered": "sou3"
+  },
+  {
+    "marked": "sǔ",
+    "syllable": "su",
+    "tone": 3,
+    "numbered": "su3"
+  },
+  {
+    "marked": "sǔn",
+    "syllable": "sun",
+    "tone": 3,
+    "numbered": "sun3"
+  },
+  {
+    "marked": "ta",
+    "syllable": "ta",
+    "tone": 5,
+    "numbered": "ta5"
+  },
+  {
+    "marked": "tai",
+    "syllable": "tai",
+    "tone": 5,
+    "numbered": "tai5"
+  },
+  {
+    "marked": "te",
+    "syllable": "te",
+    "tone": 5,
+    "numbered": "te5"
+  },
+  {
+    "marked": "teng",
+    "syllable": "teng",
+    "tone": 5,
+    "numbered": "teng5"
+  },
+  {
+    "marked": "tiao",
+    "syllable": "tiao",
+    "tone": 5,
+    "numbered": "tiao5"
+  },
+  {
+    "marked": "tiàn",
+    "syllable": "tian",
+    "tone": 4,
+    "numbered": "tian4"
+  },
+  {
+    "marked": "tiào",
+    "syllable": "tiao",
+    "tone": 4,
+    "numbered": "tiao4"
+  },
+  {
+    "marked": "tián",
+    "syllable": "tian",
+    "tone": 2,
+    "numbered": "tian2"
+  },
+  {
+    "marked": "tiáo",
+    "syllable": "tiao",
+    "tone": 2,
+    "numbered": "tiao2"
+  },
+  {
+    "marked": "tiè",
+    "syllable": "tie",
+    "tone": 4,
+    "numbered": "tie4"
+  },
+  {
+    "marked": "tié",
+    "syllable": "tie",
+    "tone": 2,
+    "numbered": "tie2"
+  },
+  {
+    "marked": "tiān",
+    "syllable": "tian",
+    "tone": 1,
+    "numbered": "tian1"
+  },
+  {
+    "marked": "tiāo",
+    "syllable": "tiao",
+    "tone": 1,
+    "numbered": "tiao1"
+  },
+  {
+    "marked": "tiē",
+    "syllable": "tie",
+    "tone": 1,
+    "numbered": "tie1"
+  },
+  {
+    "marked": "tiě",
+    "syllable": "tie",
+    "tone": 3,
+    "numbered": "tie3"
+  },
+  {
+    "marked": "tiǎn",
+    "syllable": "tian",
+    "tone": 3,
+    "numbered": "tian3"
+  },
+  {
+    "marked": "tiǎo",
+    "syllable": "tiao",
+    "tone": 3,
+    "numbered": "tiao3"
+  },
+  {
+    "marked": "tou",
+    "syllable": "tou",
+    "tone": 5,
+    "numbered": "tou5"
+  },
+  {
+    "marked": "tu",
+    "syllable": "tu",
+    "tone": 5,
+    "numbered": "tu5"
+  },
+  {
+    "marked": "tuàn",
+    "syllable": "tuan",
+    "tone": 4,
+    "numbered": "tuan4"
+  },
+  {
+    "marked": "tuán",
+    "syllable": "tuan",
+    "tone": 2,
+    "numbered": "tuan2"
+  },
+  {
+    "marked": "tuì",
+    "syllable": "tui",
+    "tone": 4,
+    "numbered": "tui4"
+  },
+  {
+    "marked": "tuí",
+    "syllable": "tui",
+    "tone": 2,
+    "numbered": "tui2"
+  },
+  {
+    "marked": "tuò",
+    "syllable": "tuo",
+    "tone": 4,
+    "numbered": "tuo4"
+  },
+  {
+    "marked": "tuó",
+    "syllable": "tuo",
+    "tone": 2,
+    "numbered": "tuo2"
+  },
+  {
+    "marked": "tuān",
+    "syllable": "tuan",
+    "tone": 1,
+    "numbered": "tuan1"
+  },
+  {
+    "marked": "tuī",
+    "syllable": "tui",
+    "tone": 1,
+    "numbered": "tui1"
+  },
+  {
+    "marked": "tuō",
+    "syllable": "tuo",
+    "tone": 1,
+    "numbered": "tuo1"
+  },
+  {
+    "marked": "tuǎn",
+    "syllable": "tuan",
+    "tone": 3,
+    "numbered": "tuan3"
+  },
+  {
+    "marked": "tuǐ",
+    "syllable": "tui",
+    "tone": 3,
+    "numbered": "tui3"
+  },
+  {
+    "marked": "tuǒ",
+    "syllable": "tuo",
+    "tone": 3,
+    "numbered": "tuo3"
+  },
+  {
+    "marked": "tà",
+    "syllable": "ta",
+    "tone": 4,
+    "numbered": "ta4"
+  },
+  {
+    "marked": "tài",
+    "syllable": "tai",
+    "tone": 4,
+    "numbered": "tai4"
+  },
+  {
+    "marked": "tàn",
+    "syllable": "tan",
+    "tone": 4,
+    "numbered": "tan4"
+  },
+  {
+    "marked": "tàng",
+    "syllable": "tang",
+    "tone": 4,
+    "numbered": "tang4"
+  },
+  {
+    "marked": "tào",
+    "syllable": "tao",
+    "tone": 4,
+    "numbered": "tao4"
+  },
+  {
+    "marked": "tá",
+    "syllable": "ta",
+    "tone": 2,
+    "numbered": "ta2"
+  },
+  {
+    "marked": "tái",
+    "syllable": "tai",
+    "tone": 2,
+    "numbered": "tai2"
+  },
+  {
+    "marked": "tán",
+    "syllable": "tan",
+    "tone": 2,
+    "numbered": "tan2"
+  },
+  {
+    "marked": "táng",
+    "syllable": "tang",
+    "tone": 2,
+    "numbered": "tang2"
+  },
+  {
+    "marked": "táo",
+    "syllable": "tao",
+    "tone": 2,
+    "numbered": "tao2"
+  },
+  {
+    "marked": "tè",
+    "syllable": "te",
+    "tone": 4,
+    "numbered": "te4"
+  },
+  {
+    "marked": "tèng",
+    "syllable": "teng",
+    "tone": 4,
+    "numbered": "teng4"
+  },
+  {
+    "marked": "téng",
+    "syllable": "teng",
+    "tone": 2,
+    "numbered": "teng2"
+  },
+  {
+    "marked": "tì",
+    "syllable": "ti",
+    "tone": 4,
+    "numbered": "ti4"
+  },
+  {
+    "marked": "tìng",
+    "syllable": "ting",
+    "tone": 4,
+    "numbered": "ting4"
+  },
+  {
+    "marked": "tí",
+    "syllable": "ti",
+    "tone": 2,
+    "numbered": "ti2"
+  },
+  {
+    "marked": "tíng",
+    "syllable": "ting",
+    "tone": 2,
+    "numbered": "ting2"
+  },
+  {
+    "marked": "tòng",
+    "syllable": "tong",
+    "tone": 4,
+    "numbered": "tong4"
+  },
+  {
+    "marked": "tòu",
+    "syllable": "tou",
+    "tone": 4,
+    "numbered": "tou4"
+  },
+  {
+    "marked": "tóng",
+    "syllable": "tong",
+    "tone": 2,
+    "numbered": "tong2"
+  },
+  {
+    "marked": "tóu",
+    "syllable": "tou",
+    "tone": 2,
+    "numbered": "tou2"
+  },
+  {
+    "marked": "tù",
+    "syllable": "tu",
+    "tone": 4,
+    "numbered": "tu4"
+  },
+  {
+    "marked": "tùn",
+    "syllable": "tun",
+    "tone": 4,
+    "numbered": "tun4"
+  },
+  {
+    "marked": "tú",
+    "syllable": "tu",
+    "tone": 2,
+    "numbered": "tu2"
+  },
+  {
+    "marked": "tún",
+    "syllable": "tun",
+    "tone": 2,
+    "numbered": "tun2"
+  },
+  {
+    "marked": "tā",
+    "syllable": "ta",
+    "tone": 1,
+    "numbered": "ta1"
+  },
+  {
+    "marked": "tāi",
+    "syllable": "tai",
+    "tone": 1,
+    "numbered": "tai1"
+  },
+  {
+    "marked": "tān",
+    "syllable": "tan",
+    "tone": 1,
+    "numbered": "tan1"
+  },
+  {
+    "marked": "tāng",
+    "syllable": "tang",
+    "tone": 1,
+    "numbered": "tang1"
+  },
+  {
+    "marked": "tāo",
+    "syllable": "tao",
+    "tone": 1,
+    "numbered": "tao1"
+  },
+  {
+    "marked": "tēi",
+    "syllable": "tei",
+    "tone": 1,
+    "numbered": "tei1"
+  },
+  {
+    "marked": "tēng",
+    "syllable": "teng",
+    "tone": 1,
+    "numbered": "teng1"
+  },
+  {
+    "marked": "tī",
+    "syllable": "ti",
+    "tone": 1,
+    "numbered": "ti1"
+  },
+  {
+    "marked": "tīng",
+    "syllable": "ting",
+    "tone": 1,
+    "numbered": "ting1"
+  },
+  {
+    "marked": "tōng",
+    "syllable": "tong",
+    "tone": 1,
+    "numbered": "tong1"
+  },
+  {
+    "marked": "tōu",
+    "syllable": "tou",
+    "tone": 1,
+    "numbered": "tou1"
+  },
+  {
+    "marked": "tū",
+    "syllable": "tu",
+    "tone": 1,
+    "numbered": "tu1"
+  },
+  {
+    "marked": "tūn",
+    "syllable": "tun",
+    "tone": 1,
+    "numbered": "tun1"
+  },
+  {
+    "marked": "tǎ",
+    "syllable": "ta",
+    "tone": 3,
+    "numbered": "ta3"
+  },
+  {
+    "marked": "tǎi",
+    "syllable": "tai",
+    "tone": 3,
+    "numbered": "tai3"
+  },
+  {
+    "marked": "tǎn",
+    "syllable": "tan",
+    "tone": 3,
+    "numbered": "tan3"
+  },
+  {
+    "marked": "tǎng",
+    "syllable": "tang",
+    "tone": 3,
+    "numbered": "tang3"
+  },
+  {
+    "marked": "tǎo",
+    "syllable": "tao",
+    "tone": 3,
+    "numbered": "tao3"
+  },
+  {
+    "marked": "tǐ",
+    "syllable": "ti",
+    "tone": 3,
+    "numbered": "ti3"
+  },
+  {
+    "marked": "tǐng",
+    "syllable": "ting",
+    "tone": 3,
+    "numbered": "ting3"
+  },
+  {
+    "marked": "tǒng",
+    "syllable": "tong",
+    "tone": 3,
+    "numbered": "tong3"
+  },
+  {
+    "marked": "tǒu",
+    "syllable": "tou",
+    "tone": 3,
+    "numbered": "tou3"
+  },
+  {
+    "marked": "tǔ",
+    "syllable": "tu",
+    "tone": 3,
+    "numbered": "tu3"
+  },
+  {
+    "marked": "tǔn",
+    "syllable": "tun",
+    "tone": 3,
+    "numbered": "tun3"
+  },
+  {
+    "marked": "wa",
+    "syllable": "wa",
+    "tone": 5,
+    "numbered": "wa5"
+  },
+  {
+    "marked": "wai",
+    "syllable": "wai",
+    "tone": 5,
+    "numbered": "wai5"
+  },
+  {
+    "marked": "wei",
+    "syllable": "wei",
+    "tone": 5,
+    "numbered": "wei5"
+  },
+  {
+    "marked": "wen",
+    "syllable": "wen",
+    "tone": 5,
+    "numbered": "wen5"
+  },
+  {
+    "marked": "wu",
+    "syllable": "wu",
+    "tone": 5,
+    "numbered": "wu5"
+  },
+  {
+    "marked": "wà",
+    "syllable": "wa",
+    "tone": 4,
+    "numbered": "wa4"
+  },
+  {
+    "marked": "wài",
+    "syllable": "wai",
+    "tone": 4,
+    "numbered": "wai4"
+  },
+  {
+    "marked": "wàn",
+    "syllable": "wan",
+    "tone": 4,
+    "numbered": "wan4"
+  },
+  {
+    "marked": "wàng",
+    "syllable": "wang",
+    "tone": 4,
+    "numbered": "wang4"
+  },
+  {
+    "marked": "wá",
+    "syllable": "wa",
+    "tone": 2,
+    "numbered": "wa2"
+  },
+  {
+    "marked": "wán",
+    "syllable": "wan",
+    "tone": 2,
+    "numbered": "wan2"
+  },
+  {
+    "marked": "wáng",
+    "syllable": "wang",
+    "tone": 2,
+    "numbered": "wang2"
+  },
+  {
+    "marked": "wèi",
+    "syllable": "wei",
+    "tone": 4,
+    "numbered": "wei4"
+  },
+  {
+    "marked": "wèn",
+    "syllable": "wen",
+    "tone": 4,
+    "numbered": "wen4"
+  },
+  {
+    "marked": "wèng",
+    "syllable": "weng",
+    "tone": 4,
+    "numbered": "weng4"
+  },
+  {
+    "marked": "wéi",
+    "syllable": "wei",
+    "tone": 2,
+    "numbered": "wei2"
+  },
+  {
+    "marked": "wén",
+    "syllable": "wen",
+    "tone": 2,
+    "numbered": "wen2"
+  },
+  {
+    "marked": "wò",
+    "syllable": "wo",
+    "tone": 4,
+    "numbered": "wo4"
+  },
+  {
+    "marked": "wòng",
+    "syllable": "wong",
+    "tone": 4,
+    "numbered": "wong4"
+  },
+  {
+    "marked": "wù",
+    "syllable": "wu",
+    "tone": 4,
+    "numbered": "wu4"
+  },
+  {
+    "marked": "wú",
+    "syllable": "wu",
+    "tone": 2,
+    "numbered": "wu2"
+  },
+  {
+    "marked": "wā",
+    "syllable": "wa",
+    "tone": 1,
+    "numbered": "wa1"
+  },
+  {
+    "marked": "wāi",
+    "syllable": "wai",
+    "tone": 1,
+    "numbered": "wai1"
+  },
+  {
+    "marked": "wān",
+    "syllable": "wan",
+    "tone": 1,
+    "numbered": "wan1"
+  },
+  {
+    "marked": "wāng",
+    "syllable": "wang",
+    "tone": 1,
+    "numbered": "wang1"
+  },
+  {
+    "marked": "wēi",
+    "syllable": "wei",
+    "tone": 1,
+    "numbered": "wei1"
+  },
+  {
+    "marked": "wēn",
+    "syllable": "wen",
+    "tone": 1,
+    "numbered": "wen1"
+  },
+  {
+    "marked": "wēng",
+    "syllable": "weng",
+    "tone": 1,
+    "numbered": "weng1"
+  },
+  {
+    "marked": "wěi",
+    "syllable": "wei",
+    "tone": 3,
+    "numbered": "wei3"
+  },
+  {
+    "marked": "wěn",
+    "syllable": "wen",
+    "tone": 3,
+    "numbered": "wen3"
+  },
+  {
+    "marked": "wěng",
+    "syllable": "weng",
+    "tone": 3,
+    "numbered": "weng3"
+  },
+  {
+    "marked": "wō",
+    "syllable": "wo",
+    "tone": 1,
+    "numbered": "wo1"
+  },
+  {
+    "marked": "wū",
+    "syllable": "wu",
+    "tone": 1,
+    "numbered": "wu1"
+  },
+  {
+    "marked": "wǎ",
+    "syllable": "wa",
+    "tone": 3,
+    "numbered": "wa3"
+  },
+  {
+    "marked": "wǎi",
+    "syllable": "wai",
+    "tone": 3,
+    "numbered": "wai3"
+  },
+  {
+    "marked": "wǎn",
+    "syllable": "wan",
+    "tone": 3,
+    "numbered": "wan3"
+  },
+  {
+    "marked": "wǎng",
+    "syllable": "wang",
+    "tone": 3,
+    "numbered": "wang3"
+  },
+  {
+    "marked": "wǒ",
+    "syllable": "wo",
+    "tone": 3,
+    "numbered": "wo3"
+  },
+  {
+    "marked": "wǔ",
+    "syllable": "wu",
+    "tone": 3,
+    "numbered": "wu3"
+  },
+  {
+    "marked": "xi",
+    "syllable": "xi",
+    "tone": 5,
+    "numbered": "xi5"
+  },
+  {
+    "marked": "xian",
+    "syllable": "xian",
+    "tone": 5,
+    "numbered": "xian5"
+  },
+  {
+    "marked": "xiao",
+    "syllable": "xiao",
+    "tone": 5,
+    "numbered": "xiao5"
+  },
+  {
+    "marked": "xin",
+    "syllable": "xin",
+    "tone": 5,
+    "numbered": "xin5"
+  },
+  {
+    "marked": "xing",
+    "syllable": "xing",
+    "tone": 5,
+    "numbered": "xing5"
+  },
+  {
+    "marked": "xià",
+    "syllable": "xia",
+    "tone": 4,
+    "numbered": "xia4"
+  },
+  {
+    "marked": "xiàn",
+    "syllable": "xian",
+    "tone": 4,
+    "numbered": "xian4"
+  },
+  {
+    "marked": "xiàng",
+    "syllable": "xiang",
+    "tone": 4,
+    "numbered": "xiang4"
+  },
+  {
+    "marked": "xiào",
+    "syllable": "xiao",
+    "tone": 4,
+    "numbered": "xiao4"
+  },
+  {
+    "marked": "xiá",
+    "syllable": "xia",
+    "tone": 2,
+    "numbered": "xia2"
+  },
+  {
+    "marked": "xián",
+    "syllable": "xian",
+    "tone": 2,
+    "numbered": "xian2"
+  },
+  {
+    "marked": "xiáng",
+    "syllable": "xiang",
+    "tone": 2,
+    "numbered": "xiang2"
+  },
+  {
+    "marked": "xiáo",
+    "syllable": "xiao",
+    "tone": 2,
+    "numbered": "xiao2"
+  },
+  {
+    "marked": "xiè",
+    "syllable": "xie",
+    "tone": 4,
+    "numbered": "xie4"
+  },
+  {
+    "marked": "xié",
+    "syllable": "xie",
+    "tone": 2,
+    "numbered": "xie2"
+  },
+  {
+    "marked": "xiòng",
+    "syllable": "xiong",
+    "tone": 4,
+    "numbered": "xiong4"
+  },
+  {
+    "marked": "xióng",
+    "syllable": "xiong",
+    "tone": 2,
+    "numbered": "xiong2"
+  },
+  {
+    "marked": "xiù",
+    "syllable": "xiu",
+    "tone": 4,
+    "numbered": "xiu4"
+  },
+  {
+    "marked": "xiú",
+    "syllable": "xiu",
+    "tone": 2,
+    "numbered": "xiu2"
+  },
+  {
+    "marked": "xiā",
+    "syllable": "xia",
+    "tone": 1,
+    "numbered": "xia1"
+  },
+  {
+    "marked": "xiān",
+    "syllable": "xian",
+    "tone": 1,
+    "numbered": "xian1"
+  },
+  {
+    "marked": "xiāng",
+    "syllable": "xiang",
+    "tone": 1,
+    "numbered": "xiang1"
+  },
+  {
+    "marked": "xiāo",
+    "syllable": "xiao",
+    "tone": 1,
+    "numbered": "xiao1"
+  },
+  {
+    "marked": "xiē",
+    "syllable": "xie",
+    "tone": 1,
+    "numbered": "xie1"
+  },
+  {
+    "marked": "xiě",
+    "syllable": "xie",
+    "tone": 3,
+    "numbered": "xie3"
+  },
+  {
+    "marked": "xiōng",
+    "syllable": "xiong",
+    "tone": 1,
+    "numbered": "xiong1"
+  },
+  {
+    "marked": "xiū",
+    "syllable": "xiu",
+    "tone": 1,
+    "numbered": "xiu1"
+  },
+  {
+    "marked": "xiǎ",
+    "syllable": "xia",
+    "tone": 3,
+    "numbered": "xia3"
+  },
+  {
+    "marked": "xiǎn",
+    "syllable": "xian",
+    "tone": 3,
+    "numbered": "xian3"
+  },
+  {
+    "marked": "xiǎng",
+    "syllable": "xiang",
+    "tone": 3,
+    "numbered": "xiang3"
+  },
+  {
+    "marked": "xiǎo",
+    "syllable": "xiao",
+    "tone": 3,
+    "numbered": "xiao3"
+  },
+  {
+    "marked": "xiǒng",
+    "syllable": "xiong",
+    "tone": 3,
+    "numbered": "xiong3"
+  },
+  {
+    "marked": "xiǔ",
+    "syllable": "xiu",
+    "tone": 3,
+    "numbered": "xiu3"
+  },
+  {
+    "marked": "xu",
+    "syllable": "xu",
+    "tone": 5,
+    "numbered": "xu5"
+  },
+  {
+    "marked": "xuàn",
+    "syllable": "xuan",
+    "tone": 4,
+    "numbered": "xuan4"
+  },
+  {
+    "marked": "xuán",
+    "syllable": "xuan",
+    "tone": 2,
+    "numbered": "xuan2"
+  },
+  {
+    "marked": "xuè",
+    "syllable": "xue",
+    "tone": 4,
+    "numbered": "xue4"
+  },
+  {
+    "marked": "xué",
+    "syllable": "xue",
+    "tone": 2,
+    "numbered": "xue2"
+  },
+  {
+    "marked": "xuān",
+    "syllable": "xuan",
+    "tone": 1,
+    "numbered": "xuan1"
+  },
+  {
+    "marked": "xuē",
+    "syllable": "xue",
+    "tone": 1,
+    "numbered": "xue1"
+  },
+  {
+    "marked": "xuě",
+    "syllable": "xue",
+    "tone": 3,
+    "numbered": "xue3"
+  },
+  {
+    "marked": "xuǎn",
+    "syllable": "xuan",
+    "tone": 3,
+    "numbered": "xuan3"
+  },
+  {
+    "marked": "xì",
+    "syllable": "xi",
+    "tone": 4,
+    "numbered": "xi4"
+  },
+  {
+    "marked": "xìn",
+    "syllable": "xin",
+    "tone": 4,
+    "numbered": "xin4"
+  },
+  {
+    "marked": "xìng",
+    "syllable": "xing",
+    "tone": 4,
+    "numbered": "xing4"
+  },
+  {
+    "marked": "xí",
+    "syllable": "xi",
+    "tone": 2,
+    "numbered": "xi2"
+  },
+  {
+    "marked": "xín",
+    "syllable": "xin",
+    "tone": 2,
+    "numbered": "xin2"
+  },
+  {
+    "marked": "xíng",
+    "syllable": "xing",
+    "tone": 2,
+    "numbered": "xing2"
+  },
+  {
+    "marked": "xù",
+    "syllable": "xu",
+    "tone": 4,
+    "numbered": "xu4"
+  },
+  {
+    "marked": "xùn",
+    "syllable": "xun",
+    "tone": 4,
+    "numbered": "xun4"
+  },
+  {
+    "marked": "xú",
+    "syllable": "xu",
+    "tone": 2,
+    "numbered": "xu2"
+  },
+  {
+    "marked": "xún",
+    "syllable": "xun",
+    "tone": 2,
+    "numbered": "xun2"
+  },
+  {
+    "marked": "xī",
+    "syllable": "xi",
+    "tone": 1,
+    "numbered": "xi1"
+  },
+  {
+    "marked": "xīn",
+    "syllable": "xin",
+    "tone": 1,
+    "numbered": "xin1"
+  },
+  {
+    "marked": "xīng",
+    "syllable": "xing",
+    "tone": 1,
+    "numbered": "xing1"
+  },
+  {
+    "marked": "xū",
+    "syllable": "xu",
+    "tone": 1,
+    "numbered": "xu1"
+  },
+  {
+    "marked": "xūn",
+    "syllable": "xun",
+    "tone": 1,
+    "numbered": "xun1"
+  },
+  {
+    "marked": "xǐ",
+    "syllable": "xi",
+    "tone": 3,
+    "numbered": "xi3"
+  },
+  {
+    "marked": "xǐn",
+    "syllable": "xin",
+    "tone": 3,
+    "numbered": "xin3"
+  },
+  {
+    "marked": "xǐng",
+    "syllable": "xing",
+    "tone": 3,
+    "numbered": "xing3"
+  },
+  {
+    "marked": "xǔ",
+    "syllable": "xu",
+    "tone": 3,
+    "numbered": "xu3"
+  },
+  {
+    "marked": "ya",
+    "syllable": "ya",
+    "tone": 5,
+    "numbered": "ya5"
+  },
+  {
+    "marked": "yang",
+    "syllable": "yang",
+    "tone": 5,
+    "numbered": "yang5"
+  },
+  {
+    "marked": "ye",
+    "syllable": "ye",
+    "tone": 5,
+    "numbered": "ye5"
+  },
+  {
+    "marked": "yi",
+    "syllable": "yi",
+    "tone": 5,
+    "numbered": "yi5"
+  },
+  {
+    "marked": "yin",
+    "syllable": "yin",
+    "tone": 5,
+    "numbered": "yin5"
+  },
+  {
+    "marked": "yo",
+    "syllable": "yo",
+    "tone": 5,
+    "numbered": "yo5"
+  },
+  {
+    "marked": "you",
+    "syllable": "you",
+    "tone": 5,
+    "numbered": "you5"
+  },
+  {
+    "marked": "yu",
+    "syllable": "yu",
+    "tone": 5,
+    "numbered": "yu5"
+  },
+  {
+    "marked": "yun",
+    "syllable": "yun",
+    "tone": 5,
+    "numbered": "yun5"
+  },
+  {
+    "marked": "yuàn",
+    "syllable": "yuan",
+    "tone": 4,
+    "numbered": "yuan4"
+  },
+  {
+    "marked": "yuán",
+    "syllable": "yuan",
+    "tone": 2,
+    "numbered": "yuan2"
+  },
+  {
+    "marked": "yuè",
+    "syllable": "yue",
+    "tone": 4,
+    "numbered": "yue4"
+  },
+  {
+    "marked": "yué",
+    "syllable": "yue",
+    "tone": 2,
+    "numbered": "yue2"
+  },
+  {
+    "marked": "yuān",
+    "syllable": "yuan",
+    "tone": 1,
+    "numbered": "yuan1"
+  },
+  {
+    "marked": "yuē",
+    "syllable": "yue",
+    "tone": 1,
+    "numbered": "yue1"
+  },
+  {
+    "marked": "yuě",
+    "syllable": "yue",
+    "tone": 3,
+    "numbered": "yue3"
+  },
+  {
+    "marked": "yuǎn",
+    "syllable": "yuan",
+    "tone": 3,
+    "numbered": "yuan3"
+  },
+  {
+    "marked": "yà",
+    "syllable": "ya",
+    "tone": 4,
+    "numbered": "ya4"
+  },
+  {
+    "marked": "yàn",
+    "syllable": "yan",
+    "tone": 4,
+    "numbered": "yan4"
+  },
+  {
+    "marked": "yàng",
+    "syllable": "yang",
+    "tone": 4,
+    "numbered": "yang4"
+  },
+  {
+    "marked": "yào",
+    "syllable": "yao",
+    "tone": 4,
+    "numbered": "yao4"
+  },
+  {
+    "marked": "yá",
+    "syllable": "ya",
+    "tone": 2,
+    "numbered": "ya2"
+  },
+  {
+    "marked": "yán",
+    "syllable": "yan",
+    "tone": 2,
+    "numbered": "yan2"
+  },
+  {
+    "marked": "yáng",
+    "syllable": "yang",
+    "tone": 2,
+    "numbered": "yang2"
+  },
+  {
+    "marked": "yáo",
+    "syllable": "yao",
+    "tone": 2,
+    "numbered": "yao2"
+  },
+  {
+    "marked": "yè",
+    "syllable": "ye",
+    "tone": 4,
+    "numbered": "ye4"
+  },
+  {
+    "marked": "yé",
+    "syllable": "ye",
+    "tone": 2,
+    "numbered": "ye2"
+  },
+  {
+    "marked": "yì",
+    "syllable": "yi",
+    "tone": 4,
+    "numbered": "yi4"
+  },
+  {
+    "marked": "yìn",
+    "syllable": "yin",
+    "tone": 4,
+    "numbered": "yin4"
+  },
+  {
+    "marked": "yìng",
+    "syllable": "ying",
+    "tone": 4,
+    "numbered": "ying4"
+  },
+  {
+    "marked": "yí",
+    "syllable": "yi",
+    "tone": 2,
+    "numbered": "yi2"
+  },
+  {
+    "marked": "yín",
+    "syllable": "yin",
+    "tone": 2,
+    "numbered": "yin2"
+  },
+  {
+    "marked": "yíng",
+    "syllable": "ying",
+    "tone": 2,
+    "numbered": "ying2"
+  },
+  {
+    "marked": "yòng",
+    "syllable": "yong",
+    "tone": 4,
+    "numbered": "yong4"
+  },
+  {
+    "marked": "yòu",
+    "syllable": "you",
+    "tone": 4,
+    "numbered": "you4"
+  },
+  {
+    "marked": "yóng",
+    "syllable": "yong",
+    "tone": 2,
+    "numbered": "yong2"
+  },
+  {
+    "marked": "yóu",
+    "syllable": "you",
+    "tone": 2,
+    "numbered": "you2"
+  },
+  {
+    "marked": "yù",
+    "syllable": "yu",
+    "tone": 4,
+    "numbered": "yu4"
+  },
+  {
+    "marked": "yùn",
+    "syllable": "yun",
+    "tone": 4,
+    "numbered": "yun4"
+  },
+  {
+    "marked": "yú",
+    "syllable": "yu",
+    "tone": 2,
+    "numbered": "yu2"
+  },
+  {
+    "marked": "yún",
+    "syllable": "yun",
+    "tone": 2,
+    "numbered": "yun2"
+  },
+  {
+    "marked": "yā",
+    "syllable": "ya",
+    "tone": 1,
+    "numbered": "ya1"
+  },
+  {
+    "marked": "yān",
+    "syllable": "yan",
+    "tone": 1,
+    "numbered": "yan1"
+  },
+  {
+    "marked": "yāng",
+    "syllable": "yang",
+    "tone": 1,
+    "numbered": "yang1"
+  },
+  {
+    "marked": "yāo",
+    "syllable": "yao",
+    "tone": 1,
+    "numbered": "yao1"
+  },
+  {
+    "marked": "yē",
+    "syllable": "ye",
+    "tone": 1,
+    "numbered": "ye1"
+  },
+  {
+    "marked": "yě",
+    "syllable": "ye",
+    "tone": 3,
+    "numbered": "ye3"
+  },
+  {
+    "marked": "yī",
+    "syllable": "yi",
+    "tone": 1,
+    "numbered": "yi1"
+  },
+  {
+    "marked": "yīn",
+    "syllable": "yin",
+    "tone": 1,
+    "numbered": "yin1"
+  },
+  {
+    "marked": "yīng",
+    "syllable": "ying",
+    "tone": 1,
+    "numbered": "ying1"
+  },
+  {
+    "marked": "yō",
+    "syllable": "yo",
+    "tone": 1,
+    "numbered": "yo1"
+  },
+  {
+    "marked": "yōng",
+    "syllable": "yong",
+    "tone": 1,
+    "numbered": "yong1"
+  },
+  {
+    "marked": "yōu",
+    "syllable": "you",
+    "tone": 1,
+    "numbered": "you1"
+  },
+  {
+    "marked": "yū",
+    "syllable": "yu",
+    "tone": 1,
+    "numbered": "yu1"
+  },
+  {
+    "marked": "yūn",
+    "syllable": "yun",
+    "tone": 1,
+    "numbered": "yun1"
+  },
+  {
+    "marked": "yǎ",
+    "syllable": "ya",
+    "tone": 3,
+    "numbered": "ya3"
+  },
+  {
+    "marked": "yǎn",
+    "syllable": "yan",
+    "tone": 3,
+    "numbered": "yan3"
+  },
+  {
+    "marked": "yǎng",
+    "syllable": "yang",
+    "tone": 3,
+    "numbered": "yang3"
+  },
+  {
+    "marked": "yǎo",
+    "syllable": "yao",
+    "tone": 3,
+    "numbered": "yao3"
+  },
+  {
+    "marked": "yǐ",
+    "syllable": "yi",
+    "tone": 3,
+    "numbered": "yi3"
+  },
+  {
+    "marked": "yǐn",
+    "syllable": "yin",
+    "tone": 3,
+    "numbered": "yin3"
+  },
+  {
+    "marked": "yǐng",
+    "syllable": "ying",
+    "tone": 3,
+    "numbered": "ying3"
+  },
+  {
+    "marked": "yǒng",
+    "syllable": "yong",
+    "tone": 3,
+    "numbered": "yong3"
+  },
+  {
+    "marked": "yǒu",
+    "syllable": "you",
+    "tone": 3,
+    "numbered": "you3"
+  },
+  {
+    "marked": "yǔ",
+    "syllable": "yu",
+    "tone": 3,
+    "numbered": "yu3"
+  },
+  {
+    "marked": "yǔn",
+    "syllable": "yun",
+    "tone": 3,
+    "numbered": "yun3"
+  },
+  {
+    "marked": "zan",
+    "syllable": "zan",
+    "tone": 5,
+    "numbered": "zan5"
+  },
+  {
+    "marked": "ze",
+    "syllable": "ze",
+    "tone": 5,
+    "numbered": "ze5"
+  },
+  {
+    "marked": "zen",
+    "syllable": "zen",
+    "tone": 5,
+    "numbered": "zen5"
+  },
+  {
+    "marked": "zha",
+    "syllable": "zha",
+    "tone": 5,
+    "numbered": "zha5"
+  },
+  {
+    "marked": "zhang",
+    "syllable": "zhang",
+    "tone": 5,
+    "numbered": "zhang5"
+  },
+  {
+    "marked": "zhao",
+    "syllable": "zhao",
+    "tone": 5,
+    "numbered": "zhao5"
+  },
+  {
+    "marked": "zhe",
+    "syllable": "zhe",
+    "tone": 5,
+    "numbered": "zhe5"
+  },
+  {
+    "marked": "zhi",
+    "syllable": "zhi",
+    "tone": 5,
+    "numbered": "zhi5"
+  },
+  {
+    "marked": "zhuo",
+    "syllable": "zhuo",
+    "tone": 5,
+    "numbered": "zhuo5"
+  },
+  {
+    "marked": "zhuài",
+    "syllable": "zhuai",
+    "tone": 4,
+    "numbered": "zhuai4"
+  },
+  {
+    "marked": "zhuàn",
+    "syllable": "zhuan",
+    "tone": 4,
+    "numbered": "zhuan4"
+  },
+  {
+    "marked": "zhuàng",
+    "syllable": "zhuang",
+    "tone": 4,
+    "numbered": "zhuang4"
+  },
+  {
+    "marked": "zhuán",
+    "syllable": "zhuan",
+    "tone": 2,
+    "numbered": "zhuan2"
+  },
+  {
+    "marked": "zhuì",
+    "syllable": "zhui",
+    "tone": 4,
+    "numbered": "zhui4"
+  },
+  {
+    "marked": "zhuò",
+    "syllable": "zhuo",
+    "tone": 4,
+    "numbered": "zhuo4"
+  },
+  {
+    "marked": "zhuó",
+    "syllable": "zhuo",
+    "tone": 2,
+    "numbered": "zhuo2"
+  },
+  {
+    "marked": "zhuā",
+    "syllable": "zhua",
+    "tone": 1,
+    "numbered": "zhua1"
+  },
+  {
+    "marked": "zhuāi",
+    "syllable": "zhuai",
+    "tone": 1,
+    "numbered": "zhuai1"
+  },
+  {
+    "marked": "zhuān",
+    "syllable": "zhuan",
+    "tone": 1,
+    "numbered": "zhuan1"
+  },
+  {
+    "marked": "zhuāng",
+    "syllable": "zhuang",
+    "tone": 1,
+    "numbered": "zhuang1"
+  },
+  {
+    "marked": "zhuī",
+    "syllable": "zhui",
+    "tone": 1,
+    "numbered": "zhui1"
+  },
+  {
+    "marked": "zhuō",
+    "syllable": "zhuo",
+    "tone": 1,
+    "numbered": "zhuo1"
+  },
+  {
+    "marked": "zhuǎ",
+    "syllable": "zhua",
+    "tone": 3,
+    "numbered": "zhua3"
+  },
+  {
+    "marked": "zhuǎi",
+    "syllable": "zhuai",
+    "tone": 3,
+    "numbered": "zhuai3"
+  },
+  {
+    "marked": "zhuǎn",
+    "syllable": "zhuan",
+    "tone": 3,
+    "numbered": "zhuan3"
+  },
+  {
+    "marked": "zhuǎng",
+    "syllable": "zhuang",
+    "tone": 3,
+    "numbered": "zhuang3"
+  },
+  {
+    "marked": "zhuǐ",
+    "syllable": "zhui",
+    "tone": 3,
+    "numbered": "zhui3"
+  },
+  {
+    "marked": "zhà",
+    "syllable": "zha",
+    "tone": 4,
+    "numbered": "zha4"
+  },
+  {
+    "marked": "zhài",
+    "syllable": "zhai",
+    "tone": 4,
+    "numbered": "zhai4"
+  },
+  {
+    "marked": "zhàn",
+    "syllable": "zhan",
+    "tone": 4,
+    "numbered": "zhan4"
+  },
+  {
+    "marked": "zhàng",
+    "syllable": "zhang",
+    "tone": 4,
+    "numbered": "zhang4"
+  },
+  {
+    "marked": "zhào",
+    "syllable": "zhao",
+    "tone": 4,
+    "numbered": "zhao4"
+  },
+  {
+    "marked": "zhá",
+    "syllable": "zha",
+    "tone": 2,
+    "numbered": "zha2"
+  },
+  {
+    "marked": "zhái",
+    "syllable": "zhai",
+    "tone": 2,
+    "numbered": "zhai2"
+  },
+  {
+    "marked": "zhán",
+    "syllable": "zhan",
+    "tone": 2,
+    "numbered": "zhan2"
+  },
+  {
+    "marked": "zháo",
+    "syllable": "zhao",
+    "tone": 2,
+    "numbered": "zhao2"
+  },
+  {
+    "marked": "zhè",
+    "syllable": "zhe",
+    "tone": 4,
+    "numbered": "zhe4"
+  },
+  {
+    "marked": "zhèi",
+    "syllable": "zhei",
+    "tone": 4,
+    "numbered": "zhei4"
+  },
+  {
+    "marked": "zhèn",
+    "syllable": "zhen",
+    "tone": 4,
+    "numbered": "zhen4"
+  },
+  {
+    "marked": "zhèng",
+    "syllable": "zheng",
+    "tone": 4,
+    "numbered": "zheng4"
+  },
+  {
+    "marked": "zhé",
+    "syllable": "zhe",
+    "tone": 2,
+    "numbered": "zhe2"
+  },
+  {
+    "marked": "zhén",
+    "syllable": "zhen",
+    "tone": 2,
+    "numbered": "zhen2"
+  },
+  {
+    "marked": "zhì",
+    "syllable": "zhi",
+    "tone": 4,
+    "numbered": "zhi4"
+  },
+  {
+    "marked": "zhí",
+    "syllable": "zhi",
+    "tone": 2,
+    "numbered": "zhi2"
+  },
+  {
+    "marked": "zhòng",
+    "syllable": "zhong",
+    "tone": 4,
+    "numbered": "zhong4"
+  },
+  {
+    "marked": "zhòu",
+    "syllable": "zhou",
+    "tone": 4,
+    "numbered": "zhou4"
+  },
+  {
+    "marked": "zhóu",
+    "syllable": "zhou",
+    "tone": 2,
+    "numbered": "zhou2"
+  },
+  {
+    "marked": "zhù",
+    "syllable": "zhu",
+    "tone": 4,
+    "numbered": "zhu4"
+  },
+  {
+    "marked": "zhùn",
+    "syllable": "zhun",
+    "tone": 4,
+    "numbered": "zhun4"
+  },
+  {
+    "marked": "zhú",
+    "syllable": "zhu",
+    "tone": 2,
+    "numbered": "zhu2"
+  },
+  {
+    "marked": "zhā",
+    "syllable": "zha",
+    "tone": 1,
+    "numbered": "zha1"
+  },
+  {
+    "marked": "zhāi",
+    "syllable": "zhai",
+    "tone": 1,
+    "numbered": "zhai1"
+  },
+  {
+    "marked": "zhān",
+    "syllable": "zhan",
+    "tone": 1,
+    "numbered": "zhan1"
+  },
+  {
+    "marked": "zhāng",
+    "syllable": "zhang",
+    "tone": 1,
+    "numbered": "zhang1"
+  },
+  {
+    "marked": "zhāo",
+    "syllable": "zhao",
+    "tone": 1,
+    "numbered": "zhao1"
+  },
+  {
+    "marked": "zhē",
+    "syllable": "zhe",
+    "tone": 1,
+    "numbered": "zhe1"
+  },
+  {
+    "marked": "zhēn",
+    "syllable": "zhen",
+    "tone": 1,
+    "numbered": "zhen1"
+  },
+  {
+    "marked": "zhēng",
+    "syllable": "zheng",
+    "tone": 1,
+    "numbered": "zheng1"
+  },
+  {
+    "marked": "zhě",
+    "syllable": "zhe",
+    "tone": 3,
+    "numbered": "zhe3"
+  },
+  {
+    "marked": "zhěn",
+    "syllable": "zhen",
+    "tone": 3,
+    "numbered": "zhen3"
+  },
+  {
+    "marked": "zhěng",
+    "syllable": "zheng",
+    "tone": 3,
+    "numbered": "zheng3"
+  },
+  {
+    "marked": "zhī",
+    "syllable": "zhi",
+    "tone": 1,
+    "numbered": "zhi1"
+  },
+  {
+    "marked": "zhōng",
+    "syllable": "zhong",
+    "tone": 1,
+    "numbered": "zhong1"
+  },
+  {
+    "marked": "zhōu",
+    "syllable": "zhou",
+    "tone": 1,
+    "numbered": "zhou1"
+  },
+  {
+    "marked": "zhū",
+    "syllable": "zhu",
+    "tone": 1,
+    "numbered": "zhu1"
+  },
+  {
+    "marked": "zhūn",
+    "syllable": "zhun",
+    "tone": 1,
+    "numbered": "zhun1"
+  },
+  {
+    "marked": "zhǎ",
+    "syllable": "zha",
+    "tone": 3,
+    "numbered": "zha3"
+  },
+  {
+    "marked": "zhǎi",
+    "syllable": "zhai",
+    "tone": 3,
+    "numbered": "zhai3"
+  },
+  {
+    "marked": "zhǎn",
+    "syllable": "zhan",
+    "tone": 3,
+    "numbered": "zhan3"
+  },
+  {
+    "marked": "zhǎng",
+    "syllable": "zhang",
+    "tone": 3,
+    "numbered": "zhang3"
+  },
+  {
+    "marked": "zhǎo",
+    "syllable": "zhao",
+    "tone": 3,
+    "numbered": "zhao3"
+  },
+  {
+    "marked": "zhǐ",
+    "syllable": "zhi",
+    "tone": 3,
+    "numbered": "zhi3"
+  },
+  {
+    "marked": "zhǒng",
+    "syllable": "zhong",
+    "tone": 3,
+    "numbered": "zhong3"
+  },
+  {
+    "marked": "zhǒu",
+    "syllable": "zhou",
+    "tone": 3,
+    "numbered": "zhou3"
+  },
+  {
+    "marked": "zhǔ",
+    "syllable": "zhu",
+    "tone": 3,
+    "numbered": "zhu3"
+  },
+  {
+    "marked": "zhǔn",
+    "syllable": "zhun",
+    "tone": 3,
+    "numbered": "zhun3"
+  },
+  {
+    "marked": "zi",
+    "syllable": "zi",
+    "tone": 5,
+    "numbered": "zi5"
+  },
+  {
+    "marked": "zong",
+    "syllable": "zong",
+    "tone": 5,
+    "numbered": "zong5"
+  },
+  {
+    "marked": "zui",
+    "syllable": "zui",
+    "tone": 5,
+    "numbered": "zui5"
+  },
+  {
+    "marked": "zuo",
+    "syllable": "zuo",
+    "tone": 5,
+    "numbered": "zuo5"
+  },
+  {
+    "marked": "zuàn",
+    "syllable": "zuan",
+    "tone": 4,
+    "numbered": "zuan4"
+  },
+  {
+    "marked": "zuì",
+    "syllable": "zui",
+    "tone": 4,
+    "numbered": "zui4"
+  },
+  {
+    "marked": "zuí",
+    "syllable": "zui",
+    "tone": 2,
+    "numbered": "zui2"
+  },
+  {
+    "marked": "zuò",
+    "syllable": "zuo",
+    "tone": 4,
+    "numbered": "zuo4"
+  },
+  {
+    "marked": "zuó",
+    "syllable": "zuo",
+    "tone": 2,
+    "numbered": "zuo2"
+  },
+  {
+    "marked": "zuān",
+    "syllable": "zuan",
+    "tone": 1,
+    "numbered": "zuan1"
+  },
+  {
+    "marked": "zuī",
+    "syllable": "zui",
+    "tone": 1,
+    "numbered": "zui1"
+  },
+  {
+    "marked": "zuō",
+    "syllable": "zuo",
+    "tone": 1,
+    "numbered": "zuo1"
+  },
+  {
+    "marked": "zuǎn",
+    "syllable": "zuan",
+    "tone": 3,
+    "numbered": "zuan3"
+  },
+  {
+    "marked": "zuǐ",
+    "syllable": "zui",
+    "tone": 3,
+    "numbered": "zui3"
+  },
+  {
+    "marked": "zuǒ",
+    "syllable": "zuo",
+    "tone": 3,
+    "numbered": "zuo3"
+  },
+  {
+    "marked": "zà",
+    "syllable": "za",
+    "tone": 4,
+    "numbered": "za4"
+  },
+  {
+    "marked": "zài",
+    "syllable": "zai",
+    "tone": 4,
+    "numbered": "zai4"
+  },
+  {
+    "marked": "zàn",
+    "syllable": "zan",
+    "tone": 4,
+    "numbered": "zan4"
+  },
+  {
+    "marked": "zàng",
+    "syllable": "zang",
+    "tone": 4,
+    "numbered": "zang4"
+  },
+  {
+    "marked": "zào",
+    "syllable": "zao",
+    "tone": 4,
+    "numbered": "zao4"
+  },
+  {
+    "marked": "zá",
+    "syllable": "za",
+    "tone": 2,
+    "numbered": "za2"
+  },
+  {
+    "marked": "zán",
+    "syllable": "zan",
+    "tone": 2,
+    "numbered": "zan2"
+  },
+  {
+    "marked": "záo",
+    "syllable": "zao",
+    "tone": 2,
+    "numbered": "zao2"
+  },
+  {
+    "marked": "zè",
+    "syllable": "ze",
+    "tone": 4,
+    "numbered": "ze4"
+  },
+  {
+    "marked": "zèn",
+    "syllable": "zen",
+    "tone": 4,
+    "numbered": "zen4"
+  },
+  {
+    "marked": "zèng",
+    "syllable": "zeng",
+    "tone": 4,
+    "numbered": "zeng4"
+  },
+  {
+    "marked": "zé",
+    "syllable": "ze",
+    "tone": 2,
+    "numbered": "ze2"
+  },
+  {
+    "marked": "zéi",
+    "syllable": "zei",
+    "tone": 2,
+    "numbered": "zei2"
+  },
+  {
+    "marked": "zì",
+    "syllable": "zi",
+    "tone": 4,
+    "numbered": "zi4"
+  },
+  {
+    "marked": "zí",
+    "syllable": "zi",
+    "tone": 2,
+    "numbered": "zi2"
+  },
+  {
+    "marked": "zòng",
+    "syllable": "zong",
+    "tone": 4,
+    "numbered": "zong4"
+  },
+  {
+    "marked": "zòu",
+    "syllable": "zou",
+    "tone": 4,
+    "numbered": "zou4"
+  },
+  {
+    "marked": "zù",
+    "syllable": "zu",
+    "tone": 4,
+    "numbered": "zu4"
+  },
+  {
+    "marked": "zùn",
+    "syllable": "zun",
+    "tone": 4,
+    "numbered": "zun4"
+  },
+  {
+    "marked": "zú",
+    "syllable": "zu",
+    "tone": 2,
+    "numbered": "zu2"
+  },
+  {
+    "marked": "zún",
+    "syllable": "zun",
+    "tone": 2,
+    "numbered": "zun2"
+  },
+  {
+    "marked": "zā",
+    "syllable": "za",
+    "tone": 1,
+    "numbered": "za1"
+  },
+  {
+    "marked": "zāi",
+    "syllable": "zai",
+    "tone": 1,
+    "numbered": "zai1"
+  },
+  {
+    "marked": "zān",
+    "syllable": "zan",
+    "tone": 1,
+    "numbered": "zan1"
+  },
+  {
+    "marked": "zāng",
+    "syllable": "zang",
+    "tone": 1,
+    "numbered": "zang1"
+  },
+  {
+    "marked": "zāo",
+    "syllable": "zao",
+    "tone": 1,
+    "numbered": "zao1"
+  },
+  {
+    "marked": "zēn",
+    "syllable": "zen",
+    "tone": 1,
+    "numbered": "zen1"
+  },
+  {
+    "marked": "zēng",
+    "syllable": "zeng",
+    "tone": 1,
+    "numbered": "zeng1"
+  },
+  {
+    "marked": "zěn",
+    "syllable": "zen",
+    "tone": 3,
+    "numbered": "zen3"
+  },
+  {
+    "marked": "zěng",
+    "syllable": "zeng",
+    "tone": 3,
+    "numbered": "zeng3"
+  },
+  {
+    "marked": "zī",
+    "syllable": "zi",
+    "tone": 1,
+    "numbered": "zi1"
+  },
+  {
+    "marked": "zōng",
+    "syllable": "zong",
+    "tone": 1,
+    "numbered": "zong1"
+  },
+  {
+    "marked": "zōu",
+    "syllable": "zou",
+    "tone": 1,
+    "numbered": "zou1"
+  },
+  {
+    "marked": "zū",
+    "syllable": "zu",
+    "tone": 1,
+    "numbered": "zu1"
+  },
+  {
+    "marked": "zūn",
+    "syllable": "zun",
+    "tone": 1,
+    "numbered": "zun1"
+  },
+  {
+    "marked": "zǎ",
+    "syllable": "za",
+    "tone": 3,
+    "numbered": "za3"
+  },
+  {
+    "marked": "zǎi",
+    "syllable": "zai",
+    "tone": 3,
+    "numbered": "zai3"
+  },
+  {
+    "marked": "zǎn",
+    "syllable": "zan",
+    "tone": 3,
+    "numbered": "zan3"
+  },
+  {
+    "marked": "zǎng",
+    "syllable": "zang",
+    "tone": 3,
+    "numbered": "zang3"
+  },
+  {
+    "marked": "zǎo",
+    "syllable": "zao",
+    "tone": 3,
+    "numbered": "zao3"
+  },
+  {
+    "marked": "zǐ",
+    "syllable": "zi",
+    "tone": 3,
+    "numbered": "zi3"
+  },
+  {
+    "marked": "zǒng",
+    "syllable": "zong",
+    "tone": 3,
+    "numbered": "zong3"
+  },
+  {
+    "marked": "zǒu",
+    "syllable": "zou",
+    "tone": 3,
+    "numbered": "zou3"
+  },
+  {
+    "marked": "zǔ",
+    "syllable": "zu",
+    "tone": 3,
+    "numbered": "zu3"
+  },
+  {
+    "marked": "zǔn",
+    "syllable": "zun",
+    "tone": 3,
+    "numbered": "zun3"
+  },
+  {
+    "marked": "à",
+    "syllable": "a",
+    "tone": 4,
+    "numbered": "a4"
+  },
+  {
+    "marked": "ài",
+    "syllable": "ai",
+    "tone": 4,
+    "numbered": "ai4"
+  },
+  {
+    "marked": "àn",
+    "syllable": "an",
+    "tone": 4,
+    "numbered": "an4"
+  },
+  {
+    "marked": "àng",
+    "syllable": "ang",
+    "tone": 4,
+    "numbered": "ang4"
+  },
+  {
+    "marked": "ào",
+    "syllable": "ao",
+    "tone": 4,
+    "numbered": "ao4"
+  },
+  {
+    "marked": "á",
+    "syllable": "a",
+    "tone": 2,
+    "numbered": "a2"
+  },
+  {
+    "marked": "ái",
+    "syllable": "ai",
+    "tone": 2,
+    "numbered": "ai2"
+  },
+  {
+    "marked": "án",
+    "syllable": "an",
+    "tone": 2,
+    "numbered": "an2"
+  },
+  {
+    "marked": "áng",
+    "syllable": "ang",
+    "tone": 2,
+    "numbered": "ang2"
+  },
+  {
+    "marked": "áo",
+    "syllable": "ao",
+    "tone": 2,
+    "numbered": "ao2"
+  },
+  {
+    "marked": "è",
+    "syllable": "e",
+    "tone": 4,
+    "numbered": "e4"
+  },
+  {
+    "marked": "èi",
+    "syllable": "ei",
+    "tone": 4,
+    "numbered": "ei4"
+  },
+  {
+    "marked": "èn",
+    "syllable": "en",
+    "tone": 4,
+    "numbered": "en4"
+  },
+  {
+    "marked": "èr",
+    "syllable": "er",
+    "tone": 4,
+    "numbered": "er4"
+  },
+  {
+    "marked": "é",
+    "syllable": "e",
+    "tone": 2,
+    "numbered": "e2"
+  },
+  {
+    "marked": "éi",
+    "syllable": "ei",
+    "tone": 2,
+    "numbered": "ei2"
+  },
+  {
+    "marked": "ér",
+    "syllable": "er",
+    "tone": 2,
+    "numbered": "er2"
+  },
+  {
+    "marked": "ê̄",
+    "syllable": "ê",
+    "tone": 1,
+    "numbered": "ê1"
+  },
+  {
+    "marked": "ê̌",
+    "syllable": "ê",
+    "tone": 3,
+    "numbered": "ê3"
+  },
+  {
+    "marked": "ò",
+    "syllable": "o",
+    "tone": 4,
+    "numbered": "o4"
+  },
+  {
+    "marked": "òu",
+    "syllable": "ou",
+    "tone": 4,
+    "numbered": "ou4"
+  },
+  {
+    "marked": "ó",
+    "syllable": "o",
+    "tone": 2,
+    "numbered": "o2"
+  },
+  {
+    "marked": "óu",
+    "syllable": "ou",
+    "tone": 2,
+    "numbered": "ou2"
+  },
+  {
+    "marked": "ā",
+    "syllable": "a",
+    "tone": 1,
+    "numbered": "a1"
+  },
+  {
+    "marked": "āi",
+    "syllable": "ai",
+    "tone": 1,
+    "numbered": "ai1"
+  },
+  {
+    "marked": "ān",
+    "syllable": "an",
+    "tone": 1,
+    "numbered": "an1"
+  },
+  {
+    "marked": "āng",
+    "syllable": "ang",
+    "tone": 1,
+    "numbered": "ang1"
+  },
+  {
+    "marked": "āo",
+    "syllable": "ao",
+    "tone": 1,
+    "numbered": "ao1"
+  },
+  {
+    "marked": "ē",
+    "syllable": "e",
+    "tone": 1,
+    "numbered": "e1"
+  },
+  {
+    "marked": "ēi",
+    "syllable": "ei",
+    "tone": 1,
+    "numbered": "ei1"
+  },
+  {
+    "marked": "ēn",
+    "syllable": "en",
+    "tone": 1,
+    "numbered": "en1"
+  },
+  {
+    "marked": "ēng",
+    "syllable": "eng",
+    "tone": 1,
+    "numbered": "eng1"
+  },
+  {
+    "marked": "ě",
+    "syllable": "e",
+    "tone": 3,
+    "numbered": "e3"
+  },
+  {
+    "marked": "ěi",
+    "syllable": "ei",
+    "tone": 3,
+    "numbered": "ei3"
+  },
+  {
+    "marked": "ěn",
+    "syllable": "en",
+    "tone": 3,
+    "numbered": "en3"
+  },
+  {
+    "marked": "ěr",
+    "syllable": "er",
+    "tone": 3,
+    "numbered": "er3"
+  },
+  {
+    "marked": "ń",
+    "syllable": "n",
+    "tone": 2,
+    "numbered": "n2"
+  },
+  {
+    "marked": "ńg",
+    "syllable": "ng",
+    "tone": 2,
+    "numbered": "ng2"
+  },
+  {
+    "marked": "ň",
+    "syllable": "n",
+    "tone": 3,
+    "numbered": "n3"
+  },
+  {
+    "marked": "ňg",
+    "syllable": "ng",
+    "tone": 3,
+    "numbered": "ng3"
+  },
+  {
+    "marked": "ō",
+    "syllable": "o",
+    "tone": 1,
+    "numbered": "o1"
+  },
+  {
+    "marked": "ōu",
+    "syllable": "ou",
+    "tone": 1,
+    "numbered": "ou1"
+  },
+  {
+    "marked": "ǎ",
+    "syllable": "a",
+    "tone": 3,
+    "numbered": "a3"
+  },
+  {
+    "marked": "ǎi",
+    "syllable": "ai",
+    "tone": 3,
+    "numbered": "ai3"
+  },
+  {
+    "marked": "ǎn",
+    "syllable": "an",
+    "tone": 3,
+    "numbered": "an3"
+  },
+  {
+    "marked": "ǎng",
+    "syllable": "ang",
+    "tone": 3,
+    "numbered": "ang3"
+  },
+  {
+    "marked": "ǎo",
+    "syllable": "ao",
+    "tone": 3,
+    "numbered": "ao3"
+  },
+  {
+    "marked": "ǒ",
+    "syllable": "o",
+    "tone": 3,
+    "numbered": "o3"
+  },
+  {
+    "marked": "ǒu",
+    "syllable": "ou",
+    "tone": 3,
+    "numbered": "ou3"
+  },
+  {
+    "marked": "ǹ",
+    "syllable": "n",
+    "tone": 4,
+    "numbered": "n4"
+  },
+  {
+    "marked": "ǹg",
+    "syllable": "ng",
+    "tone": 4,
+    "numbered": "ng4"
+  },
+  {
+    "marked": "ḿ",
+    "syllable": "m",
+    "tone": 2,
+    "numbered": "m2"
+  },
+  {
+    "marked": "ế",
+    "syllable": "ê",
+    "tone": 2,
+    "numbered": "ê2"
+  },
+  {
+    "marked": "ề",
+    "syllable": "ê",
+    "tone": 4,
+    "numbered": "ê4"
+  }
+]

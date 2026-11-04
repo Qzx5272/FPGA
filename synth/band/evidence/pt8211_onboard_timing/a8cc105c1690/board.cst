@@ -1,0 +1,35 @@
+// Sipeed Pro Dock schematic 4071f3, sheets 5, 6, 18; official audio example.
+IO_LOC "clk" P16;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_LOC "uart_rx_pin" N16;
+IO_PORT "uart_rx_pin" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "uart_tx_pin" P15;
+IO_PORT "uart_tx_pin" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_LOC "HP_BCK" E22;
+IO_LOC "HP_WS" F24;
+IO_LOC "HP_DIN" G24;
+IO_LOC "PA_EN" H17;
+IO_PORT "HP_BCK" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "HP_WS" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "HP_DIN" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+IO_PORT "PA_EN" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE;
+// Official Pro Dock HDMI0 pin reference only; clocks/full-system electrical constraints pending.
+IO_LOC "tmds_d_p[0]" AB24,AC24;
+IO_PORT "tmds_d_p[0]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p[1]" V24,W24;
+IO_PORT "tmds_d_p[1]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p[2]" AA22,AA23;
+IO_PORT "tmds_d_p[2]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_clk_p" Y22,Y23;
+IO_PORT "tmds_clk_p" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+
+
+IO_LOC "key_play_n" K16;
+IO_PORT "key_play_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "key_stop_n" F15;
+IO_PORT "key_stop_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "key_panic_n" G15;
+IO_PORT "key_panic_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// SUG1018-1.7E section2.7: explicit pixel global clock routing.
+CLOCK_LOC "workstation/video_output/pixel_clk" BUFG = CLK;

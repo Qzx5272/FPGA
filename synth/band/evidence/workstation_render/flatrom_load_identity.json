@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "current": "synth\\band\\evidence\\workstation_render\\0ad57c3b1973_7000frames.json",
+  "previous": "synth\\band\\evidence\\workstation_render\\80c39185b995_7000frames.json",
+  "pcm_sha256": "788d381216d226a32d278cd297c3f65c1016ebf64770ae904e15e0ec7def5699",
+  "scope": "Current flat-ROM short-load RTL output byte-identical to pre-flat-ROM pipeline load;7000frames total,4500 consecutive256slots;no microphone excitation,longrun or physical acceptance."
+}

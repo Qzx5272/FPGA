@@ -1,0 +1,6 @@
+{
+  "status": "failed_unrouted",
+  "unrouted_nets": 1783,
+  "final_timing": false,
+  "new_direction": "User chose convenient onboardPT8211;retain failedI2S route evidence;newPT8211 integrated top needs its own simulation,synthesis,pins,timing."
+}

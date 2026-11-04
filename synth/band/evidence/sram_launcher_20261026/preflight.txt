@@ -1,0 +1,10 @@
+{
+  "release": "pt8211_dvi_620164a544d2",
+  "build_id": 3103104899,
+  "bitstream_sha256": "620164a544d2ecafb3e6f7591de5b10698e96292294efeedb9339fabf4490f08",
+  "snapshot_files": 93,
+  "status": "preflight_passed",
+  "flash_written": false,
+  "previous_flash_backup_available": false,
+  "cold_start_verified": false
+}

@@ -1,0 +1,198 @@
+Displaced soundscapes: a survey of network systems for music and sonic art creation
+      -  Ciência-UCP
+Skip to main navigation
+Skip to search
+Skip to main content
+Ciência-UCP Home
+Help & FAQ
+Link opens in a new tab
+English
+Português
+Search content at Ciência-UCP
+Home
+Units
+Projects
+Profiles
+Research output
+Activities
+Prizes
+Student theses
+Press/Media
+Research data
+Knowledge & Innovation Hub
+Impacts
+Displaced soundscapes: a survey of network systems for music and sonic art creation
+Álvaro Barbosa
+*
+*
+Corresponding author for this work
+Research output
+:
+Contribution to journal
+›
+Article
+›
+peer-review
+165
+Citations
+(Scopus)
+Overview
+Fingerprint
+Abstract
+The introduction of various collaborative tools, made possible by the expansion of computer network systems and communications technology, has led to new methods of musical composition and improvisation. The author describes a number of recent music and sound art projects involving the use of network systems that enable geographically displaced creators to collaboratively generate shared soundscapes. Various system designs, ideas and concepts associated with this interaction paradigm are presented and classified by the author.
+Original language
+English
+Pages (from-to)
+53-59
+Number of pages
+7
+Journal
+Leonardo Music Journal
+Volume
+13
+DOIs
+https://doi.org/10.1162/096112104322750791
+Publication status
+Published -
+2003
+Externally published
+Yes
+Access to Document
+10.1162/096112104322750791
+Other files and links
+Link to publication in Scopus
+Fingerprint
+Dive into the research topics of 'Displaced soundscapes: a survey of network systems for music and sonic art creation'. Together they form a unique fingerprint.
+Sonic Art
+Arts and Humanities
+100%
+Authors
+Arts and Humanities
+100%
+Soundscape
+Arts and Humanities
+100%
+Creator
+Arts and Humanities
+50%
+Musical composition
+Arts and Humanities
+50%
+sound art
+Arts and Humanities
+50%
+art projects
+Arts and Humanities
+50%
+Musical Improvisation
+Arts and Humanities
+50%
+View full fingerprint
+Cite this
+APA
+Author
+BIBTEX
+Harvard
+Standard
+RIS
+Vancouver
+Barbosa, Á.
+(2003).
+Displaced soundscapes: a survey of network systems for music and sonic art creation
+.
+Leonardo Music Journal
+,
+13
+, 53-59.
+https://doi.org/10.1162/096112104322750791
+Barbosa, Álvaro
+. /
+Displaced soundscapes : a survey of network systems for music and sonic art creation
+. In:
+Leonardo Music Journal
+. 2003 ; Vol. 13. pp. 53-59.
+@article{b6e88e9b1dd442bc8cc0c5f9855945c6,
+title     = "Displaced soundscapes: a survey of network systems for music and sonic art creation",
+abstract  = "The introduction of various collaborative tools, made possible by the expansion of computer network systems and communications technology, has led to new methods of musical composition and improvisation. The author describes a number of recent music and sound art projects involving the use of network systems that enable geographically displaced creators to collaboratively generate shared soundscapes. Various system designs, ideas and concepts associated with this interaction paradigm are presented and classified by the author.",
+author    = "{\'A}lvaro Barbosa",
+note      = "Copyright: Copyright 2018 Elsevier B.V., All rights reserved.",
+year      = "2003",
+doi       = "10.1162/096112104322750791",
+language  = "English",
+volume    = "13",
+pages     = "53--59",
+journal   = "Leonardo Music Journal",
+issn      = "0961-1215",
+publisher = "MIT Press",
+}
+Barbosa, Á
+2003, '
+Displaced soundscapes: a survey of network systems for music and sonic art creation
+',
+Leonardo Music Journal
+, vol. 13, pp. 53-59.
+https://doi.org/10.1162/096112104322750791
+Displaced soundscapes: a survey of network systems for music and sonic art creation.
+/
+Barbosa, Álvaro
+.
+In:
+Leonardo Music Journal
+, Vol. 13, 2003, p. 53-59.
+Research output
+:
+Contribution to journal
+›
+Article
+›
+peer-review
+TY  - JOUR
+T1  - Displaced soundscapes
+T2  - a survey of network systems for music and sonic art creation
+AU  - Barbosa, Álvaro
+N1  - Copyright:
+Copyright 2018 Elsevier B.V., All rights reserved.
+PY  - 2003
+Y1  - 2003
+N2  - The introduction of various collaborative tools, made possible by the expansion of computer network systems and communications technology, has led to new methods of musical composition and improvisation. The author describes a number of recent music and sound art projects involving the use of network systems that enable geographically displaced creators to collaboratively generate shared soundscapes. Various system designs, ideas and concepts associated with this interaction paradigm are presented and classified by the author.
+AB  - The introduction of various collaborative tools, made possible by the expansion of computer network systems and communications technology, has led to new methods of musical composition and improvisation. The author describes a number of recent music and sound art projects involving the use of network systems that enable geographically displaced creators to collaboratively generate shared soundscapes. Various system designs, ideas and concepts associated with this interaction paradigm are presented and classified by the author.
+UR  - https://www.scopus.com/pages/publications/19644374498
+U2  - 10.1162/096112104322750791
+DO  - 10.1162/096112104322750791
+M3  - Article
+AN  - SCOPUS:19644374498
+SN  - 0961-1215
+VL  - 13
+SP  - 53
+EP  - 59
+JO  - Leonardo Music Journal
+JF  - Leonardo Music Journal
+ER  -
+Barbosa Á
+.
+Displaced soundscapes:
+a survey of network systems for music and sonic art creation
+.
+Leonardo Music Journal
+. 2003;13:53-59. doi: 10.1162/096112104322750791
+Powered by
+Pure
+Link opens in a new tab
+,
+Scopus
+Link opens in a new tab
+&
+Elsevier Fingerprint Engine™
+Link opens in a new tab
+All content on this site: Copyright © 2026 Ciência-UCP, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the
+use of cookies
+Log in to Pure
+Link opens in a new tab
+Ciência-UCP data protection policy
+Link opens in a new tab
+About web accessibility
+Link opens in a new tab
+Report vulnerability
+Link opens in a new tab
+Contact us

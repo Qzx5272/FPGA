@@ -1,0 +1,11 @@
+{
+  "status": "prepared",
+  "target": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\output\\final_workstation_20261022\\offline_workstation_pt8211_coeffmux_4604740fd333",
+  "build_id": 1174696975,
+  "changed_source_files": [
+    "rtl/build_identity.vh",
+    "rtl/filterbank.sv"
+  ],
+  "trial_manifest_sha256": "a93384b934399b8f5c90f8db9b74574ede4e461356de32d0e66c0beb5b3cbc16",
+  "release_changed": false
+}

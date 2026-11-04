@@ -1,0 +1,12 @@
+{
+  "scope": "Real Qt UI replay of CRC-validated RTL capture, not board connection",
+  "horizontal_scroll_max": 0,
+  "bend_enabled": false,
+  "vowel_enabled": false,
+  "patch_enabled": false,
+  "source_hashes": {
+    "app.py": "8afeaf2ecdfb291e485b93f0e3ca2a28f855a41d908e4f50b833a69f742e4278",
+    "stage.py": "a036f9537c989ebeab397b41ae37f9b22611ce1631a9ca4cacc870586aea1a42",
+    "replies.hex": "ffd8c42c55cbdaa6be3eb46da14374db13b707cb1be77ec609dd83d0beb66012"
+  }
+}

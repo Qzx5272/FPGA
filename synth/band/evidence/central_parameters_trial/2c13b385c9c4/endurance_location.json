@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "started": "2026-10-26T16:42:29.628261",
+  "release": "pt8211_dvi_062a944dcce1",
+  "session_id": 39255,
+  "report": "D:/StarclusterBuilds/endurance_central256_20261026/hardware_8h.json",
+  "stress_seconds": 28800,
+  "song_seconds": 97,
+  "exclusive_serial_port": "COM12",
+  "scope": "Silent digital single-role256load;no thermal/acoustic proof;do not interrupt/reprogram or open another serial client"
+}

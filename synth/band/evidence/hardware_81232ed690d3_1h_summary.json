@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "started": "2026-10-27T00:59:33.047588",
+  "bitstream_sha256": "81232ed690d3586846426ee058e9c449b4d80be0dff48c3740b0fafe9dc6f6ba",
+  "expected_build_id": 3735635258,
+  "audible_test_enabled": false,
+  "uart_guard_bytes": 64,
+  "uart_max_batch_per_5ms": 4,
+  "test_source_sha256": "fa47c9e6c2f1fe75cf334e6d0f67faab7f16c9c0c1b61df26462974583b284c6",
+  "shared_load_preflight": {
+    "layout": "central_parameters",
+    "source_sha256": {
+      "band_singer_core.sv": "d67cbd8c67dc627dbfb5b2c2e0f4e11e8422e57889b867daa7c88c7b4c946d03",
+      "central_voice_bank.v": "71f4ff46db62a4b5cd03b50a83609457ffedd9cf44c8d5c11d66b43d3dc17e20",
+      "shared_role_controls.v": "f0796fa4bced3681f5aa13913326d44b97b90c4b1fc299ba4f78dc379656c652",
+      "shared_bank_dispatch.v": "dc3e7f31d9993a535923db9eb14063528b2ddba4d54a25ec15754e42525a8935",
+      "shared_note_allocator.v": "500b5b12b9d938bc88106cc583a7edfc40d0279cc2bb0b0b9eb170515b2c2cc9",
+      "shared_band_renderer.v": "58ea9e26facef16c292416e8a7d6e0fdc68d4ad4ad0f9c2be70137385331ab5b"
+    },
+    "scope": "Source integrity/layout only; not netlist, timing or hardware acceptance"
+  },
+  "shared_load_preflight_sha256": "a77b136711f28c244258b091b671e0ed7fcd4cd31450a34ce25429e29a84915e",
+  "require_singer_health": true,
+  "singer_health_checks": 3539,
+  "stress_distribution": {
+    "parts": [
+      7
+    ],
+    "notes_per_part": 256,
+    "independent_serials": true,
+    "scope": "Digital active slots; repeated32 pitches, not256 resolved spectral peaks or acoustic proof"
+  },
+  "identity": {
+    "build_id": 3735635258,
+    "capacity": 256,
+    "nominal_sample_rate": 48000
+  },
+  "stage": "completed",
+  "parser_bad_crc": 0,
+  "last_singer_health": {
+    "gate": false,
+    "note": 79,
+    "dropped": 0,
+    "stale_off": 0,
+    "dac_dropped": 0,
+    "dac_underruns": 0
+  },
+  "configuration": "PT8211 audition build",
+  "automatic_test_seconds": 97.0,
+  "stress_seconds": 3600.0,
+  "stress_active_notes": 256,
+  "maximum_stress_cycles": 966,
+  "maximum_observed_voices_during_song": 12,
+  "furthest_song_sample": 4608000,
+  "tests": [
+    "build identity match",
+    "ownership",
+    "independent same-contact serial identities",
+    "stale release",
+    "32 active slots",
+    "source release",
+    "500ms disconnect release",
+    "256 sustained active slots",
+    "autonomous song",
+    "stop"
+  ],
+  "completed": "2026-10-27T02:01:12.428486",
+  "record_count": 95748,
+  "maximum_recorded_errors": {
+    "deadline_miss": 0,
+    "rejected": 0,
+    "clips": 0
+  },
+  "file_hashes": {
+    "hardware_81232ed690d3_1h.json": "1ecd2f1d47a7e56d19acf7fa35e4f1fec0e003143840a096d1d91c18fe1f098a",
+    "hardware_81232ed690d3_1h.raw": "2412652f510e37d30ff7c4274dff40d8d1230c1fe9835b493184cf6af150af0a",
+    "hardware_81232ed690d3_1h.driver.txt": "fa47c9e6c2f1fe75cf334e6d0f67faab7f16c9c0c1b61df26462974583b284c6"
+  },
+  "scope": "Selected812 firmware one-hour silent single-role256 slots plus97s score; repeated32pitches; not acoustic, thermal or physical peripherals acceptance"
+}

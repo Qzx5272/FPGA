@@ -1,0 +1,14 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "Synthesis only; no physical timing/pin/integration acceptance",
+  "sources": {
+    "i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "i2s_input_bridge.v": "775921afdc4da0f013ea661f8badb3a7cae4686de461120f07d6432cc84de6cb",
+    "audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782"
+  },
+  "build": "D:\\StarclusterBuilds\\audio_input_syn_fc87190964b4",
+  "started": "2026-10-24T23:09:06.227171",
+  "reports": {
+    "audio_input_syn.rpt.html": "adc9ccc599a2cf23d99d62aee02141703114e399f87cab8684e31f267b40f780"
+  }
+}

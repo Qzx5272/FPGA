@@ -1,0 +1,15 @@
+{
+  "status": "existing_report_capacity_analysis",
+  "measured_profile": "historical diagnostic43008,42lanes x1024slots",
+  "resource_report": "release\\diagnostic43008\\diagnostic43008.rpt.txt",
+  "resource_report_sha256": "1bd7d5a0e80e735c68ee1b28ab5f423c816b16f7408ddb6a600de8d1a19e1e49",
+  "bsram_used": 336,
+  "bsram_available": 340,
+  "state_bits_per_partial": 112,
+  "state_ram_blocks_per_lane": 7,
+  "sine_rom_blocks_per_lane": 1,
+  "unchanged_43_lane_required_bsram": 344,
+  "unchanged_43_lane_fits": false,
+  "scope": "Arithmetic bound for unchanged current per-lane RAM organization; not absolute chip or alternative architecture limit, nor full-band capacity",
+  "next_optimization_constraint": "Preserve independent phase32/increment32/envelope16/target16/slew16 and audio deadlines; adding unchanged lanes exceeds RAM before exhausting logic/DSP."
+}

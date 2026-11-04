@@ -1,0 +1,64 @@
+{
+  "status": "verified_by_config_readback_and_user_visual_confirmation",
+  "device": "SMC-PAD Pocket_004",
+  "firmware": "c3-pad-monitor-v3-color",
+  "profile_zero_based": 3,
+  "slot_zero_based": 20,
+  "midi_channel": 10,
+  "midi_note": 24,
+  "region": 5,
+  "address": 9318,
+  "old_rgb": [
+    250,
+    0,
+    0
+  ],
+  "new_rgb": [
+    0,
+    0,
+    250
+  ],
+  "changed_bytes": [
+    {
+      "offset": 9318,
+      "before": 250,
+      "after": 0
+    },
+    {
+      "offset": 9320,
+      "before": 0,
+      "after": 250
+    }
+  ],
+  "user_confirmation": "One pad turned blue",
+  "restore_command": "color 3 20 250 0 0",
+  "retained_color": "blue",
+  "fpga_output_enabled": false,
+  "phone_control_implemented": false,
+  "files": {
+    "after_color.bin": "ffd2bfae86b2362564105ca307445e63b5e0717db02e30e9d154cbf8026721aa",
+    "after_color.json": "39f9810bce9be891fccc54dc0620008443e47bb0916da2d76ec23cc2031b4a6a",
+    "after_color.log": "159af5fd69290d702dfc4f573ea21b2b2fb5fe5d47fe1dedd9c90f04734b45bd",
+    "build.log": "062ff19eaa1feae244665e1f15f4fe40c811574324a7deebc582fe0f54ea20f1",
+    "build_v3.log": "7659faab41f640eb0af8b29012381c4928d2f8a025a94309d9b2f44d30012bad",
+    "color_write.log": "92142bc349d4f6fc6c2e81c1e918c4cda342dab41c2805bb050910cfb239270d",
+    "config_read.log": "569dbf06751eaaa151b66ced5d6a2f443b362044d07acc799175ae4cb5ca579b",
+    "firmware_v3.bin": "8c8f922d0525e4ab6cdaff329f3575440b4b9e3bd50f170ebca9f51d94f0a8ad",
+    "flash_v2.log": "5c3675fe71a7f82b94828e4a625d97af89604e6b3707c672aad1b398d5edd291",
+    "flash_v3.log": "ffeca431876e58f5c08f81b4dde14934a30c3bd409a379076003e231c646159b",
+    "global_before.bin": "81afbedf3b0b0818984b73e76706cc2579e7dd4d851edf150d3d53886543a556",
+    "global_before.json": "a0485ca22ba29d7051f50ef6d8a16b5363b387271b8581ebf9ad582e5c286940",
+    "global_before.log": "eb3f8b17d7fbfa74bf64197ec1cea63063a6bf0bdf7b6487469c2eec54c25668",
+    "main_v3.cpp": "a9525ba317be38a6035021f1b5cb9bcd70cff90fc87ba60e777b521df2a30a59",
+    "prewrite_confirm.bin": "5c8b5903402a6f80f97d2c67a3828c1018141e44e745379bc543ce772c8d656c",
+    "prewrite_confirm.json": "0e694a61befb839c93e26529d2438d139c915bcddadce1ae04b8d5c5e1c544c1",
+    "prewrite_confirm.log": "a5ba450571e8d2cfae1d3f645262160e2688900f6eba2c7ee606ef6beaebae32",
+    "query.log": "da13d51a275e582f485a02be1d10bfdf1863bcf3544d084a4641e59b84c51681",
+    "receiver_v1.bin": "7e75b590a63e894c00e555acc793b1bad4bc371d2c51ff6d4e2aa290909e96a0",
+    "region5_before.bin": "12aaeb50ca41e6f2ac53d39db25cc795db6c18ba7a14504eb945c49afc12cac7",
+    "region5_before.json": "e89b9acf0910f47686e926c02b070022720b3f659fd099e73c12f05c790add4b",
+    "region5_before.log": "5ac81d4d71bb290698473855bdbaf7e1e07dc12f9b8117fbbff3e06846926a0c",
+    "region5_first1000.bin": "e0f04ffdb3520658b630c7a28da5532ddded1e1a6af4546b2a79c12c2a105731",
+    "RESULT.md": "f32ec53e1291d257be623177d0c0bb80c0e5d2db10ee8650ded316e0abd12581"
+  }
+}

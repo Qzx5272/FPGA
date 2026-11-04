@@ -1,0 +1,374 @@
+{
+  "status": "analysis_only",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_2d5bfcfe40c6",
+  "scope": "Vendor reported top-N path diagnosis; no timing exception applied, no CDC/physical acceptance",
+  "total_violated_endpoints": {
+    "setup": 518,
+    "hold": 21
+  },
+  "reported_negative_paths": 46,
+  "reported_negative_classes": {
+    "unclassified": 8,
+    "pad_frontend_internal": 21,
+    "async_write_gray_to_first_sync": 4,
+    "async_read_gray_to_first_sync": 3,
+    "async_fifo_payload_to_reader": 10
+  },
+  "paths": [
+    {
+      "check": "SETUP",
+      "slack_ns": -1.183,
+      "launch": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/state_2_s2",
+      "capture": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/temp_56_s1",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.173,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[21]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.173,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[20]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.151,
+      "launch": "band/engine/stop_s0",
+      "capture": "band/engine/core/banks[6].unit/allocator/gowin_add_SDPB_source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.14,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_ER_CL_s131",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.096,
+      "launch": "band/engine/local_inputs.pads/serials_serials_RAMREG_61_G[6]_s65",
+      "capture": "band/engine/local_inputs.pads/event_pressure_1_s0",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[26]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[25]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[29]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[27]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[22]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[19]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.091,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[18]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.09,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[28]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.09,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_18_G[23]_s108",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.045,
+      "launch": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/state_2_s2",
+      "capture": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/temp_36_s1",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -1.039,
+      "launch": "band/engine/local_inputs.pads/serials_serials_RAMREG_61_G[6]_s65",
+      "capture": "band/engine/local_inputs.pads/event_pressure_0_s0",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.983,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[23]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.983,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[18]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.977,
+      "launch": "band/engine/local_inputs.pads/serials_serials_RAMREG_34_G[6]_s92",
+      "capture": "band/engine/local_inputs.pads/event_pressure_4_s0",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.975,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[22]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.975,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[16]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.975,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[15]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.975,
+      "launch": "band/engine/local_inputs.pads/serials_ER_CL_s137",
+      "capture": "band/engine/local_inputs.pads/serials_serials_RAMREG_51_G[12]_s75",
+      "classification": "pad_frontend_internal"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": -0.971,
+      "launch": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/state_2_s2",
+      "capture": "band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/temp_55_s1",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.64,
+      "launch": "band/input_audio/transport/fifo/wgray_0_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_0_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.64,
+      "launch": "band/input_audio/transport/fifo/wgray_2_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_2_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.594,
+      "launch": "band/input_audio/transport/fifo/wgray_1_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_1_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.546,
+      "launch": "band/input_audio/transport/fifo/wgray_3_s0",
+      "capture": "band/input_audio/transport/fifo/wgray_r1_3_s0",
+      "classification": "async_write_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.331,
+      "launch": "band/analyzer/display_frame/ack_s0",
+      "capture": "band/analyzer/display_frame/ack1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.247,
+      "launch": "band/clock_watch/heartbeat_s1",
+      "capture": "band/clock_watch/sync1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.238,
+      "launch": "band/output_audio/fifo/rgray_2_s0",
+      "capture": "band/output_audio/fifo/rgray_w1_2_s0",
+      "classification": "async_read_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.172,
+      "launch": "band/output_audio/fifo/rgray_0_s0",
+      "capture": "band/output_audio/fifo/rgray_w1_0_s0",
+      "classification": "async_read_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.169,
+      "launch": "band/output_audio/fifo/rgray_1_s0",
+      "capture": "band/output_audio/fifo/rgray_w1_1_s0",
+      "classification": "async_read_gray_to_first_sync"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.168,
+      "launch": "band/output_audio/fifo/rbin_3_s0",
+      "capture": "band/output_audio/fifo/rgray_w1_3_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.13,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_2_G[23]_s0",
+      "capture": "band/input_audio/latest_23_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.093,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_4_G[20]_s0",
+      "capture": "band/input_audio/latest_20_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.086,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_2_G[23]_s0",
+      "capture": "band/input_audio/held_23_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.048,
+      "launch": "band/output_audio/serializer/frame_request_toggle_s2",
+      "capture": "band/output_audio/request1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.041,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[19]_s0",
+      "capture": "band/input_audio/latest_19_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.024,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_1_G[5]_s0",
+      "capture": "band/input_audio/latest_5_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.022,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[3]_s0",
+      "capture": "band/input_audio/held_3_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.012,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_6_G[3]_s0",
+      "capture": "band/input_audio/latest_3_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.007,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_4_G[20]_s0",
+      "capture": "band/input_audio/held_20_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.007,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_7_G[2]_s0",
+      "capture": "band/input_audio/held_2_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": -0.003,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_7_G[2]_s0",
+      "capture": "band/input_audio/latest_2_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.0,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[19]_s0",
+      "capture": "band/input_audio/held_19_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.008,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_3_G[12]_s0",
+      "capture": "band/input_audio/held_12_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.033,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_7_G[4]_s0",
+      "capture": "band/input_audio/held_4_s1",
+      "classification": "async_fifo_payload_to_reader"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.035,
+      "launch": "band/input_audio/transport/fifo/memory_memory_RAMREG_4_G[13]_s0",
+      "capture": "band/input_audio/latest_13_s1",
+      "classification": "async_fifo_payload_to_reader"
+    }
+  ],
+  "sources": {
+    "combined_workstation.timing_paths": "b0a19504d87afaea76441eb80c01a38e4d749a81fc7eba5e044a13b2c4a56337",
+    "combined_workstation_tr_content.html": "1ca7c84718faeace9fe1a5fd838a846b7286e31e378246e9566f88edc480dfda",
+    "analyze_stage_paths.py": "3bba0bbe49ce1f995712794c7d859bdc8b1815c0f712df01982faec02f892c61"
+  }
+}

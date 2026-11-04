@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "Current anchored constraint parser rejects comment-only pins; exportedRTL byte-identical to cold-start tested export",
+  "export": "D:\\StarclusterBuilds\\singer_offline_20261025_193025_gate",
+  "rtl_matches_validated_export": true,
+  "log": "*** GOWIN Tcl Command Line Console  *** \nMissing explicit microphone pin: mic_bck\n    while executing\n\"error \"Missing explicit microphone pin: $signal\"\"\n    (\"foreach\" body line 2)\n    invoked from within\n\"foreach signal {mic_bck mic_ws mic_sd} {\n if {![regexp [format {(?m)^\\s*IO_LOC\\s+\"%s\"\\s+[A-Z]+[0-9]+\\s*;} $signal] $pins]} {error \"Missing explicit mi...\"\n    (file \"D:\\StarclusterBuilds\\singer_offline_20261025_193025_gate\\build.tcl\" line 9)\n",
+  "exporter_sha256": "521c2aebb56b0c11c8b10bdcc7e6e4c4179f64898c3756e52d1676f05eda3bc0"
+}

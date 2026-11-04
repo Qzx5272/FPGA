@@ -1,0 +1,56 @@
+{
+  "status": "passed_fixed_pins_and_constraints",
+  "physical_pins": {
+    "clk": "P16",
+    "uart_rx_pin": "N16",
+    "uart_tx_pin": "P15",
+    "HP_BCK": "E22",
+    "HP_WS": "F24",
+    "HP_DIN": "G24",
+    "PA_EN": "H17",
+    "tmds_clk_p": "Y22",
+    "tmds_clk_n": "Y23",
+    "tmds_d_p[0]": "AB24",
+    "tmds_d_n[0]": "AC24",
+    "tmds_d_p[1]": "V24",
+    "tmds_d_n[1]": "W24",
+    "tmds_d_p[2]": "AA22",
+    "tmds_d_n[2]": "AA23"
+  },
+  "active_commands": [
+    "create_clock -name core_clk -period 20.000 [get_ports {clk}]",
+    "create_generated_clock -name serial_clk -source [get_ports {clk}] -multiply_by 63 -divide_by 25 [get_pins {workstation/video_output/video_clocks/pll/CLKOUT0}]",
+    "create_generated_clock -name display_clk -source [get_pins {workstation/video_output/video_clocks/pll/CLKOUT0}] -divide_by 5 [get_pins {workstation/video_output/video_clocks/divider/CLKOUT}]",
+    "set_max_delay 20.000 -from [get_clocks {core_clk}] -to [get_clocks {display_clk}]",
+    "set_min_delay 0.000 -from [get_clocks {core_clk}] -to [get_clocks {display_clk}]",
+    "set_max_delay 20.000 -from [get_clocks {display_clk}] -to [get_clocks {core_clk}]",
+    "set_min_delay 0.000 -from [get_clocks {display_clk}] -to [get_clocks {core_clk}]",
+    "set_false_path -hold -from [get_clocks {display_clk}] -to [get_regs {workstation/band/analyzer/display_frame/ack1* workstation/band/analyzer/analysis/reset_sync*}]",
+    "set_false_path -from [get_clocks {display_clk}] -to [get_pins {workstation/video_output/transmitter/serial_release_0_s0/CLEAR workstation/video_output/transmitter/serial_release_1_s0/CLEAR}]",
+    "set_max_delay 20.000 -from [get_clocks {core_clk}] -to [get_ports {HP_BCK HP_WS HP_DIN}]",
+    "set_min_delay 0.000 -from [get_clocks {core_clk}] -to [get_ports {HP_BCK HP_WS HP_DIN}]"
+  ],
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "physical_resources": {
+    "logic": 68322,
+    "ff": 37133,
+    "cls": 47405,
+    "ram": 245,
+    "dsp": 168
+  },
+  "scope": "15 fixed physical pins; no automatic IO. Digital timing prerequisite only; board release, analog, display, cold-start and peripherals remain separate.",
+  "sources": {
+    "impl\\pnr\\pt8211_onboard_tr_content.html": "8b931b792f815bb716913064e915931a375b1ecfbc30abebf9d049e1b79050c4",
+    "impl\\pnr\\pt8211_onboard.pin.html": "0b496d1b380ce1652f4e8ffd97ac77616814294c04f04a54dab0dfb856ca8a77",
+    "impl\\pnr\\pt8211_onboard.rpt.txt": "99a9b5b788740882838523d46975e5e0cc42286fc7ec14d9b63ea22993370fb2",
+    "impl\\gwsynthesis\\pt8211_onboard.vg": "a1fb687461cdf5481e6e062e19de9237836b0df9b407b2baa3b5e28db2602372",
+    "board.cst": "37e50f0c8c35e3832c421165b99c5f737b8a157c46c2b158121205ff4a0212ce",
+    "board.sdc": "68bcb460fe050b96fc3cf201a5b48e2d68afbb711cd1f70d5f1a179825d8d92c",
+    "result.json": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+    "audit_pt8211_onboard.py": "b07c004742c07ba0233de135e041514362d5326c748d8d882ff6ef773c181f54"
+  }
+}

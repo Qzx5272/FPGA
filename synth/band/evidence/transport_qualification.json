@@ -1,0 +1,21 @@
+{
+  "status": "passed_for_configured_transport_only",
+  "build_id": 1472788405,
+  "bitstream_sha256": "0af2d6ace36152c8d120125f5b48fb40d7b2b3eefaeb3aacbeed2e35d777b9f1",
+  "probe_record": "link_probe_20261023_133534.json",
+  "raw_sha256": "704791996754a4905c99a6e280ade7ebcf47d2a4ea4c4c7ea6add2e7a9947705",
+  "guard_bytes": 64,
+  "max_batch_per_5ms": 4,
+  "valid_frames": 1000,
+  "bad_crc": 0,
+  "unrestricted_raw_burst_supported": false,
+  "root_cause": "not isolated to FPGA or USB bridge; minimal old/new serializer and D2XX reproduced unguarded tail loss",
+  "host_sources": {
+    "app.py": "df2b5b2403fd7d64b6db87934434bc4c1242b0ea8c6e9bb7b067a35c88c9366f",
+    "editor.py": "431e529875e37f5acf1931c1ede2af343dba6b6bd85e1055f2ae6e193a5a5729",
+    "offline.py": "9c121d685f450ef08cd8984a2604649a7132f7f6ad9d3ce3e927f962e702baae",
+    "patch_editor.py": "8bcc7a913e3358036ef0e18cdbce39d7d4fd143deae27c82a93cc813449e4bc0",
+    "protocol.py": "11a46763acf603f97ae1c3dfd78fa417954b833026ca9cbb564270feb05e1241",
+    "score.py": "3748b3a7c17c1449edcb39ea4821530c6debfe6801f9da2e9661a0f1f38d5a0b"
+  }
+}

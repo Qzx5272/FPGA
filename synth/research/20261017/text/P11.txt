@@ -1,0 +1,1570 @@
+=== PAGE 1 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 1
+Sinsy: A Deep Neural Network-Based Singing
+V oice Synthesis System
+Yukiya Hono, Kei Hashimoto, Member , IEEE, Keiichiro Oura, Yoshihiko Nankaku, Member , IEEE,
+and Keiichi Tokuda, Fellow, IEEE
+Abstract—This paper presents Sinsy, a deep neural network
+(DNN)-based singing voice synthesis (SVS) system. In recent
+years, DNNs have been utilized in statistical parametric SVS
+systems, and DNN-based SVS systems have demonstrated better
+performance than conventional hidden Markov model-based
+ones. SVS systems are required to synthesize a singing voice
+with pitch and timing that strictly follow a given musical score.
+Additionally, singing expressions that are not described on the
+musical score, such as vibrato and timing ﬂuctuations, should be
+reproduced. The proposed system is composed of four modules:
+a time-lag model, a duration model, an acoustic model, and
+a vocoder, and singing voices can be synthesized taking these
+characteristics of singing voices into account. To better model
+a singing voice, the proposed system incorporates improved
+approaches to modeling pitch and vibrato and better training
+criteria into the acoustic model. In addition, we incorporated
+PeriodNet, a non-autoregressive neural vocoder with robustness
+for the pitch, into our systems to generate a high-ﬁdelity singing
+voice waveform. Moreover, we propose automatic pitch correction
+techniques for DNN-based SVS to synthesize singing voices with
+correct pitch even if the training data has out-of-tune phrases.
+Experimental results show our system can synthesize a singing
+voice with better timing, more natural vibrato, and correct pitch,
+and it can achieve better mean opinion scores in subjective
+evaluation tests.
+Index Terms—Singing voice synthesis, neural network, vibrato
+modeling, timing modeling, automatic pitch correction.
+I. I NTRODUCTION
+S
+INGING voice synthesis (SVS) is a technique of generat-
+ing singing voices from musical scores. A unit-selection
+method [1], [2] can automatically synthesize a singing voice by
+concatenating short waveform units selected from a database.
+While such systems can provide good sound quality and
+naturalness in certain settings, it is impossible to guarantee
+that the units will always be connected smoothly. Moreover,
+since it also tends to have limited ﬂexibility, large databases
+are generally required to synthesize singing voices.
+Statistical parametric SVS systems such as hidden Markov
+model (HMM)-based SVS systems [3] have been proposed to
+avoid the problems described above. The singing voice wave-
+form is synthesized from the acoustic parameters predicted
+by a trained HMM, thereby requiring less data to construct a
+system compared to unit-selection systems. However, HMM-
+based systems suffer from over-smoothing that degrades the
+naturalness of synthesized singing voices.
+In recent years, deep neural networks (DNNs) have sig-
+niﬁcantly improved in various speech processing tasks such
+The authors are with Nagoya Institute of Technology.
+Manuscript received xxxxx xx, 2021; revised xxxxx xx, 2021.
+as speech recognition [4], speech synthesis [5], [6], and
+voice conversion [7]. DNN-based SVS systems [8], [9] have
+also been proposed and demonstrated their superiority over
+HMM-based ones. A feed-forward neural network (FFNN)
+is utilized as an acoustic model to represent the mapping
+function between the musical score feature and the acoustic
+feature. Recently, recurrent neural networks (RNNs) with long
+short-term memory (LSTM), convolutional neural networks
+(CNNs), and deep autoregressive (AR) models have been
+incorporated into SVS systems to model the acoustic features
+more appropriately [10]–[13]. Trajectory training [14] and
+adversarial training [15] have also been incorporated into SVS
+systems to improve training criteria and achieve higher singing
+voice quality [9], [16].
+In SVS systems, singing voices must be synthesized ac-
+curately following the input musical score. Methods such
+as pitch normalization [8] and data augmentation [12], [17]
+have been proposed for DNN-based SVS systems to generate
+fundamental frequency (F0) following the note pitch in the
+input musical score. Vibrato is the periodic ﬂuctuation of the
+pitch and is another essential point of modeling a singing
+voice. Some systems model vibrato-like ﬂuctuations as a part
+of the F0 [10], [12], [13]. Our previous work [9] separates the
+vibrato from the F0 and models it as sinusoidal parameters,
+enabling reproduction and control of the vibrato. The temporal
+structure of a singing voice is heavily constrained by note
+length in a musical score, but the start timing of musical notes
+and a singing voice do not always match. A framework with
+a time-lag model and a duration model has been proposed to
+determine the phone durations under note length constraints
+considering these timing ﬂuctuations [9]. These techniques are
+essential for synthesizing a human-like natural singing voice.
+When building SVS systems, a pitch correction technique is
+sometimes necessary to avoid generating out-of-tune singing
+voices. Since DNN-based SVS is a statistical approach that
+tries to reproduce training data, it tends to generate an out-of-
+tune pitch if the training data contains out-of-tune phrases. The
+pitch accuracy signiﬁcantly impacts the subjective quality of
+the singing voices; thus, a technique is needed for synthesizing
+singing voices with an appropriate pitch from arbitrary training
+data, including such out-of-tune phrases.
+Recently, TTS research ﬁelds have utilized state-of-the-
+art systems with sequence-to-sequence (seq-to-seq) acoustic
+models and neural waveform generation models to achieve
+the same naturalness as human speech [18]. Seq-to-seq models
+with attention mechanisms directly map input text or phonetic
+sequences to the acoustic features without using an external
+arXiv:2108.02776v1  [eess.AS]  5 Aug 2021
+=== PAGE 2 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 2
+duration model. Although some seq-to-seq models for end-to-
+end SVS have also been proposed [19]–[25], unlike TTS, a
+duration informed attention network is mainly used because
+of singing-speciﬁc backgrounds. For instance, the lengths of
+singing voices are generally longer than those of speech, and
+the amount of training data is insufﬁcient. With the growth of
+deep learning techniques, statistical parametric SVS has been
+attracting attention for its various applications; however, these
+systems require high stability and controllability in terms of
+both acoustic parameters and alignments. Furthermore, since
+the synthesized singing voice strictly needs to be synchronized
+with the given musical score, it is not enough to apply the
+TTS-like end-to-end frameworks to the SVS systems. There
+is still a high demand for pipeline systems with an external
+time-lag model and a duration model from these perspectives.
+This paper presents our DNN-based SVS system, “Sinsy.”
+Our proposed system of this paper is an extension of our pre-
+vious work [9]. All the components for synthesizing a singing
+voice from the analyzed score features are based on neural
+networks and incorporate novel techniques to better model a
+singing voice. Our system has a singing-speciﬁc design: 1)
+The combination strategy with the time-lag model and the
+duration model predicts phoneme boundaries under note length
+constraints statistically. 2) The acoustic model has improved
+pitch and vibrato modeling and a better training criterion for
+considering dynamic features. 3) The PeriodNet [26], a non-
+AR neural vocoder with more robustness of pitch, is adopted.
+4) Automatic pitch correction techniques are incorporated
+into our SVS system to synthesize singing voices with the
+correct pitch. With these techniques, our proposed system can
+synthesize a high-ﬁdelity singing voice waveform.
+In the rest of this paper, Section II reviews the conven-
+tional SVS system. Section III describes the overview of our
+proposed SVS system. Section IV introduces the proposed
+techniques for modeling pitch and vibrato. Section V describes
+our proposed automatic pitch correction methods for DNN-
+based SVS. Section VI presents the experimental evaluations.
+Finally, Section VII concludes this paper.
+II. R ELATED WORK
+The usage of neural networks in SVS systems is similar
+to that in TTS systems. The simplest way to apply DNNs to
+TTS systems is to use an FFNN as a deep regression model
+to map a linguistic feature sequence obtained by text to an
+acoustic feature sequence extracted from speech [5]. A DNN-
+based SVS system also uses the DNN as the acoustic model;
+however, unlike TTS, feature vectors extracted from the musi-
+cal score are used as the input instead of the linguistic feature.
+Architectures such as RNNs, CNNs, and AR structures are
+used as acoustic models for both TTS and SVS systems [10]–
+[13], [27]–[29].
+The pitch of the synthesized singing voice must accurately
+follow the note pitch of the musical score even if the note
+pitch to be synthesized is outside the range of the training
+data. A pitch normalization technique has been proposed for
+F0 modeling in DNN-based SVS [8]. In this technique, the
+differences between the log F0 sequence extracted from wave-
+forms and the note pitch are modeled. Recent studies [23],
+[24] introduced a residual connection between note pitch and
+generated log F0, which can be said to be the same approach
+to pitch normalization. Some systems [12], [17] utilize a data
+augmentation technique by pitch-shifting the training data.
+However, this technique requires more training time due to
+the increased amount of training data, and it is difﬁcult to
+reproduce the voice characteristics and singing styles that
+change according to the tone. A post-processing strategy has
+also been proposed [13]. For this strategy, F0 should be
+modiﬁed for each voiced segment, which may generate a
+discontinuous F0 contour at the edge of the voiced segment.
+Another unique characteristic of singing voices is that F0
+includes periodic ﬂuctuations due to vibrato. In our previous
+study [9], we separated the vibrato from the original F0
+sequence in advance and modeled with sinusoidal parameters.
+This enables us to control the vibrato intensity and speed in
+the synthesis stage. Some systems do not use the decomposed
+approach, and the F0 sequence with the vibrato component
+is directly modeled using neural networks such as RNNs and
+AR models [10], [12], [13]. This approach can be expected
+to reproduce more complex vibrato shapes that are difﬁcult
+to represent by sinusoidal parameters. However, there is a
+problem that the vibrato cannot be controlled during synthesis.
+Since DNN-based SVS systems are data-driven approaches,
+the quality of the synthesized singing voice depends on the
+quality and quantity of the training data. Recent TTS systems
+often use over 20 hours of training data for a single-speaker
+model [18] and even hundreds of hours for a multi-speaker
+model [30]. However, unlike TTS, the amount of training data
+for SVS is often limited due to recording costs, annotation
+costs, and strict copyright issues in the music domain. Thus,
+in most cases, 1-2 hours of a singing voice corpus are
+used. Recently, there has been an attempt to utilize singing
+voice data mined from music websites as training data [31].
+However, the pitch of this mined data is not always correct,
+despite pitch accuracy signiﬁcantly impacting the quality of
+a singing voice. Even if the singing voice data is recorded
+for the training data, it may contain out-of-tune data due to
+various factors, such as a singer’s skill, a song’s tempo, and/or
+a melody’s complexity. Although F0 contours can be manually
+modiﬁed after being extracted from training data, it is difﬁcult
+to correct while maintaining a human-like F0 trajectory and is
+impractical in terms of editing cost. Therefore, there is demand
+for an automatic pitch correction technique in the SVS system.
+Our system is based on our previous studies [8], [9]
+and incorporates improved singing-speciﬁc techniques. The
+skip connection of the note pitch improves acoustic feature
+estimation accuracy, particularly pitch. The differences-based
+vibrato modeling can achieve more accurate reproduction of
+vibrato shape and can help control vibrato intensity. Automatic
+pitch correction techniques are also introduced into the SVS
+system. In addition, our system adopts the pitch robust neural
+vocoder PeriodNet. As a result, our system can synthesize a
+more natural singing voice that follows a given score more
+accurately.
+=== PAGE 3 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 3
+Musical score Synthesized song
+Musical score Singing voice waveform
+Model trainingModel trainingModel training
+Time-lagmodelDurationmodelAcousticmodelNeuralvocoderScoreanalyzer
+Note timingpredictionPhone durationpredictionAcoustic featurepredictionWaveformgenerationScore featureextraction
+Score featureextraction
+Model training
+Phoneme alignmentestimationAcoustic featureextraction
+Training stageSynthesis stage
+Song database
+Note boundary fixedphone-level score featureFrame-levelscore featureFrame-levelacoustic feature
+Time-aligned frame-level score featureAcoustic feature
+Phone-levelscore feature
+Phone-levelscore feature
+Fig. 1. Overview of the DNN-based SVS system, “Sinsy.” Our system consists of a score analyzer and four neural network-based models. Singing voice
+can be synthesized from a musical score via these modules. Proposed singing-speciﬁc techniques, pitch normalization, vibrato modeling, and automatic pitch
+correction are incorporated in the acoustic model.
+III. DNN-B ASED SVS S YSTEM
+A. Overview
+Figure 1 overviews our proposed DNN-based SVS system,
+“Sinsy.” This system consists of several models: 1) a time-
+lag model to predict the start timing of the notes, 2) a
+duration model to predict phoneme durations in each note,
+3) an acoustic model to generate acoustic features based on
+the predicted phoneme timing, and 4) a vocoder to synthesize
+waveforms from generated acoustic features. These models are
+based on the neural network.
+Our system is composed of training and synthesis parts.
+In the training part, score and acoustic features are extracted
+by score analysis and vocoder encoding, then each model is
+trained. The score feature contains musical score information
+(e.g., lyrics, note keys, note lengths, tempo, dynamics, and
+slur), and the acoustic feature contains spectrum (e.g., mel-
+cepstral coefﬁcients) and excitation parameters (e.g., F0).
+Time-aligned score features are needed to train the time-lag
+model, the duration model, and the acoustic model. Therefore,
+pre-trained hidden semi-Markov models (HSMMs) are used to
+estimate phoneme alignments [32].
+In the synthesis part, ﬁrst, the score features are extracted
+from the musical score to be synthesized. The time-lag model
+predicts each note’s start timing, and the duration model pre-
+dicts the phoneme duration in each note under the constraints
+of the note boundaries determined by the time-lag model. The
+frame-level score feature sequence is obtained using these
+predicted boundaries and then fed into the acoustic model
+to predict the acoustic feature sequence. Finally, the neural
+vocoder synthesizes a singing voice waveform.
+Sinsy is a system for synthesizing singing voices from music
+scores. We adopt MusicXML [33] for representing musical
+scores that include lyrics. The score analyzer extracts musical
+contexts from the input musical score and encodes them into
+the categorical and numerical features that are easy for neural
+networks to handle. We use singing speciﬁc rich contexts,
+which are designed in our previous works [3].
+B. Acoustic Model
+In the SVS, the DNN-based acoustic model represents the
+mapping function from the score feature sequences to the
+acoustic feature sequences. There is a correlation between
+the spectrum and the excitation parameters in the acoustic
+feature (e.g., mel-cepstral coefﬁcients and F0). Some studies
+have utilized a cascade structure to model this correlation [12].
+In this work, a single neural network is used to model both
+spectrum and excitation parameters simultaneously, assuming
+that the correlation between them can be expressed inside the
+neural network.
+The sequence of acoustic feature vectors c can be written
+in vector forms as follows:
+c = [c⊤
+1,..., c⊤
+t ,..., c⊤
+T ]⊤, (1)
+where ct is a D-dimensional static feature vector that can
+be represented by ct = [ct(1),c t(2),...,c t(D)]⊤, and T is
+the number of frames included in a song. The optimal static
+feature vector sequence ˆc is given by
+ˆc = arg max
+c
+N (c| ¯c, Σ(c)), (2)
+whereN (·| ¯c, Σ(c)) denotes the Gaussian distribution with
+a mean vector ¯c and a covariance matrix Σ(c). In the SVS
+system, ¯c is obtained by feeding the score feature vector
+sequence into a trained neural network. A covariance matrix
+Σ(c) is given by
+Σ(c) = diag[Σ(c)
+1 ,..., Σ(c)
+t ,..., Σ(c)
+T ]. (3)
+In the DNN-based SVS, Σ(c) is usually independent of score
+features; thus, Σ(c) is a globally tied covariance matrix.
+Training of the DNN aims to maximize the likelihood function
+L(s) given by
+L(s) =N (c| ¯c, Σ(c)). (4)
+=== PAGE 4 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 4
+Since a singing voice includes long tones, parameter discon-
+tinuity degrades the quality of the synthesized singing voice.
+Our previous studies [8], [9], [16] used the dynamic features
+to avoid this. The acoustic feature sequence of static and their
+dynamic feature vectors 1 o can be written in vector forms as
+follows:
+o = [o⊤
+1,..., o⊤
+t ,..., o⊤
+T ]⊤, (5)
+whereot consists of the static and the dynamic feature vectors
+ot = [c⊤
+t , ∆(1)c⊤
+t , ∆(2)c⊤
+t ]⊤. Relation between o and c can
+be represented byo =Wc , whereW is a window matrix that
+extendsc to o. An acoustic model is trained by maximizing
+the following objective function as
+L(d) =N (o| ¯o, Σ(o)), (6)
+where ¯o and Σ(o) are a mean vector and a global tied
+covariance matrix that include the elements that correspond to
+dynamic features. The optimal static feature vector sequence
+ˆc(d) is obtained from considering dynamic features by using
+the parameter generation algorithm [34] as follows:
+ˆc(d) = arg max
+c
+N (o| ¯o, Σ(o)) = arg max
+c
+N (Wc| ¯o, Σ(o)).
+(7)
+Although the parameter generation algorithm can generate
+a smooth acoustic feature sequence, the computational cost at
+the synthesis stage increases. A recent study [11] introduced a
+different approach that considers dynamic features only during
+training. In this approach, the objective function that considers
+the dynamic features can be written as
+L =N (o|W ¯c, Σ(o)). (8)
+Since the output of the DNN contains only static feature vector
+¯c, the optimal static feature sequence can be obtained by (2)
+without the parameter generation algorithm in the synthesis
+stage. The average length of a singing voice is longer than that
+of speech, and the generation time is sometimes a problem.
+Thus, we utilize this approach for our system to generate a
+smooth parameter sequence without increased computational
+costs in the synthesis stage.
+C. Time-Lag Model and Duration Model
+In SVS, the phoneme duration should be determined from
+the note length of the musical score since a singing voice
+is synthesized based on the tempo and rhythm of the music.
+However, as Fig. 2 shows, humans generally tend to begin to
+utter consonants earlier than the absolute musical note onset
+timing. In addition, note timing may be slightly advanced or
+delayed as part of an individual’s singing technique, so the
+timing varies depending on the singer. In this paper, we call
+the timing ﬂuctuations caused by these factors “time-lag” and
+model them.
+Two separated neural networks are used to model the time-
+lags and the phoneme durations. We deﬁne a time-lag as the
+difference between the note timing of the musical score and
+the actual timing of a reference phoneme within a note. To
+1We use velocity and acceleration features as dynamic features.
+0
+1
+2
+3
+4
+5
+6Frequency [kHz]
+0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6
+Time [s]
+sil
+sil
+h a
+h a
+r u
+r u
+g a
+g a
+k i
+k i
+Note timing
+Vocal timing
+Spectrogram of
+natural singing voice
+Waveform of
+natural singing voice
+Fig. 2. Example of time-lag.
+consider the time-lag in this work, we use the ﬁrst vowel or
+silence for rests in each note as the reference phoneme instead
+of the ﬁrst phoneme in the note. This reference phoneme
+shifting is based on the tendency of humans to sing so that the
+vowel onset timing is closest to the note timing in the score,
+and preliminary experiments have conﬁrmed its effectiveness.
+Note that no additional annotation is needed in the training
+stage to train the time-lag and duration models because the
+actual phoneme timing of the singing voice can be obtained
+by a forced alignment using a well-trained HSMM [32].
+In the synthesis stage, ﬁrst, the time-lag of each note
+is predicted using a trained time-lag model. The sequences
+of note lengths obtained from the given musical score and
+predicted time-lags L, ˆg can be written as follows:
+L = [L1,...,L n,...,L N], (9)
+ˆg = [ˆg1,..., ˆgn,..., ˆgN], (10)
+whereN is the number of notes included in a song. Note that
+ˆg1 is always zero since there is no need to shift the ﬁrst note
+boundary. Each adjusted note length ˆLn is obtained by
+ˆLn =
+{
+Ln− ˆgn + ˆgn+1, (n<N )
+Ln− ˆgn. (n =N) (11)
+Next, the phoneme durations are predicted by a trained
+phoneme duration model and are normalized on a note-by-
+note basis so that the sums of the phoneme durations within
+each note match the adjusted note lengths. The duration of the
+k-th phoneme in the n-th note is determined as follows:
+ˆdnk = ˆLn·µnk
+/ Kn∑
+k=1
+µnk, (12)
+where Kn is the number of phonemes in the n-th note, and
+µnk is the output value of the DNN-based duration model at
+the k-th phoneme in the n-th note.
+The phoneme duration of synthesized songs can be obtained
+by the above strategy, considering the time-lag by the neural
+network. However, the distribution of phoneme durations
+differs greatly depending on the type of phonemes, such as
+consonants, vowels, and breaths. For example, durations of
+vowels vary greatly depending on the note length, while those
+of consonants and breaths are barely affected by note length.
+Note that the breath phoneme corresponds to the breath mark
+in the musical score, and its duration needs to be predicted
+because the actual duration cannot be obtained from the
+=== PAGE 5 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 5
+musical score. Thus, it is not appropriate to ﬁt the phoneme
+duration to the note length constraint by uniformly multiplying
+all the phonemes within a note by a constant as in (12).
+Therefore, we statistically estimate the adjusted phoneme
+duration by considering the variance of the phoneme duration.
+This approach is based on constrained maximum likelihood
+estimation. We use a mixture density network (MDN) [35] to
+model the phoneme duration distribution. Note that an MDN
+with one mixture component is used for simpliﬁcation. We
+assume that a single-mixture MDN has sufﬁcient ability to
+represent the phoneme duration distribution.
+The optimal phoneme duration sequence ofn-th note ˆd (ML)
+n
+is given by
+ˆd (ML)
+n = arg max
+dn
+Kn∑
+k=1
+logN (dnk|µnk,σ 2
+nk), (13)
+subject to
+Kn∑
+k=1
+ˆd (ML)
+nk = ˆLn, (14)
+where µnk, σ2
+nk denote the mean and the variance of the k-
+th phoneme duration in the n-th note, and these are obtained
+from a trained MDN.
+To obtain optimal phoneme durations under the constraint
+condition in (14), we use the Lagrange multiplier method as
+follows:
+F (dnk,ρ n) =
+Kn∑
+k=1
+logN (dnk|µnk,σ 2
+nk)
++ρn
+( Kn∑
+k=1
+dnk− ˆLn
+)
+, (15)
+whereρn denotes the Lagrange multiplier. Hence, the optimal
+duration of the k-th phoneme in the n-th note is obtained by
+ˆd (ML)
+nk =µnk +ρnσ2
+nk, (16)
+where ρn is given by
+ρn =
+(
+ˆLn−
+Kn∑
+k=1
+µnk
+) / Kn∑
+k=1
+σ2
+nk. (17)
+Our system assumes that each note is assigned one or
+more phonemes. The note with the long sound symbol “—”
+is assigned the appropriate phoneme based on the previous
+note’s lyric, using language-speciﬁc heuristic rules at the score
+analyzing process. For example, in Japanese, the phoneme of
+a note with a long vowel symbol is obtained by duplicating
+a vowel in a previous note. In English, the syllable nucleus
+allocated to the previous note is duplicated, and the phoneme
+after the duplicated syllable nucleus is shifted to the current
+note. Since consecutive diphthongs due to duplication may
+degrade the continuity of a singing voice, we deﬁned the
+duplication rules for diphthongs in our previous work [36].
+SineV/UVPeriodicGenerator
+AperiodicGenerator
+Generatedwaveform+NoiseV/UV
+Acoustic feature(except F0)
+Acoustic featureTraining stage
+Multi-scaleDiscriminator
+Synthesis stageNaturalwaveform
+“Real” or “Fake”Adversarial loss
+Multi-resolutionSTFT loss
+Fig. 3. The overview of PeriodNet parallel model.
+D. Neural V ocoder
+We use the PeriodNet [26] as a vocoder to generate singing
+voice waveforms from acoustic feature sequences. PeriodNet
+is a non-autoregressive neural vocoder with a structure that
+separates periodic and aperiodic components. PeriodNet con-
+sists of two sub-generators connected in parallel or series
+and models a speech waveform based on the following two
+assumptions. The ﬁrst one is that the speech waveform can be
+represented as the sum of the periodic and aperiodic waveform.
+The second one is that periodic and aperiodic waveforms of
+speech can be easily generated from an explicit periodic signal
+with autocorrelation (such as sinusoidal signal) and an explicit
+aperiodic signal without one (such as noise), respectively. The
+parallel or series structure helps to model speech waveform
+with periodic and aperiodic components more appropriately
+and improves the robustness of the input acoustic features,
+especially F0. SVS systems require the ability to generate
+high-quality singing voice waveforms even if the input pitch is
+outside the range of training data. PeriodNet is highly suitable
+for the neural vocoder in SVS systems because it has superior
+reproducibility of accurate pitch and breath sounds.
+This work adopts the parallel model (PM2 in [26]), as shown
+in Fig. 3. A periodic generator takes an explicit periodic signal
+and an aperiodic generator that takes an aperiodic signal. A
+sample-level voiced/unvoiced (V/UV) signal is also fed into
+both generators, and the periodic signal can be generated
+from F0 predicted by the acoustic model in the synthesis
+stage. Both periodic and aperiodic generators adopt WaveNet-
+like architecture, which has a stack of non-causal convolution
+layers, and are conditioned on the acoustic feature. To obtain
+the robustness of pitch, we exclude the F0 sequence from
+the condition of the aperiodic generator. PeriodNet is trained
+by an adversarial training framework using a multi-scale
+discriminator along with a multi-resolution short-time Fourier
+transform (STFT) auxiliary loss.
+IV. A CCURATE AND EXPRESSIVE PITCH MODELING FOR
+THE DNN-B ASED SVS S YSTEM
+This section describes the singing-speciﬁc techniques of
+accurately modeling pitch, including vibrato for the DNN-
+based SVS.
+=== PAGE 6 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 6
+3 FFNN Layers
+3 Conv layers
+2 LSTM layers
+Linear Projection
+MGC BAP VIB V/UV LF0
+Acoustic feature
+Note pitch
+Score feature
+Addition
+Concatenation
+Mel-cepstrum 
+Band aperiodicity 
+Vibrato 
+Voiced/unvoiced flag 
+Log Fundamental 
+MGC: 
+BAP: 
+VIB: 
+V/UV: 
+LF0: 
+ Frequency
+Fig. 4. Architecture of acoustic model in our system.
+A. Pitch Normalization
+The corpus-based nature of statistical parametric SVS ap-
+proaches makes their performance highly dependent on the
+training data. It is challenging to express contextual factors that
+rarely appear in training data. Hence, DNN-based SVS sys-
+tems should be trained using a database that contains various
+contextual factors to synthesize high-quality singing voices.
+In particular, since the prediction accuracy of F0 signiﬁcantly
+affects the quality of the synthesized singing voice, the pitch
+must be covered correctly. However, it is almost impossible to
+cover all possible contextual factors because a singing voice
+is affected by a large number of factors, such as lyrics, key,
+dynamics, note duration, and note pitch.
+A musical note-level pitch normalization technique for
+DNN-based SVS systems was proposed in our previous
+work [8] to address the aforementioned problem. In that tech-
+nique, the F0 sequence extracted from the natural waveforms
+is not modeled directly but as a difference from the note
+pitch determined by musical notes in the score. Therefore, the
+acoustic model only needs to predict the human bias from the
+note pitch. This technique enables DNN-based SVS systems
+to synthesize singing voices that contain arbitrary pitches,
+including unseen ones. However, modeling the difference of
+F0 remains a challenge because F0 in unvoiced frames and
+the note pitch in the musical rest are unmeasurable. Thus, all
+unvoiced frames and musical rests in the musical score are
+linearly interpolated and modeled as voiced frames.
+Figure 4 shows the architecture of the acoustic model with
+the pitch normalization technique. In the pitch normalization
+technique, a predicted log F0 sequence ¯c(F0) is represented
+by using the note pitch sequence p = [p1,p 2,...,p T ]⊤ and
+the output mean parameter sequence µ = [µ1,µ 2,...,µ T ]⊤
+as follows:
+¯c(F0) =p +µ. (18)
+Note that we use log F0, the log scale of F0. The note pitch
+sequencep to be added can be obtained from the input score
+features sequence.
+A note pitch transition greatly inﬂuences the F0 trajectory.
+Therefore, we add a skip connection between the input note
+pitch and a hidden layer of the acoustic model to deliver the
+note pitch inside the acoustic model, motivated by [11]. This
+helps transmit the note pitch information efﬁciently and predict
+the residual component between log F0 and the note pitch.
+B. Vibrato Model
+Generating an expressive F0 contour for a singing voice
+is also challenging. Vibrato is one of the important singing
+techniques, and the timing and intensity of vibrato vary from
+singer to singer. Thus, it should be modeled even though it
+cannot be explicitly described in the musical score. Some
+acoustic models with a recurrent or AR structure can model
+F0 with vibrato directly [10], [12], [13]. However, it does not
+enable explicit control of vibrato. Here, we assume that vibrato
+is a periodic ﬂuctuation of the F0 contour and introduce two
+explicit vibrato modeling methods.
+1) Sine-Based Vibrato Modeling: One method for modeling
+vibrato is to express periodic ﬂuctuations with sinusoidal
+parameters [9]. The vibrato v(·) of the t frame in the i-th
+vibrato section [t(s)
+i ,t (e)
+i ] can be deﬁned as
+v
+(
+ma(t),m f(t),i
+)
+=ma(t) sin
+(
+2πmf(t)fs
+(
+t−t(s)
+i
+))
+,
+(19)
+where ma(t) is the amplitude of vibrato in cents, mf(t) is
+the frequency of vibrato in Hz, and fs is the frame shift in
+seconds. These parameters can be obtained from the original
+F0 sequence with an estimation algorithm [37]. In this work,
+the vibrato amplitude and frequency parameters are extracted
+based on the intersection points between the original F0 and a
+median-smoothed F0. Two-dimensional parameters,ma(t) and
+mf(t), are added to the acoustic feature vector and modeled by
+a DNN along with the spectral and excitation parameters. The
+vibrato parameters are unobserved outside the vibrato sections.
+Thus, these parameters are interpolated in the same manner as
+the F0 sequence and are modeled along with an additional
+binary ﬂag to determine the vibrato/non-vibrato frames.
+2) Difference-Based Vibrato Modeling: In this paper, we
+propose another method of modeling the vibrato component
+separated from the F0. The vibrato component is deﬁned as the
+difference between the original F0 sequence and the smoothed
+F0 sequence. This difference-based vibrato component is a
+one-dimensional continuous feature and is directly modeled
+by the acoustic model that can model time series data such
+as RNN without an extra binary ﬂag representing vibrato/non-
+vibrato frames. This method has the advantage of generating
+more complex vibrato shapes given no assumption of the
+vibrato shape. In particular, smoother vibrato can be obtained
+because the start and end of the vibrato are determined by the
+value of the difference rather than the binary ﬂag. Furthermore,
+it is possible to control the vibrato intensity by changing the
+difference values, unlike the method of not separating the
+vibrato component explicitly.
+V. A UTOMATIC PITCH CORRECTION
+The singing voice becomes out of tune when the pitch
+of a singing voice deviates from that of the musical score.
+Therefore, we introduce two automatic correction techniques
+to prevent synthesized singing voices from becoming out of
+tune: prior distribution of pitch and pseudo-note pitch.
+=== PAGE 7 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 7
+A. Prior Distribution of Pitch
+In pitch normalization, the difference between log F0 and
+note pitch is modeled by (18). Here, we correct the out-of-tune
+phrases by giving a prior distribution to the pitch normalization
+training, assuming that the difference follows a zero-mean
+Gaussian distribution.
+The prior distribution of pitch is given as
+P (µ) =N (µ|v,S), (20)
+where v and S correspond to the mean and the variance of
+prior Gaussian distribution. Note that µ does not contain a
+vibrato component because the pitch should be corrected while
+maintaining vibrato. Here v = 0 since the prior distribution
+we assume always represents the difference between the F0
+extracted from the natural waveforms and note pitch in the
+musical score. The variance S works as a parameter that
+controls the intensity of pitch correction. The smaller element
+ofS is, the stronger the out-of-tune pitch is corrected. In this
+work, we assume that the variance always takes the ﬁxed value
+σ2
+p. In the training part, an objective function in terms of F0
+is deﬁned as
+L(F0) =N (o(F0)|W (p +µ), Σ(o(F0)))N (µ|v,S), (21)
+where o(F0) and Σ(o(F0)) are a sequence of feature vectors
+and a covariance matrix in terms of log F0 and their dynamic
+features.
+In unique phenomena of a singing voice such as over-
+shooting2 and preparation 3, F0 contours are deﬂected from
+the target notes before or after a note changes. Thus, it
+is not always optimal to correct the pitch with the same
+intensity at all frames. Furthermore, it sounds rather unnatural
+if the difference between the F0 and the note pitch becomes
+too small. Therefore, we introduce a dynamic weight vector
+w = [w1,w 2,...,w T ] whose values are changed based on the
+note position into (21):
+L(F0) =N (o(F0)|W (p +µ), Σ(o(F0)))N (µ|v,S)w
+=N (o(F0)|W (p +µ), Σ(o(F0)))
+T∏
+t=1
+N (µt| 0,σ 2
+p)wt,
+(22)
+where T denotes the number of frames. The values of the
+weight vector increase or decrease at the beginning or end of
+notes, as shown in Fig. 5. In this paper, the maximum of w
+takes 0.5, and the width of increasing and decreasing is set to
+25 frames.
+B. Pseudo-Note Pitch
+One cause of the phrases being out of tune is that there is
+a difference between an assumed note pitch by the singer and
+the correct note pitch. By training the acoustic model using
+the pseudo-note pitch that takes these differences into account,
+the singing voice should be synthesized with the correct pitch
+2Overshooting is a pitch deﬂection exceeding the target note after a note
+change.
+3Preparation is a pitch deﬂection in the direction opposite to a note change
+that can be seen just before the note change.
+0.5
+0.0
+25 25 25 25
+Weight
+F0 Note pitch
+Natural F0
+[frame]
+[frame]
+Fig. 5. Automatic pitch correction by prior distribution with dynamic weight
+vector.
+by using the original note pitch during synthesis. We propose
+two different approaches to obtaining the pseudo-note pitch.
+1) Heuristic Pseudo-Note Pitch: The pseudo-note pitch is
+heuristically calculated from the ﬂat part of the F0 sequence
+to express the singer-assumed note pitch during singing. In
+the training stage, the pitch normalization technique is applied
+using this pseudo-note pitch. In the synthesis stage, it is
+possible to synthesize the singing voice with the correct pitch
+by using the original note pitch instead of the pseudo-note
+pitch. An example of the heuristic pseudo-note pitch will be
+shown in Section VI-D.
+2) Pitch Bias-Based Pseudo-Note Pitch: We introduce ad-
+ditional trainable parameters, note-level pitch bias, to represent
+the difference between the singer-assumed note pitch and the
+correct note pitch. In this approach, the pseudo-note pitch is
+deﬁned as the sum of the original note pitch given by musical
+score and the note-level pitch bias. The pitch bias should
+absorb the average pitch shift in each note seen in the out-
+of-tune phrases. In the training stage, the predicted log F0
+sequence is deﬁned as
+¯c(F0) =p +µ +b, (23)
+where b = [b1,b 2,...,b T ]⊤ is a sequence of the trainable
+pitch bias. The bias parameters are assigned to each note
+(except for musical rests), and b is obtained by duplicating
+each parameter according to a corresponding note length. Note
+that the bias values in musical rests are obtained by linearly
+interpolating them in the same manner as the original note
+pitch in pitch normalization described in Section IV-A. Hence,
+the total number of trainable bias parameters is equal to the
+total number of musical notes in the training data. These
+bias parameters can be trained using a back-propagation in
+the same fashion as the other model parameters without any
+additional loss function. In the synthesis stage, the F0 with
+the correct pitch can be generated by ﬁxing the bias value to
+zero.
+VI. E XPERIMENTS
+This section evaluates the effectiveness of the proposed
+system in terms of the combination strategy with the time-
+lag model and the duration model, improved acoustic feature
+modeling, and automatic pitch correction techniques.
+A. Experimental Conditions
+In this experiment, 70 Japanese children’s songs (total: 70
+min) by a female singer were used. Sixty songs were used
+=== PAGE 8 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 8
+for training, and the rest were used for testing. Singing voice
+signals were sampled at 48 kHz and windowed with a 5-
+ms shift. The acoustic feature consisted of 0-th through 49-
+th mel-cepstral coefﬁcients, log F0 value, 0-th through 24-
+th mel-cepstral analysis aperiodicity measures, and vibrato
+parameters. In order to reduce an error of F0 extraction,
+voting results from three F0 estimators were used as F0 of
+acoustic features [38]. Mel-cepstral coefﬁcients were extracted
+from the smoothed spectrum analyzed by WORLD [39]. Two
+types of explicit vibrato parameters were used: 2-dimensional
+sinusoidal-based parameters that consisted of amplitude and
+frequency parameters and a 1-dimensional vibrato component
+that represented the difference between the original log F0
+and the smoothed log F0. The score feature was obtained by
+analyzing the musical score, and the contextual factor we used
+followed our previous work [3].
+Five-state, left-to-right, no-skip HSMMs were used to obtain
+the time alignment of the score features and the acoustic
+features for training the DNN-based time-lag, duration, and
+acoustic models. The decision tree-based context clustering
+technique was separately applied to distributions for the
+spectrum, excitation, aperiodicity, and state duration. The
+spectrum and aperiodicity stream were modeled with single
+multivariate Gaussian distributions. The excitation stream was
+modeled with multi-space probability distribution HSMMs
+(MSD-HSMMs) [40] that each consisted of a Gaussian dis-
+tribution for “voiced” frames and a discrete distribution for
+“unvoiced” frames. The duration stream was modeled with
+single Gaussian distributions. The minimum description length
+(MDL) criterion was employed to control the size of the
+decision trees for context clustering [41].
+B. Objective Evaluation of Time-Lag Modeling and Duration
+Modeling
+An objective evaluation experiment was conducted to com-
+pare the prediction accuracy of note timing and phoneme
+duration. In this experiment, the following three methods were
+compared.
+• DT: Conventional method of predicting phoneme bound-
+aries using the decision tree-based clustered context-
+dependent time-lag model and duration model in an
+HMM-based SVS system [42].
+• DNN: Time-lag and phoneme duration were modeled by
+DNNs, and ﬁnal phoneme boundaries were determined
+according to (12).
+• DNN+ML: Time-lag and phoneme duration were mod-
+eled by DNN and single MDN, and ﬁnal phoneme
+boundaries were determined using constrained maximum
+likelihood estimation with (16).
+In DT, the sizes of the decision trees were determined by
+the MDL criterion. In DNN and DNN+ML, the input feature
+of DNN was an 824-dimensional feature vector consisting of
+734 binary features for categorical linguistic contexts (e.g.,
+the current phoneme identity) and 90 numerical features for
+numerical contexts (e.g., the number of phonemes in the
+current syllable). In DNN, the outputs of the time-lag model
+TABLE I
+OBJECT EVALUATION OF TIMING PREDICTION ACCURACY
+Method DT DNN DNN+ML
+Note duration-RMSE [frame] 15.78 12.75 12.75
+Phoneme duration-RMSE [frame] 13.32 11.23 10.94
+Note duration-CORR 0.9742 0.9780 0.9780
+Phoneme duration-CORR 0.9719 0.9757 0.9767
+and duration model are one-dimensional numerical values.
+In DNN+ML, the time-lag model outputs one-dimensional
+numerical values, and the duration model outputs the mean
+and variance of the one-dimensional phoneme duration distri-
+bution. In DNN and DNN+ML, the architecture of the time-
+lag model was three hidden layers with 32 units per layer, and
+that of the duration model was three hidden layers with 256
+units per layer. The sigmoid activation function was used in
+the hidden layers, and the linear activation function was used
+in the output layer. The weights of the DNNs and the MDN
+were initialized randomly, then the DNNs were optimized
+by minimizing the mean squared error, and the MDN was
+optimized by maximizing the likelihood. In the training phase,
+the Adam optimizer [43] was adopted for all neural networks.
+The root mean square errors (RMSEs) of the note and the
+phoneme duration and Pearson correlations (CORRs) of the
+note and the phoneme duration were used as the objective
+evaluation metrics. Note that the phoneme boundaries of
+forced alignment obtained by trained HMMs were used as
+the correct phoneme boundaries.
+The experimental results are listed in Table I. It can be seen
+that both DNN and DNN+ML performed better in predicting
+note and phoneme boundaries than DT. This result indicates
+the effectiveness of replacing the decision tree-based clustered
+models with DNN-based models. Also, comparing DNN+ML
+with DNN in terms of phoneme duration prediction accuracy,
+DNN+ML outperformed DNN. This suggests that constrained
+maximum likelihood estimation of note lengths with consid-
+eration of variances helps ﬁt the phoneme durations.
+C. Comparison of Acoustic Feature Modeling
+Objective and subjective evaluations were conducted to
+compare the acoustic models in terms of pitch normalization,
+skip connection of the note pitch, vibrato modeling, and
+the training criterion. We used the seven systems shown in
+Table II.
+The input feature vector for the acoustic models was
+an 844-dimensional feature vector with the 824-dimensional
+feature vector in Section VI-B and a 20-dimensional ad-
+ditional feature vector that included duration features. The
+output feature vector for the acoustic models consists of
+mel-cepstral coefﬁcients, log F0 value, mel-cepstral analysis
+aperiodicity measures, vibrato parameters (except System 5 ),
+voiced/unvoiced binary value, and vibrato/non-vibrato binary
+value (only System 4 ). In System 7 , the dynamic features
+(velocity and acceleration features) were also included in
+the output feature vector. A single network that modeled all
+=== PAGE 9 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 9
+TABLE II
+RESULTS OF OBJECTIVE EVALUATION OF ACOUSTIC MODELS
+System System Details MCD F0-RMSE F0+Vib-RMSE F0-CORR F0+Vib-CORRIndex Pitch norm.a Skip connect.b Vibratoc Criteriond [dB] [cent] [cent]
+System 1 ✓ ✓ Diff-based L 5.423 74.00 80.96 0.9713 0.9647
+System 2 Diff-based L 5.644 264.07 265.71 0.6689 0.6677
+System 3 ✓ Diff-based L 5.627 79.80 86.69 0.9653 0.9585
+System 4 ✓ ✓ Sine-based L 5.456 72.91 85.12 0.9712 0.9592
+System 5 ✓ ✓ N/A L 5.439 - 80.95 - 0.9635
+System 6 ✓ ✓ Diff-based L(s) 5.462 73.49 82.00 0.9712 0.9636
+System 7 ✓ ✓ Diff-based L(d) 5.445 74.16 82.48 0.9709 0.9633
+a Pitch normalization described in Section IV-A, b Skip connection described in Section IV-A,
+c “Sine-based” denotes sine-based vibrato modeling described in Section IV-B1, and “Diff-based” denotes the difference-based vibrato modeling
+described in Section IV-B2. d Trainig criteria L, L(s), and L(d)are given by (8), (4), and (6), respectively.
+System 1 
+System 2
+System 3 
+System 4
+System 5 
+System 6
+System 7
+1
+2
+3
+4
+5Mean opinion score
+4.28
+1.81
+3.49
+4.08 4.22 4.13 4.15
+Fig. 6. Mean opinion scores of the seven SVS systems with 95% conﬁdence
+intervals.
+acoustic features simultaneously was trained by using the
+Adam optimizer [43]. The architecture of the acoustic models
+was the stack of three fully connected layers with 2048 hidden
+ReLU units, three convolution blocks each containing a 1D
+convolutional layer with 1024 ﬁlters, batch normalization [44]
+and ReLU activations, two bidirectional LSTMs containing
+512 units (256 in each direction), and a linear projection
+layer. The same pre-trained PeriodNet [26] neural vocoder was
+used to reconstruct singing waveforms from generated acoustic
+features in all systems.
+Mel-cepstral distortion (MCD) [dB], RMSEs of log F0
+without/with vibrato (F0-RMSE and F0+Vib-RMSE) [cent],
+CORRs of log F0 without/with vibrato (F0-CORR and
+F0+Vib-CORR) were used to objectively evaluate the perfor-
+mance of systems. Phoneme durations from natural singing
+voices were used while performing the objective evaluation.
+Mean opinion score (MOS) tests were also conducted to sub-
+jectively evaluate the naturalness of synthesized waveforms.
+In the subjective evaluation, the phoneme durations were
+determined by DNN+ML in Section VI-B. The subjects were
+eleven Japanese students in our research group, and twelve
+phrases were chosen at random per method from the test set.
+The scale for the MOS test was 5 for “natural” and 1 for
+“poor.” The demo songs can be found on the demo page [45].
+Table II shows the objective evaluation results and Fig. 6
+shows the subjective evaluation results. By comparing Sys-
+tem 2 and System 3 in the objective and the subjective
+evaluations, we revealed that the pitch normalization technique
+is essential in modeling the pitches of singing voices. The
+synthesized singing voices in System 2 were sometimes
+perceived as if they were sung following different note pitches
+because the generated F0 deviated from the target note pitches.
+Furthermore, System 1 achieved a better score than System 3
+in terms of both the metrics of F0 and MCD, which also
+led to a good subjective evaluation score. This result suggests
+that it is helpful to transmit the note pitch information of the
+musical score to the inside of the model by using the skip
+connection because a singing voice is greatly affected by note
+pitch transition.
+Comparing the methods of vibrato modeling, System 1
+and System 5 outperformed System 4 in terms of F0+Vib-
+RMSE, F0+Vib-CORR, and MOS value. The examples of
+generated F0 contours in each system are plotted in Fig. 7.
+As the ﬁgure shows, the F0 contours of System 1 and
+System 5 are closer to the natural F0 contour than that
+of System 4 . Since System 4 cannot reproduce the vibrato
+phase, the F0 contour deviates signiﬁcantly from the natural
+F0 contour. This is a major factor in the deterioration of the
+objective evaluation. In addition, the start and end shapes of
+the vibrato of System 1 and System 5 are smoother than that of
+System 4, indicating the effectiveness of modeling the vibrato
+component by neural networks without using the sinusoidal
+parameters. A comparison of System 1 and System 5 shows
+no signiﬁcant difference between them. In System 1, since F0
+and vibrato are modeled separately, it is possible to change the
+vibrato intensity and introduce the pitch correction techniques
+described in Section V. Therefore, difference-based vibrato
+modeling is an effective method.
+Finally, System 1, System 6, and System 7 were compared.
+System 1 was expected to enable more continuous and appro-
+priate parameter generation without using explicit dynamic
+features during synthesis because this system was trained
+considering the dynamic features, but the effect was slight.
+Although System 6 sometimes generated unstable singing
+voices, it was not a big problem in the subjective evaluation.
+Our acoustic model consisted of bidirectional LSTMs that
+can generate sufﬁciently continuous parameters without using
+=== PAGE 10 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 10
+0.0 0.5 1.0 1.5 2.0 2.5
+Time [sec]
+F4
+A4
+C5
+E5F0 [semitone]
+Natural Predicted (w/o vib.) Predicted (w/ vib.)
+(a) Difference-based vibrato modeling ( System 1).
+0.0 0.5 1.0 1.5 2.0 2.5
+Time [sec]
+F4
+A4
+C5
+E5F0 [semitone]
+Natural Predicted (w/o vib.) Predicted (w/ vib.) (b) Sine-based vibrato modeling ( System 4).
+0.0 0.5 1.0 1.5 2.0 2.5
+Time [sec]
+F4
+A4
+C5
+E5F0 [semitone]
+Natural Predicted (w/ vib.) (c) Not using explicit vibrato modeling ( System 5).
+Fig. 7. Generated F0 contours for test song. Predicted (w/o vib.) denotes the bare F0 contour without vibrato components and Predicted (w/ vib.) denotes
+ﬁnal F0 contour with vibrato components. The frequency value of note A4 is 440 Hz in this paper.
+10 15 20 25 30 35 40 ∞
+Standard deviation σp [cent]
+40
+60
+80
+100RMSEnote [cent]
+10 15 20 25 30 35 40 ∞
+Standard deviation σp [cent]
+0.96
+0.97
+0.98
+0.99CORRnote
+Original note pitch (Org, Org+Prior) Heuristic pseudo-note pitch (Heur, Heur+Prior) Pitch bias-based pseudo-note pitch (Bias, Bias+Prior)
+10 15 20 25 30 35 40 ∞
+Standard deviation σp [cent]
+70
+80
+90
+100RMSEnat [cent]
+10 15 20 25 30 35 40 ∞
+Standard deviation σp [cent]
+0.966
+0.968
+0.970
+0.972
+0.974CORRnat
+Fig. 8. Objective evaluation of comparing automatic pitch correction techniques. σp = ∞ denotes the systems not using prior in the training ( Org, Heur,
+and Bias) and the dotted lines on each graph represent the objective evaluation values of these systems.
+dynamic features. Meanwhile, System 7 may have caused
+parameter over-smoothing due to the parameter generation
+considering dynamic features explicitly.
+In summary, System 1 got a generally good objective score
+and achieved the best MOS value. These results indicate the
+effectiveness of the proposed system with pitch normalization,
+the skip connection of the note pitch, difference-based vibrato
+modeling, and the training criterion considering dynamic fea-
+tures.
+D. Effectiveness of Automatic Pitch Correction Techniques
+We also evaluated the effectiveness of the automatic pitch
+correction techniques using a different speaker’s singing voice
+dataset. This dataset consisted of the same 70 songs used in the
+previous experiments but contained out-of-tune phrases. Other
+experimental conditions were the same as in Section VI-A.
+Time-lags and phoneme durations were modeled byDNN+ML
+in Section VI-B, and acoustic features were modeled by
+System 1 in Section VI-C.
+In this experiment, six systems were used for comparison as
+shown in Table III. Three types of note pitches were used in
+the training stage: the original note pitch given by the musical
+scores as a baseline, a heuristic pseudo-note pitch mentioned
+in Section V-B1, and a pitch bias-based pseudo-note pitch
+mentioned in Section V-B2. Note that original note pitches
+were always used during the synthesis stage.
+1) Objective Evaluation: We compared the performance
+of the experimental systems objectively. In Org+Prior,
+Heur+Prior, and Bias+Prior, we compared seven different
+values of standard deviation σp [cent] in (22). We use four
+objective measures: the RMSE and CORR between the gener-
+ated F0 and the F0 calculated from the note pitches ( RMSEnote
+and CORRnote), and those between the generated F0 and the F0
+extracted from the natural waveform ( RMSEnat and CORRnat).
+RMSEs and CORRs are objective measures that represent
+TABLE III
+SYSTEMS FOR EVALUATION OF PITCH CORRECTION TECHNIQUES .
+Note pitch w/o prior w/ prior
+Original note pitch Org Org+Prior
+Heuristic pseudo-note pitch Heur Heur+Prior
+Pitch bias-based pseudo-note pitch Bias Bias+Prior
+how close the value and shape of the predicted sequence
+are to the target sequence. Note that if the target sequence
+includes out-of-tune phrases, it is not necessarily good that
+the RMSEnat achieves small and the CORRnat achieves high.
+A small RMSEnote and high CORRnote mean that the generated
+F0 is close to the stair-like correct note pitch.
+Fig. 8 shows the results of the objective evaluations. In
+Org+Prior, by setting σp smaller than 30, RMSEnote sig-
+niﬁcantly decreased compared to Org. This result indicates
+that introducing prior distributions corrected the pitch. On the
+other hand, the CORRnote went higher at the same time as the
+improvement of RMSEnote, indicating that the shape of the
+generated F0 in Org+Prior tends to be a stair-like note pitch.
+The results of RMSEnat at σp < 30 in Org+Prior also got
+worse because the test data for evaluation also included out-
+of-tune phrases. When σp was set in the range of 20 to 35,
+CORRnat in Org+Prior had a better score than that in Org.
+This is because it could suppress the generation of unstable
+pitch ﬂuctuations, which can be seen in the out-of-tune training
+data.
+Compared Heur with Org, RMSEnote was greatly improved
+by introducing a heuristic pseudo-note pitch. In addition, when
+combined with prior distributions in Heur+Prior, RMSEnote
+and CORRnote did not change if σp = 20 or more. These
+results show that the heuristic pseudo pitch is effective for
+pitch correction. Furthermore, Heur and Heur+Prior achieve
+=== PAGE 11 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 11
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5
+Time [sec]
+E4
+G4
+A4F0 [semitone]
+Natural Original note pitch Pseudo-note pitch
+(a) Heuristic pseudo-note pitch
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5
+Time [sec]
+E4
+G4
+A4F0 [semitone]
+Natural Original note pitch Pseudo-note pitch (b) Pitch bias-based pseudo-note pitch in case Bias.
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5
+Time [sec]
+E4
+G4
+A4F0 [semitone]
+Natural Original note pitch Pseudo-note pitch (c) Pitch bias-based pseudo-note pitch in case
+Bias+Prior (σp = 20).
+Fig. 9. Examples of pseudo-note pitch in proposed automatic pitch correction.
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted
+(a) Org
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted (b) Heur
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted (c) Bias
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted
+(d) Org+Prior (σp = 20)
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted (e) Heur+Prior (σp = 20)
+0.0 1.0 2.0 3.0 4.0 5.0 6.0
+Time [sec]
+G4
+A4
+C5F0 [semitone]
+Natural Note pitch Predicted (f) Bias+Prior (σp = 20)
+Fig. 10. Generated F0 contours for one test phrase.
+higher CORRnat than Org and Org+Prior, indicating that the
+deviation between the original F0 and note pitch in Heur and
+Heur+Prior becomes smaller by using the pseudo-note pitch,
+thus avoiding forced pitch correction.
+The results of Bias+Prior show a similar trend to those of
+Heur+Prior. In contrast, the objective results of Bias were not
+as good as those of Heur. The examples of heuristic pseudo-
+note pitch and pitch bias-based pseudo-note pitches in both
+Bias and Bias+Prior are shown in Fig. 9. The pitch bias-
+based pseudo-note pitch of Bias+Prior in Fig. 9(c) is similar
+to the heuristic pseudo-note pitch in Fig. 9(a). However, the
+pitch bias-based one sometimes yields inappropriate results, as
+shown at around 1.5 seconds in Fig. 9(c). This result is because
+the pitch bias is determined by considering the entire note and
+is inﬂuenced by the singing expression that changes F0 within
+the note, such as bending and hiccups. On the other hand, the
+pitch bias-based pseudo-note pitch of Bias in Fig. 9(b) is close
+to the original note pitch in the musical score. This result
+indicates that there is ambiguity as to whether the average
+pitch shift of F0 at each note should be represented by the
+outputs of the acoustic model or the pitch biases.
+2) Subjective Evaluation: We conducted the MOS test to
+evaluate the overall naturalness. Subjects were instructed to
+give high score values to test phrases that were naturally pitch-
+corrected and not out of tune. We compared the six systems
+listed in Table III. The σp in Org+Prior, Heur+Prior, and
+Bias+Prior was set to 20. The generated F0 contours are
+plotted in Fig. 10, and the results of the MOS test are plotted
+in Fig. 11. Org+Prior achieved a higher MOS value than
+Org. This result conﬁrmed the effectiveness of using prior
+distribution. Heur and Heur+Prior outperformed Org, but
+Org Org+Prior Heur Heur+Prior Bias Bias+Prior
+1
+2
+3
+4
+5Mean opinion score
+3.11
+3.95
+3.61 3.73
+3.28
+3.55
+Fig. 11. Results of MOS test comparing automatic pitch correction techniques
+with 95% conﬁdence intervals. In Org+Prior, Heur+Prior, and Bias+Prior,
+σp were set to 20.
+there was little difference between Heur and Heur+Prior.
+Since the values of the F0 differences modeled by the acoustic
+model were smaller on average by introducing the heuristic
+pseudo pitch, the prior distribution seemed to have a limited
+effect. On the other hand, although Bias and Bias+Prior also
+outperformed Org, these did not reach Heur and Heur+Prior,
+respectively. As shown in Fig. 10, Bias and Bias+Prior were
+more likely to generate an F0 that slightly deviates from the
+correct note pitch, compared with Heur and Heur+Prior.
+This result indicates that it is not easy to automatically
+obtain pseudo-note pitches from F0, which includes ﬂuctu-
+ations such as bending and hiccups, and the heuristic method
+of obtaining pseudo-note pitches is powerful and effective.
+Overall, Org+Prior achieved the best MOS value even though
+Org+Prior showed a worse CORRnat than Heur+Prior and
+Bias+Prior. The objective evaluation results and Fig. 10(d)
+show that the F0 contour generated by Org+Prior was the
+most similar to a stair-like F0 contour, and the output of the
+acoustic model in terms of the F0 was strongly corrected
+=== PAGE 12 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 12
+by the prior distribution in the training stage. While ﬁne
+ﬂuctuations of F0 were lost, the unstable pitch ﬂuctuation seen
+in the out-of-tune phrases was also suppressed, leading to good
+subjective evaluation results. Appropriate correction methods
+and standard deviation of prior σp should be selected based
+on which to prioritize, the reproducibility of F0 ﬂuctuations
+particular to singers in training data, or the accuracy of the
+pitch. Note that none of the systems reached the subjective
+score of System 1 in Section VI-C. This result indicates that
+it is difﬁcult to predict the pitch accurately even if the pitch
+correction technique is used when the training data contains
+the out-of-tune phrase. This led to a decrease in MOS score
+because the naturalness of pitch ﬂuctuation signiﬁcantly affects
+the subjective quality of singing voices.
+VII. C ONCLUSION
+We proposed a DNN-based SVS system called “Sinsy,”
+designed to synthesize singing voice with singing-speciﬁc
+expressions at appropriate timing from a musical score. The
+proposed system consists of four DNN-based modules: a time-
+lag model, a duration model, an acoustic model, and a vocoder.
+The proposed system incorporates improved pitch and vibrato
+modeling, the better training criterion, and the pitch robust
+neural vocoder PeriodNet. Furthermore, we propose pitch
+correction techniques that enable synthesizing singing voices
+with the correct pitch even if the training data has out-of-tune
+phrases. Experimental results indicated the effectiveness of our
+novel techniques. Our proposed system can synthesize high-
+quality, high-ﬁdelity singing voices that can follow a given
+musical score.
+Future work includes investigating different distributions
+for prior in automatic pitch correction and evaluating the
+proposed system using the different speaker, genres, and
+language datasets. In our previous work [36], [46], since
+an HMM-based SVS system, which had a similar strategy
+combining the time-lag model, duration model, and acoustic
+models, was applied for synthesizing singing voice with other
+styles and languages, we think the proposed DNN-based SVS
+system can also support these kinds of songs. The model-
+ing of songs in unique singing styles such as shouting and
+growling, which are difﬁcult to annotate songs and extract
+acoustic feature representations, is also included in our future
+work. Furthermore, incorporating our proposed techniques,
+such as time-lag and vibrato modeling and automatic pitch
+correction, into seq-to-seq SVS systems is an important task.
+Recent studies [19]–[25] introduce a seq-to-seq model into the
+SVS system. Although such systems can model the singing
+voice as sequential mapping using an encoder-decoder model
+with an attention mechanism, they cannot model and control
+timing ﬂuctuation explicitly. Extending a uniﬁed framework
+for simultaneously modeling acoustic feature and duration
+parameters [47] is one of our future works to model time-
+lags, durations, and acoustic features simultaneously.
+ACKNOWLEDGMENT
+This work was supported by JSPS KAKENHI Grant
+Number JP18K11163 and CASIO SCIENCE PROMOTION
+FOUNDATION.
+REFERENCES
+[1] H. Kenmochi and H. Ohshita, “VOCALOID–commercial singing syn-
+thesizer based on sample concatenation,” in Proc. Interspeech, 2007, pp.
+4009–4010.
+[2] J. Bonada, M. Umbert, and M. Blaauw, “Expressive singing synthesis
+based on unit selection for the singing synthesis challenge 2016,” in
+Proc. Interspeech, 2016, pp. 1230–1234.
+[3] K. Oura, A. Mase, T. Yamada, S. Muto, Y . Nankaku, and K. Tokuda,
+“Recent development of the HMM-based singing voice synthesis
+system–Sinsy,” in Proc. ISCA SSW7 , 2010, pp. 211–216.
+[4] G. Hinton, L. Deng, D. Yu, G. E. Dahl, A. Mohamed, N. Jaitly,
+A. Senior, V . Vanhoucke, P. Nguyen, T. N. Sainath et al. , “Deep neural
+networks for acoustic modeling in speech recognition: The shared views
+of four research groups,” IEEE Signal Processing Magazine , vol. 29,
+no. 6, pp. 82–97, 2012.
+[5] H. Zen, A. Senior, and M. Schuster, “Statistical parametric speech
+synthesis using deep neural networks,” inProc. ICASSP, 2013, pp. 7962–
+7966.
+[6] Y . Qian, Y . Fan, W. Hu, and F. K. Soong, “On the training aspects
+of deep neural network (DNN) for parametric TTS synthesis,” in Proc.
+ICASSP, 2014, pp. 3829–3833.
+[7] S. Desai, A. W. Black, B. Yegnanarayana, and K. Prahallad, “Spectral
+mapping using artiﬁcial neural networks for voice conversion,” IEEE
+Transactions on Audio, Speech, and Language Processing, vol. 18, no. 5,
+pp. 954–964, 2010.
+[8] M. Nishimura, K. Hashimoto, K. Oura, Y . Nankaku, and K. Tokuda,
+“Singing voice synthesis based on deep neural networks,” in Proc.
+Interspeech, 2016, pp. 2478–2482.
+[9] Y . Hono, S. Murata, K. Nakamura, K. Hashimoto, K. Oura, Y . Nankaku,
+and K. Tokuda, “Recent development of the DNN-based singing voice
+synthesis system – Sinsy,” in Proc. APSIPA, 2018, pp. 1003–1009.
+[10] J. Kim, H. Choi, J. Park, M. Hahn, S. Kim, and J.-J. Kim, “Korean
+singing voice synthesis system based on an LSTM recurrent neural
+network,” in Proc. Interspeech, 2018, pp. 1551–1555.
+[11] K. Nakamura, S. Takaki, K. Hashimoto, K. Oura, Y . Nankaku, and
+K. Tokuda, “Fast and high-quality singing voice synthesis system based
+on convolutional neural networks,” in Proc. ICASSP , 2020, pp. 7239–
+7243.
+[12] M. Blaauw and J. Bonada, “A neural parametric singing synthesizer
+modeling timbre and expression from natural songs,” Applied Sciences ,
+vol. 7, no. 12, 2017.
+[13] Y .-H. Yi, Y . Ai, Z.-H. Ling, and L.-R. Dai, “Singing voice synthesis
+using deep autoregressive neural networks for acoustic modeling,” in
+Proc. Interspeech, 2019, pp. 2593–2597.
+[14] K. Hashimoto, K. Oura, Y . Nankaku, and K. Tokuda, “Trajectory
+training considering global variance for speech synthesis based on neural
+networks,” in Proc. ICASSP, 2016, pp. 5600–5604.
+[15] I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley,
+S. Ozair, A. Courville, and Y . Bengio, “Generative adversarial nets,” in
+Advances in Neural Information Processing Systems , 2014, pp. 2672–
+2680.
+[16] Y . Hono, K. Hashimoto, K. Oura, Y . Nankaku, and K. Tokuda, “Singing
+voice synthesis based on generative adversarial networks,” in Proc.
+ICASSP, 2019, pp. 6955–6959.
+[17] A. Mase, K. Oura, Y . Nankaku, and K. Tokuda, “HMM-based singing
+voice synthesis system using pitch-shifted pseudo training data,” in Proc.
+Interspeech, 2010, pp. 845–848.
+[18] J. Shen, R. Pang, R. J. Weiss, M. Schuster, N. Jaitly, Z. Yang, Z. Chen,
+Y . Zhang, Y . Wang, R. Skerrv-Ryan et al. , “Natural TTS synthesis
+by conditioning WaveNet on mel spectrogram predictions,” in Proc.
+ICASSP, 2018, pp. 4779–4783.
+[19] J. Lee, H.-S. Choi, C.-B. Jeon, J. Koo, and K. Lee, “Adversarially trained
+end-to-end korean singing voice synthesis system,” in Proc. Interspeech,
+2019, pp. 2588–2592.
+[20] O. Angelini, A. Moinet, K. Yanagisawa, and T. Drugman, “Singing
+synthesis: with a little help from my attention,” in Proc. Interspeech ,
+2020, pp. 1221–1225.
+[21] M. Blaauw and J. Bonada, “Sequence-to-sequence singing synthesis
+using the feed-forward transformer,” in Proc. ICASSP, 2020, pp. 7229–
+7233.
+[22] Y . Gu, X. Yin, Y . Rao, Y . Wan, B. Tang, Y . Zhang, J. Chen, Y . Wang,
+and Z. Ma, “ByteSing: A chinese singing voice synthesis system
+using duration allocated encoder-decoder acoustic models and wavernn
+vocoders,” arXiv preprint arXiv:2004.11012 , 2020.
+=== PAGE 13 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 13
+[23] P. Lu, J. Wu, J. Luan, X. Tan, and L. Zhou, “XiaoiceSing: A high-quality
+and integrated singing voice synthesis system,” in Proc. Interspeech ,
+2020, pp. 1306–1310.
+[24] J. Chen, X. Tan, J. Luan, T. Qin, and T.-Y . Liu, “HiFiSinger: To-
+wards high-ﬁdelity neural singing voice synthesis,” arXiv preprint
+arXiv:2009.01776, 2020.
+[25] J. Shi, S. Guo, N. Huo, Y . Zhang, and Q. Jin, “Sequence-to-sequence
+singing voice synthesis with perceptual entropy loss,” arXiv preprint
+arXiv:2010.12024, 2020.
+[26] Y . Hono, S. Takaki, K. Hashimoto, K. Oura, Y . Nankaku, and K. Tokuda,
+“PeriodNet: A non-autoregressive waveform generation model with
+a structure separating periodic and aperiodic components,” in Proc.
+ICASSP, 2021, pp. 6049–6053.
+[27] Y . Fan, Y . Qian, F.-L. Xie, and F. K. Soong, “TTS synthesis with bidi-
+rectional LSTM based recurrent neural networks,” in Proc. Interspeech,
+2014, pp. 964–1968.
+[28] W. Wang, S. Xu, and B. Xu, “Gating recurrent mixture density networks
+for acoustic modeling in statistical parametric speech synthesis,” in Proc.
+ICASSP, 2016, pp. 5520–5524.
+[29] X. Wang, S. Takaki, and J. Yamagishi, “An autoregressive recurrent
+mixture density network for parametric speech synthesis,” in Proc.
+ICASSP, 2017, pp. 4895–4899.
+[30] H. Zen, V . Dang, R. Clark, Y . Zhang, R. J. Weiss, Y . Jia, Z. Chen,
+and Y . Wu, “LibriTTS: A corpus derived from LibriSpeech for text-to-
+speech,” in Proc. Interspeech, 2019.
+[31] Y . Ren, X. Tan, T. Qin, J. Luan, Z. Zhao, and T.-Y . Liu, “DeepSinger:
+Singing voice synthesis with data mined from the web,” in Proc. the
+26th ACM SIGKDD International Conference on Knowledge Discovery
+& Data Mining , 2020, pp. 1979–1989.
+[32] H. Zen, K. Tokuda, T. Masuko, T. Kobayasih, and T. Kitamura, “A
+hidden semi-Markov model-based speech synthesis system,” IEICE
+Transactions on Information and Systems , vol. E90-D, no. 5, pp. 825–
+834, 2007.
+[33] “MusicXML deﬁnition,” accessed: 2021. [Online]. Available: http:
+//musicxml.org
+[34] K. Tokuda, T. Yoshimura, T. Masuko, T. Kobayashi, and T. Kitamura,
+“Speech parameter generation algorithms for HMM-based speech syn-
+thesis,” in Proc. ICASSP, vol. 3, 2000, pp. 1315–1318.
+[35] C. M. Bishop, “Mixture density networks,” Neural Computing Research
+Group, Aston University, Tech. Rep. NCRG/94/004, 1994.
+[36] K. Nakamura, K. Oura, Y . Nankaku, and K. Tokuda, “HMM-based
+singing voice synthesis and its application to Japanese and English,”
+in Proc. ICASSP, 2014, pp. 265–269.
+[37] T. Nakano, M. Goto, and Y . Hiraga, “An automatic singing skill
+evaluation method for unknown melodies using pitch interval accuracy
+and vibrato features,” in Proc. Interspeech, 2006, pp. 1706–1709.
+[38] K. Sawada, C. Asai, K. Hashimoto, K. Oura, and K. Tokuda, “The
+nitech text-to-speech system for the blizzard challenge 2016,” in Blizzard
+Challenge 2016 Workshop , 2016.
+[39] M. Morise, F. Yokomori, and K. Ozawa, “WORLD: A vocoder-based
+high-quality speech synthesis system for real-time applications,” IEICE
+Transactions on Information and Systems , vol. 99, no. 7, pp. 1877–1884,
+2016.
+[40] K. Tokuda, T. Masuko, N. Miyazaki, and T. Kobayashi, “Hidden Markov
+models based on multi-space probability distribution for pitch pattern
+modeling,” in Proc. ICASSP, vol. 1, 1999, pp. 229–232.
+[41] K. Shinoda and T. Watanabe, “Acoustic modeling based on the MDL
+principle for speech recognition,” in Proc. Eurospeech, 1997, pp. 99–
+102.
+[42] K. Saino, H. Zen, Y . Nankaku, A. Lee, and K. Tokuda, “An HMM-
+based singing voice synthesis system,” in Proc. Interspeech, 2006, pp.
+1141–1144.
+[43] D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,”
+arXiv preprint arXiv:1412.6980 , 2014.
+[44] S. Ioffe and C. Szegedy, “Batch normalization: Accelerating deep
+network training by reducing internal covariate shift,” in Proc. ICML ,
+2015, pp. 448–456.
+[45] Y . Hono, “Sinsy demo,” accessed: 2021. [Online]. Available:
+https://www.sp.nitech.ac.jp/∼hono/demos/taslp2021/
+[46] K. Saino, K. Oura, M. Tachibana, H. Kenmochi, and K. Tokuda, “Rap-
+style singing voice synthesis,” Information Processing Society of Japan ,
+vol. 2012-MUS-94, no. 7, pp. 1–6, 2012 (in Japanese).
+[47] K. Tokuda, K. Hashimoto, K. Oura, and Y . Nankaku, “Temporal mod-
+eling in neural network based statistical parametric speech synthesis,”
+in Proceedings of ISCA SSW9 , 2016, pp. 106–111.
+Yukiya Hono received the B.E. and M.E. degrees in
+Computer Science from Nagoya Institute of Technol-
+ogy, Nagoya, Japan, in 2017 and 2019, respectively.
+He is currently a Ph.D. candidate at Nagoya Institute
+of Technology. From July to August 2019, he was
+an intern at Microsoft Development, Japan. He was
+a visiting researcher at the University of Edinburgh,
+U.K., from October 2019 to December 2019 and at
+the University of Shefﬁeld, U.K., from January 2020
+to February 2020. His research interests include
+statistical speech synthesis, singing voice synthesis,
+and machine learning. He is a member of the Acoustical Society of Japan
+(ASJ). He received the 18th Student Presentation Award from ASJ, the 2019
+Information and Communication Engineers (IEICE) Tokai Section Student
+Award, and the 2021 IEEE Nagoya Section Excellent student Award.
+Kei Hashimoto received the B.E., M.E., and Ph.D.
+degrees in Computer Science, Computer Science and
+Engineering, and Scientiﬁc and Engineering Simula-
+tion from Nagoya Institute of Technology, Nagoya,
+Japan in 2006, 2008, and 2011, respectively. From
+October 2008 to January 2009, he was an intern
+researcher at National Institute of Information and
+Communications Technology (NICT), Kyoto, Japan.
+From April 2010 to March 2012, he was a Research
+Fellow of the Japan Society for the Promotion of
+Science (JSPS) at Nagoya Institute of Technology,
+Nagoya, Japan. From May 2010 to September 2010, he was a visiting
+researcher at University of Edinburgh and Cambridge University. From April
+2012 to March 2017, he was a Specially Appointed Assistant Professor at
+Nagoya Institute of Technology, Nagoya, Japan. From April 2017 to December
+2018, he was a Specially Appointed Associate Professor at Nagoya Institute of
+Technology, Nagoya, Japan, and now he is an Associate Professor at the same
+institute. His research interests include statistical speech synthesis and speech
+recognition. He is a member of the IEEE, the IEICE, and the Acoustical
+Society of Japan.
+Keiichiro Oura received his Ph.D. degree in Com-
+puter Science and Engineering from Nagoya Insti-
+tute of Technology, Nagoya, Japan, in 2010. He
+was a specially-appointed assistant professor at the
+Nagoya Institute of Technology, Japan, from Apr.
+2010 to Mar. 2017. From Apr. 2017 to May 2020,
+he was a specially-appointed associate professor at
+the Nagoya Institute of Technology. He is currently
+a project associate professor at the Nagoya Institute
+of Technology and a CEO of the Techno-Speech,
+Inc. His research interests include statistical speech
+recognition and synthesis. He received the ISCSLP Best Student Paper Award,
+the IPSJ Y AMASHITA SIG Research Award, the ASJ ITAKURA Award, the
+IPSJ KIY ASU Special Industrial Achievement Award, the ASJ AW AY A Prize
+Young Researcher Award, and the IPSJ Microsoft Faculty Award, in 2008,
+2010, 2013, 2013, 2019, 2020, respectively. He is a member of the Acoustical
+Society of Japan and the Information Processing Society of Japan.
+=== PAGE 14 ===
+JOURNAL OF LATEX CLASS FILES, VOL. 0, NO. 0, AUGUST 2021 14
+Yoshihiko Nankaku received his B.E. degree in
+Computer Science, and his M.E. and Ph.D. de-
+grees in the Department of Electrical and Electronic
+Engineering from Nagoya Institute of Technology,
+Nagoya, Japan, in 1999, 2001, and 2004 respectively.
+After a year as a postdoctoral fellow at the Nagoya
+Institute of Technology, he became an Associate
+Professor at the same institute. He was a visiting
+researcher at the Department of Engineering, Univer-
+sity of Cambridge, U.K., from May to October 2011.
+His research interests include statistical machine
+learning, speech recognition, speech synthesis, image recognition, and multi-
+modal interface. He is a member of the Institute of Electronics, Information
+and Communication Engineers, and the Acoustical Society of Japan.
+Keiichi Tokuda received the B.E. degree in electri-
+cal and electronic engineering from Nagoya Institute
+of Technology, Nagoya, Japan, the M.E. and Dr.Eng.
+degrees in information processing from the Tokyo
+Institute of Technology, Tokyo, Japan, in 1984, 1986,
+and 1989, respectively. From 1989 to 1996, he was a
+Research Associate at the Department of Electronic
+and Electric Engineering, Tokyo Institute of Tech-
+nology. From 1996 to 2004, he was an Associate
+Professor at the Department of Computer Science,
+Nagoya Institute of Technology as Associate Profes-
+sor, and now he is a Professor at the same institute. He is also an Honorary
+Professor at the University of Edinburgh. He was an Invited Researcher at ATR
+Spoken Language Translation Research Laboratories, Japan, from 2000 to
+2013 and was a Visiting Researcher at Carnegie Mellon University from 2001
+to 2002 and at Google from 2013 to 2014. He published over 80 journal papers
+and over 200 conference papers, and received six paper awards and three
+achievement awards. He was a member of the Speech Technical Committee
+of the IEEE Signal Processing Society from 2000 to 2003, a member of
+ISCA Advisory Council and an associate editor of IEEE Transactions on
+Audio, Speech and Language Processing, and acts as organizer and reviewer
+for many major speech conferences, workshops, and journals. He is an IEEE
+Fellow and ISCA Fellow. His research interests include speech coding, speech
+synthesis and recognition, and statistical machine learning.

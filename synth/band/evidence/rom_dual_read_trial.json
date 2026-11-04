@@ -1,0 +1,7 @@
+{
+  "status": "no_resource_improvement",
+  "exact_samples_checked": 986835,
+  "physical_bsram": 2,
+  "promoted": false,
+  "scope": "isolated synthesis/RTL; not programmed"
+}

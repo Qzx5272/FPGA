@@ -1,0 +1,9 @@
+ Target Cable: USB Debugger A/0/None/null@2.5MHz
+ Target Device: GW5AST-138B(0x0001081B)
+ Operation "Read Device Codes" for device#1...
+ ID Code is: 0x0001081B
+ User Code is: 0x000075CC
+ Status Code is: 0x00026230
+ Finished.
+ Cost 0.15 second(s)
+  

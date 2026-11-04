@@ -1,0 +1,223 @@
+Modartt — Pianoteq 9: physically modelled virtual piano
+MOD
+ARTT
+Home
+Products
+Piano
+teq
+9
+Organ
+teq
+2
+Air
+teq
+Try
+Buy
+Media
+Reviews in media
+Awards
+Artist quotes
+News
+Videos
+Community
+User testimonials
+User forum
+FXP Corner
+Velocity curves
+Support
+User area
+PIANO
+TEQ 9
+Overview
+What's new
+Instruments
+Features
+Changes
+Piano
+teq
+9
+: vivid, expressive, customizable
+Pianoteq is an award-winning virtual piano and instrument suite.
+Using physical modelling, it captures the wonderful tone of the instruments, while offering limitless customization.
+Buy
+Piano
+teq
+Try
+Piano
+teq
+free trial
+iOS
+devices
+Windows,
+macOS, Linux
+only
+~50 MB
+Listen to Pianoteq 9
+Featuring the best pianos...
+Endorsed by world-leading manufacturers, Pianoteq’s physically modelled grand pianos deliver iconic sound signatures for every musician.
+...and much more
+Choose among more than 20
+instrument packs
+. From electric pianos to plucked strings and historical keyboards, everything is right under your fingertips.
+Browse the collection
+Main features
+Lightweight — no need for samples!
+Instant load, notes are generated in real time as you play.
+Seamless dynamic response
+Timbre varies progressively from
+pianissimo
+to
+fortissimo
+, rendering flawlessly all the nuances of your playing.
+Beautiful resonances
+Notes exquisitely blend when you play chords or press the sustain pedal thanks to modelled sympathetic resonances.
+Limitless control
+Dozens of physical parameters let you craft your perfect piano tone.
+Previous
+Next
+Find out more
+What's new in
+Piano
+teq 9
+?
+Enhanced soundboard model
+An improved model of the soundboard vibration enhances stereo and spatial perception.
+New Triple Harp
+An Italian Triple Harp from the baroque era has joined the
+Harp pack
+. Its characterful sound is perfect for accompaniment as well as solo pieces.
+Expanded sound palette
+New darker, cinematic “Sombre” presets for all grand pianos. Felt presets for historical pianos. Refreshed Binaural presets for most instruments.
+New interface features
+Mix up to 8 microphones to stereo or multichannel, and move them around the instrument more easily.
+Learn more
+Four software editions
+Pianoteq 9 Stage
+Choose
+2
+instrument packs
+1
+Free historical instruments and bells
+Runs on Windows, Mac, iOS, Linux
+Standalone + VST3/AU/AAX/NKS
+EQ,
+velocity curve
+, effects, reverb
+Custom presets (fxp)
+2
+Pianoteq Stage
+is our entry product and a good choice for budget-minded musicians who do not need to modify the sound in great detail.
+You can upgrade to the Standard or PRO version at any time. Pianoteq Stage comes with
+two
+instrument packs of your choice.
+Buy now
+See upgrade prices
+Read more
+Pianoteq 9 Standard
+Everything in Pianoteq 9 Stage
+Choose
+3
+instrument packs
+1
+Piano model tweaking
+Advanced tuning
+Mix and move the microphones
+Loads external reverb impulses
+Instrument morphing and layering
+Pianoteq Standard
+offers unique powerful tools to enhance and modify the sound, such as changing the unison width, hammer hardness and string length. You can place up to 5 virtual microphones around the instrument and load external reverb impulse files. You can morph and layer instruments together. You can upgrade to the PRO version at any time. Pianoteq Standard comes with three instrument packs of your choice.
+Buy now
+See upgrade prices
+Read more
+Pianoteq 9 PRO
+Everything in Pianoteq 9 Standard
+Choose
+4
+instrument packs
+1
+Per note edit of physical parameters
+Thousands of editable overtones
+Supports up to 192 kHz audio
+3
+Pianoteq PRO
+is the most advanced version, adapted for the creative composer and demanding studio engineer. In addition to the Standard version, it gives you all the tools needed to work in a truly professional environment, letting you adjust 30 parameters for each note on the keyboard and work with up to 192 Khz audio. Pianoteq PRO comes with four instrument packs of your choice.
+Buy now
+See upgrade prices
+Read more
+Pianoteq Studio Bundle
+Everything in Pianoteq 9 PRO
+All current
+instrument packs
+4
+With this special bundle benefit from
+Pianoteq PRO
++ all currently available instrument packs.
+Buy now
+See upgrade prices
+Read more
+[
+1
+] During registration, you can choose two instrument packs with the Stage version, three with the Standard version and four with the PRO version. These instrument packs are fully working whereas remaining instrument packs are available in demo mode for your evaluation. You can purchase additional instrument packs at any time.
+[
+2
+] In PIANOTEQ Stage, preset loading is limited to parameters that are present in the interface. Presets built with PIANOTEQ PRO can be loaded in PIANOTEQ Standard without limitation.
+[
+3
+] PIANOTEQ PRO offers an internal sample rate of up to 192 kHz. Up to 48 kHz in PIANOTEQ Stage and Standard.
+[
+4
+] Forthcoming instrument packs and upgrades, to be released within one year from the date of registration, will be available for free.
+What artists say about Pianoteq
+Brian Eno
+Aside from its incredible power as an emulator of pianos, the possibilities that unfold when you start to edit the models are astonishing. I've been lost in it since I bought it, and keep dragging friends into the studio to show them this miracle.
+Jungle
+We tested multiple sample packs and comparable piano modelling plugins in the process of deciding what was best for us to perform this album around the world: Pianoteq was the clear winner.
+Mikey Rowe
+It's small, believable and playable. I find myself playing it for enjoyment as well as getting it to work within a track.
+Steve Nieve
+Every style of music that I'm interested in is instantly playable on Pianoteq. I love working, playing and creating music with this incredibly powerful, deceptively simple software.
+Stuart Crichton
+PIANOTEQ is amazing on many fronts for me, but the two most important are: 1. Quality of sound, which is unbelievable!! 2. Very low CPU usage.
+Paul 'Wix' Wickens
+I have been a fan of 'Physical Modelling' and its potential since the earliest days and Pianoteq has been on my computer from its beginning.
+More artist quotes
+Free trial
+You can download a free version of Pianoteq for evaluation purpose. It includes all instruments in demo mode (a few keys are disabled, and it goes silent after a while).
+Try
+Piano
+teq 9
+/
+Performed by
+Preset
+Copyright © 2006-2026 MODARTT
+v4.0.2
+PIANOTEQ and ORGANTEQ are registered trademarks of MODARTT S.A.S
+Pianoteq
+·
+Organteq
+·
+Airteq
+·
+Try for free
+·
+Buy
+·
+Quotes
+·
+User manuals
+·
+FAQ
+·
+Support
+Contact us
+About MODARTT
+About KIViR project
+Press releases
+Press kit
+Distributors and resellers
+Credits
+Legal notice
+|
+GDPR
+Subscribe to the newsletter
+Modartt news RSS feed

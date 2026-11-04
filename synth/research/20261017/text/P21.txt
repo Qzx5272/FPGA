@@ -1,0 +1,722 @@
+=== PAGE 1 ===
+Digital Musical Instruments as Research Products
+Robert H. Jack
+Centre for Digital Music
+Queen Mary University of
+London, E1 4NS
+r.h.jack@qmul.ac.uk
+Jacob Harrison
+Centre for Digital Music
+Queen Mary University of
+London, E1 4NS
+j.harrison@qmul.ac.uk
+Andrew P . McPherson
+Centre for Digital Music
+Queen Mary University of
+London, E1 4NS
+a.mcpherson@qmul.ac.uk
+ABSTRACT
+In the ﬁeld of human computer interaction (HCI) the limita-
+tions of prototypes as the primary artefact used in research
+have been noted. Prototypes often remain open in their de-
+sign, are partially-ﬁnished, and have a focus on a speciﬁc
+aspect of interaction. Previous authors have proposed ‘re-
+search products’ as a speciﬁc category of artefact distinct
+from both research prototypes and commercial products.
+The characteristics of research products are their holistic
+completeness as a design artefact, their situatedness in a
+speciﬁc cultural context, and the fact that they are evalu-
+ated for what they are, not what they will become. This
+paper discusses the ways in which many instruments created
+within the context of New Interfaces for Musical Expression
+(NIME), including those that are used in performances, of-
+ten fall into the category of prototype. We shall discuss why
+research products might be a useful framing for NIME re-
+search. Research products shall be weighed up against some
+of the main themes of NIME research: technological inno-
+vation; musical expression; instrumentality. We conclude
+this paper with a case study of Strummi, a digital musical
+instrument which we frame as research product.
+Author Keywords
+Research products, in-the-wild, prototypes, research probes,
+design theory
+CCS Concepts
+•Applied computing → Sound and music comput-
+ing; Performing arts; •Information systems → Music
+retrieval;
+1. INTRODUCTION
+Much NIME research is driven by the exploration of novel
+technologies applied to the musical context. One interpreta-
+tion of the ‘new’ in NIME is that it represents a belief in new
+technologies opening up new means of musical expression,
+and leading to the creation of new music. This largely de-
+pends on advancements in the core technology that under-
+pin instrument making, and hence an instrument’s function-
+ality and ability to create music. Another main strand of
+NIME considers the agency of musical instruments within a
+Licensed under a Creative Commons Attribution
+4.0 International License (CC BY 4.0). Copyright
+remains with the author(s).
+NIME’20, July 21-25, 2020, Royal Birmingham Conservatoire,
+Birmingham City University, Birmingham, United Kingdom.
+musical context and their inﬂuence on a performance ecosys-
+tem [22]. This division is key to what we outline in this
+paper as research prototype and research product.
+We argue that a signiﬁcant number of the interfaces, in-
+struments and artefacts created as part of the research con-
+ducted at NIME are imagined as research prototypes: their
+deployment and evaluation encourages people to reﬂect on
+the qualities of the instrument and to suggest limitations or
+possible improvements to the instrument. Prototypes direct
+people to think about the artefact as a demonstration of a
+principle that points towards a future revision [13].
+Odom et al. deﬁne ‘research products’ [19] as an extension
+of the prototype which allow us to better focus on the com-
+plex factors that are brought together in human-computer
+relationships. In short, research products are a type of arte-
+fact in HCI and design research, which match the level of
+ﬁdelity often seen in commercially available and everyday
+objects, as opposed to the explicitly ‘unﬁnished’ nature of
+a prototype. This property allows research products to be
+taken ‘for what they are, rather than what they might be-
+come’, and for researchers to investigate ‘complex matters
+of human-technology relations that often involve messy, in -
+timate and contested aspects of every day life’ .
+In this paper, we introduce the concept of research prod-
+uct, and evaluate how it can be applied to NIME research.
+We shall conclude this paper with a reﬂection on Strummi,
+a digital musical instrument (DMI) which we characterise
+as research product.
+2. CONTEXT
+Prototypes play an important role in both HCI and DMI
+research. The prototype can allow researchers to focus on
+a particular aspect of interaction, isolating it from its sur-
+rounding context, and can inform developments of a tech-
+nological system that improve its usability and a users’ ex-
+perience. Prototypes are also often quick and cheap ways
+of testing an idea.
+2.1 Prototype, Probe, Product
+Prototypes play a crucial role in the crafting of an artefact:
+certain questions about an artefact’s design, particularly
+those that relate to tangible experience, are best answered
+through observing interaction with a semi-ﬁnished artefact
+that has enough of its design in place as to guide the in-
+teraction of the user. Based on observation of this interac-
+tion the designer can hone their future decisions to better
+cater for the kind of experiences that they want to encour-
+age through their design. In this sense, prototypes serve to
+elicit feedback from the people who use them with the goal
+of improving their design in the future [19]. The role of the
+prototype is often understood as a means of helping gather
+requirements that will inform future designs, whether these
+requirements are speciﬁcally known or not [13].
+446
+=== PAGE 2 ===
+Where prototypes may fall short is in their ability to ad-
+dress more complex issues about how a technological device
+intervenes in everyday life and how the device itself is con-
+ditioned and appropriated by its surrounding context. Pro-
+totypes vary in their ﬁdelity. Some are component parts
+of a bigger system, others are a full system but are low-
+ﬁ or approximate in certain ways: diﬀering in size, ﬁnish,
+behaviour and feel from a potential ﬁnal product.
+2.1.1 Technology Probes
+When considering the process of co-designing technologies
+with users the method of the ‘technology probes’ by Hutchin-
+son et al. [10] provides a useful extension of the prototype.
+Building upon Gaver et al.’s ‘cultural probes’ [5], technolog y
+probes are deﬁned as lo-ﬁ devices, whose main technological
+hurdles are solved, which can be deployed in an everyday sit-
+uation to gather information about technology use in that
+situation. They are created in order to serve three goals:
+the design goal of inspiring users and researchers to think
+about new technologies, the engineering goal of ﬁeld-testin g
+the technology, and the social science goal of understanding
+the needs and desires of users in a real-world setting.
+Probes get their name from their ability to ‘probe’ a cer-
+tain situation and gather information on it. They at once
+disrupt an everyday situation and then monitor what hap-
+pens after that disruption. Technology probes are not de-
+signed to be neutral or invisible devices that can gather
+objectively without interfering in an everyday situation. In
+fact the power of the technology probe methodology comes
+in the recognition of the disruptive impact of a design, and
+in using this disruption to inspire users to reﬂect on the
+technology and their situation and to imagine possible fu-
+ture technologies. In this way technology probes are similar
+to the ‘counterfactual artefacts’ as proposed by Wakkary et
+al. [21]. Equally, as a research methodology which focuses
+on deploying design artifacts in-the-wild in order to learn
+something about that environment, technology probes have
+much in common with research products.
+2.1.2 Research Products
+Odom et al.’s ‘research products’ [19] is a response to the
+use of ‘unﬁnished’ prototypes in design research:
+‘The complexities and challenges in researching
+questions about human-technology relations in ev-
+eryday life ... suggest that the notion of a ‘proto-
+type’ within research may not be suﬃcient’ [19]
+They deﬁne a research product as an artefact which is
+experienced based ‘on what it is, rather than what it might
+become’. This is about the design, deployment and eval-
+uation of research artifacts. They deﬁne the qualities of a
+research product as follows: inquiry driven (they are de-
+signed to provoke users in their environment and to engage
+them in an enquiry, but not necessarily one that relates to
+the artifact’s design), ﬁnish (their design is complete and
+interaction is predicated on what the artefact is as opposed
+to what it might become), ﬁt (they must be able to ﬁt into
+an everyday scenario and in a convincing manner) and in-
+dependent (they can be deployed in the ﬁeld and have the
+potential for unsupervised interaction).
+Research products as a design concept are a means of re-
+vealing how human-technology relations emerge and change
+over time in everyday life. A critical distinction between the
+nature of prototype and product is that all design decisions
+including those related to ‘material, form, computation and
+interaction‘ aﬀect an artefact’s ability to conduct research:
+the particular manifestation of these qualities of an arte-
+fact decide on the precision to which research questions can
+be asked [19]. Research products are emphatically distinct
+from commercial products - we are not interested in their
+commercial potential or how many copies have been made:
+they are only designed to fulﬁl a research inquiry. Any simi-
+larities with commercial products would only arise from the
+shared goals of producing ‘ﬁnished’ artefacts that can be
+easily imagined being adopted in real-world settings.
+2.2 Prototypes in NIME
+There is a focus in much DMI research on the functional el-
+ements of an instrument as research contributions (sensors,
+mappings, sound model) even though there are many other
+aspects of a design that aﬀect performer experience. Due
+to this functional focus, the prototype is the most common
+form of research artefact at NIME. Prototype instruments
+often stand in as a demonstration of a principle and the
+types of evaluation conducted with these instruments often
+encourages people to reﬂect on the qualities of the instru-
+ment and to suggest limitations or possible improvements.
+Speciﬁcally, the iterative nature of NIME design and evalua-
+tion can lead to a focus amongst designers, performers, com-
+posers and audience on how an instrument might change or
+evolve, rather than be treated as a ﬁnished artefact.
+Prototypes are essential research tools for many areas of
+enquiry relating to DMIs. In this paper we are interested
+in how we can best categorise the research motivations of
+instrument building which includes the creation of the arte-
+fact itself, its design process, deployment and evaluation.
+In a recent paper by Morreale et al. [18] some of these
+motivations were surveyed in the NIME community asking
+questions about uptake, number of performances and initial
+reasons for creating an instrument. 32% of the surveyed
+instruments were created with potential commercialisation
+in mind with the rest intended to answer speciﬁc research
+questions, test new technologies or meet an artistic desire
+of the creator or collaborator.
+The evaluation of a prototype is often focused on the arte-
+fact itself rather than the environment in which the artefact
+is deployed: NIME evaluation methodologies in general bor-
+row heavily from HCI experimental design where a single
+variable is tested in a controlled situation. However when
+dealing with a cultural form as rich and complicated as a
+musical instrument ﬁnding the right evaluation framework
+is a diﬃcult task [1].
+2.3 Towards DMIs as Research Products
+There exist several examples of technology probes in mu-
+sic HCI, including explorations of how an acoustic guitar
+can contain its own history through a digital archive that it
+builds around itself [2], and studies on the appropriation of
+highly-constrained musical instruments [6]. We see research
+products as a natural counterpart to the technology probe
+approach. The diﬀerences in physical properties of what
+is considered a probe or product might be subtle, or even
+non-existent, but we see the research product approach as
+a ‘zooming out’ to observe the entire ecosystem around mu-
+sical instrument playing, rather than probing a particular
+aspect of instrument design.
+Importantly, research products place an equal emphasis
+on non-technical design choices such as materiality, ‘feel’,
+and visual aesthetics, alongside the more technical question s
+of sensor technology, mappings, and sound-design. Refer-
+ring back to Odom et al.’s qualities of a research product,
+we discuss how this might transfer to NIME:
+Inquiry Driven: This is a quality of research prod-
+ucts that we do not need to argue for in NIME - there
+is a tradition of inquiry-driven designs in NIME research,
+with examples of DMIs designed to explore phenomena of
+447
+=== PAGE 3 ===
+human-instrument interaction such as style and constraint
+[6], action-driven interaction [20], and control intimacy [23 ].
+Research products continue this tradition of inquiry-driven
+design, but due to their other qualities can be more appro-
+priate for addressing the ‘messier’ questions concerning the
+sociocultural role of musical instruments in everyday life.
+Fit: This considers how an instrument ﬁts into an ex-
+isting sociocultural context. This does not preclude exper-
+imental or novel aesthetics, however an instrument cannot
+be considered as detached from the wider societal context
+it is part of. Research products aim to delicately balance
+between being ‘neither too familiar nor too strange’ to the
+scenario in which they are deployed. When considering ‘ﬁt-
+ting’ into a musical context leveraging existing technique,
+whether trained or ecological, and addressing existing mu-
+sical practices is key.
+Finish: This is where Odom et al.’s research products
+begin to depart from the values inherent in NIME research
+and DMI design in general. Odom writes that the choice of
+materials and level of ﬁnish ‘makes clear the commitment
+of the artifact as a ﬁnished object’ [19].
+This suggests a level of ‘ﬁnality’ to an instrument that
+runs counter to performance contexts where the instrument
+is widely understood to be constantly evolving, for exam-
+ple where the DMI performer is also the designer, who re-
+conﬁgures and adapts their instrument over a considerable
+period of time without the goal of reaching a ‘ﬁnal version’
+or even any notion of ‘improvement’. This can be seen in
+contexts such as modular synth performances, where a func-
+tionally complete instrument exists, but potentially only fo r
+a single performance before being rearranged, simpliﬁed, or
+updated. This raises a pertinent question for NIME re-
+search about when an assemblage of technologies becomes
+an instrument. We suggest that labelling an instrument a
+‘research product’ need not set anything in stone in order
+to achieve a level of ‘ﬁnish’: it is more a question of the
+instrument being taken as a viable instrument in the here
+and now of its performance context.
+Independent: Research products are designed to be lived
+with independently. This methodology is predicated on
+the assumption that the designer is diﬀerent from the per-
+former. In NIME we often ﬁnd situations where the de-
+signer, composer and performer are the same person which
+can give great insight into how these disciplines combine,
+but can limit the reach of research conducted with the in-
+strument to audiences the performer directly engages.
+3. CASE STUDY: STRUMMI
+To provide an example of the research product and technol-
+ogy probe methodologies in practice within DMI research,
+we present a case study of a series of guitar-like DMIs we
+have called Strummi. We designed seven diﬀerent variations
+of Strummi over two generations. While the technology in-
+side each variation remains broadly the same, the overall
+material form and method of interaction with each version
+was intended to address a number of diﬀerent inquiries.
+The ﬁrst generation of Strummi instruments were pre-
+sented in [8] and [11], focusing on the role of global form
+vs. interaction modality, and richness of interaciton, respec-
+tively. The early stages of a later research project involving
+more recent variations of Strummi are detailed in [7].
+3.1 Rationale for Design
+Our goal with Strummi was to design a research artefact
+capable of addressing the cultural form [9] of guitar-playing,
+and how that might relate to new guitar-based DMIs. In
+particular, we wanted to see how guitar-based Accessible
+Figure 1: Left: construction of the bridge pieces for the
+‘strings’ instruments. Right: touchstrip with tactile paint
+strip for the ‘touch’ instruments
+DMIs (ADMIs) might fulﬁl the social and cultural role of
+guitars in an existing performance ecosystem. Accessible
+Digital Musical Instruments (ADMIs) is a growing research
+area (see [4]). A number of accessible guitar-based ADMIs
+have been developed, including the Kellycaster 1, Actuated
+Guitar [12] and guitarMasheen [16].
+In addition to guitar-based DMIs designed to address a
+particular access need, there are a growing number of both
+commercial- and research-based guitar-like DMIs, includ-
+ing MIDI controllers such as Artiphon’s Instrument 1 2 and
+Roger Linn Design’s Linnstrument 3 provide a fretboard-
+inspired note layout with MPE MIDI for individual note-
+level expression for vibrato and slides.
+We considered that components of the cultural form [9]
+of guitar-playing - the choreography, the visual appeal and
+aesthetics of guitars, the mimickry of role models in popu-
+lar culture - were both signiﬁcant and under-explored in the
+context of DMI research. The prototype instruments that
+we created in the ﬁrst place were aimed at answering ques-
+tions related to this cultural form, whether about the actual
+morphology of the instrument itself, or about the degree of
+control a performer has over that instrument.
+3.2 Building Strummi
+The principal idea behind the Strummi instruments is to
+reproduce the physical action of strumming and plucking
+a guitar, while simplifying the action of chord selection or
+fretting to a push-button, similar to that of an Autoharp
+or Omnichord. We developed two methods for strumming:
+strings and touch sensor. We also initially came up with two
+diﬀerent form factors: guitar-like and tabletop (see Table 1)
+.
+3.2.1 Hardware
+The strings version of Strummi feature six short lengths of
+.40 gauge guitar string threaded through individual wooden
+bridge pieces with integrated 15mm piezo disc sensors (see
+Figure 1). This method maintains a tight mechanical con-
+nection between the string and the piezo disc. A layer of
+foam beneath each disc provides a degree of acoustic isola-
+tion between adjacent strings.
+The touch version uses a rectangular Trill capacitive touch
+sensor 4 which is capable of detecting multiple touch posi-
+tions along its length. In the software, we deﬁned six equally
+spaced points along the length of the sensor where a note
+would be triggered on receiving a touch input. To provide
+tactile feedback, we applied several layers of paint to the
+sensor where these note triggering points occur (see Figure
+1). ‘Strumming’ and ‘plucking’ the touch sensor is anal-
+1https://www.drakemusic.org/technology/instruments-
+projects/the-kellycaster/
+2www.artiphon.com
+3www.rogerlinndesign.com/linnstrument.html
+4https://www.kickstarter.com/projects/423153472/trill-touch-
+sensing-for-makers
+448
+=== PAGE 4 ===
+Strings-guitar: Cus-
+tom guitar body
+enclosure with chord
+buttons embedded in
+neck. Designed to
+emulate guitar-like
+choreography and
+playing style
+Touch-guitar: Custom
+guitar body enclosure,
+with touch sensor
+in place of strings
+(triggers samples when
+tapped or swiped)
+Touch-tabletop: Table-
+top enclosure with
+touch sensor - design
+inspired by boutique
+electronic music hard-
+ware such as Buchla
+controllers
+Strings-tabletop:
+Tabletop enclosure
+with strings
+Table 1: Strummi as Technology Probe: First generation Strummis d esigned for lab-based study on instrument form and
+interaction modality
+ogous to swiping and tapping a touchscreen device. All
+Strummis feature push-buttons to select chords. Pressing a
+button results in each of the six virtual strings being tuned
+to a preset chord voicing in the key of G Major.
+Strummi uses a Bela Mini board 5, an open-source plat-
+form for audio and sensor processing [15] which includes a
+Pocket Beagle embedded Linux computer 6 for processing
+and ultra-low latency action-sound capabilities. The piezo
+discs were attached to the analog inputs of Bela via a sim-
+ple voltage biasing circuit. The analog inputs on Bela are
+sampled at 22 kHz 16-bit allowing the signals to be treated
+as audio signals throughout the DSP chain.
+3.2.2 F orm Factors and Materials
+For a more detailed description of the rationale behind the
+various form factors of the ﬁrst generation of Strummis, see
+[8]. To summarise, we wanted to compare the eﬀect of a
+design which closely emulated both the aesthetic properties
+and the playing style of a guitar, versus one which was more
+comparable to tabletop music hardware.
+From the outset, we intended to design research artefacts
+which would be accepted by potential users as ‘ﬁnished’ in-
+struments. Further to this, we were keen to ensure that
+Strummi would maintain a sense of ‘cultural acceptability’
+- in other words, that it would look and feel like an instru-
+ment that would plausibly be used in the cultural context
+of strummed string performances, such as in a folk session.
+These goals aﬀected our choices for materials and overall
+aesthetic qualities, including the hardwood guitar-inspired
+enclosure used in the ﬁrst generation of Strummi (see Table
+1), and later the modiﬁed Les Paul guitar (Table 2).
+3.2.3 Sound Design
+The Strummi instruments use a basic implementation of
+the Karplus-Strong plucked string algorithm to simulate the
+harmonics and decay of an acoustic string. This synthesis
+method is typically excited using a burst of noise to sim-
+ulate the initial onset of a plucked string, however with
+the Strummi instruments, we used two methods for excit-
+ing the string model: sample triggering and audio-rate ex-
+citation. For audio-rate excitation , we directly excite the
+Karplus-Strong model with the audio signal from the piezo
+disc. This technique of exciting string models with an audio
+5http://bela.io
+6http://beagleboard.org/pocket
+signal has been used in instruments such as the Kalichord
+Strum 7, BladeAxe [17] and tangible virtual vibrating string
+[3]. The eﬀect of this approach is a strikingly realistic simu-
+lation of a full-length vibrating string: as the acoustic signa l
+from the piezo sensors is used to drive the Karplus-Strong
+model, the nuances in the way that the dampened strings
+are interacted with are preserved in the resulting sound.
+3.3 Strummi in Research
+To date the seven versions of the Strummi instruments have
+been used in two major research projects. Throughout this
+period we have revised the design and made minor mod-
+iﬁcations which are detailed below. The evolution of our
+designs were targeted at diﬀerent research goals, and with
+this evolution has come a changed conceptualisation of the
+instrument, from research probe to product.
+3.3.1 Strummi as a Technology Probe: Lab-based
+Comparative Study
+The initial study and its results are discussed in [8, 11]. In-
+spired by the research probe methodologies as discussed in
+2.1.1, we developed a set of instruments with the speciﬁc in-
+tention of provoking reactions through its design in relation
+to global form, input modality, and richness of interaction.
+Our study methodology was a time-limited, lab-based and
+highly structured experiment in which participants were di-
+rected to complete short musical tasks on two Strummi in-
+struments out of a possible four design variations. Each
+performance section was followed by a questionnaire and
+interview comparing the two instruments used. In this way,
+we intentionally disrupted the participants’ conception of
+what Strummi was by oﬀering a broadly similar, but signif-
+icantly modiﬁed version to compare against.
+What deﬁnes Strummi as a technology probe, rather than
+prototype or research product, is that in this instance Strummi
+serves as an explicit provocation to participants’ ingrained
+notions of ‘guitar-likeness’. We were not looking to future
+Strummis based on ﬁndings or feedback from the study par-
+ticipants, nor were we deploying Strummis in the wild to
+observe the human-instrument interaction over time.
+3.3.2 Strummi as a Research Product: an In-the-
+wild Study on Accessibility
+7https://blog.bela.io/2017/05/15/kalichord/
+449
+=== PAGE 5 ===
+Re-design of original tabletop Strummi
+with eight silicon buttons to replace orig-
+inal pushbuttons
+Re-design of guitar body enclosure to re-
+duce size and weight. Design inspired by
+Les Paul guitar body shape, built with
+same materials as tabletop instrument
+Les Paul-style electric guitar, modiﬁed
+with Strummi hardware in the body.
+Push-buttons installed in neck in posi-
+tion of top two frets.
+Table 2: Strummi as Research Product: Second generation Strummis designed for in-the-wild study
+The follow-up study saw three Strummi string instruments
+deployed through a longitudinal and situated research part-
+nership with a creative arts charity for people with learn-
+ing disabilities ( Heart n Soul 8). Over the course of a year,
+we introduced the ﬁrst generation Strummis to a group
+which took part in monthly jam sessions using electric gui-
+tars, basses, drums and keyboards. The participants in this
+group have a wide variety of access needs stemming from
+physical impairments, learning disabilities and neurodiver-
+gence. From our ﬁrst meeting, we observed that for some
+members of this group, Strummi possessed accessibility af-
+fordances due to the reduction of chord selection to a push-
+button interface, whilst maintaining the responsiveness and
+acoustic properties of the strumming interaction.
+Our goal with this study was to observe the importance
+of these potential accessibility aﬀordances over other fac-
+tors such as the global form and aesthetics of Strummi, the
+familiarity of other instruments, and the role of environ-
+ment and social context in enabling access to music mak-
+ing. Early reﬂections on this deployment are discussed in
+[7]. This project concluded with two additional jam sessions
+- called the ‘Strummi sessions’ - which were audio and video
+recorded, followed by a semi-structured group interview.
+The early stages of this project highlighted usability is-
+sues with the original Strummis. These included the weight
+of the ‘guitar body’ enclosure, which made playing for long
+periods uncomfortable, and inaccessible for many users with
+mobility issues. We also noted that the push-buttons used
+in the ﬁrst generation were prone to mechanical failure. Fi-
+nally, the use of a 3.5mm headphone output meant that
+Strummi could not easily be swapped with an electric gui-
+tar when using a standard guitar jack lead.
+Prior to the Strummi sessions, we designed a second gen-
+eration of Strummis which addressed these issues (see Table
+2) We redesigned the ‘guitar body’ Strummi to be lighter
+and built with the same materials as the tabletop version,
+modifying the shape to resemble a the classic Les Paul body.
+We also went one step further towards ‘guitar-likeness’ by
+modifying a Les Paul-style electric guitar with Strummi
+hardware in the neck and body to create a further artefact.
+The material changes to the second generation Strummis
+did not aﬀect the functionality or sound of the instrument,
+but were signiﬁcant from a research product standpoint. In
+particular, the switch from the 3.5mm headphone input to a
+6.35mm guitar jack made no impact on the sound of the in-
+strument, but allowed it be swapped easily between the elec-
+tric guitars already in use at the monthly jam sessions. Part
+8www.heartnsoul.co.uk
+of our inquiry was the question of whether guitar-based AD-
+MIs could adopt the cultural form of electric guitar playing
+in order to provide access to guitar performance for those
+for whom unadapted electric guitars are inaccessible. Our
+choices in form, materials, and connector types implied an
+equivalence between Strummi and the electric guitars which
+allowed us to observe people’s interaction with both instru-
+ments on an equal footing - we didn’t have to ask the users
+of Strummi to ‘imagine it being a ﬁnished instrument’ in
+order to compare it with the guitar.
+The key diﬀerence between this second study and the ﬁrst
+is the move out of the lab and into a situated, longitudinal
+and ethnographic approach. We were no longer concerned
+with directing the participants of our study towards de-
+ﬁned musical tasks, or otherwise compelling them to make
+direct comparisons between the diﬀerent versions of the in-
+strument. In other words, we were no longer ‘probing’ the
+eﬀects of the diﬀerent versions of Strummi, but as much as
+possible aimed to act as passive observers of interactions
+with Strummi in an everyday setting.
+It is worth noting that even without material changes, our
+shift in research methodology was signiﬁcant in reframing
+Strummi as a research product. This move from a lab-based
+study to a situated ethnography-informed approach moved
+us to consider ways in which the Strummi instruments could
+help us answer broader questions of accessibility in guitar-
+based ADMIs, as well as consider its independence and abil-
+ity to be ‘lived with’ in a real world setting.
+4. CONCLUSIONS
+This paper serves as an introduction to research products
+and partial exploration of how they ﬁt within NIME. We
+have left many implications of DMIs as research products
+unexplored and invite future researchers to contribute to
+and develop this idea. A particular tension that warrants
+further discussion is how ‘ﬁnished’ research products sit
+alongside the explicitly unﬁnished and exploratory process
+of participatory design - especially in relation to ADMIs.
+The research product approach is of potential beneﬁt to
+DMI researchers interested in observing the relationships
+between instruments, their players, their audience and their
+environments. Part of its value comes from recognising
+that prototypes, although essential when crafting musical
+interactions, are necessarily limited in their research scope.
+There is an opportunity for more NIME work to ﬁt into
+the research product category, allowing the consideration
+of interactions with new instruments based on what they
+are rather than what they might become. The notion of
+450
+=== PAGE 6 ===
+‘ﬁnishing’ a new instrument however runs up against cer-
+tain community values in NIME which both push towards
+a prototype approach. What exactly ﬁnish might mean in
+relation to NIME does not entirely equate to a sense of ma-
+terial ‘completeness’ but rather highlights how instruments
+can be considered as realised through their performance. A
+research product here may be better framed as a product
+of a speciﬁc and evolving music ecology. Finish could be
+considered as both an attitude towards an instrument be-
+ing functionally complete within a performance context, as
+well as the material and aesthetic qualities that lend the
+instrument its ecological validity.
+NIME’s tendency to focus on speciﬁc technological con-
+tributions such as technical novelty and new uses of sensors
+as the locus of contribution stands as a barrier: aspects such
+as the material ﬁnish of an artefact do not have a position in
+this kind of research. This was previously discussed in the
+NIMEHub workshop [14] as a limitation of sharing design
+knowledge through technical papers. Research products ar-
+gue for taking aspects of a design such as materiality and
+ﬁnish as seriously as technological aspects.
+These points also apply to the question of evaluation in
+NIME. The nature of our evaluation methods has long been
+a concern for NIME researchers [1]. A move towards re-
+search products in NIME would mean considering instru-
+ments more as situated, ecologically valid artefacts. Impor-
+tantly the research product methodology is inclusive of the
+method of deployment and evaluation as well as the design
+of the instrument. Research products recast ‘evaluation’ as
+a qualitative and reﬂective process focusing on sociocultural
+phenomena, rather than quasi-scientiﬁc methods based on
+ﬁrst-wave HCI techniques. Research products oﬀer a com-
+plimentary methodology that can help access the nature of
+interactive technologies in everyday life.
+5. ACKNOWLEDGMENTS
+This work is supported by the EPSRC and AHRC Cen-
+tre for Doctoral Training in Media and Arts Technology
+(EP/L01632X/1) and EPSRC grant EP/N005112/1. We
+also thank Alish Underwood, and everyone at Heart n Soul
+for their contributions to this research.
+6. REFERENCES
+[1] J. Barbosa, J. Malloch, M. M. Wanderley, and
+S. Huot. What does “evaluation” mean for the nime
+community? 2015.
+[2] S. Benford, A. Hazzard, A. Chamberlain, K. Glover,
+C. Greenhalgh, L. Xu, M. Hoare, and D. Darzentas.
+Accountable artefacts: the case of the Carolan guitar.
+In Proceedings of the 2016 CHI Conference on Human
+Factors in Computing Systems , 2016.
+[3] E. Berdahl and J. O. Smith III. A tangible virtual
+vibrating string. In Proc. of NIME, Genova, Italy ,
+2008.
+[4] E. Frid. Accessible digital musical instruments—a
+review of musical interfaces in inclusive music
+practice. Multimodal Technologies and Interaction ,
+3(3):57, jul 2019.
+[5] B. Gaver, T. Dunne, and E. Pacenti. Design: Cultural
+probes. interactions, 6(1):21–29, jan 1999.
+[6] M. Gurevich, P. Stapleton, and A. Marquez-Borbon.
+Style and constraint in electronic musical instruments.
+In NIME, 2010.
+[7] J. Harrison, A. Chamberlain, and A. P. McPherson.
+Accessible instruments in the wild: Engaging with a
+community of learning-disabled musicians. In
+Extended Abstracts of the 2019 CHI Conference on
+Human Factors in Computing Systems . ACM, 2019.
+[8] J. Harrison, R. H. Jack, F. Morreale, and
+A. McPherson. When is a guitar not a guitar?
+cultural form, input modality and expertise. In Proc.
+of NIME, Blacksburg, Virginia , 2018.
+[9] M. S. Horn. The role of cultural forms in tangible
+interaction design. In Proceedings of the 7th
+International Conference on Tangible, Embedded and
+Embodied Interaction. ACM Press, 2013.
+[10] H. Hutchinson, H. Hansen, N. Roussel, B. Eiderb ¨ack,
+W. Mackay, B. Westerlund, B. B. Bederson, A. Druin,
+C. Plaisant, M. Beaudouin-Lafon, S. Conversy, and
+H. Evans. Technology probes. In Proceedings of the
+2003 CHI Conference on Human Factors in
+Computing Systems . ACM Press, 2003.
+[11] R. H. Jack, J. Harrison, F. Morreale, and
+A. McPherson. Democratising DMIs: The relationship
+of expertise and control intimacy. In New Interfaces
+for Musical Expression , page 7, Virginia, US, 2018.
+[12] J. V. Larsen, H. Knoche, and D. Overholt. A
+longitudinal ﬁeld trial with a hemiplegic guitarist
+using the actuated guitar. In New Interfaces for
+Musical Expression. NIME, 2018.
+[13] Y.-K. Lim, E. Stolterman, and J. Tenenberg. The
+anatomy of prototypes: Prototypes as ﬁlters,
+prototypes as manifestations of design ideas. ACM
+Transactions on Computer-Human Interaction
+(TOCHI), 15(2):1–27, 2008.
+[14] A. McPherson, E. Berdahl, A. R. Jensenius, M. J.
+Lyons, I. I. Bukvic, and A. Knudsen. NIMEhub:
+Toward a repository for sharing and archiving
+instrument designs. 2016.
+[15] A. McPherson and V. Zappi. An environment for
+submillisecond-latency audio and sensor processing on
+BeagleBone Black. In Audio Engineering Society
+Convention 138 . Audio Engineering Society, 2015.
+[16] D. Meckin and N. Bryan-Kinns. moosikMasheens. In
+Proceedings of the 12th International Conference on
+Interaction Design and Children . ACM Press, 2013.
+[17] R. Michon and J. O. Smith III. A hybrid guitar
+physical model controller: The BladeAxe. In ICMC,
+2014.
+[18] F. Morreale and A. P. McPherson. Design for
+longevity: Ongoing use of instruments from NIME
+2010-14. In Proc. Conf. New Interfaces Musical
+Expression (NIME) , 2017.
+[19] W. Odom, R. Wakkary, Y. kyung Lim, A. Desjardins,
+B. Hengeveld, and R. Banks. From research prototype
+to research product. In Proceedings of the 2016 CHI
+Conference on Human Factors in Computing Systems .
+ACM Press, 2016.
+[20] M. S. O’Modhrain and G. Essl. PebbleBox and
+CrumbleBag: Tactile interfaces for granular synthesis.
+In NIME, pages 74–79, 2004.
+[21] R. Wakkary, D. Oogjes, H. W. Lin, and S. Hauser.
+Philosophers living with the Tilting Bowl. In
+Proceedings of the 2018 CHI Conference on Human
+Factors in Computing Systems , 2018.
+[22] S. Waters. Performance ecosystems: Ecological
+approaches to musical interaction. EMS:
+Electroacoustic Music Studies Network , pages 1–20,
+2007.
+[23] D. Wessel and M. Wright. Problems and prospects for
+intimate musical control of computers. Computer
+Music Journal , 26(3):11–22, sep 2002.
+451

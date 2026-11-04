@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "started": "2026-10-26T16:41:32.811887",
+  "bitstream_sha256": "062a944dcce1db79746d9734b8441d11edaff6e4a76a09289affb0b92f214212",
+  "expected_build_id": 739488645,
+  "audible_test_enabled": false,
+  "uart_guard_bytes": 64,
+  "uart_max_batch_per_5ms": 4,
+  "test_source_sha256": "fa47c9e6c2f1fe75cf334e6d0f67faab7f16c9c0c1b61df26462974583b284c6",
+  "shared_load_preflight": {
+    "layout": "central_parameters",
+    "source_sha256": {
+      "band_singer_core.sv": "d67cbd8c67dc627dbfb5b2c2e0f4e11e8422e57889b867daa7c88c7b4c946d03",
+      "central_voice_bank.v": "71f4ff46db62a4b5cd03b50a83609457ffedd9cf44c8d5c11d66b43d3dc17e20",
+      "shared_role_controls.v": "80fe5029748fc926a56877b02eff5ac3be9f45dd44d722bdfe3cfb558a9707ee",
+      "shared_bank_dispatch.v": "dc3e7f31d9993a535923db9eb14063528b2ddba4d54a25ec15754e42525a8935",
+      "shared_note_allocator.v": "a84806e8d592d39ce5fc68aca57084b936b9224cac43a42fa618f42a1e7b40c3",
+      "shared_band_renderer.v": "58ea9e26facef16c292416e8a7d6e0fdc68d4ad4ad0f9c2be70137385331ab5b"
+    },
+    "scope": "Source integrity/layout only; not netlist, timing or hardware acceptance"
+  },
+  "shared_load_preflight_sha256": "a77b136711f28c244258b091b671e0ed7fcd4cd31450a34ce25429e29a84915e",
+  "require_singer_health": true,
+  "singer_health_checks": 27687,
+  "stress_distribution": {
+    "parts": [
+      7
+    ],
+    "notes_per_part": 256,
+    "independent_serials": true,
+    "scope": "Digital active slots; repeated32 pitches, not256 resolved spectral peaks or acoustic proof"
+  },
+  "identity": {
+    "build_id": 739488645,
+    "capacity": 256,
+    "nominal_sample_rate": 48000
+  },
+  "stage": "completed",
+  "parser_bad_crc": 0,
+  "last_singer_health": {
+    "gate": false,
+    "note": 79,
+    "dropped": 0,
+    "stale_off": 0,
+    "dac_dropped": 0,
+    "dac_underruns": 0
+  },
+  "configuration": "PT8211 audition build",
+  "automatic_test_seconds": 97.0,
+  "stress_seconds": 28800.0,
+  "stress_active_notes": 256,
+  "maximum_stress_cycles": 966,
+  "maximum_observed_voices_during_song": 12,
+  "furthest_song_sample": 4608000,
+  "tests": [
+    "build identity match",
+    "ownership",
+    "independent same-contact serial identities",
+    "stale release",
+    "32 active slots",
+    "source release",
+    "500ms disconnect release",
+    "256 sustained active slots",
+    "autonomous song",
+    "stop"
+  ],
+  "completed": "2026-10-27T00:43:10.443859",
+  "record_count": 756863,
+  "files": {
+    "hardware_8h.driver.txt": {
+      "bytes": 10000,
+      "sha256": "fa47c9e6c2f1fe75cf334e6d0f67faab7f16c9c0c1b61df26462974583b284c6"
+    },
+    "hardware_8h.json": {
+      "bytes": 223161542,
+      "sha256": "13a52426c176289efb46f6ba6c015e2e447b2546a588ebad685dc56cad9f0921"
+    },
+    "hardware_8h.raw": {
+      "bytes": 26674972,
+      "sha256": "1e6fb0d5e907b2393798dbba3b239c1176ac36c9e4cdedd0406869baa408ef71"
+    }
+  },
+  "scope": "Old062a firmware, silent256 slots8h plus97s song; not new812 firmware, acoustic or thermal acceptance"
+}

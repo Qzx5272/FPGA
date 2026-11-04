@@ -1,0 +1,62 @@
+[
+  {
+    "playing": false,
+    "owner": 1,
+    "part": 4,
+    "voices": 0,
+    "cycles": 64,
+    "epoch": 2,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  {
+    "playing": false,
+    "owner": 1,
+    "part": 4,
+    "voices": 0,
+    "cycles": 64,
+    "epoch": 2,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  {
+    "playing": false,
+    "owner": 1,
+    "part": 4,
+    "voices": 1,
+    "cycles": 79,
+    "epoch": 2,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  {
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 1,
+    "cycles": 79,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  {
+    "playing": true,
+    "owner": 0,
+    "part": 0,
+    "voices": 3,
+    "cycles": 109,
+    "epoch": 1,
+    "song_sample": 36,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  }
+]

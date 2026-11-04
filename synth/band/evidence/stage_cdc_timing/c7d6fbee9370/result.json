@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\stage_cdc_hold_c7d6fbee9370",
+  "source_build": "D:\\StarclusterBuilds\\stage_timing_ef5b2476b970",
+  "frozen_netlist_sha256": "4cfeaa831e184d42b9c7145f0b959e138a52551b3aa3cc2f963276ec51dfc948",
+  "scope": "Internal stage PnR replay only:targeted async FIFO hold exceptions;20ns cross-domain setup/max-delay retained. No external pins,timing,CDC MTBF or physical acceptance.",
+  "started": "2026-10-25T23:36:10.837165",
+  "inputs": {
+    "build.tcl": "4987cc2f81863de981c66555881112340aafa2cda668674f86b0c8d6e02efa05",
+    "stage.sdc": "41521cea54585a5853aaf67b123abbc4ccb5734b62f2885176fd901e905e2238",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_stage_cdc_timing.py": "7e6062b85b094db836c4fef2b789b22848586590a4fcf49bbd43eede2ea772d3"
+  },
+  "returncode": 1,
+  "error": "Vendor failure;inspect log",
+  "finished": "2026-10-25T23:36:12.079908"
+}

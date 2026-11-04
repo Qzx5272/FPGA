@@ -1,0 +1,1544 @@
+{
+  "updated": "2026-10-26T22:44:56.910449",
+  "goal": "可多人演奏、机器协作、独立运行的FPGA电子乐队工作站",
+  "final_accepted": false,
+  "scope": "人工逐项核对现有验收清单；文件状态/哈希只绑定证据，不替代证据的适用范围",
+  "requirements": [
+    {
+      "id": "A01",
+      "requirement": "可复现基线",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "V5.31工程包已通过8151文件哈希、254条验收证据索引及解压后57项上位机/基础板端仿真复现，非最终版。四引擎整机9ec62ce73630原生时序为0建立/3保持/0脉宽违规，物理资源69416逻辑、252RAM、158DSP；发布仍阻断。8级复位缓冲组合候选已综合并保留全部缓冲，尚未证明时序修复。 最新组合4a7fb332e1e0已完成布线，0建立/3保持/0脉宽违规；原生复位恢复/移除检查覆盖全部3通道，移除最差约-1.05ns，仍不允许发布。",
+      "evidence": [
+        {
+          "path": "evidence/host_tests.json",
+          "sha256": "90605c48cd36709010fa41fc0acad397ff091367b08a96cff3eeaeca6c2bc211",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/readiness_history/e13a3a287f699959026b2e8ae98598444f2c1f2c932f6a661137b8bc13c4a49b/software_acceptance.json",
+          "sha256": "e13a3a287f699959026b2e8ae98598444f2c1f2c932f6a661137b8bc13c4a49b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/stage_cdc_timing/08f1998827bc/result.json",
+          "sha256": "a5c526b96f39492412059259437044cdfa3cc056d7c0f3bbb62f0e574be96ffb",
+          "recorded_status": "passed_internal_timing_only"
+        },
+        {
+          "path": "evidence/stage_cdc_timing/08f1998827bc/constraint_scope_check.json",
+          "sha256": "5494f82cb8009f1ca67a6cdbf352d33e9da04ed3e208d3f0953ea13ef834a5d3",
+          "recorded_status": "passed_constraint_scope_only"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/2d5bfcfe40c6/result.json",
+          "sha256": "2e72139db768e00ec4aa6b44ab798d086b72e7c857c371341ca305728f201bc0",
+          "recorded_status": "failed_timing"
+        },
+        {
+          "path": "evidence/coefficient_rom_netlist/coefficient_rom_20261026_010712/result.json",
+          "sha256": "555ebff4d2ef53aed59d249387f1ffb41066bd3d62845ab1600e59c93532e4a1",
+          "recorded_status": "mismatch"
+        },
+        {
+          "path": "evidence/coefficient_rom_netlist/coefficient_rom_20261026_011446/result.json",
+          "sha256": "bd013bacaa95e1e338bda9948119c1dc0f436f5d366bfff79c20a4e5c1fec11f",
+          "recorded_status": "mismatch"
+        },
+        {
+          "path": "evidence/vocoder_netlist/dc0e72f80f27_20261026_012319/result.json",
+          "sha256": "b0f1567c25fd3f07df79b23f7b870a0cdbca73174a99075af8c841fe72c4b2aa",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/9994028aaaf9/result.json",
+          "sha256": "45a95115278a15b2f08164e0f1ea8e0cd8f8b5dbc7095234647e33ebf7d15e6a",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/0c66557851b1/result.json",
+          "sha256": "b66a2cb722b1ae687bf2f40dade48586f57182505d9f342f63d15a4de99b9940",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/combined_workstation_synthesis/54a8a06418d7/result.json",
+          "sha256": "4b47a354530c6fa2ebf4faeb8375eebdc51406c3d5c822d7fb364fc234012071",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/1d4b9e284175/result.json",
+          "sha256": "bf8e8970ce49ead31442b568f2e0a5027fc8204f2fcd5cba209058aa31a1e812",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/79ed693d7f68/result.json",
+          "sha256": "178f6cffbab0ce5a67a4ed79da6a81d9e8c9c6f2f3273b14dac9fa39d94458f2",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/gw138_ram_mode_gate.json",
+          "sha256": "e81024835bc2056519d581740c58b6fe4620419a757838c2da33285eb253508d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/006d0f90662f/result.json",
+          "sha256": "7cca34c5999c075e804e35c0996068799d7793c1d38d377eda492d6a7f770b2e",
+          "recorded_status": "passed_internal_timing_only"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/006d0f90662f/constraint_scope_check.json",
+          "sha256": "3a76dcef50f8b7c5755a3ed17b2385295cd29ac5599ecd5e8aec532233233c3b",
+          "recorded_status": "passed_constraint_scope_only"
+        },
+        {
+          "path": "evidence/workstation_pt8211_dvi/20261026_104538/result.json",
+          "sha256": "b68ff1e3f9866ac07c1593e2a3901a8cbf0ea5ce5a957d711cec1804c4c219c5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_synthesis/0cd05e391715/result.json",
+          "sha256": "31ed64cbc7b67be86edc1b39492f4128bf8fc2b82c28be5fffc7ff11bb2ea457",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_144847/result.json",
+          "sha256": "4c80cf7ab7f039781676214e32afe4580b96a3a4490b5fd147c3899f1b54522e",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_pt8211_controls_20261026.json",
+          "sha256": "175fdac2a2c7b33e502ab7dce32af789244ea4315fd9fa926b5567caa3d7e0ed",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/post_flash_controls_cleanup_20261026.json",
+          "sha256": "63b3f1fb46fdc8fc6b833c3637c20ddaadf3b0a42ea13b39c8c1a3e8daf02949",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/e9fc0f6e32a3/result.json",
+          "sha256": "7eb4806a79987c43f42547a8661b1b541db00db2b4677c29fb0d3f7f751466cf",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/e9fc0f6e32a3/fixed_pin_audit.json",
+          "sha256": "e0f08334c73ddc25f678f16c5ac87a35ff187c382c51e6039f5883a3c39b7004",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/f66680365bc4/reset_coverage_review.json",
+          "sha256": "3c2007fb1c18773fe2a2e95cc2dad650bb75bb539bfbcb8a8d1c8da62ed06121",
+          "recorded_status": "not_release_accepted_missing_native_reset_coverage"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/9ec62ce73630/result.json",
+          "sha256": "41f3b70a69dba2b9d1c6acdf97ce77e2e078cc63af5153cc18e8b59aaaf1537b",
+          "recorded_status": "failed_timing"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/9ec62ce73630/physical_resources.json",
+          "sha256": "e80ed51cf6d389c3633563b6da723aec252ab38e88cfbf27336189708f63fe06",
+          "recorded_status": "resource_measurement_only_timing_failed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_synthesis/fec4481bb23a/reset_structure.json",
+          "sha256": "80b29410bd965e9f10a55e6e4e72fe18ab189e5c3636ed54cd017235522c2206",
+          "recorded_status": "passed_synthesized_connectivity_only"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/4a7fb332e1e0/result.json",
+          "sha256": "97f72bd6e4a53daa8b682671b929c237ae68c946fbdd525f6894db08f7f723fa",
+          "recorded_status": "failed_timing"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/4a7fb332e1e0/native_reset_paths.json",
+          "sha256": "bedf45a2e9877ce21f750aed9ec3ab1e84e8b932ce953fa57911fb8140920b75",
+          "recorded_status": "not_accepted"
+        }
+      ],
+      "remaining": "板载PT8211/DVI固定管脚、内部时序、SRAM发布及板端数字验证已完成；扩展外设实际管脚/电气/IO时序及实物验收仍缺。",
+      "latest_onboard_scope": "当前062a944dcce1有99份冻结源/约束快照，50MHz时序和18固定引脚通过；V5.29完整包哈希及新解包47项上位机测试、基础板级仿真通过。新增共享导出入口另有48项上位机测试，不在V5.29包中。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。",
+      "latest_flash_scope": "59c963cc2112:编程校验及JTAG重新加载自主演出96秒通过；未执行物理断电冷启动。",
+      "latest_selected_release_scope": "当前062a944dcce1有99份冻结源/约束快照，50MHz时序和18固定引脚通过；V5.29完整包哈希及新解包47项上位机测试、基础板级仿真通过。新增共享导出入口另有48项上位机测试，不在V5.29包中。",
+      "historical_verified_scope": "当前59c963cc2112具备93份精确源快照、18固定管脚/14约束/三时钟时序与SRAM数字验证；非实物按键、模拟声音或冷启动验收。"
+    },
+    {
+      "id": "A02",
+      "requirement": "输入与三维表达",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "双本地ADC席、参数、校准与MIDI已有数字验证",
+      "evidence": [
+        {
+          "path": "evidence/stage_top_chain/result.json",
+          "sha256": "aa6e372087c16ed05541307a067788389d38f9be5ea3be2015fb1651f225b3f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/readiness_history/864bbfab236df9571fcc942ea38c214a7ab32fd2f7e0015fae92013e1b671536/result.json",
+          "sha256": "864bbfab236df9571fcc942ea38c214a7ab32fd2f7e0015fae92013e1b671536",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/stage_pad_netlist/acf98f9b6f0d_20261026_033521/result.json",
+          "sha256": "9f3c133c5f631afd0b1d02db66591173e40bb20d03056e737a459f4223c0c4e1",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_serialdirty/result.json",
+          "sha256": "a5f66e962df9b3504e1f9eaf78565e1fcc55ab479d561797e83b158a5088a3e5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain/result.json",
+          "sha256": "415d47f0d6314cf923fd0f492c2cca8e4db21ff76c363eacb3412392e0b442cf",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "实际压力/触摸/脚踏接线，串扰、校准、手感与多维独立控制",
+      "latest_serialram_scope": "当前序号RAM优化版51.54074ms整机RTL回归通过：双ADC席、脚踏、UART接管与释放、I2S4660字、HannFFT2048点、显示暂停及断钟/总停音；不证明长时间、时序或实际外设。",
+      "latest_serialregs_scope": "当前77f6显式序号寄存器/已发送序号RAM版51.54074ms整机RTL通过；I2S4660字、2048FFT、双席脚踏、接管释放、断钟和总停音。源码核对一致，不覆盖时序、长期或实物。"
+    },
+    {
+      "id": "A03",
+      "requirement": "动态复音",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "当前062a944dcce1板测证明共享256乐器槽的单轨256身份负载持续60秒；使用32个重复音高，不能称256个独立谱峰，part15电子歌手独立。8小时同配置数字长测尚未完成，时序脉宽问题未解除。",
+      "evidence": [
+        {
+          "path": "evidence/hardware_band_1h.json",
+          "sha256": "140938fae8bbdeb0d785896016d832cdc34a99635d5e655c9b0a1ff6a9a5b2ea",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/singer_sustained/6c6a586afd9d_2880000frames.json",
+          "sha256": "3b071477b3b7bb7270ee0b12e90b364c61e68e3f9c631d3ed12be9c94c5ac65b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/0ad57c3b1973_7000frames.json",
+          "sha256": "80a9c70511d0f0dfd6109b322c0fea2e711137e6ad8e482616bf6cb2e690bc23",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/7b868ca08761_7000frames.json",
+          "sha256": "7d8cc10731f9619d50db7d283175e07f28615b8ac890277299b87f6c9c82f7f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+          "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+          "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_dvi_load/20261026_090437/result.json",
+          "sha256": "6426dea736f2489d6c668f354c30679cdde5cbe8d4f51398018bb497062277e2",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_pt8211_dvi_load/20261026_111521/result.json",
+          "sha256": "97a8370a035f7c35c1e9cee5eb5b1e435cf9c6e45780ead3d9ce08ba5190fbcd",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "新版已通过60秒256槽数字负载；历史一小时成绩不迁移。八组32槽仍非自由共享256槽，独立可闻性、动态分配和尾音需要继续验证。",
+      "latest_calram_scope": "当前calRAM合并导出：7000帧全时钟仿真，4500连续帧保持256槽，966最大计算周期，统一释放归零，无掉帧/欠载/超期；PCM与旧flatROM负载逐字节一致。麦克风缺席、显示读取停顿；不证明长期满载、独立可闻、时序或物理性能。",
+      "latest_serialregs_scope": "当前serialregs整机60秒持续256槽数字仿真通过，966最大计算周期，零丢帧/欠载/超期；短释放尾音非全零，仍须释放尾音与实物验收。DVI候选未完成同范围测试。",
+      "latest_dvi_load_scope": "当前domains压力导出2510帧保持256槽（52.29ms），最坏966周期、音频/频谱错误0；三视频通道各12000位一致，显示ready失效时5帧音频继续。低总增益、关闭协作留白，无麦克风；非整曲/长期/时序/实物验收。",
+      "latest_onboard_scope": "新59c963cc2112版：固定18管脚/14约束、50MHz时序、60秒256槽、完整96秒曲谱、GUI合成双席通过；实物按键、模拟声音、真实MIDI与屏幕未验收。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。",
+      "historical_verified_scope": "基础版256活跃音符槽有实测；导出歌手核心256持续槽+歌手+延迟效果通过60秒全时钟仿真，零削波/丢样/计算超期；并非融合整机实测"
+    },
+    {
+      "id": "A04",
+      "requirement": "生命周期",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "身份、旧释放、接管、panic与主机断线处理有分层验证；当前serialregs融合配置满载60秒288万帧保持256槽，966周期、0丢样/欠载/超时，释放/结束通过；无麦克风、频谱读取停顿，非DVI或实物极限证明。；当前serialregs整机98秒全时钟仿真bf1017bd575c通过，4704000帧、丢帧/欠载/期限违例0，尾部100ms数字零，PCM与coeff22版完全相同；不含DVI或实物验收。",
+      "evidence": [
+        {
+          "path": "evidence/stage_top_chain/result.json",
+          "sha256": "aa6e372087c16ed05541307a067788389d38f9be5ea3be2015fb1651f225b3f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/host_tests.json",
+          "sha256": "90605c48cd36709010fa41fc0acad397ff091367b08a96cff3eeaeca6c2bc211",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_serialdirty/result.json",
+          "sha256": "a5f66e962df9b3504e1f9eaf78565e1fcc55ab479d561797e83b158a5088a3e5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain/result.json",
+          "sha256": "415d47f0d6314cf923fd0f492c2cca8e4db21ff76c363eacb3412392e0b442cf",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+          "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+          "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/bf1017bd575c_4704000frames.json",
+          "sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "当前整机在满载及真实拔线情况下验收",
+      "latest_serialram_scope": "当前序号RAM优化版51.54074ms整机RTL回归通过：双ADC席、脚踏、UART接管与释放、I2S4660字、HannFFT2048点、显示暂停及断钟/总停音；不证明长时间、时序或实际外设。",
+      "latest_serialregs_scope": "当前77f6显式序号寄存器/已发送序号RAM版51.54074ms整机RTL通过；I2S4660字、2048FFT、双席脚踏、接管释放、断钟和总停音。源码核对一致，不覆盖时序、长期或实物。",
+      "latest_onboard_scope": "新59c963cc2112版：固定18管脚/14约束、50MHz时序、60秒256槽、完整96秒曲谱、GUI合成双席通过；实物按键、模拟声音、真实MIDI与屏幕未验收。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。"
+    },
+    {
+      "id": "A05",
+      "requirement": "标准I2S",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "标准I2S排队输出已接入实验融合顶层并逐位验证实际PCM；现生产发布仍为PT8211。新顶层尚无PLL/引脚/整机时序/物理验收",
+      "evidence": [
+        {
+          "path": "evidence/stage_top_chain/result.json",
+          "sha256": "aa6e372087c16ed05541307a067788389d38f9be5ea3be2015fb1651f225b3f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/i2s24_queue/result.json",
+          "sha256": "e2d74f1540a08fc8ddbf759ef3c274b15a7c8a9361ab58c7aee2b45cd49e4a21",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/i2s_stage_chain/result.json",
+          "sha256": "9ded728466780436d8e2a5c17565bd29281ef6e52c38bb3724ed179d9e4adc31",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/i2s24_queue/synthesis/result.json",
+          "sha256": "67c633734b3976c352c8c8c17c86fdae1e85971c60d3b3a23e3764d9e67fa96b",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/workstation_chain_pre_flatrom/history/64b26caab5caf08b.json",
+          "sha256": "64b26caab5caf08b846d632d870a12608a1b22f640e6a572ba0954c3c73a8f8c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_serialdirty/result.json",
+          "sha256": "a5f66e962df9b3504e1f9eaf78565e1fcc55ab479d561797e83b158a5088a3e5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain/result.json",
+          "sha256": "415d47f0d6314cf923fd0f492c2cca8e4db21ff76c363eacb3412392e0b442cf",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "实际ADC/DAC时钟与电气时序；物理标准I2S输出验收",
+      "latest_serialram_scope": "当前序号RAM优化版51.54074ms整机RTL回归通过：双ADC席、脚踏、UART接管与释放、I2S4660字、HannFFT2048点、显示暂停及断钟/总停音；不证明长时间、时序或实际外设。",
+      "latest_serialregs_scope": "当前77f6显式序号寄存器/已发送序号RAM版51.54074ms整机RTL通过；I2S4660字、2048FFT、双席脚踏、接管释放、断钟和总停音。源码核对一致，不覆盖时序、长期或实物。"
+    },
+    {
+      "id": "A06",
+      "requirement": "低延迟",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "有计算周期记录，不能当端到端延迟",
+      "evidence": [
+        {
+          "path": "evidence/hardware_band_1h.json",
+          "sha256": "140938fae8bbdeb0d785896016d832cdc34a99635d5e655c9b0a1ff6a9a5b2ea",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "至少10000次真实事件，空/满载min/mean/p99/max"
+    },
+    {
+      "id": "A07",
+      "requirement": "数值与音质",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "基础音色/效果数字分析、数值参考与剪裁计数已有证据",
+      "evidence": [
+        {
+          "path": "evidence/readiness_history/e13a3a287f699959026b2e8ae98598444f2c1f2c932f6a661137b8bc13c4a49b/software_acceptance.json",
+          "sha256": "e13a3a287f699959026b2e8ae98598444f2c1f2c932f6a661137b8bc13c4a49b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/e5de895177f2_4704000frames.json",
+          "sha256": "f86ed95b65d0cb8b38b5960d6b77e7d0ce57c78b36a0f42d641b488eff5c1c07",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/e5de895177f2_4704000frames_audio_metrics.json",
+          "sha256": "d4cc837f2d6078d723592e3c5d72a791fb3cc6595d0782d7cda6afe2d50ebee1",
+          "recorded_status": "descriptive_metrics"
+        }
+      ],
+      "remaining": "整机模拟频谱/噪声/失真、动态调参听感和真实麦克风声码器音质；新歌手整曲数字PCM已通过，不等于模拟验收"
+    },
+    {
+      "id": "A08",
+      "requirement": "人声",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "四引擎人声优化通过4096样本独立RTL参考及320样本综合网表验证；孤立综合乘法器18降至6，尚非整机资源结论。实际导出核心与256声部联合64帧通过，最大966周期；有限元音/短句能力不等于任意自然歌词，实物麦克风未验收。",
+      "evidence": [
+        {
+          "path": "evidence/stage_top_chain/result.json",
+          "sha256": "aa6e372087c16ed05541307a067788389d38f9be5ea3be2015fb1651f225b3f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/coefficient_rom_netlist/coefficient_rom_20261026_010712/result.json",
+          "sha256": "555ebff4d2ef53aed59d249387f1ffb41066bd3d62845ab1600e59c93532e4a1",
+          "recorded_status": "mismatch"
+        },
+        {
+          "path": "evidence/coefficient_rom_netlist/coefficient_rom_20261026_011446/result.json",
+          "sha256": "bd013bacaa95e1e338bda9948119c1dc0f436f5d366bfff79c20a4e5c1fec11f",
+          "recorded_status": "mismatch"
+        },
+        {
+          "path": "evidence/vocoder_netlist/dc0e72f80f27_20261026_012319/result.json",
+          "sha256": "b0f1567c25fd3f07df79b23f7b870a0cdbca73174a99075af8c841fe72c4b2aa",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/vocoder_netlist/f98747e0a290_20261026_205900/result.json",
+          "sha256": "565eeb5c868976e7b7b7135a6365d828925ea8bf5b93661d9e7ccd55a7fbe5e2",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/shared_singer_core/20261026_211651/result.json",
+          "sha256": "d4d029491503dd644dd6e951bbcae8da43c7eaf7d1fb638447c6d94e0f76abb2",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "真实麦克风与有限短句可懂度/音准/节奏/清浊音验收",
+      "latest_onboard_scope": "板载PT8211/DVI候选620164a544d2已通过固定管脚/内部时序、60s256槽、完整96s曲谱、GUI合成双席；842歌手/DAC状态丢事件/丢样/欠载0。静音测试；无真实MIDI、麦克风、模拟音质、实屏、冷启动或长期热稳定证明。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。"
+    },
+    {
+      "id": "A09",
+      "requirement": "乐队协作",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "正确含人声验收曲的96秒全时钟核心RTL渲染已通过：4608000帧、96个人声音符、削波/丢样/超时均0。使用合成麦克风输入与驱动器混音参数，不是实物音频、保存预设或四引擎候选整曲验收。结束时仍有尾音，新增候选100秒渲染待验证。实体多人演出未验收。",
+      "evidence": [
+        {
+          "path": "evidence/hardware_ensemble.json",
+          "sha256": "3edb31184bc8ec98310d39ccd2cc30a57d24dc7f789a57160e0c352489c76ba0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/singer_render/2f695e9c1f4f_96s.json",
+          "sha256": "61202919f46b6618bcce0d66255dde3e50417c8a15b9f985c4f865d4d224a903",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/singer_render/ab63cda8a752_100s_tail.json",
+          "sha256": "8a80013cf47493b481d6140d34cbac4796ab10357b7a8dfc3e4b62f858825366",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/50cf99739a52_96000frames.json",
+          "sha256": "1e1e0edf83b497b106fa8771ce5551d26c85e1339f625bd80aec4db9350c5c99",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/50cf99739a52_4704000frames.json",
+          "sha256": "4a90ccada01e93db9c6aae4c98828ea7c6bd851d940d9dfb4708c486d791e517",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/coeff22_98s_identity.json",
+          "sha256": "9104867fb8bab2cd2984b7062204ece442d391511f4c0c381714b1cf2037ba98",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_central256_20261026.json",
+          "sha256": "1b637c90da7de50b648db585f0264c904c8eac2cbd296b6f8a76f9c27e62c6b5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/singer_render/wrong_score_diagnosis_20261026.json",
+          "sha256": "23ebb24aa2bbb43b64492b97fc0a77ff91ea782309e57012f54a148ac9490e34",
+          "recorded_status": "diagnosed_wrong_score_fixture"
+        },
+        {
+          "path": "evidence/singer_render/acceptance_score_memory_20261026.json",
+          "sha256": "169a2b6039efae6e12e5fea2e852ad490c0f2db7b1c5f0ee8bb36e1989b4d725",
+          "recorded_status": "passed_score_memory_identity"
+        },
+        {
+          "path": "evidence/four_engine_workstation/dc2667ea8098/preparation.json",
+          "sha256": "3eaff227382386b0168a165c730d55315369ecdce90e461797e28bd0154ecf44",
+          "recorded_status": "prepared_not_accepted"
+        },
+        {
+          "path": "evidence/singer_render/54a917663812_96s.json",
+          "sha256": "4ecd69bed941e82268984933d78ad2db80517a4481f8dbb8ccccb433dc7c176a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/singer_render/54a917663812_96s_audio_metrics.json",
+          "sha256": "247dbac2433f410530c581bf5353c97b28ab5e0a1007d162bfa483b95bffc686",
+          "recorded_status": "measurements_only"
+        }
+      ],
+      "remaining": "本版完整96秒及合成GUI双席已通过；仍缺人类双人实际演出、真实输入与规则因果A/B听感验收。",
+      "latest_onboard_scope": "当前优化共享版实际FPGA与模拟双席上位机协作通过：双轨接管、冲突拦截、独立归还、断连租约、重加入及96秒自然结束；非真实双人演奏。",
+      "seat_mapping_scope": "上位机各席独立MIDI学习与曲谱保存已实现，测试覆盖两席映射隔离；未证明真实多人演奏。",
+      "latest_selected_release_scope": "当前优化共享版实际FPGA与模拟双席上位机协作通过：双轨接管、冲突拦截、独立归还、断连租约、重加入及96秒自然结束；非真实双人演奏。",
+      "historical_verified_scope": "基础96秒实际FPGA+GUI合成席接管通过；新版歌手核心96秒完整RTL渲染通过，零丢帧/超期/削波，合成麦克风输入；100秒核心输出前96秒与逐时钟PCM一致，尾音降至1LSB，非持续全零; 新增旧冻结50cf99739a52整机98秒RTL通过，含自然结束和2秒尾音；不是当前一维ROM候选或真实双人演出验收。"
+    },
+    {
+      "id": "A10",
+      "requirement": "多模态",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "压力模型+MIDI+麦克风+脚踏数字链集成；视觉尚未完成",
+      "evidence": [
+        {
+          "path": "evidence/stage_top_chain/result.json",
+          "sha256": "aa6e372087c16ed05541307a067788389d38f9be5ea3be2015fb1651f225b3f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/local_pedal/result.json",
+          "sha256": "3978007fc7b1321240a351203010d54e3396769247ba6f2671fa2ec97915a1f2",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "实际多模态时延/误触/冲突与实体覆盖；视觉设备与融合实现"
+    },
+    {
+      "id": "A11",
+      "requirement": "有效吞吐",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "固定50MHz/48kHz节拍的独立分量诊断RTL已通过4096、8192、16384和32768档，135168帧及对应谱峰；32768最坏延迟1032周期，最短帧预算剩9周期。不是实时调参、实板可闻单元、完整乐队并发或热稳定上限。37888档135168帧固定节拍完成；频谱参考归一化从活跃37888修正为RTL实际地址容量65536后，37888谱峰通过，最大相对误差0.0053%。原始失败报告保留，未修改RTL、样本或容差；此为原始样本复核而非重新仿真。板上256槽长测另行记录，尚无最终可用性能极限结论。",
+      "evidence": [
+        {
+          "path": "evidence/hardware_diagnostic_43008.json",
+          "sha256": "0ff2c3fe3571c5165fb1fc08d7b18ab94f3ecb017f78ee42817c95c783ca32b8",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/combined_workstation_synthesis/2786dc050eec/result.json",
+          "sha256": "63cfcfe4c5be4476ae03380a07e2dcfdb910a91eaecbc64cfa684f8a6cf23160",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/workstation_load/20261026_002518/result.json",
+          "sha256": "bb5e9163c6e0765bdf8f1ef06059c1dc18e8b2420284e221586877c7f86ced84",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/0ad57c3b1973_7000frames.json",
+          "sha256": "80a9c70511d0f0dfd6109b322c0fea2e711137e6ad8e482616bf6cb2e690bc23",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/0c66557851b1/result.json",
+          "sha256": "b66a2cb722b1ae687bf2f40dade48586f57182505d9f342f63d15a4de99b9940",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/combined_workstation_synthesis/54a8a06418d7/result.json",
+          "sha256": "4b47a354530c6fa2ebf4faeb8375eebdc51406c3d5c822d7fb364fc234012071",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/workstation_render/7b868ca08761_7000frames.json",
+          "sha256": "7d8cc10731f9619d50db7d283175e07f28615b8ac890277299b87f6c9c82f7f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+          "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+          "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/bf1017bd575c_4704000frames.json",
+          "sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/hardware_central256_20261026.json",
+          "sha256": "fb4bb7da622f75959cc58dca973d481230350080d04477c7bf6c80b4ce464b93",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pool_spectrum_reaudit_20261026.json",
+          "sha256": "b4f8ffde794364022e9647e64001aee54d41393113a45098663579f3bc7e8d4a",
+          "recorded_status": "bounded_raw_spectrum_reaudit"
+        },
+        {
+          "path": "evidence/pool4096_diverse_verilated.json",
+          "sha256": "47055626278e0326e241de5bbe777a03a8055562ffe0356653ae473542db8abe",
+          "recorded_status": "passed_diagnostic_RTL_only"
+        },
+        {
+          "path": "evidence/pool8192_diverse_verilated.json",
+          "sha256": "1a382e8b6a70e7e0691fbe375995c2aec20c926a7bacbe62a72e099c2d6f7472",
+          "recorded_status": "passed_diagnostic_RTL_only"
+        },
+        {
+          "path": "evidence/pool_clocked_e39dfdaa1d7c.json",
+          "sha256": "081d2f9a3190503472e7d75315032dd2ef410bc7be75ecf1cc7a355f87dc8f40",
+          "recorded_status": "passed_fixed_cadence_diagnostic_RTL_only"
+        },
+        {
+          "path": "evidence/pool_clocked_b685184d0709.json",
+          "sha256": "c52a647b2b95894009ab094f17bb2c9b9849dca88313bcc0b418c73825bcfed8",
+          "recorded_status": "passed_fixed_cadence_diagnostic_RTL_only"
+        },
+        {
+          "path": "evidence/pool_clocked_a412b7dc074c.json",
+          "sha256": "4d747befc1031d115e5985d28d15af01d486d80c1ee5a3097f5f9cfb1f70d9b6",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pool_clocked_6b81d34aa84b.json",
+          "sha256": "710c158aeb83d3f5e3d6523d43f4fc3ed90093aef84f3529f7d47fb39a3c6928",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pool_clocked_4c48adaaee87.json",
+          "sha256": "961a42cda7e71727904b785f567ee39372ffc2a14260d2707565fe6c3bbbce4d",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/pool_clocked_4c48adaaee87_normalization_review.json",
+          "sha256": "f769c904a660e4a0d310e6ff0056103d117405a04adef4820f092bce25e7623b",
+          "recorded_status": "passed_corrected_reference"
+        }
+      ],
+      "remaining": "纯合成/完整乐队/长期稳定三种极限，实测谱峰、实际采样率及受控能力",
+      "latest_calram_scope": "当前calRAM合并导出：7000帧全时钟仿真，4500连续帧保持256槽，966最大计算周期，统一释放归零，无掉帧/欠载/超期；PCM与旧flatROM负载逐字节一致。麦克风缺席、显示读取停顿；不证明长期满载、独立可闻、时序或物理性能。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。",
+      "latest_selected_release_scope": "当前优化共享版单一合唱轨256独立身份持续60秒、随后96秒曲谱通过；最坏966周期。重复32音高、master0，不证明256独立谱峰或可闻单元。8小时测试正在运行，不算通过。",
+      "historical_verified_scope": "43008独立分量诊断有调度实测，不能当乐队并发极限；当前serialregs融合配置满载60秒288万帧保持256槽，966周期、0丢样/欠载/超时，释放/结束通过；无麦克风、频谱读取停顿，非DVI或实物极限证明。；当前serialregs整机98秒全时钟仿真bf1017bd575c通过，4704000帧、丢帧/欠载/期限违例0，尾部100ms数字零，PCM与coeff22版完全相同；不含DVI或实物验收。",
+      "diagnostic_spectrum_reaudit": "原始FFT复算通过；37888不同包络诊断仿真所记录源文件与当前一致，但驱动未按固定48k样本间隔发起计算，不能替代实板采样率/可闻性/交互及整乐队并发证明。4096/8192历史源文件不匹配，正在当前源码重测。",
+      "latest_diagnostic_scope": "当前源码4096与8192诊断分量均完成135168帧仿真；每分量不同频率及包络目标/速度，FFT分别验证4096和8192谱峰，最大计算周期518。该驱动按计算完成连续启动，固定50MHz/48kHz节拍版本正在补测。不替代实板或完整乐队性能。",
+      "latest_fixed_cadence_diagnostic_scope": "当前源码4096/8192分量，在50MHz时钟与48kHz固定节拍下，135168样本全部按时输出，最坏520周期延迟，FFT验证全部独立谱峰；输出与连续计算驱动逐字节一致。诊断RTL仿真，不是整乐队/实板/长稳/运行中交互验收。"
+    },
+    {
+      "id": "A12",
+      "requirement": "脱机与反馈",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "当前062a944dcce1 Flash编程校验、JTAG重载后自主96秒曲谱及关闭串口10.062秒继续演奏已验证；不是断电冷启动。整数时钟候选短整机仿真通过3005帧PT8211数据及每路12000串行显示位，非实体屏幕/音质验收。",
+      "evidence": [
+        {
+          "path": "evidence/hardware_offline_autoplay.json",
+          "sha256": "a8b861c0003019e0e031af0a5962fcca096b8396859f1282fea7f693d00037a7",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/stage_offline/result.json",
+          "sha256": "9ac9e00b116284ffd5c10035757452710f09077fb101384292ad20fb01d64d41",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/audio_monitor.json",
+          "sha256": "c373134502fb3b9ada5b65dea44e9264b026a499552d7ce59e1324056f874439",
+          "recorded_status": "passed_numeric_and_gui_only"
+        },
+        {
+          "path": "evidence/visual_stage_chain/result.json",
+          "sha256": "bfc607fbbf1d88a14a6c3b29b773986d68cc0b4957c7b856b26b87199292da50",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/spectrum_stage_chain/result.json",
+          "sha256": "4b8c1b2c2b431959f40326bac34b81ab4a08840ffa9cb5cf5ff3d11793c3a961",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/readiness_history/333e964195af49f2d4896fc962bcfb64d88e4467964b2e3929cececc0459bfb7/result.json",
+          "sha256": "333e964195af49f2d4896fc962bcfb64d88e4467964b2e3929cececc0459bfb7",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pcm_spectrum/synthesis/result.json",
+          "sha256": "41caabbd69bda4c86053c9b101cc883f04a30632b312bb4dba2e73e2fae3771f",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/spectrum_snapshot_before_domain_reset/result.json",
+          "sha256": "941af02e85555d71812de7906b19203462d8dd7a7f846e7d5566b896c72dc97f",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/readiness_history/bd139ceb706e3328116e01be87d04471d2ecdd49b41a4f94dc716c909a6a4725/result.json",
+          "sha256": "bd139ceb706e3328116e01be87d04471d2ecdd49b41a4f94dc716c909a6a4725",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/buffered_spectrum/synthesis/result.json",
+          "sha256": "d715956185bf5c6bb7cd6fca6174613bed0ec0f2d26adedea5278a6cd3107478",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/buffered_stage_chain/result.json",
+          "sha256": "8f786840540b44d95913c94c6f63f56269b3a4b25bafc4be42ff5dc814593c2c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_pre_flatrom/history/64b26caab5caf08b.json",
+          "sha256": "64b26caab5caf08b846d632d870a12608a1b22f640e6a572ba0954c3c73a8f8c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_flat32/result.json",
+          "sha256": "8602a073cb218ca502492e73c3c96804f0cb7d336c6d25292b640c6a2895f3b0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_coeff22/result.json",
+          "sha256": "2b07224d93be812279ad16288b30888646becef9254762f3e46914ab31daae03",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/stage_export_calibration/20261026_033837/result.json",
+          "sha256": "fe6e02dfeb335826c0bce3fb1ab441fd60b1c1cc1598d67ed6fc2b61cabc713c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_calram/result.json",
+          "sha256": "cce1941cc51095842027c5ee7392d20688acea7d9168d825c0269e0ecb02702a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain_serialdirty/result.json",
+          "sha256": "a5f66e962df9b3504e1f9eaf78565e1fcc55ab479d561797e83b158a5088a3e5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_chain/result.json",
+          "sha256": "415d47f0d6314cf923fd0f492c2cca8e4db21ff76c363eacb3412392e0b442cf",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/spectrum_bars/20261026_052557/result.json",
+          "sha256": "83e0d746f8845b2c6b430429bf4a808d62cd2156a1c0eae2afd9be5edcce53f4",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/spectrum_bars_synthesis/75b15e98c291/result.json",
+          "sha256": "1398ac249380c53854b808746157ad272bf47f82890be98ac221c91bda1f12a1",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/pcm_spectrum_display/20261026_053046/result.json",
+          "sha256": "c53e5ea4235724de1aede0f78208274307540ac9718b798b857f9b8a0cb2ffc8",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pcm_spectrum_display_synthesis/82e80361ff07/result.json",
+          "sha256": "06af997806c7bcd91747ad92a9da41e8a99cca50c952bcfd340a00d3d085a6d2",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/pcm_video/20261026_053715/result.json",
+          "sha256": "0f811d1a0371543e3856429ea87cbdf74ca78ec0497c75faa45c5dd782c36960",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pcm_video_synthesis/81d485d5f51a/result.json",
+          "sha256": "181ad367d1d318297ce0a244a0bf0a88e5f573493efaf68f9115dc859648ee46",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/workstation_video_probe/4f90125533b7_9600frames.json",
+          "sha256": "638080c2e4f7c5bf194cd7b6a196c7e8ea61c4be351cbebbc801541b48c6d024",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_video_probe/pcm_prefix_identity.json",
+          "sha256": "f952376082c105ff52e2cf77d0ef802e7f7f91aef870ee7dd7d8bc9ea004b75c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_video_faults/8e4103c50f39/result.json",
+          "sha256": "95c0fbc5ed96f26cc943ae34eb2d498ea1be582ec589897e9730dc34d0569a68",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/dvi_symbols/20261026_061301/result.json",
+          "sha256": "f29d83dda44466acab98791d879ef334186ef5ab04c747ba789fb11f3139ea12",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/gowin_dvi_tx/20261026_061457/result.json",
+          "sha256": "35100b3ce6fd67b6653dd6399d67959073efe96e6d111104b1c68fa6c4a1ff46",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/gowin_dvi_tx_synthesis/09896562a10e/result.json",
+          "sha256": "ee563786d67da836aa93fe7d4814578bee85d3e06a591237e29e1e4e05f52d68",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/35012423bf08/result.json",
+          "sha256": "9385ddcf1b12035e3f5a6e4e8e7b4418a9b39bc21a47e75167e3d781af0f4d1d",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/gowin_video_clock/20261026_062543/result.json",
+          "sha256": "736d7b3287d7bf3adce8fa19d24edaa46c73aabb40c9fe0ca26d7699992c9320",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/gowin_dvi_clocked/20261026_062547/result.json",
+          "sha256": "549473cd025330518f7c5da7d802edd738ae61e0b383b7d60eb8d1e402443559",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/gowin_dvi_output_synthesis/80ad13faa904/result.json",
+          "sha256": "8e54838ccc389b38c3998decdb14173f8799bde26a34804e1586ffc439b96125",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/readiness_history/3a8c54bf19ed5dc7342213202d9ce844cf52e41f55333c45af34239e25fdefec/result.json",
+          "sha256": "3a8c54bf19ed5dc7342213202d9ce844cf52e41f55333c45af34239e25fdefec",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/readiness_history/a7dd2ac86996a1c92b44c73f469634b20722a82fc61f6075aa837229298a3bfb/result.json",
+          "sha256": "a7dd2ac86996a1c92b44c73f469634b20722a82fc61f6075aa837229298a3bfb",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/combined_workstation_timing/6ac176bde1a3/result.json",
+          "sha256": "7b2d775d94b01b0c4bda9526655b81fdce8cfc6de6a1523a6ecc97c6fbfad1ab",
+          "recorded_status": "failed"
+        },
+        {
+          "path": "evidence/workstation_dvi/20261026_063214/result.json",
+          "sha256": "bbd9c316039667e6abd027d0a9fc5806fbb1cf15728d6c6cf9fa1d8651458884",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/spectrum_bars/20261026_064439/result.json",
+          "sha256": "69b59619646aab1cf4bb70807f069e6d96e12b0a496666ec108d749000488986",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pcm_spectrum_display/20261026_064519/result.json",
+          "sha256": "88de9d5a7300c2f6ea9cec74a8b2d316af0bbf3d2b27e0a938277a0f817fdcdc",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pcm_video/20261026_064603/result.json",
+          "sha256": "9cebeaf3b12b5cc2b9ef94c26ade84add28a7b28b4532a4446e4daf2273a1a91",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/spectrum_bars_synthesis/compact_level_comparison.json",
+          "sha256": "0d7c844553a5897d8e248fc1c49f63e0d9c493e787bab64ffe59aa595ffc0588",
+          "recorded_status": "synthesis_resource_comparison_only"
+        },
+        {
+          "path": "evidence/workstation_dvi/20261026_064831/result.json",
+          "sha256": "df5b65f9db96045efe6e3b08e7d57f1f6ad6a5b66dd8e7c5d419d53a0f872a7a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/dvi_output_timing/e46eac9479a7/result.json",
+          "sha256": "3e2c523ca41d66004423ff227cac82b86da92bcdf24e3443bece263822b022dc",
+          "recorded_status": "passed_internal_timing_only"
+        },
+        {
+          "path": "evidence/workstation_dvi/20261026_070747/result.json",
+          "sha256": "5bb768ab69da2a748bb9be91947a82d14f9f36835d6ffa314961505960cbb7ab",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_dvi/20261026_073747/result.json",
+          "sha256": "0f60d0d0d3b5d6df59238f77b8e5fcd52d3d72c5a2de0ee76fafbc80c44bf315",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/dvi_output_timing/84a5d66df9f9/result.json",
+          "sha256": "f98658f848beb14c5a7c2a2f6f5c77542e88bc4b7c6c2263917642f4d4daaaf9",
+          "recorded_status": "passed_internal_timing_only"
+        },
+        {
+          "path": "evidence/workstation_dvi_load/20261026_090437/result.json",
+          "sha256": "6426dea736f2489d6c668f354c30679cdde5cbe8d4f51398018bb497062277e2",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_pt8211_dvi/20261026_104538/result.json",
+          "sha256": "b68ff1e3f9866ac07c1593e2a3901a8cbf0ea5ce5a957d711cec1804c4c219c5",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_synthesis/0cd05e391715/result.json",
+          "sha256": "31ed64cbc7b67be86edc1b39492f4128bf8fc2b82c28be5fffc7ff11bb2ea457",
+          "recorded_status": "passed_synthesis_only"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_pt8211_dvi_load/20261026_111521/result.json",
+          "sha256": "97a8370a035f7c35c1e9cee5eb5b1e435cf9c6e45780ead3d9ce08ba5190fbcd",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_autoplay_pt8211_dvi_20261026.json",
+          "sha256": "de6f7c0f8f9706b345c0261349eb48cbb1708492e86c4ecce71e59b63a8589f0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_125833/result.json",
+          "sha256": "18e6aded89b80dc9e95cc57f8f0f5f6135e67c2769728cf62cce783397b3bd2c",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_pt8211_dvi_20261026.json",
+          "sha256": "487bbcabd56ed8d62b458e07e86fa995b13d52c7819e93e79f913ed625773da3",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_144847/result.json",
+          "sha256": "4c80cf7ab7f039781676214e32afe4580b96a3a4490b5fd147c3899f1b54522e",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_pt8211_controls_20261026.json",
+          "sha256": "175fdac2a2c7b33e502ab7dce32af789244ea4315fd9fa926b5567caa3d7e0ed",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/post_flash_controls_cleanup_20261026.json",
+          "sha256": "63b3f1fb46fdc8fc6b833c3637c20ddaadf3b0a42ea13b39c8c1a3e8daf02949",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_163031/result.json",
+          "sha256": "0d7ef79664944ce58e2284861102e265508a22e0935ef3377ef014a44887795f",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_central256_20261026.json",
+          "sha256": "cfddddb784ebd08aa85fa3bc7ed7a7d8581e66ccde82a49a8a55b8595310240a",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/shared_export/20261026_165008/result.json",
+          "sha256": "d9f7c215f9730ee4f061340f706084c8a8ba668714168b132076bd717ce16cdc",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "Flash编程校验及JTAG重新加载后自主演出已通过；仍缺物理断电上电、实屏/灯光及要求的其他独立反馈实物验证。",
+      "latest_serialram_scope": "当前序号RAM优化版51.54074ms整机RTL回归通过：双ADC席、脚踏、UART接管与释放、I2S4660字、HannFFT2048点、显示暂停及断钟/总停音；不证明长时间、时序或实际外设。",
+      "latest_serialregs_scope": "当前77f6显式序号寄存器/已发送序号RAM版51.54074ms整机RTL通过；I2S4660字、2048FFT、双席脚踏、接管释放、断钟和总停音。源码核对一致，不覆盖时序、长期或实物。",
+      "latest_pixel_scope": "currentcompact5bit柱图PCM/FFT/raster独立验证通过；旧PLL整机链路12000bit/lane通过，但PLL被PnR拒绝，不可部署。",
+      "latest_video_scope": "当前domains联调、综合、小模块时序及短时256槽DVI并发通过。整机默认布线be1失败216条未布通；route1变体b8fac在3600秒驱动时限终止，无最终时序。相同网表/约束的place1、route0变体9d0b运行中，时限7200秒；仍无完整整机时序或实物验收。",
+      "latest_dvi_load_scope": "当前domains压力导出2510帧保持256槽（52.29ms），最坏966周期、音频/频谱错误0；三视频通道各12000位一致，显示ready失效时5帧音频继续。低总增益、关闭协作留白，无麦克风；非整曲/长期/时序/实物验收。",
+      "latest_onboard_scope": "当前优化共享版Flash编程校验及JTAG重载自主96秒通过，期间关闭串口约10秒仍推进；不是物理断电冷启动。共享作品导出已实现预设初始化并通过局部RTL检查；新导出整机链路仍在运行。",
+      "latest_autoplay_scope": "新固件SRAM配置后无需播放指令自行演出；关闭串口10.062秒仍推进487156采样点，最终4608000正常结束，CRC0。非Flash或断电冷启动验收。",
+      "latest_flash_scope": "59c963cc2112:编程校验及JTAG重新加载自主演出96秒通过；未执行物理断电冷启动。",
+      "latest_selected_release_scope": "当前优化共享版Flash编程校验及JTAG重载自主96秒通过，期间关闭串口约10秒仍推进；不是物理断电冷启动。共享作品导出已实现预设初始化并通过局部RTL检查；新导出整机链路仍在运行。",
+      "historical_verified_scope": "基础版SRAM配置后脱机演出通过；融合源码导出冷启动仿真通过；电脑音频输入波形/频谱/李萨如软件已实现并通过数值与GUI测试，真实采集待验收；融合PCM快照512点逐样本及显示时钟停顿仿真通过，尚非HDMI/硬件FFT；实际乐队PCM到Hann/2048FFT的逐频点数字验证及停钟总停音通过，尚无实体HDMI和该版本整机时序；新视频候选复用唯一FFT，实际导出整机0.2秒/9600采样/4帧逻辑RGB通过，启用显示的PCM与无显示同期逐字节一致。独立640x480光栅420000像素槽通过。视频版完整PnR/外部接口仍待验证。；视频候选140ms整机仿真通过：显示停钟20ms期间音频正常，重叠音频断钟3ms时异步清除旧画面/声音，恢复不自动续播；非实体屏幕/电气验证。；DVI视频输出独立编码与厂商串行器逐位验证通过，尚未集成PLL/整机或实际屏幕。RGB整机350124布线工具错误退出，无时序结论。；50MHz输入PLL/CLKDIV到TMDS串行输出厂商模型链路通过，独立综合通过；尚无该链路整机集成/PnR/物理验收。；显示跨域缓存增加分别同步解除复位，原数据完整性单元测试通过；DVI整机导出已实现、联调及综合运行中。LOCAL_CLOCK试验后四控制信号报告仍为PRIMARY，不能宣称该策略生效。；原DVI整机64.195ms联调通过，实际乐队PCM驱动448个彩色像素，三路各12000串行位一致，显示复位不阻塞音频。新5位柱高压缩通过单元/PCM频谱/整帧光栅测试，完整新候选联调仍运行。"
+    },
+    {
+      "id": "A13",
+      "requirement": "稳定性",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "当前062a944dcce1完成60秒共享256槽数字负载，8小时同版长测正在COM12运行；尚无8小时通过结论，不覆盖热、声音或时序脉宽验收。历史其他版本长测仅适用于各自版本。",
+      "evidence": [
+        {
+          "path": "evidence/hardware_band_1h.json",
+          "sha256": "140938fae8bbdeb0d785896016d832cdc34a99635d5e655c9b0a1ff6a9a5b2ea",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/009559499d4c_2882500frames.json",
+          "sha256": "5ca7ca92246e21c6189a086039ea229b90004ba72057e2b350efd3af8a97995b",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/serialregs_load60_metrics.json",
+          "sha256": "d261bfb1499d5b6ecdf3da32e62bde294caed63a0eaa0fd7411ead370edf9138",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_render/bf1017bd575c_4704000frames.json",
+          "sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_dvi_load/20261026_090437/result.json",
+          "sha256": "6426dea736f2489d6c668f354c30679cdde5cbe8d4f51398018bb497062277e2",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/result.json",
+          "sha256": "59fc02ebfdd064d6856eb71d643cf536df472f2377084898991edc0346025c63",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/fixed_pin_audit.json",
+          "sha256": "4b416c36d5321416b5de8dece9bc76849a2cc9b5f1530c2564ca9f5a6fdaf4b5",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/986a1e6784b5/clock_routing_review.json",
+          "sha256": "a0b46f02f17acfd326d1149a7f677e2082e19b677342117e58e649d7adc2e249",
+          "recorded_status": "reviewed_not_margin_or_physical_acceptance"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_20261026.json",
+          "sha256": "0d16c7ff8b4cb57ca2b2a1b0161e0985ad2146e2e7f1017dbb61956b26f4464d",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_dvi_20261026.json",
+          "sha256": "99fee61e7ae69cc9d5aff68886424d0939817f7e2b8469b01493b93de5b48d78",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_pt8211_dvi_load/20261026_111521/result.json",
+          "sha256": "97a8370a035f7c35c1e9cee5eb5b1e435cf9c6e45780ead3d9ce08ba5190fbcd",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026.json",
+          "sha256": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_pt8211_dvi_1h_20261026_metrics.json",
+          "sha256": "2d37fe436fc3b36debcc7903448e903d6bca40b0b73734ce5d7fd30a0bfc1330",
+          "recorded_status": "passed_raw_evidence_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/result.json",
+          "sha256": "350d0d78da8d54a356ceaf3d980c1692c38fa926ffb424646e2fe58eb7529ebd",
+          "recorded_status": "passed_timing_pending_pin_audit"
+        },
+        {
+          "path": "evidence/pt8211_onboard_timing/5150087010ce/fixed_pin_audit.json",
+          "sha256": "57b7c5c4c4db75344be175b3a6061e7a428fa22b3fa392b53dbc768766d59277",
+          "recorded_status": "passed_fixed_pins_and_constraints"
+        },
+        {
+          "path": "evidence/hardware_pt8211_controls_20261026.json",
+          "sha256": "e4d7ae905eadbf5f76afda99a3d43760afc0ce1605497a395f9e59e6fecfbff0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_ensemble_pt8211_controls_20261026.json",
+          "sha256": "2f7f7b0350a39bf152d494ab7bec8c194e83b2c99916b010c40d8bf70af15406",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "最终整机8h/24h连续、热状态、欠载/超期/断线等异常留档",
+      "latest_dvi_load_scope": "当前domains压力导出2510帧保持256槽（52.29ms），最坏966周期、音频/频谱错误0；三视频通道各12000位一致，显示ready失效时5帧音频继续。低总增益、关闭协作留白，无麦克风；非整曲/长期/时序/实物验收。",
+      "latest_onboard_scope": "新59c963cc2112版：固定18管脚/14约束、50MHz时序、60秒256槽、完整96秒曲谱、GUI合成双席通过；实物按键、模拟声音、真实MIDI与屏幕未验收。",
+      "latest_long_load_scope": "历史620164a544d2版本：旧版静音实板一小时256槽＋97秒观察整曲通过，94131份满载状态覆盖3600秒，最坏966周期；3540歌手/DAC状态与99451原始帧复核无错误。不是逐采样捕获或温度/模拟/外设验收。",
+      "historical_verified_scope": "基础版1小时数字压力通过；当前serialregs融合配置满载60秒288万帧保持256槽，966周期、0丢样/欠载/超时，释放/结束通过；无麦克风、频谱读取停顿，非DVI或实物极限证明。；当前serialregs整机98秒全时钟仿真bf1017bd575c通过，4704000帧、丢帧/欠载/期限违例0，尾部100ms数字零，PCM与coeff22版完全相同；不含DVI或实物验收。"
+    },
+    {
+      "id": "A14",
+      "requirement": "冷启动与恢复",
+      "status": "partial_not_final_accepted",
+      "verified_scope": "当前062a944dcce1完成Flash写入校验及JTAG重载自主启动；没有实际断电冷启动证据。历史断钟与恢复仿真仍限定于其源版本；整数时钟候选物理启动未验收。",
+      "evidence": [
+        {
+          "path": "evidence/stage_offline/result.json",
+          "sha256": "9ac9e00b116284ffd5c10035757452710f09077fb101384292ad20fb01d64d41",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/audio_clock_watchdog/result.json",
+          "sha256": "57b463b7b2d8840aebd6ce73bea44e11565b8bc0093213299a502de3929347cc",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/workstation_offline/result.json",
+          "sha256": "75cdaae111c2dbdea1651462d13ab8fa91d06288aac4974b3da3994b38d1f5fd",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/audio_clock_watchdog/synthesis/configuration_init_check.json",
+          "sha256": "dd0859ccb7e4677b7ed8ff18776a4dfe79b516fc59a3001c57e6e6da2b10bb95",
+          "recorded_status": "passed_netlist_initializers"
+        },
+        {
+          "path": "evidence/workstation_video_faults/8e4103c50f39/result.json",
+          "sha256": "95c0fbc5ed96f26cc943ae34eb2d498ea1be582ec589897e9730dc34d0569a68",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/hardware_autoplay_pt8211_dvi_20261026.json",
+          "sha256": "de6f7c0f8f9706b345c0261349eb48cbb1708492e86c4ecce71e59b63a8589f0",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_125833/result.json",
+          "sha256": "18e6aded89b80dc9e95cc57f8f0f5f6135e67c2769728cf62cce783397b3bd2c",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_pt8211_dvi_20261026.json",
+          "sha256": "487bbcabd56ed8d62b458e07e86fa995b13d52c7819e93e79f913ed625773da3",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/flash_program_20261026_144847/result.json",
+          "sha256": "4c80cf7ab7f039781676214e32afe4580b96a3a4490b5fd147c3899f1b54522e",
+          "recorded_status": "flash_verified_reload_returned_pending_uart"
+        },
+        {
+          "path": "evidence/hardware_flash_autoplay_pt8211_controls_20261026.json",
+          "sha256": "175fdac2a2c7b33e502ab7dce32af789244ea4315fd9fa926b5567caa3d7e0ed",
+          "recorded_status": "passed"
+        },
+        {
+          "path": "evidence/post_flash_controls_cleanup_20261026.json",
+          "sha256": "63b3f1fb46fdc8fc6b833c3637c20ddaadf3b0a42ea13b39c8c1a3e8daf02949",
+          "recorded_status": "passed"
+        }
+      ],
+      "remaining": "100次物理断电冷启动、存储恢复、时钟异常回退和无爆音",
+      "latest_autoplay_scope": "新固件SRAM配置后无需播放指令自行演出；关闭串口10.062秒仍推进487156采样点，最终4608000正常结束，CRC0。非Flash或断电冷启动验收。",
+      "latest_flash_scope": "59c963cc2112:编程校验及JTAG重新加载自主演出96秒通过；未执行物理断电冷启动。",
+      "historical_verified_scope": "实际导出顶层无命令启动仿真通过，非物理断电测试；实验I2S顶层断钟清场、稳定恢复后保持停止及显式重启通过数字联合仿真；视频候选140ms整机仿真通过：显示停钟20ms期间音频正常，重叠音频断钟3ms时异步清除旧画面/声音，恢复不自动续播；非实体屏幕/电气验证。"
+    }
+  ],
+  "global_optimization": "功能与最终验收尚未完成，不宣称已完成全局优化",
+  "physical_dependency": "用户授权按效果与便利选择，当前采用已有板载PT8211，不再等待外部DAC与24.576MHz时钟选型；麦克风/ADC/脚踏最后仍未接，实际接线和模拟音频/实屏验收待完成。",
+  "current_candidate_note": "当前板上062a944dcce1存在6条最小脉宽违例。整数分频未修复；像素域复位消除脉宽违例但有3条removal/hold违例，质量布线试验进行中。96秒共享核首次误用无歌手事件的参数测试曲，失败记录保留；正式含96个歌手音符的验收曲已重新启动渲染。最终验收未通过。",
+  "latest_serialregs_98s": {
+    "status": "passed",
+    "scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim",
+    "report_sha256": "34d8f07200890b30f9c47105c18be7601a05beec8ccb382c894008469aa41a6c",
+    "pcm_sha256": "e93f5d87411702cab42f4804359c23791015bdf414e649d1c85b7a872dbc787b",
+    "frames": 4704000,
+    "peak": 6136,
+    "rails": 0,
+    "last_100ms_zero": true,
+    "identical_prior_coeff22_pcm": true,
+    "report": "evidence/workstation_render/bf1017bd575c_4704000frames.json"
+  },
+  "latest_note": "重新区分当前与历史验收范围；所有要求仍为partial_not_final_accepted，未把运行中测试计作通过。",
+  "current_release": "pt8211_dvi_59c963cc2112",
+  "current_release_scope": "passed_digital_only_60s256slots_and96s_song_and_synthetic_GUI_seats; Flash verified and JTAGreload autonomous96s passed; physical buttons/cold-power/analog/display incomplete. Historical one-hour result belongs to620164a544d2.",
+  "latest_release_update": {
+    "release": "pt8211_dvi_062a944dcce1",
+    "scope": "99frozen files,50MHz timing,18fixedpins,single-role256load,96s score,synthetic GUI,Flash verify and reload autoplay. No physical cold cycle,analog orreal peripheral acceptance;older requirement entries retain historical scope",
+    "evidence": [
+      {
+        "path": "evidence/hardware_central256_20261026.json",
+        "sha256": "fb4bb7da622f75959cc58dca973d481230350080d04477c7bf6c80b4ce464b93",
+        "recorded_status": "passed"
+      },
+      {
+        "path": "evidence/hardware_ensemble_central256_20261026.json",
+        "sha256": "1b637c90da7de50b648db585f0264c904c8eac2cbd296b6f8a76f9c27e62c6b5",
+        "recorded_status": "passed"
+      },
+      {
+        "path": "evidence/hardware_flash_autoplay_central256_20261026.json",
+        "sha256": "cfddddb784ebd08aa85fa3bc7ed7a7d8581e66ccde82a49a8a55b8595310240a",
+        "recorded_status": "passed"
+      },
+      {
+        "path": "evidence/post_flash_central256_cleanup_20261026.json",
+        "sha256": "223c6f3a0d654bb5671d9ae26f48ea8bb98771751f9eab67cf149ddf9ab53344",
+        "recorded_status": "passed"
+      }
+    ]
+  },
+  "critical_unresolved_timing": "Current062a944dcce1 and custom export report6negative serial-clock pulse-width paths. Historical setup/hold pass is insufficient;new programming/freeze gates reject until resolved. Digital endurance continues but cannot clear this finding.",
+  "prior_readiness_snapshot": "evidence\\readiness_history\\8b0b3d1c22195fe5d1e9afa524aa89edd306c774de5275a816f3439ebd3b3be9\\FINAL_READINESS.json"
+}

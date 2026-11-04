@@ -1,0 +1,29 @@
+{
+  "status": "reviewed_native_timing_and_fixed_pins_only",
+  "native_paths": 18,
+  "minimum_recovery_ns": 0.67,
+  "minimum_removal_ns": 1.087,
+  "named_routed_stages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "synthesized_stages": 16,
+  "global_clock_report": "clk_d,workstation/pixel_clk,workstation/video_output/serial_clk listed PRIMARY; PRIMARY8/8,LW8/8 occupied",
+  "routing_warning": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "scope": "Actual reported physical paths and18pins reviewed. PR1014 generic routing warning retained; all reported setup/hold/pulse checks pass. No acoustic, jitter, thermal or cold-start acceptance."
+}

@@ -1,0 +1,91 @@
+{
+  "status": "reference_model_only",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "limitations": [
+    "No RTL, synthesis, board timing, audio or transport validation",
+    "Epoch and tombstone storage are unbounded in this reference",
+    "RAM port conflicts and pipeline hazards not modeled"
+  ],
+  "budgets": [
+    {
+      "clock_hz": 50000000,
+      "sample_rate": 48000,
+      "partials": 1024,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 1041,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 320,
+      "margin_cycles": 721,
+      "margin_fraction": 0.6926032660902978,
+      "state_bytes_assuming_32_per_partial": 32768,
+      "fits_arithmetic_only": true
+    },
+    {
+      "clock_hz": 50000000,
+      "sample_rate": 48000,
+      "partials": 4096,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 1041,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 704,
+      "margin_cycles": 337,
+      "margin_fraction": 0.32372718539865514,
+      "state_bytes_assuming_32_per_partial": 131072,
+      "fits_arithmetic_only": true
+    },
+    {
+      "clock_hz": 50000000,
+      "sample_rate": 48000,
+      "partials": 8192,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 1041,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 1216,
+      "margin_cycles": -175,
+      "margin_fraction": -0.16810758885686838,
+      "state_bytes_assuming_32_per_partial": 262144,
+      "fits_arithmetic_only": false
+    },
+    {
+      "clock_hz": 98304000,
+      "sample_rate": 48000,
+      "partials": 1024,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 2048,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 320,
+      "margin_cycles": 1728,
+      "margin_fraction": 0.84375,
+      "state_bytes_assuming_32_per_partial": 32768,
+      "fits_arithmetic_only": true
+    },
+    {
+      "clock_hz": 98304000,
+      "sample_rate": 48000,
+      "partials": 4096,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 2048,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 704,
+      "margin_cycles": 1344,
+      "margin_fraction": 0.65625,
+      "state_bytes_assuming_32_per_partial": 131072,
+      "fits_arithmetic_only": true
+    },
+    {
+      "clock_hz": 98304000,
+      "sample_rate": 48000,
+      "partials": 8192,
+      "lanes": 8,
+      "minimum_cycles_per_sample": 2048,
+      "assumed_overhead_cycles": 192,
+      "estimated_required_cycles": 1216,
+      "margin_cycles": 832,
+      "margin_fraction": 0.40625,
+      "state_bytes_assuming_32_per_partial": 262144,
+      "fits_arithmetic_only": true
+    }
+  ]
+}

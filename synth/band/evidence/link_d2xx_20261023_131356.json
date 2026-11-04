@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "requests": 100,
+  "valid_frames": 1,
+  "bad_crc": 49,
+  "bytes": 1602,
+  "method": "FTDI D2XX identity queries only"
+}

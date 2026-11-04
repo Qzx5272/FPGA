@@ -1,0 +1,17 @@
+{
+  "release": "pt8211_dvi_81232ed690d3",
+  "build_id": 3735635258,
+  "bitstream_sha256": "81232ed690d3586846426ee058e9c449b4d80be0dff48c3740b0fafe9dc6f6ba",
+  "snapshot_files": 98,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "pulse_width_violations": 0,
+  "status": "preflight_passed",
+  "flash_written": false,
+  "previous_flash_backup_available": false,
+  "cold_start_verified": false,
+  "loader_sha256": "259798d0a0464985dab1ed6ed6a121ce0d80b32f16b842ec1fd81cc82ce17e55"
+}

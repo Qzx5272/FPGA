@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/sipeed/TangMega-138KPro-example",
+  "commit": "d3cebf1703f1bcd06dca8a53bf2b660c86a5ec16",
+  "upstream_path": "simple_video_out/svo/src/hdmi/svo_tmds.v",
+  "upstream_sha256": "e3fb0d5d24dbbcf7f3960f31e8f4e308bbaef4939bc922f35b620d16e9cf681b",
+  "local_sha256": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec",
+  "license": "ISC notice retained in encoder; repository root Apache-2.0 notice retained separately",
+  "changes": [
+    "Rename module to avoid namespace collision",
+    "Remove unused svo_defines.vh include"
+  ],
+  "status": "isolated_symbol_and_vendor_serializer_tests_passed_not_fulltop_or_physical",
+  "pin_reference": {
+    "upstream_path": "simple_video_out/svo/src/hdmi.cst",
+    "upstream_sha256": "3e2237fa211903ad3fbbbaab90e7d78e2672eac0d1b59c47e8f077a11890c7ee",
+    "change": "Keep HDMI0 only; rename ports"
+  }
+}

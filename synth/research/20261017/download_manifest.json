@@ -1,0 +1,381 @@
+[
+  {
+    "id": "P01",
+    "url": "https://www.tandfonline.com/doi/abs/10.1076/jnmr.32.4.429.18853",
+    "retrieved_utc": "2026-10-17T12:00:27.456093+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "P02",
+    "url": "https://www.tandfonline.com/doi/abs/10.1076/jnmr.32.4.411.18850",
+    "retrieved_utc": "2026-10-17T12:00:27.458294+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "P03",
+    "url": "https://opera.media.mit.edu/publications/weinberg_cmj2005_interconnected_musical_networks.pdf",
+    "retrieved_utc": "2026-10-17T12:00:27.458294+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "id": "P04",
+    "url": "https://ciencia.ucp.pt/en/publications/displaced-soundscapes-a-survey-of-network-systems-for-music-and-s/",
+    "retrieved_utc": "2026-10-17T12:00:27.459300+00:00",
+    "resolved_url": "https://ciencia.ucp.pt/en/publications/displaced-soundscapes-a-survey-of-network-systems-for-music-and-s/",
+    "bytes": 51601,
+    "sha256": "fb24a735622f5a1b575129023517c1ba2189ace3a08de77705b2738544ba9eac",
+    "file": "cache\\P04.html",
+    "text_characters": 6290,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P05",
+    "url": "https://eamusic.dartmouth.edu/~larry/algoCompClass/readings/george%20lewis/lewis.too_many_notes.pdf",
+    "retrieved_utc": "2026-10-17T12:00:27.459300+00:00",
+    "resolved_url": "https://eamusic.dartmouth.edu/~larry/algoCompClass/readings/george%20lewis/lewis.too_many_notes.pdf",
+    "bytes": 243216,
+    "sha256": "9668aa13375c5de1b750c2fb1a04a7c438e2c03d7df9be24a76318bb745acfa4",
+    "file": "cache\\P05.pdf",
+    "pages": 8,
+    "text_characters": 43293,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P06",
+    "url": "https://cnmat.berkeley.edu/sites/default/files/attachments/2002_problems-and-prospects-for-intimate-musical-control-of-computers.pdf",
+    "retrieved_utc": "2026-10-17T12:00:27.459300+00:00",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "P07",
+    "url": "https://www.johnnyvenom.com/publication/sullivan-2022/sullivan-2022.pdf",
+    "retrieved_utc": "2026-10-17T12:00:28.570843+00:00",
+    "resolved_url": "https://www.johnnyvenom.com/publication/sullivan-2022/sullivan-2022.pdf",
+    "bytes": 1408480,
+    "sha256": "dc3f9079a95823102ec6983cc49c9e7bbf41f794613795515f475a759345b9e7",
+    "file": "cache\\P07.pdf",
+    "pages": 19,
+    "text_characters": 81795,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P08",
+    "url": "https://www.idmil.org/publication/from-fiction-to-function-imagining-new-instruments-through-design-workshops/",
+    "retrieved_utc": "2026-10-17T12:00:28.781289+00:00",
+    "resolved_url": "https://www.idmil.org/publication/from-fiction-to-function-imagining-new-instruments-through-design-workshops/",
+    "bytes": 38961,
+    "sha256": "7f57a544c138c4c67109d5de7461d7c94cf9a32506dfbe5aa1d52ad1b6919042",
+    "file": "cache\\P08.html",
+    "text_characters": 1973,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P09",
+    "url": "https://www.fon.hum.uva.nl/david/ma_ssp/doc/Klatt-1980-JAS000971.pdf",
+    "retrieved_utc": "2026-10-17T12:00:28.824560+00:00",
+    "resolved_url": "https://www.fon.hum.uva.nl/david/ma_ssp/doc/Klatt-1980-JAS000971.pdf",
+    "bytes": 2119072,
+    "sha256": "ffb8fd1080dc7ecb9b16a9d3dfd10082241cfb918e4df074fdee715eb3351c27",
+    "file": "cache\\P09.pdf",
+    "pages": 25,
+    "text_characters": 109940,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P10",
+    "url": "https://www.fon.hum.uva.nl/david/ma_ssp/doc/Klatt-1990-JAS000820.pdf",
+    "retrieved_utc": "2026-10-17T12:00:29.030373+00:00",
+    "resolved_url": "https://www.fon.hum.uva.nl/david/ma_ssp/doc/Klatt-1990-JAS000820.pdf",
+    "bytes": 3791248,
+    "sha256": "6a4362748ae49bce15984c3e1f35241904305a839ddb7743679b95cd8db4442e",
+    "file": "cache\\P10.pdf",
+    "pages": 38,
+    "text_characters": 201531,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P11",
+    "url": "https://arxiv.org/pdf/2108.02776",
+    "retrieved_utc": "2026-10-17T12:00:29.403491+00:00",
+    "resolved_url": "https://arxiv.org/pdf/2108.02776",
+    "bytes": 1746539,
+    "sha256": "60f4d4f794d5627d760c36e899fb9339c1f315ea52aaef1a22eacca71d932a8d",
+    "file": "cache\\P11.pdf",
+    "pages": 14,
+    "text_characters": 75954,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P12",
+    "url": "https://web.uvic.ca/~aschloss/course_mat/MU307/MUS307_MATERIALS/Chowning_FM.pdf",
+    "retrieved_utc": "2026-10-17T12:00:31.416501+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "id": "P13",
+    "url": "https://citeseerx.ist.psu.edu/document?doi=1df6f2bf31d82a334c98e94464e490d1984dcbf8&repid=rep1&type=pdf",
+    "retrieved_utc": "2026-10-17T12:00:32.372540+00:00",
+    "status": "failed",
+    "error": "HTTP Error 404: NOT FOUND"
+  },
+  {
+    "id": "P14",
+    "url": "https://research.aalto.fi/en/publications/plucked-string-models-from-the-karplus-strong-algorithm-to-digita/",
+    "retrieved_utc": "2026-10-17T12:00:32.822856+00:00",
+    "resolved_url": "https://research.aalto.fi/en/publications/plucked-string-models-from-the-karplus-strong-algorithm-to-digita/",
+    "bytes": 41335,
+    "sha256": "9cbe4599374298f58a74ff4deb6866a84bea6a149e7a57b2a1d6c5bf72e296c0",
+    "file": "cache\\P14.html",
+    "text_characters": 4437,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P15",
+    "url": "https://www.upf.edu/web/mtg/sms-tools",
+    "retrieved_utc": "2026-10-17T12:00:35.051108+00:00",
+    "resolved_url": "https://www.upf.edu/web/mtg/sms-tools",
+    "bytes": 216229,
+    "sha256": "3cdfe8dbec4494752bc070bf977e1009eed88f78b5a8d5a3e7c7ac18751a96dc",
+    "file": "cache\\P15.html",
+    "text_characters": 56053,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P16",
+    "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/97ed04a8-cb88-461f-b1a3-e72da5129256/content",
+    "retrieved_utc": "2026-10-17T12:00:36.977025+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "id": "P17",
+    "url": "https://mac.kaist.ac.kr/pubs/ValimakiPeknenNam-jasa2012.pdf",
+    "retrieved_utc": "2026-10-17T12:00:41.196703+00:00",
+    "resolved_url": "https://mac.kaist.ac.kr/pubs/ValimakiPeknenNam-jasa2012.pdf",
+    "bytes": 862405,
+    "sha256": "a7b4d96daa8fbd53071549040cc59d0665dcd21cd3cb70d9581b9fd60ad03f13",
+    "file": "cache\\P17.pdf",
+    "pages": 13,
+    "text_characters": 72875,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P18",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/cogs.70040",
+    "retrieved_utc": "2026-10-17T12:00:42.107189+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "P19",
+    "url": "https://www.idmil.org/publication/user-experience-with-digital-musical-instruments-a-transferable-method-for-longitudinal-evaluation/",
+    "retrieved_utc": "2026-10-17T12:00:43.520622+00:00",
+    "resolved_url": "https://www.idmil.org/publication/user-experience-with-digital-musical-instruments-a-transferable-method-for-longitudinal-evaluation/",
+    "bytes": 39512,
+    "sha256": "66650350616d158b965dd9f4a5518395d8853470eafa2cafecd5c29f9b5bfc19",
+    "file": "cache\\P19.html",
+    "text_characters": 2589,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P20",
+    "url": "https://link.springer.com/article/10.1186/s13636-024-00358-2",
+    "retrieved_utc": "2026-10-17T12:00:45.599091+00:00",
+    "resolved_url": "https://link.springer.com/article/10.1186/s13636-024-00358-2?error=cookies_not_supported&code=de0d29e2-8fda-4bd1-8e72-18a5afa31514",
+    "bytes": 392892,
+    "sha256": "a3deb59c503d66439e9b3309a7cfc561b4a839a0a03356c5cea1b09b864b420f",
+    "file": "cache\\P20.html",
+    "text_characters": 56463,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P21",
+    "url": "https://www.nime.org/proceedings/2020/nime2020_paper86.pdf",
+    "retrieved_utc": "2026-10-17T12:00:46.046686+00:00",
+    "resolved_url": "https://nime.org/proceedings/2020/nime2020_paper86.pdf",
+    "bytes": 564464,
+    "sha256": "f9421216a7aa450f1af2c2ff30a85d39f483b6ded1877faf3273cc27278c511e",
+    "file": "cache\\P21.pdf",
+    "pages": 6,
+    "text_characters": 36775,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "P22",
+    "url": "https://arxiv.org/pdf/2001.04643",
+    "retrieved_utc": "2026-10-17T12:00:47.835753+00:00",
+    "resolved_url": "https://arxiv.org/pdf/2001.04643",
+    "bytes": 7442361,
+    "sha256": "41aa87d9710abd0c66837502684d5a5f58e0cb1e34a62eb2d14e25944dbb0856",
+    "file": "cache\\P22.pdf",
+    "pages": 19,
+    "text_characters": 54951,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T01",
+    "url": "https://patents.google.com/patent/US4018121A/en",
+    "retrieved_utc": "2026-10-17T12:00:54.802164+00:00",
+    "resolved_url": "https://patents.google.com/patent/US4018121A/en",
+    "bytes": 638633,
+    "sha256": "f22e01f217ae79754f3a15fd7a40e9017f9b014d97a3bd456dd7b531d4154c6d",
+    "file": "cache\\T01.html",
+    "text_characters": 183757,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T02",
+    "url": "https://patents.google.com/patent/US4984276A/en",
+    "retrieved_utc": "2026-10-17T12:00:55.897911+00:00",
+    "resolved_url": "https://patents.google.com/patent/US4984276A/en",
+    "bytes": 518423,
+    "sha256": "0f770c3208a4bf2d6d8d4c77ae653dd4d43615a07185c6d1f4d70f18726efab0",
+    "file": "cache\\T02.html",
+    "text_characters": 158161,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T03",
+    "url": "https://patents.google.com/patent/US6304846B1/en",
+    "retrieved_utc": "2026-10-17T12:01:02.909661+00:00",
+    "resolved_url": "https://patents.google.com/patent/US6304846B1/en",
+    "bytes": 600001,
+    "sha256": "17f4e757d5ba2884ccc6c9e2f2a09302a101bd2e7c34aac3ca7e0e8e64695a93",
+    "file": "cache\\T03.html",
+    "text_characters": 164361,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T04",
+    "url": "https://patents.google.com/patent/US10496208B2/en",
+    "retrieved_utc": "2026-10-17T12:01:03.397856+00:00",
+    "resolved_url": "https://patents.google.com/patent/US10496208B2/en",
+    "bytes": 264565,
+    "sha256": "bfb63a0c089736aab1fbca4d61bc82f1d3df277560b782e45a390b227d55cb02",
+    "file": "cache\\T04.html",
+    "text_characters": 88643,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T05",
+    "url": "https://patents.google.com/patent/US9779709B2/en",
+    "retrieved_utc": "2026-10-17T12:01:03.662124+00:00",
+    "resolved_url": "https://patents.google.com/patent/US9779709B2/en",
+    "bytes": 412122,
+    "sha256": "2144f963d9ead7fcc2adceb2b3d264f840da5a53df0da68a0728cc701fdb6de7",
+    "file": "cache\\T05.html",
+    "text_characters": 118872,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "T06",
+    "url": "https://patents.google.com/patent/EP3745391A1/en",
+    "retrieved_utc": "2026-10-17T12:01:04.469567+00:00",
+    "resolved_url": "https://patents.google.com/patent/EP3745391A1/en",
+    "bytes": 405869,
+    "sha256": "fb112929dbdbe45a3a9ad4b4e9cbb43d76c68da51d9feda6d8eded8416c9f426",
+    "file": "cache\\T06.html",
+    "text_characters": 173009,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B01",
+    "url": "https://www.ableton.com/en/push/tech-specs/",
+    "retrieved_utc": "2026-10-17T12:01:07.855044+00:00",
+    "resolved_url": "https://www.ableton.com/en/push/tech-specs/",
+    "bytes": 107520,
+    "sha256": "6cbe7dbb8e711c0f09c75007e96137e494daaafd381881f51700903aebf3b30d",
+    "file": "cache\\B01.html",
+    "text_characters": 10305,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B02",
+    "url": "https://www.expressivee.com/2-osmose",
+    "retrieved_utc": "2026-10-17T12:01:09.936176+00:00",
+    "resolved_url": "https://www.expressivee.com/2-osmose",
+    "bytes": 389087,
+    "sha256": "92f28d9acbf5cb008d4c6de6691ce17f5ff4b08850e29cd42c93c65f863a711d",
+    "file": "cache\\B02.html",
+    "text_characters": 16951,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B03",
+    "url": "https://www.rogerlinndesign.com/linnstrument",
+    "retrieved_utc": "2026-10-17T12:01:10.691011+00:00",
+    "resolved_url": "https://www.rogerlinndesign.com/linnstrument",
+    "bytes": 47298,
+    "sha256": "ddee68b2e593693e4bee7bc4a263de3b7d2cddb297b56a72329d2a5cc5eb7b0e",
+    "file": "cache\\B03.html",
+    "text_characters": 9952,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B04",
+    "url": "https://synthstrom.com/product/deluge/",
+    "retrieved_utc": "2026-10-17T12:01:10.840207+00:00",
+    "resolved_url": "https://synthstrom.com/product/deluge/",
+    "bytes": 172775,
+    "sha256": "efc5c46e396fc82e40589f32d5443555b212d33420d2bd8fd01ccf047325e872",
+    "file": "cache\\B04.html",
+    "text_characters": 7977,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B05",
+    "url": "https://www.modartt.com/pianoteq",
+    "retrieved_utc": "2026-10-17T12:01:11.293845+00:00",
+    "resolved_url": "https://www.modartt.com/pianoteq_overview?ref=cGFnZT1waWFub3RlcSZleHQ9",
+    "bytes": 57566,
+    "sha256": "5680f7ca4fc91ee87ebb58009cb76996a341aaf95e9f263e5976605a2f7d44ce",
+    "file": "cache\\B05.html",
+    "text_characters": 6625,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B06",
+    "url": "https://dreamtonics.com/synthesizerv/",
+    "retrieved_utc": "2026-10-17T12:01:15.890358+00:00",
+    "resolved_url": "https://dreamtonics.com/synthesizerv/",
+    "bytes": 158866,
+    "sha256": "4c7d8f8a1d6648747b15701979d8386a41c05bf0d4e17584d65bc008d809a7a1",
+    "file": "cache\\B06.html",
+    "text_characters": 14968,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B07",
+    "url": "https://www.ableton.com/en/link/",
+    "retrieved_utc": "2026-10-17T12:01:17.965019+00:00",
+    "resolved_url": "https://www.ableton.com/en/link/",
+    "bytes": 128700,
+    "sha256": "e60e5cb4710310958150df07d8aff67427f442406785661325592c47e61442e1",
+    "file": "cache\\B07.html",
+    "text_characters": 6293,
+    "status": "downloaded_not_automatically_read"
+  },
+  {
+    "id": "B08",
+    "url": "https://www.upf.edu/web/mtg/reactable",
+    "retrieved_utc": "2026-10-17T12:01:18.053989+00:00",
+    "status": "failed",
+    "error": "IncompleteRead(112444 bytes read)"
+  },
+  {
+    "id": "R01",
+    "url": "https://www.gowinsemi.com.cn/university/match2026",
+    "retrieved_utc": "2026-10-17T12:01:19.714048+00:00",
+    "resolved_url": "https://www.gowinsemi.com.cn/university/match2026",
+    "bytes": 90275,
+    "sha256": "ed529add9fa2064411f9aa0499fdccc4b0bc92497646182f39c18476f7e42577",
+    "file": "cache\\R01.html",
+    "text_characters": 5565,
+    "status": "downloaded_not_automatically_read"
+  }
+]

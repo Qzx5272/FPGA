@@ -1,0 +1,499 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.03 (64-bit)"
+//Mon Oct 26 01:07:14 2026
+
+//Source file index table:
+//file0 "\D:/StarclusterBuilds/coefficient_rom_20261026_010712/coefficient_rom.sv"
+`timescale 100 ps/100 ps
+module coefficient_rom (
+  clk,
+  row,
+  column,
+  matrix_word,
+  flat_word
+)
+;
+input clk;
+input [4:0] row;
+input [3:0] column;
+output [31:0] matrix_word;
+output [31:0] flat_word;
+wire clk_d;
+wire n38_2;
+wire n39_2;
+wire n40_2;
+wire n41_2;
+wire n42_2;
+wire n43_2;
+wire n44_2;
+wire n45_3;
+wire n55;
+wire n55_4;
+wire n54;
+wire n54_4;
+wire n53;
+wire n53_4;
+wire n52;
+wire n52_4;
+wire n51;
+wire n51_4;
+wire n50;
+wire n50_4;
+wire n49;
+wire n49_4;
+wire n48;
+wire n48_1_COUT;
+wire [4:0] row_d;
+wire [3:0] column_d;
+wire [31:0] matrix_word_d;
+wire [31:0] flat_word_d;
+wire [23:8] DOUT;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF row_0_ibuf (
+    .O(row_d[0]),
+    .I(row[0]) 
+);
+  IBUF row_1_ibuf (
+    .O(row_d[1]),
+    .I(row[1]) 
+);
+  IBUF row_2_ibuf (
+    .O(row_d[2]),
+    .I(row[2]) 
+);
+  IBUF row_3_ibuf (
+    .O(row_d[3]),
+    .I(row[3]) 
+);
+  IBUF row_4_ibuf (
+    .O(row_d[4]),
+    .I(row[4]) 
+);
+  IBUF column_0_ibuf (
+    .O(column_d[0]),
+    .I(column[0]) 
+);
+  IBUF column_1_ibuf (
+    .O(column_d[1]),
+    .I(column[1]) 
+);
+  IBUF column_2_ibuf (
+    .O(column_d[2]),
+    .I(column[2]) 
+);
+  IBUF column_3_ibuf (
+    .O(column_d[3]),
+    .I(column[3]) 
+);
+  OBUF matrix_word_0_obuf (
+    .O(matrix_word[0]),
+    .I(matrix_word_d[0]) 
+);
+  OBUF matrix_word_1_obuf (
+    .O(matrix_word[1]),
+    .I(matrix_word_d[1]) 
+);
+  OBUF matrix_word_2_obuf (
+    .O(matrix_word[2]),
+    .I(matrix_word_d[2]) 
+);
+  OBUF matrix_word_3_obuf (
+    .O(matrix_word[3]),
+    .I(matrix_word_d[3]) 
+);
+  OBUF matrix_word_4_obuf (
+    .O(matrix_word[4]),
+    .I(matrix_word_d[4]) 
+);
+  OBUF matrix_word_5_obuf (
+    .O(matrix_word[5]),
+    .I(matrix_word_d[5]) 
+);
+  OBUF matrix_word_6_obuf (
+    .O(matrix_word[6]),
+    .I(matrix_word_d[6]) 
+);
+  OBUF matrix_word_7_obuf (
+    .O(matrix_word[7]),
+    .I(matrix_word_d[7]) 
+);
+  OBUF matrix_word_8_obuf (
+    .O(matrix_word[8]),
+    .I(matrix_word_d[8]) 
+);
+  OBUF matrix_word_9_obuf (
+    .O(matrix_word[9]),
+    .I(matrix_word_d[9]) 
+);
+  OBUF matrix_word_10_obuf (
+    .O(matrix_word[10]),
+    .I(matrix_word_d[10]) 
+);
+  OBUF matrix_word_11_obuf (
+    .O(matrix_word[11]),
+    .I(matrix_word_d[11]) 
+);
+  OBUF matrix_word_12_obuf (
+    .O(matrix_word[12]),
+    .I(matrix_word_d[12]) 
+);
+  OBUF matrix_word_13_obuf (
+    .O(matrix_word[13]),
+    .I(matrix_word_d[13]) 
+);
+  OBUF matrix_word_14_obuf (
+    .O(matrix_word[14]),
+    .I(matrix_word_d[14]) 
+);
+  OBUF matrix_word_15_obuf (
+    .O(matrix_word[15]),
+    .I(matrix_word_d[15]) 
+);
+  OBUF matrix_word_16_obuf (
+    .O(matrix_word[16]),
+    .I(matrix_word_d[16]) 
+);
+  OBUF matrix_word_17_obuf (
+    .O(matrix_word[17]),
+    .I(matrix_word_d[17]) 
+);
+  OBUF matrix_word_18_obuf (
+    .O(matrix_word[18]),
+    .I(matrix_word_d[18]) 
+);
+  OBUF matrix_word_19_obuf (
+    .O(matrix_word[19]),
+    .I(matrix_word_d[19]) 
+);
+  OBUF matrix_word_20_obuf (
+    .O(matrix_word[20]),
+    .I(matrix_word_d[20]) 
+);
+  OBUF matrix_word_21_obuf (
+    .O(matrix_word[21]),
+    .I(matrix_word_d[21]) 
+);
+  OBUF matrix_word_22_obuf (
+    .O(matrix_word[22]),
+    .I(matrix_word_d[22]) 
+);
+  OBUF matrix_word_23_obuf (
+    .O(matrix_word[23]),
+    .I(matrix_word_d[23]) 
+);
+  OBUF matrix_word_24_obuf (
+    .O(matrix_word[24]),
+    .I(matrix_word_d[24]) 
+);
+  OBUF matrix_word_25_obuf (
+    .O(matrix_word[25]),
+    .I(matrix_word_d[25]) 
+);
+  OBUF matrix_word_26_obuf (
+    .O(matrix_word[26]),
+    .I(matrix_word_d[26]) 
+);
+  OBUF matrix_word_27_obuf (
+    .O(matrix_word[27]),
+    .I(matrix_word_d[27]) 
+);
+  OBUF matrix_word_28_obuf (
+    .O(matrix_word[28]),
+    .I(matrix_word_d[28]) 
+);
+  OBUF matrix_word_29_obuf (
+    .O(matrix_word[29]),
+    .I(matrix_word_d[29]) 
+);
+  OBUF matrix_word_30_obuf (
+    .O(matrix_word[30]),
+    .I(matrix_word_d[30]) 
+);
+  OBUF matrix_word_31_obuf (
+    .O(matrix_word[31]),
+    .I(matrix_word_d[31]) 
+);
+  OBUF flat_word_0_obuf (
+    .O(flat_word[0]),
+    .I(flat_word_d[0]) 
+);
+  OBUF flat_word_1_obuf (
+    .O(flat_word[1]),
+    .I(flat_word_d[1]) 
+);
+  OBUF flat_word_2_obuf (
+    .O(flat_word[2]),
+    .I(flat_word_d[2]) 
+);
+  OBUF flat_word_3_obuf (
+    .O(flat_word[3]),
+    .I(flat_word_d[3]) 
+);
+  OBUF flat_word_4_obuf (
+    .O(flat_word[4]),
+    .I(flat_word_d[4]) 
+);
+  OBUF flat_word_5_obuf (
+    .O(flat_word[5]),
+    .I(flat_word_d[5]) 
+);
+  OBUF flat_word_6_obuf (
+    .O(flat_word[6]),
+    .I(flat_word_d[6]) 
+);
+  OBUF flat_word_7_obuf (
+    .O(flat_word[7]),
+    .I(flat_word_d[7]) 
+);
+  OBUF flat_word_8_obuf (
+    .O(flat_word[8]),
+    .I(flat_word_d[8]) 
+);
+  OBUF flat_word_9_obuf (
+    .O(flat_word[9]),
+    .I(flat_word_d[9]) 
+);
+  OBUF flat_word_10_obuf (
+    .O(flat_word[10]),
+    .I(flat_word_d[10]) 
+);
+  OBUF flat_word_11_obuf (
+    .O(flat_word[11]),
+    .I(flat_word_d[11]) 
+);
+  OBUF flat_word_12_obuf (
+    .O(flat_word[12]),
+    .I(flat_word_d[12]) 
+);
+  OBUF flat_word_13_obuf (
+    .O(flat_word[13]),
+    .I(flat_word_d[13]) 
+);
+  OBUF flat_word_14_obuf (
+    .O(flat_word[14]),
+    .I(flat_word_d[14]) 
+);
+  OBUF flat_word_15_obuf (
+    .O(flat_word[15]),
+    .I(flat_word_d[15]) 
+);
+  OBUF flat_word_16_obuf (
+    .O(flat_word[16]),
+    .I(flat_word_d[16]) 
+);
+  OBUF flat_word_17_obuf (
+    .O(flat_word[17]),
+    .I(flat_word_d[17]) 
+);
+  OBUF flat_word_18_obuf (
+    .O(flat_word[18]),
+    .I(flat_word_d[18]) 
+);
+  OBUF flat_word_19_obuf (
+    .O(flat_word[19]),
+    .I(flat_word_d[19]) 
+);
+  OBUF flat_word_20_obuf (
+    .O(flat_word[20]),
+    .I(flat_word_d[20]) 
+);
+  OBUF flat_word_21_obuf (
+    .O(flat_word[21]),
+    .I(flat_word_d[21]) 
+);
+  OBUF flat_word_22_obuf (
+    .O(flat_word[22]),
+    .I(flat_word_d[22]) 
+);
+  OBUF flat_word_23_obuf (
+    .O(flat_word[23]),
+    .I(flat_word_d[23]) 
+);
+  OBUF flat_word_24_obuf (
+    .O(flat_word[24]),
+    .I(flat_word_d[24]) 
+);
+  OBUF flat_word_25_obuf (
+    .O(flat_word[25]),
+    .I(flat_word_d[25]) 
+);
+  OBUF flat_word_26_obuf (
+    .O(flat_word[26]),
+    .I(flat_word_d[26]) 
+);
+  OBUF flat_word_27_obuf (
+    .O(flat_word[27]),
+    .I(flat_word_d[27]) 
+);
+  OBUF flat_word_28_obuf (
+    .O(flat_word[28]),
+    .I(flat_word_d[28]) 
+);
+  OBUF flat_word_29_obuf (
+    .O(flat_word[29]),
+    .I(flat_word_d[29]) 
+);
+  OBUF flat_word_30_obuf (
+    .O(flat_word[30]),
+    .I(flat_word_d[30]) 
+);
+  OBUF flat_word_31_obuf (
+    .O(flat_word[31]),
+    .I(flat_word_d[31]) 
+);
+  pROM matrix_matrix_0_0_s (
+    .DO(matrix_word_d[31:0]),
+    .CLK(clk_d),
+    .CE(VCC),
+    .OCE(GND),
+    .RESET(GND),
+    .AD({row_d[4:0],column_d[3:0],GND,VCC,VCC,VCC,VCC}) 
+);
+defparam matrix_matrix_0_0_s.BIT_WIDTH=32;
+defparam matrix_matrix_0_0_s.READ_MODE=1'b0;
+defparam matrix_matrix_0_0_s.RESET_MODE="SYNC";
+defparam matrix_matrix_0_0_s.INIT_RAM_00=256'h00003FFFFEC80013640000C003FE19402C9FFF801F9000003FFFFC0000136400;
+defparam matrix_matrix_0_0_s.INIT_RAM_01=256'h03FD69800001BF802B9C00303FFFFE59FC1A6400000003FE7980001FFF80192C;
+defparam matrix_matrix_0_0_s.INIT_RAM_02=256'h0000000000000000000003FFEC4000023EC022A8003FDFFFFE59FFFA64000000;
+  pROM flat_flat_0_0_s (
+    .DO(flat_word_d[31:0]),
+    .CLK(clk_d),
+    .CE(VCC),
+    .OCE(GND),
+    .RESET(GND),
+    .AD({GND,n48,n49,n50,n51,n52,n53,n54,n55,GND,VCC,VCC,VCC,VCC}) 
+);
+defparam flat_flat_0_0_s.BIT_WIDTH=32;
+defparam flat_flat_0_0_s.READ_MODE=1'b0;
+defparam flat_flat_0_0_s.RESET_MODE="SYNC";
+defparam flat_flat_0_0_s.INIT_RAM_00=256'hFFFFFB2700000000000004D9000FF865FFE007E7FFFFFB2700000000000004D9;
+defparam flat_flat_0_0_s.INIT_RAM_01=256'h00000699000FF5A6FFE00AE7FFFFF9670000000000000699000FF9E6FFE0064B;
+defparam flat_flat_0_0_s.INIT_RAM_02=256'hFFE00F1DFFFFF70500000000000008FB000FF7B1FFE008AAFFFFF96700000000;
+defparam flat_flat_0_0_s.INIT_RAM_03=256'h0000000000000C3A000FF4B0FFE00BF8FFFFF70500000000000008FB000FF1E8;
+defparam flat_flat_0_0_s.INIT_RAM_04=256'h000FF09AFFE0109EFFFFF3C60000000000000C3A000FECD2FFE01513FFFFF3C6;
+defparam flat_flat_0_0_s.INIT_RAM_05=256'hFFFFEF5D00000000000010A3000FE5E7FFE01D9CFFFFEF5D00000000000010A3;
+defparam flat_flat_0_0_s.INIT_RAM_06=256'h000016A2000FDC80FFE02A02FFFFE95E00000000000016A2000FEB0BFFE01738;
+defparam flat_flat_0_0_s.INIT_RAM_07=256'hFFE03C51FFFFE1380000000000001EC8000FE37DFFE020B5FFFFE95E00000000;
+defparam flat_flat_0_0_s.INIT_RAM_08=256'h00000000000029D6000FD937FFE02E8DFFFFE1380000000000001EC8000FCFBB;
+defparam flat_flat_0_0_s.INIT_RAM_09=256'h000FCB45FFE0431BFFFFD62A00000000000029D6000FBE69FFE057E1FFFFD62A;
+defparam flat_flat_0_0_s.INIT_RAM_0A=256'hFFFFC72C00000000000038D4000FA6F2FFE08242FFFFC72C00000000000038D4;
+defparam flat_flat_0_0_s.INIT_RAM_0B=256'h00004D1F000F873AFFE0C4D8FFFFB2E10000000000004D1F000FB858FFE06240;
+defparam flat_flat_0_0_s.INIT_RAM_0C=256'hFFE12FAFFFFF97790000000000006887000F9EB3FFE09273FFFFB2E100000000;
+defparam flat_flat_0_0_s.INIT_RAM_0D=256'h0000000000008D6F000F7BFFFFE0DEB1FFFF97790000000000006887000F5C79;
+defparam flat_flat_0_0_s.INIT_RAM_0E=256'h000F4D1EFFE159D7FFFF72910000000000008D6F000F2315FFE1DE62FFFF7291;
+defparam flat_flat_0_0_s.INIT_RAM_0F=256'hFFFF410E000000000000BEF2000ED686FFE30052FFFF410E000000000000BEF2;
+defparam flat_flat_0_0_s.INIT_RAM_10=256'h00010106000E7151FFE4E5B5FFFEFEFA0000000000010106000F0DE9FFE2246C;
+defparam flat_flat_0_0_s.INIT_RAM_11=256'hFFE811F0FFFEA76000000000000158A0000EB8D6FFE37645FFFEFEFA00000000;
+defparam flat_flat_0_0_s.INIT_RAM_12=256'h000000000001CBC1000E4665FFE5AD81FFFEA76000000000000158A0000DED5F;
+defparam flat_flat_0_0_s.INIT_RAM_13=256'h000DAC0BFFE9620CFFFE343F000000000001CBC1000D4539FFED4D94FFFE343F;
+defparam flat_flat_0_0_s.INIT_RAM_14=256'h0000002C0000005A0000002C000F9E1EFFE062940000002C0000005A0000002C;
+defparam flat_flat_0_0_s.INIT_RAM_15=256'h000000000000000000000000000000000000000000000000000FD72BFFE02987;
+  MULT12X12 n45_s (
+    .DOUT({DOUT[23:8],n38_2,n39_2,n40_2,n41_2,n42_2,n43_2,n44_2,n45_3}),
+    .A({GND,GND,GND,GND,GND,GND,GND,row_d[4:0]}),
+    .B({GND,GND,GND,GND,GND,GND,GND,GND,VCC,GND,VCC,GND}),
+    .CLK({GND,GND}),
+    .CE({VCC,VCC}),
+    .RESET({GND,GND}) 
+);
+defparam n45_s.MULT_RESET_MODE="SYNC";
+defparam n45_s.OREG_CLK="BYPASS";
+defparam n45_s.OREG_CE="CE0";
+defparam n45_s.OREG_RESET="RESET0";
+defparam n45_s.AREG_CLK="BYPASS";
+defparam n45_s.AREG_CE="CE0";
+defparam n45_s.AREG_RESET="RESET0";
+defparam n45_s.BREG_CLK="BYPASS";
+defparam n45_s.BREG_CE="CE0";
+defparam n45_s.BREG_RESET="RESET0";
+defparam n45_s.PREG_CLK="BYPASS";
+defparam n45_s.PREG_CE="CE0";
+defparam n45_s.PREG_RESET="RESET0";
+  ALU n55_s0 (
+    .SUM(n55),
+    .COUT(n55_4),
+    .I0(n45_3),
+    .I1(column_d[0]),
+    .I3(VCC),
+    .CIN(GND) 
+);
+defparam n55_s0.ALU_MODE=0;
+  ALU n54_s0 (
+    .SUM(n54),
+    .COUT(n54_4),
+    .I0(n44_2),
+    .I1(column_d[1]),
+    .I3(VCC),
+    .CIN(n55_4) 
+);
+defparam n54_s0.ALU_MODE=0;
+  ALU n53_s0 (
+    .SUM(n53),
+    .COUT(n53_4),
+    .I0(n43_2),
+    .I1(column_d[2]),
+    .I3(VCC),
+    .CIN(n54_4) 
+);
+defparam n53_s0.ALU_MODE=0;
+  ALU n52_s0 (
+    .SUM(n52),
+    .COUT(n52_4),
+    .I0(n42_2),
+    .I1(column_d[3]),
+    .I3(VCC),
+    .CIN(n53_4) 
+);
+defparam n52_s0.ALU_MODE=0;
+  ALU n51_s0 (
+    .SUM(n51),
+    .COUT(n51_4),
+    .I0(n41_2),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n52_4) 
+);
+defparam n51_s0.ALU_MODE=0;
+  ALU n50_s0 (
+    .SUM(n50),
+    .COUT(n50_4),
+    .I0(n40_2),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n51_4) 
+);
+defparam n50_s0.ALU_MODE=0;
+  ALU n49_s0 (
+    .SUM(n49),
+    .COUT(n49_4),
+    .I0(n39_2),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n50_4) 
+);
+defparam n49_s0.ALU_MODE=0;
+  ALU n48_s0 (
+    .SUM(n48),
+    .COUT(n48_1_COUT),
+    .I0(n38_2),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n49_4) 
+);
+defparam n48_s0.ALU_MODE=0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* coefficient_rom */

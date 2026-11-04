@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "positive": {
+    "status": "passed_synthesized_connectivity_only",
+    "stages": 8,
+    "serializer_reset_endpoints": 3,
+    "source_sha256": "d10232ca3fdb6ed03ee63dc4b74b38b432749d4c576fc686aff1c296e0dbd1c5",
+    "netlist_sha256": "6d0ec4ad8677ea151934e77e98d8f5a4dbd7f2c0c71c8b1e1e688fc073dca5ef",
+    "scope": "8even LUT1 inversions preserved; not proof of physical cell retention or native recovery/removal margins"
+  },
+  "negative": "Serializer reset endpoints changed",
+  "scope": "Gate checked on actual standalone synthesized topology; corrupted serializer endpoint rejected. No physical timing proof."
+}

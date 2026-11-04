@@ -1,0 +1,30 @@
+{
+  "status": "not_release_accepted_missing_native_reset_coverage",
+  "reviewed": "2026-10-26T21:15:21.980462",
+  "reported_setup_hold_pulse": [
+    0,
+    0,
+    0
+  ],
+  "findings": [
+    {
+      "constraint": "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}]",
+      "no_paths_occurrences": 2
+    },
+    {
+      "constraint": "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}]",
+      "no_paths_occurrences": 2
+    },
+    {
+      "constraint": "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}]",
+      "no_paths_occurrences": 2
+    }
+  ],
+  "finding": "All three targeted constraints report no paths in exception sections. Summary zero cannot prove native OSER recovery/removal. Existing release gate remains closed.",
+  "sources": {
+    "D:\\StarclusterBuilds\\pt8211_onboard_pnr_f66680365bc4\\impl\\pnr\\pt8211_onboard_tr_content.html": "bf30f7b869d297bd68f17c98a488c4cf684357e88c60a7f586cb8fb2004a43fe",
+    "D:\\StarclusterBuilds\\pt8211_onboard_pnr_f66680365bc4\\board.sdc": "61c85363147802692bbc8409705a0f0727b90af791317712adefa8fde55fef1c"
+  },
+  "next_action": "Obtain native OSER reset timing on routed design without masking constraints, or redesign reset/clock routing and repeat constrained PnR.",
+  "board_changed": false
+}

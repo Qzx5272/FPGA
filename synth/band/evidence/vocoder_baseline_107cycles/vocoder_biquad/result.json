@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Double-biquad arithmetic/reset only; not full vocoder stability, audio quality or timing",
+  "results": {
+    "upstream": {
+      "returncode": 1,
+      "log": "FATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_biquad\\tb_biquad.sv:33: fixed-point vector 0 got 006d73b3/00edafaa expected 006d73b3/ffeae92d\n       Time: 660000  Scope: tb_biquad\n",
+      "source_sha256": "e78be551147231a54b240e3b9d3cc4fa8957d5ce71bd5351b30c391087b1c266"
+    },
+    "ported": {
+      "returncode": 0,
+      "log": "PASS256 independent signed fixed-point vectors, maxcycles=28, reset outputs\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_biquad\\tb_biquad.sv:40: $finish called at 153700000 (1ps)\n",
+      "source_sha256": "b4b966bbdc302e3c4f49443a5e36fa4a825e7a56787428f1c7bf4f944e58b28e"
+    }
+  },
+  "test_sha256": "43f05f2432e3061ae5102c263fbed4fc2d56cd0c10954ec495a484fff13a2cc6",
+  "vectors_sha256": "74292043832bc32e9f33dcd688928d6e2775e10424806ce584de43e93c4169a0"
+}

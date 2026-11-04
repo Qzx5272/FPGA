@@ -1,0 +1,5 @@
+{
+  "status": "identical_exported_wrapper_except_module_name",
+  "sha256": "fa0850286ae2cc7b4e99321b8bd6e46b760bb3061af38f9525fe6ca638a13492",
+  "scope": "Wiring equivalence to already cold-start-tested exporter wrapper; not new timing acceptance"
+}

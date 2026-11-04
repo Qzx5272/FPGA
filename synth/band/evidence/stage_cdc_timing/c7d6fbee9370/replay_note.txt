@@ -1,0 +1,1 @@
+Explicit -type vg rejected by installed Gowin; extension autodetection verified and used in successor.

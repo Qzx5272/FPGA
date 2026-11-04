@@ -1,0 +1,104 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>星群 · 合奏室</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#ebe6db;color:#292923;font:16px "Microsoft YaHei",sans-serif}main{max-width:1000px;margin:4vh auto;background:#fbf7ee;padding:26px clamp(18px,4vw,50px) 22px;box-shadow:0 14px 50px #4a39251a;border-top:4px solid #9c3526}header,footer,.row,.actions{display:flex;align-items:center;justify-content:space-between;gap:12px}header{border-bottom:1px solid #bbb0a1;padding-bottom:14px}strong,h1,h2,.pad,.title{font-family:Georgia,"SimSun",serif}.star,.red{color:#a43b2b}header strong{font-size:26px;letter-spacing:4px}small,.muted{color:#70675c;font-size:14px}h1{font-size:clamp(36px,6vw,68px);margin:10px 0 4px;letter-spacing:3px}h2{font-size:29px;margin:8px 0 12px}p{line-height:1.6}button{font:inherit;color:inherit;background:transparent;border:1px solid #b4a696;padding:9px 15px;cursor:pointer;border-radius:4px}button:hover{background:#f1e8da}button:focus-visible{outline:3px solid #bc7719}button.primary{background:#a1392a;color:white;border-color:#a1392a}.columns{display:grid;grid-template-columns:1fr 1.1fr;gap:6%;margin:26px 0}.item{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;border:0;border-bottom:1px solid #c5baaa;border-radius:0;padding:14px 10px}.item.active{border-left:3px solid #ac3927;background:#f3e8d9}.title{font-size:23px;font-weight:bold}.label{color:#a03929;letter-spacing:2px;font-size:13px;font-weight:bold}.actions{justify-content:flex-start;flex-wrap:wrap;margin:20px 0}footer{border-top:1px solid #bbaf9c;padding-top:13px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.pad{position:relative;aspect-ratio:1.35;font-size:clamp(20px,3vw,32px);border-radius:12px;background:#f1e7d7;touch-action:none;user-select:none}.pad small{position:absolute;bottom:3px;right:7px;font:10px Arial}.pad.target{background:#f4c451;border-color:#8e6922}.pad.held{background:white;box-shadow:inset 0 0 0 2px #b3533b}.cue{font: bold clamp(36px,5vw,64px) Georgia,"SimSun",serif;margin:14px 0;color:#a03929}.track{background:repeating-linear-gradient(0deg,transparent 0 9px,#c7beab 10px,transparent 11px);position:relative;height:65px;overflow:hidden;margin:18px 0}.track:before{content:"";position:absolute;left:17%;top:0;bottom:0;border-left:2px solid #b33727}.dot{position:absolute;top:20px;background:#fbf7ee;border:1px solid #958571;border-radius:50%;width:27px;height:27px;text-align:center;line-height:25px;transform:translateX(-50%)}[hidden]{display:none!important}@media(max-width:620px){main{margin:0}.columns{grid-template-columns:1fr;gap:18px}.grid{max-width:340px}.pad{aspect-ratio:1.7}}
+</style><main><header><strong><span class="star">✦</span> 星群</strong><span>曲目合奏室　<small>电脑演示</small></span></header>
+<section id="library"><p class="label">曲目馆　／　选曲与分谱</p><h1>选一首，一起弹。</h1><p class="muted">先听整曲，再选你想亲手演奏的声部。</p><div class="columns"><div><span class="label">01　选择曲目</span><div id="songs"></div></div><div><span class="label">02　接手声部</span><div id="parts"></div></div></div><div class="actions"><button id="all">试听整曲</button><button id="solo">试听声部</button><button class="primary" id="learn">跟灯练习 →</button><button id="band">进入合奏 →</button></div></section>
+<section id="stage" hidden><div class="row"><p class="label" id="mode"></p><button id="back">← 返回选曲</button></div><h1 id="name"></h1><div id="subtitle"></div><div class="columns"><div class="grid" id="pads"></div><div><div class="label" id="progress"></div><div class="cue" id="cue"></div><h2 id="pitch"></h2><div class="track" id="track"></div><p id="hint"></p></div></div><div class="actions"><button id="again">从头开始</button><button id="swap" class="primary"></button></div></section>
+<footer><small id="status" role="status">就绪</small><small>鼠标点垫 · 键盘按垫面字母</small></footer></main><script>
+const catalog=/* SCORE_LIBRARY */[];
+const labels=['底鼓','军鼓','踩镲','贝斯','电钢琴','簧管','主奏','合唱','拨弦','笛','钟','木琴','弓弦','管风琴','铜管','电子歌手'];
+const waves=['sine','triangle','square','triangle','sine','triangle','sawtooth','sine','triangle','sine','sine','triangle','sawtooth','sine','sawtooth','triangle'];
+const keys='zxcvasdfqwer1234', $=id=>document.getElementById(id), num=n=>String(n).padStart(2,'0');
+const pitch=n=>['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'][n%12]+(Math.floor(n/12)-1);
+let song=0,part=4,mode='library',stageMode='learn',ctx,bus,frame=0,cursor=0,epoch=0,step=0,waiting=false,hits=0,feedback='',lastPad=-1;
+let cues=[],mapping=[],backing=[],held=new Set(),hitSteps=new Set();
+const score=()=>catalog[song], rate=()=>48000*score().bpm/120;
+function stop(){cancelAnimationFrame(frame);if(bus){bus.disconnect();bus=null}held.clear()}
+function sound(){ctx??=new AudioContext();ctx.resume();bus=ctx.createGain();bus.gain.value=.42;const limit=ctx.createDynamicsCompressor();bus.connect(limit);limit.connect(ctx.destination);bus.cleanup=()=>limit.disconnect()}
+function off(){if(bus)bus.cleanup();stop()}
+function play(note,when=ctx.currentTime){
+ const [,v,p,d,vel]=note,osc=ctx.createOscillator(),gain=ctx.createGain(),duration=Math.max(.045,d/rate()),volume=(vel/127)*.32;
+ osc.type=waves[v];osc.frequency.setValueAtTime(440*2**((p-69)/12),when);
+ if(v===0)osc.frequency.exponentialRampToValueAtTime(35,when+Math.min(.1,duration));
+ gain.gain.setValueAtTime(.0001,when);gain.gain.exponentialRampToValueAtTime(volume,when+.009);
+ gain.gain.exponentialRampToValueAtTime(Math.max(.0002,volume*(v<3?.003:.37)),when+duration*.8);
+ gain.gain.exponentialRampToValueAtTime(.0001,when+duration+.028);
+ osc.connect(gain).connect(bus);osc.start(when);osc.stop(when+duration+.03);osc.onended=()=>{osc.disconnect();gain.disconnect()}
+}
+function readPart(){
+ cues=[];for(const note of score().notes.filter(n=>n[1]===part)){
+ let cue=cues.at(-1);if(!cue||cue.t!==note[0]){cue={t:note[0],notes:[]};cues.push(cue)}cue.notes.push(note)}
+ const signature=c=>c.notes.map(n=>n[2]).join(',');
+ mapping=[...new Set(cues.map(signature))].sort((a,b)=>parseInt(a)-parseInt(b)||a.localeCompare(b));
+ if(mapping.length>16)throw Error('声部超出十六垫映射');
+ for(const c of cues)c.pad=mapping.indexOf(signature(c));
+}
+function buttonList(id,items,active,choose){$(id).replaceChildren(...items.map(([key,title,desc])=>{let b=document.createElement('button');b.className='item'+(key===active?' active':'');let a=document.createElement('span'),d=document.createElement('small');a.className='title';a.textContent=title;d.textContent=desc;b.append(a,d);b.onclick=()=>choose(key);return b}))}
+function parts(){return [...new Set(score().notes.map(n=>n[1]))].sort((a,b)=>a-b)}
+function library(){
+ off();mode='library';$('library').hidden=false;$('stage').hidden=true;
+ buttonList('songs',catalog.map((s,i)=>[i,s.title,(i<2?'经典':'项目曲谱')+' · '+Math.round(s.length/(48000*s.bpm/120))+' 秒']),song,i=>{song=i;part=parts().includes(4)?4:parts()[0];library()});
+ buttonList('parts',parts().map(v=>[v,labels[v],'声部 '+num(v)]),part,v=>{part=v;library()});
+ $('all').textContent='试听整曲';$('solo').textContent='试听声部';$('status').textContent='已选《'+score().title+'》 · '+labels[part];readPart()
+}
+function listen(kind){
+ const cancel=mode===kind;library();if(cancel)return;sound();mode=kind;
+ backing=score().notes.filter(n=>kind==='all'||n[1]===part);cursor=0;
+ epoch=ctx.currentTime+.06-(kind==='solo'?backing[0][0]/rate():0);
+ $(kind).textContent='停止试听';$('status').textContent=kind==='solo'?'正在单听 · '+labels[part]:'正在播放完整编排';tick()
+}
+function enter(m){
+ off();sound();mode=stageMode=m;step=hits=cursor=0;feedback='';lastPad=-1;hitSteps.clear();waiting=false;readPart();
+ backing=score().notes.filter(n=>n[1]!==part);const sec=60/score().bpm;
+ epoch=ctx.currentTime+.06+(m==='band'?4*sec:0);
+ if(m==='band')for(let i=0;i<4;i++)play([0,11,i===0?84:72,1800,80],epoch-(4-i)*sec);
+ $('library').hidden=true;$('stage').hidden=false;$('name').textContent=score().title;
+ $('subtitle').textContent=labels[part]+'　／　声部 '+num(part)+'　·　'+score().bpm+' 拍/分';
+ $('mode').textContent=m==='learn'?'跟灯练习　／　等我弹':'正式合奏　／　跟节拍';
+ $('swap').textContent=m==='learn'?'进入合奏 →':'回到跟灯练习';
+ $('hint').textContent=m==='learn'?'到目标音时伴奏会等你。遇到和弦，一垫奏出整组音。':'数四拍后进入。数字到朱红拍线时敲垫，其他声部继续演奏。';tick()
+}
+function tick(){
+ const now=ctx.currentTime,pos=(now-epoch)*rate(),c=cues[step];
+ let horizon=pos+.10*rate();
+ if(mode==='learn'&&c){horizon=Math.min(horizon,c.t-1);if(pos>=c.t)waiting=true}
+ while(cursor<backing.length&&backing[cursor][0]<=horizon){const n=backing[cursor++];play(n,Math.max(now,epoch+n[0]/rate()))}
+ if(mode==='solo'||mode==='all'){if(pos>=score().length){library();return}}
+ else{
+ if(mode==='band')while(step<cues.length&&pos>cues[step].t+windowFor(step))step++;
+ if(step===cues.length&&pos>=score().length){mode='done';paint(pos);$('status').textContent='演奏结束';return}
+ paint(waiting&&c?c.t:pos)
+ }
+ frame=requestAnimationFrame(tick)
+}
+function windowFor(i){const next=cues[i+1];return Math.min(4800,next?(next.t-cues[i].t)/2:4800)}
+function paint(pos){
+ const c=cues[step],done=mode==='done',count=mode==='band'&&pos<0;
+ $('progress').textContent='进度　'+num(Math.min(step+1,cues.length))+' / '+num(cues.length);
+ $('cue').textContent=done?'演奏完成':count?'预备　'+Math.min(4,Math.ceil(-pos/24000)):c?(lastPad===c.pad?'再敲 ':'请敲 ')+num(c.pad+1):'尾奏';
+ $('pitch').textContent=done?(stageMode==='band'?'命中 '+hits+' / '+cues.length:'已完成全部目标'):c?c.notes.map(n=>pitch(n[2])).join(' · '):'';
+ $('status').textContent=feedback||(waiting?'等你敲击黄垫':count?'准备数拍':'演奏中');
+ for(const b of $('pads').children){let p=+b.dataset.pad;b.disabled=p>=mapping.length;b.classList.toggle('target',!done&&p===c?.pad);b.classList.toggle('held',held.has(p))}
+ $('track').innerHTML=cues.slice(Math.max(0,step-1),step+7).map(n=>{let x=17+(n.t-pos)/24000*21;return x<0||x>100?'':'<span class="dot" style="left:'+x+'%">'+num(n.pad+1)+'</span>'}).join('')
+}
+function press(p){
+ if(!['learn','band'].includes(mode)||p>=mapping.length||held.has(p))return;
+ held.add(p);const c=cues[step],now=ctx.currentTime,pos=(now-epoch)*rate();
+ if(mode==='learn'){
+ if(!c||!waiting||p!==c.pad){feedback=waiting?'请跟黄灯敲 '+num(c.pad+1):'请等拍线';return}
+ epoch=now-c.t/rate();waiting=false;lastPad=p;step++;feedback='敲对了';
+ c.notes.forEach(n=>play(n))
+ }else{
+ if(c&&c.pad===p&&Math.abs(c.t-pos)<=windowFor(step)&&!hitSteps.has(step)){hitSteps.add(step);hits++;feedback='命中 '+num(p+1)}else feedback='已演奏 '+num(p+1);
+ (c?.pad===p?c:cues.find(g=>g.pad===p)).notes.forEach(n=>play(n))
+ }
+}
+for(let row=3;row>=0;row--)for(let col=0;col<4;col++){
+ const p=row*4+col,b=document.createElement('button');b.className='pad';b.dataset.pad=p;b.innerHTML=num(p+1)+'<small>'+keys[p].toUpperCase()+'</small>';
+ b.onpointerdown=e=>{b.setPointerCapture(e.pointerId);press(p)};b.onpointerup=b.onpointercancel=()=>held.delete(p);
+ b.onclick=e=>{if(e.detail===0){press(p);held.delete(p)}};$('pads').append(b)
+}
+onkeydown=e=>{let p=keys.indexOf(e.key.toLowerCase());if(p>=0&&!e.repeat&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&['band','learn'].includes(mode)){e.preventDefault();press(p)}};
+onkeyup=e=>held.delete(keys.indexOf(e.key.toLowerCase()));onblur=()=>held.clear();
+$('all').onclick=()=>listen('all');$('solo').onclick=()=>listen('solo');$('learn').onclick=()=>enter('learn');$('band').onclick=()=>enter('band');$('back').onclick=library;$('again').onclick=()=>enter(stageMode);$('swap').onclick=()=>enter(stageMode==='learn'?'band':'learn');library()
+</script></html>

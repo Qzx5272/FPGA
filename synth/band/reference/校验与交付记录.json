@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-22",
+  "artifact": "方案文档，非硬件验收报告",
+  "pdf_pages": 26,
+  "chapters_and_appendices": 22,
+  "pdf_outline_entries": 22,
+  "all_chapters_present": true,
+  "text_outside_page_safe_area": 0,
+  "visual_review": "26页最终渲染联系表已检查；第9、10、19、26页放大复核。无发现的溢出、重叠或缺字。",
+  "tables_rows_excluding_headers": {
+    "官方要求追踪.csv": 10,
+    "验收执行清单.csv": 14,
+    "完整目标追踪.csv": 8,
+    "预算与采购清单.csv": 12
+  },
+  "budget_arithmetic": "2815元，含220元备件/返工/运费；距3000元余185元",
+  "hardware_or_source_modified": false,
+  "board_tests_executed": false,
+  "new_online_research_performed": false,
+  "source_archive": "只读参考既有交接包；没有修改原ZIP或原工程"
+}

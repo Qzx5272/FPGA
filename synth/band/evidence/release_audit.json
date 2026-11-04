@@ -1,0 +1,90 @@
+[
+  {
+    "release": "band_04c9bee79126",
+    "bitstream_sha256": "1288ea34e6247c027de20ef28d68355a3d3ecac2c048e821bfcbd61390d88502",
+    "exact_source_files_verified": 38,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "band_09ebdeb5e533",
+    "bitstream_sha256": "8f27e099eddae60c8d63e082f25443705da207e43e49038ebe2967f0eb7fc100",
+    "exact_source_files_verified": 39,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "passed_digital_only"
+  },
+  {
+    "release": "band_57c8f7b5b006",
+    "bitstream_sha256": "0af2d6ace36152c8d120125f5b48fb40d7b2b3eefaeb3aacbeed2e35d777b9f1",
+    "exact_source_files_verified": 39,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "passed_digital_only"
+  },
+  {
+    "release": "band_6ec52a307565",
+    "bitstream_sha256": "d7c45e9679843ff8c4d35389fc709ce4f686acc3d44b089296b82668ed1ec86f",
+    "exact_source_files_verified": 39,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "failed"
+  },
+  {
+    "release": "diagnostic16384",
+    "bitstream_sha256": "b0157ef4b9ca6e46a30e46bb0fee614f0213fadb3e0927814d8ab69fb92e3538",
+    "exact_source_files_verified": 12,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "diagnostic32768",
+    "bitstream_sha256": "6180dc8946846a070314721bad604fb3466d582470f1a10b2246e4fb6ae44293",
+    "exact_source_files_verified": 12,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "diagnostic37888",
+    "bitstream_sha256": "32afc4016219624b770453bbecc190113870fb1ff988ad571184cb07c7e68f01",
+    "exact_source_files_verified": 12,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "diagnostic43008",
+    "bitstream_sha256": "fd9f8cf8d710411575cc33254492d4f0077c4eaf4d74e22dce7babbd873ea7b0",
+    "exact_source_files_verified": 12,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "diagnostic8192",
+    "bitstream_sha256": "5f78e0c7e6f530ae2086143657ae56e98535c4ffff63ac4f911121ab90ac84ea",
+    "exact_source_files_verified": 11,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  },
+  {
+    "release": "pt8211_dvi_620164a544d2",
+    "bitstream_sha256": "620164a544d2ecafb3e6f7591de5b10698e96292294efeedb9339fabf4490f08",
+    "exact_source_files_verified": 93,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "passed_digital_only"
+  },
+  {
+    "release": "v4a_20261022",
+    "bitstream_sha256": "648483ab655c27657eecf7dd7e362554e40cdfd5e38f241c70f104f7769de034",
+    "exact_source_files_verified": 20,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "board_validation": "not_verified"
+  }
+]

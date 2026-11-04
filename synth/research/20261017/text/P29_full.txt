@@ -1,0 +1,2172 @@
+=== PAGE 1 ===
+Editor's Note: This is the eighty-fifth in a series of review and tutorial papers on various aspects of acoustics. 
+On the oscillations of musical instruments 
+M.E. Mcintyre 
+Department of .4pplied Mathematics and Theoretical Physics, University of Cambridge, Cambridge, 
+CB3 9EW, England 
+R.T. Schumacher 
+Department of Physics, Carnegie-Mellon University, Pittsburgh, Pennsylvania 15213 
+J. Woodhouse 
+Topexpress Ltd., 1 Portugal Place, Cambridge, CB5 8.4F, England. 
+(Received 20 August 1982; accepted for publication 28 July 1983) 
+The time-domain description of musical and other nonlinear oscillators complements the more 
+commonly used frequency-domain description, and is advantageous for some purposes. It is 
+especially advantageous when studying large-amplitude oscillations, for which nonlinearity may 
+be severe. It gives direct insight into the physical reasons for the variation of waveform as playing 
+conditions vary, and into certain phenomena which may seem counter-intuitive from the 
+frequency-domain viewpoint, such as the musically undesirable flattening in the pitch of a bowed 
+string when the bow is pressed too hard onto the string. It is easy to set up efficient time-domain 
+simulations on a small computer, a fact that has been surprisingly little exploited in musical 
+acoustics. The simplest relevant model is described here. It demonstrates some of the basic 
+nonlinear behavior of the clarinet, violin, and flute families with very little programming effort. 
+Remarkably, a single set of model equations has relevance to all three cases, at a certain level of 
+idealization, with appropriate choices of parameter values and of linear and nonlinear 
+characteristics. For the flute family, this simplest model gives waveforms and phase relations 
+closely resembling those observed at resonance in the organ-pipe experiments of Coltman [J. 
+Acoust. Soc. Am. 60, 725-733 (1976)], including the triangular pressure and velocity waveforms. 
+It can be shown (again using a time-domain approach) that the triangular waveform is a universal 
+limiting form, independent of detailed acoustic 'loss mechanisms provided losses are small. 
+PACS numbers: 43.10.Ln, 43.75. - z, 43.40.At 
+INTRODUCTION 
+It is an almost instinctive reaction among physicists to 
+describe vibrating mechanical systems in terms of their nor- 
+mal modes. The method of normal modes is a powerful tool' 
+if the system is linear and time-invariant. But if the system 
+contains nonlinearities, or has properties which vary in time, 
+the case is much less clear. There is then no mathematical 
+tool of comparable power and generality, and different non- 
+linear systems require different methods and often special 
+ingenuity. This is especially so when nonlinearity is strong 
+and not merely a small depirture from linear behavior. 
+Musically useful self-sustained oscillators, exemplified 
+by the woodwind, brass, and bowed-string instruments, are 
+often strongly nonlinear. To a large extent, however, they 
+can all be described in terms of conceptually separate linear 
+and nonlinear mechanisms, according to the well-known 
+scheme in Fig. 1. A nonlinear element, such as a reed, air jet, 
+or bow, excites a linear, energetically passive, multimode 
+element such as a tube or string. The linear element in turn 
+influences the operation of the nonlinear element, as suggest- 
+ed by the upper path in Fig. 1. 
+The nearly periodic nature of self-sustained musical os- 
+cillations makes a frequency-domain description seem at 
+first sight more natural than a time-domain description, de 
+spite the presence of the nonlinear element. The normal 
+modes of the linear element provide an appropriate frame- 
+work for such a description, which has indeed proved very 
+useful both in theory and in practice 2'3 especially when the 
+linear element has complicated properties. For example, 
+good shapes for the bores and tone-hole configurations of 
+wind instruments have been determined or rationalized 2- 
+by considering the relationships between normal-mode fre- 
+quencies which favor strong, stable, \"mode-locked\"regimes 
+of periodic oscillation. Oscillations which are exactly period- 
+ic (consisting of frequencies in an exact harmonic series) may 
+.......... \" [no-linear [ l linear element {.' energy'.,:..>. ] element ... (passive) 
+.. o.rce .' I (' V 
+FIG. 1. Block diagram of a fairly general musical oscillator, idealized as an 
+energetically active nonlinear element coupled to an energetically passive 
+linear element. 
+1325 . J. Acoust. Soc. Am. 74 (5), November 1983 0001-4966/83/111325-21500.80 ¸ 1983 Acoustical Society of America 1325 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 2 ===
+be possible whatever the natural frequencies of the linear 
+normal modes; but it is plausible that periodic oscillations 
+should be easiest to set up if several of the normal modes 
+have natural frequencies \"aligned\" in a harmonic series. 2'? A 
+simple experiment with a violin strikingly illustrates what 
+can happen if this condition is not met. 8 If one of the strings 
+is rendered grossly anharmonic by attaching a small mass at 
+a suitable point--a small paper clip is more than enough--it 
+becomes almost impossible to excite anyof the string's grav- 
+er frequencies by bowing in the usual manner. Wind instru- 
+ments which similarly refuse to respond can be constructed 
+using bore shapes with anharmonically related normal- 
+mode frequencies, as exemplified by the \"tacit horn\" of Ben- 
+ade and Oans. 9 
+The detailed solution ofspecific problems using the fre- 
+quency-domain description is a nontrivial mathematical 
+task, although one that has been pushed to a reasonable con- 
+clusion for moderately small amplitudes of oscillation by 
+Worman ø and Thompson TM for the clarinet and by Fletch- 
+er l: for the flute or flue organ pipe, and extended to all ampli- 
+tudes for the clarinet, organ pipe, and bowed string by Schu- 
+macher a-5 and more recently {for the clarinet} by Stewart 
+and Strong) 6 The computations require considerable so- 
+phistication. On the whole, the results are in accordance 
+with what one expects intuitively, the fundamental frequen- 
+cy of oscillation usually being a \"compromise\" such that 
+several of its harmonics lie close to normal-mode frequencies 
+of the linear element? Any normal mode whose resonant 
+bandwidth straddles the fundamental or a higher harmonic 
+of the oscillation frequency is likely to be important. The 
+relationship between actual oscillation frequencies and those 
+of normal modes of the linear element forms a central theme 
+of the important book by Benade. 2 No one has yet succeeded 
+in expressing the relationship in a mathematically precise yet 
+general way, to our knowledge, although a \"sum rule\" with 
+something of the correct flavor was found in one case.7 As 
+we shall see, however, a completely general expression of the 
+relationship would have to encompass certain cases where 
+the oscillation frequency turns out, counter-intuitively, to be 
+slightly but systematically different from any plausible 
+\"compromise\" frequency? '8'9 
+When it comes to transient behavior, the frequency- 
+domain description still gives useful qualitative insights but 
+the computational difficulties are now quite prohibitive. 
+Transients on time scales of the order of tens of milliseconds 
+are well known to be very important for the subjective char- 
+acter of musical sounds. Indeed almost any parameter of the 
+sound signal which is changing on such a time scale is likely 
+to contribute strongly to, and may even dominate, the sound 
+quality perceived by the ear-brain system? aø-:: The same 
+time scales are involved in the recognition of consonants .in 
+speech. It is no accident that in professional training for mu- 
+sical performance great emphasis is placed on exercises for 
+steadiness of breathing or bowing, and on finesse in the con- 
+trol of such things as attack, articulation, and vibrato. 
+Such considerations alone would make it desirable to 
+develop the theory of musical oscillators in terms of the time- 
+domain as well as the frequency-domain description. In ad- 
+dition, it is natural to use the time-domain description if one 
+is interested in developing a detailed understanding of the 
+mechanical interactions which occur from moment to mo- 
+ment during a single cycle of oscillation, whether in a steady 
+state or not. Among these are the physical events chiefly 
+responsible for strongly nonlinear behavior, such as the clos- 
+ing of a reed, the onset of slipping of a string past the bow, or 
+the \"switching\" of an air jet past the lip of a flue organ pipe. 
+Experience has shown that the time-domain descrip- 
+tion has another very important advantage. Detailed com- 
+putations based on it are very much easier to program and 
+carry out, even for steady, periodic regimes of oscillation. to 
+It is immaterial whether the nonlinearity is weak or strong. 
+In this paper we illustrate the use of the time-domain de- 
+scription by means of the simplest model that is relevant to 
+common types of nonlinear musical oscillators. 
+Despite its simplicity this model is remarkably versa- 
+tile. It can be used to demonstrate essential properties of 
+several physically different types of musical oscillator, show- 
+ing the extent to which they may. or may not be regarded as 
+analogous to one another. Almost any small computer will 
+serve to implement the model. Despite various idealizations 
+the level of realism appears to be commensurate, in some 
+eases, with the accuracy of the best experiments to date, no- 
+tably the .1976 experiments of Coltman :3 on large-amplitude 
+organ-pipe oscillations. Moreover, it is very easy to extend 
+this type of model to make it as realistic as experimental 
+results are likely to demand in the foreseeable future. Some 
+of the possible extensions will be described, especially for the 
+bowed string, which is the case most thoroughly studied so 
+far. 
+It is interesting to note that a special case of the model 
+can be reformulated (Appendix A} as an example of a nonlin- 
+ear difference equation or \"iterated map\" of the type now 
+being intensively studied for its relevance to chaotic behavior 
+in a variety of physical systems? 4-:0 We may expect, of 
+course, that this remark bears more relation to some of the 
+ sounds made by novice instrumentalists, than to those nor- 
+mally made by skilled musicians. 
+I. THE BASIC MODEL 
+To fix ideas, we begin by thinking in terms of the clari- 
+net. The modifications required to model the violin or flute 
+will be described in Sec. II and Appendix ,B. In a real clarinet 
+mouthpiece {Fig. 2), a single reed of springy cane controls the 
+rate of flow of air from the player's mouth into the instru- 
+ment. As a first approximation we may neglect reed dynam- 
+ics and time-dependent flow control effects. This amounts to 
+assuming that, when the player adopts a given embouchure, 
+FIG. 2. Cross section of a clarinet mouthpiece. The dashed line shows the 
+\"lay\" or curved facing that constrains the closing of the reed. 
+1326 J. Acoust. Soc. Am.. Vol. 74, No. 5, November 1963 Mcintyre et al.: Oscillations of musical instruments 1326 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 3 ===
+the volume flow rate f, or volume of air flowing through the 
+gap between reed and mouthpiece per unit time, depends 
+only on the pressure drop across the gap at each instant (Ref. 
+2, Fig. 21.4). Then, for a given pressure p in the player's 
+mouth,f will be a function ofp-q only, where q represents the 
+fluctuating pressure just inside the mouthpiece. For nota- 
+tional convenience we suppress explicit reference to p and 
+write this functional dependence simply as 
+f =F(q). (1) 
+For the clarinet the function F (q) behaves roughly as indi- 
+cated in Fig. 3 by the heavy curve; pressures are measured 
+relative to atmospheric pressure so that q is the usual acous- 
+tic pressure. The flow ratef past the reed is counted positive 
+for flow into the instrument. It increases at first as the pres- 
+sure difference increases from zero {q decreasing from the 
+value p), but then goes to zero again when q reaches some 
+value qc, say, such that the corresponding pressure drop 
+p - qc is large enough to overcome the springiness of the 
+reed and close the gap completely. The precise shape of the 
+F (q) curve will evidently depend on embouchure and on the 
+shape ofthe\"lay\" ofthemouthpiece behind the reed (dashed 
+line in Fig. 2). Realistic F (q) shapes tend to be steeper near 
+q ----p than the shape shown, and this has some significant 
+consequences as we shall see. 
+Of course the fmite mass of a real' clarinet reed, the 
+inertia in the unsteady air flow through the gap, and the fact 
+that the pressure p in the player's mouth cannot really be 
+constant, all introduce departures from the assumed behav- 
+ior especially at high frequencies. 2.3. n.3ø.3 These would be 
+important if we were attempting to describe the finer points 
+of instrument behavior of concern to the musician. Refer- 
+ence 31 shows how to extend the model to take account of 
+the finite mass of the reed, which gives the reed a finite reso- 
+nant frequency which the player can vary between about 2 
+and 3 kHz, and whose importance for the subjectively 
+judged tone quality of the clarinet's upper registers has been 
+demonstrated by Thompson.  The idealization represented 
+by Eq. (1) does, however, capture the basic nonlinearity, 
+which mathematically speaking is a severe one. The function 
+F(q) shown in Fig. 3 is not only nonlinear, but has a discon- 
+tinuity in slope at q = q. Such discontinuities occur in the 
+nonlinear mechanisms of many musical oscillators, and give 
+rise to some of the mathematical difficulties encountered in 
+frequency-domain calculations. 
+By contrast, the rest of the clarinet and its environment 
+behaves as a linear system to good approximation. More- 
+over, we can describe that part of the system using standard 
+ideas about wave propagation, an approach that proves to be 
+computationally advantageous. The key idea is to write the 
+acoustic pressure signal q(t } in the mouthpiece as the sum of 
+two contributions representing incoming and outgoing 
+waves, say q(t ) and qo I t ), where t is time. More precisely, we 
+suppose that there is a section of uniform tube just beyond 
+the mouthpiece, in which the pressure signal takes the one- 
+dimensional form 
+q(x, t} =qo(t-- x/C) + qi(t + x/C), 
+where x measures distance along the uniform section and C 
+is the sound speed. The associated contributions to the 
+acoustic volume flow rate can be written as 
+Z - 'qo (t -- x/C ) and -- Z - 'q,(t + x/C ) (2) 
+for the outgoing and incoming waves, respectively, where Z 
+is a real, positive constant, and the acoustic flow rate is 
+counted positive away from th mouthpiece. Z is the wave 
+impedance or characteristic impedance for the uniform sec- 
+tion of tube, and is equal to C times air density divided by 
+cross-sectional area. 
+The linear properties of the clarinet can now be defined 
+in terms of the incoming wave which results from a given 
+outgoing wave. Suppose, for instance, that an infinitely nar- 
+row pulse in the form of a Dirac delta function  (t) is sent 
+down the tube from x = 0 at time t = 0, say, so that 
+qo(t) --(t ). Since the tone holes and bell are strong reflec- 
+tors only for sufficiently low frequencies (below a kHz or so 
+for a real clarinet32), the signal returning to x = 0 must lose 
+its delta-function character and take on some smooth shape. 
+Let the shape ofthis hypothetical reflected signal be denoted 
+by r(t); that is, 
+qi(t } = r(t ) when qo(t 
+We may call r(t ) the \"reflection function.\" It may be thought 
+of as the disturbance that would be found at x = 0 after the 
+delta-function pulse is sent out, if the tube were terminated 
+at x = 0 by a perfect absorber such as a uniform, semi-infi- 
+nite tube of the same cross section. Note that considerations 
+of causality imply quite generally that r(t ) = 0 when t < 0. 
+As a very simple idealization, r(t ) might be imagined to 
+look like the inverted hump shown in Fig. 4. For a less sim- 
+plified \"clarinet\" with a real bell but no tone holes, r(t ) would 
+have a more complicated shape, with several slight undula- 
+tions following the main pulse. For a real clarinet with some 
+tone holes open the shape would be even more complicated, 
+showing the effects of multiple reflections. Some explicit ex- 
+amples are worked out in Ref. 31. There is no difficulty in 
+allowing for such details, if desired, and for the effects of bore 
+FIG. 3. Heavy curve: Simplified nonlinear characteristic F(q) for a clarinet- 
+like oscillator. The curved part is unrealistically symmetrical; see text near 
+Eq. 24]. Sloping straight lines: Eq. 10) for three different values ofq,,. 
+r(t) 
+T t 
+'FIG. 41 The simplified reflection function r(t ) used in most of our demon- 
+stration examples (but of. Fig. 15). 
+1327 J. Acoust. Soc. Am., VoL 74, No. 5, November 1983 Mc./nlyro et &/..' Osc/llat/ons of musical instruments 1327 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 4 ===
+nonuniformity and acoustic boundary-layer dissipation. 
+One can choose the shape of r(t ) to be as realistic as one 
+wants, on the basis of laboratory measurement or theoretical 
+calculation. 
+Because we are dealing with the linear part of the sys- 
+tem, the principle of superposition may be used to write 
+down a general formula for the incoming signal when the 
+outgoing signal has arbitrary time dependence qo (t) at x = 0. 
+The incoming signal qi(t ) is given in general by 
+qi(t ) = r(t )*qo(t ), (4) 
+where the asterisk denotes convolution, defined by 
+r(t )*qo (t ) = qo(t )*t ) = tt ')qo(t -- t')dt '. (5) 
+Note that according to linear acoustic theory the total area 
+A = r(t')dt'= -- 1, (6) 
+for the reflected pressure signal in any open tube, regardless 
+of the detailed geometry. This expresses the fact that accord- 
+ing to linear acoustic theory there can be no permanent, 
+steady difference in pressure between the interior of the tube 
+and the air outside. For, in our notation, the acoustic pres- 
+sure at the reed is 
+q(t ) = qo(t ) + q,(t ). (7) 
+It must tend to zero, after an initial transient, if qo and the 
+associated flow rate Z - qo given by (2) increase from zero to 
+some ultimately steady value, such as it might have if the 
+player were blowing steadily down the instrument with the 
+reed not vibrating. This state of affairs can be described by (4) 
+only if (6) holds [in which case (4) gives qi = - qo, so that 
+q = 0]. In a real clarinet there would in fact be a very small, 
+hydrodynamically induced excess pressure inside the bore, 
+which we are neglecting and which cannot be described by 
+linear acoustic theory. Under conditions of practical interest 
+it is roughly proportional to flow rate squared, 33 and is 
+usually negligible in comparison to the pressure drop p-q 
+across the reed, in which we are interested in connection 
+with Fig. 3. This is because the bore is very much larger than 
+the gap between reed and mouthpiece. 
+All that is now needed to complete the formulation is to 
+note that the acoustic flow rates corresponding to qo (t) and 
+qi(t ), given by setting x = 0 in (2), 34 may be added to give the 
+total acoustic flow ratef(t ) at the reed, so that 
+Zf(t ) = qo(t ) -- qi(t ). (8) 
+Equations (1), (4), (7), and (8) comprise the model equa- 
+tions for the idealized clarinet. They may be given a more 
+compact form by noting that the sum and difference of Eqs. 
+(7) and (8) are, respectively, 
+2qo=q+Zf and 2q,=q-Zf (9) 
+Substituting these results into (4) we get 
+q(t) = qh(t) + Zf(t), (10) 
+where 
+qh (t ) = 2q,(t ) = r(t )* {q(t ) + Z f(t )]. (11) 
+Equations (1), (10), and (11) are almost trivial to solve 
+numerically. Ifq(t ) andf(t ) are known at all times earlier than 
+the present, we can step forward in time as follows. First qn !s 
+computed from Eq. (11). It may be thought of as the contri- 
+bution to q attributable to the past history of the system. Any 
+simple numerical approximation to the convolution integral 
+in (11) will do: for a smooth, well-localized r(t ) like that in 
+Fig. 4 the trapezoidal rule is as good as any? Then the pres- 
+ent values off and q are found by solving (1) and (10) simulta- 
+neously. The time is advanced by a small step At and the 
+process repeated. Ifr(t ) is zero or negligible except for a small 
+fraction of an oscillation period, as in Fig. 4, then even the 
+most time-consuming part of the operation, computation of 
+the convolution integral, is quite rapid. Hundreds of cycles 
+of oscillation can be computed in a few minutes on a mini- 
+computer. (Indeed, if the convolution integral were done by 
+hardware using integrated circuits available for the purpose, 
+and the remaining programming done as efficiently as possi- 
+ble in assembly language, a fast minicomputer could pro- 
+duce results at a cycle rate in the audible range. The result 
+would perhaps have some novelty: an electronic musical in- 
+strument based on a mathematical model of an acoustic in- 
+strument.) 
+The simultaneous solution of(l) and (10) at each time 
+step, for given qn, can be visualized graphically as in Fig. 
+3. 36'37 It corresponds to finding the intersection of the heavy 
+curve representing (1) with the straight line of slope Z - 
+representing (10). Positions of the straight line are illustrated 
+for three different values ofqn, marked (i), (ii), and (iii). The 
+process of computing the intersection point (q, f) at each time 
+step can be made quite efficient by taking advantage of the 
+fact that q varies monotonically with qn. We shall assume for 
+the present that F (q) is such that there is only one point of 
+intersection. The consequences of multiple intersections, 
+which are in fact important for' the bowed string, will be 
+discussed in Sec. IIC below. 
+We may want to calculate r(t ) from a knowledge of the 
+complex impedance Z, (co) of the linear element, where co is 
+angular frequency. Z L (co) is defined by 
+zL (co) = (12) 
+where (co) and.(co)are the Fourier transforms øfq(t) and 
+f (t ), for instance, 
+f(co) = exp(-jcotlf(t)dt. (13) 
+If the transform of r(t ) be denoted similarly by 
+(co) = exp( --j cot )r(t ) dt, (14) 
+then Eq. (10), using (11) and the convolution theorem, trans- 
+forms to 
+0(co) = z?(co)l + z?(o,), 
+giving 
+?(co) = IzL(co) - z I/{z(co) + z I. (15) 
+Taking the inverse Fourier transform gives r(t ). 
+The reflection function r(t) is to be carefully distin- 
+guished from the Green's function or impulse response g (t) 
+[which may be defined here as the inverse Fourier transform 
+of Z (co) itself]. One may describe the linear element in terms 
+1328 J. Acoust. Sec. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1328 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 5 ===
+of either, but the computational advantages of working in 
+terms ofr(t ) rather thang (t) are overwhelming for the type of 
+oscillator under discussion, as was pointed out in Ref. 19. 
+The reason is that g (t) differs significantly from zero over a 
+far longer time interval than r(t ), of the order of the decay 
+time of free motion of the linear element, so that the use of 
+g (t) would require computation of an enormously long con- 
+volution integral at each time step. Some further discussion 
+concerning this point is given in Ref. 31, and in Appendix B 
+of this paper. 
+The use of Fourier transforms provides the simplest 
+general way of ensuring that the linear element of the model 
+is energetically passive, since the condition for that to be true 
+is simply that the real part of Zt(o) be positive or zero at all 
+real frequencies o. In fact we shall require it to be strictly 
+positive for all real, nonzero o, so that acoustic energy is 
+dissipated, as in actual musical instruments. That is, 
+Re{ZL(co)>0, for o0, real. 
+Equivalently, we require 
+Ito)l < 1, for o:O, real. (17) 
+This follows from the previous two equations and the fact 
+that the wave impedance Z is a real, positive quantity. 
+II. SOME EXAMPLES 
+A. Preliminaries 
+Even with reflection functions r(t) having very simple 
+shapes, the varieties of behavior that can be produced by 
+solving Eqs. (1), {i 0), and {11) on a computer are seemingly 
+endless, and are quite reminiscent of the varieties .of behavior 
+exhibited by real instruments in the hands of skilled or un- 
+skilled players. We present two examples oflarge-arnplitude 
+clarinet-like oscillations involving closure of the reed, and 
+then go on to show how. almost the same model can be made 
+to simulate aspects of the behavior of other instruments at 
+various levels of idealization. Included are large-amplitude 
+simulations of a flute or organ pipe which despite the simpli- 
+city of the model are actually more realistic, in important 
+respects, than any previously published to our knowledge, 
+with the exception of the (much more elaborate) frequency- 
+domain calculations described in Ref. 14. The latter calcula- 
+tions seem to have been the first to account qualitatively for 
+the triangular waveform observed in the recent organ-pipe 
+experiments of Coltman? Our model produces the same 
+waveforms with far less computational effort, accompanied 
+by greater physical insight. 
+The reflection function rt ) used throughout most of this 
+paper has the simplified shape shown in Fig. 4, roughly imi- 
+tating the case of a tube with no tone holes. A Gaussian 
+function' 
+(t < 0) 
+is chosen for convenience. The constant b is typically chosen 
+so that the full width at value 2 a, namely, 
+2b - '/2(1oge 2)'/, (19) 
+is 5% to 40% of the round-trip time T = 2L/C, L being the 
+effective length of the tube. With these values of b, r(t) is 
+negligible for t = 0 (at most 3 X 10 -s a), and so for practical 
+purposes is symmetrical about t = T. This will be found con- 
+venient for demonstrating certain fundamental points of in- 
+terest. Strictly speaking the symmetry of r(t) is unrealistic, 
+but the basic behavior to be described is not sensitive to the 
+precise shape of r(t). If we were attempting to describe the 
+finer points of instrument behavior of concern to the musi- 
+cian, then a consideration of the detailed shape would be- 
+come relevant and indeed vital. 
+The time stepAt for the simulations is taken as T/128 
+unless otherwise indicated. For the model clarinet (and the 
+bowed string} a is chosen so that the discretized, numerical 
+analog of relation (6) (we used the trapezoidal rule) holds 
+exactly in the simulations. The required values of r(t ) were 
+stored in a look-up table, so that the exponentials were evalu- 
+ated only once. 
+B. Clarinet-like oscillations 
+Figure 5 shows waveforms taken from two examples 
+which resemble the large-amplitude behavior of a clarinet. 
+The two examples occupy the left and right halves of the 
+figure. The topmost traces show q{t ), and those second from 
+the top the corresponding f(t). It is immediately obvious 
+from the waveforms, which are anything but sinusoidal, that 
+these oscillations are highly nonlinear. As well as using the 
+simple form (18) for the reflection function, these particular 
+examples use the simplest possible analytical representation 
+of the curved part of the nonlinear function F(q), namely the 
+parabola 
+F (q) = k ( p -- q)(q -- q½), (20) 
+where k is a positive constant. This is the shape actually 
+plotted in Fig. 3, with the numerical valuesgiven in the cap- 
+tion to Fig. 5. In the example shown on the left [Fig. 5{a)], the 
+½al 
+FIG. 5. First few cycles of two clarinet-like oscillations started from rest, 
+obtained by solving Eqs. (I ], (10}, and (11 ) with the F(q} shown in Fig. 3..The 
+waveformsofq(t },f{t ),qo{t ), and qi(/I areshown. Valueaofqandfmarked (i}, 
+{ii), and (iii} correspond to the positions of the heavy dots in Fig. 3. The left- 
+hand set of waveforms (a) is for a reflection function of full width (19} equal 
+to 5% ofthe time T for one round trip, or 2.5% of one oscillation period, 
+and the right-hand set lb} is for width 20% of T, or 10% of one oscillation 
+period. Other parameter values (for both sets of waveforms): k -- 0.2, p = 3, 
+q½ = -2 in Eq. (20), for t>0, in units such that Z= 1; a in Eq. 118) is 
+determined by the trapezoidal approximation to (6}. The two sets of wave- 
+forms are arranged in columns with the same horizontal time scales, so that 
+simultaneous events occur directly above or below each other. 
+1329 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre et al.: Oscillations of musical instruments 1329 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 6 ===
+full width (19} of the reflection function is 5% of the round- 
+trip time T = 2/,/C from reed to bell and back. On the right 
+[Fig. 5{b}] it is 20% of T, the broader hump implying a 
+greater loss of high-frequency components during the round 
+trip. This accounts for the more rounded appearance of the 
+right-hand q waveform. To start the oscillations, the blowing 
+pressurep is brought instantaneously from zero to a steady, 
+positive value for t > 0 {which is why the initial corner of the 
+waveform is not rounded). Undisturbed conditions, 
+f= q = 0, are assumed for t < 0. In both examples, the am- 
+plitude finally attained is such that the peak positive excur- 
+sion ofq nearly coincides with the right-hand zero ofF{q) in 
+Fig. 3, at q = p ----- 3, corresponding to the label {iii) in the 
+figures. The peak negative excursion of q, label (i), goes wdll 
+to the left of the point q = qc = -- 2 at which the reed closes 
+completely. In both examples the period is 2T, or 4L/C, i.e., 
+two round trips from reed to bell,just as with the lowest note 
+on a real clarinet. 
+What is happening inside this simplified model \"clari- 
+net\" can be visualized with the help of the bottom two traces 
+in Fig. 5(a) or 5{b). They show the outgoing and incoming 
+pressure signals qo(t ) and qi(t , calculated from Eq. (9). Ev- 
+ery half-cycle of the periodic oscillation, a pressure jump 
+propagates outward from the reed. Half a period later, it 
+arrives back having been inverted and smeared out by convo- 
+lution with the reflection function [Eq. {4)]. The smearing 
+can be discerned most easily in Fig. 5(b), by carefully com- 
+paring the shapes of each jump in qo{t ) with the correspond- 
+ing one in qi(t ) half a period later, for instance those joined 
+by the slanting, dashed line. 
+As the inverted, smeared-out pressure jump arrives 
+back at the reed, it causes the reed to close, if the jump is 
+negative {as in the example just indicated) or to open, if the 
+jump is positive. During this process qh (t), which is equal to 
+2qlt ), rapidly traverses the range of values lying between the 
+outermost slanting lines in Fig. 3. The slanting line corre- 
+sponding to the instantaneous value of qs{t) therefore 
+sweeps rapidly across the F {q) curve, and if we follow its 
+point of intersection with that curve we see that during the 
+opening or closing of the reed a brief pulse in f(t) is generat- 
+ed. Its peak value corresponds to the peak value of the F(q) 
+curve. The pulse in. f{t ) adds itself to the smeared-out, in- 
+coming pressure jump in such a way as to steepen the pres- 
+sure jump as it sets out again from the reed [see Eq. (8)]. The 
+steepening can again be seen in Fig. 5{b), for instance by 
+comparing the shapes of the incoming and outgoing pressure 
+jumps joined by the vertical, finely dotted line in the figure. 
+The degree of squareness or roundedness of the periodic 
+q{t ) waveform, to which the oscillation settles down, is thus 
+determined by a competition between the smearing de- 
+scribed by the reflection function r(t ), and the steepening due 
+to the precisely timed puffs of air past the reed represented 
+by.the Pulses inf(t 1- A corresponding picture was put for- 
+ward in 1968 by Cremer and Lazarus s'39 in the context of 
+the bowed string, which as we shall see shortly is closely 
+analogous. It provides, indeed, an even clearer example of 
+the steepening process. These ideas played an important role 
+in later theoretical developments, z\"s\"9'nø-4 some of which 
+will be described in the next section and in Appendix B. 
+A noteworthy feature of Fig. 5 is the rapidity with 
+which the amplitude saturates at its final, steady-state value, 
+in both eases shown. Such very short starting transients re- 
+call the metallic hardness of attack which is possible atfortis- 
+simo levels on a real clarinet. The fast buildup of the oscilla- 
+tion, together with the fact that it saturates at amplitudes for 
+which the maximum positive excursion ofq{t } is close to'the 
+value p, can be understood from energy considerations, as 
+follows. 
+In order for self-sustained oscillations to be possible, the 
+mean rate of working W at which energy is supplied to the 
+linear element of the model through the nonlinear element 
+must be positive, by a sufficient margin to balance losses 
+from the linear element. For a periodic oscillation the mean 
+rate of working is 
+W= {q{t }f{t )) = (q{t )F { q{t }} }, {21) 
+where the angle brackets denote the time average over one 
+period. Positive values of W are made possible by the exis- 
+tence of the positive-sloping part of the F{q} curve, which 
+means that it is possible for q(t ) and F [q{t )} to be positively 
+correlated in {21). This is sometimes described by saying that 
+the nonlinear element has \"negative resistance.\" Now the 
+waveforms ofq(t ) andf(t ) = F [q(t }} in Fig. 5 show that the 
+correlation is very low in the final steady state, so that the 
+value of W, although just positive, is numerically much 
+smaller than a product of typical magnitudes off and q. This 
+condition that the correlation be positive, but only just, lar- 
+gely determines the saturation amplitude under the circum- 
+stances of Fig. 5. 
+The steady oscillations are, moreover, very stable. This 
+is because of the finite negative slope of F(q) at q = p, repre- 
+senting locally apositive resistance. If the maximum positive 
+excursion ofq(t ) were to go even slightly beyond the valuep, 
+then f and q would become negatively correlated and the 
+oscillation would immediately decay. If on the other hand 
+the positive excursion of q(t) fell significantly short of the 
+valuep, then values of Wwould be closer to the product of 
+typical magnitudes off and q and therefore much larger than 
+the steady-state value. The amplitude would then grow ra- 
+pidly. Such large values of Wactually occur during the start- 
+ing transient, as can be seen by visually correlating the firgt 
+two cycles of the q waveform with those of thef waveform in 
+Fig. 5(a) or 5(b). This accounts for the large initial rate at 
+which the energy builds up. in afortissimo attack. 
+One of the glories of the clarinet as a musical instrument 
+lies in the ease with which a smooth tone can be maintained 
+at extremepianissimo levels, in the low and middle registers. 
+As is well known, this can be accounted for in terms of the 
+control the player has over the operating point on the F {q) 
+curve about which the oscillations take place, 2 and the stabil- 
+ity, easily demonstrable in the laboratory, ø'44 of very small 
+amplitude, \"threshold\" oscillations centered on a point just 
+to the left of maximum F {q), where the slope has just become 
+positive, or the resistance just negative. For a given embou- 
+chure, the player can center the oscillation on this part of the 
+F {q) curve merely by'decreasing the blowing pressurep to an 
+appropriate value. This corresponds to sliding the F {q} curve 
+rigidly to the left in Fig. 3, keeping k and p -- q½ constant, 
+1330 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical irstrurnents 1330 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 7 ===
+until the maximum in F(q) falls only just to the right of 
+q=O. 
+This form of control is effective because the mean value 
+of q itseft cannot drift very far from zero. For the model it 
+cannot change at all, for periodic oscillations, since provided 
+(6) holds we can show from the model equations that the 
+mean value 
+(q(t)) = 0. 122) 
+To derive this result, note first that for any periodic function 
+ (t)) = (t)) 
+= (q {t )) for{t ) dt = -- (q (t)). {23} The first step follows from the assumption that  {t ) is period- 
+ic, and can be verified by reversing the order of integration, 
+i.e,, by interchanging the average over t with the integration 
+over t ', the variable of integration in the convolution. The 
+second step follows immediately from the fact that ( {t }) is a 
+constant, and the last step from {6), $r(t }dt = -- I. Applying 
+Eq.' {23} to Eq. (11}, with =q+Z.f, we get 
+= -- (q) -- Z (f). Upon substituting this expression for 
+(qn) into the time average of{10) we obtain {22), (q) = 0. 
+Now it is an interesting fact that simulations near 
+threshold based on the parabola {20} do not exhibit the stable 
+amplitude dependence upon blowing pressure found in the 
+real instrument under normal playing conditions, when the 
+embouchure is not too loose? lfp is decreased below its 
+threshold value, then the oscillations die out as expected. 
+However, ifp is increased again until small oscillations just 
+grow, then they continue growing until an amplitude is 
+reached at which the model reed begins to close. If small- 
+amplitude oscillations in real clarinets behaved in such an 
+unstable manner, it would require superhuman control to 
+elicit the pianissimo sounds which can, in fact, easily be ob- 
+tained even by a novice. 
+This unrealistic behavior of the model can be traced to 
+the unrealistic symmetry of the parabola {20). The experi- 
+ments of Backus ø on real clarinets suggest an F{q} curve 
+{Fig. 21.4 of Ref. 2) which is much steeper near q = p than it 
+is near q = qt. We could easily use an experimentally deter- 
+mined F (q), but at the present level of idealization it seems 
+adequate to model the asymmetry simply ..by replacing (20) with a cubic in q such as 
+F{ q) = K (p -- q)(q -- qc)(q + P -- 2qc), {24} 
+where K is another positive constant. With24), or any other 
+similarly asymmetric curve in place of (20}, the model does 
+indeed exhibit stable, small-amplitude, nearly sinusoidal os- 
+cillations, when p is chosen so that the maximum in F 
+falls just to the right ofq = 0. The stabilization is easily un- 
+derstood in terms of reduced negative resistance as ampli- 
+tude increases, or more precisely in terms of the effect of the 
+cubic term -- Kq  in 124) upon the rate of working W given 
+by 121). It introduces a new term -- K (qn) into the right- 
+hand side of (21), which is always negative. The dissipation 
+rate in the linear element is proportional to (q2) as ampli- 
+tude varies, and so the negative term -- K (qn) always acts to 
+diminish the value of (21), relative to the linear dissipation 
+rate, as oscillation amplitudes increase from zero. It is this 
+that allows a stable balance to be reached within the contin- 
+uous part of the F(q) curve. 
+By using a fast Fourier or other routine to Fourier-ana- 
+lyze the waveform ofq(t ), one can simulate the internal pres- 
+sure spectrum that would be measured via a probe micro- 
+phone in the mouthpiece of a real clarinet. It is easy to check 
+that the model reproduces the qualitative behavior of the 
+harmonics shown in Fig. 21.6B of Ref. 2, for instance the 
+proportionality of the third harmonic to the cube of the fun- 
+damental asp is varied near the threshold. The even harmon- 
+ics are relatively wealS, but are not, and cannot be, exactly 
+zero, because of the small contribution fromf(t ) in Eq. {8). 
+The internal spectrum of a real clarinet likewise has weak, 
+but nonzero, even harmonics. It shofild be noted that the 
+even harmonics would be relatively less weak in the sound 
+radiated from a real clarinet, in comparison to its internal 
+spectrum, for reasons pointed out by Benade (Ref. 2, Sec. 
+22.4}. 
+C. Pitch flattening in the bowed string 
+The main nonlinearity in bowed-string dynamics comes 
+from the behavior of the frictional force exerted by the bow 
+on the string. The nonlinearity is even more severe than in 
+the clarinet. One consequence is a phenomenon mentioned 
+briefly in the introduction, namely a systematic shift of the 
+playing frequency away from any plausible \"compromise\" 
+frequency which might have been expected from an incau- 
+tious application of frequency-domain ideas to the normal- 
+mode frequencies of the string. The shift occurs whenever 
+the normal forcef between bow and string exceeds a certain 
+limit, and is downwards, corresponding to a flattening of the 
+pitch. The cause of this interesting phenomenon was not elu- 
+cidated, to our knowledge, until quite recently. 8'0 
+Our simple model can be used as it stands to demon- 
+strate the phenomenon, since the same model equations turn 
+out to comprise an analog of the bowed string. The analogy is 
+a close one if the string is symmetrical and bowed exactly at 
+its midpoint. More generally, one has to allow inter alia for 
+reflection from two ends rather than one; details are given in 
+Appendix B. But for a symmetrically terminated string 
+bowed at its midpoint, the two reflections act as one, each 
+half of the string being a mirror image of the other at any 
+instant. The reader who wants to try midpoint bowing on a 
+real instrument should locate the midpoint accurately, de- 
+grease the string if necessary, and bow lightly. on some in- 
+struments, stopped strings respond better to midpoint bow- 
+ing than open strings. That the result sometimes sounds a 
+little bit like a faint clarinet may or may not occasion sur- 
+prise, depending on the extent to which one believes that 
+harmonic content determines tone quality. 
+The frictional force exerted by the bow on the string 
+plays the same role, in the model, as did the flow rate into the 
+clarinet mouthpiece. It is therefore denoted by the same 
+symbolf(t ). The symbols qo and q, now represent the trans- 
+verse string velocities associated with waves traveling out 
+from, and in towards, the bow. Then Eq. (8) applies as before, 
+provided we reinterpret the constant of proportionality Z as 
+equal to half the wave admittance Yofthe string. It is admit- 
+1331 J. Acoust Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations o! musical instruments 1331 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 8 ===
+tance and not impedance, becausef is now force and not flow 
+rate. Readers'who prefer to use the symbol Y for admittance 
+are recommended to substitute «Y for Z in Eqs. (8) if., while 
+reading this section Note that iffwere zero then 18) would 
+imply that qo (t) = qi(t ), expressing the fact that the outgoing 
+wave in each half of the string would be identical to the 
+incoming wave from the opposite half if the bow were re- 
+moved. 
+Equation (4) relates qi(t ) to past values of qo(t ), as be- 
+fore, via a reflection function r(t ) with a negative main pulse. 
+This pulse is much narrower for a string of typical length 
+than for the bore of a wind instrument. For demonstration 
+purposes we continue to use the simplified Gaussian form 
+(18) for r(t ), although as before r(t ) could easily be made more 
+realistic. 4s Note that T in Eq. (18) is the time of a \"round 
+trip\" over one ha/f of the string, not the true round trip over 
+both halves. An advantage of(18) for present purposes is that 
+the almost precisely symmetric shape ofr(t ) implies that the 
+model string has an almost precisely harmonic series of natu- 
+ral frequencies. Thus there is no difficulty in deciding 
+whether or not the model is exhibiting a nonlinear frequency 
+shift, in the sense asserted. 
+The sum q(t ) of qo(t ) and qil t ) given by (7) now repre- 
+sents the transverse string velocity at the bow. The relations 
+(6) and (22) still hold, and now express the fact that the string 
+cannot drift continually sideways, which is true when its 
+terminations are modeled in any realistic way. 46 The usual 
+assumption about the friction force, 4ø'43'47'4s which states 
+that it depends only on the velocity of the string relative to 
+the bow, implies a relation betweenf and q precisely of the 
+form (1). In summary, therefore, all the model equations, 
+including the final set (1), (10), and (11), are the same as be- 
+fore. 
+The qualitative appearance of F (q) suggested by exist- 
+ing laboratory evidence 43'47'48 is shown by the heavy curve in 
+Fig. 6. From a mathematical viewpoint this function is vi- 
+FIG. 6. Heavy curve: Nonlinear characteristic F(q} for the bowed string, 
+idealizing the way in which the frictional forcef exerted on the string varies 
+with relative velocity q --p, for a bow being pulled or pushed with a given 
+speed p and a given normal bow foreeft. The height f,, ,, of the curve is 
+proportional tofo. Sloping straight lines: Eq. (10} for three different values 
+ofqn; the middle one has qn = 0. The shaded region indicates the range of 
+values ofqk over which the solution Iq, f) ofll) and 10 is ambiguous. 
+ciously nonlinear. It has certain features in common with its 
+counterpart for the clarinet. It again goes through zero at a 
+point q ----p, say, after attaining a maximum valuef, say, 
+for q just less than p (infinitesimally less, for practical pur- 
+poses, but see Ref. 48 and Appendix B of Ref. 19); p now 
+represents the velocity at which the bow is being pushed or 
+pulled past the string. For the player, varying p is again an 
+important way of controlling loudness. 
+Points on the very steep portion of the F(q) curve, 
+where q is very close top, correspond to the string \"sticking\" 
+to the bow. In the 'sticking state, exceedingly small depar- 
+tures from zero relative motion are resisted by relatively 
+large frictional forces. For practical purposes the slope may 
+be regarded as infinite. The maximum value at the peak is 
+roughly proportional to the normal force f between bow 
+and string, with a proportionality coefficient of the order of 
+unity for rosined surfaces. Points on the F (q) curve to the left 
+of the maximum represent states of \"slipping\" with the 
+string moving backwards relative to the bow. Values well to 
+the left of the maximum are typically of the order of 0.2lb. 
+For practical values off b, the maximum positive slope 
+oftheF (q) curve often exceeds Z -  ( = 2/Y), the slope of the 
+straight line representing Eq. I10). An ambiguity then arises 
+in the solution of(1) and {10) for given qh. This was pointed 
+out (although not resolved) by Friedlander 36 and by Keller? 
+The straight line representing Eq. (10) intersects F (q) at three 
+points, not one, whenever it falls within the shaded regio n in 
+Fig. 6. A careful analysis of the consequences may be found 
+in Ref. 19, where it is shown that the physically correct reso- 
+lution of the ambiguity is expressed by i;he following two 
+statements: 
+(1) The system will never get into a state corresponding 
+to the middle of the three intersections. 
+(2} The system follows a given intersection continuously 
+as long as it can. 
+ß For instance if the state o the system is currently one of 
+sticking, with the intersection (q,f) on the infinitely steep 
+portion of the curve F(q), then that state will persist (in accor- 
+dance with the intuitive idea of \"sticking\") until qh moves 
+beyond the left-hand edge of the shaded region. Only then 
+will the system jump to a state of slipping. We may say that 
+the bow \"releases\" the string. nø Once established, slipping 
+will persist in its tuna until qn leaves the right-hand edge of 
+the shaded region, whereupon a smaller jump will occur, 
+back to the sticking state: the bow \"captures\" the string. In 
+summary, the sequence of states of the bow-string contact, as 
+q (t } oscillates back and forth across the horizontal axis in 
+Fig. 6, exhibits precisely the hysteregis which one might have 
+anticipated intuitively. This is very convenient for program- 
+ming, since the initial guess for q when solving (1) and (10) for 
+given qn can always be taken as the value ofq at the previous 
+time step, and the nearest intersection found. We shall refer 
+to statements (1) and (2) above as the \"hysteresis rule.\" 
+During the periodic oscillation, the nonlinear interac- 
+tion between bow and string compensates for the smearing of 
+the waveform described by r(t ), in almost the same way as 
+already described for the clarinet. Release of the string'corre- 
+sponds to closing of the reed, and capture of the string to 
+1332 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1332 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 9 ===
+opening of the reed. The amplitude of steady oscillations is 
+determined in essentially the same way, by the shape ofF(q) 
+and in'particular by the location of the point q =p, which is 
+determined by the bow speed p. However, the waveform- 
+steepening effect of the nonlinear interaction takes a more 
+extreme form whenever hysteresis occurs. Parts of the Wave- 
+forms of q and f become infinitely steep, according to this 
+model, because of the hysteretical jumps in q and f as the 
+straight line representing Eq. (10) sweeps back and forth 
+across the F (q) curve. Moreover, the hysteresis rule implies 
+ that the jumps are bigger during release than they are during 
+capture. It is this asymmetry that leads to the downward 
+frequency shift, or flattening effect.' The release process in- 
+troduces a slight delay into the round trip time of the propa- 
+gating disturbance, which is not fully compensated at cap- 
+ture. How this works in detail will be explained below. 
+The amount of hysteresis increases as normal bow force 
+fb is increased, because the FIq) curve then becomes taller 
+and the shaded region wider. The flattening effect therefore 
+increases withf b, for a given type of oscillation. It also in- 
+creases with the width ofr(t ), since incoming signals are then 
+smeared more strongly and there is more scope for perturb- 
+ing their timing. Precisely these effects occur both in the 
+simulations and on real instruments. On a real violin, audible 
+flattening is easy to demonstrate at low bow speeds when the 
+bow is pressed sufficiently hard onto the string. It becomes 
+audible well before the complete breakdown of the musical 
+note--specially when playing high notes on a thick string 
+such as the G string, corresponding to relatively broader r(t ). 
+In practice an audible amount of flattening makes ade- 
+quate control of pitch, and also of tone quality, impossible 
+for the player. This sets one of the more important limits on 
+the musically useful range of normal bow force f'b. In the 
+light of known results in psychoacoustics, such as those 
+brought out in the perceptive discussions by Boomsliter and 
+Creel 22 and by Benade, 2 it can be anticipated that some of the 
+rapid and irregular frequency fluctuations, which would be 
+caused by the flattening effect under slightly unsteady bow- 
+ing conditions, might be heard not as pitch fluctuations but 
+as changes in tone quality. From the musician's viewpoint, it 
+is undoubtedly a fact that subjective tone quality tends to 
+deteriorate as bow force is increased, even before flattening 
+becomes audible as such; students of violin playing are ex- 
+horted not to \"force the tone.\" 
+Figure 7 shows the q(t) and f(t) waveforms from a 
+steady-state solution to Eqs. (1), (10), and (11) which clearly 
+demonstrates the flattening effect.. The parameter values are 
+given in the caption. The oscillations were started from rest, 
+in the same way as for the clarinet [see below Eq. (20)]. The 
+discontinuous jumps in q(t) andf (t) indicating hysteretical 
+behavior are shown dashed in the figure; note that they are 
+respectively larger and smaller for the falling and rising parts 
+of the q{t) waveform, corresponding to the larger jumps at 
+release and the smaller ones at capture. The accompanying 
+pulses inf(t ) have correspondingly disparate shapes. If there 
+were no hysteresis, the release and capture pulses would be 
+mirror images of each other, to within numerical accuracy, 
+as are their counterparts in Fig. 5. This follows, in the ab- 
+sence of hysteresis, from the symmetry of our idealized re- 
+capture 
+FIG. 7. Waveforms ofq(t } andf(t } for a steady-state oscillation, showing a 
+nonlinear frequency shift or \"flattening effect\" due to hysteresis. The oscil- 
+lation period is 268 time steps, or 4.7% greater than the string's natural 
+period 2 T (256 time steps}. The waveforms were obtained by solving Eqs. ( 1 }, 
+110, and (11  with the F(q} shown in Fig. 6, and imposing the hysteresis rule 
+to resolve the ambiguity in the shaded region. The left-hand curved part of 
+F(q) has the equation FIq) = 1/(1.5 - q), and the straight part hasp = 1, so 
+that fm ---- 2, in units such that Z ---- !. The reflection function has full 
+width (i 9 equal to 40% of T, or i 9.1% of one period; a in Eq. { 18) is deter- 
+mine d by the trapezoidal approximation to 16). 
+fleetion function. The fine dashed extensions to the actual, 
+hysteretical \"capture\" pulses inf(t ) are intended to indicate 
+that the point (q,f) may, if desired, be thought of as instanta- 
+neously traversing the peak F(q) value as suggested in Fig. 3 
+of Ref. 40 and in Fig. 6 of Ref. 15, even though the jump 
+occupies zero time and has no dynamical significance for the model? 
+In this demonstration case, the effects of hysteresis are 
+enhanced by the use of a very broad reflection function (t ), 
+and the flattening effect is quite large. The frequency of oscil- 
+lation is 4.7% less than the gravest normal-mode frequency, 
+a difference well outside numerical errors. We have flatten- 
+ing by nearly a semitone, \"despite\" the fact that the linear 
+element in this case has an odd harmonic series of normal- 
+mode frequencies 1/2I', 3/2T, 5/2T, etc. (to within numeri- 
+cal errors), because of the symmetry of(t ). The fact that the 
+normal-mode frequencies comprise an accurately harmonic 
+series can be demonstrated directly, by running the simula- 
+tion and then continuing it withf set to zero. This gives a nice 
+classroom demonstration of the free decay of the string vi- 
+brations when the bow is suddenly raised [cf. the description 
+following Eq. (6) in Ref. 40]. As soon asfis switched off, the 
+frequency jumps up to a value equal to 1/2T. The waveform 
+becomes more and more rounded as the higher modes decay 
+relative to the lower ones, but shows no dispersion, indicat- 
+ing that all the modes remain in the same phase relation to 
+each other when allowed to decay freely---a situation in 
+which an incautious use of frequency-domain ideas might 
+have predicted that nonlinear self-excitation of the form (1) 
+\"should have\" produced frequency I/2T or some integer 
+multiple of it. 
+To see in detail how the flattening effect works, we need 
+only visualize, as before, the consequences of the graphical 
+construction implied by Eqs. (1) and (10), as the straight line 
+1333 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1333 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 10 ===
+representing Eq. (10) sweeps back and forth across the F(q) 
+curve between its extreme positions, labeled (i) and (iii) in 
+Fig. 6. During release, for instance, when the direction of 
+travel in Fig. 6 is from position {iii} to position {i), qh has a 
+time dependence like that indicated schematically by the 
+dashed curve in Fig. 8(a}. The transition between extreme 
+values is smooth and the rate of change finite because, as 
+noted earlier, qh is just twice qi and therefore has the shape of 
+the smeared-out, inverted velocity jump returning to the 
+bow from each end of the string. The corresponding q is 
+indicated by the solid curve. As qn begins its negative swing, 
+sticking is prolonged while the point (q,f) ascends the infi- 
+nitely sloping part of the F (q) curve, until the discontinutus 
+jump to a state of slipping occurs. This introduces not only 
+the discontinuity in q, but also an obvious delay in the timing 
+of the whole transition in q, relative to that in qh- 
+A similar delay appears in the outgoing velocity signal 
+qo, which is even more strongly affected by the nonlinear 
+interaction. This can be seen from the findy dotted curve in 
+Fig. 8(a), which shows 2%. Its relation to the other two 
+curves is given by 
+2qo =q + (q--qh), 
+a consequence of(10) and the first of(9). That is, the graph of 
+2qo is as far above the q curve as q is below it. It is clear by 
+inspection of the graph of 2qo that the nonlinearly induced 
+delay will not be eliminated by the subsequent convolution 
+with r(t ). [L-wuse ofthe symmetric shape ofr(t ), the convolu- 
+tion can only smooth the transition and not make it come 
+earlier. In fact the reverse occurs, since the convolution 
+smears the positive peak in the 2% curve as well as the main 
+transition. This yields a smooth curve with a smaller peak 
+and an increaved delay. When this smoothed transition re- 
+turns, inverted, to the bow, a little more than half a cycle 
+later, it has a shape like that of the dashed curve in Fig. 8(b). 
+Figure 8(b), in turn, summarizes what happens at cap- 
+ture. The same constructions, with due attention to the hys- 
+teresis rule, give the resulting q and qo curves, again shown 
+solid and finely dotted. The nonlinear interaction now pro- 
+duces an advance in the timing of the transition, rather than 
+a delay. However, because of hysteresis, the advance in- 
+duced at capture is smaller in magnitude than the delay in- 
+duced at release. This explains the overall lengthening of the 
+period. 
+D. Subharmonics, starting transients, and other bowed- 
+string phenomena 
+Our simple model can be used to demonstrate several 
+other nonlinear phenomena characteristic of the bowed 
+string. One such phenomenon is the tendency for subhar- 
+monic patterns to occur in starting transients, recently 
+pointed out by Cremer. sø For midpoint bowing one expects 
+patterns related to the second subharmonic, of period twice 
+the string's fundamental period 2T. Figure 9 shows an exam- 
+ple of a decaying second subharmonic pattern, produced by 
+the present model with the same broad reflection function 
+and the same initial conditions as before, but with a gentler 
+F(q} giving no hysteresis Isee caption). Decaying subharmon- 
+ics play an important role in real starting transients, and in 
+other transient phenomena. (An example observed in the 
+laboratory may be seen in Fig. 7 of Ref. 41)./V th subharmon- 
+ics are liable to occur when the string is bowed near the point 
+I/N th of the length of the string from one end. More precise- 
+ly, it can be shown by a simple geometrical argument 4 that 
+N th subharmonics are possible when the bow is placed 
+between the points 1/(N+ I) and I/(N-- l) from the end, 
+where N = 3, 4, 5 ..... 
+It does not take much experimenting with starting tran- 
+sients before a significant difference between the behavior of 
+the model and that of the real bowed string becomes appar- 
+ent. As soon as realistically narrow reflection functions are 
+used, transients such as the initial subharmonic in Fig. 9 fail 
+to die out, and stable, steady oscillations become practically 
+impossible to obtain from most initial conditions. This con- 
+trasts with the very stable behavior of the model clarinet 
+remarked on earlier, and with the adequately controllable 
+behavior of real bowed strings. The parabola (20) behaves 
+stably, for large-amplitude oscillations, even when it is suffi- 
+ciently tall or narrow to cause hysteresis, and this actually 
+provides the simplest way of demonstrating the dependence 
++p- 
+\" 2qo q 
+FIG. 8. Sketches showing details in the waveforms, (a) during release, and 
+(b) during capture, of 7.q,,(t ) (shown finely dotted), q(t) (solid), and q,,(t) 
+= 2q,{t ) Idashed), when hysteresis occurs. See text. 
+-p- - 2T - 
+i[und. periodl 
+FIG. 9. First sixteen cycles ofq(t ) in a starting transient, showing a subhar- 
+monic pattern. This waveform was obtained with the same parameter val- 
+ues as in Fig. 7, except that the curved part ofF(q) is given by F(ql = 2/ 
+13 -- q). The straight part again hasp = I. (This is a shallower shape than in 
+Fig. 6, and exhibits no hysteresis.) The time step At is T/32, not our stan- 
+dard value T/128. The reflection function again has width (19} equal to 40% 
+ofT. 
+1334 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre et al.: Oscillations of musical instruments 1334 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 11 ===
+of the flattening effect on the width ofr(t ) with minimal pro- 
+gramming effort. 
+As these observations suggest, the infinite slope off (q) 
+at q ----p in Fig. 6 is involved in the unstable behavior of the 
+model. Indeed ifr(t ) is sufficiently narrow, while the sticking 
+part of F(q) has infinite slope and the slipping part finite 
+positive slope as in Fig. 6, it can be shown that even if the 
+simplest regime of steady oscillation were to be set up in the 
+model, that regime would be unstable to small disturbances. 
+The instability was discovered in 1953 by Friedlander 36 for 
+the case of infinitely narrow r(t }. It takes the form of a self- 
+excited second subharmonic, 4 which may itself become un- 
+stable to a fourth subharmonic, and so on. Such sequences of 
+period doubling bifurcations have recently been studied in- 
+tensively in other contexts (see Appendix A}. The corre- 
+sponding model for bowing near the l/Nth point exhibits 
+period N-tupling, ifN is a prime number?  
+This unrealistic behavior does not imply that our treat- 
+ment of friction, as such, is seriously unrealistic. Sticking is 
+undoubtedly a physical reality, as many experiments have 
+shown clearly. The most important missing ingredient is an 
+entirely different aspect of real string motion, namely the 
+torsional degree of freedom. It is shown in Appendix B that 
+the effects of torsional string motion can be partially taken 
+into account, without changing the model equations or the 
+computer program, simply by replacing the infinitely slop- 
+ing section of the F (q} curve by a section having finite nega- 
+tive slope. 15 This is just what is needed in order to get realis- 
+tic, stable transient behavior with narrow r(tl. More 
+precisely, the whole friction curve is sheared horizontally, as 
+illustrated in Fig. 10, in such a way as to impart a negative 
+slope 2/Y' to the sticking section, where Y' is the torsional 
+wave admittance of the string referred to velocity at the sur- 
+face of the string. This simple device, albeit not allowing for 
+FIG. 10. Solid curve: modified nonlinear characteristic G(q}, giving greater 
+stability ofoseillation. It is defined by GIq} = FIq + «Yf}, where Yø is the 
+characteristic adrnittanee of the string for torsional waves, here taken for 
+illustration as 0.4Y, a value well within the typical range. 4ø'4 The dashed 
+curve is the corresponding FIq}, identical to that plotted in Fig. 6. Replacing 
+F(q} by G {q} in the model makes some allowance for the seaUering of trans- 
+verse into torsional waves at the bow [Eq. {BI 6}]. Note incidentally that this 
+gives rise to a larger shaded region and greater hysteresis. s 
+torsional reflections, does incorporate into the model the 
+scattering of incoming transverse waves into torsional waves 
+at the sticking bow. 43'52 The scattering into torsional waves 
+is by far the most effective mechanism bringing about the 
+decay of subharmonics in real strings. 4 
+Another characteristic bowed-string phenomenon is 
+the effect of pressing so hard with the bow that no musical 
+note is produced anywhere near the fundamental frequency 
+of the string. This can be simulated simply by increasingfb 
+and therefore the maximum value of F (q} beyond the limit 
+corresponding to the Schelleng maximum bow force? Then 
+the velocity jumps returning to the bow are not always 
+strong enough to cause release. Both the real string and the 
+model can produce under these conditions a variety of peri- 
+odic motions with periods much longer than any natural 
+period of the string, as well as apparently aperiodic motions, 
+resembling the particular type of chaotic behavior which in 
+real instruments produces the raucous, scrunching sound 
+sometimes made inadvertently by novice players. 
+The model is easily extended to describe bowing at any 
+point of an asymmetrically terminated string. Appendix B 
+describes the computationally most efficient way of doing 
+this. The model will then simulate among many other things 
+the celebrated Helmholtz regime, which is actually simpler 
+than the example of Fig. 7 in that only one velocity jump 
+propagates on the entire string, alternately triggering cap- 
+ture and release as it shuttles back and forth past the bow. In 
+the process, backscattered \"secondary waves \"38'39'4ø'43'52 are 
+generated by the accompanying pulses inf(t I, and then rever- 
+berate in each section of the string (Ref. 41, Fig. 8 I. The 
+secondary waves have no separate existence in the symmetri- 
+cal, midpoint case. One can also demonstrate a great variety 
+of other phenomena, including N th subharmonics, period N- 
+tupling, various \"double flyback\" motions, ]8 and Raman's 
+\"higher types\" of which our midpoint example, with two 
+propagating velocity jumps, is the simplest case? Contrary 
+to what is sometimes said, Raman's higher types are not 
+unimportant musically. 2]'s Certain of them produce a fas- 
+cinatingly luminescent sound and are sometimes used, con- 
+sciously or unconsciously, for coloristic effects in sut tasto 
+playing. These particular types tend to be evoked when the 
+bow is near, but not at a point 1/Nth of the length of the 
+string from the bridge, typically when N = 3, 4, or 5. The 
+problem of describing and classifying the higher types has 
+recently been approached in a new and interesting way by 
+Lawergren,  who uses the term \"S motion\" to denote the 
+cases just mentioned. General surveys of bowed-string dy- 
+namics are given in Refs. 21 and 40, and Ref. 43 gives a more 
+detailed introduction to the subject. 
+E. Simulating a flute, recorder, or organ pipe 
+A flue organ pipe open at its far end oscillates with 
+frequency close to 1/Tor C/2L, as does a flute or recorder 
+(blockflute} when playing its lowest note. This is an octave 
+higher than the clarinet's I/2T. If a clarinet is played with a 
+flute or recorder mouthpiece substituted, the lowest note 
+goes up about an octave? To model what happens we must 
+take account not only of the altered acoustic conditions at 
+the mouthpiece, but also of the fact that an air jet blowing 
+1335 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre ot a/.: Oscillations of musical instruments 1335 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 12 ===
+across a hole excites acoustic fluctuations, and is affected by 
+them, in an entirely different'way from a reed. The geometry 
+of a flue organ pipe is sketched in Fig. 11. 
+Surprising as it may seem, the same model equations 
+can yet again be shown to be relevant--after making one 
+small but crucial modification to Eq. (1) to be described 
+shortly. In fact the model then appears capable of represent- 
+ing the physical situation to a remarkably good approxima- 
+tion, in the interesting case of large-amplitude oscillations 
+near a strong pipe resonance, about which a great deal is 
+known experimentally.2a'5? Of coursef (t } and q(t ) again have 
+quite different physical meanings, to be stated shortly, and 
+the nonlinear characteristic F(q} has an entirely different 
+shape. 
+A full justification of the model equations and their 
+physical interpretation lies beyond the scope of this paper. It 
+would require a lengthy digression, especially as some of the 
+fluid-dynamical questions involved are controversial. Some 
+further discussion will be given in a forthcoming paperil s 
+Here we merely present the results, with brief motivation, 
+and then note that the model equations yield excellent simu- 
+lations of the observed waveforms and phase relations for a 
+large-amplitude oscillation. \"Large amplitude\" means that 
+the jet switches fully into and out of the pipe. 
+The modification needed in Eq. (1 } arises from the finite 
+speed of hydrodynamical disturbances carried along the jet. 
+These disturbances are the well-known sinuous instability 
+waves first studied by Rayleigh in connection with \"sensitive 
+flames\" and related phenomena? They travel far more 
+slowly than the speed of sound, usually at speeds of the order 
+of half the maximum flow speed in the jetfi 7'-2 This gives 
+rise to a significant time delay in the process symbolized by 
+the left-hand box in Fig. 1. The importance of the delay is 
+well established experimentally and it is one of the param- 
+eters varied by flute players in order to control their instru- 
+ments. 63 One of its effects is a frequency shift, quite different 
+in nature from the intrinsically nonlinear frequency shift dis- 
+cussed in Sec. IIC: it causes the familiar sharpening of pitch 
+ jet 
+FIG. I 1. Flue organ pipe (top and bottom ends 
+shown} with the jet blowing across the mouth, 
+after Cremer and Ising? 
+as the instrument is blown harder. To model it in the sim- 
+plest possible way, Eq. { 1 } is replaced by a relation of the form 
+f{t } = F {q{t -- r)}, 125) 
+where r, the delay, is taken to be a positive constant for given 
+playing conditions. We notice that this makes the computer 
+program for solving IlO), {11}, and {25} even simpler than 
+before, since at each time step the right hand side of {25) is 
+already known in terms of past history, without reference to 
+(10). Therefore (10) need not be solved simultaneously with 
+(25), as it had to be with {1). 
+The physical meaning of q(t} in this context is that it 
+measures the acoustic displacement of air into and out of the 
+hole across which the jet is blowing. With the example of the 
+flue organ pipe in mind, we shall call this hole the \"mouth\" 
+of the pipe. Flute players call it the \"embouchure hole.\" For 
+definiteness we take q to be the volume displacement: it has 
+dimensions of length cubed. The corresponding acoustic vol- 
+ume flow rate through the mouth is dq/dt. Positive q will be 
+taken to correspond to displacement into the pipe. Because 
+of the new meaning of q, the sign ofthe.reflection function r(t ) 
+is now positive for an open pipe, in the sense that Eq. (6) is 
+replaced by 
+.4 = r(t ) dt = + 1. 
+An open end reflects negatively in terms of pressure, but 
+positively in terms of acoustic flow rate or displacement. [A 
+closed pipe can be modeled by reverting to F.q. (6) and taking 
+.4 = -- 1.] Strictly speaking, r(t } really represents the cumu- 
+lative effects of reflection from both ends, as well as the ef- ß 
+feets of acoustic boundary-layer dissipation. For the sake of 
+definiteness we may think ofqi(t) in Eq. (4) as representing 
+the incoming wave just after it has been re-reflected back up 
+the pipe from the mouth, in a hypothetical situation where 
+f{t )is zero. That is, r(t ) represents the total smearing of a pulse 
+during a complete round trip. The reflection from the mouth 
+of the pipe may well contribute noticeably to the total smear- 
+ing of the pulse? 
+The physical meaning off(t } is the volume flow rate in 
+that part of the jet which is blowing into the pipe at time t, 
+apart from an additive constant chosen such that the time- 
+averaged value 
+(f(t }) = 0 {27) 
+for periodic oscillations. The relation (27) is an exact proper- 
+ty of the model, as applied to open pipes, and follows from 
+(26) in the same way as (22) followed from {6}. The term Z fit ) 
+in Eq. (8} represents the Cremer-Ising model for the excita- 
+tion of acoustic disturbances by the jet. The experimental 
+evidence suggests that this is a good model in the near-reso- 
+natat cases studied by Coltman 23 and by Cremer and Ising? 
+It may be less accurate for strongly blown pipes sounding 
+above resonance. 62 Equation {8), or more conventionally its 
+derivative with respect to time, may be obtained from a con- 
+sideration of the \"excitation\" portion of Coltman's 0976) 
+equivalent circuit {Ref. 23, Fig. 9); f{t ) and dq{t )/dt corre- 
+spond, respectively, to i; and --it in his notation. Colt- 
+man's equivalent circuit [with the understanding that fix,1 
+in his Eq. (1}] represents an aeroaeoustically consistent refin- 
+1336 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre etal.: Oscillations of musical instruments 1336 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 13 ===
+ement ss of Cremer and Ising's original model, itseffbased on 
+a hypothesis due to Helmholtz. The parameter Z in Eq. {8) is 
+no longer a wave impedance or admittance; it has the dimen- 
+sions of time and equals the time for a sound wave to travel a 
+distance of the same order as the end correction at the mouth 
+of the pipe. It should be cautioned that in the real world the 
+value of Z is not precisely equal to a standard end correction 
+divided by C, nor is it accurately a constant. There is a nu- 
+merical factor which depends not only on the geometry of 
+the mouth and lip but also in an ill-understood way on the 
+width and speed of the jet, and on the amplitude of the waves 
+on the jet. 
+An appropriate shape for F(q) in Eq. (25} is a monotonic 
+curve like that shown in Fig. 12, with horizontal asymptotes 
+at each extremity. One extremity of the profile relates to the 
+condition in which all of the jet is blowing into the pipe, and 
+the other extremity to the opposite condition in which the jet 
+is deflected entirely outside it. Following Fletcher and 
+Douglas, 6 we take 
+F{q) ---- h + k tanh(lq) (28) 
+in the simulations, where h, k, and I are constants, with 1 
+positive and k negative. With the foregoing definitions, it is 
+found experimentally that appropriate values for the delay r 
+range from just over half an osdllation period (when the pipe 
+is blown gently, and sounds below its resonant frequency), 
+through half a period (at resonance, the regime studied in 
+detail by Cremer and lsing s? and Coltman23), to just over a 
+quarter of a period (when it is blown hard and plays 
+sharp63'). In the more softly blown regimes, the value off is 
+of the order of the time for a Rayleigh instability wave to 
+travel to the lip, from the base of the jet where the jet is most 
+acoustically sensitive. so In hard-blown regimes the behavior 
+of the jet is less simple; a good discussion of the theoretical 
+and experimental evidence on jet behavior may be found in 
+the papers by Fletcher and Thwaitesfi ø-2 The reason for 
+taking k negative in (28) is explained in Refs. 3, 57, 60, and 
+62: when jet instability is important the response of the jet to 
+q(t ) is almost the same as ifq were zero but the slit from which 
+the jet emerges was moving from side to side in the opposite 
+sense, 67 with displacement -- q(t ). 
+FIG. 12. Nonlinear characteristic F(q} for a flute-like oscillator [Eq. (25)]. 
+The model assumes, see (29}, that the value off is determined by the value of 
+q at a time r in the past, crudely imitating the propagation delay for Ray- 
+leigh instability waves on the jet. 
+The assumption, implicit in the assumed form of (25}, 
+that jet behavior depends only on q(t ), is itself valid provided 
+that typical magnitudes off(t ) and dq{t )/dt satisfy 
+f(t )dq{t )/dt. {29) 
+In real organ pipes there is a local contribution, --f{t }, to the 
+volume flux in the mouth, which (25) neglects so far as its 
+effect on the base of the jet is concerned. This is a good ap- 
+proximation in cases of large-amplitude pipe oscillations 
+near resonance. The neglected contribution represents a lo- 
+cal, irrotational backflow out of the mouth, which occurs for 
+reasons of mass conservation whenever the jet blows into the 
+mouth. It would be the only irrotational contribution to the 
+flow in the mouth if the interior of the pipe were blocked 
+making dq(t }/dt zeroil s The backflow and the effedtive mass- 
+acceleration associated with it are actually an essential part 
+of the Cremer-Ising mechanism expressed by Eq. (8), and 
+must be considered carefully in any theoretical determina- 
+tion of the magnitude ofthe coefficient Z; but its direct effect 
+upon the excitation of instability waves at the base of the jet 
+can be neglected if 129) holds. This approximation would not 
+be appropriate if we wished to simulate the transition from 
+edge-tone to pipe-tone behavior so beautifully demonstrated 
+by Coltman.23 The direct effect of -- f(t ) upon the base of the 
+jet is the feedback mechanism giving rise to edge-tone behav- 
+ior. 
+There are yet other reasons, not least the strong fre- 
+quency dependence of the growth rates of instability waves, 
+why Eq. (25} is in principle a far cruder idealization for the 
+organ pipe than Eq. (1} is for the clarinet or the violin. Fortu- 
+nately, however, the inaccuracies inherent in (25) are almost 
+completely immaterial for the case of large-amplitude, near- 
+resonant oscillations that interests us most. In that case, not 
+only is (29} well satisfied, as will now be illustrated (and as 
+can also be verified directly from Coltman's 2 experimental 
+results by comparing his Figs. 7 and 8}, but the jet moreover 
+spends most of its time fully \"switched\" into or out of the 
+pipe, so thatf(t ) is very nearly a square wave (again as report- 
+ed by Coltman). That is, the system spends most of its time 
+on One or other of the asymptotes in Fig. 12 _and is indiffer- 
+ent to details in the waveform of the acoustic displacement 
+qlt } and in the form of (25), except near zero crossings? In 
+addition, the waveform ofq(t } tends to be weak in high har- 
+monics, so that the frequency dependence of the growth 
+rates 6finstability waves is of less consequence than might at 
+first be thought. 
+Figure 13 presents an example of steady-state wave- 
+forms obtained from Eqs. (10}, (11 }, and {25}, using the ideal- 
+ized reflection function rt } given by { 18}. Numerical values 
+are given in the figure caption. The parameter h of the non- 
+linear characteristic (28) is zero lunlike Fig. 12). In virtue of 
+(27}, h = 0 corresponds to a time-average jet position exactly 
+bisected by the lip, so that no even harmonics are gener. at- 
+ed?' As well as the waveforms ofq and f, we show, in the 
+correct relative phase, thoseofdq/dtanddf/dt together with 
+those of the outgoing and incoming signals dqo/dt and dq/ 
+dt computed from Eq. (9). They are the most useful wave- 
+forms for making a comparison with the experimental re- 
+suits reported by Coltman? The scale on which dq/dt is 
+1337 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1 Mcintyre etal.: Oscillations of musical 'nstrumonts 1337 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 14 ===
+FIG. 13. Waveforms for a steady-state, flute-like oscillation exactly at reso- 
+nance (r= T/2), obtained by solving Eqs. (10), (IlL and (25). The wave- 
+forms of q, dq/dt, f, dr/dr, dqo/dt, and dq,/dt are shown. Positive volume 
+displacements and velocities are directed into the mouth or embouchure 
+hole of the pipe, and positivef means that the jet is blowing into the pipe. 
+The vertical bar on the right gives the theoretical peak-to-peak amplitude of 
+dq/dt for the limiting triangular waveform discussed in Ref. 58. This peak- 
+to-peak value is 3.84, corresponding to positive and negative excursions 
++ 1.92. The reection function has full width (19) equal to 15% of T. Other 
+parameter values (for both sets): h= 0, k = --0.5, I=0.2 in (28); 
+Z ---- 0.0233 T; a in Eq. (18) is determined by the trapezoidal approximation 
+to (261 . 
+plotted is the same as for f, to give some idea of the accuracy 
+of the approximation {29}. The results of Fig. 13 were ob- 
+tained by stepping Eqs. (10}, II 1}, and 125} forward in time 
+until steady oscillations were obtained. To get the oscillation started, a small, constant displacement q was assumed to 
+exist before turning on the jet. 
+The time delay r is one half the round-trip time T, and 
+the period of the resulting steady oscillations is T = 2L/C, 
+precisely that of the pipe's gravest free mode. The model pipe 
+is oscillating precisely at resonance. The delay r = T/2 re- 
+quired for this differs from the value - ----- 3Te/4 characteriz- 
+ing the gravest edge-tone oscillation of period Te.7ø Reso- 
+nance does not mean that the edge-tone frequency agrees 
+with the pipe frequency, as has sometimes been assumed. 
+The reason is the different delay in the feedback mechanism 
+producing edge tones, via the localbackflow -- f(t } instead of 
+the acoustic pipe flow dq/dt.  
+The waveforms and phase relations shown in Fig. 13 are 
+strikingly consistent with all the observations reported by 
+Coltman 23 for oscillations in a long organ pipe at resonance. 
+In particular, Coltman remarked on the triangular shape of 
+the experimental dq/dt waveform, as well as on the square 
+waveform off and on the experimentally determined phase 
+relation between them (jet switches into mouth, i.e.,f goes 
+positive, at the time of maximum dq/dt, i.e., at maximum 
+acoustic flow into the mouth). Coltman also remarked on the 
+waveform of pressure at different positions within the pipe, 
+finding a triangular waveform at the midpoint and trapezoi- 
+dal waveforms at positions in between the midpoint and the 
+ends. The observations showed that the entire pressure dis- 
+tribution P { x,t }\"takes very closely the form of the wave on a 
+string plucked in the middle.\" All these features are repro- 
+dueed by the expression 
+P(x,t)o: qo -- -- q, ), (30) which estimates P{ x,t) for a uniform pipe in terms of the 
+outgoing and incoming signals, neglecting boundary-layer 
+dissipation and any other contribution to rtt ) that may origi- 
+nate from the body and mouth of the pipe, rather than at the 
+far end. The waveforms implied by {30) at any given x can 
+easily be constructed by suitably phase-shifting the bottom 
+two waveforms in Fig. 13 and subtracting the result graphi- 
+cally. For instance, at the midpoint the two contributions 
+reinforce to give the same triangular waveform as dq/dt, but 
+delayed by a quarter period relative to dq/dt itself. At other 
+values ofx they combine into a trapezoidal waveform. 
+A partial explanation of the triangular shape of the dq/ 
+dt waveform was given in Ref. 14 from a frequency-domain 
+viewpoint. The time-domain viewpoint leads to a much more 
+complete explanation (which, once perceived, is easy to 
+translate into frequency-domain language). In fact one can 
+show that an approximately triangular waveform is to be 
+expected, at resonance, irrespective of the shape ofr(t ), as long 
+as r(t) is sufficiently narrow, and as long as the jet is switch- 
+ing. This interesting theoretical result seems not to have been 
+remarked upon previously. It shows that the waveforms we 
+have found can probably be regarded as a genuine explana- 
+tion of Coltman's result, even though we do not know the 
+exact shape ofr(t ) for his experiment. It should apply in prac- 
+tice to any relatively long pipe with sufficiently small acous- 
+tic losses. 
+The derivation of this theoretical result is given in 
+mathematical detail in Ref. 58. Its basis is essentially the 
+principle described earlier (and first used by Cremer 9 for the 
+case of the bowed string), namely that the shape of the 
+steady-state waveform can be understood in terms of a com- 
+petition between the sharpening of its corners by the pulses 
+in df/dt[F.q. (8)], and their smearing-out by rt) [Eq. (4)]. 
+Note that, as before, the incoming waves dq/dt in Fig. 13 
+(bottom trace) have rounder corners than the outgoing waves 
+dqo/dt (second from bottom). However, there are essential 
+differences as compared to the clarinet and bowed string. 
+These differences are related to the different shape of the 
+nonlinear characteristic. The F(q) shape shown in Fig. 12 
+cannot exert strong nonlinear control over the steady-state 
+amplitude in the manner of the F(q) shapes shown in Figs. 3 
+and 6. Once the jet is switching fully into and out of the pipe, 
+f(t ) becomes nearly a square wave, whose amplitude is insen- 
+sitive to the amplitude of q. The amplitude of q is therefore 
+limited mainly by dissipation, represented in the model by 
+the properties of r(t ). This fact, and the triangular shape of 
+the waveform itself, can also be understood in terms of an 
+analogy with a simple problem in heat diffusion. sa 
+The important role of linear dissipation in the model 
+helps us to underhand another aspect of its behavior not men- 
+tioned until now, namely the length of the starting transient. 
+The starting transient predicted by the model {not shown) is 
+very much longer than, say, for the model clarinet at large 
+amplitude. This is also true in the real world, where the flute 
+is known as one of the slowest-speaking members of the or- 
+1338 J. Acoust. Soc. Am., VoL 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1338 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 15 ===
+chestra, despite the compensating skills developed by fiau- 
+fists. The duration of the mode/transient, which exhibits a 
+smooth, monotonic growth of amplitude, is of the same or- 
+der as the time for the gravest mode of the linear element to 
+decay freely. We shall not discuss the model's starting tran 
+sients in detail, since for one thing the approximation (29) is 
+unlikely to hold in the earliest stages of such a transient. In 
+addition, if we were aiming at realistic transients we would 
+have to pay closer attention to the actual nonlinear fluid 
+dynamics, 7'72 implying possible variations in Z during the 
+transient? s In a real starting transient, moreover, the jet ori- 
+rice may act momentarily as an isolated monopole. This 
+seems likely to be important for getting the oscillation going, 
+especially if the note is vigorously \"tongued\" by the player. 
+The model as it stands successfully imitates various oth- 
+er real-world phenomena. Varying the delay to a fourth, a 
+sixth, and an eighth of the round trip time Tresults in oscilla- 
+tions at frequencies of two, three, and four times the funda- 
+mental, simulating the flautist's or recorder player's produc- 
+tion of the octave, twelfth, and second octave by 
+\"overblowing,\" i.e., increasing jet speed and reducing the 
+delay '. Variation of ' between these simple integral frac- 
+tions produces the frequency-shifting effects already men- 
+rioned. The introduction of even harmonics by displacing 
+the jet off-center, most recently discussed by Fletcher and 
+Douglas as and by Nolle,  may easily be simulated, in the 
+present case of an open pipe, by making h nonzero. This 
+displaces the F(q) curve vertically, imitating one of the ways 
+in which a flute player can vary tone quality, or an organ 
+builder \"voice\" an open flue pipe. Note incidentally that 
+because (27) constrains (f) and not (q) to be zero for the 
+open pipe, shifting the FIq ) curve horizontally would exert 
+essentially no control over the conditions of oscillation: (q) 
+would simply shift by the same amount, and other details 
+would be unaffected. This is consistent with the intrinsic 
+arbitrariness in the choice of an origin for the displacement q 
+in an open pipe. The reverse is true for a closed pipe; it is now 
+(q) that is zero, as for the clarinet, and control must be 
+exerted (in the model at least) by shifting the F(q) curve hori- 
+zontally. It is not actually obvious how to choose the shift a 
+prioriin either case; the time-average position of the jet in the 
+real instrument involves nontrivial fluid-dynamical effects, 
+not accounted for in the model, of which the \"acoustic 
+streaming\" associated with boundary-layer dissipation is 
+only one example. 73-75 It is simplest to regard the imposed 
+shift in the F(q) curve as a disposable parameter to be chosen 
+for consistency with observed behavior. 
+III. CONCLUDING REMARKS 
+The simple time-domain model defined by Eqs. (10), 
+(11), and (25), supplemented where necessary by the hystere- 
+sis rule described in Sec. IIC, has been found capable of mim- 
+icking basic aspects of the strongly nonlinear behavior of the 
+clarinet, violin, and flute families simply by changing the 
+shapes of the functions r(t ) and F(q) which characterize the 
+linear and nonlinear elements of the model, and by changing 
+the time delay ' in Eq. (25) (zero for the clarinet and violin, 
+and positive, usually of the order of half an oscillation peri- 
+od, for the flute family). 
+Three basic phenomena which are reproduced by the 
+model and which are easy to understand from a time-domain 
+viewpoint are 
+(1) the frequency shift which can be caused by a suffi- 
+ciently severe nonlinearity F(q), of practical significance for 
+the bowed string (Sec. IIC}, 
+(2) the nonlinear amplitude-limiting mechanism for 
+clarinet and bowed-string oscillations, tightly controlled by 
+the shape ofF(q) (Secs. liB, C), and 
+(3) the entirely different amplitude-limiting mechanism 
+in the flute family, controlled mainly by dissipation in the 
+linear element and hardly at all by the shape of F(q) (Sec. 
+liE). This helps explain the tendency of the flute family to 
+exhibit relatively long starting transients. 
+These and many other phenomena are modeled in a qualita- 
+tively correct way even when using the simplified reflection 
+functions r(t) and nonlinear characteristics F(q) suggested 
+here for demonstration purposes and ease of programming. 
+When implementing time-domain models it is generally 
+useful to arrange for the parameters of the simulation to be 
+varied interactively from the computer keyboard while the 
+simulation proceeds. The simulation can then be \"played,\" 
+more or less as a real instrument is played. A little experience 
+with this soon reminds one of a well-known property of non- 
+linear phenomena, namely their nonuniqueness. Several dif- 
+ferent regimes may be possible for the same final set of pa- 
+rameter values, especially for F(q) shapes like that in Fig. 6. 
+One soon learns how to encourage a given type of oscillation 
+during the initial transient, a matter in which musicians de- 
+velop superlative skill. One is also reminded of the rich var- 
+iety of periodic and aperiodic behavior which may be exhib- 
+ited by even the simplest nonlinear oscillators (see Appendix 
+A). The question of which behaviors are physically realistic 
+for musical-acoustical purposes, and which result from too 
+unrealistic a choice of model characteristics, has yet to be 
+studied systematically, although instructive examples re- 
+garding stable versus unstable behavior were encountered in 
+Sees. lib and liD. 
+It is easy to extend the simple time-domain model pre- 
+sented here to other instruments, and to the more elaborate 
+levels of simulation needed for direct comparison with labo- 
+ratory data. We have found such models extremely useful in 
+our research on the bowed string 8'9'4'4 and on the clari- 
+net? When finite reed mass is taken into account, as in more 
+refined models of the clarinet which allow for the reed reso- 
+nance,'3 an integro-differential system of equations takes 
+the place of the simple integral system solved here, but the 
+equations are still amenable to efficient numerical solution 
+by stepping forward in time? This modification is essential 
+in the case of the brass wind instruments, for which \"reed\" 
+or lip mass is of leading importance. 3'7 Integro-differential 
+equations also arise naturally for the oboe and other conieal- 
+bore instruments, because of the inertia of the air near the 
+small end of the bore. Conical-bore instruments can be mo- 
+deled by replacing (2) with the corresponding formulae for 
+spherical waves. ? 
+The bowed string, by contrast, can be simulated very 
+realistically with models which are direct extensions of the 
+present one, involving integral equations only. In our inves- 
+1339 J. AcousL Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre etal.: Oscillations of musical instruments 1339 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 16 ===
+tigations into the many observed regimes of periodic and 
+aperiodic bowed-string behavior, time-domain simulations 
+have proved extremely helpful in achieving a definitive inter- 
+pretation of laboratory results The key to constructing an 
+efficient algorithm is to introduce more than one reflection 
+function. t9 \"Right-hand\" and \"left-hand\" reflection func- 
+tions r R (t) and r L (t) are used to characterize the shapes of 
+pulses returning to the bow from the two ends of the string, 
+as described in Appendix B. Moreover, for any quantitative 
+simulation of real strings, or even a qualitatively correct sim- 
+ulation of starting transients and other transient behavior, it 
+is vital to take torsional as well as transverse motion into 
+account as was noted inthe discussion following Fig. 9 (Sec. 
+liD). 
+An interesting bowed-string phenomenon easily stud- 
+ied by these methods is the \"wolf note.\" Two wolf simula- 
+tions are shown in Fig. 14. They were obtained by solving 
+Eqs. IBI3-B141 and {11 using a Gaussian right-hand trans- 
+verse reflection function of the type shown in Fig. 4, but 
+realistically narrow, and a left-hand transverse reflection 
+function of the type shown in Fig. 15, having a similar main 
+pulse followed by a weak, decaying oscillation representing 
+the effect of a damped resonance in the left-hand string ter- 
+mination. These examples are classical \"simple\" wolves of 
+the kind first explained by Raman in 1916, TM for which the 
+resonant period of the string termination is close to the full 
+round-trip time T for the two string sections taken together. 
+Here the resonant period ofthe string termination is 65 T/64. 
+A point of special interest is that the only parameter 
+changed between the two simulations was the normal bow 
+forcefb; see captions to Figs. 14-16 for further detail. The 
+simulations thus illustrate the fact that the wolf or \"beat\" 
+period may increase substantially Iby a factor of about 3/2 in 
+this ease) asfb increases (by a factor 2 in this case). Further 
+simulations, not presented here, showed that the increase is 
+monotonic asfb varies. The increase in wolf period is easily 
+understandable from Raman's explanation, which was 
+based on time-domain thinking and the concept of \"mini- 
+(a) 
+Bow force doubled: 
+o 
+(b) 
+FIG. 14. Two simulated wolf notes, from Eqs. (BI 3) and (BI4) and {1), illustrating the variation of wolf period with normal bow force. Bow force for the 
+lower pair of traces is double its value for the upper pair. All other parameters are the same for the two wolves. Waveforms shown are transverse center-of- 
+mass string velocity at the bow (upper waveforms), and bridge velocity on the same scale (lower waveforms). The right-hand reflection function has full width 
+(19} equal to 3.9% of the round-trip time T for the whole string [b = ( 128/3 T} 2 in (18), the same as in Fig. 9 of Ref. 19; note incidentally that v'J/128 and (2/ 
+3) n in that caption are wrong and should be 3/128 and 2/3, respectively, and similarly that 1.5 in the caption to Fig. 18 of Ref. 41 should be 1.52]. The time 
+step At is T/128 and the propagation delays for transverse waves on the left- and right-hand sections of string are in the ratio 24:104, so that the bow is 
+nominally 3/16 of the way along the suing. The main pulse of the !eft-hand reflection function also has width 3.9%, and the parameters for the oscillatory tail 
+are specified in the caption to Fig. 15 below. The torsional and transfer reflection functions are set to zero. The nonlinear characteristics F{q) used in Eq. { 1 } are 
+those shown in Fig. 16. They correspond to values 1.2v b and 2.4v b of normal bow forcef, in units such that  Y---- 1, where oh( = p} is the bow speed and If is 
+the transverse wave admittance of the string. The ratio Y'/Y of torsional to transverse wave admittance is 0.2. 
+1340 J. Acoust. Soc. Am., VoL 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical 'nstruments 1340 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 17 ===
+FIG. 15. Lea-hand or \"bridge\" reflection function of the type needed for 
+imulating woffnotes, from Ref. 19, with a main pulse centered on t = TL 
+and a decaying tail proportional to the real part of 
+exp[(jo -- o/2Qt - T)], representin th= elect of free motion of the 
+bridge. In the example shown the free decay'has a Q of 30; the same Q value 
+is used for the simulations in Fig. 14. The amplitude of the bridge motion is 
+governed by the admittance ratio Y - (SM)- 12, where $ and M are the ef- 
+fective stiffness and m seen by the string at the bridge ?? and Y is the 
+transverse wave admittance of the string; here Y - (SM }- '/2 is 0.05 to make 
+the decaying oscillation clearly visible, but the more realistic value 0.01 is 
+used for the simulations in Fig. 14. The main pulse is a Gaussian whose full 
+.width is 3.9% of the round-trip time T for the whole strin8. When comput- 
+ing the convolution integral, efficiency is gained by separately computing 
+the contributions from the ma;q pulse and.from the decaying sinusoid, and 
+using the fact that the latter contribution to the integml, in complex form, is 
+equal to the corresponding quantity already computed at the previous time 
+step, multiplied by exp[(j -- o/2Q) At ], plus a further contribution from 
+the current time step. 
+FIG. 16. The two nonlinear friction characteristics F(q) used in the wolf- 
+note simulations, made up of straight line segments as a computationally 
+convenient approximation. Here q is velocity of the string surface at the 
+bow, and oh( = P) is bow speed. It is assumed, in qualitative agreement with 
+laboratory evidence, 43.47.4s that F (q) scales with normal bow force. fs. so that 
+the heavy F(q) corresponds to the upper pair of traces in Fig. 14, and the 
+light one to the lower pair of traces in Fig. 14, with double the value off. 
+The straight line represents Eq. (B!3}, for one value ofqe =(qL +q 
++ q,. q- q }. Its slope is (1 + Y'/Y)-' = 0.83, in terms of the dimension- 
+mum bow force.\" 2'4ø'43 The simplest frequency-domain ex- 
+planation of the wolf note ?? fails to predict the increase, since 
+it associates the wolf period with properties of the linear 
+element alone. The linear properties are identical in the two 
+simulations shown. 
+The progress achieved so far using the time-domain ap- 
+proach poses a stiff challenge to the ingenuity of experi- 
+menters in musical acoustics today. There is now no math- 
+ematical nor computational impediment to running 
+extremely realistic and detailed simulations of musical oscil- 
+lators, which could lead to quantitative comparisons with 
+experiment, and ultimately to simulations sophisticated 
+enough to be useful as practical design tools in musical in- 
+strument manufacture. At present the main impediment to 
+such progress is a lack of high-precision experiments yield- 
+ing sufficient information about real reflection functions and 
+nonlinear characteristics. In some cases, special ingenuity 
+may be required to Obtain the relevant information. For in- 
+stance, to measure all the relevant reflection functions for a 
+real bowed-string instrument (see Appendix B) the surface as 
+well as the center-of-mass motion of the string has to be 
+excited and observed. Moreover the measurements will have 
+to be done at extremely high spatial and temporal (or phase) 
+resolution, in order to observe the kind of detail in the trans- 
+verse and torsional reflection functions which is relevant to 
+the very fast events characteristic of the nonlinear bow- 
+string interaction. 
+ACKNOWLEDGMENTS 
+We thank A. H. Benade, A. C. Pay, and K. Gough for 
+helpful discussions or correspondence on the clarinet family, 
+B. . Bayly, A. H. Benade, J. Coltman, J. E. Frowes Wil- 
+liams, H. Ising, and N.H. Fletcher on the flute family, and 
+L. Cremer on bowed-string starting transients. Professor 
+Benade and Professor Cremer kindly read the first draft of 
+the paper and made a number of perceptive comments, lead- 
+ing to a greatly improved presentation. JW acknowledges 
+support from the Department of Engineering and from 
+Clare College, Cambridge, RTS support from the National 
+Science Foundation under Grant PHY-8007431, and MEM 
+support from the Nuffield Foundation under Grant SCI/ 
+168/92 for work on jet-drive fluid dynamics. 
+APPENDIX A: RELATION TO THE THEORY OF 
+ITERATED MAPS 
+It is the purpose of this appendix to show that Eq. (10) 
+can be written under some conditions as a nonlinear differ- 
+ence equation or \"iterated map\" {of. Refs. 36 and 37) of a 
+type that has been extensively studied in recent years. The 
+equation to be derived is 
+g =.4H( g_ , ), (AI) 
+where H (g) is a nonlinear function ofg with a single quadrat- 
+ic extremum in the domain of the argument, and,4 is a con- 
+stant. The case H (g) = g( g -- 1 ) is one simple example. The 
+general behavior of such equations for differen.t values of,4 
+has been reviewed by May. 4 Recent advances of interest to 
+physicists have been published by Feigenbanm, 6 and an' 
+overview is given in a recent monograph by Collet and Eck- 
+ 341 - J. Acoat. Sec. Am., Vol. 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1341 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 18 ===
+mann? One motivation for these theoretical developments 
+lies in the possible connection between the solutions of Eq. 
+(A 1) and the onset of\"turbulence\" or chaotic behavior in less 
+simple systems. The behavior predicted by Feigenbaum has 
+indeed been found in systems more complicated than those 
+for which the theorem has been proved, for instance in cer- 
+tain fluid-dynamical systems. 27-e9 
+Suppose the reflection function is a delta function 
+r(t) =/15(t--T). We now drop the requirement that 
+4 = -- 1. Then in units such that Z = 1, Eq. (10) becomes, 
+with (i 1), 
+qn -- A (qn --I ørfn -I ) rfn, 
+where q.is the value ofq(t ) for t between nTand (n + 1) T. 
+All the time-dependent functions arc constant for each 
+round-trip period T, changing their values instantaneously 
+only at times T later than the last change. Corresponding to 
+2q i and 2q o in (9), define 
+g.---- q. --f. (A3) 
+and 
+h, = q,+f,. (A4) 
+As just defined, h appears to depend on both q andf. How- 
+ever, if specifying g uniquely determines q, then h ---- H (g), 
+and the problem takes the form ofEq. (A1). As long as the 
+maximum positive slope ofF(q) is less than unity (no hystere- 
+sis), then g does uniquely determine q. 
+With an F(q) like that shown in Fig. 3, and/1 negative, 
+4H (g) has a single quadratic minimum at a positive value of 
+g. Feigenbaum's conditions ea are satisfied. From a theoreti- 
+cal viewpoint the interest lies in how the period of the oscilla- 
+tions depends on/1. We have done computer simulations of 
+the system represented by Eq. (A1), using an F(q) of the type 
+shown in Fig. 3, and found the expected succession of period 
+doublings as 4 is decreased towards -- 1, following quanti- 
+tatively the universal behavior predicted by Feigenbaum. 
+With an F(q) of the type shown in Fig. 6, the model becomes 
+the Raman model of a string bowed at its midpoint. As indi- 
+cated in Sec. IID, we still get sequences of period doublings. 
+These have a different asymptotic behavior, as expected 
+from the fact that the extremum in H(g) is no longer qua- 
+dratic. For someF(q) curves there are ranges oL4 for which 
+the period is very large (often exceeding the time of the simu- 
+lation), and for which the spectrum is very complicated, oc- 
+casionally even resembling broadband noise. All these phe- 
+nomena persist when we take r(t ) to have small but finite 
+width. 
+APPENDIX B: MORE REALISTIC MODELS OF THE 
+BOWED STRIHG 
+The first step in generalizing the model is to allow for an 
+asymmetrically terminated string bowed at any point. The 
+most efficient algorithm is obtained by introducing separate 
+reflection functions rL (t) and rs (t } for the sections of string 
+-to the left and right of the bow, respectively.'9 The functions 
+r L (t) and rs (t) are a concise means of describing the effects of 
+the left- and right-hand string terminations, together with 
+the propagation delay, high-frequency attenuation and wave 
+dispersion on each section of the string. The terminations 
+may be of any kind, provided that both they and the string 
+behave linearly. Note incidentally that rr (t) and r R (t), which 
+were called \"corner-rounding functions\" in Ref. 19, were 
+defined there with sign and time-origin conventions differing 
+from those used here. 
+Equation (1) is unaltered, 
+/= F(q), (B1) 
+but Eq. (4) is now replaced by the pair 
+qiL = r.*qor, qa = rs*qoR, (B2) 
+Eq. (7) by 
+q - qoL + qiœ  qoa + qiR, (B3) 
+and Eq. (8) by 
+1Yf= qo -- qm = qos -- qir, 
+where qor (t) and qir (t) represent the outgoing and incoming 
+velocity waves to the left of the bow, qon (t) and qa (t) those 
+to the right of the bow, and where the constant Yis the wave 
+admittance of the string. As was remarked in Sec. IIC, ad- 
+mittance plays the same mathematical role for the bowed 
+string as impedance does for the clarinet, owing to the differ- 
+ent physical meanings ofq(t ) andf(t ). Here q is the transverse 
+velocity of the string at the bow (whereas it was mouthpiece 
+pressure for the clarinet), andf is the friction force exerted on 
+the string (whereas it was flow past the reed for the clarinet). 
+The first of Eqs. (B4) expresses the fact that the wave going 
+out to the left is the 'same as the wave coming in from the 
+right, apart from an additional contribution due to the fric- 
+tion forcef. The effect off is to generate additional velocity 
+waves  Yf which radiate equally in both directions away 
+from the bow. The implied symmetry manifests itself in the 
+invariance of (B4) under exchange of suffices L and R. 
+Equations (B I)-(B4) are complete but not all indepen- 
+dent, since the right-hand equalities in (B3) and (114) are equi- 
+valent to each other. The equations may be rearranged to 
+give a complete and independent set preserving the formal 
+symmetry between L and R, and convenient for numerical 
+solution. Subtracting (B4) from (B3) gives 
+q = + qiR) + «¾% 
+which may be compared to (10). Use of (B4) to eliminate qoL 
+and qoR from (B2) gives 
+qL = rL*(qm +«Yf), qm =rR*(qr +Yf), 
+which may be compared to (11). Equations (B1), (BS), and 
+(B6) can evidently be solved numerically in just the same 
+simple way as before, with (q/. + qR) playing the role of q 
+and representing the contribution to q(t ) attributable to past 
+history. This is what was done in Ref. 19. At each time step, 
+(B6) is used to compute the new values of qr and qm, and 
+then (B 1) and (BS) are solved simultaneously to get the new 
+values of q and f. As was shown in detail in Ref. 19, the 
+Friedlander-Keller ambiguity, if it occurs, is to be resolved 
+using the hysteresis rule stated in Sec IIC. 
+The next major step towards realism is to allow for tor- 
+sional string motion. As was pointed out in Sec IID, tor- 
+sional waves are highly significant for the way in which a real 
+string responds to the bow, especially during any kind of 
+transient. Equations (I]2)-(I]4) generalize to 
+1342 J. Acoust. Soc Am., Vol. 74, No. 5, November 1983 Mclntyreeta/.:Oscillationsofmusical'nstruments 1342 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 19 ===
+qL =rL*qo +sL*q;, qm =ra*qo R +sa*q;, (B7) 
+ß = rœ*q;L + sœ,qo, = + oa, (B8} 
+tYf = qot - q, = qo - q,t, lB10) 
+and 
+Here qL (t), etc., denote the transverse center-of-mass veloc- 
+ity signals at the bow, and q (t), etc., the torsional angular 
+velocities multiplied by string radius, i.e., normalized so that 
+the total surface velocity q(t ) at the bow is given by simple 
+summation, Eq. (B9). It is the surface velocity q(t ), rather 
+than the center-of-mass velocity, qoL 
+that governs the friction forcef(t ) through Eq. I 1. The tor- 
+sional-to-transverse \"transfer\" refie6tion functions sL(t 
+sn (t) appearing in Eqs. {B7) are related to their transverse-to- 
+torsional counterparts s[ (t), s {t } in (B8) according to 
+Ys[(t)---- Y'SL(t), Ysh(t}---- Y'sn(t}, {BI21 
+by the reciprocal theorem. TM Yand Y' are, respectively, the 
+transverse and torsional wave admittances of the string, re- 
+ferred to surface velocity and force. According to measure- 
+ments by Schelleng, 4ø typical values of Y'/Y lie in the rang 
+0.26 to ! (the value 0.2 used for the wolf notes in Fig. 14 being 
+somewhat on the low side, but still enough to a. ttenuate tran- 
+sient subharmonics quite effectively 4t}. Experimental infor- 
+mation on torsional and transfer reflection functions is lack- 
+ing; the latter would seem unlikely to be very important for a 
+string fitting snugly into a bridge notch, but might be more 
+significant, perhaps, when the other end is stopped by the 
+player's finger, under which the string might roll.-I.;ike trans- 
+verse waves, torsional waves travel with little dispersion. 
+They travel several times faster, depending on the type of 
+string, 4ø'43'47 and so torsional reflection functions. may be 
+expected to be dominated by narrow pulses with shorter de- 
+hys. 
+Once again, a more concise form of the equations may 
+be derived. Equation {BS} is replaced by 
+q=(qL -Fqn H-q;L +q;n)+«(Y+ Y'}f (B13) 
+[cf. (10) again], and Eqs. (B6) by 
+q,L =rL*(q,s +«Yf}+sL*(q;n + «Y'}, {B14a) 
+q,n = rn*(q,L + «Y f) + sn*(q; 
+q ----r*lq;r q-«¾f) q-$Jt*lq,œ q-«Yf}. {B14d} 
+In applying the hysteresis rule, it should be remembered that 
+the straight lines in Figs. 6 and 16 now represent Eq. {B13}, 
+and so have slope [ I( Y + Y') I - , or (1 + ¾'/Y)-  in units of 
+«Y. Thus torsion always increases hysteresis. 
+In connection with the discussion in See. IID, we note 
+that if all disturbances associated with torsion are assumed 
+{somewhat unrealistically) to be perfectly absorbed by the 
+string terminations, as in the example of Fig. 14, then the 
+problem becomes mathematically the same as the problem 
+without torsion, provided we replace the F(q) of Eq. (1) or 
+{BI) by the nonlinear function G (q} of Fig. 10. For if all tor- 
+sional and \"transfer\" reflection functions are set to zero, 
+then the right-hand sides of (B14c) and {B14d} vanish, Eqs. 
+(B14a) and (14b) reduce immediately to (B6), and (B13) re- 
+duces to an equation of the same form as (BS), 
+0 = (q,L + q,n) + «Yf, lB15) 
+where we have defined  = q - «Y. Since F{q) = G(O), by 
+definition of G, we have 
+f = G (} (B 16) 
+in place of Eq. (B I), showing that the problem has precisely 
+the same mathematical form as the problem without torsion, 
+withO playing the role of q, and G () the role ofF(q). G (0} may 
+well be multiple-valued, but the hysteresis rule still applies 
+exactly as stated in Sec. IIC. 
+Equations (B13) and (B14) may be generalized still 
+further to allow for real, nonrigid bow hair, .o in which case 
+reflection functions for longitudinal waves on the bow hair 
+are introduced. These involve time delays which vary in a 
+prescribed manner as the bow moves past the string. The 
+measured properties of bow hair imply that the associated 
+effects should be smaller than those associated with torsional 
+string motion. 43'47'?½ Another degree of freedom of real 
+strings is transverse string motion normal to the bow hair, 
+which is coupled to the main transverse motion parallel to 
+the bow hair via the string terminations and also, nonlinear- 
+ly, via bow-hair friction. sø-s Normal bow forcef then be- 
+comes a time-dependent variable rather than a prescribed 
+parameter, and reflection functions for transverse waves on 
+the bow hair are required. The fact that the hair is bent 
+through a small but finite angle at the string, for finitefo, 
+may also need to be taken into account. It is not known to 
+what extent generalizations of this type, some of which go far 
+beyond what is known experimentally, are musically impor- 
+tant. 
+A different kind of generalization, which recently 
+helped us to identify a prominent source of audible noise in 
+bowed-string sound,  is to allow the string to be bowed at 
+two or more neighboring points simultaneously. This ena- 
+bled us to simute the \"differential slipping\" of the string 
+past a bow of finite width. Under certain parameter condi- 
+tions it proved to be the main cause of audible noise, particu- 
+larly when the string is bowed very close to one end. It is 
+often quite significant under conditions encountered in con- 
+cert performance, and sets one of the practical limits on the 
+usable range offo. 
+Some of the foregoing generalizations represent con- 
+ceptual elaborations as well as elaborations of detail, since 
+they involve schemes more complicated than that shown in 
+Fig. 1. For instance, in the case of the string bowed at two 
+points simultaneously there are now two nonlinear elements, 
+linked to a linear element with two inputs and two outputs. 
+When implementing models of the form indicated by 
+Fig. 1, it might be asked why the simpler-looking equations 
+(10) and (11) are not used instead of (B5} and (B6) and their 
+further generalizations. For Eqs. (10) and ( 11 ) still hold if we 
+define a .single \"reflection function\" r(t } through (15)? The 
+latter definition applies formally to any linear elemeni with 
+one inputf(t ) and output q(t ). The numerical method needs 
+no modification if r(t ), so defined, is zero or bounded in the 
+neighborhood oft = 0, since in that case q as defined by (11 ) 
+1343 J. Acoust. Soc. Am., Vol. 74, No. 5, November 1983 Mcintyre e! a/.: Oscillations o! musical instruments 1343 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 20 ===
+still depends only on the past history of the system. This can 
+be shown to be true of any model in which the impulse re- 
+sponse g(t ) of the linear element begins with a narrow, isolat- 
+ed spike at t = 0 which can be approximated as a delta func- 
+tion, as discussed in Ref. 19, but is finite thereafter. The 
+parameter Z appearing in Eq. (15), or « Yin (B5), must be set 
+equal to the area under the initial spike. The approximation 
+of the initial spike by a delta function is related to the basic 
+assumption of Sec. I, that a separ?tion into sets of incoming 
+and outgoing one-dimensional waves is possible. Now r(t) 
+usually decays much more rapidly than g(t ),3 because of a 
+cancellation of poles in (15), leading to a gain in computa- 
+tional efficiency over the direct use of g(t ). However, the 
+computational efficiency obtainable when separate reflec- 
+tion functions are used is far greater still. This is the reason 
+why (BS) and (B6) and their various extensions are to be pre- 
+ferred. 
+Lord Rayleigh, The Theory of Sound (Dover, New York, 1945), Vol. 1. 
+2A. H. Benade, Fundamentals of Musical Acoustics (Oxford U.P., New 
+York, 1976). 
+3N. H. Fletcher, \"Air flow and sound generation in musical wind instru- 
+ments,\" Ann. Rev. Fluid Mech. 11, 123-146 (1979). 
+4A. H. Benade, \"On woodwind instrument bores,\" J. Acoust. Soc Am. 31, 
+137-146 (1969). 
+C. J. Nederveen, AcousticalAspectsof Woodwindlnstruments (Frits Knuf, 
+Amsterdam, 1969). 
+6R. A. Smith and G. J. Daniell, \"Systematic approach to the correction of 
+intonation in wind instruments,\" Nature 262, 761-765 {1976). 
+?H. Bouasse, Instruments  vent (Librairie Delagrave, Paris, 1929), Vol. I, 
+pp. 68-79. 
+SReference 2, Sec. 23.6. 
+øA. H. Benade and D. J. Guns, \"Sound production in wind instruments,\" 
+Ann. N.Y. Acad. Sei. 155, Art. 1,247-263 (1968). 
+\"W. Woman, \"Self-sustained oscillations of medium amplitude in clari- 
+net-like systems,\" Ph.D. dissertation, Case Western Reserve University, 
+Cleveland, OH, 1971. 
+\"S. C. Thompson, \"The effect of the reed resonance on woodwind tone 
+production,\" J. Acoust. Soc. Am. 66, 1299-1307 {1979). 
+2N. H. Fletcher, \"Sound production by organ flue pipes,\" I. Acoust. Soc. 
+Am. 60, 926-936 (1976}. 
+13R. T. Schumacher, \"Self-sustained oscillations ofthe'clarinet: an integral 
+equation approach,\" Acustiea 40, 298-309 (1978). 
+4R. T. Sehumacher, \"Self-sustained oscillations of organ flue pipes: an inte- 
+gral equation solution,\" Acustica 39, 225-238 (1978). 
+SR. T. Schumacher, \"Self-sustained oscillations of the bowed string,\" 
+Aeustica 43, 109-120 (1979). 
+6S. E. Stewart and W. J. Strong, \"Functional model of a simplified clari- 
+net,\" J. Aeoust. Soc. Am. 68, 109-120 (1980 I. 
+\"Reference 14, Eqs. (38) and (47). 
+ISM. E. Mcintyre, R. T. Schumacher, and J. Woodhouse, \"New results on 
+the bowed string,\" Catgut Aeoust. Soc. Newsletter 28, 27-31 (1977}. 
+IOM. E. Mcintyre and J. Woodhouse, \"On the fundamentals of bowed- 
+string dynamics,\" Acustica 43, 93-108 (1979}. 
+2\"E.g., H. Fletcher and L. C. Sanders, \"Quality of violin ribtaro tones,\" J. 
+Acoust. Soc. Am. 41, 1534 (1967}. See also (for instance} J.-C. Risset and 
+M. V. Mathews, \"Analysis of musical instrument tones,\" Physics Today 
+22(2), 23 ( 1969), and the earlier work of H. Fletcher, E. D. Blackburn, and 
+O. N. Geertsen, \"Quality of violin, viola, cello and bass viol tones,\" J. 
+Acoust. Soc. Am. 37, 851-863 (1965). 
+2M. E. Mcintyre and J. Woodhouse, \"The acoustics of stringed musical 
+instruments,\" lnterdiscipl. Sci. Rev. 3, 157-173 (1978}. 
+2eP. C. Boomsliter and W. Creel, \"Research potentials in auditory charac- 
+teristics of violin tone,\" J. Aeoust. Soc. Am. 51, 1984-1993 (1972). 
+:3j. W. Coltman, \"Jet-drive mechanisms in edge tones and organ pipes,\" J. 
+Acoust. Soc. Am. 60, 725-733 (1976}. 
+-'4R. M. May, \"Simple mathematical models with very complicated dynam- 
+ics,\" Nature 261, 459-467 (1976). 
+2sp. Collet and J.-P. Eckmann, Iterated Maps on the Interval as Dynamic 
+Systems (Birkhiiuser, Boston, 1980). 
+26M. L Feigenbanm, \"Quantitative Universality for a class of nonlinear 
+transformations,\" J. Stat. Phys. 19, 25-52 1978). 
+27p. R. Fenstermacher, H. L. Swinney, S. Benson, and J.P. GoUub, \"Bifur- 
+cations to periodic, quasiperiodic, and chaotic regimes in rotating and 
+c0nvecting fluids,\" Ann. N.Y. Acad. Sei. 316, 652-666 1979). 
+2aA. Libchaber, C. Laroche, and S. Fauve, \"Period doubling cascade in 
+mercury, a quantitative measurement,\" J. Phys. (Paris) 43, L211-216 
+(1982). 
+D. R. Moore, J. Toomre, E. Knobloch, and N. O. Weiss, \"Period doubling 
+and chaos in partial differential equations for thermalsolutal convection,\" 
+Nature 03, 663-667 (1983). 
+3o$. Backus, \"Small amplitude vibrations of the clarinet,\" J. Acoust. Soc. 
+Am. 35, 305-313 (1963). 
+R. T. Sehumacher, \"Ab initio calculations of the oscillations of a clari- 
+net,\" Acustica 48, 72-85 (1981). 
+3Reference 2, Fig. 22.9, points marked 
+3E.g., Modern Deelopmenls inFluidDynamics, edited by S. Goldstein (Do- 
+ver, New York, 1965), Sec. 167. We have ignored an additional, weak 
+logarithmic dependence. 
+The precise placing of the x origin to imitate a real clarinet depends of 
+course on the geometry of the mouthpiece. It also depends on the finite 
+compliance of the reed, which provides a way in which the player can 
+control tuning (Ref. 30, Fig. 1). 
+M. Abramowitz and I. Stegun, Handbook of Mathematical Funclions 
+ (Dover, New York, 1965), Eq. (25.4.7). 
+3OF. (3. Friedlander, \"On the oscillations of a bowed string,\" Proc. Cam- 
+bridge Philos. Soc. 49, 516-530 (1953). 
+J. B. Keller, \"Bowing of violin strings,\" Comm. Pure Appl. Math. 6, 483- 
+495 (1953). 
+L. Cremer and H. Lazarus, \"Der Einfiuss des Bogendrucks beim Anstrei- 
+chen einer Saite,\" Proc. 6th ICA Congress on Acoustics, N9-N 12 (Tokyo, 
+1968). 
+39L. Cremer, \"Der Einfluss des 'Bogendrucks' auf die selbsterregten 
+Sehwingungen der gestrichenen Saite,\" Acustica 30, 119-136 (1974). 
+4oj. C. Sche!leng, \"The bowed string and the player,\" J. Acoust. Soc. Am. 
+S3, 26-41 (1973). 
+4M. E. Mcintyre, R. T. Sehumacher, and J. Woodhouse, \"Aperiodicity in 
+bowed-string motion,\" Acustica 49, 13-32 (1981); see also Ref. 42. 
+:M. E. Mcintyre, R. T. Sehumacher, and J. Woodhouse, \"Aperiodicity in 
+bowed-string motion: on the differential-slipping mechanism,\" Acustica 
+$0, 294-295 (1982). 
+4L. Cremer, Physik der Geige (Hirzel Verlag, Stuttgart, 1981). (English 
+translation to be published by MIT, Press.) 
+44For too loose an embouchure it is found experimentally that the stability 
+of the oscillations is lost? 
+SIn a model with sufficiently high temporal resolution, one could easily 
+include such features as the oscillatory precursors to the main pulse which 
+are evident, for instance, in the experimental data shown in Fig. 2lb) of 
+Ref. ! 9. These precursors are manifestations of wave dispersion due to the 
+bending stiffness of the string. See also Appendix B. 
+46But it should be noted that (6) and (22} fail when pure-resistive string ter- 
+minations are used, as in the celebrated Raman model of the bowed 
+string, s'3' for which r(t } is a delta function with area Id I < 1. 
+L. Cremer,/'Die Geige aus der Sicht des Physikers,\" Nachr. Akad. Wiss. 
+G6ttingen: II Math. Phys. KI. 12, 223-259 (1971). 
+4SSee, e.g., E. Rabinowicz, \"Stick and Slip,\" SoL Am. 194(5), 109-118 
+(1956). 
+49It is probably insignificant for real bowed strings as well, for a somewhat 
+different reason? 9 Although jumps which are exactly instantaneous 
+would not take place in reality, the idealization f= F(q) is itself highly 
+unlikely to be applicable at this point. The friction force probably never 
+reaches the maximum value of F(q) during capture. Thus the fine dashed 
+extensions in thef(t ) waveform in Fig. 7 are probably more indicative of 
+the properties of the model than of the physical reality. 
+SøL. Cremer, \"Consideration of the duration of transients in bowed instru- 
+ments,\" Catgut Acoust. Soc. Newletter 38, 13-18 (1982), Fig. 6. See also 
+the English version of Ref. 43. 
+ j. Woodhouse, \"On the acoustics and mechanics of stringed musical in- 
+struments,\" Doctoral thesis, University of Cambridge, Cambridge, Eng- 
+land, 1977. 
+eL. Cremer, \"Das Schicksal der 'Sekund/irwellen' bei der Selbsterregung 
+yon Streichinstrumenten,\" Acustica 42, 133-148 (1979). 
+1344 J. Acoust. Sec. Am., Vol. 74, No. 5, November 1983 Mcintyre et al.: Oscillations of musical instruments 1344 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp
+=== PAGE 21 ===
+S3Reference 40, Eq. (2), with the right-hand side multiplied by 2 as indicated 
+in footnote 10 ofthe same rcfercnce. Schclleng's result was der/red assum- 
+ing Helmholtz motion in a string bowed near one end, and an F(q) shape 
+like the heavy curve in Fig. 6. More generally, one may define the Sehel- 
+!eng maximumf, for a given periodic oscillation, as the value off which 
+makes the peak in F(q] too tall to permit release. In this [strongly hystereti- 
+cal) situation the shaded region in Fig. 6 overlaps the left-hand excursion 
+of the assumed oscillation, implying that the assumed regime ofoscillatioo 
+cannot in fact exist. So defined, the Schelleng maximtun is an upper bound 
+on the possible values offb for the given type of oscillation. In the present 
+case the oscillation breaks down well before this bound is reached. 
+s4C. V. Raman, \"On the mechanical theory of vibrations of bowed strings,\" 
+Indian Assoc. Cult. Sci. Bull. No. 15, 1-158 (1918). 
+ssB. Lawergren, \"On the motion of bowed violin strings,\" Acustica 44, 194- 
+206 [19801 . 
+bProfessor Benade writes that this is n \"favorite lecture demonstration\" of 
+his; see Ref. 2, Sec. 22.6. 
+sq-.. Cremer and H. !sing, \"Die selbsterregten Schwingongen yon Orgelp- 
+feifen,\" Acostica 19, 143-153 (1967}. 
+SaM. E. Mcintyre and R. T. Schumacher, \"On the triangular waveforms 
+observed in long organ fine pipes nt resonance,\" to be submitted to J. 
+Acoust. SOC. Am. 
+'Lord Rayleigh, The Theory of Sound {Dover, New York, 1945}, Vol. 2, 
+Article 370. 
+l. H. Fletcher and S. Thwaites, \"Wave propagation on an acoustically 
+perturbed jet,\" Acustica 42, 324-334(1979). 
+sS. Thwaites and N.H. Fletcher, \"Wave propagation on turbulent jets,\" 
+Acustica 45, 175-179 (1980}; see also S. Thwaites and N.H. Fletcher, 
+\"Wave propagation on turb.ulent jets. lI. Growth,\" Acustica 51, *.. n.9 
+(1982). 
+ø3N. H. Fletcher and S. Thwaites, \"The physics of organ pipes,\" Sei. Am. 
+248(I), 84-93 [1983). 
+SN. H. Fletcher, \"Acoustical correlates of flute performance technique,\" J. 
+Acoust. SOc. Am. 57, 233-237 (1975}. 
+ø4A more accurate model could be constructed in which separate reflection 
+functions are used for reflection from the inouth and from the far end, just 
+as for the model of an asymmetrically bowed string formulated in Appen- 
+dix B. 
+SSN. H. Fletcher and L. M. Douglas, \"Harmonic generation in organ pils, 
+recorders, and flutes,\" J. Acoust. Sac. Am. 68, 767-771 (1980}. 
+66A. W. Nolle, \"Adjustments affecting the steady waveforms of flue organ 
+pipes,\" J. Acoust. So:. Am. 73, 1821-183211983). 
+S?The two situations can be shown to be dynamically equivalent if: la} the 
+local jet hydrodynamics is incompressible (which is true to an extremely 
+good approximation for the low Mach number jets we are concerned 
+with), and lb) the transverse acoustic displacement is locally a rigid, bulk 
+motion across the base of the jet, and the acoustic pressure gradient locally 
+uniform in space (roughly true at best, depending on the geometry of near- 
+by boundaries--.g., Fig. 11). Given {a} and (b), one can transform the 
+hydrodynamical equations from an inertial to a transversely accelerating 
+frame of reference, in which the acoustic pressure gradient is just balanced 
+by the \"fictitious force\" due to the acceleration, and the fluid is locally at 
+rest apart from the jet issuing from a transversely oscillating orifice. 
+Sln Coltman's equivalent circuit (Ref. 23, Fig. 9), this contribution is repre- 
+sented by the contribution i; to the total current in the short end of the 
+transmission line representing the mouth of the pipe. 
+!n the opposite extreme of small amplitude (so small that the instability 
+waves behave linearly all the way to the lip), a more realistic model could 
+be achieved by inserting an appropriate bandpass filter into the upper path 
+in Fig. I, thus mimicking selective amplification of jet displacements by 
+Rayleigh instability waves. (This refinement would be especially impor- 
+tant in any extension of the model to simulate edge-tone behavior.) 
+?r'he edge-tone delay r is not 5 T,/4, as has sometimes been concluded from 
+attempts to measure the nonuniform, difficult-to-observe spatial structure 
+of the growing waves on the jet (and also from theoretical arguments in 
+which mistakes concerning phase relations were made}. Coltman's 2a di- 
+rect and intrinsically more reliable measurements oftemporalphase rela- 
+tions show clearly that the time delay on the jet for the gravest edge-tone of 
+period T, is 3T,/4. (Note that Coltman's quoted phases are for transverse 
+jet displacements at the lip referred to transverse velocity, not displace- 
+ment, at the base of the jet; see discussion in Ref. 60.) 
+ j. E. Ffowcs Williams and L. H. Hall, \"Aerodynamic sound generation by 
+turbulent flow in the vicinity of a scattering half plane,\" J. Fluid Mech. 40, 
+657--670 (1970). 
+721. H. M. Disselhorst and L. van Wijngaarden, \"Flow in the exit of open 
+pipes during acoustic resonance,\" J. Fluid Mech. 99, 293-319 (1980}. 
+7E.g., M. J. Lightbill, Waoes in Fluids [Cambridge U.P., Cambridge, 1978). 
+?4A. H. Benade and W. B. Richards, \"Second-harmonic sound generation 
+at woodwind tone holes,\" J. Acoust. Soc. Am. Suppl. ! 71, S91 [1982). 
+M. E. Mcintyre, Waoes and Mean Floras (monograph in preparation}. 
+?SN. H. Fletcher, R. K. Silk, and L. M. DouglaS, \"Acoustic admittance of 
+air-driven reed generators,\" Acostica 50, 155-159 0982). 
+?J. C. Schelleng, \"The violin as a circuit,\" J. Aenast. Soc. Am. 35, 326-338 
+(1963}; se also Erratum, J. Acoust. Soc. Am. 35, 1291 {1963}. 
+?aReference I, Article i07. 
+R. T. Schumacher, \"Some aspects of the bow,\" Catgut Acoust. Soc. 
+Newsletter 24, 5-8 (1975}. 
+aøM. Hancock, \"The mechanical impedances of violin strings,\" Catgut 
+Acoust. Soc. Newsletter 23, 17-26 {1975). 
+SSG. Wenrelch, \"Coupled piano strings,\" J. Acoust. Soc. Am. 62, 1474 
+(1977}. 
+szc. Oough, \"The resonant response of a violin G string and the excitation 
+of the wolf note,\" Acustica 44, I 1 3-123 { 1980). 
+1345 J. Acoust. Soc. Am., VoL 74, No. 5, November 1983 Mcintyre eta/.: Oscillations of musical instruments 1345 
+Downloaded 06 Jan 2011 to 131.111.17.178. Redistribution subject to ASA license or copyright; see http://asadl.org/journals/doc/ASALIB-home/info/terms.jsp

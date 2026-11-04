@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "mode": "paced",
+  "batch_per_5ms": 0,
+  "concurrent_receive": false,
+  "queued_tx_bytes_after_writes": 0,
+  "guard_bytes": 64,
+  "requests": 10,
+  "valid_frames": 0,
+  "bad_crc": 0,
+  "unique_frames": 0,
+  "identities": [],
+  "bytes": 0
+}

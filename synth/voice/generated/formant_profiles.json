@@ -1,0 +1,4063 @@
+[
+  {
+    "asset": "vowel/a",
+    "selected_frame": {
+      "time": 0.13996800780296326,
+      "length": 65.0,
+      "peaks": [
+        {
+          "frequency": 288,
+          "height": 3392,
+          "left_width": 870,
+          "right_width": 990
+        },
+        {
+          "frequency": 904,
+          "height": 7424,
+          "left_width": 620,
+          "right_width": 680
+        },
+        {
+          "frequency": 1320,
+          "height": 5888,
+          "left_width": 420,
+          "right_width": 660
+        },
+        {
+          "frequency": 2700,
+          "height": 4352,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3440,
+          "height": 3328,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3775,
+          "height": 2112,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7200,
+          "height": 1024,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 512,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 46.0,
+        "peaks": [
+          {
+            "frequency": 272,
+            "height": 2304,
+            "left_width": 870,
+            "right_width": 1110
+          },
+          {
+            "frequency": 904,
+            "height": 4608,
+            "left_width": 600,
+            "right_width": 720
+          },
+          {
+            "frequency": 1320,
+            "height": 3840,
+            "left_width": 420,
+            "right_width": 600
+          },
+          {
+            "frequency": 2700,
+            "height": 2560,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3440,
+            "height": 1728,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3875,
+            "height": 1536,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7200,
+            "height": 576,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.049984000623226166,
+        "length": 40.0,
+        "peaks": [
+          {
+            "frequency": 288,
+            "height": 3392,
+            "left_width": 870,
+            "right_width": 990
+          },
+          {
+            "frequency": 904,
+            "height": 7424,
+            "left_width": 620,
+            "right_width": 680
+          },
+          {
+            "frequency": 1320,
+            "height": 5888,
+            "left_width": 420,
+            "right_width": 660
+          },
+          {
+            "frequency": 2700,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3440,
+            "height": 3328,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3775,
+            "height": 2112,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7200,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.13996800780296326,
+        "length": 65.0,
+        "peaks": [
+          {
+            "frequency": 288,
+            "height": 3392,
+            "left_width": 870,
+            "right_width": 990
+          },
+          {
+            "frequency": 904,
+            "height": 7424,
+            "left_width": 620,
+            "right_width": 680
+          },
+          {
+            "frequency": 1320,
+            "height": 5888,
+            "left_width": 420,
+            "right_width": 660
+          },
+          {
+            "frequency": 2700,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3440,
+            "height": 3328,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3775,
+            "height": 2112,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7200,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.22995200753211975,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 272,
+            "height": 2112,
+            "left_width": 870,
+            "right_width": 1050
+          },
+          {
+            "frequency": 896,
+            "height": 4096,
+            "left_width": 540,
+            "right_width": 660
+          },
+          {
+            "frequency": 1340,
+            "height": 3328,
+            "left_width": 420,
+            "right_width": 660
+          },
+          {
+            "frequency": 2660,
+            "height": 2112,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3440,
+            "height": 1920,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3775,
+            "height": 1472,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7328,
+            "height": 448,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "vowel/i",
+    "selected_frame": {
+      "time": 0.12723200023174286,
+      "length": 69.0,
+      "peaks": [
+        {
+          "frequency": 152,
+          "height": 768,
+          "left_width": 670,
+          "right_width": 670
+        },
+        {
+          "frequency": 280,
+          "height": 5312,
+          "left_width": 420,
+          "right_width": 360
+        },
+        {
+          "frequency": 2280,
+          "height": 4352,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 2840,
+          "height": 4352,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3400,
+          "height": 4352,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3840,
+          "height": 2320,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6816,
+          "height": 1120,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 52.0,
+        "peaks": [
+          {
+            "frequency": 152,
+            "height": 768,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 288,
+            "height": 5312,
+            "left_width": 420,
+            "right_width": 360
+          },
+          {
+            "frequency": 2272,
+            "height": 4720,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2840,
+            "height": 4760,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3840,
+            "height": 2320,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 1120,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 32
+      },
+      {
+        "time": 0.008320000022649765,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 310,
+            "height": 0,
+            "left_width": 528,
+            "right_width": 408
+          },
+          {
+            "frequency": 2222,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 576
+          },
+          {
+            "frequency": 2720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3420,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3975,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.016831999644637108,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 305,
+            "height": 0,
+            "left_width": 516,
+            "right_width": 396
+          },
+          {
+            "frequency": 2222,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 552
+          },
+          {
+            "frequency": 2740,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3420,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3975,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.025407999753952026,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 305,
+            "height": 0,
+            "left_width": 504,
+            "right_width": 384
+          },
+          {
+            "frequency": 2222,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 540
+          },
+          {
+            "frequency": 2760,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3420,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3975,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.0342399999499321,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 300,
+            "height": 0,
+            "left_width": 492,
+            "right_width": 372
+          },
+          {
+            "frequency": 2222,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 516
+          },
+          {
+            "frequency": 2780,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3420,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3975,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.043007999658584595,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 360
+          },
+          {
+            "frequency": 2222,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 492
+          },
+          {
+            "frequency": 2800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3420,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3975,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.05183999985456467,
+        "length": 75.0,
+        "peaks": [
+          {
+            "frequency": 152,
+            "height": 768,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 280,
+            "height": 5312,
+            "left_width": 420,
+            "right_width": 360
+          },
+          {
+            "frequency": 2280,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2840,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3840,
+            "height": 2320,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 1120,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.06080000102519989,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 360
+          },
+          {
+            "frequency": 2233,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3950,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6784,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.06969600170850754,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 372
+          },
+          {
+            "frequency": 2233,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3925,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6784,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.07884800434112549,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 372
+          },
+          {
+            "frequency": 2244,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3380,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6752,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.088128000497818,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 384
+          },
+          {
+            "frequency": 2244,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3380,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3875,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6752,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.09759999811649323,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 396
+          },
+          {
+            "frequency": 2255,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3360,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3850,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6752,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.10726399719715118,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 396
+          },
+          {
+            "frequency": 2255,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3360,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3825,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.11711999773979187,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 408
+          },
+          {
+            "frequency": 2266,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.12723200023174286,
+        "length": 69.0,
+        "peaks": [
+          {
+            "frequency": 152,
+            "height": 768,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 280,
+            "height": 5312,
+            "left_width": 420,
+            "right_width": 360
+          },
+          {
+            "frequency": 2280,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 2840,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 4352,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3840,
+            "height": 2320,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6816,
+            "height": 1120,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1377280056476593,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 285,
+            "height": 0,
+            "left_width": 468,
+            "right_width": 420
+          },
+          {
+            "frequency": 2266,
+            "height": 0,
+            "left_width": 468,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.14841601252555847,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 275,
+            "height": 0,
+            "left_width": 456,
+            "right_width": 432
+          },
+          {
+            "frequency": 2266,
+            "height": 0,
+            "left_width": 456,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3825,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1594880074262619,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 60,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 265,
+            "height": 0,
+            "left_width": 444,
+            "right_width": 444
+          },
+          {
+            "frequency": 2266,
+            "height": 0,
+            "left_width": 444,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3825,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.17081600427627563,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 84,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 420,
+            "right_width": 540
+          },
+          {
+            "frequency": 2398,
+            "height": 0,
+            "left_width": 420,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3360,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6720,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1823360025882721,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 118,
+            "height": 0,
+            "left_width": 685,
+            "right_width": 700
+          },
+          {
+            "frequency": 240,
+            "height": 0,
+            "left_width": 420,
+            "right_width": 540
+          },
+          {
+            "frequency": 2339,
+            "height": 0,
+            "left_width": 450,
+            "right_width": 480
+          },
+          {
+            "frequency": 2820,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3370,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3870,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6768,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.20633600652217865,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 118,
+            "height": 640,
+            "left_width": 685,
+            "right_width": 700
+          },
+          {
+            "frequency": 240,
+            "height": 3968,
+            "left_width": 420,
+            "right_width": 540
+          },
+          {
+            "frequency": 2339,
+            "height": 3516,
+            "left_width": 450,
+            "right_width": 480
+          },
+          {
+            "frequency": 2840,
+            "height": 3436,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3400,
+            "height": 3476,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3870,
+            "height": 1900,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6768,
+            "height": 880,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "vowel/u_bck",
+    "selected_frame": {
+      "time": 0.030736997723579407,
+      "length": 60.0,
+      "peaks": [
+        {
+          "frequency": 172,
+          "height": 256,
+          "left_width": 710,
+          "right_width": 710
+        },
+        {
+          "frequency": 320,
+          "height": 5888,
+          "left_width": 470,
+          "right_width": 470
+        },
+        {
+          "frequency": 740,
+          "height": 3840,
+          "left_width": 400,
+          "right_width": 460
+        },
+        {
+          "frequency": 2400,
+          "height": 1792,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3340,
+          "height": 1792,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3900,
+          "height": 2304,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6800,
+          "height": 768,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 640,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 640,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 750,
+            "right_width": 750
+          },
+          {
+            "frequency": 513,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 2536,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3089,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3891,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 6900,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.007837995886802673,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 750,
+            "right_width": 750
+          },
+          {
+            "frequency": 491,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 2500,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3000,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3884,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 6900,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.01555699110031128,
+        "length": 45.0,
+        "peaks": [
+          {
+            "frequency": 172,
+            "height": 256,
+            "left_width": 710,
+            "right_width": 710
+          },
+          {
+            "frequency": 320,
+            "height": 5888,
+            "left_width": 470,
+            "right_width": 470
+          },
+          {
+            "frequency": 740,
+            "height": 3840,
+            "left_width": 400,
+            "right_width": 460
+          },
+          {
+            "frequency": 2400,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 2304,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6800,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.023191988468170166,
+        "length": 70.0,
+        "peaks": [
+          {
+            "frequency": 172,
+            "height": 256,
+            "left_width": 710,
+            "right_width": 710
+          },
+          {
+            "frequency": 320,
+            "height": 5888,
+            "left_width": 470,
+            "right_width": 470
+          },
+          {
+            "frequency": 740,
+            "height": 3840,
+            "left_width": 400,
+            "right_width": 460
+          },
+          {
+            "frequency": 2400,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 2304,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6800,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.030736997723579407,
+        "length": 60.0,
+        "peaks": [
+          {
+            "frequency": 172,
+            "height": 256,
+            "left_width": 710,
+            "right_width": 710
+          },
+          {
+            "frequency": 320,
+            "height": 5888,
+            "left_width": 470,
+            "right_width": 470
+          },
+          {
+            "frequency": 740,
+            "height": 3840,
+            "left_width": 400,
+            "right_width": 460
+          },
+          {
+            "frequency": 2400,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 2304,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6800,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.0382009893655777,
+        "length": 2.384185791015625e-07,
+        "peaks": [
+          {
+            "frequency": 172,
+            "height": 256,
+            "left_width": 710,
+            "right_width": 710
+          },
+          {
+            "frequency": 320,
+            "height": 5888,
+            "left_width": 470,
+            "right_width": 470
+          },
+          {
+            "frequency": 740,
+            "height": 3840,
+            "left_width": 400,
+            "right_width": 460
+          },
+          {
+            "frequency": 2400,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3340,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3900,
+            "height": 2304,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6800,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 640,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.04556499421596527,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 750,
+            "right_width": 750
+          },
+          {
+            "frequency": 422,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 641,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2736,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3756,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 6900,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.05280999839305878,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 750,
+            "right_width": 750
+          },
+          {
+            "frequency": 318,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 654,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2789,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3761,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 6900,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "vdiph2/o_oo",
+    "selected_frame": {
+      "time": 0.012674003839492798,
+      "length": 70.0,
+      "peaks": [
+        {
+          "frequency": 153,
+          "height": 2125,
+          "left_width": 661,
+          "right_width": 660
+        },
+        {
+          "frequency": 454,
+          "height": 5120,
+          "left_width": 504,
+          "right_width": 460
+        },
+        {
+          "frequency": 812,
+          "height": 5736,
+          "left_width": 583,
+          "right_width": 520
+        },
+        {
+          "frequency": 2559,
+          "height": 3440,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3010,
+          "height": 3158,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3735,
+          "height": 1792,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6900,
+          "height": 1282,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 577,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 577,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 50.0,
+        "peaks": [
+          {
+            "frequency": 153,
+            "height": 2125,
+            "left_width": 661,
+            "right_width": 660
+          },
+          {
+            "frequency": 454,
+            "height": 5120,
+            "left_width": 504,
+            "right_width": 460
+          },
+          {
+            "frequency": 812,
+            "height": 5736,
+            "left_width": 583,
+            "right_width": 520
+          },
+          {
+            "frequency": 2559,
+            "height": 3440,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3010,
+            "height": 3158,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3735,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6900,
+            "height": 1282,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.006432004272937775,
+        "length": 40.0,
+        "peaks": [
+          {
+            "frequency": 153,
+            "height": 2125,
+            "left_width": 661,
+            "right_width": 660
+          },
+          {
+            "frequency": 454,
+            "height": 5120,
+            "left_width": 504,
+            "right_width": 460
+          },
+          {
+            "frequency": 812,
+            "height": 5736,
+            "left_width": 583,
+            "right_width": 520
+          },
+          {
+            "frequency": 2559,
+            "height": 3440,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3010,
+            "height": 3158,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3735,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6900,
+            "height": 1282,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.012674003839492798,
+        "length": 70.0,
+        "peaks": [
+          {
+            "frequency": 153,
+            "height": 2125,
+            "left_width": 661,
+            "right_width": 660
+          },
+          {
+            "frequency": 454,
+            "height": 5120,
+            "left_width": 504,
+            "right_width": 460
+          },
+          {
+            "frequency": 812,
+            "height": 5736,
+            "left_width": 583,
+            "right_width": 520
+          },
+          {
+            "frequency": 2559,
+            "height": 3440,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3010,
+            "height": 3158,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3735,
+            "height": 1792,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6900,
+            "height": 1282,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 577,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.10267400741577148,
+        "length": 50.0,
+        "peaks": [
+          {
+            "frequency": 184,
+            "height": 2473,
+            "left_width": 683,
+            "right_width": 660
+          },
+          {
+            "frequency": 526,
+            "height": 4916,
+            "left_width": 544,
+            "right_width": 460
+          },
+          {
+            "frequency": 930,
+            "height": 5857,
+            "left_width": 550,
+            "right_width": 520
+          },
+          {
+            "frequency": 2559,
+            "height": 3146,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3034,
+            "height": 3090,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3755,
+            "height": 1956,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7036,
+            "height": 1282,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 556,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 556,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.10887099802494049,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 192,
+            "height": 2560,
+            "left_width": 689,
+            "right_width": 670
+          },
+          {
+            "frequency": 544,
+            "height": 4864,
+            "left_width": 554,
+            "right_width": 554
+          },
+          {
+            "frequency": 960,
+            "height": 5888,
+            "left_width": 541,
+            "right_width": 540
+          },
+          {
+            "frequency": 2560,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3040,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3760,
+            "height": 1998,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7071,
+            "height": 1281,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.11506099998950958,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 156,
+            "height": 0,
+            "left_width": 655,
+            "right_width": 660
+          },
+          {
+            "frequency": 416,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 460
+          },
+          {
+            "frequency": 780,
+            "height": 0,
+            "left_width": 572,
+            "right_width": 520
+          },
+          {
+            "frequency": 2500,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3070,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3741,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6872,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "vowel/3_2",
+    "selected_frame": {
+      "time": 0.02752000093460083,
+      "length": 40.0,
+      "peaks": [
+        {
+          "frequency": 140,
+          "height": 1920,
+          "left_width": 680,
+          "right_width": 560
+        },
+        {
+          "frequency": 480,
+          "height": 4400,
+          "left_width": 540,
+          "right_width": 480
+        },
+        {
+          "frequency": 1380,
+          "height": 5280,
+          "left_width": 660,
+          "right_width": 600
+        },
+        {
+          "frequency": 2300,
+          "height": 4840,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3100,
+          "height": 3960,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3520,
+          "height": 3240,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6944,
+          "height": 1600,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 220,
+            "height": 0,
+            "left_width": 50,
+            "right_width": 50
+          },
+          {
+            "frequency": 500,
+            "height": 0,
+            "left_width": 0,
+            "right_width": 0
+          },
+          {
+            "frequency": 1200,
+            "height": 0,
+            "left_width": 0,
+            "right_width": 0
+          },
+          {
+            "frequency": 3000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3500,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.0090239979326725,
+        "length": 45.0,
+        "peaks": [
+          {
+            "frequency": 140,
+            "height": 1920,
+            "left_width": 680,
+            "right_width": 560
+          },
+          {
+            "frequency": 480,
+            "height": 4400,
+            "left_width": 540,
+            "right_width": 480
+          },
+          {
+            "frequency": 1380,
+            "height": 5280,
+            "left_width": 660,
+            "right_width": 600
+          },
+          {
+            "frequency": 2300,
+            "height": 4840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3100,
+            "height": 3960,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3520,
+            "height": 3240,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6944,
+            "height": 1600,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.018112000077962875,
+        "length": 48.0,
+        "peaks": [
+          {
+            "frequency": 140,
+            "height": 1920,
+            "left_width": 680,
+            "right_width": 560
+          },
+          {
+            "frequency": 480,
+            "height": 4400,
+            "left_width": 540,
+            "right_width": 480
+          },
+          {
+            "frequency": 1380,
+            "height": 5280,
+            "left_width": 660,
+            "right_width": 600
+          },
+          {
+            "frequency": 2300,
+            "height": 4840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3100,
+            "height": 3960,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3520,
+            "height": 3240,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6944,
+            "height": 1600,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.02752000093460083,
+        "length": 40.0,
+        "peaks": [
+          {
+            "frequency": 140,
+            "height": 1920,
+            "left_width": 680,
+            "right_width": 560
+          },
+          {
+            "frequency": 480,
+            "height": 4400,
+            "left_width": 540,
+            "right_width": 480
+          },
+          {
+            "frequency": 1380,
+            "height": 5280,
+            "left_width": 660,
+            "right_width": 600
+          },
+          {
+            "frequency": 2300,
+            "height": 4840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3100,
+            "height": 3960,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3520,
+            "height": 3240,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6944,
+            "height": 1600,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.03686400130391121,
+        "length": 78.0,
+        "peaks": [
+          {
+            "frequency": 140,
+            "height": 2048,
+            "left_width": 680,
+            "right_width": 560
+          },
+          {
+            "frequency": 504,
+            "height": 4400,
+            "left_width": 540,
+            "right_width": 480
+          },
+          {
+            "frequency": 1380,
+            "height": 5280,
+            "left_width": 660,
+            "right_width": 600
+          },
+          {
+            "frequency": 2300,
+            "height": 4840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3100,
+            "height": 3960,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3520,
+            "height": 3240,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6944,
+            "height": 1600,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.04639999940991402,
+        "length": -4.76837158203125e-07,
+        "peaks": [
+          {
+            "frequency": 140,
+            "height": 2048,
+            "left_width": 680,
+            "right_width": 560
+          },
+          {
+            "frequency": 520,
+            "height": 4400,
+            "left_width": 540,
+            "right_width": 480
+          },
+          {
+            "frequency": 1380,
+            "height": 5280,
+            "left_width": 660,
+            "right_width": 600
+          },
+          {
+            "frequency": 2300,
+            "height": 4840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3100,
+            "height": 3960,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3520,
+            "height": 3240,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6944,
+            "height": 1600,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.056063998490571976,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 220,
+            "height": 0,
+            "left_width": 0,
+            "right_width": 0
+          },
+          {
+            "frequency": 500,
+            "height": 0,
+            "left_width": 0,
+            "right_width": 0
+          },
+          {
+            "frequency": 1200,
+            "height": 0,
+            "left_width": 0,
+            "right_width": 0
+          },
+          {
+            "frequency": 3000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3500,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 4000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "vowel/y_2",
+    "selected_frame": {
+      "time": 0.11780302226543427,
+      "length": 85.0,
+      "peaks": [
+        {
+          "frequency": 132,
+          "height": 1536,
+          "left_width": 670,
+          "right_width": 670
+        },
+        {
+          "frequency": 272,
+          "height": 4864,
+          "left_width": 360,
+          "right_width": 540
+        },
+        {
+          "frequency": 1820,
+          "height": 3328,
+          "left_width": 540,
+          "right_width": 540
+        },
+        {
+          "frequency": 2280,
+          "height": 3072,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3300,
+          "height": 3072,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3680,
+          "height": 2816,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6500,
+          "height": 768,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7375,
+          "height": 1024,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 9000,
+          "height": 550,
+          "left_width": 480,
+          "right_width": 480
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 304,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1764,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2356,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3358,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3899,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.006882011890411377,
+        "length": 45.0,
+        "peaks": [
+          {
+            "frequency": 132,
+            "height": 1536,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 272,
+            "height": 4864,
+            "left_width": 360,
+            "right_width": 540
+          },
+          {
+            "frequency": 1820,
+            "height": 3328,
+            "left_width": 540,
+            "right_width": 540
+          },
+          {
+            "frequency": 2280,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3300,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3680,
+            "height": 2816,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7375,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.013842016458511353,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 297,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1726,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2354,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3342,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3824,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.020914018154144287,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 298,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1715,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2442,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3331,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3774,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.02806299924850464,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 295,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1705,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2502,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3340,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3751,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.03536200523376465,
+        "length": 50.0,
+        "peaks": [
+          {
+            "frequency": 132,
+            "height": 1536,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 272,
+            "height": 4864,
+            "left_width": 360,
+            "right_width": 540
+          },
+          {
+            "frequency": 1820,
+            "height": 3328,
+            "left_width": 540,
+            "right_width": 540
+          },
+          {
+            "frequency": 2280,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3300,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3680,
+            "height": 2816,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7375,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 2
+      },
+      {
+        "time": 0.11780302226543427,
+        "length": 85.0,
+        "peaks": [
+          {
+            "frequency": 132,
+            "height": 1536,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 272,
+            "height": 4864,
+            "left_width": 360,
+            "right_width": 540
+          },
+          {
+            "frequency": 1820,
+            "height": 3328,
+            "left_width": 540,
+            "right_width": 540
+          },
+          {
+            "frequency": 2280,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3300,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3680,
+            "height": 2816,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7375,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1253340095281601,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 305,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1719,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2646,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3252,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3609,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1330060213804245,
+        "length": 40.0,
+        "peaks": [
+          {
+            "frequency": 132,
+            "height": 1536,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 272,
+            "height": 4864,
+            "left_width": 360,
+            "right_width": 540
+          },
+          {
+            "frequency": 1820,
+            "height": 3328,
+            "left_width": 540,
+            "right_width": 540
+          },
+          {
+            "frequency": 2280,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3300,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3680,
+            "height": 2816,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7375,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.14082099497318268,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 200,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 303,
+            "height": 0,
+            "left_width": 500,
+            "right_width": 500
+          },
+          {
+            "frequency": 1688,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 2691,
+            "height": 0,
+            "left_width": 550,
+            "right_width": 550
+          },
+          {
+            "frequency": 3226,
+            "height": 0,
+            "left_width": 600,
+            "right_width": 600
+          },
+          {
+            "frequency": 3752,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 5500,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      },
+      {
+        "time": 0.1487780064344406,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 132,
+            "height": 1536,
+            "left_width": 670,
+            "right_width": 670
+          },
+          {
+            "frequency": 272,
+            "height": 4864,
+            "left_width": 360,
+            "right_width": 540
+          },
+          {
+            "frequency": 1800,
+            "height": 3328,
+            "left_width": 540,
+            "right_width": 540
+          },
+          {
+            "frequency": 2260,
+            "height": 2840,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3300,
+            "height": 3072,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3680,
+            "height": 2816,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7375,
+            "height": 1024,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 9000,
+            "height": 550,
+            "left_width": 480,
+            "right_width": 480
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  },
+  {
+    "asset": "n/_n",
+    "selected_frame": {
+      "time": 0.019967999309301376,
+      "length": 0.0,
+      "peaks": [
+        {
+          "frequency": 236,
+          "height": 3456,
+          "left_width": 480,
+          "right_width": 120
+        },
+        {
+          "frequency": 380,
+          "height": 2432,
+          "left_width": 240,
+          "right_width": 540
+        },
+        {
+          "frequency": 1650,
+          "height": 1472,
+          "left_width": 360,
+          "right_width": 420
+        },
+        {
+          "frequency": 2540,
+          "height": 896,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 3500,
+          "height": 768,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 4000,
+          "height": 896,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 6912,
+          "height": 512,
+          "left_width": 480,
+          "right_width": 480
+        },
+        {
+          "frequency": 7800,
+          "height": 0,
+          "left_width": 700,
+          "right_width": 700
+        },
+        {
+          "frequency": 9000,
+          "height": 0,
+          "left_width": 700,
+          "right_width": 700
+        }
+      ],
+      "markers": 0
+    },
+    "all_frames": [
+      {
+        "time": 0.0,
+        "length": 20.0,
+        "peaks": [
+          {
+            "frequency": 236,
+            "height": 3456,
+            "left_width": 480,
+            "right_width": 120
+          },
+          {
+            "frequency": 380,
+            "height": 2432,
+            "left_width": 240,
+            "right_width": 540
+          },
+          {
+            "frequency": 1650,
+            "height": 1472,
+            "left_width": 360,
+            "right_width": 420
+          },
+          {
+            "frequency": 2540,
+            "height": 896,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 4000,
+            "height": 896,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6912,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 4
+      },
+      {
+        "time": 0.019967999309301376,
+        "length": 0.0,
+        "peaks": [
+          {
+            "frequency": 236,
+            "height": 3456,
+            "left_width": 480,
+            "right_width": 120
+          },
+          {
+            "frequency": 380,
+            "height": 2432,
+            "left_width": 240,
+            "right_width": 540
+          },
+          {
+            "frequency": 1650,
+            "height": 1472,
+            "left_width": 360,
+            "right_width": 420
+          },
+          {
+            "frequency": 2540,
+            "height": 896,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 3500,
+            "height": 768,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 4000,
+            "height": 896,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 6912,
+            "height": 512,
+            "left_width": 480,
+            "right_width": 480
+          },
+          {
+            "frequency": 7800,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          },
+          {
+            "frequency": 9000,
+            "height": 0,
+            "left_width": 700,
+            "right_width": 700
+          }
+        ],
+        "markers": 0
+      }
+    ]
+  }
+]

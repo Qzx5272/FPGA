@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-26T13:12:29.744958",
+  "scope": "installed MIDI API inventory only; no port opened",
+  "ports": [],
+  "has_is_port_open": true,
+  "has_cancel_callback": true,
+  "is_port_open": false
+}

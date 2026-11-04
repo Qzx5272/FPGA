@@ -1,0 +1,16 @@
+{
+  "profile": "RTL simulation only, 112-bit independent state; not full-band configuration",
+  "partials": 4096,
+  "frames": 135168,
+  "source_hashes": {
+    "synth\\band\\rtl\\partial_lane.v": "bf42576c9090847385086eb42aecbc0bc638bf8015175a7cdcbb88809bb663c9",
+    "synth\\band\\rtl\\partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "synth\\rtl\\hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "synth\\band\\tests\\tb_pool.v": "6fa95c7657771e384c6b18664694d6c0d2924653f5a786ad65baa1219839dba1"
+  },
+  "state": "superseded",
+  "elapsed_seconds": 927.75,
+  "log": "",
+  "returncode": 4294967295,
+  "reason": "Slow pre-RAM-refactor Icarus run cancelled after 32 output frames matched Verilator bit-for-bit; see pool4096_verilated.json for complete 4096-peak proof."
+}

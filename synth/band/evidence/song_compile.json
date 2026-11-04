@@ -1,0 +1,8 @@
+{
+  "events": 2725,
+  "maximum_held_notes": 12,
+  "duration_seconds": 96.0,
+  "all_note_identities_released": true,
+  "rules_on_vs_off_event_difference": true,
+  "score_sha256": "ddb2367422e9a4a1687ff7685c3c77934f692a33b2bc5435c6db0316bb6c0427"
+}

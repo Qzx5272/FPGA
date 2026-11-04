@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "First9600frames only; exact current band PCM equality with logical RGB enabled versus disabled. Baseline full98s job still running.",
+  "frames": 9600,
+  "video": "synth\\band\\evidence\\workstation_video_probe\\4f90125533b7_9600frames.pcm",
+  "baseline": "synth\\band\\evidence\\workstation_render\\bf1017bd575c_4704000frames.pcm",
+  "pcm_sha256": "170d2ca3477f537d7196251cb120cfb68b6e214c930c45404f2f884783dafcb7"
+}

@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hierarchy Module Resource</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 14px; }
+div#main_wrapper{ width: 100%; }
+h1 {text-align: center; }
+h1 {margin-top: 36px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { align = "center"; padding: 5px 2px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-color: #dee8f4; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="content">
+<h1>Hierarchy Module Resource</h1>
+<table>
+<tr>
+<th class="label">MODULE NAME</th>
+<th class="label">REG NUMBER</th>
+<th class="label">ALU NUMBER</th>
+<th class="label">LUT NUMBER</th>
+<th class="label">DSP NUMBER</th>
+<th class="label">BSRAM NUMBER</th>
+<th class="label">SSRAM NUMBER</th>
+<th class="label">ROM16 NUMBER</th>
+</tr>
+<tr>
+<td class="label">band_stage_top (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_top.sv)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">21</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--input_audio
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_top.sv)</td>
+<td align = "center">211</td>
+<td align = "center">155</td>
+<td align = "center">147</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--transport
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/microphone_capture.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--receiver
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/i2s_input_bridge.v)</td>
+<td align = "center">82</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--fifo
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/i2s_input_bridge.v)</td>
+<td align = "center">224</td>
+<td align = "center">3</td>
+<td align = "center">128</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--engine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_top.sv)</td>
+<td align = "center">340</td>
+<td align = "center">15</td>
+<td align = "center">670</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rx
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">40</td>
+<td align = "center">-</td>
+<td align = "center">65</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--receiver
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">486</td>
+<td align = "center">31</td>
+<td align = "center">211</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--core
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">637</td>
+<td align = "center">1686</td>
+<td align = "center">616</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--score
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">86</td>
+<td align = "center">157</td>
+<td align = "center">198</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--storage
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/song_sequencer.v)</td>
+<td align = "center">272</td>
+<td align = "center">121</td>
+<td align = "center">223</td>
+<td align = "center">-</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ownership
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">622</td>
+<td align = "center">16</td>
+<td align = "center">2076</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--effect
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">133</td>
+<td align = "center">83</td>
+<td align = "center">143</td>
+<td align = "center">4</td>
+<td align = "center">16</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--electronic_singer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">121</td>
+<td align = "center">63</td>
+<td align = "center">22</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--notes
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/singer_role.sv)</td>
+<td align = "center">73</td>
+<td align = "center">32</td>
+<td align = "center">41</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/singer_note_control.v)</td>
+<td align = "center">277</td>
+<td align = "center">177</td>
+<td align = "center">237</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--source
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/singer_role.sv)</td>
+<td align = "center">228</td>
+<td align = "center">92</td>
+<td align = "center">802</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--osc
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/vocoder_carrier.sv)</td>
+<td align = "center">62</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--audio
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/singer_role.sv)</td>
+<td align = "center">123</td>
+<td align = "center">79</td>
+<td align = "center">64</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--voice_core
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_vocoder_insert.sv)</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--bank
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/vocoder_core.sv)</td>
+<td align = "center">8833</td>
+<td align = "center">-</td>
+<td align = "center">11702</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[0].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">419</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[1].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">452</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[2].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">418</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[3].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">447</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[4].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">452</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[5].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">452</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[6].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">457</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[7].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">456</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[8].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">453</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[9].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">419</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[10].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">417</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[11].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">440</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[13].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">134</td>
+<td align = "center">166</td>
+<td align = "center">433</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[12].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">26</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[14].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">26</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--[15].bq
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/filterbank.sv)</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">26</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--mixer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/vocoder_core.sv)</td>
+<td align = "center">1115</td>
+<td align = "center">137</td>
+<td align = "center">1663</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[0].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">324</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">647</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">680</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[1].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">307</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">646</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">680</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[2].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">307</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">646</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">680</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[3].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">307</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">645</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">680</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[4].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">308</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">645</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">680</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[5].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">304</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">645</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">679</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[6].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">138</td>
+<td align = "center">60</td>
+<td align = "center">304</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">646</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">679</td>
+<td align = "center">376</td>
+<td align = "center">1214</td>
+<td align = "center">9</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--banks[7].unit
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_singer_core.sv)</td>
+<td align = "center">144</td>
+<td align = "center">60</td>
+<td align = "center">314</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--allocator
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">820</td>
+<td align = "center">178</td>
+<td align = "center">647</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--renderer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/voice_bank.v)</td>
+<td align = "center">744</td>
+<td align = "center">376</td>
+<td align = "center">1370</td>
+<td align = "center">10</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sine
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_renderer.v)</td>
+<td align = "center">80</td>
+<td align = "center">28</td>
+<td align = "center">83</td>
+<td align = "center">1</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--dac
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">201</td>
+<td align = "center">62</td>
+<td align = "center">138</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--serializer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/audio_pt8211_queue.v)</td>
+<td align = "center">60</td>
+<td align = "center">4</td>
+<td align = "center">65</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--telemetry
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">763</td>
+<td align = "center">-</td>
+<td align = "center">582</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sender
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/status_sender.v)</td>
+<td align = "center">30</td>
+<td align = "center">-</td>
+<td align = "center">48</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.play_button
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">36</td>
+<td align = "center">31</td>
+<td align = "center">15</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.stop_button
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">36</td>
+<td align = "center">31</td>
+<td align = "center">15</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.scanner
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">296</td>
+<td align = "center">-</td>
+<td align = "center">174</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.expression
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">374</td>
+<td align = "center">86</td>
+<td align = "center">711</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.pads
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">7383</td>
+<td align = "center">2059</td>
+<td align = "center">6143</td>
+<td align = "center">1</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--local_inputs.performer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/band_stage_engine.sv)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--performer
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/local_pedal_performer.v)</td>
+<td align = "center">429</td>
+<td align = "center">300</td>
+<td align = "center">544</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--pedal
+ (D:/StarclusterBuilds/stage_syn_5f6085a96845/rtl/local_pedal_performer.v)</td>
+<td align = "center">230</td>
+<td align = "center">-</td>
+<td align = "center">568</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

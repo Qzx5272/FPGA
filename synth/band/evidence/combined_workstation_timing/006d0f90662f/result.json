@@ -1,0 +1,40 @@
+{
+  "status": "passed_internal_timing_only",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_006d0f90662f",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_57829c60a80b",
+  "frozen_netlist_sha256": "1a369433afba86cf163793f535849a9a1bfc0eb30f46e46cea3ab5dd6943c6ed",
+  "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.",
+  "started": "2026-10-26T04:53:35.302114",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "1e7d1f10fe01272a01e64e57e5ad0c4d77408540e72a451dce4af28a0c856aea",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_combined_workstation_timing.py": "4a4a6c1198262d7b623af4002c88d6114a8cd9366fc08ba10f6c57c21fe5af82"
+  },
+  "vocoder_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "stage_pad_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "returncode": 0,
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "mic_clk": 325.521,
+    "audio_clk": 40.69,
+    "display_clk": 20.0
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "finished": "2026-10-26T05:14:21.304583"
+}

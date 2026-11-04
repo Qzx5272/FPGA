@@ -1,0 +1,48 @@
+{
+  "status": "failed",
+  "bitstream_sha256": "b7fac3d2f9815040cfb6c99e16d8ca8c59767d03ffec97d10ecbef267a8d934a",
+  "program_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pcm5102_song_20261031_052005",
+  "records": [
+    {
+      "elapsed": 0.09400000001187436,
+      "profile": "band",
+      "playing": false,
+      "owner": 0,
+      "part": 0,
+      "voices": 0,
+      "cycles": 0,
+      "epoch": 1,
+      "song_sample": 0,
+      "rejected": 0,
+      "deadline_miss": 0,
+      "clips": 0,
+      "health": {
+        "gate": false,
+        "note": 60,
+        "dropped": 0,
+        "stale_off": 0,
+        "dac_dropped": 0,
+        "dac_underruns": 0
+      }
+    }
+  ],
+  "scope": "96s default score through FPGA PCM5102 I2S; digital telemetry, user listening required",
+  "master": 32,
+  "identity": 1345663282,
+  "bad_crc": 1,
+  "error": "AssertionError('UART CRC error')",
+  "final_state": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 0,
+    "voices": 0,
+    "cycles": 0,
+    "epoch": 1,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0
+  },
+  "finished": "2026-10-31T05:20:37.927310"
+}

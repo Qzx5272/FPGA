@@ -1,0 +1,9 @@
+{
+  "status": "passed_synthesis_only",
+  "build": "D:\\StarclusterBuilds\\spectrum_bars_syn_a32fe503ff3d",
+  "source_sha256": "a32fe503ff3ded4466b2dc370021fc9fcc8fef8cabbfc57685cd899c8cae2792",
+  "scope": "Standalone spectrum pixel consumer synthesis;no fulltop,video timing,HDMI or physical acceptance",
+  "started": "2026-10-26T06:44:40.632949",
+  "returncode": 0,
+  "finished": "2026-10-26T06:44:43.203145"
+}

@@ -1,0 +1,54 @@
+{
+  "evidence_level": "PCM identity across completed full-clock and quiescent-skip RTL runs",
+  "pairs": [
+    {
+      "full": "band_011fdd8d0016_2s_full.json",
+      "fast": "band_011fdd8d0016_2s_fast.json",
+      "match": true,
+      "full_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776",
+      "fast_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776"
+    },
+    {
+      "full": "band_011fdd8d0016_97s_full.json",
+      "fast": "band_011fdd8d0016_97s_fast.json",
+      "match": true,
+      "full_pcm": "9a75bdb072aa9131241f91c55ac4a0e0aaa8abc533416ba76649cf4143bdb13a",
+      "fast_pcm": "9a75bdb072aa9131241f91c55ac4a0e0aaa8abc533416ba76649cf4143bdb13a"
+    },
+    {
+      "full": "band_03713a3dd128_2s_full.json",
+      "fast": "band_03713a3dd128_2s_fast.json",
+      "match": true,
+      "full_pcm": "00fb0b5e320a24a0a3ca9678e4c14c3e0e1b1182f0981f1288a171bb56797a65",
+      "fast_pcm": "00fb0b5e320a24a0a3ca9678e4c14c3e0e1b1182f0981f1288a171bb56797a65"
+    },
+    {
+      "full": "band_03713a3dd128_97s_full.json",
+      "fast": "band_03713a3dd128_97s_fast.json",
+      "match": true,
+      "full_pcm": "5868f364008e8a792b0bcd81b0c2ab783fa0d0494812276d26d794545acbd346",
+      "fast_pcm": "5868f364008e8a792b0bcd81b0c2ab783fa0d0494812276d26d794545acbd346"
+    },
+    {
+      "full": "band_1dc16039a985_2s_full.json",
+      "fast": "band_1dc16039a985_2s_fast.json",
+      "match": true,
+      "full_pcm": "00fb0b5e320a24a0a3ca9678e4c14c3e0e1b1182f0981f1288a171bb56797a65",
+      "fast_pcm": "00fb0b5e320a24a0a3ca9678e4c14c3e0e1b1182f0981f1288a171bb56797a65"
+    },
+    {
+      "full": "band_2b6523a2e6dd_2s_full.json",
+      "fast": "band_2b6523a2e6dd_2s_fast.json",
+      "match": true,
+      "full_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776",
+      "fast_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776"
+    },
+    {
+      "full": "band_8462cc06bd07_2s_full.json",
+      "fast": "band_8462cc06bd07_2s_fast.json",
+      "match": true,
+      "full_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776",
+      "fast_pcm": "be85f7cb2de915cb3bd580752067fc7f5bf3a8e15916e587c2854f40e8889776"
+    }
+  ]
+}

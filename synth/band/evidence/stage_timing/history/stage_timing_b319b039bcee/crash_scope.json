@@ -1,0 +1,8 @@
+{
+  "status": "compiler_access_violation",
+  "exit_code_hex": "0xc0000005",
+  "module": "gwsyn.dll",
+  "fault_offset": "0x397309",
+  "time": "2026-10-25T21:39:35",
+  "scope": "Windows Application Error1000; generated netlist and timing report absent; hierarchy1 rerun is an experiment, not a proven remedy"
+}

@@ -1,0 +1,40 @@
+{
+  "configuration": "256 quota slots, score upload, before expression/vowels update",
+  "evidence_level": "PnR only",
+  "source_sha256": {
+    "synth\\band\\rtl\\band_core.v": "79d7c5b4fbc8b694b080991c23b8b9569eac2773365711e74bd3f8cb82c607f3",
+    "synth\\band\\rtl\\band_renderer.v": "9abe6463f22f987f42cf6af62428400492de4905d00c5f7385ced4efa0db7bf2",
+    "synth\\band\\rtl\\band_top.v": "fc47ba5ef74e67478261da57529f93bfdc4350489e2f5256f127ca32088883c9",
+    "synth\\band\\rtl\\diagnostic_top.v": "23d7fa680e527f6acf338fa0c3f784df370924e236c605ef32e5d4f25c0b888d",
+    "synth\\band\\rtl\\event_receiver.v": "39e87b65b6f319bf78a65ccbfa747415844ef933a4a592f3ef51846b80996c10",
+    "synth\\band\\rtl\\mcp3208_scanner.v": "9fcc0cfa1e6fef241a6e8b1ecae183a025f2e159ad0bf80c93a30a0e892ed45b",
+    "synth\\band\\rtl\\midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "synth\\band\\rtl\\note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "synth\\band\\rtl\\pad_frontend.v": "26082b6ca8f32a7efeeec4136b898151a9bbafc7fbae1b2ad0f9a11ff96c817d",
+    "synth\\band\\rtl\\partial_lane.v": "a7bb4bfd485c2dca60d604b5aff9faa2ed5fcb48c18e4ffa9f2d9fc8c52f2d12",
+    "synth\\band\\rtl\\partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "synth\\band\\rtl\\song_config.vh": "bbe7faebcb0f9078f27d460662c78948f14ae2cce76c58214cd38aa91247f54e",
+    "synth\\band\\rtl\\song_events.vh": "d0b30adf14c0c37e73122a9cb5d0a99e02864c6dd1c2da561d9bfeb2b1354141",
+    "synth\\band\\rtl\\song_sequencer.v": "1e64af2d1e040f76efd51ac1a3eabe2200b0f2ca3e372f86d1d0c86934fa0882",
+    "synth\\band\\rtl\\song_storage_init.vh": "43a55ff35a75706596b54d67e9a6c4ea65d594dbb9458e7da9fa78be790c2cd2",
+    "synth\\band\\rtl\\song_store.v": "d5997ff50a88a6efa9e95826e19a2ce50b13789f9fae989a4964199122e4f4b5",
+    "synth\\band\\rtl\\status_sender.v": "95379b07ddfdfcea3951ba77a87d5da277da801d9497e2a714caea3d73ba78e7",
+    "synth\\band\\rtl\\stereo_delay.v": "68c63a25951446a758f2895e19e361c1b105c17c201655eabf65e58193a57895",
+    "synth\\band\\rtl\\tempo_increment.vh": "cd654e17b44bc22b951035182b4464aa49de449e221a9739da202006a43a28a7",
+    "synth\\band\\rtl\\track_ownership.v": "63f7b76a07ee5652832d0cdc48d873274892b9d15c2c93070665641c3df2cf28",
+    "synth\\band\\rtl\\voice_bank.v": "ca64523dcce181a75800d98e4ed5f4383bda4a78e8e0f29b3b6104e45dd93a30",
+    "synth\\rtl\\hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "synth\\rtl\\sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "synth\\rtl\\uart.v": "4fe3a17a5b1e27cd1ff74f8d78f32f25f50b8cbde56e53da121fe915e2e5f907",
+    "synth\\rtl\\audio_serial.v": "ed01cb20a8ff51237e01a2ebc4829b51b42f348333d04dc9def768c311ff7b6a",
+    "synth\\constraints\\board.cst": "8d0589639bc41aef42c7fb4b6d68a8f29eb1ce1aa23b242a17ea762eb5433f86",
+    "synth\\constraints\\board.sdc": "5a5f9bbc6374b4bb984e13062491985e13e247a34553f5f808ba8e20de8b3fc0"
+  },
+  "setup_violations": 21,
+  "hold_violations": 0,
+  "fmax": [
+    "50.000(MHz)",
+    "48.454(MHz)"
+  ],
+  "bitstream_sha256": "0e9317abbfcb87b7d05b9ad9a20057a2810d468b84598b83a755f4443d4317c3"
+}

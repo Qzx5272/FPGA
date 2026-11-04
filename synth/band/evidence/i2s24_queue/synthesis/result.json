@@ -1,0 +1,13 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "I2S24 queued output bridge synthesis,no integrated timing/board acceptance",
+  "sources": {
+    "i2s24_queue_bridge.v": "363084cb639c8c06034317e355d02a639fe25d6afa00b594cb1137d8df320d9a",
+    "audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782",
+    "i2s24_tx.v": "826b3374b394208d16e629192df678013b12b64911958b405321d0ede6145d41"
+  },
+  "build": "D:\\StarclusterBuilds\\i2s24_queue_c65228d89642",
+  "started": "2026-10-25T23:31:43.875678",
+  "returncode": 0,
+  "finished": "2026-10-25T23:31:45.992687"
+}

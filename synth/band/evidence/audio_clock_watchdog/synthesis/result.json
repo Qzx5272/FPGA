@@ -1,0 +1,11 @@
+{
+  "status": "passed_synthesis_only",
+  "scope": "Audio clock watchdog synthesis,no integrated timing/board acceptance",
+  "sources": {
+    "audio_clock_watchdog.v": "094458d56126a25731e4ae8d54d1594157d0bf988a4d9255f6d136db63d2d36d"
+  },
+  "build": "D:\\StarclusterBuilds\\audio_watchdog_6de6722ff882",
+  "started": "2026-10-26T00:03:17.394033",
+  "returncode": 0,
+  "finished": "2026-10-26T00:03:18.914233"
+}

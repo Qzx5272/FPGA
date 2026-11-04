@@ -1,0 +1,140 @@
+{
+  "status": "passed_timing_pending_pin_audit",
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_f66680365bc4",
+  "source": "D:\\StarclusterBuilds\\pt8211_onboard_syn_5e4f2b059569",
+  "frozen_netlist_sha256": "d7537d484640ff27a9dca00022cc4deb507f908655911c5e69a93ccda1b263c8",
+  "top_module": "board_pt8211_controls_top",
+  "onboard_controls": true,
+  "button_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\onboard_controls\\20261026_185937\\result.json",
+    "sha256": "5fd02aec3fede9528839a021e4e793eba78ce176ce32b86767e02016c2c5473f"
+  },
+  "serial_global_clock_trial": false,
+  "integer_output_clock_trial": false,
+  "target_serial_mhz": 126.0,
+  "pixel_reset_trial": true,
+  "route_quality_trial": false,
+  "reset_min_delay_trial": true,
+  "started": "2026-10-26T20:48:48.660046",
+  "timeout_seconds": 7200,
+  "scope": "Fixed known UART/PT8211/HDMI0 pins;3clocks,2bounded crossings,first-sync hold exception,no serial asyncCLEAR exceptions;pixel reset and OSER recovery/removal timed;DAC core-to-pad bound20ns isengineeringbudget,not unspecified DAC setup/hold orPCB/analog proof. Mic/ADC/pedal notconnected. Experimental1ns minimum bound on OSER reset paths;native recovery/removal requirements and constraint semantics must be independently reviewed before release.",
+  "chain_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_pt8211_dvi\\20261026_185937\\result.json",
+    "sha256": "b9e65f2ea72a676ede41c423a2c36fa687bf21a5e7c62b1abe5e44914ca4b6a2",
+    "decoded_frames": 3006,
+    "scope": "Generic fulltop with same tied-idle inputs;board shell structurally reviewed,not physical acceptance"
+  },
+  "vocoder_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "pad_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_netlist\\63f243c1a09c_20261026_044222\\result.json",
+    "report_sha256": "aea35900e93f63faf59eea281882f115d81b7463d1fc1daadf37d2157e9df33d",
+    "source_sha256": "77f6e6be71f4784be926ae04a77c822779daa0104432a904b5c9847f246c3e80",
+    "generation_proof": {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\e93724d32e1a\\result.json",
+      "sha256": "1525b0c547913965b5e9063407d6466977d4006c903e321041abd8af8211e59d"
+    },
+    "scope": "Source-matched isolated pad vendor-netlist calibration/events including80addresses andsame-edge read/write;notfulltop/timing/physical acceptance"
+  },
+  "inputs": {
+    "build.tcl": "1302ec94713eefbe5fb1deae43447c4ddecf7600bb71481b4b502a16b96b6be1",
+    "board.cst": "09b7c7753d79d810ee40a4cd38dd22c19380116eeb9bf1e2dc74009ec1e21448",
+    "board.sdc": "61c85363147802692bbc8409705a0f0727b90af791317712adefa8fde55fef1c",
+    "pnr_pt8211_onboard.py": "25ce190367c6d3919964e4e2126a3988fd561a1211aa4c32cdd6938a8664ceed"
+  },
+  "actual_clocks": {
+    "core_clk": 20.0,
+    "serial_clk": 7.937,
+    "display_clk": 39.683
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "pulse_width_paths": [
+    {
+      "slack_ns": 6.553,
+      "actual_ns": 7.453,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[5].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.553,
+      "actual_ns": 7.453,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[7].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.567,
+      "actual_ns": 7.467,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[2].unit/renderer/bent_increment_0_s"
+    },
+    {
+      "slack_ns": 6.567,
+      "actual_ns": 7.467,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/electronic_singer/source/received_frequency_0_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[3].unit/renderer/n3854_s"
+    },
+    {
+      "slack_ns": 6.568,
+      "actual_ns": 7.468,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/electronic_singer/source/n14033_0_s"
+    },
+    {
+      "slack_ns": 6.571,
+      "actual_ns": 7.471,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[5].unit/renderer/sine/lut_lut_0_1_s"
+    },
+    {
+      "slack_ns": 6.571,
+      "actual_ns": 7.471,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/harmonics_0_s9"
+    },
+    {
+      "slack_ns": 6.571,
+      "actual_ns": 7.471,
+      "required_ns": 0.9,
+      "kind": "High Pulse Width",
+      "clock": "core_clk",
+      "endpoint": "workstation/band/engine/core/banks[6].unit/renderer/state_memory_state_memory_0_0_s"
+    }
+  ],
+  "pulse_width_violations": 0,
+  "finished": "2026-10-26T21:07:27.954285"
+}

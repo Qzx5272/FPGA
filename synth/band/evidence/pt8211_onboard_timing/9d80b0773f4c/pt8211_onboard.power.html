@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td {white-space:pre;  border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+<ul>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+</ul>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>D:\StarclusterBuilds\pt8211_onboard_pnr_9d80b0773f4c\impl\gwsynthesis\pt8211_onboard.vg</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>D:\StarclusterBuilds\pt8211_onboard_pnr_9d80b0773f4c\board.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>D:\StarclusterBuilds\pt8211_onboard_pnr_9d80b0773f4c\board.sdc</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.12.03 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5AST-LV138FPG676AC1/I0</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5AST-138</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>B</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Mon Oct 26 13:52:47 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2026 Gowin Semiconductor Corporation. All rights reserved.</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Grade</td>
+<td>Commercial</td>
+</tr>
+<tr>
+<td class="label">Process</td>
+<td>Typical</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>817.419</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>100.806</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>716.613</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>34.990</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>12.222</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>75.010</td>
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>0.900</td>
+<td>793.494</td>
+<td>80.017</td>
+<td>786.160</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>1.800</td>
+<td>0.483</td>
+<td>7.200</td>
+<td>13.829</td>
+</tr>
+<tr>
+<td>VCCIO33</td>
+<td>3.300</td>
+<td>0.485</td>
+<td>3.052</td>
+<td>11.670</td>
+</tr>
+<tr>
+<td>VCCLDO</td>
+<td>1.200</td>
+<td>0.000</td>
+<td>4.800</td>
+<td>5.760</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>26.572</td>
+<td>NA</td>
+<td>6.211</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>14.661
+<td>11.742
+<td>12.536
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>524.840
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>PLL</td>
+<td>9.045
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DSP</td>
+<td>153.227
+<td>NA</td>
+<td>5.790
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>board_pt8211_dvi_top</td>
+<td>713.686</td>
+<td>713.686(713.686)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/</td>
+<td>713.686</td>
+<td>713.686(713.685)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/</td>
+<td>704.548</td>
+<td>704.548(704.547)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/analyzer/</td>
+<td>30.668</td>
+<td>30.668(30.668)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/analyzer/analysis/</td>
+<td>22.844</td>
+<td>22.844(21.149)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/analyzer/analysis/capture/</td>
+<td>5.282</td>
+<td>5.282(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/analyzer/analysis/transform/</td>
+<td>15.867</td>
+<td>15.867(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/analyzer/display_frame/</td>
+<td>7.824</td>
+<td>7.824(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/bars/</td>
+<td>0.073</td>
+<td>0.073(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/</td>
+<td>673.748</td>
+<td>673.748(673.557)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/</td>
+<td>648.506</td>
+<td>648.506(643.610)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[0].unit/</td>
+<td>50.720</td>
+<td>50.720(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[0].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[0].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[0].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[1].unit/</td>
+<td>50.717</td>
+<td>50.717(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[1].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[1].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[1].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[2].unit/</td>
+<td>50.717</td>
+<td>50.717(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[2].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[2].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[2].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[3].unit/</td>
+<td>50.716</td>
+<td>50.716(50.606)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[3].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[3].unit/renderer/</td>
+<td>23.353</td>
+<td>23.353(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[3].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[4].unit/</td>
+<td>50.717</td>
+<td>50.717(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[4].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[4].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[4].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[5].unit/</td>
+<td>50.717</td>
+<td>50.717(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[5].unit/allocator/</td>
+<td>27.253</td>
+<td>27.253(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[5].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[5].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[6].unit/</td>
+<td>50.717</td>
+<td>50.717(50.607)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[6].unit/allocator/</td>
+<td>27.254</td>
+<td>27.254(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[6].unit/renderer/</td>
+<td>23.354</td>
+<td>23.354(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[6].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[7].unit/</td>
+<td>51.010</td>
+<td>51.010(50.897)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[7].unit/allocator/</td>
+<td>27.254</td>
+<td>27.254(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[7].unit/renderer/</td>
+<td>23.644</td>
+<td>23.644(1.823)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/banks[7].unit/renderer/sine/</td>
+<td>1.823</td>
+<td>1.823(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/effect/</td>
+<td>41.166</td>
+<td>41.166(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/</td>
+<td>94.123</td>
+<td>94.123(94.022)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/</td>
+<td>51.516</td>
+<td>51.516(50.238)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/</td>
+<td>50.238</td>
+<td>50.238(50.238)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/</td>
+<td>45.144</td>
+<td>45.144(41.298)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[0].bq/</td>
+<td>2.583</td>
+<td>2.583(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[10].bq/</td>
+<td>2.578</td>
+<td>2.578(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[11].bq/</td>
+<td>2.584</td>
+<td>2.584(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[12].bq/</td>
+<td>2.584</td>
+<td>2.584(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[13].bq/</td>
+<td>2.584</td>
+<td>2.584(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[14].bq/</td>
+<td>2.576</td>
+<td>2.576(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[15].bq/</td>
+<td>2.584</td>
+<td>2.584(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[1].bq/</td>
+<td>2.583</td>
+<td>2.583(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[2].bq/</td>
+<td>2.583</td>
+<td>2.583(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[3].bq/</td>
+<td>2.578</td>
+<td>2.578(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[4].bq/</td>
+<td>2.578</td>
+<td>2.578(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[5].bq/</td>
+<td>2.577</td>
+<td>2.577(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[6].bq/</td>
+<td>2.577</td>
+<td>2.577(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[7].bq/</td>
+<td>2.582</td>
+<td>2.582(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[8].bq/</td>
+<td>2.583</td>
+<td>2.583(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/bank/[9].bq/</td>
+<td>2.583</td>
+<td>2.583(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/audio/voice_core/mixer/</td>
+<td>5.094</td>
+<td>5.094(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/notes/</td>
+<td>27.186</td>
+<td>27.186(27.149)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/notes/allocator/</td>
+<td>27.149</td>
+<td>27.149(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/source/</td>
+<td>15.320</td>
+<td>15.320(1.821)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/electronic_singer/source/osc/</td>
+<td>1.821</td>
+<td>1.821(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/ownership/</td>
+<td>0.526</td>
+<td>0.526(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/score/</td>
+<td>101.764</td>
+<td>101.764(101.552)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/core/score/storage/</td>
+<td>101.552</td>
+<td>101.552(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/dac/</td>
+<td>0.152</td>
+<td>0.152(0.022)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/dac/serializer/</td>
+<td>0.022</td>
+<td>0.022(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/local_inputs.pads/</td>
+<td>13.257</td>
+<td>13.257(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/local_inputs.performer/</td>
+<td>11.301</td>
+<td>11.301(11.301)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/local_inputs.performer/pedal/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/local_inputs.performer/performer/</td>
+<td>11.299</td>
+<td>11.299(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/local_inputs.scanner/</td>
+<td>0.011</td>
+<td>0.011(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/receiver/</td>
+<td>0.127</td>
+<td>0.127(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/rx/</td>
+<td>0.015</td>
+<td>0.015(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/telemetry/</td>
+<td>0.187</td>
+<td>0.187(0.011)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/engine/telemetry/sender/</td>
+<td>0.011</td>
+<td>0.011(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/input_audio/</td>
+<td>0.054</td>
+<td>0.054(0.004)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/input_audio/transport/</td>
+<td>0.004</td>
+<td>0.004(0.004)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/input_audio/transport/fifo/</td>
+<td>0.004</td>
+<td>0.004(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/band/raster/</td>
+<td>0.004</td>
+<td>0.004(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/</td>
+<td>9.138</td>
+<td>9.138(9.138)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/transmitter/</td>
+<td>0.092</td>
+<td>0.092(0.091)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/transmitter/encoder/</td>
+<td>0.091</td>
+<td>0.091(0.091)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/transmitter/encoder/b/</td>
+<td>0.027</td>
+<td>0.027(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/transmitter/encoder/g/</td>
+<td>0.032</td>
+<td>0.032(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/transmitter/encoder/r/</td>
+<td>0.032</td>
+<td>0.032(0.000)</td>
+<tr>
+<td>board_pt8211_dvi_top/workstation/video_output/video_clocks/</td>
+<td>9.046</td>
+<td>9.046(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>display_clk</td>
+<td>25.200</td>
+<td>2.750</td>
+</tr>
+<tr>
+<td>core_clk</td>
+<td>50.000</td>
+<td>710.941</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>serial_clk</td>
+<td>126.000</td>
+<td>0.004</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

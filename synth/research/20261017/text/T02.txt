@@ -1,0 +1,4579 @@
+US4984276A - Digital signal processing using waveguide networks 
+        - Google Patents
+US4984276A - Digital signal processing using waveguide networks 
+        - Google Patents
+Digital signal processing using waveguide networks
+Download PDF
+Info
+Publication number
+US4984276A
+US4984276A
+US07/414,646
+US41464689A
+US4984276A
+US 4984276 A
+US4984276 A
+US 4984276A
+US 41464689 A
+US41464689 A
+US 41464689A
+US 4984276 A
+US4984276 A
+US 4984276A
+Authority
+US
+United States
+Prior art keywords
+waveguide
+junction
+signal
+sub
+sup
+Prior art date
+1986-05-02
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+Expired - Lifetime
+Application number
+US07/414,646
+Inventor
+Julius O. Smith
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+Leland Stanford Junior University
+Original Assignee
+Leland Stanford Junior University
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+1986-05-02
+Filing date
+1989-09-27
+Publication date
+1991-01-08
+1989-09-27
+Application filed by Leland Stanford Junior University
+filed
+Critical
+Leland Stanford Junior University
+1989-09-27
+Priority to US07/414,646
+priority
+Critical
+patent/US4984276A/en
+1990-08-16
+Priority to US07/568,609
+priority
+patent/US5212334A/en
+1991-01-08
+Application granted
+granted
+Critical
+1991-01-08
+Publication of US4984276A
+publication
+Critical
+patent/US4984276A/en
+1993-03-22
+Priority to US08/035,267
+priority
+patent/US5448010A/en
+2008-01-08
+Anticipated expiration
+legal-status
+Critical
+Status
+Expired - Lifetime
+legal-status
+Critical
+Current
+Links
+USPTO
+USPTO PatentCenter
+USPTO Assignment
+Espacenet
+Global Dossier
+Discuss
+238000012545
+processing
+Methods
+0.000
+title
+description
+5
+230000001934
+delay
+Effects
+0.000
+claims
+description
+18
+230000001902
+propagating effect
+Effects
+0.000
+claims
+description
+9
+230000005540
+biological transmission
+Effects
+0.000
+claims
+description
+3
+230000005236
+sound signal
+Effects
+0.000
+claims
+1
+235000014676
+Phragmites communis
+Nutrition
+0.000
+abstract
+description
+23
+230000015572
+biosynthetic process
+Effects
+0.000
+abstract
+description
+16
+238000003786
+synthesis reaction
+Methods
+0.000
+abstract
+description
+16
+238000000034
+method
+Methods
+0.000
+description
+16
+238000004088
+simulation
+Methods
+0.000
+description
+12
+230000006870
+function
+Effects
+0.000
+description
+10
+230000000694
+effects
+Effects
+0.000
+description
+9
+238000007792
+addition
+Methods
+0.000
+description
+8
+238000010606
+normalization
+Methods
+0.000
+description
+8
+230000004044
+response
+Effects
+0.000
+description
+6
+238000013461
+design
+Methods
+0.000
+description
+5
+230000010355
+oscillation
+Effects
+0.000
+description
+5
+238000013139
+quantization
+Methods
+0.000
+description
+4
+238000005070
+sampling
+Methods
+0.000
+description
+4
+238000010521
+absorption reaction
+Methods
+0.000
+description
+3
+230000008901
+benefit
+Effects
+0.000
+description
+3
+230000000903
+blocking effect
+Effects
+0.000
+description
+3
+230000006835
+compression
+Effects
+0.000
+description
+3
+238000007906
+compression
+Methods
+0.000
+description
+3
+238000012986
+modification
+Methods
+0.000
+description
+3
+230000004048
+modification
+Effects
+0.000
+description
+3
+238000012546
+transfer
+Methods
+0.000
+description
+3
+241001275902
+Parabramis pekinensis
+Species
+0.000
+description
+2
+125000002015
+acyclic group
+Chemical group
+0.000
+description
+2
+238000013459
+approach
+Methods
+0.000
+description
+2
+238000004364
+calculation method
+Methods
+0.000
+description
+2
+230000008859
+change
+Effects
+0.000
+description
+2
+230000000295
+complement effect
+Effects
+0.000
+description
+2
+230000003111
+delayed effect
+Effects
+0.000
+description
+2
+238000011161
+development
+Methods
+0.000
+description
+2
+230000018109
+developmental process
+Effects
+0.000
+description
+2
+238000010586
+diagram
+Methods
+0.000
+description
+2
+238000001914
+filtration
+Methods
+0.000
+description
+2
+230000002194
+synthesizing effect
+Effects
+0.000
+description
+2
+230000009466
+transformation
+Effects
+0.000
+description
+2
+NCGICGYLBXGBGN-UHFFFAOYSA-N
+3-morpholin-4-yl-1-oxa-3-azonia-2-azanidacyclopent-3-en-5-imine;hydrochloride
+Chemical compound
+Cl.[N-]1OC(=N)C=[N+]1N1CCOCC1
+NCGICGYLBXGBGN-UHFFFAOYSA-N
+0.000
+description
+1
+101100386054
+Saccharomyces cerevisiae (strain ATCC 204508 / S288c) CYS3 gene
+Proteins
+0.000
+description
+1
+239000000654
+additive
+Substances
+0.000
+description
+1
+230000000996
+additive effect
+Effects
+0.000
+description
+1
+230000003190
+augmentative effect
+Effects
+0.000
+description
+1
+230000006399
+behavior
+Effects
+0.000
+description
+1
+238000007596
+consolidation process
+Methods
+0.000
+description
+1
+238000012937
+correction
+Methods
+0.000
+description
+1
+230000008878
+coupling
+Effects
+0.000
+description
+1
+238000010168
+coupling process
+Methods
+0.000
+description
+1
+238000005859
+coupling reaction
+Methods
+0.000
+description
+1
+230000001419
+dependent effect
+Effects
+0.000
+description
+1
+239000006185
+dispersion
+Substances
+0.000
+description
+1
+230000009977
+dual effect
+Effects
+0.000
+description
+1
+238000002955
+isolation
+Methods
+0.000
+description
+1
+238000004519
+manufacturing process
+Methods
+0.000
+description
+1
+238000013507
+mapping
+Methods
+0.000
+description
+1
+210000000056
+organ
+Anatomy
+0.000
+description
+1
+238000009527
+percussion
+Methods
+0.000
+description
+1
+238000012805
+post-processing
+Methods
+0.000
+description
+1
+230000008569
+process
+Effects
+0.000
+description
+1
+238000003672
+processing method
+Methods
+0.000
+description
+1
+230000000135
+prohibitive effect
+Effects
+0.000
+description
+1
+230000009467
+reduction
+Effects
+0.000
+description
+1
+238000009738
+saturating
+Methods
+0.000
+description
+1
+238000001228
+spectrum
+Methods
+0.000
+description
+1
+101150035983
+str1 gene
+Proteins
+0.000
+description
+1
+238000006467
+substitution reaction
+Methods
+0.000
+description
+1
+238000000844
+transformation
+Methods
+0.000
+description
+1
+Images
+Classifications
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H5/00
+—
+Instruments in which the tones are generated by means of electronic generators
+G10H5/007
+—
+Real-time simulation of G10B, G10C, G10D-type instruments using recursive or non-linear techniques, e.g. waveguide networks, recursive algorithms
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H7/00
+—
+Instruments in which the tones are synthesised from a data store, e.g. computer organs
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H2250/00
+—
+Aspects of algorithms or signal processing methods without intrinsic musical character, yet specifically adapted for or used in electrophonic musical processing
+G10H2250/315
+—
+Sound category-dependent sound synthesis processes [Gensound] for musical use; Sound category-specific synthesis-controlling parameters or control means therefor
+G10H2250/461
+—
+Gensound wind instruments, i.e. generating or synthesising the sound of a wind instrument, controlling specific features of said sound
+G10H2250/465
+—
+Reed instrument sound synthesis, controlling specific features of said sound
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H2250/00
+—
+Aspects of algorithms or signal processing methods without intrinsic musical character, yet specifically adapted for or used in electrophonic musical processing
+G10H2250/471
+—
+General musical sound synthesis principles, i.e. sound category-independent synthesis methods
+G10H2250/511
+—
+Physical modelling or real-time simulation of the acoustomechanical behaviour of acoustic musical instruments using, e.g. waveguides or looped delay lines
+G10H2250/515
+—
+Excitation circuits or excitation algorithms therefor
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H2250/00
+—
+Aspects of algorithms or signal processing methods without intrinsic musical character, yet specifically adapted for or used in electrophonic musical processing
+G10H2250/471
+—
+General musical sound synthesis principles, i.e. sound category-independent synthesis methods
+G10H2250/511
+—
+Physical modelling or real-time simulation of the acoustomechanical behaviour of acoustic musical instruments using, e.g. waveguides or looped delay lines
+G10H2250/535
+—
+Waveguide or transmission line-based models
+Definitions
+This invention
+relates to the field of digital signal processing and particularly to signal processing useful in digital music synthesis and other applications.
+Digital music synthesis
+has attracted increased interest as data processors have undergone new developments which provide increased performance capabilities. Digital music synthesis has many applications such as the synthesis of stringed, reed and other instruments and such as the synthesis of reverberation.
+Digital reverberation
+has also been difficult to achieve. Although digital music synthesis has employed digital reverberation as a post-processing function for many years, there still remains a need to be able to simulate with digital signal processing the quality of reverberation which exists in natural listening-space environments.
+the goal of digital reverberation
+is to produce digital signal processing methods which simulate the effect that a good concert hall or other good "listening space" has on sound. This goal is made difficult because typical good listening spaces are inherently large-order, complex acoustical systems which cannot be precisely simulated in real-time using commonly available computing techniques.
+One example of a computationally simple model
+relies upon convolving unreverberated sound with exponentially decaying white noise thereby producing the heretofore best known artificial reverberation.
+the digital reverberator designs based upon quantitative physical models
+need to be replaced by models based upon simple computations which retain the qualitative behavior of natural listening space reverberation.
+Some basic building blocks of presently known digital reverberators
+include cascaded and nested allpass networks, recursive and non-recursive comb filters, tapped delay lines, and lowpass filters.
+the early reflections
+can be exactly matched for a fixed source and listener position using a tapped delay line, and the late reverberation can be qualitatively matched using a combination of allpass chains, comb filters, and lowpass filters.
+Using a lowpass filter in the feedback loop of a comb filter
+simulates air absorption and nonspecular reflection.
+the present invention
+is a signal processor formed using digital waveguide networks.
+the digital waveguide networks
+have signal scattering junctions.
+a junction
+connects two waveguide sections together or terminates a waveguide.
+the junctions
+are constructed from conventional digital components such as multipliers, adders, and delay elements.
+the number of multiplies and additions
+determines the number of signal-scattering junctions that can be implemented in the waveguide network, and the number of delays determines the total delay which can be distributed among the waveguides interconnecting the junctions in the waveguide network.
+the signal processor of the present invention
+is typically used for digital reverberation and for synthesis of reed, string or other instruments.
+the waveguides of the present invention
+include a first rail for conducting signals from stage to stage in one direction and a second rail for conducting signals from stage to stage in the opposite direction.
+the accumulated delay along the first rail
+is substantially equal to the accumulated delay along the second rail so that the waveguide is balanced.
+the first rail
+is connected to the second rail at junctions so that signals conducted by one rail are also conducted in part by the other rail.
+Lossless waveguides used in the present invention
+are bi-directional delay lines which sometimes include embedded allpass filters. Losses are introduced as pure attenuation or lowpass filtering in one or both directions.
+the signal processor
+in some applications includes a non-linear junction connected to provide an input signal to the first rail of the waveguide and to receive an output signal from the second rail of the waveguide.
+the non-linear junction
+in some embodiments receives a control variable for controlling the non-linear junction and the signals to and from the waveguide.
+a digital reverberator
+is formed by a multi-branch network of lossless digital waveguides.
+a reed instrument
+is synthesized by a non-linear junction terminating a digital waveguide.
+a primary control variable
+representing mouth pressure, is input to the non-linear junction (also controlled secondarily by embouchure variables).
+the junction
+simulates the reed while the digital waveguide simulates the bore of the reed instrument.
+a string instrument
+is synthesized.
+a primary control variable
+representing the bow velocity
+the non-linear junction
+represents the bow-string interface (including secondary controls such as bow force, bow angle, bow position, and friction characteristics).
+two digital lossless waveguides
+are connected to the non-linear junction.
+the first waveguide
+represents the long string portion (from the bow to the nut) and the other waveguide simulates the short string portion (from the bow to the bridge).
+a series of waveguides
+can also be used to implement the body of, for example, a violin, although in such a case there is normally no direct physical interpretation of the waveguide variables.
+the reflection signal or signal coefficients introduced into the waveguides from the nonlinear junction
+are obtained from a table.
+the nonlinearity to be introduced into the waveguides
+is f(x) where x is the table address and also the incoming signal sample in the waveguide (a travelling wave sample).
+the present invention
+captures the musically important qualities of natural instruments in digital music synthesis with digital processing techniques employing digital waveguides which are computationally efficient and therefore capable of inexpensive real-time operation.
+FIG. 1
+depicts a simple closed waveguide network.
+FIG. 2
+depicts a 3-port waveguide network.
+FIG. 3
+depicts a junction of two waveguides.
+FIG. 4
+depicts a cascade waveguide network in accordance with the present invention.
+FIG. 5
+depicts one embodiment of a cascade waveguide network section.
+FIG. 6
+depicts another embodiment of a cascade waveguide network section.
+FIG. 7
+depicts a third embodiment of a cascade waveguide network section.
+FIG. 8
+depicts a pipelined embodiment of a waveguide filter.
+FIG. 9
+depicts a travelling pressure wave at a general point within a waveguide section.
+FIG. 10
+depicts a normalized-waveguide digital filter.
+FIG. 11
+depicts a wave-normalized waveguide junction.
+FIG. 12
+depicts a transformer junction
+FIG. 13
+depicts transformer-coupled waveguide junction.
+FIG. 14
+depicts a non-linear junction, controlled by a control variable, and connected through a plurality of ports to a plurality of waveguides.
+FIG. 15
+depicts a terminating non-linear junction controlled by a control variable and connected to a waveguide network.
+FIG. 16
+depicts further details of the non-linear junction of FIG. 9.
+FIG. 17
+depicts a block diagram representation of the waveguide of FIG. 9.
+FIG. 18
+depicts a non-linear junction connected to first and second waveguides.
+FIG. 19
+depicts a waveguide reverberator.
+FIG. 20
+depicts a typical waveguide employed in the FIG. 19 reverberator.
+FIG. 21
+depicts details of the FIG. 20 waveguide.
+FIG. 22
+is a signal processor forming a music instrument using digital waveguides.
+FIG. 23
+is a graph of a waveform representing the data stored in the table of FIG. 16 for a reed instrument.
+FIG. 24
+is a graph of a waveform representing the data stored in the table of FIG. 16 for a string instrument.
+a network 10
+is a closed interconnection of bi-directional signal paths 11.
+the signal paths 11
+are called branches or waveguides, designated 11-1, 11-2, 11-3, 11-4, and 11-5 and the interconnection points are called nodes or junctions, designated 12-1, 12-2, 12-3, and 12-4.
+An example of a simple network
+is shown in FIG. 1 where each signal path is bi-directional, meaning that in each waveguide there is a signal propagating in one direction and an independent signal propagating in the other direction. When a signal reaches a junction, one component is partially reflected back along the same waveguide, and other components are partially transmitted into the other waveguides connected to the junction.
+the relative strengths of the components of the transmitted or "scattered" signals at each junction
+are determined by the relative characteristic impedances of the waveguides at the junction. In FIG. 1, the waveguides 11 intersect at the junctions 12.
+a lossless waveguide
+such as each of the waveguides in FIG. 1, is defined specifically as a lossless bi-directional signal branch.
+each branch or waveguide 11 in a waveguide network 10
+is merely a bi-directional delay line. The only computations in the network take place at the branch intersection points (nodes or junctions).
+a lossless waveguide branch
+may contain a chain of cascaded allpass filters. For practical reverberator and other designs, losses are introduced in the form of factors less than 1 and/or low pass filters with a frequency response strictly bounded above by 1 in magnitude.
+Such a structure
+is suitable, for example, for providing stereo reverberation of a single channel of sound. Note, however, that really in FIG. 2 there are three inputs (15, 16-1, 16-2) and three outputs (15, 16-1, 16-2) because in an N-port, each waveguide connected to the network provides both an input and an output since each waveguide is bi-directional.
+An N-port network 14 of FIG. 2
+is lossless if at any time instant, the energy lost through the outputs, equals the total energy supplied through the inputs, plus the total stored energy.
+a lossless digital filter
+is obtained from a lossless N-port by using every port as both an input and an output. This filter is the general multi-input, multi-output allpass filter.
+An N-port network 14
+is linear if superposition holds. Superposition holds when the output in response to the sum of two input signals equals the sum of the outputs in response to each individual input signal.
+a network
+is linear if every N-port derived from it is linear. Only linear networks can be restricted to a large and well-understood class of energy conserving systems.
+⁇  1
+(2 ⁇  1 )/( ⁇  1 + ⁇  2 )
+N-way intersection
+requires N multiplies and N-1 additions to obtain P j , and one addition for each outgoing wave, for a total of N multiplies and 2N-1 additions.
+the series flow-junction
+is equivalent to the parallel pressure-junction.
+the series pressure-junction or the parallel flow-junction
+can be found by use of duality.
+the basic waveguide chain 25
+is shown in FIG. 4.
+Each junction 26-1, 26-2, . . . , 26-i, . . . , 26-M enclosing the symbol k i (t)
+denotes a scattering junction characterized by k i (t).
+the junction 26-i
+typically utilizes multipliers(M) 8 and adders(+) 7 to form the junction.
+the multipliers 8-1, 8-2, 8-3 and 8-4
+multiply by the factors [1+k(i)], [-k i (t)], [1-k i (t)], and [k i (t)], respectively.
+An alternative junction implementation 26'-i of FIG. 13
+requires only one multiply.
+junction 26-i and 27-2 in FIG. 4
+correspond to the branches 15 and 16, respectively, in FIG. 3.
+the Kelly-Lochbaum junctions 26-i and one-multiply junction 26'-i
+may be used for junction 26.
+the two-multiply lattice (not shown) and normalized ladder (FIG. 11) scattering junctions
+can be employed.
+the waveguide 25
+employs delays 27 between each scattering junction 26 along both the top and bottom signal paths, unlike conventional ladder and lattice filters. Note that the junction 26-i of FIG. 4 employs four multipliers and two adds while junction 26'-i of FIG. 13 employs one multiply and three adds.
+junction 26
+Reduction of junction 26 to other forms is merely a matter of pushing delays 27 along the top rail around to the bottom rail, so that each bottom-rail delay becomes 2T seconds (Z -2T ) instead of T seconds Z -T .
+each bottom-rail delay
+becomes 2T seconds (Z -2T ) instead of T seconds Z -T .
+Such an operation
+is possible because of the termination at the right by an infinite (or zero) characteristic impedance 6 in FIG. 4.
+pushing a delay through a multiply
+results in a corresponding time advance of the multiplier coefficient.
+any waveguide
+can be built from sections such as shown in FIG. 5.
+FIG. 8
+By alternately choosing the structure of FIGS. 6 and 7, the structure of FIG. 8 is obtained.
+This structure
+has some advantages worth considering: (1) it consolidates delays to length 2T as do conventional lattice/ladder structures, (2) it does not require a termination by an infinite characteristic impedance, allowing it to be extended to networks of arbitrary topology (e.g., multiport branching, intersection, and looping), and (3) there is no long delay-free signal path along the upper rail as in conventional structures--a pipeline segment is only two sections long.
+This structure
+termed the "half-rate waveguide filter" appears to have better overall characteristics than any other digital filter structure for many applications.
+Advantage (2)
+makes it especially valuable for modeling physical systems.
+the instantaneous power in a waveguide containing instantaneous pressure P and flow U
+is defined as the product of pressure and flow as follows:
+the N-way junction
+is lossless; no net power, active or reactive, flows into or away from the junction.
+the traveling waves
+are scaled as the characteristic impedance changes in order to hold signal power fixed. Any level can be chosen as a reference, but perhaps it is most natural to fix the power of each wave to that which it had upon entry to the section. In this case, it is quickly verified that the proper scaling is:
+each of the multipliers 8
+multiplies the signal by g i (t) as given by Eqs. (9).
+Eqs. (9)
+become
+This normalization strategy
+has the property that the time-varying waveguides (as well as the junctions) conserve signal power. If the scattering junctions are implemented with one-multiply structures, then the number of multiplies per section rises to three when power is normalized. There are three additions as in the unnormalized case. In some situations (such as in the two-stage structure) it may be acceptable to normalize at fewer points; the normalizing multiplies can be pushed through the scattering junctions and combined with other normalizing multiplies, much in the same way delays were pushed through the junctions to obtain standard ladder/lattice forms. In physical modeling applications, normalizations can be limited to opposite ends of a long cascade of sections with no interior output "taps.”
+each delay-line
+contains
+FIG. 11
+illustrates the Kelly-Lochbaum junction as it applies to normalized waves.
+the multipliers 8-1, 8-2, 8-3, and 8-4
+multiply by the factors [1-k i (t)] 1/2 , -k i (t), [1-k i (t)] 1/2 , and k i (t), respectively.
+k i (t)
+cannot be factored out to obtain a one-multiply structure.
+the four-multiply structure of FIG. 11
+is used in the normalized ladder filter (NLF).
+normalizing the outputs of the delay lines
+saves one multiply relative to the NLF which propagates normalized waves.
+duals
+are easier, that is, changing the propagation variable from pressure to velocity or vice versa in the i th section requires no signal normalization, and the forward and reverse reflection coefficients are unchanged. Only sign-reversal is required for the reverse path.
+the rms signal level
+is the same whether or not pressure or velocity is used. While appealing from a "balance of power" standpoint, normalizing all signals by their rms level can be a disadvantage.
+dynamic range
+can be minimized by choosing the smaller of pressure and velocity as the variable of propagation.
+a transformer
+joins two waveguide sections of differing characteristic impedance in such a way that signal power is preserved and no scattering occurs. It turns out that filter structures built using the transformer-coupled waveguide are equivalent to those using the normalized-wave junction described in the previous subsection, but one of the four multiplies can be traded for an addition.
+junction equations for a transformer
+can be chosen as
+the choice of a negative square root
+corresponds to a gyrator.
+the gyrator
+is equivalent to a transformer in cascade with a dualizer.
+a dualizer
+is a direct implementation of Ohm's law (to within a scale factor) where the forward path is unchanged while the reverse path is negated. On one side of the dualizer there are pressure waves, and on the other side there are velocity waves.
+Ohm's law
+is a gyrator in cascade with a transformer whose scale factor equals the characteristic admittance.
+the transformer-coupled junction
+is shown in FIG. 12.
+the multipliers 8-1 and 8-2
+multiply by g i (t) and 1/g i (t) where g i (t) equals [Z i (t)/Z i-1 (t)] 1/2 .
+a single junction
+can be modulated, even in arbitrary network topologies, by inserting a transformer immediately to the left (or right) of the junction.
+the characteristic impedance
+is not changed over the delay-line portion of the waveguide section; instead it is changed to the new time-varying value just before (or after) it meets the junction.
+the coefficients g i (t) and g i -1 (t) in FIG. 12
+are swapped (or inverted).
+the two extra multipliers 8-1 and 8-2 of FIG. 12
+provide two extra multiplies per section relating to the unnormalized (one-multiply) case, thereby achieving time-varying digital filters which do not modulate stored signal energy.
+transformers
+enable the scattering junctions to be varied independently, without having to propagate time-varying impedance ratios throughout the waveguide network.
+the one-multiply junction 26'-i
+includes three adders 7-1, 7-2, and 7-3, where adder 7-3 functions to subtract the second rail signal, P i - (t), from the first rail signal, [P i-1 + (t-T)][g i (t)].
+Junction 26'-i
+also includes the multiplier 8 which multiplies the output from adder 7-3 by k i (t).
+FIG. 13
+utilizes the junction of FIG. 12 in the form of multipliers 8-1 and 8-2 which multiply the first and second rail signals by g i (t) and 1/g i (t), respectively, where g i (t) equals [(1-k i (t))/(1+k i (t))] 1/2 .
+transformer-coupled waveguide of FIG. 13 and the wave-normalized waveguide
+are equivalent.
+One simple proof
+is to start with a transformer and a Kelly-Lochbaum junction, move the transformer scale factors inside the junction, combine terms, and arrive at FIG. 11.
+the practical importance of this equivalence
+is that the normalized ladder filter (NLF) can be implemented with only three multiplies and three additions instead of four multiplies and two additions.
+the limit cycles and overflow oscillations
+are easily eliminated in a waveguide structure, which precisely simulates a sampled interconnection of ideal transmissions line sections. Furthermore, the waveguide can be transformed into all well-known ladder and lattice filter structures simply by pushing delays around to the bottom rail in the special case of a cascade, reflectively terminated waveguide network. Therefore, aside from specific round-off error and time skew in the signal and filter coefficients, the samples computed in the waveguide and the samples computed in other ladder/lattice filters are identical (between junctions).
+the waveguide structure
+gives a precise implementation of physical wave phenomena in time-varying media. This property is valuable in its own right for simulation purposes.
+the present invention
+permits the delay or advance of time-varying coefficient streams in order to obtain physically correct time-varying waveguide (or acoustic tube) simulations using standard lattice/ladder structures. Also, the necessary time corrections for the traveling waves, needed to output a simulated pressure or velocity, are achieved.
+a plurality of waveguides 53
+are interconnected by a non-linear junction 52.
+the junction 52
+has three ports, one for each of the waveguide networks 53-1, 53-2, and 53-3.
+junction 52
+can be an N-port junction interconnecting N waveguides or waveguide networks 53.
+the control variable register 51
+provides one or more control variables as inputs to the junction 52.
+the single waveguide
+becomes a special case, single-port embodiment of FIG. 14.
+Single port examples of the FIG. 14 structure
+are described hereinafter in connection with reed instruments such as clarinets or saxophones. Multi-port embodiments of the FIG.
+FIG. 14 structure
+are described hereinafter in connection with stringed instruments such as violins.
+a multi-port variation of the FIG. 14 structure
+is also described hereinafter in connection with a reverberator.
+Many other instruments not described in detail
+can also be simulated in accordance with the present invention.
+flutes, organs, recorders, basoons, oboes, all brasses, and percussion instruments
+can be simulated by single or multi-port, linear or non-linear junctions in combination with one or more waveguides or waveguide networks.
+FIG. 15
+a block diagram representation of a waveguide 53 driven by a non-linear junction 52 is shown.
+the non-linear junction 52
+provides the input on the first rail 54 to the waveguide 53 and receives the waveguide output from the second rail on lines 55.
+a control variable unit 51
+provides a control variable to the non-linear junction 52.
+the FIG. 15 structure
+can be used as a musical instrument for simulating a reed instrument in which case the control variable unit 51 simulates mouth pressure, that is the pressure drop across a reed.
+the non-linear junction 52
+simulates the reed and the waveguide 53 simulates the bore of the reed instrument.
+FIG. 16
+depicts further details of a non-linear junction useful in connection with the FIG. 15 instrument for simulating a reed.
+the control register input on lines 56
+is a control variable, such as mouth pressure.
+the control variable
+forms one input (negative) to a subtractor 57 which receives another input (negative) directly from the most significant bits of the waveguide second rail on lines 55.
+the subtractor 56
+subtracts the waveguide output on lines 55 and the control variable on lines 56 to provide a 9-bit address on lines 69 to the coefficient store 70 and specifically the address register 58.
+the address in register 58
+provides the address on lines 68 to a table 59 and to a multiplier 62.
+the table 59
+is addressed by the address, x, from address register 58 to provide the data, g(x), in a data register 61.
+the contents, g(x), in the data register 61
+are multiplied by the address, x, from address register 58 in multiplier 62 to provide an output, x*g(x), in the multiplier register 63 which is equal to f(x).
+the output from the multiplier register 63
+is added in adder 64 to the control variable to provide the first rail input on lines 54 to the waveguide 53 of FIG. 15.
+table 59
+in one embodiment stores 512 bytes of data and provides an 8-bit output to the data register 61.
+the multiplier 62
+provides a 16-bit output to the register 63.
+the high order 8 bits in register 63
+are added in saturating adder 64 to the 8 bits from the variable register 51' to provide a 16-bit output on lines 54.
+the high order 8-bits from the 16-bit lines 55
+are subtracted in subtractor 57.
+the contents of the table 59 in FIG. 16
+represent compressed data. If the coefficients required are f(x) from the compressed table 70, only a fewer number of values, g(x), are stored in the table 59. The values stored in table 59 are f(x)/x which are equal to g(x). If x is a 16-bit binary number, and each value of x represents one 8-bit byte of data for f(x), table 59 is materially reduced in size to 512 bytes when addressed by the high-order 9 bits of x. The output is then expanded to a full 16 bits by multiplication in the multiplier 62.
+the waveguide 53
+includes a first rail receiving the input on lines 54 and comprising a delay 65.
+a terminator 67
+connects the delay 65 to the second rail delay 66 which in turn provides the second rail output on lines 55.
+the terminator 67
+is typically a single pole low-pass filter.
+Various details of a clarinet reed instrument in accordance with the signal processor of FIGS. 16 and 17
+appear in APPENDIX B.
+a three-port scattering junction
+is introduced into the waveguide.
+the first three or four adjacent open tone holes
+participate in the termination of the bore.
+the terminator 67
+includes a multiplier 74, an inverting low-pass filter 72 and a DC blocking circuit 73.
+the output from the multiplier 74
+is designated y 1 (n) where n is the sampled time index.
+the output from the low-pass filter 72
+is designated y 2 (n)
+the output from the DC blocking unit 73
+is designated y 3 (n).
+the low-pass filter 72
+has a transfer function H 12 (Z) as follows:
+the value of r
+has been set to zero.
+DC drift
+can cause unwanted numerical overflow which can be blocked by using the DC block unit 73.
+the error terms which are produced
+are relative and therefore are desirably DC centered. If a DC drift occurs, the drift has the effect of emphasizing unwanted error components.
+Relative signal error
+means that the ratio of the signal error to signal amplitude tends to remain constant. Therefore, small signal values tend to have small errors which do not significantly disturb the intended operation.
+the delays 65 and 66
+are typically selected in the following manner. One half the desired pitch period less the delay of the low-pass filter 72, less the delay of the DC block in unit 73, less the delay encountered in the non-linear junction 52 of FIG. 16.
+each waveguide section
+represents a portion of the bore of the saxophone. Since the bore of a saxophone has a linearly increasing diameter, each waveguide section simulates a cylindrical section of the saxophone bore, with the waveguide sections representing linearly increasing diameters.
+each of the delays, Z -2T
+includes two units of delay.
+one of the two units of delay
+is replaced by an all-pass filter so that the delay D changes from Z -2T to the following:
+the output signal, y 2 (n)
+is given in terms of the input signal, y 1 (n) as follows:
+h
+is calculated as a function of the instantaneous pressure in the waveguide, which is the sum of the travelling-wave components in the first rail and the second rail.
+the first rail signal input to the delay, y 1 + (n)
+is added to second rail signal y 1 - (n) and then utilized by table look up or otherwise to generate some function for representing h as follows:
+the delay of the first-order all-pass as a function of h
+can be approximated by (1-h)/(1+h) at low frequencies relative to the sampling rate.
+h
+is between 1- ⁇  and 0 for some small positive  ⁇  (the stability margin).
+the bore which is modeled by the waveguides of the present invention
+includes tone holes that are blocked and unblocked to change the pitch of the tone being played.
+a three-port junction
+can be inserted between cascaded waveguide sections. One port connects to one waveguide section, another port connects to another waveguide section, and the third port is unconnected and hence acts as a hole.
+the signal into the third port
+is represented as P 3 + and this signal is equal to zero.
+the radiated signal from the third port
+that is the radiated pressure, is denoted by P 3 - .
+the three-port structure for the tone hole simulator
+is essentially that of FIG. 14 without the waveguide 53-3 and without any control variable 51 input as indicated by junction 52 in FIG. 14.
+the junction 52
+is placed as one of the junctions, such as junction 26-i in FIG. 4.
+⁇  i
+characteristic admittance in i th waveguide
+P J
+is radiated away spherically from the open hole with a (1/R) amplitude attenuation.
+FIG. 23
+a graph is shown representing the data that is typically stored in the table 59 of FIG. 16 for a reed instrument.
+the output signal R - (n) on line 54
+is as follows:
+the control variable input on line 56
+is P m (n)/2 and the input on line 68 to the table 59 is
+R + (n)
+is the signal sample on line 55 of FIG. 16.
+the table 59
+is loaded with values which, when graphed, appear as in FIG. 23.
+the curve 92 in FIG. 23
+has a maximum value of one and then trails off to a minimum value of zero.
+the maximum value of one
+occurs between (P.sub. ⁇ ,min + )/2 and (P.sub. ⁇ ,c + )/2.
+the value (P.sub. ⁇ ,c + )/2
+corresponds to the closure of the reed. From (P.sub. ⁇ ,c + )/2 to (P.sub. ⁇ ,max + )/2 the curve 92 decays gradually to zero.
+the equation for the curve 92
+is given as follows,
+the output from the table 59
+is the variable k as given in FIG. 23, that is,
+FIG. 24
+a graph is shown representing the data that is typically stored in the coefficient table 59 of the signal table 70 (see FIG. 16) of FIG. 18.
+the output signals V s ,l - on line 54 and V s ,r - on line 49
+are as follows:
+the control variable input on line 56
+is bow velocity, V b , and the input on line 68 to the table 59 is
+V s ,l +
+is the signal sample on line 55 and V s ,r + is signal sample on line 50 of FIG. 18.
+the table 59
+is loaded with values which, when graphed, appear as in FIG. 24.
+the curve 93 in FIG. 24
+has a maximum value of one and then trails off to a minimum value of zero to the left and right symmetrically. The maximum value of one occurs between -V.sub. ⁇ ,c + and +V.sub. ⁇ ,c + . From (V.sub. ⁇ ,c + ) to (V.sub. ⁇ ,max + ) the curve 93 decays gradually to zero.
+the equation curve 93
+is given as follows,
+the output from the table 59
+is the reflection coefficient k as given in FIG. 24, that is,
+the entire table compressor 70 of FIG. 16
+can be replaced with a simple table.
+the round off error
+is linear and not relative.
+the error-to-signal ratio
+tends not to be constant. Therefore, for small signal amplitudes, the error tends to be significant so that the error may interfere with the intended operation.
+the tables
+can employ compression techniques such as linear, Lagrange and quadratic interpolation with satisfactory results.
+the curve 92 of FIG. 23
+would be replaced by a series of straight line segments thereby reducing the amount of data required to be maintained in the table.
+table 59, address register 58 and data register 61 of FIG. 16
+each have inputs 94, 95 and 96 from processor 85 (FIG. 22).
+the inputs from processor 85
+function to control the data or the access of data from the table 59. Modifications to the data in the table can be employed, for example, for embouchure control for reed synthesis. Similarly, articulation control for bowed-string synthesis is possible.
+the address register 58
+has high order address bits, bits 10 and 11, which are supplied by lines 95 from the processor. In this manner, the high order bits can be used to switch effectively to different subtables within the table 59. This switching among subtables is one form of table modification which can be used to achieve the embouchure and articulation modifications.
+FIG. 18
+further details of another embodiment of a non-linear junction is shown connected between a first waveguide 76 and a second waveguide 77.
+the non-linear junction 78
+receives an input from the control variable register 51' and provides inputs to the waveguide 76 on lines 54 and receives an output on lines 55. Also the non-linear junction 78 provides an output to the waveguide 77 on lines 49 and receives an input on lines 50.
+the non-linear junction 78
+includes an adder 57 receiving as one input the control variable from the control variable register 51' on lines 56.
+the other input to the subtractor 57
+is from the difference register 79 which in turn receives an output from an adder 80.
+the adder 80
+adds the inputs on lines 55 from the waveguide 76 and lines 50 from the waveguide 77.
+the output from the subtractor 57 on lines 68
+is input to the table compressor 70.
+the table compressor 70 of FIG. 12
+is like the table compressor 70 of FIG. 10 and provides an output on lines 69.
+the output on lines 69
+connects as one input to each of the adders 81 and 82.
+the adder 81
+receives as the other input the input from lines 50 from the waveguide 77 to form the input on lines 54 to the first waveguide 76.
+the second adder 82
+receives the table compressor signal on lines 69 and adds it to the input from the first waveguide 76 on lines 55.
+the output from adder 82
+connects on lines 49 as the input to the second waveguide 77.
+the waveguide 76
+includes the top rail delay 65-1 and the bottom rail delay 66-1 and a terminator 67-1.
+the second waveguide 77
+includes a top rail delay 65-2 and a bottom rail delay 66-2 and a terminator 67-2.
+the waveguides of FIG. 18
+are as follows.
+the terminator 67-1
+is merely an inverter which changes the sign of the first rail value from delay 65-1 going into the delay 66-1. For example, the changing the sign is a 2's complement operation in digital arithmetic.
+Each of the delays 65-1 and 66-1
+is the equivalent of about fifty samples in length for samples at a 50 KHz frequency.
+the terminator 67-2 in the waveguide 77
+is typically ten samples of delay at the 50 KHz sampling rate.
+the terminator 67-2
+can be a single pole low-pass filter.
+the terminator
+can be a filter having the empirically measured bridge reflectance cascaded with all sources of attenuation and dispersions for one round trip on the string.
+Various details of a violin
+appear in APPENDIX C.
+One lossless reverberator
+is augmented as shown in FIG. 19 by one or more simple loss factors (typically of the form 1-2 -n ) in waveguides 30 to set the reverberation decay times to any desired values.
+the time, T 60
+over which the reverberation decays 60 dB is arbitrary. This decoupling of reverberation time from structure incurs no loss of generality in the present invention.
+Some of the waveguides 30 of the network
+are determined to give specific early reflections, while others are chosen to provide a desirable texture in the late reverberation.
+An optimality criterion for the late reverberation
+is to maximize homogeneity of the impulse response by making it look like exponentially decaying white noise.
+the waveguide networks of the present invention
+allow every signal path to appear as a feedback branch around every other signal path. This connectivity richness facilitates development of dense late reverberation. Furthermore, the energy conserving properties of the waveguide networks can be maintained in the time-varying case which allows the breaking up of unwanted patterns in the late reverberation by subtly changing the reverberator in a way that does not modulate the reverberation decay profile. Finally, the explicit conservation of signal energy provides an easy way to completely suppress limit cycles and overflow oscillations.
+one typical waveguide reverberator
+including five waveguides (branches) formed by the waveguides 30-1, 30-2, . . . , 30-5.
+the waveguides 30
+are connected to junctions 31 and 32.
+the waveguides 30-1 through 30-5
+have first rail inputs 33-1 through 33-5, respectively, have first rail outputs 35-1 through 35-5, respectively, have second rail inputs 36-1 through 36-5, respectively, and have second rail outputs 34-1 through 34-5, respectively.
+the first rail outputs 35-i, where i has values from 1 to 5, includes the output signals  ⁇  i P i + , for i
+1 through 5.
+the outputs 35-i
+each connect to the summing node 31.
+Summing node 31
+is an adder which adds all of the  ⁇  i P i + signals to form the junction pressure signal P I .
+the P I signal
+connects in common to each of the second rail inputs 36-1 through 36-5.
+the P I signal at terminal 20
+is typically used to provide an output from the reverberator of FIG. 19.
+the input 18
+is typically connected to at least one of the waveguides 30 such as waveguide 30-5.
+the outputs 34-i
+provide the signals  ⁇  i R i + which in turn connect as inputs to the summing node 32.
+the summing node 32
+sums all of the signals  ⁇  i R i + to form the node signal R I at terminal 19.
+a second output
+is typically taken from terminal 19.
+the R I signal from summing node 32
+connects in common to all of the first rail inputs 33-1 through 33-5.
+each of the waveguides 30 in FIG. 19
+includes an R junction 37, a lossless waveguide 38, a loss unit 39 and a P junction 40.
+the R junction 37
+includes a subtractor 41 and a multiplier 42.
+the subtractor 41
+subtracts R i + from the R I signal to provide the R i - signal on line 43.
+the multiplier 42
+multiplies the R i + times a gain factor,  ⁇  i , to provide the signal  ⁇  i R i + signal at output terminal 34-i.
+the lossless waveguide 38
+includes a lossless delay 45 and a lossless delay 46.
+the delay 45
+delays by a delay, N. With the signal input to the delay on line 43 equal to R i - (t), the delayed output signal on line 47 is equal to R i - (t-N). Similarly the delay 46 delays the input signal P i - (t) by N to form the delayed signal on line 44 equal by definition to P i - (t-N), which is equal to the R i + (t) signal.
+the loss unit 39
+in one particular embodiment, includes a multiplier 24.
+Multiplier 24
+multiplies the signal on line 47 by  ⁇  to provide on the output the P i + (t) signal equal to  ⁇ R i - (t-N). While the loss circuit in the form of multiplier 24 has been inserted in the line 47, the loss circuit may alternatively be placed also in any one or more of the lines 43, 44, 47 or 48.
+the P junction 40
+typically includes a subtractor 21 and a multiplier 22.
+the subtractor 21
+receives the P i + signal and subtracts it from the junction pressure signal P I to produce the P i - signal.
+Multiplier 22
+multiplies the P i + signal by  ⁇  i to form the  ⁇  i P i + signal.
+the reverberator of FIGS. 19-21
+consists of waveguides 30-1 through 30-5 connected together to form an arbitrary network.
+the waveguides 30-1 through 30-5
+can be referred to as “branches” and their points of intersection 31 and 32 as “junctions” or “nodes”.
+Reflections
+are created by a mismatch between the admittances  ⁇  i of the intersecting waveguides.
+a pressure wave
+is completely reflected with a sign reversal when it encounters an admittance which is infinitely larger than the one in which it was traveling;
+a pressure wave
+is not reflected at all (complete transmission) when it encounters an admittance which is the same as the one in which it was traveling in, the "matched-impedance" case.
+the easiest case
+is the two-junction network such as shown in FIG. 19.
+the  ⁇  i (t)
+are identical at the two junctions.
+One time-varying reverberation technique in the two-junction case
+is to vary the  ⁇  i such that ##EQU14## as required for losslessness of the network.
+Another method for the time varying case
+is, at each junction, to provide one "reflection-free port" (RFP).
+RFP
+return-free port
+Such a port
+is created when the admittance of one waveguide (that connected to the RFP) is equal to the sum of the admittances of all other waveguides meeting at that junction.
+the waveguide of the RFP
+has admittance 1, and it does not vary with time. We call this a "special" waveguide. Since every waveguide must connect to exactly two junctions, a special waveguide provides a RFP at two different junctions simultaneously. (A special waveguide is not very useful as a self-loop at some junction due to the next constraint.)
+a simple method for time-varying reverberation using a RFP
+is to pair off the time-varying waveguides so that their admittances sum to 1 in pairs. This pairing is handy because a pair is the smallest number of mutually constrained waveguides that can be arranged When there are more than two nodes (junctions), simple complementary pairing of time-varying junctions may be difficult.
+FIG. 22
+a typical musical instrument, that is signal processor, employing the waveguide units of the present invention is shown.
+a processor 85
+such as a special purpose or general purpose computer, generates a digital signal representing the sound to be produced or a control variable for a synthesizer.
+the processor 85
+provides an address for a random access memory such as memory 86.
+Memory 86
+is addressed and periodically provides a digital output representing the sound or control variable to be generated.
+the digital sample from the memory 86
+typically at a sampling rate T s (usually near 50 KHz), is connected to the waveguide unit 87.
+Waveguide unit 87
+processes the digital signal in accordance with the present invention and provides an output to the digital-to-analog (D/A) converter 88.
+the converter 88
+in turn provides an analog output signal through a filter 89 which connects to a speaker 90 and produces the desired sound.
+D/A
+digital-to-analog
+FIGS. 15, 16 and 17
+When the signal processor of FIG. 22 is a reed instrument, the structure of FIGS. 15, 16 and 17 is typically employed for waveguide unit 87.
+the control variable 51
+is derived from the processor 85 and the memory 86 of FIG. 22.
+the structure of FIGS. 15, 16 and 17 for a clarinet
+uses the FIG. 17 structure for waveguide 53 with a simple inverter (-1) for terminator 67.
+the waveguide 53
+is more complex, like FIG. 4.
+the waveguide unit 87 in FIG. 22
+typically employs the structure of FIG. 18.
+the control variable input to register 51' of FIG. 18
+comes from the memory 86 of FIG. 22.
+the output from the waveguide unit of FIG. 18
+is derived from a number of different points, for example, from the terminals 54 and 55 for the waveguide 76 or from the terminals 49 and 50 from the waveguide 77 of FIG. 18.
+an adder 71
+adds the signals appearing at terminals 49 and 50 to provide an input at terminal 20 to the D/A converter 88 of FIG. 22.
+the sum of the signals in adder 71
+corresponds to the string velocity at the location of the bow on the instrument.
+the waveguide unit 87 of FIG. 22
+is a digital reverberator
+the waveguide of FIG. 19
+is typical with the parameters of TABLE 1.
+Landscapes
+Engineering & Computer Science
+(
+AREA
+)
+Physics & Mathematics
+(
+AREA
+)
+Acoustics & Sound
+(
+AREA
+)
+Multimedia
+(
+AREA
+)
+General Engineering & Computer Science
+(
+AREA
+)
+Nonlinear Science
+(
+AREA
+)
+Electrophonic Musical Instruments
+(
+AREA
+)
+Abstract
+Disclosed is a signal processor formed using digital waveguide networks. The digital waveguide networks have signal scattering junctions. A junction connects two waveguide sections together or terminates a waveguide. The junctions are constructed from conventional digital components such as multipliers, adders, and delay elements. The signal processor of the present invention is typically used for digital reverberation and for synthesis of reed, string or other instruments.
+Description
+This application is a continuation of Ser. No. 275,620, filed Nov. 14, 1988, now abandoned, which is a continuation of Ser. No. 920,701, filed Oct. 17, 1986, now abandoned, which is in turn a continuation-in-part of Ser. No. 859,868, filed May 2, 1986, now abandoned.
+BACKGROUND OF THE INVENTION
+This invention relates to the field of digital signal processing and particularly to signal processing useful in digital music synthesis and other applications.
+Digital music synthesis has attracted increased interest as data processors have undergone new developments which provide increased performance capabilities. Digital music synthesis has many applications such as the synthesis of stringed, reed and other instruments and such as the synthesis of reverberation.
+In actual practice, it has been difficult to provide satisfactory models of music instruments, based upon quantitative physical models, which can be practically synthesized on a real-time basis using present-day computers and digital circuitry.
+Most traditional musical instruments, such as woodwinds and strings, have been simulated by additive synthesis which consists of summing together sinusoidal harmonics of appropriate amplitude, or equivalently by repeatedly reading from a table consisting of one period of a tone (scaled by an "amplitude function") to "play a note." Another method consists of digitally sampling a real musical sound, storing the samples in digital memory, and thereafter playing back the samples under digital control. FM synthesis as described, for example, in U.S. Pat. No. 4,018,121, has also been successful in synthesizing many musical sounds including brasses, woodwinds, bells, gongs, and some strings. A few instruments have been simulated by "subtractive synthesis" which shapes the spectrum of primitive input signals using digital filters.
+All of the foregoing methods (with the occasional exception of subtractive synthesis) have the disadvantage of not being closely related to the underlying physics of sound production. Physically accurate simulations are expensive to compute when general finite-element modeling techniques are used.
+Digital reverberation has also been difficult to achieve. Although digital music synthesis has employed digital reverberation as a post-processing function for many years, there still remains a need to be able to simulate with digital signal processing the quality of reverberation which exists in natural listening-space environments. The basic acoustics of reverberation in natural listening-space environments, such as concert halls, has a long history with many different design theories. The goal of digital reverberation is to produce digital signal processing methods which simulate the effect that a good concert hall or other good "listening space" has on sound. This goal is made difficult because typical good listening spaces are inherently large-order, complex acoustical systems which cannot be precisely simulated in real-time using commonly available computing techniques.
+In architectural acoustics, an understanding of digital reverberation is important in the design of concert halls with good acoustical qualities. In digitally synthesized music, reverberation is a part of the synthesized instrumental ensemble and provides enrichment to the sound quality. For these reasons, there have been many attempts to capture the musically important qualities of natural reverberation in digital music synthesis.
+Digital room simulation (reverberation) has been implemented by simulating specular reflection in actual or approximate concert-hall geometries. The diffusive scattering of sound in such natural listening environments must be considered in order to obtain high-quality reverberation models. However, practical models which accommodate diffusing reflections have been beyond the reach of present computing power when applied to listening spaces of nominal size over the audio frequency band.
+In another implementation of digital reverberation, an approximation to the impulse response between two spatial points in a real concert hall has been recorded. The effect of the hall on sound between these two points can be accurately simulated by convolving the measured impulse response with the desired source signal. Again, this implementation leads to a prohibitive computational burden which is two to three orders of magnitude beyond the real-time capability of typical present-day mainframe computers.
+The current state of high-quality digital reverberation based upon large (concert hall) spaces, although well understood, is too expensive to synthesize by computation. Because there is much detail in natural reverberation that is not important perceptually, models for reverberation need to be simplified so as to become computationally practical.
+One example of a computationally simple model relies upon convolving unreverberated sound with exponentially decaying white noise thereby producing the heretofore best known artificial reverberation. The digital reverberator designs based upon quantitative physical models need to be replaced by models based upon simple computations which retain the qualitative behavior of natural listening space reverberation.
+Some basic building blocks of presently known digital reverberators include cascaded and nested allpass networks, recursive and non-recursive comb filters, tapped delay lines, and lowpass filters. The early reflections can be exactly matched for a fixed source and listener position using a tapped delay line, and the late reverberation can be qualitatively matched using a combination of allpass chains, comb filters, and lowpass filters. Using a lowpass filter in the feedback loop of a comb filter simulates air absorption and nonspecular reflection. These known techniques for reverberation have been the basis for reverberation design for more than a decade. Although these elements do provide some essential aspects of reverberation, especially for smoothly varying sounds at low reverberation levels, they do not provide reverberation on a par with excellent natural listening-space environments.
+In accordance with the above background, there is a need for techniques for synthesizing strings, winds, and other musical instruments including reverberators in a manner which is both physically meaningful and computationally efficient. There is a need for the achievement of natural and expressive computer-controlled performance in ways which are readily comprehensible and easy to use.
+SUMMARY OF THE INVENTION
+The present invention is a signal processor formed using digital waveguide networks. The digital waveguide networks have signal scattering junctions. A junction connects two waveguide sections together or terminates a waveguide. The junctions are constructed from conventional digital components such as multipliers, adders, and delay elements. The number of multiplies and additions determines the number of signal-scattering junctions that can be implemented in the waveguide network, and the number of delays determines the total delay which can be distributed among the waveguides interconnecting the junctions in the waveguide network. The signal processor of the present invention is typically used for digital reverberation and for synthesis of reed, string or other instruments.
+The waveguides of the present invention include a first rail for conducting signals from stage to stage in one direction and a second rail for conducting signals from stage to stage in the opposite direction. The accumulated delay along the first rail is substantially equal to the accumulated delay along the second rail so that the waveguide is balanced. The first rail is connected to the second rail at junctions so that signals conducted by one rail are also conducted in part by the other rail.
+Lossless waveguides used in the present invention are bi-directional delay lines which sometimes include embedded allpass filters. Losses are introduced as pure attenuation or lowpass filtering in one or both directions.
+The signal processor in some applications includes a non-linear junction connected to provide an input signal to the first rail of the waveguide and to receive an output signal from the second rail of the waveguide. The non-linear junction in some embodiments receives a control variable for controlling the non-linear junction and the signals to and from the waveguide.
+In one embodiment, a digital reverberator is formed by a multi-branch network of lossless digital waveguides.
+In another embodiment, a reed instrument is synthesized by a non-linear junction terminating a digital waveguide. A primary control variable, representing mouth pressure, is input to the non-linear junction (also controlled secondarily by embouchure variables). The junction simulates the reed while the digital waveguide simulates the bore of the reed instrument.
+In another embodiment, a string instrument is synthesized. A primary control variable, representing the bow velocity, is input to the non-linear junction. The non-linear junction represents the bow-string interface (including secondary controls such as bow force, bow angle, bow position, and friction characteristics). In the stringed instrument embodiment, two digital lossless waveguides are connected to the non-linear junction. The first waveguide represents the long string portion (from the bow to the nut) and the other waveguide simulates the short string portion (from the bow to the bridge). A series of waveguides can also be used to implement the body of, for example, a violin, although in such a case there is normally no direct physical interpretation of the waveguide variables.
+In particular embodiments, the reflection signal or signal coefficients introduced into the waveguides from the nonlinear junction are obtained from a table. In one embodiment, the nonlinearity to be introduced into the waveguides is f(x) where x is the table address and also the incoming signal sample in the waveguide (a travelling wave sample). In another embodiment, the values g(x)=f(x)/x are stored in the table and the table is addressed by x. Each value of g(x) addressed by x from the compressed table (where g(x) is called a coefficient) is then multiplied by x, x*g(x) which thereby produces the desired value of f(x).
+In accordance with the above summary, the present invention captures the musically important qualities of natural instruments in digital music synthesis with digital processing techniques employing digital waveguides which are computationally efficient and therefore capable of inexpensive real-time operation.
+The foregoing and other objects, features and advantages of the invention will be apparent from the following detailed description in conjunction with the drawings.
+BRIEF DESCRIPTION OF THE DRAWINGS
+FIG. 1 depicts a simple closed waveguide network.
+FIG. 2 depicts a 3-port waveguide network.
+FIG. 3 depicts a junction of two waveguides.
+FIG. 4 depicts a cascade waveguide network in accordance with the present invention.
+FIG. 5 depicts one embodiment of a cascade waveguide network section.
+FIG. 6 depicts another embodiment of a cascade waveguide network section.
+FIG. 7 depicts a third embodiment of a cascade waveguide network section.
+FIG. 8 depicts a pipelined embodiment of a waveguide filter.
+FIG. 9 depicts a travelling pressure wave at a general point within a waveguide section.
+FIG. 10 depicts a normalized-waveguide digital filter.
+FIG. 11 depicts a wave-normalized waveguide junction.
+FIG. 12 depicts a transformer junction.
+FIG. 13 depicts transformer-coupled waveguide junction.
+FIG. 14 depicts a non-linear junction, controlled by a control variable, and connected through a plurality of ports to a plurality of waveguides.
+FIG. 15 depicts a terminating non-linear junction controlled by a control variable and connected to a waveguide network.
+FIG. 16 depicts further details of the non-linear junction of FIG. 9.
+FIG. 17 depicts a block diagram representation of the waveguide of FIG. 9.
+FIG. 18 depicts a non-linear junction connected to first and second waveguides.
+FIG. 19 depicts a waveguide reverberator.
+FIG. 20 depicts a typical waveguide employed in the FIG. 19 reverberator.
+FIG. 21 depicts details of the FIG. 20 waveguide.
+FIG. 22 is a signal processor forming a music instrument using digital waveguides.
+FIG. 23 is a graph of a waveform representing the data stored in the table of FIG. 16 for a reed instrument.
+FIG. 24 is a graph of a waveform representing the data stored in the table of FIG. 16 for a string instrument.
+DETAILED DESCRIPTION
+Lossless Networks--FIG. 1
+In FIG. 1 a network 10 is a closed interconnection of bi-directional signal paths 11. The signal paths 11 are called branches or waveguides, designated 11-1, 11-2, 11-3, 11-4, and 11-5 and the interconnection points are called nodes or junctions, designated 12-1, 12-2, 12-3, and 12-4. An example of a simple network is shown in FIG. 1 where each signal path is bi-directional, meaning that in each waveguide there is a signal propagating in one direction and an independent signal propagating in the other direction. When a signal reaches a junction, one component is partially reflected back along the same waveguide, and other components are partially transmitted into the other waveguides connected to the junction. The relative strengths of the components of the transmitted or "scattered" signals at each junction are determined by the relative characteristic impedances of the waveguides at the junction. In FIG. 1, the waveguides 11 intersect at the
+junctions
+12.
+A lossless waveguide, such as each of the waveguides in FIG. 1, is defined specifically as a lossless bi-directional signal branch. In the simplest case, each branch or waveguide 11 in a waveguide network 10 is merely a bi-directional delay line. The only computations in the network take place at the branch intersection points (nodes or junctions). More generally, a lossless waveguide branch may contain a chain of cascaded allpass filters. For practical reverberator and other designs, losses are introduced in the form of factors less than 1 and/or low pass filters with a frequency response strictly bounded above by 1 in magnitude.
+A closed lossless network preserves total stored signal energy. Energy is preserved if, at each time instant, the total energy stored in the network is the same as at any other time instant. The total energy at any time instant is found by summing the instantaneous power throughout the network waveguides 11. Each signal sample within the network contributes to instantaneous power. The instantaneous power of a stored sample is the squared amplitude times a scale factor, g. If the signal is in units of "pressure", "force", or equivalent, then g=1/Z, where Z is the characteristic impedance of the waveguide 11 medium. If the signal sample instead represents a "flow" variable, such as volume-velocity, then g=Z. In either case, the stored energy is a weighted sum of squared values of all samples stored in the digital network 10.
+N-Port Network--FIG. 2
+In FIG. 2, an N-
+port network
+14 is shown in which for N=3, three waveguides, called ports, leave the network with one
+port
+15 designated for input and two ports 16-1 and 16-2 designated for output. Such a structure is suitable, for example, for providing stereo reverberation of a single channel of sound. Note, however, that really in FIG. 2 there are three inputs (15, 16-1, 16-2) and three outputs (15, 16-1, 16-2) because in an N-port, each waveguide connected to the network provides both an input and an output since each waveguide is bi-directional.
+An N-
+port network
+14 of FIG. 2 is lossless if at any time instant, the energy lost through the outputs, equals the total energy supplied through the inputs, plus the total stored energy. A lossless digital filter is obtained from a lossless N-port by using every port as both an input and an output. This filter is the general multi-input, multi-output allpass filter.
+An N-
+port network
+14 is linear if superposition holds. Superposition holds when the output in response to the sum of two input signals equals the sum of the outputs in response to each individual input signal. A network is linear if every N-port derived from it is linear. Only linear networks can be restricted to a large and well-understood class of energy conserving systems.
+Lossless Scattering--FIG. 3
+Consider a parallel junction of N lossless waveguides of characteristic impedance Z
+i
+(characteristic admittance Γ
+i
+=1/Z
+i
+) as depicted in FIG. 3 for N=2.
+If in FIG. 3 the incoming traveling pressure waves are denoted by P
+i
++
+, where i=1, . . . , N, the outgoing pressure waves are given by Eq. (1) as follows:
+P.sub.i.sup.- =P.sub.j -P.sub.i.sup.+                      Eq. (1)
+where P
+j
+in Eq. (1) is the resultant junction pressure given as follows: ##EQU1## For N=2, P
+j
+=α
+1
+P
+1
++
++α
+2
+P
+2
++
+α
+1
+=(2Γ
+1
+)/(Γ
+1
++Γ
+2
+)
+α
+2
+=2-α
+1
+Define the reflection coefficient by k=α
+1
+-1, then from Eq. 1, ##EQU2##
+P.sub.1.sup.- =kP.sub.1.sup.+ +(1-k)P.sub.2.sup.+
+P.sub.2.sup.- =α.sub.1 P.sub.1.sup.+ +(α.sub.2 -1)P.sub.2.sup.+
+P.sub.2.sup.- =(k+1)P.sub.1.sup.+ -kP.sub.2.sup.+
+Thus, we have, for N=2,
+P.sub.1.sup.- =P.sub.2.sup.+ +k(P.sub.1.sup.+ -P.sub.2.sup.+)
+P.sub.2.sup.- =P.sub.1.sup.+ +k(P.sub.1.sup.+ -P.sub.2.sup.+) Eqs. (3)
+which is the one-multiplier lattice filter section (minus its unit delay). More generally, an N-way intersection requires N multiplies and N-1 additions to obtain P
+j
+, and one addition for each outgoing wave, for a total of N multiplies and 2N-1 additions.
+The series flow-junction is equivalent to the parallel pressure-junction. The series pressure-junction or the parallel flow-junction can be found by use of duality.
+Cascade Waveguide Chains--FIG. 4
+The basic waveguide chain 25 is shown in FIG. 4. Each junction 26-1, 26-2, . . . , 26-i, . . . , 26-M enclosing the symbol k
+i
+(t) denotes a scattering junction characterized by k
+i
+(t). In FIG. 4, the junction 26-i typically utilizes multipliers(M) 8 and adders(+) 7 to form the junction. In FIG. 4, the multipliers 8-1, 8-2, 8-3 and 8-4 multiply by the factors [1+k(i)], [-k
+i
+(t)], [1-k
+i
+(t)], and [k
+i
+(t)], respectively. An alternative junction implementation 26'-i of FIG. 13 requires only one multiply. The junction 26-2 in FIG. 4 corresponds, for example, to the
+junction
+12 in FIG. 3. Similarly, the delays 27-1 and 27-2 in FIG. 4 correspond to the
+branches
+15 and 16, respectively, in FIG. 3. The Kelly-Lochbaum junctions 26-i and one-multiply junction 26'-i (see FIG. 13) or any other type of lossless junction may be used for
+junction
+26. In particular, the two-multiply lattice (not shown) and normalized ladder (FIG. 11) scattering junctions can be employed. The waveguide 25 employs
+delays
+27 between each scattering
+junction
+26 along both the top and bottom signal paths, unlike conventional ladder and lattice filters. Note that the junction 26-i of FIG. 4 employs four multipliers and two adds while junction 26'-i of FIG. 13 employs one multiply and three adds.
+Waveguide Variations--FIGS. 4-14
+Reduction of
+junction
+26 to other forms is merely a matter of pushing
+delays
+27 along the top rail around to the bottom rail, so that each bottom-rail delay becomes 2T seconds (Z
+-2T
+) instead of T seconds Z
+-T
+. Such an operation is possible because of the termination at the right by an infinite (or zero) characteristic impedance 6 in FIG. 4. In the time-varying case, pushing a delay through a multiply results in a corresponding time advance of the multiplier coefficient.
+Imagine each
+delay element
+27 in FIG. 4 being divided into halves, denoted by a delay of T/2 seconds. Then any waveguide can be built from sections such as shown in FIG. 5.
+By a series of transformations, the two input-signal delays are pushed through the junction to the two output delays. A similar sequence of moves pushes the two output delays into the two input branches. Consequently, we can replace any waveguide section of the form shown in FIG. 5 by a section of the form shown in FIG. 6 or FIG. 7.
+By alternately choosing the structure of FIGS. 6 and 7, the structure of FIG. 8 is obtained. This structure has some advantages worth considering: (1) it consolidates delays to
+length
+2T as do conventional lattice/ladder structures, (2) it does not require a termination by an infinite characteristic impedance, allowing it to be extended to networks of arbitrary topology (e.g., multiport branching, intersection, and looping), and (3) there is no long delay-free signal path along the upper rail as in conventional structures--a pipeline segment is only two sections long. This structure, termed the "half-rate waveguide filter", appears to have better overall characteristics than any other digital filter structure for many applications. Advantage (2) makes it especially valuable for modeling physical systems.
+Finally, successive substitutions of the section of FIG. 6 and reapplication of the delay consolidation transformation lead to the conventional ladder or lattice filter structure. The termination at the right by a total reflection (shown as 6 in FIG. 4) is required to obtain this structure. Consequently, conventional lattice filters cannot be extended on the right in a physically meaningful way. Also, creating network topologies more complex than a simple series (or acyclic tree) of waveguide sections is not immediately possible because of the delay-free path along the top rail. For example, the output of a conventional structure cannot be fed back to the input.
+Energy and Power
+The instantaneous power in a waveguide containing instantaneous pressure P and flow U is defined as the product of pressure and flow as follows:
+P=PU=(P.sup.+ +P.sup.-)(U.sup.+ +U.sup.-)=P.sup.+ +P.sup.- Eq. (4)
+where,
+P.sup.+ =P.sup.+ U.sup.+ =Z(U.sup.+).sup.2 =Γ(P.sup.+).sup.2
+P.sup.- =P.sup.- U.sup.- =-Z(U.sup.-).sup.2 =Γ(P.sup.-).sup.2 Eqs. (5)
+define the right-going and left-going power, respectively.
+For the N-way waveguide junction, we have, using Kirchoff's node equations, Eq. (6) as follows: ##EQU3##
+Thus, the N-way junction is lossless; no net power, active or reactive, flows into or away from the junction.
+Quantization Effects
+While the ideal waveguide junction is lossless, finite digital wordlength effects can make exactly lossless networks unrealizable. In fixed-point arithmetic, the product of two numbers requires more bits (in general) for exact representation than either of the multiplicands. If there is a feedback loop around a product, the number of bits needed to represent exactly a circulating signal grows without bound. Therefore, some round-off rule must be included in a finite-precision implementation. The guaranteed absence of limit cycles and overflow oscillations is tantamount to ensuring that all finite-wordlength effects result in power absorption at each junction, and never power creation. If magnitude truncation is used on all outgoing waves, then limit cycles and overflow oscillations are suppressed. Magnitude truncation results in greater losses than necessary to suppress quantization effects. More refined schemes are possible. In particular, by saving and accumulating the low-order half of each multiply at a junction, energy can be exactly preserved in spite of finite precision computations.
+Signal Power in Time-Varying Waveguides
+The convention is adopted that the time variation of the characteristic impedance does not alter the traveling pressure waves P
+i
+.sup.±. In this case, the power represented by a traveling pressure wave is modulated by the changing characteristic impedance as it propagates. The actual power becomes inversely proportional to characteristic impedance: ##EQU4##
+This power modulation causes no difficulties in the Lyapunov theory which proves absence of limit cycles and overflow oscillations because it occurs identically in both the finite-precision and infinite-precision filters. However, in some applications it may be desirable to compensate for the power modulation so that changes in the characteristic impedances of the waveguides do not affect the power of the signals propagating within.
+Consider an arbitrary point in the i
+th
+waveguide at time t and distance x=cτ measured from the left boundary, as shown in FIG. 9. The right-going pressure is P
+i
++
+(x,t) and the left-going pressure is P
+i
+-
+(x,t). In the absence of scaling, the waveguide section behaves (according to our definition of the propagation medium properties) as a pressure delay line, and we have P
+i
++
+(x,t)=P
+i
++
+(0,t-τ) and P
+i
+-
+(x,t)=P
+i
+-
+(0,t+τ)=P
+i
+-
+(cT,t-T+τ). The left-going and right-going components of the signal power are [P
+i
+-
+(x,t)]
+2
+/Z
+i
+(t) and [P
+i
++
+(x,t)]
+2
+/Z
+i
+(t), respectively.
+Below, three methods are discussed for making signal power invariant with respect to time-varying branch impedances.
+Normalized Waveguides
+Suppose the traveling waves are scaled as the characteristic impedance changes in order to hold signal power fixed. Any level can be chosen as a reference, but perhaps it is most natural to fix the power of each wave to that which it had upon entry to the section. In this case, it is quickly verified that the proper scaling is:
+P.sub.i.sup.+ (x,t)=[(Z.sub.i (t))/(Z.sub.i (t-τ))].sup.1/2 P.sub.i.sup.+ (0,t-τ), x=cτ
+P.sub.i.sup.- (x,t)=[(Z.sub.i (t))/(Z.sub.i (t-T+τ))].sup.1/2 P.sub.i.sup.- (cT,t-T+τ)                              Eqs. (8)
+In practice, there is no need to perform the scaling until the signal actually reaches a junction. Thus, we implement
+P.sub.i.sup.+ (cT,t)=g.sub.i (t)P.sub.i.sup.- (0,t-T)
+P.sub.i.sup.- (0,t)=g.sub.i (t)P.sub.i.sup.- (cT,t-T)      Eqs. (9)
+where
+g.sub.i (t)=[(Z.sub.i (t))/(Z.sub.i (t-T))].sup.1/2
+This normalization is depicted in FIG. 10. In FIG. 10, each of the
+multipliers
+8 multiplies the signal by g
+i
+(t) as given by Eqs. (9). In the single-argument notation used earlier, Eqs. (9) become
+P.sub.i.sup.+ (t-T)=g.sub.i (t)P.sub.i.sup.+ (t-T)
+P.sub.i.sup.- (t)=g.sub.i (t)P.sub.i.sup.- (t)             Eqs. (10)
+This normalization strategy has the property that the time-varying waveguides (as well as the junctions) conserve signal power. If the scattering junctions are implemented with one-multiply structures, then the number of multiplies per section rises to three when power is normalized. There are three additions as in the unnormalized case. In some situations (such as in the two-stage structure) it may be acceptable to normalize at fewer points; the normalizing multiplies can be pushed through the scattering junctions and combined with other normalizing multiplies, much in the same way delays were pushed through the junctions to obtain standard ladder/lattice forms. In physical modeling applications, normalizations can be limited to opposite ends of a long cascade of sections with no interior output "taps."
+To ensure passivity of a normalized-waveguide with finite-precision calculations, it suffices to perform magnitude truncation after multiplication by g
+i
+(t). Alternatively, extended precision can be used within the scattering junction.
+Normalized Waves
+Another approach to normalization is to propagate rms-normalized waves in the waveguide. In this case, each delay-line contains
+P.sub.i.sup.+ (x,t)=P.sub.i.sup.+ (x,t)/[Z.sub.i (t)].sup.1/2
+P.sub.i.sup.- (x,t)=P.sub.i.sup.- (x,t)/[Z.sub.i (t)].sup.1/2Eqs. (11)
+We now consider P.sup.±  (instead of P.sup.±) to be invariant with respect to the characteristic impedance. In this case,
+P.sub.i.sup.+ (c,t)=P.sup..sub.i.sup.+ (cT,t)/[Z.sub.i (t)].sup.1/2 =P.sub.i.sup.+ (0,t-T)/[Z.sub.i (t-T)].sup.1/2 =P.sub.i.sup.+ (t-T)
+The scattering equations become
+[Z.sub.i (t)].sup.1/2 P.sub.i.sup.+ (0,t)=[1+k.sub.i (t)][Z.sub.i-1 (t)].sup.1/2 P.sub.i-1.sup.+ (cT,t)-k.sub.i (t)[Z.sub.i (t)].sup.1/2 P.sub.i (0,t)
+[Z.sub.i-1 (t)].sup.1/2 P.sub.i-1.sup.- (cT,t)=k.sub.i (t)[Z.sub.i-1 (t)].sup.1/2 P.sub.i-1.sup.+ (ct,T)+[1-k.sub.i (t)][Z.sub.i (t)].sup.1/2 P.sub.i.sup.- (t)                                         Eqs. (12)
+or, solving for P
+i
+.sup.±,
+P.sub.i.sup.+ (0,t)=[1+k.sub.i (t)][(Z.sub.i-1 (t))/(Z.sub.i (t))].sup.1/2 P.sub.i-1.sup.+ (cT,t)-k.sub.i (t)P.sub.i.sup.- (0,t)
+P.sub.i-1.sup.- (cT,t)=k.sub.i (t)P.sub.i-1.sup.+ (ct,T)+[1-k.sub.i (t)][(Z.sub.i (t))/(Z.sub.i-1 (t))].sup.1/2 P.sub.i.sup.31 (t) Eqs. (13)
+But,
+(Z.sub.i-1 (t))/(Z.sub.i (t))=(1-k.sub.i (t))/(1+k.sub.i (t)) Eqs. (14)
+whence
+[1+k.sub.i (t)][(Z.sub.i-1 (t))/(Z.sub.i (t))].sup.1/2 =[1-k.sub.i (t)][(Z.sub.i (t))/(Z.sub.i-1 (t))].sup.1/2 =[1-k.sub.i (t)].sup.1/2Eq. (15)
+The final scattering equations for normalized waves are
+P.sub.i.sup.+ (0,t)=c.sub.i (t)P.sub.i-1.sup.+ (cT,t)-s.sub.i (t)P.sub.i.sup.- (0,t)
+P.sub.i-1.sup.- (cT,t)=s.sub.i (t)P.sub.i-1.sup.+ (ct,T)+c.sub.i (t)P.sub.i.sup.- (t)                                      Eqs. (16)
+where
+s.sub.i (t)Δk.sub.i (t)
+c.sub.i (t)Δ[1-k.sub.i.sup.2 (t)].sup.1/2            Eqs. (17)
+can be viewed as the sine and cosine, respectively, of a single angle θ
+i
+(t)=sin
+-1
+[k
+i
+(t)] which characterizes the junction. FIG. 11 illustrates the Kelly-Lochbaum junction as it applies to normalized waves. In FIG. 11, the multipliers 8-1, 8-2, 8-3, and 8-4 multiply by the factors [1-k
+i
+(t)]
+1/2
+, -k
+i
+(t), [1-k
+i
+(t)]
+1/2
+, and k
+i
+(t), respectively. In FIG. 11, k
+i
+(t) cannot be factored out to obtain a one-multiply structure. The four-multiply structure of FIG. 11 is used in the normalized ladder filter (NLF).
+Note that normalizing the outputs of the delay lines saves one multiply relative to the NLF which propagates normalized waves. However, there are other differences to consider. In the case of normalized waves, duals are easier, that is, changing the propagation variable from pressure to velocity or vice versa in the i
+th
+section requires no signal normalization, and the forward and reverse reflection coefficients are unchanged. Only sign-reversal is required for the reverse path. Also, in the case of normalized waves, the rms signal level is the same whether or not pressure or velocity is used. While appealing from a "balance of power" standpoint, normalizing all signals by their rms level can be a disadvantage. In the case of normalized delay-line outputs, dynamic range can be minimized by choosing the smaller of pressure and velocity as the variable of propagation.
+Transformer-Coupled Waveguides
+Still another approach to the normalization of time-varying waveguide filters is perhaps the most convenient of all. So far, the least expensive normalization technique is the normalized-waveguide structure, requiring only three multiplies per section rather than four in the normalized-wave case. Unfortunately, in the normalized-waveguide case, changing the characteristic impedance of section i results in a changing of the reflection coefficients in both adjacent scattering junctions. Of course, a single junction can be modulated in isolation by changing all downstream characteristic impedances by the same ratio. But this does not help if the filtering network is not a cascade chain or acyclic tree of waveguide sections. A more convenient local variation in characteristic impedance can be obtained using transformer coupling. A transformer joins two waveguide sections of differing characteristic impedance in such a way that signal power is preserved and no scattering occurs. It turns out that filter structures built using the transformer-coupled waveguide are equivalent to those using the normalized-wave junction described in the previous subsection, but one of the four multiplies can be traded for an addition.
+From Ohm's Law and the power equation, an impedance discontinuity can be bridged with no power change and no scattering using the following relations:
+[P.sub.i.sup.+ ].sup.2 /[Z.sub.i (t)]=[P.sub.i-1.sup.+ ].sup.2 /[Z.sub.i-1 (t)]
+[P.sub.i.sup.- ].sup.2 /[Z.sub.i (t)]=[P.sub.i-1.sup.- ].sup.2 /[Z.sub.i-1 (t)]                                                      Eqs. (18)
+Therefore, the junction equations for a transformer can be chosen as
+P.sub.i.sup.+ =g.sub.i (t)P.sub.i-1.sup.+
+P.sub.i-1.sup.- =g.sub.i.sup.-1 (t)P.sub.i.sup.-           Eqs. (19)
+where, from Eq. (14)
+g.sub.i (t)Δ[(Z.sub.i (t))/(Z.sub.i-1 (t))].sup.1/2 =[(1+k.sub.i (t))/(1-k.sub.i (t)].sup.1/2                              Eq. (20)
+The choice of a negative square root corresponds to a gyrator. The gyrator is equivalent to a transformer in cascade with a dualizer. A dualizer is a direct implementation of Ohm's law (to within a scale factor) where the forward path is unchanged while the reverse path is negated. On one side of the dualizer there are pressure waves, and on the other side there are velocity waves. Ohm's law is a gyrator in cascade with a transformer whose scale factor equals the characteristic admittance.
+The transformer-coupled junction is shown in FIG. 12. In FIG. 12, the multipliers 8-1 and 8-2 multiply by g
+i
+(t) and 1/g
+i
+(t) where g
+i
+(t) equals [Z
+i
+(t)/Z
+i-1
+(t)]
+1/2
+. A single junction can be modulated, even in arbitrary network topologies, by inserting a transformer immediately to the left (or right) of the junction. Conceptually, the characteristic impedance is not changed over the delay-line portion of the waveguide section; instead it is changed to the new time-varying value just before (or after) it meets the junction. When velocity is the wave variable, the coefficients g
+i
+(t) and g
+i
+-1
+(t) in FIG. 12 are swapped (or inverted).
+So, as in the normalized waveguide case, the two extra multipliers 8-1 and 8-2 of FIG. 12 provide two extra multiplies per section relating to the unnormalized (one-multiply) case, thereby achieving time-varying digital filters which do not modulate stored signal energy. Moreover, transformers enable the scattering junctions to be varied independently, without having to propagate time-varying impedance ratios throughout the waveguide network.
+In FIG. 13, the one-multiply junction 26'-i includes three adders 7-1, 7-2, and 7-3, where adder 7-3 functions to subtract the second rail signal, P
+i
+-
+(t), from the first rail signal, [P
+i-1
++
+(t-T)][g
+i
+(t)]. Junction 26'-i also includes the
+multiplier
+8 which multiplies the output from adder 7-3 by k
+i
+(t). FIG. 13 utilizes the junction of FIG. 12 in the form of multipliers 8-1 and 8-2 which multiply the first and second rail signals by g
+i
+(t) and 1/g
+i
+(t), respectively, where g
+i
+(t) equals [(1-k
+i
+(t))/(1+k
+i
+(t))]
+1/2
+.
+It is interesting to note that the transformer-coupled waveguide of FIG. 13 and the wave-normalized waveguide (shown in FIG. 11) are equivalent. One simple proof is to start with a transformer and a Kelly-Lochbaum junction, move the transformer scale factors inside the junction, combine terms, and arrive at FIG. 11. The practical importance of this equivalence is that the normalized ladder filter (NLF) can be implemented with only three multiplies and three additions instead of four multiplies and two additions.
+The limit cycles and overflow oscillations are easily eliminated in a waveguide structure, which precisely simulates a sampled interconnection of ideal transmissions line sections. Furthermore, the waveguide can be transformed into all well-known ladder and lattice filter structures simply by pushing delays around to the bottom rail in the special case of a cascade, reflectively terminated waveguide network. Therefore, aside from specific round-off error and time skew in the signal and filter coefficients, the samples computed in the waveguide and the samples computed in other ladder/lattice filters are identical (between junctions).
+The waveguide structure gives a precise implementation of physical wave phenomena in time-varying media. This property is valuable in its own right for simulation purposes. The present invention permits the delay or advance of time-varying coefficient streams in order to obtain physically correct time-varying waveguide (or acoustic tube) simulations using standard lattice/ladder structures. Also, the necessary time corrections for the traveling waves, needed to output a simulated pressure or velocity, are achieved.
+Waveguide Networks with Non-Linear Junction--FIG. 14
+In FIG. 14, a plurality of
+waveguides
+53 are interconnected by a
+non-linear junction
+52. In the particular embodiment of FIG. 14, the
+junction
+52 has three ports, one for each of the waveguide networks 53-1, 53-2, and 53-3. However,
+junction
+52 can be an N-port junction interconnecting N waveguides or
+waveguide networks
+53. The control
+variable register
+51 provides one or more control variables as inputs to the
+junction
+52. In FIG. 14 when only a single waveguide is utilized, the single waveguide becomes a special case, single-port embodiment of FIG. 14. Single port examples of the FIG. 14 structure are described hereinafter in connection with reed instruments such as clarinets or saxophones. Multi-port embodiments of the FIG. 14 structure are described hereinafter in connection with stringed instruments such as violins. A multi-port variation of the FIG. 14 structure is also described hereinafter in connection with a reverberator. Many other instruments not described in detail can also be simulated in accordance with the present invention. For example, flutes, organs, recorders, basoons, oboes, all brasses, and percussion instruments can be simulated by single or multi-port, linear or non-linear junctions in combination with one or more waveguides or waveguide networks.
+Waveguide with Non-Linear Terminating Junction--FIG. 15
+In FIG. 15, a block diagram representation of a
+waveguide
+53 driven by a
+non-linear junction
+52 is shown. The
+non-linear junction
+52 provides the input on the
+first rail
+54 to the
+waveguide
+53 and receives the waveguide output from the second rail on
+lines
+55. A
+control variable unit
+51 provides a control variable to the
+non-linear junction
+52. The FIG. 15 structure can be used as a musical instrument for simulating a reed instrument in which case the control
+variable unit
+51 simulates mouth pressure, that is the pressure drop across a reed. The
+non-linear junction
+52 simulates the reed and the
+waveguide
+53 simulates the bore of the reed instrument.
+Non-Linear Junction--FIG. 16
+FIG. 16 depicts further details of a non-linear junction useful in connection with the FIG. 15 instrument for simulating a reed. The control register input on
+lines
+56 is a control variable, such as mouth pressure. The control variable forms one input (negative) to a
+subtractor
+57 which receives another input (negative) directly from the most significant bits of the waveguide second rail on
+lines
+55. The
+subtractor
+56 subtracts the waveguide output on
+lines
+55 and the control variable on
+lines
+56 to provide a 9-bit address on
+lines
+69 to the
+coefficient store
+70 and specifically the address register 58. The address in register 58 provides the address on
+lines
+68 to a table 59 and to a
+multiplier
+62. The table 59 is addressed by the address, x, from address register 58 to provide the data, g(x), in a
+data register
+61. The contents, g(x), in the data register 61 are multiplied by the address, x, from address register 58 in
+multiplier
+62 to provide an output, x*g(x), in the
+multiplier register
+63 which is equal to f(x). The output from the
+multiplier register
+63 is added in
+adder
+64 to the control variable to provide the first rail input on
+lines
+54 to the
+waveguide
+53 of FIG. 15.
+In FIG. 16, table 59 in one embodiment stores 512 bytes of data and provides an 8-bit output to the data register 61. The
+multiplier
+62 provides a 16-bit output to the
+register
+63. The
+high order
+8 bits in
+register
+63 are added in saturating
+adder
+64 to the 8 bits from the variable register 51' to provide a 16-bit output on
+lines
+54. Similarly, the high order 8-bits from the 16-
+bit lines
+55 are subtracted in
+subtractor
+57.
+The contents of the table 59 in FIG. 16 represent compressed data. If the coefficients required are f(x) from the compressed table 70, only a fewer number of values, g(x), are stored in the table 59. The values stored in table 59 are f(x)/x which are equal to g(x). If x is a 16-bit binary number, and each value of x represents one 8-bit byte of data for f(x), table 59 is materially reduced in size to 512 bytes when addressed by the high-
+order
+9 bits of x. The output is then expanded to a full 16 bits by multiplication in the
+multiplier
+62.
+Further compression is possible by interpolating values in the table 59. Many table interpolation techniques are well known. For example, linear interpolation could be used. Interpolation can also be used to compress a table of f(x) values directly, thus saving a multiply while increasing the needed table size, for a given level of relative error.
+Other examples include a double look-up, address normalization, root-power factorization, address and value quantization, address mapping to histogram. Other compression techniques can be employed.
+The manner in which the data values for a reed instrument are generated is set forth in APPENDIX A.
+In FIG. 17, further details of a schematic representation of the
+waveguide
+53 are shown. The
+waveguide
+53 includes a first rail receiving the input on
+lines
+54 and comprising a
+delay
+65. A
+terminator
+67 connects the
+delay
+65 to the
+second rail delay
+66 which in turn provides the second rail output on
+lines
+55.
+In an embodiment where the FIG. 16 signal processor of FIGS. 16 and 17 simulates a reed instrument, the
+terminator
+67 is typically a single pole low-pass filter. Various details of a clarinet reed instrument in accordance with the signal processor of FIGS. 16 and 17 appear in APPENDIX B.
+To simulate clarinet tone holes, a three-port scattering junction is introduced into the waveguide. Typically, the first three or four adjacent open tone holes participate in the termination of the bore.
+In FIG. 17, the
+terminator
+67 includes a
+multiplier
+74, an inverting low-
+pass filter
+72 and a
+DC blocking circuit
+73. The
+multiplier
+74 multiplies the signal on line 75 from the
+delay
+65 by a loss factor g
+1
+where g
+1
+is typically 1-2
+-4
+=0.9375 for a clarinet. The output from the
+multiplier
+74 is designated y
+1
+(n) where n is the sampled time index. The output from the low-
+pass filter
+72 is designated y
+2
+(n), and the output from the
+DC blocking unit
+73 is designated y
+3
+(n).
+For a clarinet, the low-
+pass filter
+72 has a transfer function H
+12
+(Z) as follows:
+H.sub.12 (Z)=-(1-g)/(1-g Z.sup.1)
+Therefore the signal y
+2
+(n) output from the low-
+pass filter
+72 is given as follows:
+y.sub.2 (n)=(g-1)y.sub.1 (n)+gy.sub.2 (n-1)
+In the above equations, g is a coefficient which is typically determined as equal to 1-2
+-k
+where k can be any selected value. For example, if k is 3, g is equal to 0.875  and g equal to 0.9 is a typical value. As another example, 1-2
+-3
++2
+-5
+=0.90625.
+In FIG. 17, the transfer function, H
+23
+(Z), of the
+DC blocking circuit
+73 is given as follows:
+H.sub.23 (Z)=(1-Z.sup.-1)/(1-rZ.sup.-1)
+With such a transfer function, the output signal y
+3
+(n) is given as follows:
+y.sub.3 (n)=y.sub.2 (n)-y.sub.2 (n-1)+ry.sub.3 (n-1)
+In simulations, the value of r has been set to zero. In actual instruments, DC drift can cause unwanted numerical overflow which can be blocked by using the
+DC block unit
+73. Furthermore, when using the compressed table 70 of FIG. 16, the error terms which are produced are relative and therefore are desirably DC centered. If a DC drift occurs, the drift has the effect of emphasizing unwanted error components. Relative signal error means that the ratio of the signal error to signal amplitude tends to remain constant. Therefore, small signal values tend to have small errors which do not significantly disturb the intended operation.
+In FIG. 17, for a clarinet, the
+delays
+65 and 66 are typically selected in the following manner. One half the desired pitch period less the delay of the low-
+pass filter
+72, less the delay of the DC block in
+unit
+73, less the delay encountered in the
+non-linear junction
+52 of FIG. 16.
+When a saxophone is the reed instrument to be simulated by the FIG. 16 and FIG. 17 devices, a number of changes are made. The non-linear junction of FIG. 16 remains the same as for a clarinet. However, the
+waveguide network
+53 of FIG. 15 becomes a series of cascaded waveguide sections, for example, of the FIG. 4 type. Each waveguide section represents a portion of the bore of the saxophone. Since the bore of a saxophone has a linearly increasing diameter, each waveguide section simulates a cylindrical section of the saxophone bore, with the waveguide sections representing linearly increasing diameters.
+For a saxophone and other instruments, it is useful to have a non-linear bore simulation. Non-linearity results in excess absorption and pressure-dependent phase velocity. In order to achieve such non-linear simulation in accordance with the present invention, one method is to modify the delays in the waveguide structure of FIG. 8. In FIG. 8, each of the delays, Z
+-2T
+, includes two units of delay. In order to introduce a non-linearity, one of the two units of delay is replaced by an all-pass filter so that the delay D changes from Z
+-2T
+to the following:
+D=[Z.sup.-T ][(h+Z.sup.-T)/(1+hZ.sup.-T)]
+With such a delay, the output signal, y
+2
+(n) is given in terms of the input signal, y
+1
+(n) as follows:
+y.sub.2 (n)=h*y.sub.1 (n-1)+y.sub.1 (n-2)-h*y.sub.2 (n-1)
+In the above equations, in order to introduce the non-linearity, the term h is calculated as a function of the instantaneous pressure in the waveguide, which is the sum of the travelling-wave components in the first rail and the second rail. For example, the first rail signal input to the delay, y
+1
++
+(n) is added to second rail signal y
+1
+-
+(n) and then utilized by table look up or otherwise to generate some function for representing h as follows:
+h=f[y.sub.1.sup.+ (n)+y.sub.1.sup.- (n)]
+The delay of the first-order all-pass as a function of h can be approximated by (1-h)/(1+h) at low frequencies relative to the sampling rate. Typically, h is between 1-ε and 0 for some small positive ε (the stability margin).
+Using the principles described, simulation of a non-linear waveguide medium (such as air in a clarinet bore) is achieved. For clarinet and other instruments, the bore which is modeled by the waveguides of the present invention, includes tone holes that are blocked and unblocked to change the pitch of the tone being played. In order to create the equivalent of such tone holes in the instruments using waveguides in accordance with the present invention, a three-port junction can be inserted between cascaded waveguide sections. One port connects to one waveguide section, another port connects to another waveguide section, and the third port is unconnected and hence acts as a hole. The signal into the third port is represented as P
+3
++
+and this signal is equal to zero. The radiated signal from the third port, that is the radiated pressure, is denoted by P
+3
+-
+. The three-port structure for the tone hole simulator is essentially that of FIG. 14 without the waveguide 53-3 and without any control variable 51 input as indicated by
+junction
+52 in FIG. 14. The
+junction
+52 is placed as one of the junctions, such as junction 26-i in FIG. 4. With such a configuration, the junctions pressure, P
+J
+, is given as follows: ##EQU5## where, α
+i
+=2Γ
+i
+/(Γ
+1
++Γ
+2
++Γ
+3
+),
+Γ
+i
+=characteristic admittance in i
+th
+waveguide
+P
+i
+-=P
+j
+-P
+i
++
+P
+J
+=α
+1
+P
+1
++
++α
+2
+P
+2
++
+=α
+1
+P
+1
++
++(2-α
+1
+-α
+3
+)P
+2
++
+P
+1
+-
+=P
+J
+-P
+1
++
+=(α
+1
+-1)P
+1
++
++α
+2
+P
+2
++
+P
+2
+-
+=P
+J
+-P
+2
++
+=α
+1
+P
+1
++
++(α
+2
+-1)P
+2
++
+P
+3
+-
+=P
+J
+-P
+3
++
+=P
+J
+(tone hole output) ##EQU6##
+Then, with P.sub.Δ
++
+=P
+1
++
+-P
+2
++
+, we obtain the one multiply tone-hole simulation:
+P.sub.2.sup.- =α.sub.1 P.sub.Δ.sup.+, P.sub.1.sup.- =P.sub.2.sup.- -P.sub.Δ.sup.+, (open hole)
+In a smooth bore, Γ1=Γ
+2
+=Γ and Γ
+3
+=βΓ, where β is the cross-sectional area of the tone hole divided by the cross-sectional area of the bore. For a clarinet, β=0.102 and for a saxophone, β=0.436, typically. So we have: ##EQU7## Then,
+α.sub.1 =α.sub.2 =2Γ/(2Γ+βΓ) Δα
+α.sub.3 =2β/(2+β)=βα,
+There is now a single parameter ##EQU8##
+So, the tone hole simulation is given by
+P.sub.J =α(P.sub.1.sup.+ +P.sub.2.sup.+) (if open)
+P.sub.1.sup.- =P.sub.J -P.sub.2.sup.+ =αP.sub.2.sup.+ +(α-1)P.sub.1.sup.+ =P.sub.2.sup.+ (if closed)
+P.sub.2.sup.- =P.sub.J -P.sub.1.sup.+ =αP.sub.1.sup.+ +(α-1)P.sub.2.sup.+ =P.sub.1.sup.+ (if closed)
+Summary: ##EQU9##
+Γ.sub.3 =βΓ
+P.sub.J =αP.sub.1.sup.+ +P.sub.2.sup.+)
+P.sub.1.sup.- =P.sub.J -P.sub.1.sup.+
+P.sub.2.sup.- =P.sub.J -P.sub.2.sup.+ ##EQU10## a=bore radius b=hole radius ##EQU11## α=(2a.sup.2)/(2a.sup.2 +b.sup.2) - hole open α=1 - hole closed
+P
+J
+is radiated away spherically from the open hole with a (1/R) amplitude attenuation.
+Reed Simulation
+In FIG. 23, a graph is shown representing the data that is typically stored in the table 59 of FIG. 16 for a reed instrument. The output signal R
+-
+(n) on
+line
+54 is as follows:
+R.sup.- (n)=k*P.sub.Δ.sup.+ /2+P.sub.m (n)/2
+The control variable input on
+line
+56 is P
+m
+(n)/2 and the input on
+line
+68 to the table 59 is
+(P.sub.Δ.sup.+)/2=(R.sup.+ (n)-P.sub.m (n)/2)
+where R
++
+(n) is the signal sample on
+line
+55 of FIG. 16.
+The table 59 is loaded with values which, when graphed, appear as in FIG. 23. The
+curve
+92 in FIG. 23 has a maximum value of one and then trails off to a minimum value of zero. The maximum value of one occurs between (P.sub.Δ,min
++
+)/2 and (P.sub.Δ,c
++
+)/2. The value (P.sub.Δ,c
++
+)/2 corresponds to the closure of the reed. From (P.sub.Δ,c
++
+)/2 to (P.sub.Δ,max
++
+)/2 the
+curve
+92 decays gradually to zero. The equation for the
+curve
+92 is given as follows,
+Curve=[(P.sub.Δ,max.sup.+ -P.sub.Δ.sup.+)/(P.sub.Δ,max.sup.+ -P.sub.Δ,c.sup.+)].sup.l
+where l=1, 2, 3, . . .
+The output from the table 59 is the variable k as given in FIG. 23, that is,
+k=k[(P.sub.Δ.sup.+)/2]
+Bowed-String Simulation
+In FIG. 24, a graph is shown representing the data that is typically stored in the coefficient table 59 of the signal table 70 (see FIG. 16) of FIG. 18. The output signals V
+s
+,l
+-
+on
+line
+54 and V
+s
+,r
+-
+on line 49 are as follows:
+V.sub.s,l.sup.- =k(V.sub.Δ.sup.-) * V.sub.Δ.sup.+ +V.sub.s,r.sup.+
+V.sub.s,r.sup.- =k(V.sub.Δ.sup.+) * V.sub.Δ.sup.+ +V.sub.s,l.sup.+
+The control variable input on
+line
+56 is bow velocity, V
+b
+, and the input on
+line
+68 to the table 59 is
+V.sub.Δ.sup.+ =V.sub.b -(V.sub.s,l.sup.+ +V.sub.s,r.sup.+)
+where V
+s
+,l
++
+is the signal sample on
+line
+55 and V
+s
+,r
++
+is signal sample on
+line
+50 of FIG. 18.
+The table 59 is loaded with values which, when graphed, appear as in FIG. 24. The
+curve
+93 in FIG. 24 has a maximum value of one and then trails off to a minimum value of zero to the left and right symmetrically. The maximum value of one occurs between -V.sub.Δ,c
++
+and +V.sub.Δ,c
++
+. From (V.sub.Δ,c
++
+) to (V.sub.Δ,max
++
+) the
+curve
+93 decays gradually to zero. The
+equation curve
+93 is given as follows,
+Curve=[(V.sub.Δ,max.sup.+ -V.sub.Δ.sup.+)/(V.sub.Δ,max.sup.+ -V.sub.Δ,c.sup.+)].sup.l
+where l=1, 2, 3, . . .
+The output from the table 59 is the reflection coefficient k as given in FIG. 24, that is,
+k=k[(V.sub.Δ.sup.+)]
+Compressed Table Variations
+The compressed table 59 of FIG. 16 containing g(x)=f(x)/x is preferable in that quantization errors are relative. However, alternatives are possible. The
+entire table compressor
+70 of FIG. 16 can be replaced with a simple table. In such an embodiment, the round off error is linear and not relative. For linear errors, the error-to-signal ratio tends not to be constant. Therefore, for small signal amplitudes, the error tends to be significant so that the error may interfere with the intended operation. In either the
+table compressor embodiment
+70 of FIG. 16 or a simple table previously described, the tables can employ compression techniques such as linear, Lagrange and quadratic interpolation with satisfactory results. In a linear interpolation example, the
+curve
+92 of FIG. 23 would be replaced by a series of straight line segments thereby reducing the amount of data required to be maintained in the table.
+Also table 59, address register 58 and data register 61 of FIG. 16 each have
+inputs
+94, 95 and 96 from processor 85 (FIG. 22).
+The inputs from
+processor
+85 function to control the data or the access of data from the table 59. Modifications to the data in the table can be employed, for example, for embouchure control for reed synthesis. Similarly, articulation control for bowed-string synthesis is possible. In one example, the address register 58 has high order address bits, bits 10 and 11, which are supplied by
+lines
+95 from the processor. In this manner, the high order bits can be used to switch effectively to different subtables within the table 59. This switching among subtables is one form of table modification which can be used to achieve the embouchure and articulation modifications.
+Non-Linear Junction with Plural Waveguides--FIG. 18
+In FIG. 18, further details of another embodiment of a non-linear junction is shown connected between a
+first waveguide
+76 and a
+second waveguide
+77. The
+non-linear junction
+78 receives an input from the control variable register 51' and provides inputs to the
+waveguide
+76 on
+lines
+54 and receives an output on
+lines
+55. Also the
+non-linear junction
+78 provides an output to the
+waveguide
+77 on lines 49 and receives an input on
+lines
+50.
+In FIG. 18, the
+non-linear junction
+78 includes an
+adder
+57 receiving as one input the control variable from the control variable register 51' on
+lines
+56. The other input to the
+subtractor
+57 is from the
+difference register
+79 which in turn receives an output from an adder 80. The adder 80 adds the inputs on
+lines
+55 from the
+waveguide
+76 and
+lines
+50 from the
+waveguide
+77.
+The output from the
+subtractor
+57 on
+lines
+68 is input to the
+table compressor
+70. The
+table compressor
+70 of FIG. 12 is like the
+table compressor
+70 of FIG. 10 and provides an output on
+lines
+69. The output on
+lines
+69 connects as one input to each of the
+adders
+81 and 82. The
+adder
+81 receives as the other input the input from
+lines
+50 from the
+waveguide
+77 to form the input on
+lines
+54 to the
+first waveguide
+76. The
+second adder
+82 receives the table compressor signal on
+lines
+69 and adds it to the input from the
+first waveguide
+76 on
+lines
+55. The output from
+adder
+82 connects on lines 49 as the input to the
+second waveguide
+77.
+In FIG. 18, the
+waveguide
+76 includes the top rail delay 65-1 and the bottom rail delay 66-1 and a terminator 67-1.
+Similarly, the
+second waveguide
+77 includes a top rail delay 65-2 and a bottom rail delay 66-2 and a terminator 67-2.
+In the case of a violin in which the long string portion is approximately one foot and the short string portion is one-fifth of a foot, the waveguides of FIG. 18 are as follows. The terminator 67-1 is merely an inverter which changes the sign of the first rail value from delay 65-1 going into the delay 66-1. For example, the changing the sign is a 2's complement operation in digital arithmetic. Each of the delays 65-1 and 66-1 is the equivalent of about fifty samples in length for samples at a 50 KHz frequency. The terminator 67-2 in the
+waveguide
+77 is typically ten samples of delay at the 50 KHz sampling rate. The terminator 67-2 can be a single pole low-pass filter. Alternatively, the terminator can be a filter having the empirically measured bridge reflectance cascaded with all sources of attenuation and dispersions for one round trip on the string. Various details of a violin appear in APPENDIX C.
+Reverberator--FIG. 19
+One lossless reverberator is augmented as shown in FIG. 19 by one or more simple loss factors (typically of the form 1-2
+-n
+) in
+waveguides
+30 to set the reverberation decay times to any desired values. The time, T
+60
+, over which the reverberation decays 60 dB is arbitrary. This decoupling of reverberation time from structure incurs no loss of generality in the present invention.
+Some of the
+waveguides
+30 of the network are determined to give specific early reflections, while others are chosen to provide a desirable texture in the late reverberation. An optimality criterion for the late reverberation is to maximize homogeneity of the impulse response by making it look like exponentially decaying white noise.
+The waveguide networks of the present invention allow every signal path to appear as a feedback branch around every other signal path. This connectivity richness facilitates development of dense late reverberation. Furthermore, the energy conserving properties of the waveguide networks can be maintained in the time-varying case which allows the breaking up of unwanted patterns in the late reverberation by subtly changing the reverberator in a way that does not modulate the reverberation decay profile. Finally, the explicit conservation of signal energy provides an easy way to completely suppress limit cycles and overflow oscillations.
+In FIG. 19, one typical waveguide reverberator is shown including five waveguides (branches) formed by the waveguides 30-1, 30-2, . . . , 30-5. The
+waveguides
+30 are connected to
+junctions
+31 and 32. The waveguides 30-1 through 30-5 have first rail inputs 33-1 through 33-5, respectively, have first rail outputs 35-1 through 35-5, respectively, have second rail inputs 36-1 through 36-5, respectively, and have second rail outputs 34-1 through 34-5, respectively. The first rail outputs 35-i, where i has values from 1 to 5, includes the output signals α
+i
+P
+i
++
+, for i=1 through 5. The outputs 35-i each connect to the summing
+node
+31. Summing
+node
+31 is an adder which adds all of the α
+i
+P
+i
++
+signals to form the junction pressure signal P
+I
+. The P
+I
+signal connects in common to each of the second rail inputs 36-1 through 36-5. The P
+I
+signal at
+terminal
+20 is typically used to provide an output from the reverberator of FIG. 19. In FIG. 19, the
+input
+18 is typically connected to at least one of the
+waveguides
+30 such as waveguide 30-5.
+In FIG. 19, the waveguides 30-1 through 30-5 provide the second rail outputs 34-i for i=1 to 5. The outputs 34-i provide the signals α
+i
+R
+i
++
+which in turn connect as inputs to the summing
+node
+32. The summing
+node
+32 sums all of the signals α
+i
+R
+i
++
+to form the node signal R
+I
+at
+terminal
+19. A second output is typically taken from
+terminal
+19. Additionally, the R
+I
+signal from summing
+node
+32 connects in common to all of the first rail inputs 33-1 through 33-5.
+Reverberator Waveguide--FIGS. 20 and 21
+In FIG. 20, further details of the
+waveguides
+30 of FIG. 19 are shown. Typically, each of the
+waveguides
+30 in FIG. 19 includes an
+R junction
+37, a
+lossless waveguide
+38, a
+loss unit
+39 and a
+P junction
+40.
+In FIG. 21, further details of the typical waveguide of FIG. 20 are shown. The
+R junction
+37 includes a
+subtractor
+41 and a multiplier 42. The
+subtractor
+41 subtracts R
+i
++
+from the R
+I
+signal to provide the R
+i
+-
+signal on
+line
+43. The multiplier 42 multiplies the R
+i
++
+times a gain factor, α
+i
+, to provide the signal α
+i
+R
+i
++
+signal at output terminal 34-i.
+The
+lossless waveguide
+38 includes a
+lossless delay
+45 and a
+lossless delay
+46. The
+delay
+45 delays by a delay, N. With the signal input to the delay on
+line
+43 equal to R
+i
+-
+(t), the delayed output signal on
+line
+47 is equal to R
+i
+-
+(t-N). Similarly the
+delay
+46 delays the input signal P
+i
+-
+(t) by N to form the delayed signal on
+line
+44 equal by definition to P
+i
+-
+(t-N), which is equal to the R
+i
++
+(t) signal.
+In FIG. 21, the
+loss unit
+39, in one particular embodiment, includes a
+multiplier
+24.
+Multiplier
+24 multiplies the signal on
+line
+47 by ε to provide on the output the P
+i
++
+(t) signal equal to εR
+i
+-
+(t-N). While the loss circuit in the form of
+multiplier
+24 has been inserted in the
+line
+47, the loss circuit may alternatively be placed also in any one or more of the
+lines
+43, 44, 47 or 48.
+In FIG. 21, the
+P junction
+40 typically includes a
+subtractor
+21 and a multiplier 22. The
+subtractor
+21 receives the P
+i
++
+signal and subtracts it from the junction pressure signal P
+I
+to produce the P
+i
+-
+signal. Multiplier 22 multiplies the P
+i
++
+signal by α
+i
+to form the α
+i
+P
+i
++
+signal.
+In summary, the reverberator of FIGS. 19-21 consists of waveguides 30-1 through 30-5 connected together to form an arbitrary network. The waveguides 30-1 through 30-5 can be referred to as "branches" and their points of
+intersection
+31 and 32 as "junctions" or "nodes".
+Reflections are created by a mismatch between the admittances Γ
+i
+of the intersecting waveguides. The admittance is the inverse of the characteristic impedance Z
+i
+. Setting the waveguide admittances all equal is acceptable as long as the waveguide delays N
+i
+are different. Equal characteristic admittances means that when a signal comes into a junction of waveguides, it will be split equally into all outgoing waveguides. In the reverberator of FIG. 19, equal characteristic admittances result in α
+i
+=
+2
+/5 for all i. Choosing a power of Z for the number of branches means α
+i
+is a power of Z and can therefore be implemented in binary arithmetic by means of a shift operation.
+If a waveguide with small admittance connects to a waveguide of much higher admittance, the pressure wave will be partially reflected with a sign reversal In the limit:
+a pressure wave is completely reflected with a sign reversal when it encounters an admittance which is infinitely larger than the one in which it was traveling;
+a pressure wave is completely reflected with no sign reversal when it encounters an admittance which is infinitely smaller than the one in which it was traveling;
+a pressure wave is not reflected at all (complete transmission) when it encounters an admittance which is the same as the one in which it was traveling in, the "matched-impedance" case.
+Time-Varying Reverberation
+The effect of amplitude modulation of a waveguide admittance is to vary the admittance away from its original value. In order for the network to remain lossless, the sum of incoming scattering coefficients [α
+i
+of Eq. (2)] must equal 2. Let Γ
+i
+(t) denote the time-varying branch admittances. Then from Eq. (2) ##EQU12## The objective is to vary α
+i
+(t) in a complex waveguide network such that ##EQU13## for some waveguide admittance values Γ
+i
+(t).
+The easiest case is the two-junction network such as shown in FIG. 19. In this case, the α
+i
+(t) are identical at the two junctions.
+One time-varying reverberation technique in the two-junction case is to vary the Γ
+i
+such that ##EQU14## as required for losslessness of the network. A special case is where Γ
+i
++Γ
+j
+=c
+i
+in pairs. Another method for the time varying case is, at each junction, to provide one "reflection-free port" (RFP). Such a port is created when the admittance of one waveguide (that connected to the RFP) is equal to the sum of the admittances of all other waveguides meeting at that junction. In this implementation, the waveguide of the RFP has
+admittance
+1, and it does not vary with time. We call this a "special" waveguide. Since every waveguide must connect to exactly two junctions, a special waveguide provides a RFP at two different junctions simultaneously. (A special waveguide is not very useful as a self-loop at some junction due to the next constraint.)
+Given a reflection-free port caused by a special waveguide of
+admittance
+1, the sum of the remaining waveguide admittances is 1. Since the waveguide connected to the reflection-free port is time-invariant, the sum of all time-varying admittances will be 1.
+A simple method for time-varying reverberation using a RFP is to pair off the time-varying waveguides so that their admittances sum to 1 in pairs. This pairing is handy because a pair is the smallest number of mutually constrained waveguides that can be arranged When there are more than two nodes (junctions), simple complementary pairing of time-varying junctions may be difficult.
+Musical Instrument--FIG. 22
+In FIG. 22, a typical musical instrument, that is signal processor, employing the waveguide units of the present invention is shown. In FIG. 22, a
+processor
+85, such as a special purpose or general purpose computer, generates a digital signal representing the sound to be produced or a control variable for a synthesizer. Typically, the
+processor
+85 provides an address for a random access memory such as
+memory
+86.
+Memory
+86 is addressed and periodically provides a digital output representing the sound or control variable to be generated. The digital sample from the
+memory
+86, typically at a sampling rate T
+s
+(usually near 50 KHz), is connected to the
+waveguide unit
+87.
+Waveguide unit
+87 processes the digital signal in accordance with the present invention and provides an output to the digital-to-analog (D/A)
+converter
+88. The
+converter
+88 in turn provides an analog output signal through a filter 89 which connects to a
+speaker
+90 and produces the desired sound.
+When the signal processor of FIG. 22 is a reed instrument, the structure of FIGS. 15, 16 and 17 is typically employed for
+waveguide unit
+87. In FIG. 15, the
+control variable
+51 is derived from the
+processor
+85 and the
+memory
+86 of FIG. 22. The structure of FIGS. 15, 16 and 17 for a clarinet uses the FIG. 17 structure for
+waveguide
+53 with a simple inverter (-1) for
+terminator
+67. For a saxophone, the
+waveguide
+53 is more complex, like FIG. 4.
+When the signal processor of FIG. 22 is a bowed-string instrument, the
+waveguide unit
+87 in FIG. 22 typically employs the structure of FIG. 18. The control variable input to register 51' of FIG. 18 comes from the
+memory
+86 of FIG. 22. The output from the waveguide unit of FIG. 18 is derived from a number of different points, for example, from the
+terminals
+54 and 55 for the
+waveguide
+76 or from the
+terminals
+49 and 50 from the
+waveguide
+77 of FIG. 18. In one typical output operation, an
+adder
+71 adds the signals appearing at
+terminals
+49 and 50 to provide an input at
+terminal
+20 to the D/
+A converter
+88 of FIG. 22. The sum of the signals in
+adder
+71 corresponds to the string velocity at the location of the bow on the instrument.
+When reed and other instruments are employed, it has been found useful to introduce white noise summed with the control variable input to register 51' of FIG. 16. Additionally, the introduction of tremolo and other musical effects into the control variable enhances the quality of the sound produced.
+When the
+waveguide unit
+87 of FIG. 22 is a digital reverberator, the waveguide of FIG. 19 is typical with the parameters of TABLE 1.
+TABLE 1                                                     
+______________________________________                                    
+N.sub.1 T.sub.s = 5 ms.                                                   
+N.sub.2 T.sub.s = 17 ms.                                                  
+N.sub.3 T.sub.s = 23 ms.                                                  
+N.sub.4 T.sub.s = 67 ms.                                                  
+N.sub.5 T.sub.s = 113 ms.                                                 
+T.sub.s ≈ 20 microseconds                                         
+ε = 0.9 where |ε| ≦1             
+ ##STR1##                                                                 
+For time-varying reverberation:                                           
+α.sub.1 = 1                                                         
+α.sub.2 = β.sub.1 /2                                           
+α.sub.3 = (1 - β.sub.1)/2 0 ≦ β.sub.1 ≦ 1   
+α.sub.4 = β.sub.2 /2 0 ≦ β.sub.2 ≦ 1        
+α.sub.5 = (1 - β.sub.2)/2                                      
+______________________________________
+Claims (
+16
+)
+What is claimed is:
+1. A digital reverberation system comprising:
+a branched network including a plurality of branches formed of digital waveguides and a plurality of junctions interconnecting the waveguides, wherein:
+each waveguide includes two digital delay lines running parallel to each other for propagating signals in opposite directions and having a first end and a second end, said first end having an input to a first delay line and an output from a second delay line and said second end having an input to the second delay line and an output from the first delay line, each waveguide having at least one of its ends connected to a junction;
+at least one of the junctions has at least three waveguide ends connected to it and signals arriving at each junction from a particular waveguide end are partially transmitted to every other waveguide end connected to the junction and partially reflected back to said particular waveguide end;
+means for introducing losses into signals propagating in the network;
+input means for providing an audio input signal to be reverberated to the network; and
+output means for providing at least one reverberation output signal from the network.
+2. A digital reverberation system as in claim 1 wherein the input means comprises a digital waveguide having one end thereof connected to a junction, wherein the input signal is introduced at the other end of said waveguide.
+3. A digital reverberation system as in claim 1 wherein the output means comprises a digital waveguide having one end thereof connected to a junction of the network, wherein an output signal is obtained at the other end thereof.
+4. A digital reverberation system as in claim 1 wherein each junction is comprised of at least one of a multiplier and adder.
+5. A digital reverberation system as in claim 4 wherein each junction includes at least one multiplier and wherein multiplication coefficients of said multipliers vary with time, thereby achieving time varying reverberation characteristics.
+6. A digital reverberation system as in claim 1 wherein the means for introducing losses is configured to provide a desired reverberation time.
+7. A digital reverberation as in claim 6 wherein said means for introducing losses introduces a loss of 1-2
+-n
+to at least one signal propagating in the network.
+8. A digital reverberation system as in claim 1 wherein at least one junction has time varying characteristics to vary at least one of the relative transmission and reflection to the waveguide ends connected to the junction as a function of time.
+9. A digital reverberation system as in claim 1 wherein each junction is comprised of multipliers and adders configured to interconnect the output of each waveguide end connected to the junction with the input of each waveguide end connected to the junction so as to multiply the signal from each waveguide end by a particular coefficient and sum it with multiplied signals from every other waveguide end thereby to provide a desired signal to the input of each waveguide end connected to the junction.
+10. A digital reverberation system as in claim 1 wherein at least one junction is configured so that a signal from any waveguide end is passed in equal proportion to the inputs of all waveguide ends connected to the junction.
+11. A digital reverberation system as in claim 1 including first and second junctions and at least three parallel waveguides each having a predetermined delay amount, each having a first end connected to the first junction and a second end connected to the second junction.
+12. A digital reverberation system as in claim 1 wherein the delay lines in any particular waveguide provide delays which are substantially equal to one another.
+13. The digital reverberation system of claim 1 wherein:
+at least one waveguide is comprised of:
+a first delay element in the first delay line;
+a second delay element in the second delay line;
+means for introducing a loss in signals propagating in at least one of the delay lines;
+first adder means for adding the signal at the first end input to a signal on the second delay line following the output of the second delay element to provide a signal to the first delay element;
+second adder means for adding the signal at the second end input to a signal on the first delay line following the first delay element to provide a signal to the second delay element;
+first delay line multiplier means for multiplying a signal P
+i
++
+on the first delay line following the first delay element by a factor α
+i
+R
+i
++
+; and
+wherein a first junction receives signals from delay lines connected to it and forms a sum P
+I
+as follows: ##EQU15##  and provides the signal P
+I
+to each waveguide input connected to the junction, and wherein a second junction receives signals from delay lines connected to it and forms a sum R
+I
+as follows: ##EQU16##  and provides the signal R
+I
+to each waveguide input connected to the junction.
+14. The digital reverberation system of claim 1 wherein said network includes a plurality, i, where i>2 of waveguides connected in parallel between first and second junctions such that the first end of each waveguide is connected to the first junction and the second end of each waveguide is connected to the second junction, said waveguides forming first end output signals, P
+i
++
+, and waveguides forming first end output signals, P
+i
++
+, and second end output signals, R
+i
++
+, said first junction including means for summing the first end output signals, P
+i
++
+, to form a first end summed signal, P
+I
+, and including means for connecting said first end summed signal as an output to said first end of each of said waveguides,
+and wherein said second junction includes means for summing said second end output signals, R
+i
++
+, to form a summed second end output signal, R
+I
+, and including means for connecting said second end summed signal as an input to said second end of each of said waveguides.
+15. The digital reverberation system of claim 1 wherein each waveguide has a characteristic impedance and where the sum of all of the characteristic impedances for the waveguides connected to a junction sums to a constant.
+16. A reverberation system comprising:
+a branched network including a plurality of branches formed of waveguides and a plurality of junctions interconnecting the waveguides, wherein:
+each waveguide includes two signal paths running parallel to each other for propagating signals in opposite directions wherein at least one of the paths includes a delay, each waveguide having a first end and a second end, said first end having an input to a first path and an output from a second path and said second end having an input to the second path and an output from the first path, each waveguide having at least one of its ends connected to a junction;
+at least one of the junctions has at least three waveguide ends connected to it and signals arriving at each junction from a particular waveguide end are transmitted by a predetermined amount which may include zero to other waveguide ends connected to the junction and reflected back by a predetermined amount which may include zero to said particular waveguide end;
+means for introducing losses in o signals propagating in the network;
+input means for providing an audio signal to be reverberated to the network; and
+output means for providing a least one reverberation output signal from the network.
+US07/414,646
+1986-05-02
+1989-09-27
+Digital signal processing using waveguide networks
+Expired - Lifetime
+US4984276A
+(
+en
+)
+Priority Applications (3)
+Application Number
+Priority Date
+Filing Date
+Title
+US07/414,646
+US4984276A
+(
+en
+)
+1986-05-02
+1989-09-27
+Digital signal processing using waveguide networks
+US07/568,609
+US5212334A
+(
+en
+)
+1986-05-02
+1990-08-16
+Digital signal processing using closed waveguide networks
+US08/035,267
+US5448010A
+(
+en
+)
+1986-05-02
+1993-03-22
+Digital signal processing using closed waveguide networks
+Applications Claiming Priority (4)
+Application Number
+Priority Date
+Filing Date
+Title
+US85986886A
+1986-05-02
+1986-05-02
+US92070186A
+1986-10-17
+1986-10-17
+US27562088A
+1988-11-14
+1988-11-14
+US07/414,646
+US4984276A
+(
+en
+)
+1986-05-02
+1989-09-27
+Digital signal processing using waveguide networks
+Related Parent Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+US27562088A
+Continuation
+1986-05-02
+1988-11-14
+Related Child Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+US07/568,609
+Division
+US5212334A
+(
+en
+)
+1986-05-02
+1990-08-16
+Digital signal processing using closed waveguide networks
+Publications (1)
+Publication Number
+Publication Date
+US4984276A
+true
+US4984276A
+              (
+en
+)
+1991-01-08
+Family
+ID=27501133
+Family Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+US07/414,646
+Expired - Lifetime
+US4984276A
+(
+en
+)
+1986-05-02
+1989-09-27
+Digital signal processing using waveguide networks
+Country Status (1)
+Country
+Link
+US
+(
+1
+)
+US4984276A
+(
+en
+)
+Cited By (86)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US5113743A
+(
+en
+)
+*
+1989-07-18
+1992-05-19
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5131310A
+(
+en
+)
+*
+1989-07-18
+1992-07-21
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5136917A
+(
+en
+)
+*
+1989-05-15
+1992-08-11
+Yamaha Corporation
+Musical tone synthesizing apparatus utilizing an all pass filter for phase modification in a feedback loop
+US5144096A
+(
+en
+)
+*
+1989-11-13
+1992-09-01
+Yamaha Corporation
+Nonlinear function generation apparatus, and musical tone synthesis apparatus utilizing the same
+US5157214A
+(
+en
+)
+*
+1989-04-10
+1992-10-20
+Matsushita Electric Industrial Co., Ltd.
+Musical sound synthesizing apparatus
+US5157218A
+(
+en
+)
+*
+1989-07-27
+1992-10-20
+Yamaha Corporation
+Musical tone signal forming apparatus
+US5180877A
+(
+en
+)
+*
+1989-07-27
+1993-01-19
+Yamaha Corporation
+Musical tone synthesizing apparatus using wave guide synthesis
+US5182415A
+(
+en
+)
+*
+1990-10-24
+1993-01-26
+Yamaha Corporation
+Musical tone synthesizing device
+US5187313A
+(
+en
+)
+*
+1989-08-04
+1993-02-16
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5187314A
+(
+en
+)
+*
+1989-12-28
+1993-02-16
+Yamaha Corporation
+Musical tone synthesizing apparatus with time function excitation generator
+US5192825A
+(
+en
+)
+*
+1989-04-27
+1993-03-09
+Yamaha Corporation
+Apparatus for synthesizing musical tones
+US5200568A
+(
+en
+)
+*
+1990-01-31
+1993-04-06
+Yoshiko Fukushima
+Method of controlling sound source for electronic musical instrument, and electronic musical instrument adopting the method
+US5223653A
+(
+en
+)
+*
+1989-05-15
+1993-06-29
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5223656A
+(
+en
+)
+*
+1990-02-20
+1993-06-29
+Yamaha Corporation
+Musical tone waveform signal forming apparatus with pitch and tone color modulation
+US5223657A
+(
+en
+)
+*
+1990-02-22
+1993-06-29
+Yamaha Corporation
+Musical tone generating device with simulation of harmonics technique of a stringed instrument
+US5241127A
+(
+en
+)
+*
+1989-12-22
+1993-08-31
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5241129A
+(
+en
+)
+*
+1991-02-15
+1993-08-31
+Yamaha Corporation
+Electronic musical instrument having physical model tone generator
+US5245127A
+(
+en
+)
+*
+1989-04-21
+1993-09-14
+Yamaha Corporation
+Signal delay circuit, FIR filter and musical tone synthesizer employing the same
+US5247131A
+(
+en
+)
+*
+1989-12-14
+1993-09-21
+Yamaha Corporation
+Electronic musical instrument with multi-model performance manipulator
+US5246487A
+(
+en
+)
+*
+1990-03-26
+1993-09-21
+Yamaha Corporation
+Musical tone control apparatus with non-linear table display
+US5248844A
+(
+en
+)
+*
+1989-04-21
+1993-09-28
+Yamaha Corporation
+Waveguide type musical tone synthesizing apparatus
+US5252776A
+(
+en
+)
+*
+1989-11-22
+1993-10-12
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5256830A
+(
+en
+)
+*
+1989-09-11
+1993-10-26
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5264659A
+(
+en
+)
+*
+1991-04-26
+1993-11-23
+Yamaha Corporation
+Musical tone synthesizing apparatus having controllable feedback
+US5264658A
+(
+en
+)
+*
+1990-10-18
+1993-11-23
+Yamaha Corporation
+Electronic musical instrument having frequency dependent tone control
+US5266737A
+(
+en
+)
+*
+1990-01-10
+1993-11-30
+Yamaha Corporation
+Positional and pressure-sensitive apparatus for manually controlling musical tone of electronic musical instrument
+US5266734A
+(
+en
+)
+*
+1991-03-29
+1993-11-30
+Yamaha Corporation
+Musical tone synthesizing apparatus performing high-speed non-linear operation
+US5272275A
+(
+en
+)
+*
+1991-04-10
+1993-12-21
+Yamaha Corporation
+Brass instrument type tone synthesizer
+US5272276A
+(
+en
+)
+*
+1990-01-16
+1993-12-21
+Yamaha Corporation
+Electronic musical instrument adapted to simulate a rubbed string instrument
+US5276272A
+(
+en
+)
+*
+1991-07-09
+1994-01-04
+Yamaha Corporation
+Wind instrument simulating apparatus
+US5278350A
+(
+en
+)
+*
+1990-01-19
+1994-01-11
+Yamaha Corporation
+Electronic musical instrument for generating musical tone approximate to acoustic instrument for generating a sustaining tone, and musical tone control apparatus used in this electronic musical instrument
+US5286914A
+(
+en
+)
+*
+1989-12-18
+1994-02-15
+Yamaha Corporation
+Musical tone waveform signal generating apparatus using parallel non-linear conversion tables
+US5286913A
+(
+en
+)
+*
+1990-02-14
+1994-02-15
+Yamaha Corporation
+Musical tone waveform signal forming apparatus having pitch and tone color modulation
+US5290966A
+(
+en
+)
+*
+1989-11-24
+1994-03-01
+Yamaha Corporation
+Control apparatus and electronic musical instrument using the same
+US5290969A
+(
+en
+)
+*
+1989-11-29
+1994-03-01
+Yamaha Corporation
+Musical tone synthesizing apparatus for synthesizing a muscial tone of an acoustic musical instrument having a plurality of simultaneously excited tone generating elements
+US5298678A
+(
+en
+)
+*
+1990-02-14
+1994-03-29
+Yamaha Corporation
+Musical tone waveform signal forming apparatus having pitch control means
+US5308918A
+(
+en
+)
+*
+1989-04-21
+1994-05-03
+Yamaha Corporation
+Signal delay circuit, FIR filter and musical tone synthesizer employing the same
+US5315058A
+(
+en
+)
+*
+1991-03-26
+1994-05-24
+Yamaha Corporation
+Electronic musical instrument having artificial string sound source with bowing effect
+US5331111A
+(
+en
+)
+*
+1992-10-27
+1994-07-19
+Korg, Inc.
+Sound model generator and synthesizer with graphical programming engine
+US5332862A
+(
+en
+)
+*
+1991-11-01
+1994-07-26
+Yamaha Corporation
+Musical tone synthesizing apparatus including modulator on its non-linear/linear outputs
+US5340942A
+(
+en
+)
+*
+1990-09-07
+1994-08-23
+Yamaha Corporation
+Waveguide musical tone synthesizing apparatus employing initial excitation pulse
+US5340941A
+(
+en
+)
+*
+1990-01-19
+1994-08-23
+Yamaha Corporation
+Electronic musical instrument of rubbed string simulation type
+US5352849A
+(
+en
+)
+*
+1990-06-01
+1994-10-04
+Yamaha Corporation
+Musical tone synthesizing apparatus simulating interaction between plural strings
+US5354947A
+(
+en
+)
+*
+1991-05-08
+1994-10-11
+Yamaha Corporation
+Musical tone forming apparatus employing separable nonliner conversion apparatus
+US5359146A
+(
+en
+)
+*
+1991-02-19
+1994-10-25
+Yamaha Corporation
+Musical tone synthesizing apparatus having smoothly varying tone control parameters
+US5376752A
+(
+en
+)
+*
+1993-02-10
+1994-12-27
+Korg, Inc.
+Open architecture music synthesizer with dynamic voice allocation
+US5382751A
+(
+en
+)
+*
+1991-12-27
+1995-01-17
+Yamaha Corporation
+Electronic musical instrument including a configurable tone synthesizing system
+WO1995006936A1
+(
+en
+)
+*
+1993-09-02
+1995-03-09
+Media Vision, Inc.
+Sound synthesis model incorporating sympathetic vibrations of strings
+US5403970A
+(
+en
+)
+*
+1989-11-21
+1995-04-04
+Yamaha Corporation
+Electrical musical instrument using a joystick-type control apparatus
+US5403969A
+(
+en
+)
+*
+1990-08-09
+1995-04-04
+Yamaha Corporation
+Electronic musical instrument of delayed feedback type
+US5408042A
+(
+en
+)
+*
+1992-01-20
+1995-04-18
+Yamaha Corporation
+Musical tone synthesizing apparatus capable of convoluting a noise signal in response to an excitation signal
+US5426262A
+(
+en
+)
+*
+1991-07-26
+1995-06-20
+Yamaha Corporation
+Electronic musical instrument capable of simulating small pitch variation at initiation of musical tone generation
+US5428185A
+(
+en
+)
+*
+1989-12-15
+1995-06-27
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5436403A
+(
+en
+)
+*
+1992-12-09
+1995-07-25
+Yamaha Corporation
+Automatic performance apparatus capable of performing based on stored data
+US5438156A
+(
+en
+)
+*
+1991-05-09
+1995-08-01
+Yamaha Corporation
+Wind type tone synthesizer adapted for simulating a conical resonance tube
+US5442130A
+(
+en
+)
+*
+1992-03-03
+1995-08-15
+Yamaha Corporation
+Musical tone synthesizing apparatus using comb filter
+US5461189A
+(
+en
+)
+*
+1990-07-06
+1995-10-24
+Yamaha Corporation
+Waveguide electronic musical instrument employing pre-performance tuning
+US5466884A
+(
+en
+)
+*
+1994-05-10
+1995-11-14
+The Board Of Trustees Of The Leland Stanford Junior University
+Music synthesizer system and method for simulating response of resonant digital waveguide struck by felt covered hammer
+US5471007A
+(
+en
+)
+*
+1993-05-04
+1995-11-28
+The Board Of Trustees Of The Leland Stanford Junior University
+Multidimensional digital waveguide signal synthesis system and method
+US5508469A
+(
+en
+)
+*
+1992-09-18
+1996-04-16
+Yamaha Corporation
+Musical tone synthesizing apparatus capable of changing musical parameters in real-time
+US5512705A
+(
+en
+)
+*
+1989-12-12
+1996-04-30
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5521325A
+(
+en
+)
+*
+1991-03-22
+1996-05-28
+Yamaha Corporation
+Device for synthesizing a musical tone employing random modulation of a wave form signal
+US5521328A
+(
+en
+)
+*
+1992-08-21
+1996-05-28
+Yamaha Corporation
+Electronic musical instrument for simulating wind instrument musical tones
+US5528726A
+(
+en
+)
+*
+1992-01-27
+1996-06-18
+The Board Of Trustees Of The Leland Stanford Junior University
+Digital waveguide speech synthesis system and method
+US5543578A
+(
+en
+)
+*
+1993-09-02
+1996-08-06
+Mediavision, Inc.
+Residual excited wave guide
+US5554813A
+(
+en
+)
+*
+1992-06-16
+1996-09-10
+Yamaha Corporation
+Tone signal synthesizer employing a closed wave guide network
+US5596159A
+(
+en
+)
+*
+1995-11-22
+1997-01-21
+Invision Interactive, Inc.
+Software sound synthesis system
+US5621801A
+(
+en
+)
+*
+1993-06-11
+1997-04-15
+Yamaha Corporation
+Reverberation effect imparting system
+US5657476A
+(
+en
+)
+*
+1993-02-10
+1997-08-12
+Korg, Inc.
+Signal processor with delay line management logic
+US5661253A
+(
+en
+)
+*
+1989-11-01
+1997-08-26
+Yamaha Corporation
+Control apparatus and electronic musical instrument using the same
+US5745743A
+(
+en
+)
+*
+1991-07-04
+1998-04-28
+Yamaha Corporation
+Digital signal processor integrally incorporating a coefficient interpolator structured on a hardware basis
+US5774560A
+(
+en
+)
+*
+1996-05-30
+1998-06-30
+Industrial Technology Research Institute
+Digital acoustic reverberation filter network
+US5981859A
+(
+en
+)
+*
+1997-09-24
+1999-11-09
+Yamaha Corporation
+Multi tone generator
+US6011213A
+(
+en
+)
+*
+1997-09-24
+2000-01-04
+Sony Corporation
+Synthesis of sounds played on plucked string instruments, using computers and synthesizers
+US6091824A
+(
+en
+)
+*
+1997-09-26
+2000-07-18
+Crystal Semiconductor Corporation
+Reduced-memory early reflection and reverberation simulator and method
+US6222645B1
+(
+en
+)
+1996-10-18
+2001-04-24
+Ricoh Company, Ltd.
+Facsimile apparatus and communication method therefor
+US6292791B1
+(
+en
+)
+1998-02-27
+2001-09-18
+Industrial Technology Research Institute
+Method and apparatus of synthesizing plucked string instruments using recurrent neural networks
+USRE37422E1
+(
+en
+)
+1990-11-20
+2001-10-30
+Yamaha Corporation
+Electronic musical instrument
+US6580796B1
+(
+en
+)
+1998-01-27
+2003-06-17
+Yamaha Corporation
+Sound effect imparting apparatus
+US6876964B1
+(
+en
+)
+*
+1998-10-05
+2005-04-05
+Electronic Navigation Research Institute, Independent Administrative Institution
+Apparatus for detecting fatigue and doze by voice, and recording medium
+US20050228840A1
+(
+en
+)
+*
+2004-04-12
+2005-10-13
+Benq Corporation
+Lattice wave digital filter
+US20060201312A1
+(
+en
+)
+*
+2003-03-28
+2006-09-14
+Carlo Zinato
+Method and electronic device used to synthesise the sound of church organ flue pipes by taking advantage of the physical modelling technique of acoustic instruments
+US7381881B1
+(
+en
+)
+*
+2004-09-24
+2008-06-03
+Apple Inc.
+Simulation of string vibration
+US20120140938A1
+(
+en
+)
+*
+2010-12-07
+2012-06-07
+Chul Jae Yoo
+Apparatus and method for generating audio signal having sound enhancement effect
+US20140299743A1
+(
+en
+)
+*
+2012-11-27
+2014-10-09
+The Board Of Trustees Of The Leland Stanford Junior University
+Universal Linear Components
+US20170278497A1
+(
+en
+)
+*
+2016-12-29
+2017-09-28
+Brandon Nedelman
+Audio effect utilizing series of waveform reversals
+Citations (6)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US4344148A
+(
+en
+)
+*
+1977-06-17
+1982-08-10
+Texas Instruments Incorporated
+System using digital filter for waveform or speech synthesis
+US4389540A
+(
+en
+)
+*
+1980-03-31
+1983-06-21
+Tokyo Shibaura Denki Kabushiki Kaisha
+Adaptive linear prediction filters
+US4475229A
+(
+en
+)
+*
+1980-05-29
+1984-10-02
+Akg-Akustische U.Kino-Gerate Gesellschaft M.B.H.
+Device for producing artifical reverberation
+US4548119A
+(
+en
+)
+*
+1981-12-25
+1985-10-22
+Nippon Gakki Seizo Kabushiki Kaisha
+Digital filter for an electronic musical instrument
+US4554858A
+(
+en
+)
+*
+1982-08-13
+1985-11-26
+Nippon Gakki Seizo Kabushiki Kaisha
+Digital filter for an electronic musical instrument
+US4633500A
+(
+en
+)
+*
+1982-03-19
+1986-12-30
+Mitsubishi Denki Kabushiki Kaisha
+Speech synthesizer
+1989
+1989-09-27
+US
+US07/414,646
+patent/US4984276A/en
+not_active
+Expired - Lifetime
+Patent Citations (6)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US4344148A
+(
+en
+)
+*
+1977-06-17
+1982-08-10
+Texas Instruments Incorporated
+System using digital filter for waveform or speech synthesis
+US4389540A
+(
+en
+)
+*
+1980-03-31
+1983-06-21
+Tokyo Shibaura Denki Kabushiki Kaisha
+Adaptive linear prediction filters
+US4475229A
+(
+en
+)
+*
+1980-05-29
+1984-10-02
+Akg-Akustische U.Kino-Gerate Gesellschaft M.B.H.
+Device for producing artifical reverberation
+US4548119A
+(
+en
+)
+*
+1981-12-25
+1985-10-22
+Nippon Gakki Seizo Kabushiki Kaisha
+Digital filter for an electronic musical instrument
+US4633500A
+(
+en
+)
+*
+1982-03-19
+1986-12-30
+Mitsubishi Denki Kabushiki Kaisha
+Speech synthesizer
+US4554858A
+(
+en
+)
+*
+1982-08-13
+1985-11-26
+Nippon Gakki Seizo Kabushiki Kaisha
+Digital filter for an electronic musical instrument
+Non-Patent Citations (6)
+* Cited by examiner, † Cited by third party
+Title
+H. Kimura et al., "
+Canonical Pipelining of Lattice Filters,
+" IEEE Transactions on Acoustics, Speech, and Signal Processing, vol. ASSP-35, No. 6, Jun. 1987.
+H. Kimura et al., Canonical Pipelining of Lattice Filters, IEEE Transactions on Acoustics, Speech, and Signal Processing , vol. ASSP 35, No. 6, Jun. 1987.
+*
+H. Kimura, "
+Generalized Schwarz Form and Lattice-Ladder Realizations of Digital Filters,
+" IEEE Transactions on Circuits and Systems, vol. CAS-32, No. 11, Nov. 1985.
+H. Kimura, Generalized Schwarz Form and Lattice Ladder Realizations of Digital Filters, IEEE Transactions on Circuits and Systems , vol. CAS 32, No. 11, Nov. 1985. James A.Moorer,"
+About This Reverberation Business,"Computer Music Journal,Vol.3,Nov.2,1979 Julius O.Smith,"A New Approach To Digital Reverberation Using Waveguide Networks,
+"Center For Computer Research In Music And Acoustics,Dept.of Music,Stanford University,August 19,1985.
+*
+Maurice Bellanger, Digital Processing of Signals Theory and Practice , John Wiley & Sons, copyright 1984, Library of Congress Catalog Card No.: 83 17035, pp. 229 239 & 362 368.
+*
+Maurice Bellanger, Digital Processing of Signals Theory and Practice, John Wiley & Sons, copyright © 1984, Library of Congress Catalog Card No.: 83-17035, pp. 229-239 & 362-368.
+Cited By (94)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US5157214A
+(
+en
+)
+*
+1989-04-10
+1992-10-20
+Matsushita Electric Industrial Co., Ltd.
+Musical sound synthesizing apparatus
+US5248844A
+(
+en
+)
+*
+1989-04-21
+1993-09-28
+Yamaha Corporation
+Waveguide type musical tone synthesizing apparatus
+US5245127A
+(
+en
+)
+*
+1989-04-21
+1993-09-14
+Yamaha Corporation
+Signal delay circuit, FIR filter and musical tone synthesizer employing the same
+US5308918A
+(
+en
+)
+*
+1989-04-21
+1994-05-03
+Yamaha Corporation
+Signal delay circuit, FIR filter and musical tone synthesizer employing the same
+US5192825A
+(
+en
+)
+*
+1989-04-27
+1993-03-09
+Yamaha Corporation
+Apparatus for synthesizing musical tones
+US5136917A
+(
+en
+)
+*
+1989-05-15
+1992-08-11
+Yamaha Corporation
+Musical tone synthesizing apparatus utilizing an all pass filter for phase modification in a feedback loop
+US5223653A
+(
+en
+)
+*
+1989-05-15
+1993-06-29
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5131310A
+(
+en
+)
+*
+1989-07-18
+1992-07-21
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5113743A
+(
+en
+)
+*
+1989-07-18
+1992-05-19
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5180877A
+(
+en
+)
+*
+1989-07-27
+1993-01-19
+Yamaha Corporation
+Musical tone synthesizing apparatus using wave guide synthesis
+US5157218A
+(
+en
+)
+*
+1989-07-27
+1992-10-20
+Yamaha Corporation
+Musical tone signal forming apparatus
+US5187313A
+(
+en
+)
+*
+1989-08-04
+1993-02-16
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5256830A
+(
+en
+)
+*
+1989-09-11
+1993-10-26
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5661253A
+(
+en
+)
+*
+1989-11-01
+1997-08-26
+Yamaha Corporation
+Control apparatus and electronic musical instrument using the same
+US5144096A
+(
+en
+)
+*
+1989-11-13
+1992-09-01
+Yamaha Corporation
+Nonlinear function generation apparatus, and musical tone synthesis apparatus utilizing the same
+US5403970A
+(
+en
+)
+*
+1989-11-21
+1995-04-04
+Yamaha Corporation
+Electrical musical instrument using a joystick-type control apparatus
+US5252776A
+(
+en
+)
+*
+1989-11-22
+1993-10-12
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5290966A
+(
+en
+)
+*
+1989-11-24
+1994-03-01
+Yamaha Corporation
+Control apparatus and electronic musical instrument using the same
+US5290969A
+(
+en
+)
+*
+1989-11-29
+1994-03-01
+Yamaha Corporation
+Musical tone synthesizing apparatus for synthesizing a muscial tone of an acoustic musical instrument having a plurality of simultaneously excited tone generating elements
+US5512705A
+(
+en
+)
+*
+1989-12-12
+1996-04-30
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5247131A
+(
+en
+)
+*
+1989-12-14
+1993-09-21
+Yamaha Corporation
+Electronic musical instrument with multi-model performance manipulator
+US5428185A
+(
+en
+)
+*
+1989-12-15
+1995-06-27
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5286914A
+(
+en
+)
+*
+1989-12-18
+1994-02-15
+Yamaha Corporation
+Musical tone waveform signal generating apparatus using parallel non-linear conversion tables
+US5477004A
+(
+en
+)
+*
+1989-12-18
+1995-12-19
+Yamaha Corporation
+Musical tone waveform signal generating apparatus
+US5241127A
+(
+en
+)
+*
+1989-12-22
+1993-08-31
+Yamaha Corporation
+Musical tone synthesizing apparatus
+US5187314A
+(
+en
+)
+*
+1989-12-28
+1993-02-16
+Yamaha Corporation
+Musical tone synthesizing apparatus with time function excitation generator
+US5266737A
+(
+en
+)
+*
+1990-01-10
+1993-11-30
+Yamaha Corporation
+Positional and pressure-sensitive apparatus for manually controlling musical tone of electronic musical instrument
+US5272276A
+(
+en
+)
+*
+1990-01-16
+1993-12-21
+Yamaha Corporation
+Electronic musical instrument adapted to simulate a rubbed string instrument
+US5278350A
+(
+en
+)
+*
+1990-01-19
+1994-01-11
+Yamaha Corporation
+Electronic musical instrument for generating musical tone approximate to acoustic instrument for generating a sustaining tone, and musical tone control apparatus used in this electronic musical instrument
+US5340941A
+(
+en
+)
+*
+1990-01-19
+1994-08-23
+Yamaha Corporation
+Electronic musical instrument of rubbed string simulation type
+US5200568A
+(
+en
+)
+*
+1990-01-31
+1993-04-06
+Yoshiko Fukushima
+Method of controlling sound source for electronic musical instrument, and electronic musical instrument adopting the method
+US5286913A
+(
+en
+)
+*
+1990-02-14
+1994-02-15
+Yamaha Corporation
+Musical tone waveform signal forming apparatus having pitch and tone color modulation
+US5298678A
+(
+en
+)
+*
+1990-02-14
+1994-03-29
+Yamaha Corporation
+Musical tone waveform signal forming apparatus having pitch control means
+US5223656A
+(
+en
+)
+*
+1990-02-20
+1993-06-29
+Yamaha Corporation
+Musical tone waveform signal forming apparatus with pitch and tone color modulation
+US5223657A
+(
+en
+)
+*
+1990-02-22
+1993-06-29
+Yamaha Corporation
+Musical tone generating device with simulation of harmonics technique of a stringed instrument
+US5246487A
+(
+en
+)
+*
+1990-03-26
+1993-09-21
+Yamaha Corporation
+Musical tone control apparatus with non-linear table display
+US5352849A
+(
+en
+)
+*
+1990-06-01
+1994-10-04
+Yamaha Corporation
+Musical tone synthesizing apparatus simulating interaction between plural strings
+US5461189A
+(
+en
+)
+*
+1990-07-06
+1995-10-24
+Yamaha Corporation
+Waveguide electronic musical instrument employing pre-performance tuning
+US5403969A
+(
+en
+)
+*
+1990-08-09
+1995-04-04
+Yamaha Corporation
+Electronic musical instrument of delayed feedback type
+US5340942A
+(
+en
+)
+*
+1990-09-07
+1994-08-23
+Yamaha Corporation
+Waveguide musical tone synthesizing apparatus employing initial excitation pulse
+US5264658A
+(
+en
+)
+*
+1990-10-18
+1993-11-23
+Yamaha Corporation
+Electronic musical instrument having frequency dependent tone control
+US5182415A
+(
+en
+)
+*
+1990-10-24
+1993-01-26
+Yamaha Corporation
+Musical tone synthesizing device
+USRE37422E1
+(
+en
+)
+1990-11-20
+2001-10-30
+Yamaha Corporation
+Electronic musical instrument
+US5241129A
+(
+en
+)
+*
+1991-02-15
+1993-08-31
+Yamaha Corporation
+Electronic musical instrument having physical model tone generator
+US5359146A
+(
+en
+)
+*
+1991-02-19
+1994-10-25
+Yamaha Corporation
+Musical tone synthesizing apparatus having smoothly varying tone control parameters
+US5521325A
+(
+en
+)
+*
+1991-03-22
+1996-05-28
+Yamaha Corporation
+Device for synthesizing a musical tone employing random modulation of a wave form signal
+US5315058A
+(
+en
+)
+*
+1991-03-26
+1994-05-24
+Yamaha Corporation
+Electronic musical instrument having artificial string sound source with bowing effect
+US5266734A
+(
+en
+)
+*
+1991-03-29
+1993-11-30
+Yamaha Corporation
+Musical tone synthesizing apparatus performing high-speed non-linear operation
+US5272275A
+(
+en
+)
+*
+1991-04-10
+1993-12-21
+Yamaha Corporation
+Brass instrument type tone synthesizer
+US5264659A
+(
+en
+)
+*
+1991-04-26
+1993-11-23
+Yamaha Corporation
+Musical tone synthesizing apparatus having controllable feedback
+US5354947A
+(
+en
+)
+*
+1991-05-08
+1994-10-11
+Yamaha Corporation
+Musical tone forming apparatus employing separable nonliner conversion apparatus
+US5438156A
+(
+en
+)
+*
+1991-05-09
+1995-08-01
+Yamaha Corporation
+Wind type tone synthesizer adapted for simulating a conical resonance tube
+US5745743A
+(
+en
+)
+*
+1991-07-04
+1998-04-28
+Yamaha Corporation
+Digital signal processor integrally incorporating a coefficient interpolator structured on a hardware basis
+US5276272A
+(
+en
+)
+*
+1991-07-09
+1994-01-04
+Yamaha Corporation
+Wind instrument simulating apparatus
+US5426262A
+(
+en
+)
+*
+1991-07-26
+1995-06-20
+Yamaha Corporation
+Electronic musical instrument capable of simulating small pitch variation at initiation of musical tone generation
+US5332862A
+(
+en
+)
+*
+1991-11-01
+1994-07-26
+Yamaha Corporation
+Musical tone synthesizing apparatus including modulator on its non-linear/linear outputs
+US5382751A
+(
+en
+)
+*
+1991-12-27
+1995-01-17
+Yamaha Corporation
+Electronic musical instrument including a configurable tone synthesizing system
+US5408042A
+(
+en
+)
+*
+1992-01-20
+1995-04-18
+Yamaha Corporation
+Musical tone synthesizing apparatus capable of convoluting a noise signal in response to an excitation signal
+US5528726A
+(
+en
+)
+*
+1992-01-27
+1996-06-18
+The Board Of Trustees Of The Leland Stanford Junior University
+Digital waveguide speech synthesis system and method
+US5442130A
+(
+en
+)
+*
+1992-03-03
+1995-08-15
+Yamaha Corporation
+Musical tone synthesizing apparatus using comb filter
+US5554813A
+(
+en
+)
+*
+1992-06-16
+1996-09-10
+Yamaha Corporation
+Tone signal synthesizer employing a closed wave guide network
+US5521328A
+(
+en
+)
+*
+1992-08-21
+1996-05-28
+Yamaha Corporation
+Electronic musical instrument for simulating wind instrument musical tones
+US5508469A
+(
+en
+)
+*
+1992-09-18
+1996-04-16
+Yamaha Corporation
+Musical tone synthesizing apparatus capable of changing musical parameters in real-time
+US5331111A
+(
+en
+)
+*
+1992-10-27
+1994-07-19
+Korg, Inc.
+Sound model generator and synthesizer with graphical programming engine
+US5436403A
+(
+en
+)
+*
+1992-12-09
+1995-07-25
+Yamaha Corporation
+Automatic performance apparatus capable of performing based on stored data
+US5376752A
+(
+en
+)
+*
+1993-02-10
+1994-12-27
+Korg, Inc.
+Open architecture music synthesizer with dynamic voice allocation
+US5657476A
+(
+en
+)
+*
+1993-02-10
+1997-08-12
+Korg, Inc.
+Signal processor with delay line management logic
+US5471007A
+(
+en
+)
+*
+1993-05-04
+1995-11-28
+The Board Of Trustees Of The Leland Stanford Junior University
+Multidimensional digital waveguide signal synthesis system and method
+US5614686A
+(
+en
+)
+*
+1993-05-04
+1997-03-25
+The Board Of Trustees Of The Leland Stanford Junior University
+Multidimensional digital waveguide signal synthesis system and method
+US5621801A
+(
+en
+)
+*
+1993-06-11
+1997-04-15
+Yamaha Corporation
+Reverberation effect imparting system
+US5543578A
+(
+en
+)
+*
+1993-09-02
+1996-08-06
+Mediavision, Inc.
+Residual excited wave guide
+WO1995006936A1
+(
+en
+)
+*
+1993-09-02
+1995-03-09
+Media Vision, Inc.
+Sound synthesis model incorporating sympathetic vibrations of strings
+US5468906A
+(
+en
+)
+*
+1993-09-02
+1995-11-21
+Media Vision, Inc.
+Sound synthesis model incorporating sympathetic vibrations of strings
+US5466884A
+(
+en
+)
+*
+1994-05-10
+1995-11-14
+The Board Of Trustees Of The Leland Stanford Junior University
+Music synthesizer system and method for simulating response of resonant digital waveguide struck by felt covered hammer
+US5596159A
+(
+en
+)
+*
+1995-11-22
+1997-01-21
+Invision Interactive, Inc.
+Software sound synthesis system
+US5774560A
+(
+en
+)
+*
+1996-05-30
+1998-06-30
+Industrial Technology Research Institute
+Digital acoustic reverberation filter network
+US6222645B1
+(
+en
+)
+1996-10-18
+2001-04-24
+Ricoh Company, Ltd.
+Facsimile apparatus and communication method therefor
+US5981859A
+(
+en
+)
+*
+1997-09-24
+1999-11-09
+Yamaha Corporation
+Multi tone generator
+US6011213A
+(
+en
+)
+*
+1997-09-24
+2000-01-04
+Sony Corporation
+Synthesis of sounds played on plucked string instruments, using computers and synthesizers
+US6091824A
+(
+en
+)
+*
+1997-09-26
+2000-07-18
+Crystal Semiconductor Corporation
+Reduced-memory early reflection and reverberation simulator and method
+US6580796B1
+(
+en
+)
+1998-01-27
+2003-06-17
+Yamaha Corporation
+Sound effect imparting apparatus
+US6292791B1
+(
+en
+)
+1998-02-27
+2001-09-18
+Industrial Technology Research Institute
+Method and apparatus of synthesizing plucked string instruments using recurrent neural networks
+US6876964B1
+(
+en
+)
+*
+1998-10-05
+2005-04-05
+Electronic Navigation Research Institute, Independent Administrative Institution
+Apparatus for detecting fatigue and doze by voice, and recording medium
+US20060201312A1
+(
+en
+)
+*
+2003-03-28
+2006-09-14
+Carlo Zinato
+Method and electronic device used to synthesise the sound of church organ flue pipes by taking advantage of the physical modelling technique of acoustic instruments
+US7442869B2
+(
+en
+)
+*
+2003-03-28
+2008-10-28
+Viscount International S.P.A.
+Method and electronic device used to synthesise the sound of church organ flue pipes by taking advantage of the physical modeling technique of acoustic instruments
+US20050228840A1
+(
+en
+)
+*
+2004-04-12
+2005-10-13
+Benq Corporation
+Lattice wave digital filter
+US7381881B1
+(
+en
+)
+*
+2004-09-24
+2008-06-03
+Apple Inc.
+Simulation of string vibration
+US20120140938A1
+(
+en
+)
+*
+2010-12-07
+2012-06-07
+Chul Jae Yoo
+Apparatus and method for generating audio signal having sound enhancement effect
+CN102543094A
+(
+en
+)
+*
+2010-12-07
+2012-07-04
+来得声有限公司
+Apparatus and method for generating audio signal having sound enhancement effect
+US9076452B2
+(
+en
+)
+*
+2010-12-07
+2015-07-07
+Radsone Inc.
+Apparatus and method for generating audio signal having sound enhancement effect
+US20140299743A1
+(
+en
+)
+*
+2012-11-27
+2014-10-09
+The Board Of Trustees Of The Leland Stanford Junior University
+Universal Linear Components
+US10534189B2
+(
+en
+)
+*
+2012-11-27
+2020-01-14
+The Board Of Trustees Of The Leland Stanford Junior University
+Universal linear components
+US20170278497A1
+(
+en
+)
+*
+2016-12-29
+2017-09-28
+Brandon Nedelman
+Audio effect utilizing series of waveform reversals
+US10224014B2
+(
+en
+)
+*
+2016-12-29
+2019-03-05
+Brandon Nedelman
+Audio effect utilizing series of waveform reversals
+Similar Documents
+Publication
+Publication Date
+Title
+EP0583043B1
+(
+en
+)
+1998-11-04
+Tone generation system
+US5212334A
+(
+en
+)
+1993-05-18
+Digital signal processing using closed waveguide networks
+US5502277A
+(
+en
+)
+1996-03-26
+Filter device and electronic musical instrument using the filter device
+JP2679275B2
+(
+en
+)
+1997-11-19
+Music synthesizer
+JPH0778679B2
+(
+en
+)
+1995-08-23
+Musical tone signal generator
+Guillemain
+2004
+A digital synthesis model of double-reed wind instruments
+Abel et al.
+2015
+Distortion and pitch processing using a modal reverberator architecture
+AU631697B2
+(
+en
+)
+1992-12-03
+Digital signal processing using closed waveguide networks
+Smith
+1996
+Discrete-time modeling of acoustic systems with applications to sound synthesis of musical instruments
+JP2738175B2
+(
+en
+)
+1998-04-08
+Music signal generator
+Hänninen et al.
+1996
+An improved digital waveguide model of a flute with fractional delay filters
+JP2580769B2
+(
+en
+)
+1997-02-12
+Music synthesizer
+JP2841847B2
+(
+en
+)
+1998-12-24
+Music synthesizer
+JP2808793B2
+(
+en
+)
+1998-10-08
+Music synthesizer
+Rodet
+1993
+Nonlinear oscillations in sustained musical instruments: Models and control
+Smith
+2008
+Digital waveguide architectures for virtual musical instruments
+JPH0546169A
+(
+en
+)
+1993-02-26
+Musical sound synthesizing device
+JP2689709B2
+(
+en
+)
+1997-12-10
+Electronic musical instrument
+Kelloniemi et al.
+2007
+Hyper-dimensional digital waveguide mesh for reverberation modeling
+JP3404763B2
+(
+en
+)
+2003-05-12
+Pitch change effect giving device
+JP2730382B2
+(
+en
+)
+1998-03-25
+Music synthesizer
+JPH04155393A
+(
+en
+)
+1992-05-28
+Electronic musical instrument
+van Walstijn et al.
+2002
+Time-Domain Simulation of Reed Woodwinds with Application to Musical Sound Synthesis
+Urrego
+0
+Plucked String “Nothing Else Matters” using Karplus-Strong Synthesis
+Legal Events
+Date
+Code
+Title
+Description
+1990-11-08
+STCF
+Information on status: patent grant
+Free format text
+:
+PATENTED CASE
+1993-01-05
+CC
+Certificate of correction
+1993-03-09
+CC
+Certificate of correction
+1994-08-16
+REMI
+Maintenance fee reminder mailed
+1994-09-29
+FPAY
+Fee payment
+Year of fee payment
+:
+4
+1994-09-29
+SULP
+Surcharge for late payment
+1998-06-29
+FPAY
+Fee payment
+Year of fee payment
+:
+8
+2002-05-14
+FPAY
+Fee payment
+Year of fee payment
+:
+12

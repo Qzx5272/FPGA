@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_0c66557851b1",
+  "source_build": "D:\\StarclusterBuilds\\combined_workstation_syn_2986cb5dffad",
+  "frozen_netlist_sha256": "07c21d12bbc4e4ee80f795bf46dd271eff631f3d8ba46162ab6cba7b9e0d57dc",
+  "scope": "Combined workstation exploratory PnR:four clocks,20ns cross-domain maxdelay;targeted hold-only exceptions on previously observed first-sync and microphone FIFO payload endpoints. No external pin/electrical/MTBF/physical acceptance.",
+  "started": "2026-10-26T02:35:05.243984",
+  "inputs": {
+    "build.tcl": "c6d0e346e8a556c23f716ada721ccf65e65b063b004c8a349299bac69040638d",
+    "stage.sdc": "1e7d1f10fe01272a01e64e57e5ad0c4d77408540e72a451dce4af28a0c856aea",
+    "stage.cst": "e39531ccd4fd568a4d2b2e7770f140f747acacd48273555bdd8d3b83c2bb744f",
+    "build_combined_workstation_timing.py": "38b18c13f11b502d6b0ba1120472d5d4ccffa67f2e06fd9e42f06b586a2ee563"
+  },
+  "vocoder_numerical_gate": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\8b6ee34538dc_20261026_022420\\result.json",
+    "report_sha256": "6da1bd5174f8a6d3f8ce252c71c057f833ffe4c9d54540148466f77c163dbaf8",
+    "netlist_sha256": "8b6ee34538dcd662ddaee8eb51d8373d5d7aca07f1f5bcf779cf5f8abfce7ca2",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "returncode": 1,
+  "error": "Vendor failure;inspect log",
+  "finished": "2026-10-26T03:24:49.580165"
+}

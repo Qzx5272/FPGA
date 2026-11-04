@@ -1,0 +1,40 @@
+{
+  "status": "passed_structural_inspection_only",
+  "netlist_sha256": "8e931546862233c4fdb3411d9bcf3fd6cf826a3317a17cd20847c80eaff7f48c",
+  "bank_instances": [
+    [
+      "central_voice_bank",
+      "\\banks[0].unit"
+    ],
+    [
+      "central_voice_bank_0",
+      "\\banks[1].unit"
+    ],
+    [
+      "central_voice_bank_1",
+      "\\banks[2].unit"
+    ],
+    [
+      "central_voice_bank_2",
+      "\\banks[3].unit"
+    ],
+    [
+      "central_voice_bank_3",
+      "\\banks[4].unit"
+    ],
+    [
+      "central_voice_bank_4",
+      "\\banks[5].unit"
+    ],
+    [
+      "central_voice_bank_5",
+      "\\banks[6].unit"
+    ],
+    [
+      "central_voice_bank_6",
+      "\\banks[7].unit"
+    ]
+  ],
+  "role_control_instances": 1,
+  "scope": "Synthesized singer hierarchy has eight central banks and shared router; not equivalence, timing or hardware proof"
+}

@@ -1,0 +1,30 @@
+{
+  "release": "pt8211_dvi_8994dbe5e358",
+  "build_id": 539365416,
+  "bitstream_sha256": "8994dbe5e35872febf572bb4d30732f91e3a653c3beffe92f830251103897f3b",
+  "selected": "2026-10-28T01:14:42.423687",
+  "release_gate": "passed_native_setup_hold_pulse_pins_SRAM_and_Flash_verify",
+  "hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_sram_hardware.json",
+  "host_hardware_evidence": "D:\\StarclusterDeliveries\\workstation_upgrade_20261027\\v6_host_hardware.json",
+  "flash_evidence": "synth/band/evidence/flash_program_20261028_011113/result.json",
+  "post_reload_evidence": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\flash_program_20261028_011113\\post_reload_uart.json",
+  "flash_release": "pt8211_dvi_8994dbe5e358",
+  "physical_resources": {
+    "logic": 68247,
+    "ff": 35039,
+    "cls": 46032,
+    "ram": 244,
+    "dsp": 165
+  },
+  "board_status": "V6 real-board digital 256slots,96s song,4 families,Qt record/save/replay passed",
+  "storage": "Flash vendor verify and JTAG reload identity passed; physical cold power cycle untested",
+  "post_test_state": "Stopped/zero voices read back;master0 sent;no gain readback",
+  "physical_interface": "PT8211+HDMI0/DVI+S0/S1/S2;external microphone/ADC/pedal unconnected",
+  "physical_buttons_verified": false,
+  "final_accepted": false,
+  "serial_transport": {
+    "guard_zero_bytes": 64,
+    "max_batch_per_5ms": 4
+  },
+  "previous_selector": "synth/band/evidence/v6_selection_20261028/CURRENT_RELEASE.json"
+}

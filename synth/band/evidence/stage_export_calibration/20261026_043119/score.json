@@ -1,0 +1,39 @@
+{
+  "format": "starcluster-score-2",
+  "engine_profile": "singer-v1",
+  "sample_rate": 48000,
+  "bpm": 120,
+  "duration_samples": 192,
+  "events": [
+    {
+      "sample": 0,
+      "kind": 0,
+      "part": 0,
+      "note": 36,
+      "velocity": 80,
+      "serial": 1
+    },
+    {
+      "sample": 96,
+      "kind": 1,
+      "part": 0,
+      "note": 36,
+      "velocity": 0,
+      "serial": 1
+    }
+  ],
+  "performance": {
+    "pad_calibration": {
+      "0": {
+        "baseline": 100,
+        "gain": 4096,
+        "invert": true
+      },
+      "63": {
+        "baseline": 50,
+        "gain": 2048,
+        "invert": false
+      }
+    }
+  }
+}

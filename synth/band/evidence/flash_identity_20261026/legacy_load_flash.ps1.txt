@@ -1,0 +1,25 @@
+$ErrorActionPreference = 'Stop'
+$root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+Set-Location -LiteralPath $root
+$programmer = 'D:\Gowin\Gowin_V1.9.12.03_x64\Programmer\bin\programmer_cli.exe'
+$bitstream = Join-Path $root 'synth\release\aurora_synth.fs'
+if (!(Test-Path -LiteralPath $bitstream)) { throw 'Build the bitstream first.' }
+$cables = (& $programmer --scan-cables | Out-String)
+if ($cables -notmatch 'USB Debugger A/0/(\d+)/') { throw 'No channel A download cable found.' }
+$location = $Matches[1]
+Write-Host 'Writing the synthesizer into boot Flash, replacing the current power-on design.'
+New-Item -ItemType Directory -Force -Path 'synth/test-output' | Out-Null
+& $programmer --device GW5AST-138B --run 54 --fsFile $bitstream --cable-index 4 --location $location --frequency 0.5MHz 2>&1 |
+    Tee-Object -FilePath 'synth/test-output/flash_program.log' | Out-Null
+$exitCode = $LASTEXITCODE
+$log = Get-Content -LiteralPath 'synth/test-output/flash_program.log' -Raw
+# Programmer may return exit code 0 even when verification fails.
+if ($exitCode -ne 0 -or $log -match '(?im)Error:|Verify failed|Program and Verify Flash Failed') {
+    throw 'Flash programming/verification failed. Inspect the log; do not assume power-on boot is ready.'
+}
+if ($log -notmatch 'Program and Verify Flash successfully') { throw 'No explicit verification success in programmer log.' }
+& $programmer --device GW5AST-138B --run 1 --cable-index 4 --location $location --frequency 0.5MHz 2>&1 |
+    Tee-Object -FilePath 'synth/test-output/flash_boot.log'
+if ($LASTEXITCODE -ne 0) { throw 'Flash was verified, but reload command failed.' }
+Start-Sleep -Seconds 5
+Write-Host 'Flash verified and reloaded. Reconnect the desktop controller to the FPGA UART.'

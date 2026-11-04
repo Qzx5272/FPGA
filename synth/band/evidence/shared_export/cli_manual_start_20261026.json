@@ -1,0 +1,12 @@
+{
+  "status": "passed_source_export_only",
+  "export": "D:\\StarclusterBuilds\\shared_export_cli_20261026_1709",
+  "manifest_sha256": "42d8c6bddaf11541e64adb4af7df52f756ed7e64f3ac563e78928c8d94401be6",
+  "checks": [
+    "saved score load",
+    "manual-start no offline_play",
+    "retained singer preset61",
+    "all source hashes"
+  ],
+  "scope": "CLI/source checks;not synthesis,timing orhardware"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "Vendor PLL/CLKDIV/OSER10/ELVDS from50MHz input,target25.2/126MHz:three serial lanes checked against independent pixel encoding,reset/recovery. No PnR,physical jitter/display/HDMI audio acceptance.",
+  "compile_log": "D:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14421: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14657: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14752: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14847: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:14942: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:15028: warning: @* found no sensitivities so it will never trigger.\nD:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\simlib\\gw5a\\prim_sim.v:15114: warning: @* found no sensitivities so it will never trigger.\n",
+  "simulation_log": "tb.v:17: $finish called at 98658320 (1ps)\n",
+  "segments": [
+    {
+      "first_pixel": 20,
+      "last_pixel_exclusive": 580,
+      "serial_offset": 262,
+      "matched_bits_per_lane": 5600
+    },
+    {
+      "first_pixel": 625,
+      "last_pixel_exclusive": 1180,
+      "serial_offset": 6312,
+      "matched_bits_per_lane": 5550
+    }
+  ],
+  "sources": {
+    "dvi_symbols.v": "2e5fc6b9827a341e25b44af61463e7632bc7cd40791d797c2df2d208e718eb93",
+    "gowin_dvi_tx.v": "4d4063f013d4d383077d9d8deb637f18d777d9fd1769416aad97dd2e4d8e1b89",
+    "gowin_video_clock.v": "9a4636932e77a4ccb38951684d901288dae3e69cf6a91fdd598158060924ecd7",
+    "starcluster_tmds_encoder.v": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec",
+    "tb.v": "29c56c40ee3c8b67108d13c85d0028ae0669502fba9e0e10cb0226cf3eb5d025",
+    "stimulus.hex": "74d3df9dc0edca0d571f502db1258f66347a9d9d1f87b4b3b88e8ed8369e87ed",
+    "prim_sim.v": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+    "tmds_reference.py": "941d7b3365da842c063871cce0e0d32c94a6e5605b9d8fa286cac09feb8b5d3c",
+    "test_gowin_dvi_tx.py": "d2708247bf659f8a7ba8eb2299aaa23a6c4a2dee9e24bdc2c71c6de12623e16e"
+  }
+}

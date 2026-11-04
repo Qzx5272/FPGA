@@ -1,0 +1,10 @@
+{
+  "status": "primitive_equivalence_and_mapping_passed",
+  "verified_samples": 986835,
+  "physical_bsram": 1,
+  "primitive": "DPX9B",
+  "scope": "Vendor primitive model simulation and isolated unconstrained resource mapping; no audio clock timing or board acceptance for this mapping top",
+  "source_sha256": "af46ee0f8341dcbad69e5b64156f478b7010553c6c3f58eac9d7abb8ab5891f5",
+  "whole_pool_candidate": "43008 build in progress, not proven capacity",
+  "main_RTL_changed": false
+}

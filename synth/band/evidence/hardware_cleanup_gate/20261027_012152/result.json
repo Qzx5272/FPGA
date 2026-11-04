@@ -1,0 +1,52 @@
+{
+  "status": "passed_failure_injection_only",
+  "source_sha256": "6f5166846917ebfe3ecac48701a0b7488bfe7d63a0307e3f855479a0b55416b0",
+  "cases": [
+    {
+      "identity_verified": true,
+      "write_failure": false,
+      "initial_status": "passed",
+      "result": {
+        "status": "passed",
+        "stage": "completed",
+        "completed": "2026-10-27T01:21:52.647993",
+        "parser_bad_crc": 0
+      }
+    },
+    {
+      "identity_verified": true,
+      "write_failure": true,
+      "initial_status": "passed",
+      "result": {
+        "status": "failed",
+        "stage": "failed",
+        "completed": "2026-10-27T01:21:52.663013",
+        "parser_bad_crc": 0,
+        "cleanup_error": "injected write failure"
+      }
+    },
+    {
+      "identity_verified": false,
+      "write_failure": true,
+      "initial_status": "failed",
+      "result": {
+        "status": "failed",
+        "stage": "failed",
+        "completed": "2026-10-27T01:21:52.674321",
+        "parser_bad_crc": 0
+      }
+    },
+    {
+      "identity_verified": true,
+      "write_failure": false,
+      "initial_status": "failed",
+      "result": {
+        "status": "failed",
+        "stage": "failed",
+        "completed": "2026-10-27T01:21:52.681356",
+        "parser_bad_crc": 0
+      }
+    }
+  ],
+  "scope": "Actual finally AST with injected serial-write failure; no board access"
+}

@@ -1,0 +1,198 @@
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+      -  Aalto University's research portal
+Skip to main navigation
+Skip to search
+Skip to main content
+Aalto University's research portal Home
+ACRIS instructions
+Link opens in a new tab
+English
+Suomi
+Search content at Aalto University's research portal
+Home
+Profiles
+Publications and artistic outputs
+Research data and software
+Projects
+Prizes
+Activities
+Press/Media
+Infrastructure
+Research units
+Impacts
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+M. Karjalainen
+,
+V. Välimäki
+, T. Tolonen
+Research output
+:
+Contribution to journal
+›
+Article
+›
+Scientific
+›
+peer-review
+129
+Citations
+(Scopus)
+Overview
+Infrastructure
+(1)
+Original language
+English
+Pages (from-to)
+17-32
+Journal
+Computer Music Journal
+Volume
+22
+Issue number
+3
+Publication status
+Published -
+1998
+MoE publication type
+A1 Journal article-refereed
+Keywords
+audio signal processing
+musical acoustics
+physical modeling
+sound synthesis
+vibrating string
+Equipment
+Aalto Acoustics Lab
+Pulkki, V.
+(Manager)
+School of Electrical Engineering
+Facility/equipment
+:
+Facility
+acoustics
+100%
+signals
+88%
+filters
+65%
+impulse
+59%
+noise
+51%
+Cite this
+APA
+Author
+BIBTEX
+Harvard
+Standard
+RIS
+Vancouver
+Karjalainen, M.
+, Välimäki, V.
+, & Tolonen, T. (1998).
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+.
+Computer Music Journal
+,
+22
+(3), 17-32.
+Karjalainen, M.
+; Välimäki, V.
+; Tolonen, T. /
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+. In:
+Computer Music Journal
+. 1998 ; Vol. 22, No. 3. pp. 17-32.
+@article{a636274e8405455a8678cf55352f43c7,
+title     = "Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond",
+keywords  = "audio signal processing, musical acoustics, physical modeling, sound synthesis, vibrating string, audio signal processing, musical acoustics, physical modeling, sound synthesis, vibrating string, audio signal processing, musical acoustics, physical modeling, sound synthesis, vibrating string",
+author    = "M. Karjalainen and V. V{\"a}lim{\"a}ki and T. Tolonen",
+year      = "1998",
+language  = "English",
+volume    = "22",
+pages     = "17--32",
+journal   = "Computer Music Journal",
+issn      = "1531-5169",
+publisher = "MIT Press",
+number    = "3",
+}
+Karjalainen, M
+, Välimäki, V
+& Tolonen, T 1998, '
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+',
+Computer Music Journal
+, vol. 22, no. 3, pp. 17-32.
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond.
+/ Karjalainen, M.
+; Välimäki, V.
+; Tolonen, T.
+In:
+Computer Music Journal
+, Vol. 22, No. 3, 1998, p. 17-32.
+Research output
+:
+Contribution to journal
+›
+Article
+›
+Scientific
+›
+peer-review
+TY  - JOUR
+T1  - Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+AU  - Karjalainen, M.
+AU  - Välimäki, V.
+AU  - Tolonen, T.
+PY  - 1998
+Y1  - 1998
+KW  - audio signal processing
+KW  - musical acoustics
+KW  - physical modeling
+KW  - sound synthesis
+KW  - vibrating string
+KW  - audio signal processing
+KW  - musical acoustics
+KW  - physical modeling
+KW  - sound synthesis
+KW  - vibrating string
+KW  - audio signal processing
+KW  - musical acoustics
+KW  - physical modeling
+KW  - sound synthesis
+KW  - vibrating string
+M3  - Article
+SN  - 1531-5169
+VL  - 22
+SP  - 17
+EP  - 32
+JO  - Computer Music Journal
+JF  - Computer Music Journal
+IS  - 3
+ER  -
+Karjalainen M
+, Välimäki V
+, Tolonen T.
+Plucked-string models: from the Karplus-Strong algorithm to digital waveguides and beyond
+.
+Computer Music Journal
+. 1998;22(3):17-32.
+Powered by
+Pure
+Link opens in a new tab
+,
+Scopus
+Link opens in a new tab
+&
+Elsevier Fingerprint Engine™
+Link opens in a new tab
+All content on this site: Copyright © 2026 Aalto University's research portal, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the
+use of cookies
+Aalto University's research portal data protection policy
+Link opens in a new tab
+About web accessibility
+Link opens in a new tab
+Report vulnerability
+Link opens in a new tab
+Contact us

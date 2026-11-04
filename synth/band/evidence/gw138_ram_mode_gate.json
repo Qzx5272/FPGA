@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "scope": "Known GW5AST-138B PA2122 incompatibility scan only, not physical or timing proof",
+  "bad_sha256": "1b21fe93d670098d1d339587572038600629a3ddc8cb09491fcd330c518868a4",
+  "good_sha256": "63f243c1a09ca4f7d8d7bbb76d3445d80578f0646415714a6146dafd0c15ace0",
+  "rejected": "GW5AST-138B unsupported DPB read-before-write mode (PA2122): stage_pad_frontend/serials_serials_0_0_s.WRITE_MODE0=2'b10, stage_pad_frontend/serials_serials_0_1_s.WRITE_MODE0=2'b10"
+}

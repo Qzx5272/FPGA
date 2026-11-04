@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "time": "2026-10-26T13:30:38.367684",
+  "scope": "RTL default5ms debounce at simulated50MHz, not physical switch or metastability verification",
+  "sources": {
+    "synth\\band\\rtl\\button_pulse.v": "069c5f1b871933373e2110bc695b9281f115d5a9562d09c16c6251e521ffb516",
+    "synth\\band\\tests\\tb_button_default.v": "3a89c554f71aed878283d3f06cc8f905098850867c3b71dcde99d00a6df06075"
+  },
+  "log": "PASS default250000cycles: short glitch,5ms threshold,long hold,release,repress,reset\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\tests\\tb_button_default.v:21: $finish called at 25009080000 (1ps)\n"
+}

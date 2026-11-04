@@ -1,0 +1,25 @@
+{
+  "scope": "Digital PCM descriptive measurements; not perceptual or physical audio acceptance",
+  "source_report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\singer_render\\2f695e9c1f4f_0.05s.json",
+  "pcm_sha256": "461250da1bee83c52e32b51fad87ebaf48e381e5a00e278799c39910a23c3ae9",
+  "frames": 2400,
+  "peak": 1445,
+  "rail_samples": 0,
+  "segments": [
+    {
+      "start_seconds": 0.0,
+      "frames": 2400,
+      "peak": 1445,
+      "rms_dbfs": [
+        -40.497804514235305,
+        -40.38130856181506
+      ],
+      "dc_mean": [
+        1.7058333333333333,
+        1.7041666666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    }
+  ]
+}

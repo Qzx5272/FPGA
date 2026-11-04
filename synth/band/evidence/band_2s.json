@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "evidence_level": "RTL simulation only",
+  "duration_seconds": 2.0,
+  "source_hashes": {
+    "band_core.v": "4e3da32026a09e97d572a89895483a9d265a382e6851545265d479f4863a0df5",
+    "band_driver.cpp": "0555fdd5a084ff7aa63c485ab3c40338ac59d22674e87899bfb6cb709dc7e6ee",
+    "band_renderer.v": "9abe6463f22f987f42cf6af62428400492de4905d00c5f7385ced4efa0db7bf2",
+    "event_receiver.v": "39e87b65b6f319bf78a65ccbfa747415844ef933a4a592f3ef51846b80996c10",
+    "hq_sine_quarter.v": "6be651096662c76ccbbf6f17ca5e44684930df855994781a4b1f5f0df6354e11",
+    "midi_increment.vh": "1596144af0c2f6816e4748f18ab41a08f6ea977d2e1157cacc3b1e16774a78d8",
+    "note_allocator.v": "51b92854def94705754231e98459d3a8fb5aa3369b11b01eef77580b3faae1d5",
+    "partial_lane.v": "a7bb4bfd485c2dca60d604b5aff9faa2ed5fcb48c18e4ffa9f2d9fc8c52f2d12",
+    "partial_pool.v": "dc42ab0d81f1ea0b77840964bf2f594615cf1b5fd170dda0fe3cfabfee00ac19",
+    "sine_quarter_init.vh": "b3e9ae0e295d5b82d0df8ed8c7c645b84fa58572ab2eada7926e83e6bc6e68fc",
+    "song_config.vh": "bbe7faebcb0f9078f27d460662c78948f14ae2cce76c58214cd38aa91247f54e",
+    "song_events.vh": "d0b30adf14c0c37e73122a9cb5d0a99e02864c6dd1c2da561d9bfeb2b1354141",
+    "song_sequencer.v": "b5916cdba19b0a017a84dc1d35e26a0671cf10fb3225f196e7061ba2e53b7f9f",
+    "stereo_delay.v": "68c63a25951446a758f2895e19e361c1b105c17c201655eabf65e58193a57895",
+    "track_ownership.v": "63f7b76a07ee5652832d0cdc48d873274892b9d15c2c93070665641c3df2cf28"
+  },
+  "executable_sha256": "9bbf7bbeec8b00943e10af80d754c99be470f60701ddff6ae3a8934c8a406d98",
+  "returncode": 0,
+  "log": "frames=96000 max_cycles=94 max_voices=2 missing=0 clips=0 peak=890 takeover_checks=0 return_checks=0 denied=0\nPASS integrated band simulation\n",
+  "elapsed_seconds": 17.047000000005937,
+  "pcm_sha256": "b3343f6c0638e1eaf9563b3ffbd2b621d278dcfa3bf0e5889ecd68a8a369ec17"
+}

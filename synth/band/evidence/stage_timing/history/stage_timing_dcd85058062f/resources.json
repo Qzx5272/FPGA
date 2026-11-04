@@ -1,0 +1,12 @@
+{
+  "status": "failed_routing",
+  "unrouted_nets": 228,
+  "logic": 69720,
+  "registers": 41822,
+  "cls": 50161,
+  "io_ports": 188,
+  "bsram": 233,
+  "dsp": 196,
+  "scope": "Resource report of unrouted debug-port build; no timing or bitstream acceptance",
+  "report_sha256": "75c9cc84c62198259b3db65a82c40009a2044d65e95cd950efc1077fce6b302b"
+}

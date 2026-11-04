@@ -1,0 +1,16 @@
+{
+  "current": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\dvi_output_timing\\e46eac9479a7\\result.json",
+    "report_sha256": "3e2c523ca41d66004423ff227cac82b86da92bcdf24e3443bece263822b022dc",
+    "synthesis_report_sha256": "313c243e612cff60469bead47cc064c480f5118a9da115e58b9f4a2b1347e2e3",
+    "timing_report_sha256": "69d5028156157552b77eab188158c55abbc1bb82caf7e12d98d82abd5fde464e",
+    "sdc_sha256": "221c3501975d8d42fff92127be736c83ce01a49bfcf5c69be4ac7f571bf1e9ab",
+    "clocks": {
+      "reference_clk": 20.0,
+      "serial_clk": 7.937,
+      "pixel_clk": 39.683
+    },
+    "scope": "Exact-source PLL/serializer boundary internal timing only;no external or full-band acceptance"
+  },
+  "old_illegal_pll_rejected": "No source-matched zero-violation PLL/serializer boundary timing; validate small DVI boundary first"
+}

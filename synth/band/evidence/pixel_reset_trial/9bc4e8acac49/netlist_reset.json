@@ -1,0 +1,37 @@
+{
+  "status": "passed_structure_only",
+  "netlist_sha256": "b41471934e055a1e0a52351e1179366d095637f701d4adc9214f7fc63824a1de",
+  "transmitter_registers": [
+    {
+      "kind": "DFFCE",
+      "name": "warmup_2_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_1_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_0_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "pixel_release_1_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "pixel_release_0_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_3_s0",
+      "clock": "pixel_clk"
+    }
+  ],
+  "scope": "No FCLK-clocked fabric registers in transmitter module; does not certify OSER timing or actual clock routing"
+}

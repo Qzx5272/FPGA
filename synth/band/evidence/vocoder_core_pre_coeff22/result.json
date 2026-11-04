@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "4096-sample bit-exact standalone chain, not synthesis/timing/audio-quality acceptance",
+  "sha256": {
+    "double_biquad.sv": "9057c596b49f1ff8c8a786f6bc50489a45e84de52d1f41f36945baad1aef41b0",
+    "filterbank.sv": "b379b0f00024cf6c818aeb23481cf622d304f1c7ea48bdf9063fa417cf4916ff",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "vocoder_core.sv": "98366afbe5d606ba270478817d740e9fa44338bc6e38df4b5ad66cab90660a87",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "log": "PASS full vocoder4096 samples, reset, backpressure, clip/reject counters; maxcycles=153\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_core\\tb.sv:34: $finish called at 12779820000 (1ps)\n"
+}

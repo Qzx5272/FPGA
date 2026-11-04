@@ -1,0 +1,11 @@
+//Copyright (C)2014-2026 Gowin Semiconductor Corporation.
+//All rights reserved.
+
+
+1. PnR Messages
+
+  <Report Title>: PnR Report
+  <Design File>: C:\Users\Qzx\Documents\ChatGPT\FPGA\synth\band\build\band_219df8a039c1\impl\gwsynthesis\starcluster_band.vg
+  <Physical Constraints File>: C:\Users\Qzx\Documents\ChatGPT\FPGA\synth\band\build\band_219df8a039c1\source_snapshot\board.cst
+  <Timing Constraints File>: C:\Users\Qzx\Documents\ChatGPT\FPGA\synth\band\build\band_219df8a039c1\source_snapshot\board.sdc
+  <Tool Version>: V1.9.12.03 (64-bit)

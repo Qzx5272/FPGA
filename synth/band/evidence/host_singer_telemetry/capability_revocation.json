@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "Targeted Qt test_singer_capability_crc_poll_and_expiration after immediate capability/disconnect visibility fix; full20test predecessor record retained",
+  "sources": {
+    "synth\\band\\host\\app.py": "2c10b5f3f88964ac9f5ddf3a16980bcc4b839439e1e5c23792bb52bac7811a3b",
+    "synth\\band\\tests\\test_host.py": "0fa14a1c442b093a0da8cf7c1e8d9d498a252607c9d416dfb1837cdbb23d21a2"
+  }
+}

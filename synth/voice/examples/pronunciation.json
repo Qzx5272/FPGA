@@ -1,0 +1,102 @@
+{
+  "text": "你好，重庆银行音乐",
+  "method": "longest phrase match; ambiguous character readings preserved",
+  "acoustic_parameters_ready": false,
+  "tokens": [
+    {
+      "text": "你好",
+      "offset": 0,
+      "source": "phrase",
+      "readings": [
+        [
+          {
+            "marked": "nǐ",
+            "syllable": "ni",
+            "tone": 3,
+            "numbered": "ni3"
+          },
+          {
+            "marked": "hǎo",
+            "syllable": "hao",
+            "tone": 3,
+            "numbered": "hao3"
+          }
+        ]
+      ],
+      "needs_review": false
+    },
+    {
+      "text": "，",
+      "offset": 2,
+      "source": "pause",
+      "readings": [],
+      "needs_review": false
+    },
+    {
+      "text": "重庆",
+      "offset": 3,
+      "source": "phrase",
+      "readings": [
+        [
+          {
+            "marked": "chóng",
+            "syllable": "chong",
+            "tone": 2,
+            "numbered": "chong2"
+          },
+          {
+            "marked": "qìng",
+            "syllable": "qing",
+            "tone": 4,
+            "numbered": "qing4"
+          }
+        ]
+      ],
+      "needs_review": false
+    },
+    {
+      "text": "银行",
+      "offset": 5,
+      "source": "phrase",
+      "readings": [
+        [
+          {
+            "marked": "yín",
+            "syllable": "yin",
+            "tone": 2,
+            "numbered": "yin2"
+          },
+          {
+            "marked": "háng",
+            "syllable": "hang",
+            "tone": 2,
+            "numbered": "hang2"
+          }
+        ]
+      ],
+      "needs_review": false
+    },
+    {
+      "text": "音乐",
+      "offset": 7,
+      "source": "phrase",
+      "readings": [
+        [
+          {
+            "marked": "yīn",
+            "syllable": "yin",
+            "tone": 1,
+            "numbered": "yin1"
+          },
+          {
+            "marked": "yuè",
+            "syllable": "yue",
+            "tone": 4,
+            "numbered": "yue4"
+          }
+        ]
+      ],
+      "needs_review": false
+    }
+  ]
+}

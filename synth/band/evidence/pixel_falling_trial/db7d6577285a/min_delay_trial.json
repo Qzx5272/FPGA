@@ -1,0 +1,16 @@
+{
+  "status": "running_experiment_not_release_accepted",
+  "session_id": 4019,
+  "build": "D:\\StarclusterBuilds\\pt8211_onboard_pnr_f66680365bc4",
+  "report": "evidence/pt8211_onboard_timing/f66680365bc4/result.json",
+  "unchanged": {
+    "board.cst": true,
+    "impl/gwsynthesis/pt8211_onboard.vg": true
+  },
+  "additional_constraints": [
+    "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[0].serializer/RESET}]",
+    "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[1].serializer/RESET}]",
+    "set_min_delay -from [get_pins {workstation/video_output/transmitter/pixel_release_1_s0/Q}] 1.000 -to [get_pins {workstation/video_output/transmitter/channels[2].serializer/RESET}]"
+  ],
+  "scope": "Targeted1ns reset min bound;must inspect actual constraints/native recovery/removal before any release"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Vendor functional netlist versus frozen pre-optimization RTL, 200000 cycles; no timing or physical claim",
+  "sources": {
+    "stage_pad_frontend.sv": "e7992717ba8e3938d87d33972362fa2f6e9b55bfb9d6178300c27b833746dfc4",
+    "reference.sv": "bca02adb05ce081c33023a6972d5441bf8e2b46c721301a2c0c3109721252c92",
+    "tb.sv": "03dcfd3217f698336bec47aa54461fcf7c0b544ed457eba5304926092a6d2bd3"
+  },
+  "log": "PASS200000 cycle exact differential events=4098 presses=2171 releases=1927\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\stage_pad_candidate\\5084389dbb7a\\tb_vendor.sv:30: $finish called at 4000060000 (1ps)\n",
+  "vendor_inputs": {
+    "stage_pad.vg": "9c1f54a67a16d48e65c5281914564b9546f4c9360c83fd8f678b8042cc9bae91",
+    "prim_sim.v": "7db6e9953af24f1233dbc8f58352a1673e91d01bb69656a16ae893a68089f85d",
+    "tb_vendor.sv": "6dc9cdb700ded35e054002bc2388d5d973abadf9e56307eb3fa270faed360b72"
+  }
+}

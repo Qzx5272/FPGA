@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "PnR prerequisite bindsall5sources andretained netlist;changedfirstcoefficient rejected;notadditional HDL simulation",
+  "accepted": {
+    "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_netlist\\dc0e72f80f27_20261026_012319\\result.json",
+    "report_sha256": "b0f1567c25fd3f07df79b23f7b870a0cdbca73174a99075af8c841fe72c4b2aa",
+    "netlist_sha256": "dc0e72f80f27849c7bc30f562139a00be7107a3b57d5a5872c97e58d7c008731",
+    "scope": "Matching5vocoder sources andpassed320sample isolated vendor-netlist test;not fulltop equivalence or physical acceptance"
+  },
+  "changed_coefficient_rejection": "No source-matched passed320sample vocoder netlist evidence;run test_vocoder_netlist.py before PnR"
+}

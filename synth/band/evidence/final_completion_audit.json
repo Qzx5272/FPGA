@@ -1,0 +1,125 @@
+{
+  "updated": "2026-10-25T18:54:44.483961",
+  "overall": "NOT COMPLETE",
+  "requirements_from": [
+    "reference/验收执行清单.csv",
+    "reference/完整目标追踪.csv"
+  ],
+  "items": {
+    "A01": {
+      "status": "partial",
+      "evidence_scope": "V5.2 archive extracted19host+boardtop; frozen release hashes/PnR",
+      "remaining": "Clean-machine vendor rebuild and physical fallback acceptance"
+    },
+    "A02": {
+      "status": "partial",
+      "evidence_scope": "pad calibration,scanner/local performer RTL; host mapping tests",
+      "remaining": "Actual pressure/touch dimensions,edge/crosstalk/multiple-contact tests"
+    },
+    "A03": {
+      "status": "partial",
+      "evidence_scope": "256independent active slots held3600s digitally;8x32quota",
+      "remaining": "Physical performance across timbre/velocity/ADSR range"
+    },
+    "A04": {
+      "status": "partial",
+      "evidence_scope": "ownership RTL and real-board serial/lease/panic; full-song synthetic2seat acceptance",
+      "remaining": "Real simultaneous controllers, unplug and acoustic tail checks"
+    },
+    "A05": {
+      "status": "partial",
+      "evidence_scope": "24bitI2S serializer+CDC RTL and fullworkstation synthesis; new I2S24RX+reverseCDC tests and synthesis passed, not integrated",
+      "remaining": "ExternalDAC pinout/clock/PnR/physical signal acceptance"
+    },
+    "A06": {
+      "status": "missing",
+      "evidence_scope": "Bounded sample scheduling is not end-to-end latency",
+      "remaining": "10000physical input-to-output events at idle/full load"
+    },
+    "A07": {
+      "status": "partial",
+      "evidence_scope": "RTL sound matrix,whole-song PCM,finitevowels/delay; primitive equivalent",
+      "remaining": "Instrumented analog noise/distortion/transients and listening"
+    },
+    "A08": {
+      "status": "partial",
+      "evidence_scope": "Existing finitevowels/phrase exports; standalone vocoder exactness and internal50MHzPnR; parallel-carrier experimental band core passed256bandvoice+singer short load/release, plus numerical/jitter/ownership tests; experimental fullengine UART owner2/retrigger/staleoff/wrongowner/release/panic and PCM/DAC activity passed with synthetic mic. Current core synthesis47895logic; fullengine internalPnR pending, no board/mic acceptance. Current expression-enabled core short256voice+singer stress and complete microphone-top UART/I2S/CDC/DAC with clockloss fade/band continuity/recovery/panic passed; still digital only. Timeout/snapshot stalePCM bug fixed and regression tested.",
+      "remaining": "Intelligible finite lyrics, microphone vocoder, physical pitch/duration quality"
+    },
+    "A09": {
+      "status": "partial",
+      "evidence_scope": "96s score plus trueFPGA/synthetic2seat take/return/loss/rejoin",
+      "remaining": "Physical multiuser show and measured musical-causality A/B"
+    },
+    "A10": {
+      "status": "missing",
+      "evidence_scope": "Contact protocol and synthetic MIDI available",
+      "remaining": "Microphone/vision/foot input implementations and real multimodal fusion"
+    },
+    "A11": {
+      "status": "partial",
+      "evidence_scope": "43008behavioralFFT,986835vendor-ROM comparison,60sboard1030cycles",
+      "remaining": "Actual DAC spectral observability and calibrated sample-clock measurements"
+    },
+    "A12": {
+      "status": "partial",
+      "evidence_scope": "SRAM autonomous song survives10s serial closure; GUI stage16track",
+      "remaining": "Physical editor disconnect/coldstart; LED/audio-derived waveform/FFT display"
+    },
+    "A13": {
+      "status": "partial",
+      "evidence_scope": "3600s256voice board digital load with zero deadline/clip/CRC",
+      "remaining": "8h/24h with temperature/power/audio monitoring"
+    },
+    "A14": {
+      "status": "missing",
+      "evidence_scope": "Exported RTL coldstart simulation and SRAMautoplay are separate evidence",
+      "remaining": "100physicalpowercycles,clocks/storage readiness, no pops,recovery"
+    },
+    "F01": {
+      "status": "partial",
+      "evidence_scope": "6roles/16parts96s software/FPGA arrangement",
+      "remaining": "Physical expressive band and role listening"
+    },
+    "F02": {
+      "status": "partial",
+      "evidence_scope": "Separated256band and43008diagnostic records",
+      "remaining": "Full-band usable limits, longer stability and acoustic measurement"
+    },
+    "F03": {
+      "status": "missing",
+      "evidence_scope": "Local pressure interface and MIDI control foundation",
+      "remaining": "Sound/vision/foot fusion with real inputs"
+    },
+    "F04": {
+      "status": "partial",
+      "evidence_scope": "Finite vowel choir and articulated vowel phrases",
+      "remaining": "Intelligible finite lyrics and microphone vocoder"
+    },
+    "F05": {
+      "status": "partial",
+      "evidence_scope": "RealFPGA/synthetic2seat whole-song collaboration passed",
+      "remaining": "Physical multiuser acceptance"
+    },
+    "F06": {
+      "status": "partial",
+      "evidence_scope": "Two articulations/drums/finitechoir/delay actual RTL",
+      "remaining": "Preset quality/listening,analog headroom and effects bypassA/B"
+    },
+    "F07": {
+      "status": "partial",
+      "evidence_scope": "JSON保存/exportedautoplay/GUIstage",
+      "remaining": "Runtime nonvolatile save,physical cold recovery and independent hardware feedback"
+    },
+    "F08": {
+      "status": "partial",
+      "evidence_scope": "Full frozen source/host/tests/manifest/code and provenance supplied",
+      "remaining": "Final integrated third-party license/rebuild audit after remaining modules"
+    }
+  },
+  "live_experiment": {
+    "build": "09ebdeb5e533",
+    "state": "PnR50MHz passed,203RAM;300s256slot+97s board passed;default57c8restored;no experiment running"
+  },
+  "requested_continuous_hours": 20
+}

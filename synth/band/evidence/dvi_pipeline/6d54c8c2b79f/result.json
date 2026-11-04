@@ -1,0 +1,11 @@
+{
+  "status": "failed_or_incomplete",
+  "simulation": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_dvi\\20261026_073747\\result.json",
+  "synthesis": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\combined_workstation_synthesis\\6d54c8c2b79f\\result.json",
+  "small_build": "D:\\StarclusterBuilds\\gowin_dvi_output_syn_ca8253c67f2f",
+  "combined_build": "D:\\StarclusterBuilds\\combined_workstation_syn_6d54c8c2b79f",
+  "driver_sha256": "1c585567671ca1fa403fe68d3196dcdd670f79f70ff95dfcf1fa2b97f6ff7b29",
+  "scope": "Orchestration of source-gated existing jobs;not hardware acceptance",
+  "updated": "2026-10-26T07:50:25.879847",
+  "error": "Command '['C:\\\\Users\\\\Qzx\\\\Documents\\\\ChatGPT\\\\FPGA\\\\.venv\\\\Scripts\\\\python.exe', 'C:\\\\Users\\\\Qzx\\\\Documents\\\\ChatGPT\\\\FPGA\\\\synth\\\\band\\\\tools\\\\build_dvi_output_timing.py', 'D:\\\\StarclusterBuilds\\\\gowin_dvi_output_syn_ca8253c67f2f']' returned non-zero exit status 1."
+}

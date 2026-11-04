@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "build": "D:\\StarclusterBuilds\\gowin_dvi_output_syn_f70c806deeb2",
+  "source_hashes": {
+    "dvi_symbols.v": "2e5fc6b9827a341e25b44af61463e7632bc7cd40791d797c2df2d208e718eb93",
+    "gowin_dvi_output.v": "4e8bff0dfad2d26733ee455f020308be9876e853442ccdc4c1aadb13ff88c29d",
+    "gowin_dvi_tx.v": "4d4063f013d4d383077d9d8deb637f18d777d9fd1769416aad97dd2e4d8e1b89",
+    "gowin_video_clock.v": "8da827f9d87bd85b95b90bd20b97bb1cce2f2cc74b30d67ac89e593cfbded5a5",
+    "starcluster_tmds_encoder.v": "37fe4824bad4016625963303f338df548b7830da7f3b5939380a44b63a393fec"
+  },
+  "scope": "Standalone DVI video-only TMDS encoder/OSER10/ELVDS synthesis;no PLL,fulltop,PnR,HDMI audio or physical acceptance",
+  "started": "2026-10-26T06:25:04.400997",
+  "returncode": 1,
+  "error": "Vendor synthesis failed",
+  "finished": "2026-10-26T06:25:05.802509"
+}

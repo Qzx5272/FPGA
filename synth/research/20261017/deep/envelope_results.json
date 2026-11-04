@@ -1,0 +1,244 @@
+{
+  "scope": "CPU integer envelope model; not integrated audio or board test",
+  "sample_rate": 48000,
+  "target_end_dbfs": -80,
+  "checks": {
+    "all_feedback_within_2_lsb_of_quantized_curve": true,
+    "feedback_residual_bounded": true,
+    "stale_write_rejected": true
+  },
+  "cases": [
+    {
+      "seconds": 0.001,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 22885,
+      "end_amplitude": 9.995699524623127e-05,
+      "end_dbfs": -80.00373614886988,
+      "coefficient_only_end_amplitude": 9.998325835666173e-05,
+      "error_against_quantized_float_lsb": -0.44062185026041334,
+      "residual_integer": 28240
+    },
+    {
+      "seconds": 0.001,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 2929232,
+      "end_amplitude": 9.995699524623127e-05,
+      "end_dbfs": -80.00373614886988,
+      "coefficient_only_end_amplitude": 9.999989478483511e-05,
+      "error_against_quantized_float_lsb": -0.7197347825574525,
+      "residual_integer": 3712256
+    },
+    {
+      "seconds": 0.001,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 2929232,
+      "end_amplitude": 0.00010001659989455937,
+      "end_dbfs": -79.99855827113797,
+      "coefficient_only_end_amplitude": 9.999989478483511e-05,
+      "error_against_quantized_float_lsb": 0.2802652174425475,
+      "residual_integer": -6908384
+    },
+    {
+      "seconds": 0.01,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 2491,
+      "end_amplitude": 9.995699524623127e-05,
+      "end_dbfs": -80.00373614886988,
+      "coefficient_only_end_amplitude": 0.0001000227792633086,
+      "error_against_quantized_float_lsb": -1.103672598070034,
+      "residual_integer": -62815
+    },
+    {
+      "seconds": 0.01,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 318856,
+      "end_amplitude": 9.995699524623127e-05,
+      "end_dbfs": -80.00373614886988,
+      "coefficient_only_end_amplitude": 9.999944506867205e-05,
+      "error_against_quantized_float_lsb": -0.7121897978008747,
+      "residual_integer": -8053992
+    },
+    {
+      "seconds": 0.01,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 318856,
+      "end_amplitude": 0.00010001659989455937,
+      "end_dbfs": -79.99855827113797,
+      "coefficient_only_end_amplitude": 9.999944506867205e-05,
+      "error_against_quantized_float_lsb": 0.28781020219912534,
+      "residual_integer": -5107168
+    },
+    {
+      "seconds": 0.1,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 251,
+      "end_amplitude": 0.00010144711145443389,
+      "end_dbfs": -79.87520628602022,
+      "coefficient_only_end_amplitude": 0.00010096800015918081,
+      "error_against_quantized_float_lsb": 8.038153209389293,
+      "residual_integer": -34739
+    },
+    {
+      "seconds": 0.1,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 32162,
+      "end_amplitude": 0.00010055304172951231,
+      "end_dbfs": -79.9520957492091,
+      "coefficient_only_end_amplitude": 9.998873053262837e-05,
+      "error_against_quantized_float_lsb": 9.467570277029154,
+      "residual_integer": -4022132
+    },
+    {
+      "seconds": 0.1,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 32162,
+      "end_amplitude": 0.00010001659989455937,
+      "end_dbfs": -79.99855827113797,
+      "coefficient_only_end_amplitude": 9.998873053262837e-05,
+      "error_against_quantized_float_lsb": 0.46757027702915366,
+      "residual_integer": -7801522
+    },
+    {
+      "seconds": 1,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 25,
+      "end_amplitude": 0.00015622378326796192,
+      "end_dbfs": -76.12505698205959,
+      "coefficient_only_end_amplitude": 0.00010556890783235275,
+      "error_against_quantized_float_lsb": 849.847735981434,
+      "residual_integer": -65525
+    },
+    {
+      "seconds": 1,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 3219,
+      "end_amplitude": 0.00015527010889471225,
+      "end_dbfs": -76.17824284828073,
+      "coefficient_only_end_amplitude": 9.99823886988813e-05,
+      "error_against_quantized_float_lsb": 927.5739685852982,
+      "residual_integer": -8385495
+    },
+    {
+      "seconds": 1,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 3219,
+      "end_amplitude": 9.995699524623127e-05,
+      "end_dbfs": -80.00373614886988,
+      "coefficient_only_end_amplitude": 9.99823886988813e-05,
+      "error_against_quantized_float_lsb": -0.4260314147018107,
+      "residual_integer": 7105857
+    },
+    {
+      "seconds": 4,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 6,
+      "end_amplitude": 0.0006510019690395575,
+      "end_dbfs": -63.728353957001104,
+      "coefficient_only_end_amplitude": 0.00015236011343792107,
+      "error_against_quantized_float_lsb": 8365.82161942761,
+      "residual_integer": -65532
+    },
+    {
+      "seconds": 4,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 805,
+      "end_amplitude": 0.000621080435578849,
+      "end_dbfs": -64.13704302172148,
+      "coefficient_only_end_amplitude": 9.976282696900308e-05,
+      "error_against_quantized_float_lsb": 8746.257602933238,
+      "residual_integer": -8388100
+    },
+    {
+      "seconds": 4,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 805,
+      "end_amplitude": 9.977818130124696e-05,
+      "end_dbfs": -80.01928832784677,
+      "coefficient_only_end_amplitude": 9.976282696900308e-05,
+      "error_against_quantized_float_lsb": 0.25760293323696715,
+      "residual_integer": -4328269
+    },
+    {
+      "seconds": 10,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 3,
+      "end_amplitude": 0.001302063542727443,
+      "end_dbfs": -57.70735642007985,
+      "coefficient_only_end_amplitude": 1.6929483750430183e-05,
+      "error_against_quantized_float_lsb": 21560.97041128003,
+      "residual_integer": -65535
+    },
+    {
+      "seconds": 10,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 322,
+      "end_amplitude": 0.0015527606935954506,
+      "end_dbfs": -56.17790942321637,
+      "coefficient_only_end_amplitude": 9.977605793173683e-05,
+      "error_against_quantized_float_lsb": 24377.035624226795,
+      "residual_integer": -8388422
+    },
+    {
+      "seconds": 10,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 322,
+      "end_amplitude": 9.977818130124696e-05,
+      "end_dbfs": -80.01928832784677,
+      "coefficient_only_end_amplitude": 9.977605793173683e-05,
+      "error_against_quantized_float_lsb": 0.03562422679578958,
+      "residual_integer": -603856
+    },
+    {
+      "seconds": 60,
+      "coefficient_fraction_bits": 17,
+      "error_feedback": false,
+      "rate_integer": 0,
+      "end_amplitude": 1.0,
+      "end_dbfs": 0.0,
+      "coefficient_only_end_amplitude": 1.0,
+      "error_against_quantized_float_lsb": 0.0,
+      "residual_integer": 0
+    },
+    {
+      "seconds": 60,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": false,
+      "rate_integer": 54,
+      "end_amplitude": 0.009259224489881068,
+      "end_dbfs": -40.668507726122265,
+      "coefficient_only_end_amplitude": 9.423402203500576e-05,
+      "error_against_quantized_float_lsb": 153763.01555200398,
+      "residual_integer": -8388576
+    },
+    {
+      "seconds": 60,
+      "coefficient_fraction_bits": 24,
+      "error_feedback": true,
+      "rate_integer": 54,
+      "end_amplitude": 9.423494900673324e-05,
+      "end_dbfs": -80.5157600023474,
+      "coefficient_only_end_amplitude": 9.423402203500576e-05,
+      "error_against_quantized_float_lsb": 0.015552003970924488,
+      "residual_integer": -259530
+    }
+  ],
+  "endpoint_policy": "At segment timer expiry use <=64 sample terminal ramp to target, then clear residual. Release ends at exact zero; stage change clears or explicitly transfers residual."
+}

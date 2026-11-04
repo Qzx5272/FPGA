@@ -1,0 +1,67 @@
+{
+  "status": "planning_pins_unique_no_current_pin_conflict",
+  "new_pin_Y20_verified_in": "official Rev1.2 and Rev1.5 connector extracts",
+  "physical_verified": false,
+  "inputs": [
+    {
+      "signal": "enc_sw_n[0]",
+      "header": "J26-7",
+      "pin": "B19",
+      "function": "总停音"
+    },
+    {
+      "signal": "enc_sw_n[1]",
+      "header": "J26-8",
+      "pin": "A19",
+      "function": "录制"
+    },
+    {
+      "signal": "enc_sw_n[2]",
+      "header": "J26-5",
+      "pin": "A17",
+      "function": "表情复位"
+    },
+    {
+      "signal": "enc_sw_n[3]",
+      "header": "J26-6",
+      "pin": "A18",
+      "function": "页面"
+    },
+    {
+      "signal": "enc_sw_n[4]",
+      "header": "J23-31",
+      "pin": "W26",
+      "function": "上一歌曲"
+    },
+    {
+      "signal": "enc_sw_n[5]",
+      "header": "J23-32",
+      "pin": "W25",
+      "function": "下一歌曲"
+    },
+    {
+      "signal": "panel_key_n[0]",
+      "header": "J23-33",
+      "pin": "U26",
+      "function": "播放"
+    },
+    {
+      "signal": "panel_key_n[1]",
+      "header": "J23-34",
+      "pin": "V26",
+      "function": "停止"
+    },
+    {
+      "signal": "panel_key_n[2]",
+      "header": "J23-35",
+      "pin": "W20",
+      "function": "八度 −"
+    },
+    {
+      "signal": "panel_key_n[3]",
+      "header": "J23-36",
+      "pin": "Y20",
+      "function": "八度 ＋"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "scope": "3-second impulse response; no parameter transitions; not acoustic validation",
+  "results": [
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0013419389724731445,
+      "tail_peak_fs": 0.0013419389724731445,
+      "tail_dbfs": -57.44534468365066
+    },
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00019562244415283203,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00010311603546142578,
+      "tail_peak_fs": 9.417533874511719e-06,
+      "tail_dbfs": -100.52125617962253
+    },
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.000195592874661088,
+      "tail_peak_fs": 2.6209745556116104e-06,
+      "tail_dbfs": -111.63074390316729
+    },
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00019565201364457607,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 50.7947,
+      "bw_hz": 6.303,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00010311603546142578,
+      "tail_peak_fs": 7.916241884231567e-09,
+      "tail_dbfs": -162.02961888410286
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0018519163131713867,
+      "tail_peak_fs": 0.0001811981201171875,
+      "tail_dbfs": -74.8369262465359
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0018506050109863281,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0034813880920410156,
+      "tail_peak_fs": 7.152557373046875e-07,
+      "tail_dbfs": -122.91077299775849
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0018503330647945404,
+      "tail_peak_fs": 3.5390257835388184e-07,
+      "tail_dbfs": -129.0223254660525
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.001850333297625184,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 83.2049,
+      "bw_hz": 214.265,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0034813880920410156,
+      "tail_peak_fs": 5.3551048040390015e-09,
+      "tail_dbfs": -165.4246405045961
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0013871192932128906,
+      "tail_peak_fs": 0.0013871192932128906,
+      "tail_dbfs": -57.157723753930924
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00015175342559814453,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 8.177757263183594e-05,
+      "tail_peak_fs": 3.0994415283203125e-06,
+      "tail_dbfs": -110.174331046015
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.00015180394984781742,
+      "tail_peak_fs": 2.709217369556427e-06,
+      "tail_dbfs": -111.34312297344752
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00015180720947682858,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 50,
+      "bw_hz": 5,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 8.177757263183594e-05,
+      "tail_peak_fs": 1.816079020500183e-08,
+      "tail_dbfs": -154.81730517113834
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.00039267539978027344,
+      "tail_peak_fs": 0.0003464221954345703,
+      "tail_dbfs": -69.2078858061913
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00030362606048583984,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00016355514526367188,
+      "tail_peak_fs": 1.6689300537109375e-06,
+      "tail_dbfs": -115.5512372918666
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.00030364166013896465,
+      "tail_peak_fs": 6.766058504581451e-07,
+      "tail_dbfs": -123.39328502570791
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0003036730922758579,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 100,
+      "bw_hz": 10,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00016355514526367188,
+      "tail_peak_fs": 9.080395102500916e-09,
+      "tail_dbfs": -160.83790508441797
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0006309747695922852,
+      "tail_peak_fs": 1.800060272216797e-05,
+      "tail_dbfs": -94.89425905956796
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0006322860717773438,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00032699108123779297,
+      "tail_peak_fs": 5.245208740234375e-06,
+      "tail_dbfs": -105.6047444757076
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.000632409006357193,
+      "tail_peak_fs": 3.5157427191734314e-08,
+      "tail_dbfs": -149.07965827908458
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0006324034184217453,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 440,
+      "bw_hz": 20,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.00032699108123779297,
+      "tail_peak_fs": 1.0244548320770264e-08,
+      "tail_dbfs": -159.7901436952242
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0024269819259643555,
+      "tail_peak_fs": 5.364418029785156e-06,
+      "tail_dbfs": -105.40954772992448
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0024271011352539062,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0013055801391601562,
+      "tail_peak_fs": 1.7881393432617188e-06,
+      "tail_dbfs": -114.95197282431774
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.002427032683044672,
+      "tail_peak_fs": 1.0477378964424133e-08,
+      "tail_dbfs": -159.5949469494411
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.0024270322173833847,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 800,
+      "bw_hz": 80,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0013055801391601562,
+      "tail_peak_fs": 3.4924596548080444e-09,
+      "tail_dbfs": -169.13737204383435
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.0031985044479370117,
+      "tail_peak_fs": 1.0728836059570312e-06,
+      "tail_dbfs": -119.38894781664486
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.003198385238647461,
+      "tail_peak_fs": 0.0,
+      "tail_dbfs": -400.0
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0016309022903442383,
+      "tail_peak_fs": 7.033348083496094e-06,
+      "tail_dbfs": -103.05675777258847
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.00319838710129261,
+      "tail_peak_fs": 5.587935447692871e-09,
+      "tail_dbfs": -165.05497239071585
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.00319838710129261,
+      "tail_peak_fs": 2.3283064365386963e-09,
+      "tail_dbfs": -172.65919722494797
+    },
+    {
+      "f_hz": 3000,
+      "bw_hz": 100,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.0016309022903442383,
+      "tail_peak_fs": 1.3737007975578308e-08,
+      "tail_dbfs": -157.24215699210507
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.027433037757873535,
+      "tail_peak_fs": 4.76837158203125e-07,
+      "tail_dbfs": -126.43259817887211
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 23,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.027433037757873535,
+      "tail_peak_fs": 8.344650268554688e-07,
+      "tail_dbfs": -121.57183720514622
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 23,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.01583850383758545,
+      "tail_peak_fs": 5.960464477539062e-07,
+      "tail_dbfs": -124.49439791871097
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": false,
+      "peak_fs": 0.027433037757873535,
+      "tail_peak_fs": 9.313225746154785e-10,
+      "tail_dbfs": -180.61799739838872
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 32,
+      "form": "direct",
+      "fraction_saving": true,
+      "peak_fs": 0.027433037757873535,
+      "tail_peak_fs": 6.984919309616089e-10,
+      "tail_dbfs": -183.11677213055472
+    },
+    {
+      "f_hz": 16000,
+      "bw_hz": 1000,
+      "state_fraction_bits": 32,
+      "form": "coupled",
+      "fraction_saving": false,
+      "peak_fs": 0.01583850383758545,
+      "tail_peak_fs": 4.656612873077393e-10,
+      "tail_dbfs": -186.63859731166835
+    }
+  ]
+}

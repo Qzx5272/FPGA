@@ -1,0 +1,2 @@
+unable to open ftdi device: -4 (usb_open() failed)
+JTAG init failed with: unable to open ftdi device

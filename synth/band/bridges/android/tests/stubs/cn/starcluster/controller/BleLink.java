@@ -1,0 +1,1 @@
+package cn.starcluster.controller;import java.util.*;final class BleLink {boolean linked=true;Object fpgaRx=new Object();ArrayList<byte[]> sent=new ArrayList<>();void writeFpga(byte[] p){sent.add(p);}}

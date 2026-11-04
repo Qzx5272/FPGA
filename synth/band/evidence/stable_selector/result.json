@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "RTL selector synchronization/debounce digital tests; not metastability MTBF or physical switch verification",
+  "sources": {
+    "synth\\band\\experimental\\stage\\stable_selector.sv": "aea237abeb1e67ea1acf262ff4f22da2a8a4871a8eabf328f921b72e5206e9c8",
+    "synth\\band\\experimental\\stage\\tb_stable_selector.v": "8ba4ec6360d5be3a637e122597732eff92bb5b5489eaa4a4608ac82f20712efc"
+  },
+  "log": "PASS short bounce rejected, stable whole-word commit, transition settling, reset"
+}

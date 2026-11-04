@@ -1,0 +1,523 @@
+Spectral Modeling Synthesis Tools - MTG - Music Technology Group (UPF)
+Skip to Main Content
+×
+upf.edu
+Studies
+Research
+Knowledge transfer
+Services
+University
+Information addressed to ...
+Prospective students
+Alumni
+International students
+Companies and organizations
+Media
+Contact
+Online office
+En
+CG
+Campus Global
+MTG - Music Technology Group
+Research
+Industry
+Outreach
+Education
+About
+Blog
+More ...
+MTG - Music Technology Group
+Research
+Industry
+Outreach
+Education
+About
+Blog
+upf.edu
+Studies
+Research
+Services
+University
+Information addressed to...
+Prospective students
+Alumni
+International students
+Companies and organizations
+Media
+Contact
+Menú
+En
+CG
+Campus Global
+inici
+/
+Research
+/
+Software & Datasets
+/
+Spectral Modeling Synthesis Tools
+Spectral Modeling Synthesis Tools
+SMS Tools is a set of techniques and software implementations for the analysis, transformation, and synthesis of musical sounds based on various spectral modeling approaches. These techniques can be used for synthesis, processing and coding applications, while some of the intermediate results might also be applied to other music related problems, such as sound source separation, musical acoustics, music perception, or performance analysis. The basic model and implementation were developed by Xavier Serra as part of his PhD thesis published 1989. Since then many extensions have been proposed at MTG-UPF and by other researchers.
+Basic publications
+Serra, X. 1989.
+A System for Sound Analysis/Transformation/Synthesis based on a Deterministic plus Stochastic Decomposition
+, Ph.D. Thesis. Stanford University.
+Serra, X. Smith, J. 1990. "
+Spectral Modeling Synthesis: A Sound Analysis/Synthesis Based on a Deterministic plus Stochastic Decomposition
+," Computer Music Journal Vol.14 .4 12-24.
+Serra, X. 1997. "
+Musical Sound Modeling with Sinusoids plus Noise
+," G. D. Poli, A. Picialli, S. T. Pope, and C. Roads Ed., Musical Signal Processing, p. Swets & Zeitlinger Publishers.
+Serra, X. Bonada, J. 1998. "
+Sound Transformations Based on the SMS High-Level Attributes
+," Proceedings of International Conference on Digital Audio Effects 1998; Barcelona, Spain.
+Amatriain, X. Bonada, J. Loscos, A. Serra, X. 2002. "
+Spectral Processing
+," Udo Zölzer Ed., DAFX: Digital Audio Effects, p.554 John Wiley & Sons Publishers.
+Teaching materials
+Coursera:
+Audio Signal Processing for Music Applications
+, by Xavier Serra and Julius O. Smith
+Software download
+Source code in python:
+https://github.com/MTG/sms-tools
+Sound examples
+Examples using SMS tools
+These sound examples were done using the SMS software that was running on NeXTStep in the early 1990s.
+Transformations from a singing voice
+original singing voice
+transposition down
+glissando up
+time stretching
+transposition and stretching of partials
+transposition, time scaling and stretching of partials
+morphing with a saxophone
+morphing with animal sounds
+Morphing using the STFT
+Original voice of Lluis Llach
+From Lluis Llach to an ocean sound
+From an ocean sound to Lluis Llach
+Original spoken voice
+Original music by Vivaldi
+morph of the spoken voice with the music by Vivaldi
+Transformations from a speech phrase
+original speech phrase
+transposition and stretching of partials
+glissando and stretching of partials
+time-varying time-scaling
+time-varying stretching of partials
+glissando, time-varying time-scaling, and stretching of partials
+stochastic component with time-scaling
+Variations of a flute sound by Daniel Powell
+original staccato note on a flute
+sequence of transformations from the staccato note
+morphing between a cello note and the word cello
+progresive morphing from a flute to a voice and glissando transformations
+progresive morphing from a flute to a voice
+progresive morphing from a flute to a voice and glissando transformations
+from a trombone note to a flute note
+Various morphs
+Examples from the PhD Thesis
+All these examples are part of the
+PhD thesis
+and are described there.
+Sound example 8: Guitar passage
+original sound
+deterministic synthesis
+stochastic synthesis
+deterministic plus stochastic synthesis
+frequency transposition by a factor of .3
+frequency transposition by .7 and stretching of partials
+compression of the frequency evolution
+inversion of the frequency evolution
+time-varying glissando and stretching of partials
+time-varying time-scale
+time expansion by 2.3
+time expansion by 2.3 with time-varying time-scale and stretching of partials
+time compression by .5 with time-varying time-scale and stretching of partials
+time compression by .5 and frequency transposition by a factor of .4
+time compression by .5 and glissando down
+Sound example 9: Speech phrase
+original sound
+frequency transposition by a factor of .6
+compression of the frequency evolution and frequency transposition by a factor of .4
+frequency transposition by .4 and stretching of partials
+time-varying glissando and stretching of partials
+time-varying time-scale and time-varying compression of the frequency evolution
+from deterministic to stochastic signal
+time expansion by 3 of only stochastic component and time-varying time-scale
+Sound example 10: Conga passage
+original sound
+deterministic synthesis
+stochastic synthesis
+deterministic plus stochastic synthesis
+compression of the frequency evolution
+compression of the frequency evolution and frequency transposition by .3
+compression of the frequency evolution and frequency transposition by 2
+stretch partials
+glissando down
+glissando up
+time-varying change of noise component
+time-varying time-scale
+time-varying time-scale (inverse of previous example)
+time-varying time-scale and time-varying stretch partials
+change of the frequency evolution
+inverse of the previous example
+time expansion by 3
+Sound example 12: Piano passage
+original sound
+deterministic synthesis
+stochastic synthesis
+deterministic plus stochastic synthesis
+frequency transposition by .5
+compression of the frequency evolution
+time-varying stretch partials
+Sound example 14: Speech-phrase hybridized with other sounds
+speech sound
+cat sound
+cross-synthesis of cat with speech
+cow sound
+cross-synthesis of cow and speech
+gong sound
+cross-synthesis of gong and speech
+plane sound
+cross-synthesis of plane and speech
+ship creaking sound
+cross-synthesis of ship creaking and speech
+Relevant references
+List of publications related to spectral modeling synthesis tools.
+Chamberlin, H. 1980. “Using the FFT for Synthesis.” In Music Applications of Microprocessors, Hayden Book Co., pp. 424-431.
+Almeida, L. B. and F. M. Silva. 1983. “Harmonic Coding with Variable-Frequency Synthesis”, Proceedings of the 1983 Spain Workshop on Signal Processing and its Applications (WSPA'83), Sitges, Spain, September 1983.
+Smith, J.O. and B. Friedlander. 1984. “High Resolution Spectrum Analysis Programs.” TM no. 5466-05, Systems Control Technology, Palo Alto CA, April 1984.
+Almeida, L. B. and F. M. Silva. 1984. “Variable-Frequency Synthesis: An Improved Harmonic Coding Scheme”, Proceedings of the 1984 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'84), S. Diego, California, March 1984.
+Griffin , D. W.; J. S. Lim. 1985. “A New Model-Based Speech Analysis / Synthesis System”, IEEE-ICASSP, 1985, pp. 513-516.
+McAulay, R. J. and T. F. Quatieri. 1986. “Speech Analysis/Synthesis based on a Sinusoidal Representation.” IEEE Transactions on Acoustics, Speech and Signal Processing 34(4):744--754.
+McAulay R. J; Thomas F. Quatieri. 1986. “Phase Modeling and its Application to Sinusoidal Transform Coding”, IEEE Int. Conf. on Acoustics, Speech and Signal Processing, pp. 1713-1715, April 1986.
+Quatieri, T. F.; R. J. McAulay. 1986. “Speech Transformations Based on a Sinusoidal Representation”, IEEE Transactions on Acoustics, Speech and Signal Processing, Vol. 34, No. 6, December 1986.
+Serra, X. 1986. “ A Computer Model for Bar Percussion Instruments.” Proceedings of International Computer Music Conference 1986. La Haya, The Netherlands
+Smith, J.O.; Serra, X. 1987. “PARSHL: an analysis/synthesis program for non-harmonic sounds based on a sinusoidal representation”. International Computer Music Conference, 1987.
+McAulay, R. J.; T. F. Quatieri. 1988. “Computationally efficient sine-wave synthesis and its application to sinusoidal transform coding.” Proc. IEEE ICASSP-88, pp. 370-373, 1988.
+Maher, Robert C. 1989. An Approach for the Separation of Voices in Composite Musical Signals. Ph.D. Thesis, University of Illinois at Urbana-Champaign.
+McAulay, R. J.; Thomas F. Quatieri. 1989. “Phase Coherence in Speech Reconstruction for Enhancement and Coding Applications”, IEEE Int. Conf. on Acoustics, Speech and Signal Processing, Glasgow, pp. 207-209 (May 1989).
+Serra, X. Smith, J. 1989.
+“Spectral Modeling Synthesis”
+. Proceedings of International Computer Music Conference 1989. Ohio, USA
+Serra, X. 1989. A system for sound analysis/transformation/synthesis based on a deterministic plus stochastic decomposition. Ph.D. thesis, Stanford University.
+Ellis, Daniel P., Barry L. Vercoe . 1990. “A wavelet based sinusoid model of sound for auditory signal separation.” ICMC90
+Maher, Robert and James Beauchamp. 1990. “An Investigation of Vocal Vibrato for Synthesis.” Applied Acoustics 30 pp. 219-245
+McAulay, R. J.; T. F. Quatieri. 1990. “Pitch Estimation and Voicing Detection Based on a Sinusoidal Speech Model.” Proceedings IEEE ICASSP 1990.
+Schumacher, R. T., and C. Chafe. 1990. “Detection of Aperiodicity in Nearly Periodic Signals.” Proceedings of the IEEE Int. Conf on Acoustics, Speech, and Signal Processing, Alburquerque, NM, 1990.
+George, E. B. 1991. An Analysis-by-Synthesis Approach to Sinusoidal Modeling Applied to Speech and Musical Signal Processing. Ph.D. dissertation, Georgia Institute of Technology.
+George, E. B. and M. J. T. Smith. 1991. “An Analysis-by-Synthesis Approach to Sinusoidal Modeling Applied to the Analysis and Synthesis of Musical Tones,” in Proc. 1991 CMA International Computer Music Conference, October 1991, pp. 356-359.
+Serra, X. 1991. “ SANSY: An Environment for the transformation of musical sounds”, Leonardo Music Journal Vol. Fall.
+Xie, X.; R. J. Evans. 1991. “Multiple Target Tracking and Multiple Frequency Line Tracking Using Hidden Markov Models.” IEEE Transactions on Signal Processing, vol. 39, pp. 2659-2676, December 1991.
+Fitz, K; W. Walker; L. Haken. 1992. “Extending the McAulay-Quatieri Analysis for Synthesis with a Limited Number of Oscillators”. ICMC92.
+Freed, Adrian; Xavier Rodet, Philippe Depalle. 1992. “Synthesis and Control of Hundreds of Sinusoidal Partials on a Desktop Computer without Custom Hardware”, ICSPAT 92, San José ( USA), 1992
+Garcia G. 1992. “Analyse des Signaux Sonores en Termes de Partiels et de Bruit. Extraction Automatique des Trajets Frèquentiels par des Modèles de Markov Cachès.” Mèmoire de DEA en Automatique et Traitement du Signal, Orsay, 1992.
+George, E. B.; M. J.T.Smith. 1992. “Analysis-by-Synthesis/Overlap-Add Sinusoidal Modeling Applied to the Analysis and Synthesis of Musical Tones”. J. Audio Eng. Soc., Vol. 40, No. 6, June 1992.
+Holloway, Bryan and Lippold Haken. 1992. “A Sinusoidal Synthesis Algorithm for Generating Transitions Between Notes”, ICMC92
+McIntyre, C. M.; D. A. Dermott. 1992. “A New Fine-Frequency Estimation Algorithm Based on Parabolic Regression.” IEEE-ICASSP 1992, pp. 541-544.
+Rodet, X. and P. Depalle. 1992. “Spectral Envelopes and Inverse FFT Synthesis.” 93 rd Convention of the Audio Engineering Society. San Francisco, October 1992.
+Apel, Theodore. 1993. Transformation of Audio Signals by Use of the McAulay-Quatieri Sinusoidal Model of Sound. Master Thesis Darmouth College 1993.
+Barrett, R.F.; Holdsworth, D.A. 1993. “ Frequency tracking using hidden Markov models with amplitude and phase information”, IEEE Transactions on Signal Processing, Volume: 41, Issue: 10, Year: Oct 1993 Page(s): 2965-2976
+Depalle, Ph., G. Garcia and X. Rodet. 1993. “Analysis of Sound for Additive Synthesis: Tracking of Partials Using Hidden Markov Models.” Proceedings of the 1993 International Computer Music Conference. San Francisco: Computer Music Association.
+Depalle, Ph., G. Garcia and X. Rodet. 1993. “Tracking of partials for additive sound synthesis using hidden markov models.” Proceedings of the IEEE International Conference On Acoustics, Speech, and Signal Processing (ICASSP’93), Minneapolis, Minnesota, USA,
+Doval, B., and X. Rodet. 1993. “Fundamental frequency estimation and tracking using maximum likelihood harmonic matching and HMMs.” Proceedings of the ICASSP ‘93, 221--224.
+Laroche, J.; Y Stylianou; E. Moulines. 1993. “HNS: Speech Modification based on a Harmonic+Noise Model”. Proc. IEEE-ICASSP-93, Vol. II. pp. 550-553, April 1993.
+Macon , Michael W. 1993. Applications of Sinusoidal Modeling to Speech and Audio Signal Processing. Ph.D. dissertation, Georgia Institute of Technology.
+Adams, G.J.; Evans, R.J. 1994. “ Neural networks for frequency line tracking .” IEEE Transactions on Signal Processing, Volume: 42 Issue: 4 , April 1994 Page(s): 936 -941
+Doval, B. 1994. Estimation de la Fréquence Fondamentale des signaux sonores. PhD. Thesis, Université Paris-6, Paris, 1994.
+Goodwin, M. and X. Rodet. 1994. “Efficient Fourier Synthesis of Nonstationary Sinusoids.” Proceedings of the 1994 International Computer Music Conference. San Francisco: Computer Music Association.
+Serra, Xavier. 1994. “Residual Minimization in a Musical Signal Model based on a Deterministic plus Stochastic Decomposition.” Journal of the Acoustical Society of America 95(5-2):2958--2959.
+Serra, Xavier. 1994. “Sound Hybridization Techniques based on a Deterministic plus Stochastic Decomposition Model.” Proceedings of the 1994 International Computer Music Conference. San Francisco: Computer Music Association.
+Tellman, E.; L. Haken; B. Holloway. 1994.”Timbre Morphing Using the Lemur Representation.” Proceedings of the International Computer Music Conference, Aarhus, Denmark, October 1994.
+Wang, A. 1994. Instantaneous and Frequency-Warped Signal Processing Techniques for Audio Source Separation. Ph.D. Thesis, Stanford University.
+Dutoit, T. and B. Gosselin. 1995. “On the Use of a Hybrid Harmonic/Stochastic Model for TTS synthesis-by-Concatenation.” Speech Communication 19 pp. 119-143.
+Fitz, Nelly; Lippold Haken, and Bryan Holloway. 1995. “Lemur - A Tool for Timbre Manipulation.” International Computer Music Conference, September 1995, Banff Centre, Alberta, Canada
+Fitz, K; and L. Haken. 1995. “Bandwidth Enhanced Sinusoidal Modeling in Lemur.”Proc. International Computer Music Conference, Banff, 1995.
+Goodwin, M.; A. Kogon. 1995. “Overlap-add synthesis of non-stationary sinusoids.” Proc. International Computer Music Conference, Banff, 1995.
+Masri, P., Bateman, A. 1995. “Identification of nonstationary audio signals using the FFT, with application to analysis-based synthesis of sound.” Proc. IEE Colloquium on Audio Engineering. pp. 11.1-6.
+McAulay, R. J.; T. F. Quatieri. 1995. “Sinusoidal coding.” In Speech Coding and Synthesis, Chapter 4, W.B. Kleijn, and K.K. Paliwal Eds., Elsevier, 1995.
+Osaka , N. 1995. “Timbre Interpolation of Sounds Using a Sinusoidal Model.” ICMC 95.
+Quatieri, T. F. and T. E. Hanna. 1995. “Time-scale modification with inconsistent constraints”, in Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, NY , New York, Oct. 18, 1995, pp. Session 10, Paper 2, IEEE Press.
+Stylianou, Y.; J. Laroche; E. Moulines. 1995. “High Quality Speech Modification based on a Harmonic + Noise Model.” Eurospeech-95.
+Tellman, E.; L. Haken; B. Holloway. 1995. “Timbre Morphing of Sounds with Unequal Number of Features.” J. Audio Eng. Soc., Vol. 43, No 9. 1995.
+Wang, A. 1995. “Instantaneous and frequency-warped techniques for source separation and signal parametrization.” in Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, NY, New York, Oct. 1995, IEEE Press.
+Ali, M. 1996. Adaptive Signal Representation with Applications in Audio Coding. Ph.D. thesis, University of Minnesota.
+Depalle, P.; L. Tromp. 1996. “An Improved Additive Analysis Method Using Parametric Modeling of the Short-Time Fourier Transform.” Proceedings of the ICMC 96.
+Dutoit, T.; B. Gosselin. 1996. “On the use of a hybrid harmonic/stochastic model for TTS synthesis-by-concatenation.” Speech Communacation 19, pp. 119-143.
+Fitz, Kelly and Lippold Haken. 1996. “Sinusoidal Modeling and Manipulation Using Lemur.” Computer Music Journal, vol. 20.4, 1996, pp. 44-59.
+Goodwin, M. ; M. Vetterli.1996. “ Time-Frequency Signal Models for Music Analysis, Transformation, and Synthesis.” Time-Frequency Time-Scale Symposium, Multidimensional Systems and Signal Processing, Paris, Aug. 1996.
+Goodwin, M. 1996. “Residual modeling in music analysis-synthesis.” Proc IEEE-ICASSP, Atlanta , GA , pp. 1005-1008, May 1996.
+Gribonval, R.; E. Bacry, S. Mallat, Ph. Depalle, X. Rodet. 1996. “Analysis of sound signal with high resolution matching pursuit.” Proceedings of the IEEE Conference on Time-Frequency and Time-Scale Analysis (TFTS'96), Paris, France, June 1996.
+Hamdy, K. N.; M. Ali and A. H. Tewfik. 1996. “Low bit rate high quality audio coding with combined harmonic and wavelet representations.” Proceedings of ICASSP96
+Lomax, K. 1996. “The development of a singing synthesizer.” in Speech and Computers (SPECOM), 1996.
+Macon, M. W. 1996. Speech Synthesis Based on Sinusoidal Modeling. PhD thesis, Georgia Institute of Technology, October 1996.
+Macon, M. W. and M. A. Clements. 1996. “Speech concatenation and synthesis using an overlap-add sinusoidal model.” in Proceedings of the International Conference on Acoustics, Speech, and Signal Processing, vol. 1, pp. 361-364, May 1996.
+Masri, P. 1996. Computer Modeling of Sound for Transformation and Synthesis of Musical Signal. PhD thesis, University of Bristol, Dec. 1996.
+Masri, P.; A. Bateman. 1996. “Improved Modelling of Attack Transients in Music Analysis-Resynthesis.” ICMC-96.
+Phillips, D.; A. Purvis; S. Johnson. 1996. “Multirate Additive Synthesis.” ICMC 96.
+Pielemeier, W. J.; G.H. Wakefield. 1996. “A high-resolution time-frequency representation for musical instrument signals.” J. Acoust. Soc. Amer., 99(4), 1996.
+Stainsby, Thomas. 1996. “A System for the Separation of Simultaneous Musical Audio Signals.” ICMC96.
+Stylianou, Yannis. 1996. Harmonic plus Noise Models for Speech combined with Statistical Methods for Speech and Speaker Modification. PhD thesis, Telecom Paris, 1996.
+Arcos, J. Lopez de Mantaras, R. Serra, X. 1997. “ Generating expressive musical performances with SaxEx.” Proceedings of AIMI International Workshop. KANSEI - The Technology of Emotion. Genova, Italy
+Arcos, J. Lopez de Mantaras, R. Serra, X. 1997. “ Saxex: a Case-Based Reasoning System for Generating Expressive Musical Performances”. Proceedings of International Computer Music Conference 1997. Thessaloniki, Greece
+Bonada, J. 1997. “ Desenvolupament d`un entorn gráfic per a l`análisi, transformació i síntesi de sons mitjanant models espectrals”. UPC. Barcelona
+Depalle, P.; T. Hélie. 1997. “Extraction of Spectral Peak Parameters Using a Short-Time Fourier Transform Modeling and No Sidelobe Windows.” Proceedings of IEEE Workshop on Audio, Mohonk 1997.
+Ding Y.; X. Qian. 1997. “Sinusoidal and Residual Decomposition and Residual Modeling of Musical Tones Using the QUASAR Signal Model.” Proceedings of the ICMC 97.
+Ding, Y. and Qian, X., 1997. “Processing of Musical Tones Using a Combined Quadratic Polynomial-Phase Sinusoid and Residual (QUASAR) Signal Model.” J. Audio Eng. Soc., Vol. 45, No. 7/8, pp. 571-584.
+Ding, Y. and Qian, X., 1997. “Estimating Sinusoidal Parameters of Musical Tones based on Global Waveform Fitting”, Proceedings of the IEEE Workshop on Multimedia Signal Processing, pp. 95-100, June 1997.
+Dubnov, S.; X. Rodet. 1997. “Statistical Modeling of Sound Aperiodicities.” ICMC-97.
+Fitz, K.; L. Haken. 1997. “Sinusoidal Modeling and Manipulation Using Lemur.” Computer Music Journal, vol. 20, n 4. [direct implementation of the McAulay and Quatieri sinusoidal modeling approach]
+George, E. B.; M. J.T.Smith. 1997. “Speech Analysis/Synthesis and Modification Using and Analysis-by-Synthesis/Overlap-Add Sinusoidal Model.” IEEE Transactions on Speech and Audio Processing, vol. 5, No. 5.
+Goodwin, M. 1997. “Matching pursuit with damped sinusoids,” in Proceedings ICASSP’97, Munich, Germany, May 1997, vol. 3, pp. 2037–2040.
+Goodwin, M., 1997. Adaptive Signal Models: Theory, Algorithms, and Audio Applications. Ph.D. Thesis, University of California, Berkeley
+Laroche, J. and M. Dolson, “About this phasiness business.” in Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, NY , New York, Oct. 1997, IEEE Press.
+Levine, Scott, Tony Verma, Julius O. Smith III. 1997. “Alias-Free, Multiresolution Sinusoidal Modeling for Polyphonic, Wideband Audio.” IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, Mohnonk, NY, 1997.
+Loureiro, R.Serra, X. 1997. “ A Web Interface for a Sound Database and Processing System”. Proceedings of International Computer Music Conference 1997. Thessaloniki, Greece
+Lomax, Ken. 1997. The Analysis and Synthesis of the Singing Voice. Ph.D: Thesis, Oxford University.
+Macon, M. W.; L. Jensen-Link, J. Oliverio, M. Clements, and E. B. George. 1997. “Concatenation-based MIDI-to-singing voice synthesis.” 103rd Meeting of the Audio Engineering Society, New York, 1997.
+Macon, M. W.; L. Jensen-Link, J. Oliverio, M. Clements, and E. B. George. 1997. “A system for singing voice synthesis based on sinusoidal modeling,” Proc. of International Conference on Acoustics, Speech, and Signal Processing, Vol. 1, pp. 435-438, 1997.
+Prandoni, P.; M. Goodwin, M. Vetterli . “Optimal time segmentation for signal modeling and compression.” Proc ICASSP97, vol 3, pp. 2029-2032, Munich, Germany, April 1997.
+Qian, Ding. 1997. “A phase interpolation algorithm for sinusoidal model based music synthesis.” Proceedings of the International Conference on Acoustics, Speech and Signal Processing, 1997, pp. 451-454.
+Rodet, X. 1997. “Musical Sound Signals Analysis/Synthesis: Sinusoidal+Residual and Elementary Waveform Models”, in Proceedings of the IEEE Time-Frequency and Time-Scale Workshop (TFTS'97), University of Warwick, Coventry, UK, 27th-29th August 1997.
+Serra, X.Bonada, J.Herrera, P.Loureiro, R. 1997. “ Integrating Complementary Spectral Models in the Design of a Musical Synthesizer.”
+Proceedings of International Computer Music Conference 1997. Thessaloniki, Greece
+Serra, Xavier. 1997. “Musical Sound Modeling With Sinusoids Plus Noise.” In Roads, Pope, Poli (eds.). Musical Signal Processing. Swets & Zeitlinger Publishers.
+Sullivan, D. L 1997. “Accurate frequency tracking of timpani spectral lines.” JASA, 101 (1), 1997.
+Verma, T. S.; S. N. Levine; T. H.Y. Meng. 1997. “Transient Modeling Synthesis: a flexible analysis/synthesis tool for transient signals”, Proceedings of the ICMC 1997.
+Amatriain, X.Bonada, J.Serra, X. 1998. “ METRIX: A Musical Data Definition Language and Data Structure for a Spectral Modeling Based Synthesizer”. Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Arcos, J.Lopez de Mantaras, R.Serra, X. 1998. “ Saxex: a Case-Based Reasoning System for Generating Expressive Musical Performances”. Journal of New Music Research Vol.27 .3
+Campedel, Marine. 1998. Etude du modèle “sinusoids et bruit” pour le traitement des signaux de parole, Estimation Robuste de l’envelope spectrale. Ph.D. Thesis, TELECOM Paris.
+Cano, P. 1998. “ Fundamental Frequency Estimation in the SMS analysis.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Di Federico, Riccardo. 1998. “Waveform Preserving Time Stretching and Pitch Shifting for Sinusoidal Models of Sound”. Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Fernandez-Cid, Pablo. 1998. Transcripción Automática de Señales Musicales Polifónicas. PhD Thesis, Universidad Politécnica de Madrid.
+George, E. B. 1998. “Practical High-Quality Speech and Voice Synthesis Using Fixed Frame Rate ABS/OLA Sinusoidal Modeling.” in Proc. 1998 IEEE Int’l Conf. On Acoust., Speech, and Signal Processing, May 1998.
+Guerra, E. 1998. “ VowSynth: A Synthesizer of Vowel Sounds Based on Additive Synthesis.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Herrera, P.Bonada, J. 1998. “ Vibrato Extraction and Parameterization in the Spectral Modeling Synthesis framework.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Irizarry, R. A. 1998. Statistics and Music: Fitting a Local Harmonic Model to Musical Sound Signals. Ph.D. thesis, University of California, Berkeley.
+Klapuri, A. 1998. “Automatic Transcription of Music.” MSc thesis, Tampere University of Technology, 1998.
+Klapuri, A. 1998. “Number Theoretical Means of Resolving a Mixture of Several Harmonic Sounds.” Proceedings of the European Signal Processing Conference, 1998.
+Laroche, Jean. 1998. “Using Resonant Filters for the Synthesis of Time-Varying Sinusoids.” 105th AES Convention, San Francisco, CA. 1998. Preprint 4782 (F-6).
+Levine, Scott. 1998. Audio Representation for Data Compression and Compressed Domain Processing. Ph.D. thesis. Stanford University.
+Levine, S. N. and J. O. Smith. 1998. “A sines+transients+noise audio representation for data compression and time/pitch-scale modi.cations.” Audio Engineering Society Convention , no. 4781, 1998.
+Loscos, A.; Resina, E. 1998. “ SMSPerformer: A real-time synthesis interface for SMS”. Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Macias, B. 1998. “ SMS3d: An application for the visualization of SMS data.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Marchand, Sylvain. 1998. “Improving Spectral Analysis Precision with an Enhanced Phase Vocoder using Signal Derivatives.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Masri, Paul. 1998. “Extracting more Detail from the Spectrum with Phase Distortion Analysis.” DAFX98-Workshop, Barcelona ( Spain), November 1998 .
+Peeters, G.; X. Rodet. 1998. “Sinusoidal Characterization in terms of Sinusoidal and Non-Sinusoidal Components.” DAFX98-Workshop, Barcelona ( Spain), november 1998 .
+Resina, E. 1998. “ SMS Composer and SMS Conductor: Applications for Spectral Modeling Synthesis Composition and Performance.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona.
+Serra, X.Bonada, J. 1998. “ Sound Transformations Based on the SMS High Level Attributes.” Proceedings of COST G6 Conference on Digital Audio Effects 1998. Barcelona
+Verma, T. S.; T. H. Y. Meng. 1998. “An Analysis/Synthesis Tool for Transient Signals.” ASA98.
+Verma, T. S.; T. H. Y. Meng. 1998. “An Analysis/Synthesis Tool for Transient Signals that Allows a Flexible Sines#Transient#Noise Model for Audio.” ICASSP98.
+Verma, T. S.; T. H. Y. Meng. 1998. “Sinusoidal Modeling Using Frame-Based Perceptually Weighted matching Pursuits.” ICASSP99.
+Verma, T. S.; T. H. Y. Meng. 1998. “Time Scale Modification Using a Sines+Transients+Noise Signal Model.” Proceedings of the Digital Audio Effects Workshop (DAFX98), Barcelona, November 1998.
+Wessel, David et al. 1998. “Removing the Time Axis from Spectral Model Analysis-Based Additive Synthesis: Neural Networks versus Memory-Based Meachine Learning.” ICMC98.
+Wright, M.Chaudhary, A. Freed, A. Wessel, D. Rodet, X.Woehrmann, R.Serra, X. 1998. “ New Applications of the Sound Description Interchange Format.” Proceedings of International Computer Music Conference 1998. Michigan, USA
+Althoff, Rasmus; Florian Keiler; Udo Zölzer. 1999. “Extracting Sinusoids from Harmonic Signals.” DAFX99.
+Desainte-Catherine, M. and S. Marchand. 1999. “Structured additive synthesis: Towards a model of sound timbre and electroacoustic music forms.” ICMC99.
+Fitz, Kelly. 1999. The Reassigned Bandwidth-Enhanced Method of Additive Synthesis. Ph. D. dissertation, Dept. of Electrical and Computer Engineering, University of Illinois at Urbana-Champaign.
+Freed, Adrian. 1999. “ Spectral Line Broadening with Transform Domain Additive Synthesis.” ICMC99.
+Herrera, P., X. Serra, G. Peeters. 1999. "A proposal for the description of audio in the context of MPEG-7", Proceedings of the CBMI'99 European Workshop on Content-Based Multimedia Indexing.
+Irizarry, Rafael. 1999. “Weighted Estimation of Harmonic Components in a Musical Sound Signal.” JTSA
+Koenen, R. 1999. Overview of the MPEG-4 Standard. ISO/IEC JTC1/SC29/WG11 N3156, Dec. 1999.
+Laroche, J. and M. Dolson. 1999. “New phase-vocoder techniques for real-time pitch shifting, chorusing, harmonizing, and other exotic audio modifications.” Journal of the Audio Engineering Society , vol. 47, no. 11, pp. 928–936, November 1999.
+Laroche, J. and M. Dolson. 1999. “New phase-vocoder techniques for pitch-shifting, harmonizing, and other exotic effects.” in Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, NY , New York, Oct. 17–20, 1999, pp. 91–94, IEEE Press.
+Laroche, Jean and Mark Dolson. 1999. “Improved Phase Vocoder Time-Scale Modification of Audio.” IEEE Transactions on Speech and Audio processing. Vol. 7, No. 3, May 1999.
+Levine, S. N. 1999. Audio Representations for Data Compression and Compressed Domain Processing. Ph.D. Thesis, Stanford University
+Levine, S. N. and Julius O. Smith III. 1999. “A Switched Parametric & Transform Audio Coder.” ICASSP-99
+Levine, S. N. and Julius O. Smith III. 1999. “Improvement to the Switched Parametric & Transform Audio Coder.” Proc. IEEE Workshop on Applications of Signal Processing to Audio and Acoustics.
+Marchand, Sylvain. 1999. “Musical sound effects in the SAS model.” Proceedings of the COST-G6 Conference on Digital Audio Effects (DAFX’99), Trondheim, Norway, 1999.
+Peeters, G.; X. Rodet. 1999. “SINOLA: A New Analysis/Synthesis using Spectrum Peak Shape Distortion, Phase and Reassigned Spectrum.” ICMC99, Beijing ( China).
+Rossignol, S.; P. Depalle, J. Soumagne, X. Rodet, J.-L. Collette. 1999. “Vibrato: detection, e stimation, extraction, modification.” DAFX99
+Schwarz, D.; X. Rodet. 1999. “Spectral Envelope Estimation and Representation for Sound Analysis-Synthesis.” Proceedings of the International Computer Music Conference (ICMC'99), Beijing, October 1999.
+Tolonen, Tero. 1999. “Methods for Separation of Harmonic Sound Sources using Sinusoidal Modeling.” Preprint Number: 4958 AES Convention 106.
+Troughton, Paul T. 1999. “ Bayesian Restoration of Quantised Audio Signals using a Sinusoidal Model with Autoregressive Residuals”. Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics . Mohonk, 1999.
+Verma, T.S. and T.H.Y. Meng. 1999. “Sinusoidal modeling using frame-based perceptually weighted matching pursuits,” in Proceedings ICASSP’99 , Phoenix, Arizona, USA, May 1999, vol. 2, pp. 981–984.
+Verma, Tony S. “A Perceptually Based Audio Signal Model with Application to Scalable Audio Compression”. Ph.D. thesis. Stanford University, October 1999.
+Vos, K.; R. Vafin, R. Heusdens, and W.B. Kleijn. 1999. “High-quality consistent analysis-synthesis in sinusoidal coding,” in Proceedings of the AES 17th International Conference , Florence, Italy, September 1999, pp. 244–250.
+Bonada, J. 2000. “ Automatic Technique in Frequency Domain for Near-Lossless Time-Scale Modification of Audio.” Proceedings of International Computer Music Conference 2000. Berlin, Germany
+Cano, P., A. Loscos, J. Bonada, M. de Boer, X. Serra. 2000. “Voice Morphing System for Impersonating in Karaoke Applications.” Proceedings of the International Computer Music Conference 2000.
+De Boer, M., J. Bonada, X. Serra. 2000. “Using the Sound Descripton Interchange Format within the SMS Applications.” Proceedings of the International Computer Music Conference 2000.
+De Boer, M., J. Bonada, Cano, P., A. Loscos, X. Serra. 2000. “Singing Voice Impersonator Application for PC.” Proceedings of the International Computer Music Conference 2000.
+Desainte-Catherine, M.; S. Marchand. 2000. “High-Precision Fourier Analysis of Sounds Using Signal Derivatives.” JAES, vol. 48, no. 7/8.
+Desainte-Catherine, Myriam; Pierre Hanna. 2000. “Statistical Approach for Sound Modeling.” P roc. of the COST G-6 Conference on Digital Audio Effects (DAFX-00), Verona, Italy, D ecember 7-9, 2000.
+Edler, Bernd; Heiko Purnhagen. 2000. “Parametric Audio Coding.”
+Fitz, K.; L. Haken; P. Christensen. 2000. “A new algorithm for Bandwidth Association in Bandwidth-Enhanced Additive Sound Modeling.” Proceedings of the ICMC 2000, pages178–181.
+Fitz, K.; L. Haken; P. Christensen. 2000. “Transient Preservation under Transformation in an Additive Sound Model”. Proceedings of the ICMC 2000.
+Herrera, P., X. Amatriain , E. Batlle, X. Serra. 2000. “Towards Instrument Segmentation for Music Content Description: a Critical Review of Instrument Classification Techniques.” Proceedings of the International Symposium on Music Information Retrieval 2000.
+Izmirli, Ozgur. 2000. “Non-harmonic Sinusoidal Modeling Synthesis Using Short-time High-resolution Parameter Analysis.” Conference on Digital Audio Effects (DAFx), 2000.
+Klapuri, A., T. Virtanen, J.-M. Holm. 2000. “Robust multipitch estimation for the analysis and manipulation of polyphonic musical signals.” In Proc. COST-G6 Conference on Digital Audio Effects, Verona, Italy, 2000.
+Laroche, J. 2000. “Synthesis sinusoids via non-overlapping inverse fourier transform.” IEEE Transactions on Speech and Audio Processing , vol. 8, no. 4, pp. 471–477, July2000.
+Laurenti, Nicola; Giovanni De Poli. 2000. “A Method for Spectrum Separation and Envelope Estimation of the Residual in Spectrum Modeling of Musical Sound”. P roc. of the COST G-6 Conference on Digital Audio Effects (DAFX-00), Verona, Italy, D ecember 7-9, 2000.
+Marchand, Sylvain. 2000. Sound models for computer music: analysis, transformation, synthesis of musical sound. PhD thesis, LaBRI, Université Bordeaux I.
+Painter, T. 2000. Scalable Perceptual Audio Coding with a Hybrid Adaptive Sinusoidal Signal Model. Ph.D. Thesis, Arizona State University , June 2000.
+Purnhagen, H. and N. Meine. 2000. “HILN – the MPEG-4 parametric audio coding tools,” in Proc. IEEE Int. Symposium on Circuitsand Systems (ISCAS), Geneva, CH, May 2000, pp. III–201 – III–204.
+Schoner, Bernd. 2000. Probabilistic Characterization and Synthesis of Complex Driven Systems. PhD Thesis MIT 2000.
+Schoner, Bernd et al. 2000. “Cluster-Weighted Sampling for Synthesis and Cross-Synthesis of Violin Family Instruments.” ICMC 2000.
+Tolonen, T. 2000. “Object-based sound source modeling for musical signals.” in AES 109th Convention, Preprint 5174, ( Los Angeles, USA), Sept. 2000.
+Verma, T. S.; T. H. Y. Meng. 2000. “Extending Spectral Modeling Synthesis wth Transient Modeling Synthesis”, Computer Music Journal 24:2, pp.47-59.
+Virtanen, T. 2000. Audio signal modeling with sinusoids plus noise. Master’s thesis, Department of Information Technology, Tampere University of Technology, 2000
+Virtanen, Tuomas; Anssi Klapuri. 2000. “Separation of Harmonic Sound Sources using Sinusoidal Modeling.” ICASSP 2000.
+Wright, M., J. Beauchamp, K. Fitz, X. Rodet, A. Röbel, X. Serra, G. Wakefield. 2000. “Analysis/synthesis comparison.” Organized Sound, 5(3), pp 173-189. 2000.
+Amatriain, X. Bonada, J. Loscos, A. Serra, X. 2001. “ Spectral Modeling for Higher-level Sound Transformation.” Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona
+Amatriain, X.Herrera, P. 2001. “ Audio Content Transmission.” Proceedings of COST G6 Conference on Digital Audio Effects 2001. Limerik, Ireland
+Anal J. S. Ferreira. 2001. “Perceptual Coding using Sinusoidal Modeling in the MDCT Domain.” Preprint Number: 5569 AES Convention: 112 2002-05
+Bonada, J. Celma, O. Loscos, A. Ortolà, J. Serra, X. 2001.”Singing Voice Synthesis Combining Excitation plus Resonance and Sinusoidal plus Residual Models.” Proceedings of International Computer Music Conference 2001. Havana, Cuba
+Bonada, J. Loscos, A. Cano, P. Serra, X. 2001. “Spectral Approach to the Modeling of the Singing Voice.” Proceedings of 111th AES Convention. New York, USA
+Duxbury C., Davies M., Sandler M. 2001. “Separation of Transient Information in Musical Audio Using Multiresolution Techniques”. DAFX01
+Ferreira, A.J.S. 2001. “Accurate Estimation in the ODFT Domain of the Frequency, Phase and Magnitude of Stationary Sinusoids”. WASPAA01
+Ferreira, A.J.S. 2001. “Combined Spectral Envelope Normalization and Subtraction of Sinusoidal Components in the OFDT and MDCT Frequency Domains”. WASPAA01
+Florian. 2001. Time-scale Modification using the Phase Vocoder. Diploma Thesis. Graz University of Music and Dramatic Arts.
+Garcia, G. 2001. “Estimation of Sinusoids in Audio Signals using an Analysis-by-Synthesis Neural Network.” IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2001, Salt Lake City, UT.
+Goodwin, M. M. 2001. “Multiscale Overlap-Add Sinusoidal Modeling Using Matching Pursuit and Refinements.” WASPAA01
+Haas, J. 2001. “SALTO - A Spectral Domain Saxophone Synthesizer”
+Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona
+Hanna, Pierre and Myriam Desainte-Catherine. 2001. “Influence of frequency distribution on intensity fluctuations of noise.” DAFX01.
+Hammer, Florian. 2001. Time-scale Modification using the Phase Vocoder . Diploma Thesis. Institute for Electronic Music and Acoustics (IEM), Graz University of Music and Dramatic Arts.
+Haste, Tue; Andersen and Kristoffer Jensen. 2001. “On the importance of phase information in additive analysis/synthesis of binaural sounds.” Proceedings of International Computer Music Conference 2001. Havana, Cuba
+Hermus, Kris, Werner Verhelst, Patrick Wambacq. 2001. “Perceptual Audio Modeling Based on Total Least Squares Algorithms.” Preprint Number: 5571. Journal of the AES
+Heusdens, Richard; Renat Vafin, Bastiaan Kleijn. 2001. “Sinusoidal Modeling of Audio and Speech Using Psychoacoustic-Adaptive Matching Pursuits.” ICASSP01.
+Jehan, Tristan and Bernd Schoner. 2001. “An Audio-Driven Perceptually Meaningful Timbre Synthesizer.” ICMC2001
+Jehan, Tristan and Bernd Schoner. 2001. “An Audio-Driven, Spectral Analysis-Based, Perceptually Synthesis Engine.” 110 th AES Convention 2001.
+Jensen J., Heusdens R. Veenman, C.J. 2001. “ Optimal Time-Differential Encoding of Sinusoidal Model Parameters.” 22nd Symposium on Information Theory in the BENELUX, Enschede (NL), May 2001
+Kauppinen I., Roth K. 2001. “An Adaptive Technique for Modeling Audio Signals.” Conference on Digital Audio Effects DAFX 2001.
+Keiler, F., Zölzer U. 2001. “Extracting Sinusoids from Harmonic Signals.” JNMR 30 (3) : :243–258.
+Lagrange, M, Marchand, Sylvain. 2001. “Real-time Additive Synthesis of Sound by Taking Advantage of Psychoacoustics”. DAFX01
+Lindemann, Eric. 2001. “Musical Synthesizer Capable of Expressive Phrasing. US Patent 6,316,710 B1
+Master, Aaron. 2001. “Physical Modeling and Sinusoidal Modeling for Noise and Artifact Elimination.” CCRMA class report.
+Painter, Ted; Andreas Spanias. 2001. “Perceptual Segmentation and Component Selection in Compact Sinusoidal Representations of Audio.” ICASSP01.
+Parra L., Jain U. 2001. “Approximate Kalman Filtering for the Harmonic plus Noise Model”. WASPAA01
+Peeters, Geoffroy. 2001. Modèles et modélisation du signal sonore adaptés à ses caractéristiques locales. PHD thesis Université, Paris VI July 2001
+Peterschmitt, G. Gómez, E. Herrera, P. 2001. “ Pitch-based Solo Location.” Proceedings of MOSART Workshop on Current Research Directions in Computer Music Barcelona
+Polotti P., Evangelista G. 2001. “Multiresolution Sinusoidal/Stochastic Model fr Voiced-Sounds”. DAFX01
+Vafin R., Heusdens R., van de Par, S. & Bastiaan Kleijn, W. 2001. “Improving modeling of audio signals by modifying transient locations.” WASPAA01
+Verfaille V., Duhamel P., Charbit M. 2001. “Lift: Liklihood-Frequency-Time Analysis for Partial Tracking and Automatic Transcription of Music”. DAFX01.
+Virtanen, T., Klapuri A. 2001. “Separation of Harmonic Sounds Using Multipitch Analysis and Iterative Parameter Estimation.” Proc. IEEE Workshop on Applications of Signal Processing to Audio and Acoustics, New Paltz, New York, 2001.
+Virtanen, Tuomas. 2001. “Accurate Sinusoidal Model Analysis and Parameter Reduction by Fusion of Components”, AES Convention 110.
+Wang, Kun; Hongya Ge, Yinong Ding. 2001. “Adaptive Parametric Schemes for Analysis and Synthesis of Musical Signals.” JAES vol. 49 (5)
+Amatriain, X. Herrera, P. 2002. “ Transmitting Audio Content as Sound Objects.” Proceedings of AES22 International Conference on Virtual, Synthetic and Entertainment Audio. Espoo, Finland
+Amatriain, X. de Boer, M. Robledo, E. Garcia, D. 2002. ” CLAM: An OO Framework for Developing Audio and Music Applications”Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, Systems, Languages and Applications. Seattle, WA, USA
+Amatriain, X. Arumi, P. Ramírez, M. 2002. "CLAM, Yet Another Library for Audio and Music Processing?”
+Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, Systems, Languages and Applications. Seattle, WA, USA
+Bonada, J. 2002. “ Audio Time-Scale Modification in the Context of Professional Post-Production.” Doctoral Pre-Thesis Work. UPF. Barcelona
+Boyer R.; Abed-Meraim K. 2002. “Efficient Parametric Modeling for Audio Transients.” Proceedings of the 5 th International Conference on Digital Audio Effects.
+Boyer, R. and S. Essid, and N. Moreau. 2002. “Non-stationary signal parametric modeling techniques with an application to low bitrate audio coding,” in Proc. IEEE Int. Conf. Signal Processing, Aug. 2002.
+Brinker, A. C. den et al. 2002. “Parametric Coding for High-Quality Audio.” 112 th AES Convention 2002.
+Fitz, Kelly; Lippold Haken. 2002. “On the Use of Time-Frequency Reassignment in Additive Sound Modeling.” JAES, vol 50 (11).
+Hanna, P., Desainte-Catherine M. 2002. “Adapting the overlap-add method to the synthesis of noise”. DAFX02, pages 101–104.
+Hanna, P., Myriam Desainte C. 2002. “Detection of sinusoidal components in sounds using statistical analysis of intensity fluctuations”. ICMC02, pages 100-103.
+Hanna, P., Myriam Desainte C. 2002. “ Influence de la densité spectrale sur la synthèse de sons bruités.” Proceedings of the Journées d’Informatique Musicale (JIM’02), Marseille , France, pages 17–24.
+Heittola, Toni; Anssi Klapuri. 2002. “Locating Segments with Drums in Music Signals”, ISMIR2002.
+Irizarry, R. A. 2002. “Weighted estimation of harmonic components in a musical sound signal.” Journal of Time Series Analysis. 23: 29-48
+Keiler, Florian; Sylvain Marchand. 2002. “Survey on Extraction of Sinusoids in Stationary Sounds.” Proceedings of the 5 th International Conference on Digital Audio Effects
+Kimo Johnson, Micah. 2002. Spectral Modeling Toolbox. Master thesis. Darmouth College.
+Lagrange, M; Marchand, S. and Rault, J.-B. 2002. “Sinusoidal Parameter Extraction and Component Selection in a Non Stationary Model.” Proceedings of the 5 th International Conference on Digital Audio Effects.
+Lee, M.; and M. J. T. Smith, “Digital singing voice synthesis using a new alternating refection model”, in ISCAS, May 2002, vol. 2, pp. 341-344.
+Marentakis G., Jensen K.2002. “Sinusoidal Synthesis Optimization.” ICMC02
+Master A. 2002. “Sinusoidal Modeling Parameter Estimation via a Dynamic Channel Vocoder Model”. ICASSP02
+Meine N. & Purnhagen P. 2002. “Fast sinusoid synthesis for MPEG-4 HILN parametric audio decoding”. DAFX02.
+Morris, R.W. and M.A. Clements. 2002. “Modification of formants in the line spectrum domain.” Signal Procesing Letters, vol. 9, pp. 19-21, Jan. 2002.
+Polotti, Pietro. 2002. “Fractal Additive Synthesis: A Pitch-Sinchronous Extension of the Method for the Analysis and Synthesis of Natural Voiced-Sounds”, ICMC02
+Purnhagen, Heiko. 2002. “Parameter Estimation and Tracking for Time-varying Sinusoids.” IEEE-MPCA-2002.
+Röbel A. 2002. “Estimating partial frequency and frequency slope using reassignment operators”. ICMC02
+Timoney, Joseph; Victor Lazzarini, Thomas Lysaght. 2002. “New SndObj Library Classes for Sinusoidal Modeling”. DAFX02
+Tohyama, Mikio. 2002. “Sinusoidal and Envelope-Modulation-Modeling-of-Signals-A Signal Theoretic Approach to Acoustics Events Rendering-. Proceedings of the 2002 International Conference on Auditory Display, Kyoto, Japan.
+Virtanen, T.; Anssi Klapuri. 2002. “Separation of Harmonic Sounds Using Linear Models for the Overtone Series.” ICASSP 2002
+Wells J. J., Murphy D.T. 2002. “Real-time partial Tracking in an Augmented Additive Synthesis System.” DAFX02.
+Amatriain, X. Bonada, J. Loscos, A. Arcos, J.Verfaille, V. 2003. “ Content-based Transformations.” Journal of New Music Research Vol.32 .1
+Beltrán, José R. and Fernando Beltrán. 2003. “Additive synthesis based on the continuous wavelet transform: A sinusoidal plus transient model.” DAFX03
+Bonada, J. Loscos, A. 2003. “ Sample-based singing voice synthesizer by spectral concatenation.” Proceedings of Stockholm Music Acoustics Conference 2003. Stockholm, Sweden
+Bonada, J. Loscos, A. Mayor, O.Kenmochi, H. 2003. “ Sample-based singing voice synthesizer using spectral models and source-filter decomposition.” Proceedings of 3rd International Workshop on Models and Analysis of Vocal Emissions for Biomedical Applications. Firenze, Italy
+Gómez, E. Gouyon, F. Herrera, P. Amatriain, X. 2003. “ Using and enhancing the current MPEG-7 standard for a music content processing tool.” Proceedings of Audio Engineering Society, 114th Convention. Amsterdam, The Netherlands
+Gómez, E. Grachten, M. Amatriain, X. Arcos, J. 2003. “ Melodic characterization of monophonic recordings for expressive tempo transformations.” Proceedings of Stockholm Music Acoustics Conference 2003. Stockholm, Sweden
+Gómez, E. Klapuri, A. Meudic, B. 2003. “ Melody Description and Extraction in the Context of Music Content Processing.” Journal of New Music Research Vol.32 .1
+Gómez, E. Peterschmitt, G. Herrera, P. 2003. “ Content-based melodic transformations of audio for a music processing application.” DAFX03.
+Gouyon, Fabien; Lars Fabig and Jordi Bonada. 2003. Rhythmic expressiveness transformations of audio recordings: swing modifications.” DAFX03
+Hainsworth, Stephen and Malcolm Macleod. 2003. “On sinusoidal parameter estimation.” DAFX03
+Hanna, Pierre and Myriam Desainte-Catherine. 2003. “Analysis method to approximate the spectral density of noises.” Proceedings of the 2003 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics - October 19-22, WASPAA’03.
+Hanna, Pierre and Myriam Desainte-Catherine. 2003. “Time Scale modification of noises using a Spectral and Statistical Model.” Proceedings of the International Conference on Acoustics, Speech, and Signal Processing - April 6-10, 2003 - Hong Kong ( China).
+Hanna, Pierre. 2003. Modélisation statistique de sons bruités: etude de la densité spectrale, analyse, transformation musicale et synthèse. PhD thesis Université Bourdeaux I.
+Helen, Marko and Tuomas Virtanen. 2003. “Perceptually motivated parametric representation for harmonic sounds for data compression purposes.” DAFX03
+Kim, K. and I. Hwang. 2003. “A multiresolution ABS/OLA sinusoidal model using wavelet transform,” Signal Processing and Its Applications, 2003. Proceedings. Seventh International Symposium on, vol. 1, 2003.
+Lagrange, Mathieu; Sylvain Marchand, Martin Raspaud and Jean-Bernard Rault. 2003. “Enhanced partial tracking using linear prediction.” DAFX03.
+Laroche, Jean. 2003. “Frequency-domain techniques for high-quality voice modification.” DAFX03.
+Lee, Matthew E.; Mark J. T. Smith. 2003. “Spectral Modification for Digital Singing Voice Synthesis Using Asymmetric Generalized Gaussians.” ICASSP03.
+Merdjani, S. and L. Daudet. 2003. “Direct Estimation of Frequency from MDCT-Encoded Files.” DAFX03.
+Röbel, Axel. 2003.”A New Approach to Transient Processing in the Phase Vocoder.” DAFX03.
+Schuijers, Erik et al. 2003. “Advances in Parametric Coding for High-Quality Audio.” 114 th AES Convention 2003.
+Virtanen, Tuomas. 2003. “Algorithm for the Separation of Harmonic Sounds with Time-Frequency Smoothness Constraint.” DAFX03.
+Wells, Jeremy J. and Damian T. Murphy. 2003. “Real Time Spectral Expansion for Creative and Remedial Sound Transformation.” DAFX03.
+Abe, Mototsugu and Julius O. Smith III. 2004. “ Design Criteria for Simple Sinusoïdal Parameter Estimation based on Quadratic Interpolation of FFT Magnitude Peaks.” 117th Convention AES Convention.
+Abe, Mototsugu and Julius O. Smith III. 2004. "CQIFFT: Correcting Bias in a Sinusoidal Parameter Estimator based on Quadratic Interpolation of FFT Magnitude Peaks." REPORT NO. STAN-M-117, CCRMA, Stanford University.
+Amatriain, Xavier. 2004. An Object-Oriented Metamodel for Digital Signal Processing. PhD Thesis Pompeu Fabra University.
+Arroabarren Alemán, Ixone. 2004. Signal Processing Techniques for Singing Vibrato Modeling. PhD Thesis Universidad Pública de Navarra 2004.
+Boyer, Rémy, and Karim Abed-Meraim. 2004. “Audio Modeling Based on Delayed Sinusoids.” IEEE Transactions on Speech and Audio Processing, vol. 12, no. 2, march 2004.
+Duxbury, Chris et al. 2004. “Efficient Two-stage Implementation of Harmonic Matching Pursuit.” EUSIPCO2004.
+Hatch, W. 2004. “High-Level Audio Morphing Strategies,” Master thesis, McGill University, 2004.
+Jensen, Jesper and Richard Heusdens. 2004. “Differential Encoding of Sinusoidal Model Parameters for Multiple Successive Segments.” EUSIPCO 2004.
+Ki-Hong, Kim and In-Ho Hwang. 2004. “A Multi-resolution Sinusoidal Modeling Using Adaptive Analysis Frame.” EUSIPCO 2004.
+Lagrange, Mathieu, Sylvain Marchand, Martin Raspaud, and Jean-Bernard Rault. “Enhanced Partial Tracking Using Linear Prediction.” In Proceedings of the 6th International Conference on Digital Audio Effects. London, UK: DAFx-03, 2003, 402–405.
+Lagrange, Mathieu. 2004. Modelisation Sinusoidale des Sons Polyphoniques. PhD Thesis.
+Pampin, Juan. “ATS: A System for Sound Analysis Transformation and Synthesis Based on a Sinusoidal plus Crtitical-Band Noise Model and Psychoacoustics.” In Proceedings of the International Computer Music Conference. Miami, FL: ICMC, 2004, 402–405.
+Thibault, François and Philippe Depalle. 2004. “Adaptive Processing of Singing Voice Timbre.” CCECE 2004 – CCGEI 2004
+Zivanovic, Miroslav; Axel Roebel and Xavier Rodet. 2004. “A New Approach to Spectral Peak Classification.” EUSIPCO 2004.
+Janer, Jordi. 2005. “Voice-controlled plucked bass guitar through two synthesis techniques.” NIME 2005.
+Janer, Jordi and Alex Loscos. 2005. “Morphing Techniques for Enhanced Scat Singing.” DAFX 2005.
+Jang, H. and J. Park, “Multiresolution sinusoidal model with dynamic segmentation for timescale modification of polyphonic audio signals,” Speech and Audio Processing, IEEE Transactions on, vol. 13, no. 2, pp. 254–262, 2005.
+Klingbeil, Michael. 2005. “Software for Spectral Analysis, Editing and Synthesis.” ICMC 2005.
+Lagrange, Mathieu. 2005. “A New Dissimilarity metric for the Clustering of Partials Using the Common Variation Cue.” ICMC 2005.
+Lagrange et al. 2005. “Improving Sinusoidal Frequency Estimation Using a Trigonometric Approach.” DAFX 2005.
+Lazzarini, Victor; Joe Timoney and Tom Lysaght. 2005. “Alternative Analysis-Resynthesis Approaches for Timescale, Frequency and Other Transformations of Musical Signals.” DAFX 2005.
+Lazzarini, Victor; Joe Timoney and Tom Lysaght. 2005. “Time-Stretching Using the Instantaneous Frequency Distribution and Partial Tracking.” ICMC 2005.
+Loscos, Àlex and Óscar Celma. 2005. “Larynxophone: Using Voice as a Wind Controller.” ICMC 2005.
+Osaka , Naotoshi. 2005. “Concatenation and Stretch/Squeeze of Musical Instrumental Sound Using Sound Morphing.” ICMC 2005.
+Pavia , Pedro; Teresa Mendes and Amílcar Cardoso. 2005. “Exploiting Melodic Smoothness for Melody Detection in Polyphonic Audio.” ICMC 2005.
+Pavia , Pedro; Teresa Mendes and Amílcar Cardoso. 2005. “On the Definition of Musical Notes from Pitch Tracks for Melody Detection in Polyphonic Recordings.” DAFX 2005.
+Raspaud, Martin; Sylvain Marchand and Laurent Girin. 2005. “A Generalized Polynomial and Sinusoidal Model for Partial Tracking and Time Stretching.” DAFX 2005.
+Satar-Boroujeni, Hamid and Bahram Shafai. 2005. “A Robust Algorithm for Partial Tracking of Music Signals.” DAFX 2005.
+Timoney, Joe et al. 2005. “An Evaluation of Warping Techniques applied to Partial Envelope Analysis.” ICMC 2005.
+Verfaille,Vincent et al. 2005. “Perceptual Evaluation of Vibrato Models.” CIM 2005.
+Wright, Mathew and Julius O. Smith. 2005. “Open-Source Matlab Tools for Interpolation of SDIF Sinusoidal Synthesis Parameters.” ICMC 2005.
+Christensen, Mads Graesboll and Soren Holdt Jensen. 2006. “New Results in Rate-Distortion Optimized Parametric Audio Coding.” AES 120 th Convention, 2006.
+Dressler, Karin. 2006. “Sinusoidal Extraction Using and Efficient Implementation of a Multi-Resolution FFT.” DAFX 2006 .
+Every, Mark. 2006. Separation of musical sources and structure from single-channel polyphonic recordings. PhD Thesis University of York 2006.
+Janer, Jordi; Jordi Bonada and Merlijn Blaauw. 2006. “Performance-Driven Control for Sample-based Singing Voice Synthesis.” DAFX 2006
+Klapuri, Anssi and Manuel Davy. 2006. Signal Processing Methods for Music Transcription. Springer.
+Meurisse, Guillaume; Pierre Hanna and Sylvain Marchand. 2006. “A New Analysis Method for Sinusoids+Noise Spectral Models.” DAFX 2006.
+Misra, Ananya; Perry R. Cook and Ge Wang. 2006. “A New Paradigm for Sound Design.” DAFX 2006.
+Misra, Ananya, Perry R. Cook, and Ge Wang. 2006. “Musical Tapestry: Re-composing Natural Sounds.” In Proceedings of the International Computer Music Conference. ICMC, 2006.
+Van Nort, Doug and Philippe Depalle. 2006. “A Stochastic State-Space Phase Vocoder for Synthesis of Roughness.” DAFX 2006.
+Xue, Wen and Mark Sandler. 2006. “Error Compensation in Modeling Time-Varying Sinusoids.” DAFX 2006.
+Wells, Jeremy J. and Damian T. Murphy. 2006. "High Accuracy Frame-by-Frame Non-stationary Sinusoidal Modelling." DAFX 2006.
+Bonada, Jordi, and Xavier Serra. 2007. “Synthesis of the Singing Voice by Performance Sampling and Spectral Models.” IEEE Signal Processing Magazine 24, 2: (2007) 67–79.
+Lagrange, Mathieu; Sylvain Marchand, and Jean-Bernard Rault. 2007. “Enhancing the Tracking of Partials for the Modeling of Polyphonic Sounds.” IEEE Transactions on Audio, Speech, and Signal Processing 15, 5: (2007) 1625–1634.
+Lindemann, Eric. 2007. "Music Synthesis with Reconstructive Phrase Modeling". IEEE Signal Processing Magazine, 24(2):80 – 91, March 2007.
+Xue, Wen, and M. Sandler. 2007. "Sinusoid modeling in a harmonic context," in Proceedings of DAFx'07, Bordeaux, 2007.
+Klingbeil, Michael Kateley. 2009. Spectral Analysis, Editing and Resynthesis: Methods and Applications. PhD thesis, Columbia University, Graduate School of Arts and Sciences, 2009.
+Hahn, H.; A. Roebel, J. J. Burred, and S. Weinzierl. 2010. "Source filter model for quasi-harmonic instruments". In Proc. of the 13th Int. Conference on Digital Audio E↵ects (DAFx-10) , September 2010.
+Yeh, Chunghsin; Axel Roebel, and Xavier Rodet. 2010. "Multiple Fundamental Frequency Estimation and Polyphony Inference of Polyphonic Signals". IEEE Transactions on Audio, Speech, and Language Processing, 18(6):1116 – 1126, August 2010.
+Hidden
+About us
+Contact
+Who we are
+Values
+Intranet
+Join us
+Study with us
+Work with us
+Follow us
+All content is licensed under a
+unless otherwise specified.
+​​​​​​
+© Universitat Pompeu Fabra
+Barcelona
+T.(+34) 93 542 20 00
+Legal notice
+Accessibility
+Technical note
+We use cookies to deliver personalized content, analyze trends, administer the site, track user movements on the site, and collect demographic information about our user base as a whole. Accept all cookies for the best possible experience on our website or manage your preferences.
+Legal notice
+Configuration
+Accept All
+Decline All

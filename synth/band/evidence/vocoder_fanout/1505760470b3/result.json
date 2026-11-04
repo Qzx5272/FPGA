@@ -1,0 +1,201 @@
+{
+  "status": "passed_synthesis_only",
+  "build": "D:\\StarclusterBuilds\\vocoder_fanout_syn_1505760470b3",
+  "started": "2026-10-26T08:57:03.440021",
+  "sources": {
+    "double_biquad.sv": "c6d502f112bedbdd89e390ac20bd0cf386f1e7c642f1041c0735f038a89d2def",
+    "filterbank.sv": "d026fd50cec47d2ac97281f699bbc6c61b2e557903b56270838da4c73d1be3f6",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "vocoder_core.sv": "9458dd3d05d6863060405d22bb4f79df687f984db8f2a51a7da31d191674bcdd",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "baseline_sources": {
+    "double_biquad.sv": "c6d502f112bedbdd89e390ac20bd0cf386f1e7c642f1041c0735f038a89d2def",
+    "filterbank.sv": "f5fe4cb746905a12af680891f4f1fafa0038a7eb9211cc7e0011d388a2145997",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "vocoder_core.sv": "9458dd3d05d6863060405d22bb4f79df687f984db8f2a51a7da31d191674bcdd",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "maxfan": 64,
+  "scope": "Isolated synthesis only; attribute effectiveness must be measured. No numerical, fulltop routing, physical or production acceptance.",
+  "reference": "Gowin SUG550-2.4E section5.11: syn_maxfan signal attribute; excludes clock/CE/reset/set.",
+  "netlist_sha256": "e3bb9d471e0946ca98271a414f9f9eda22fb2da3012970a32a4bfe8fecc9971a",
+  "high_lut_input_fanout": [
+    {
+      "module": "filterbank",
+      "signal": "n78722_8",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n78050_5",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n78722_7",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n78050_4",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n86354_10",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n86354_11",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n87007_14",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n82690_2060",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n87007_16",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "rst_in_d_6",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n87007_15",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "rst_in_d_5",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "rst_in_d_4",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n82690_2062",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "rst_in_d_3",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n82690_2061",
+      "loads": 1000
+    },
+    {
+      "module": "filterbank",
+      "signal": "n52232_19",
+      "loads": 745
+    },
+    {
+      "module": "filterbank",
+      "signal": "n52232_29",
+      "loads": 744
+    },
+    {
+      "module": "vocoder_mixer",
+      "signal": "busy",
+      "loads": 607
+    },
+    {
+      "module": "vocoder_mixer",
+      "signal": "bank_valid",
+      "loads": 532
+    },
+    {
+      "module": "vocoder_mixer",
+      "signal": "index[3]",
+      "loads": 506
+    },
+    {
+      "module": "filterbank",
+      "signal": "n82690_2059",
+      "loads": 501
+    },
+    {
+      "module": "filterbank",
+      "signal": "n87007_13",
+      "loads": 501
+    },
+    {
+      "module": "filterbank",
+      "signal": "n82690_2063",
+      "loads": 501
+    },
+    {
+      "module": "filterbank",
+      "signal": "n87007_17",
+      "loads": 501
+    },
+    {
+      "module": "vocoder_mixer",
+      "signal": "rst_in_d_2",
+      "loads": 416
+    },
+    {
+      "module": "filterbank",
+      "signal": "n53190_15",
+      "loads": 128
+    },
+    {
+      "module": "filterbank",
+      "signal": "n54214_15",
+      "loads": 128
+    },
+    {
+      "module": "filterbank",
+      "signal": "n55238_15",
+      "loads": 128
+    },
+    {
+      "module": "filterbank",
+      "signal": "n78050_2",
+      "loads": 125
+    },
+    {
+      "module": "vocoder_mixer",
+      "signal": "rst_in_d_13",
+      "loads": 114
+    },
+    {
+      "module": "filterbank",
+      "signal": "rst_in_d_7",
+      "loads": 105
+    },
+    {
+      "module": "filterbank",
+      "signal": "n78210_3",
+      "loads": 73
+    },
+    {
+      "module": "double_biquad_14",
+      "signal": "state[2]",
+      "loads": 71
+    },
+    {
+      "module": "double_biquad_0",
+      "signal": "state[5]",
+      "loads": 65
+    }
+  ],
+  "finished": "2026-10-26T08:58:27.129073"
+}

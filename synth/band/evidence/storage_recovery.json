@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-23T12:22:42.905044",
+  "description": "Earlier disk-full event invalidated running output streams. Completed immutable-source evidence retained; affected long simulations stopped and superseded by 011fdd8d0016 successful complete reruns. Reproducible inactive placement databases and netlists removed to recover space. Report generator restored using delivered editable DOCX template.",
+  "verified_current": [
+    "97s full/fast complete PCM identity",
+    "60s stress complete PCM length"
+  ]
+}

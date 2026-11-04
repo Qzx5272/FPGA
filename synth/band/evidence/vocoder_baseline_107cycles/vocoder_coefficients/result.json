@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "scope": "Quantized coefficients and linear transfer functions only; not fixed-point limit cycles or hardware audio",
+  "upstream_envelope_dc_gain": 0,
+  "upstream_defect": "Generator writes highpass row17 but omits lowpass row18; filterbank uses row17 as envelope LPF",
+  "sample_rate": 48000,
+  "coefficient_fraction_bits": 20,
+  "filters": [
+    {
+      "index": 0,
+      "max_pole_radius": 0.9992549027739486,
+      "peak_hz": 57.85743032563915,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.07494460866834092,
+      "gain_1khz": 0.00032883164976965586
+    },
+    {
+      "index": 1,
+      "max_pole_radius": 0.998985252508266,
+      "peak_hz": 78.82923888249273,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.40705748945569376,
+      "gain_1khz": 0.000613051918927456
+    },
+    {
+      "index": 2,
+      "max_pole_radius": 0.99861812480031,
+      "peak_hz": 108.75342104294276,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.9700904627349927,
+      "gain_1khz": 0.0011491614652604433
+    },
+    {
+      "index": 3,
+      "max_pole_radius": 0.9981185379726831,
+      "peak_hz": 149.10246403569377,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.1509672967719879,
+      "gain_1khz": 0.0021764509593948747
+    },
+    {
+      "index": 4,
+      "max_pole_radius": 0.9974384879743113,
+      "peak_hz": 202.19841050723403,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.04223180696104796,
+      "gain_1khz": 0.0041938308119429364
+    },
+    {
+      "index": 5,
+      "max_pole_radius": 0.9965134876982603,
+      "peak_hz": 271.6439910948032,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.017134763146490036,
+      "gain_1khz": 0.008368800802004039
+    },
+    {
+      "index": 6,
+      "max_pole_radius": 0.9952542226548965,
+      "peak_hz": 374.17715750599325,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.008062844369823016,
+      "gain_1khz": 0.017910424722981867
+    },
+    {
+      "index": 7,
+      "max_pole_radius": 0.9935423244144318,
+      "peak_hz": 509.01084859445234,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.004053156862238395,
+      "gain_1khz": 0.0446221137422925
+    },
+    {
+      "index": 8,
+      "max_pole_radius": 0.9912143049511765,
+      "peak_hz": 692.4314827601272,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.0021074474550680854,
+      "gain_1khz": 0.16482032128842874
+    },
+    {
+      "index": 9,
+      "max_pole_radius": 0.9880510748198378,
+      "peak_hz": 941.9472289074776,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.001115387681070525,
+      "gain_1khz": 0.9877886242887418
+    },
+    {
+      "index": 10,
+      "max_pole_radius": 0.9837542802070462,
+      "peak_hz": 1279.3751611691685,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.000596399471979159,
+      "gain_1khz": 0.35992392099042425
+    },
+    {
+      "index": 11,
+      "max_pole_radius": 0.9779199549832758,
+      "peak_hz": 1740.394418510039,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.00032104599041716224,
+      "gain_1khz": 0.07040255913778996
+    },
+    {
+      "index": 12,
+      "max_pole_radius": 0.969997955792033,
+      "peak_hz": 2371.2419752193578,
+      "dc_gain": 0.0,
+      "gain_100hz": 0.0001738657180395716,
+      "gain_1khz": 0.02550893867091113
+    },
+    {
+      "index": 13,
+      "max_pole_radius": 0.9592319642837758,
+      "peak_hz": 3245.9314372239196,
+      "dc_gain": 0.0,
+      "gain_100hz": 9.48917023481155e-05,
+      "gain_1khz": 0.011542491578533633
+    },
+    {
+      "index": 14,
+      "max_pole_radius": 0.9445560676084597,
+      "peak_hz": 4401.8197919587765,
+      "dc_gain": 0.0,
+      "gain_100hz": 5.244844738592953e-05,
+      "gain_1khz": 0.005806439999800704
+    },
+    {
+      "index": 15,
+      "max_pole_radius": 0.9243931403453189,
+      "peak_hz": 6025.536572408098,
+      "dc_gain": 0.0,
+      "gain_100hz": 2.9649723757158037e-05,
+      "gain_1khz": 0.0031256670463971886
+    },
+    {
+      "index": 16,
+      "max_pole_radius": 0.9950031368647063,
+      "peak_hz": 37.77018027253843,
+      "dc_gain": 1.0,
+      "gain_100hz": 0.7059208631614069,
+      "gain_1khz": 9.928073743329978e-05
+    }
+  ],
+  "upstream_sha256": "9113a5725dc324c7bfc903ce57ac55335e4bad011dab2b66b63e27356e61690e",
+  "corrected_sha256": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+}

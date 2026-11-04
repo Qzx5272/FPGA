@@ -1,0 +1,59 @@
+星群 ORCHESTRA138 V3 研究与工程验证入口
+工作目录：C:\Users\Qzx\Documents\ChatGPT\FPGA
+
+证据范围
+本目录是研究与独立候选实现。生产 RTL 未替换，未烧录板卡。
+PDF 中的整机声部数、资源与周期是设计预算；独立综合不等于布局布线或整机达标。
+歌声控制 JSON 不含音频，也不是完整普通话歌唱库。
+
+环境
+Python：C:/Users/Qzx/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+Python 库：numpy、reportlab、Pillow、pypdf、pypdfium2。
+RTL 仿真：tmp/oss-cad-suite/bin/iverilog.exe 与 vvp.exe；运行前将 bin、lib 加入 PATH。
+高云综合：D:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe
+器件：GW5AST-138B / GW5AST-LV138FPG676AC1/I0。
+
+参考模型脚本（在项目根目录执行 python synth/research/20261017/<脚本名>）
+deep_numeric.py：DDS 与极点量化网格。
+filter_mitigation.py：状态宽度与旋转结构对尾值的影响。
+string_calibration.py：1408 组量化系数的环路调音与衰减。
+string_time_domain.py：16 组、每组 8 秒的浮点状态时域环路。
+envelope_reference.py：1 ms 至 60 s 包络与余数累积。
+finite_control.py：有限接触槽、事件重排与租约。
+song_timing.py：有界音素时长分配和原创新歌词短句控制记录。
+arranger_reference.py：90 秒有限规则乐团、模拟双人输入与接管。
+vocal_filter_audit.py：工程起始元音参数的静态系数、频响与余量估计。
+fdn_reference.py：固定延迟/固定系数、8 秒定点混响脉冲递推。
+architecture_budget.py：两档资源与依赖周期预算。
+
+长时试验
+stress_filters.py --seconds 7200
+它会持续探索新的随机参数，实际运行至少两小时，不通过 sleep 凑时长。
+该命令会重新写 deep/filter_stress_progress.json 与 anomalies.jsonl；保留本轮记录时先复制整个 deep 目录。
+summarize_stress.py：按系数精度与切换长度汇总；最终结果应在试验完成后运行。
+此试验使用 23 位状态小数，目的为问题定位；不冒称完成 V3 宽位整机验证。
+
+RTL 向量生成
+generate_sine_fixture.py、generate_modal_fixture.py、generate_envelope_fixture.py。
+进入 synth/research/20261017/deep/rtl 后：
+iverilog -g2012 -DQUARTER -s tb_hq_sine -o hq_quarter_tb.vvp hq_sine_quarter.v tb_hq_sine.sv
+vvp hq_quarter_tb.vvp
+iverilog -g2012 -s tb_modal -o modal_tb.vvp modal_rotation.v tb_modal.sv
+vvp modal_tb.vvp
+iverilog -g2012 -s tb_envelope -o envelope_tb.vvp envelope_step.v tb_envelope.sv
+vvp envelope_tb.vvp
+iverilog -g2012 -s tb_i2s24 -o i2s24_tb.vvp i2s24_tx.v tb_i2s24.sv
+vvp i2s24_tb.vvp
+
+高云独立综合
+gw_sh.exe synth/research/20261017/deep/rtl/synth_quarter.tcl
+gw_sh.exe synth/research/20261017/deep/rtl/synth_modal.tcl
+gw_sh.exe synth/research/20261017/deep/rtl/synth_envelope.tcl
+结果位于 deep/rtl/impl/gwsynthesis；Fmax 是综合估计，不是 P&R 或上板数据。
+
+报告构建
+reading_notes.py -> architecture_budget.py -> summarize_stress.py -> build_deep_design.py -> render_review.py
+PDF：output/pdf/ORCHESTRA138_V3_FPGA_Engineering.pdf
+文本伴随文件：output/pdf/ORCHESTRA138_V3_FPGA_Engineering.txt
+版面检查图：tmp/pdfs/orchestra_v3/current_*.png
+正文：deep_chapters.py；研究账本：deep/reading_notes.json。

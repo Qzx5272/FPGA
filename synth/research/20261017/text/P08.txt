@@ -1,0 +1,61 @@
+From Fiction to Function: Imagining New Instruments through Design Workshops – IDMIL
+News
+People
+Projects
+Publications
+Videos
+Presentations
+Demos
+Performances
+Software
+GitHub
+Archive
+Members
+News
+People
+Projects
+Publications
+Videos
+Presentations
+Demos
+Performances
+Software
+GitHub
+Archive
+Members
+From Fiction to Function: Imagining New Instruments through Design Workshops
+category
+author
+John Sullivan
+Download available
+Authors:
+John Sullivan, Marcelo M. Wanderley, Catherine Guastavino
+Publication or Conference Title:
+Computer Music Journal
+Abstract:
+This article introduces a series of workshop activities carried out with expert musicians to imagine new musical instruments through design fiction. At the workshop, participants crafted nonfunctional prototypes of instruments they would want to use in their own performance practice. Through analysis of the workshop activities, a set of design specifications was developed that can be applied to the design of new digital musical instruments intended for use in real-world artistic practice. In addition to generating tangible elements for instrument design, the theories and models utilized, drawn from human–computer interaction and human-centered design, are offered as a possible model for merging the generation of creative ideas with functional design outputs in a variety of applications within and beyond music and the arts.
+Publication Details:
+Type:
+Journal Paper
+Date:
+06/26/2023
+Publisher:
+MIT Press
+DOI:
+10.1162/comj_a_00644
+Info
+Input Devices and Music Interaction Laboratory
+Schulich School of Music
+McGill University
+550 Rue Sherbrooke Ouest, Suite 500
+Montreal, QC, H3A 1E3
+Canada
+CONTACT US!
+Links
+www-archive.idmil.org (archive site)
+McGill University Music Technology Area
+Center for Interdisciplinary Research in Music Media and Technology (CIRMMT)
+Institut national de recherche en informatique et en automatique (INRIA)
+New Interfaces for Musical Expression (NIME)
+Search the site
+Search for:

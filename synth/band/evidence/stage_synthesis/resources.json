@@ -1,0 +1,12 @@
+{
+  "scope": "Synthesis estimates BEFORE stable selector; no physical resource/timing acceptance",
+  "logic": 64870,
+  "lut": 52128,
+  "alu": 12742,
+  "registers": 39383,
+  "latches": 0,
+  "synthesis_ram_primitives": 160,
+  "multalu27x18": 67,
+  "mult12x12": 2,
+  "mult27x36": 58
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Bit-exact filterbank simulation only, no mixer, board, analog audio or long-tail stability claim",
+  "samples": 4096,
+  "bands": 16,
+  "peak_reference": 4062137,
+  "last_96_samples_tail_peak": 6019,
+  "sha256": {
+    "synth\\band\\experimental\\vocoder\\ported\\filterbank.sv": "d240ebeb726d269fc8a4bda18de72e26f7e8d7718620d968a67449b72b73f992",
+    "synth\\band\\experimental\\vocoder\\ported\\double_biquad.sv": "b4b966bbdc302e3c4f49443a5e36fa4a825e7a56787428f1c7bf4f944e58b28e",
+    "synth\\band\\experimental\\vocoder\\ported\\coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab",
+    "synth\\band\\tools\\test_vocoder_filterbank.py": "2afd6dee4e3b46b89180bc845e1b9bf758f2dbc8a37ad093e7a605a66ffdf8c0"
+  },
+  "log": "PASS4096 samples x16 bands; busy input rejection, mid-transaction reset; maxcycles=90\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_filterbank\\tb.sv:44: $finish called at 7536940000 (1ps)\n"
+}

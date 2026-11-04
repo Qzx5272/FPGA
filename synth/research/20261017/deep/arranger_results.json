@@ -1,0 +1,26 @@
+{
+  "scope": "event reference with planned synthetic performer inputs; no audio, RTL or board performance claim",
+  "duration_seconds": 90,
+  "bpm": 96,
+  "bars": 36,
+  "event_count": 1594,
+  "maximum_voice_leading_candidates": 12,
+  "maximum_simultaneous_slots_including_release": 11,
+  "maximum_reserved_partials_including_release": 848,
+  "maximum_events_same_sample": 11,
+  "maximum_events_in_5ms": 11,
+  "stale_events_rejected": 2,
+  "starts_after_frontend_disconnect": 114,
+  "active_at_end": 0,
+  "release_tail_reservation_samples": 2400,
+  "machine_interaction_rules": [
+    "bass velocity follows drum accent",
+    "vocal breath permits drum fill",
+    "chord voices minimize bounded movement below lead register"
+  ],
+  "limitations": [
+    "fixed 96 BPM score; tempo-change and following require separate tests",
+    "lyrics phonemes live in song_control_example.json; four vocal note tracks here do not synthesize words",
+    "partial allocations and 50 ms release are patch assumptions, not measured realism"
+  ]
+}

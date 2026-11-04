@@ -1,0 +1,28 @@
+{
+  "status": "passed_internal_timing_only",
+  "scope": "Standalone internal50MHz timing only; auto-placed other IO, no external delays, NEVER PROGRAM THIS BITSTREAM",
+  "sources": {
+    "double_biquad.sv": "2fd41daadb3e5ce0072fdc90fd6352ae9eb474a2d31d99dce212d4e5f9c58ca6",
+    "filterbank.sv": "d240ebeb726d269fc8a4bda18de72e26f7e8d7718620d968a67449b72b73f992",
+    "vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "vocoder_core.sv": "98366afbe5d606ba270478817d740e9fa44338bc6e38df4b5ad66cab90660a87",
+    "coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab"
+  },
+  "build": "D:\\StarclusterBuilds\\vocoder_core_pnr_0b003a16dc38_netlist",
+  "started": "2026-10-25T17:15:25.998321",
+  "returncode": 0,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "frequencies": [
+    "50.000(MHz)",
+    "56.251(MHz)"
+  ],
+  "synthesis_reran": true,
+  "physical_resources": {
+    "logic": 19898,
+    "registers": 10972,
+    "dsp_blocks": 52,
+    "dsp_capacity": 298,
+    "MULT27X36": 26
+  }
+}

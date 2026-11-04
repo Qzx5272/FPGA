@@ -1,0 +1,19 @@
+{
+  "status": "passed_internal_timing_only",
+  "build": "D:\\StarclusterBuilds\\dvi_output_pnr_e46eac9479a7",
+  "source_build": "D:\\StarclusterBuilds\\gowin_dvi_output_syn_4e8149005b2c",
+  "frozen_netlist_sha256": "7cd7ba0735c386c1f47067fbd004fd083b330d8d3074276e0646dffaca13f826",
+  "source_matched_simulation": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\gowin_dvi_clocked\\20261026_070636\\result.json",
+  "simulation_report_sha256": "4ef8b61a8e29dffb8d2d1ff3953a4a786b6a7149f9ed70e0d22aa47034cb46b8",
+  "scope": "Small clocked DVI boundary,officialHDMI0 pins and3 explicit related clocks. No fullband,external RGB input timing,physical display/jitter or programming acceptance.",
+  "started": "2026-10-26T07:06:52.473715",
+  "returncode": 0,
+  "actual_clocks": {
+    "reference_clk": 20.0,
+    "serial_clk": 7.937,
+    "pixel_clk": 39.683
+  },
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "finished": "2026-10-26T07:07:20.687045"
+}

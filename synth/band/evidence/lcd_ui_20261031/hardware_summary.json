@@ -1,0 +1,15 @@
+{
+  "frames": 1584,
+  "max_voices": 3,
+  "max_rejected": 0,
+  "max_deadline_miss": 0,
+  "max_clips": 0,
+  "capture_result": {
+    "passive": true,
+    "frames": {
+      "128": 1516,
+      "161": 67
+    },
+    "bad_crc": 0
+  }
+}

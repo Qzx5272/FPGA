@@ -1,0 +1,6 @@
+IO_LOC "clk" P16;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+CLOCK_LOC "band/engine/core/electronic_singer/audio/voice_core/bank/state_1_13" LOCAL_CLOCK;
+CLOCK_LOC "band/engine/core/electronic_singer/audio/voice_core/bank/state_1_14" LOCAL_CLOCK;
+CLOCK_LOC "band/engine/core/electronic_singer/audio/voice_core/bank/state_0_13" LOCAL_CLOCK;
+CLOCK_LOC "band/engine/core/electronic_singer/audio/voice_core/bank/state_0_14" LOCAL_CLOCK;

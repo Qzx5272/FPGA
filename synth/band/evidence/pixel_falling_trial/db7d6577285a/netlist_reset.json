@@ -1,0 +1,38 @@
+{
+  "status": "passed_structure_only",
+  "netlist_sha256": "d7537d484640ff27a9dca00022cc4deb507f908655911c5e69a93ccda1b263c8",
+  "inverted_pixel_net": "n44_6",
+  "registers": [
+    {
+      "kind": "DFFCE",
+      "name": "warmup_2_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_1_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_0_s0",
+      "clock": "pixel_clk"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "pixel_release_1_s0",
+      "clock": "n44_6"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "pixel_release_0_s0",
+      "clock": "n44_6"
+    },
+    {
+      "kind": "DFFCE",
+      "name": "warmup_3_s0",
+      "clock": "pixel_clk"
+    }
+  ],
+  "scope": "Synthesis structure confirms falling-edge pixel release; routing and physical recovery/removal not accepted"
+}

@@ -1,0 +1,368 @@
+{
+  "status": "analysis_only",
+  "build": "D:\\StarclusterBuilds\\combined_workstation_pnr_006d0f90662f",
+  "scope": "Vendor reported top-N path diagnosis; no timing exception applied, no CDC/physical acceptance",
+  "total_violated_endpoints": {
+    "setup": 0,
+    "hold": 0
+  },
+  "reported_negative_paths": 0,
+  "reported_negative_classes": {},
+  "paths": [
+    {
+      "check": "SETUP",
+      "slack_ns": 0.015,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_0_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.015,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.015,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_2_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.015,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_5_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.099,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_6_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.117,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_0_G[59]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.156,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[5]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.156,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[4]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.171,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/banks[3].unit/allocator/key_2_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.171,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/banks[3].unit/allocator/key_5_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.177,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_0_G[58]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.177,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/banks[3].unit/allocator/key_0_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.177,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/banks[3].unit/allocator/key_1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.177,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/banks[3].unit/allocator/key_7_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.187,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_0_G[131]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.196,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_0_G[227]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.27,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_3_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.271,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_0_G[50]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.271,
+      "launch": "band/engine/local_inputs.panic_sync_1_s0",
+      "capture": "band/engine/wet_4_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.303,
+      "launch": "band/engine/local_inputs.performer/pedal/out_valid_s1",
+      "capture": "band/engine/core/ownership/epochs_epochs_RAMREG_1_G[34]_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.305,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/electronic_singer/audio/voice_core/bank/x_n2[15]_0_s2",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.323,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[8]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.323,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[7]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.323,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[3]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "SETUP",
+      "slack_ns": 0.323,
+      "launch": "band/clock_watch/fault_s1",
+      "capture": "band/engine/core/held_sample_held_sample_RAMREG_2_G[2]_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.157,
+      "launch": "band/output_audio/underruns_audio_domain_0_s1",
+      "capture": "band/output_audio/under1_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.184,
+      "launch": "band/engine/core/electronic_singer/notes/allocator/vel_3_s0",
+      "capture": "band/engine/core/electronic_singer/notes/allocator/note_note_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.184,
+      "launch": "band/engine/core/electronic_singer/notes/allocator/pitch_0_s0",
+      "capture": "band/engine/core/electronic_singer/notes/allocator/note_note_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.184,
+      "launch": "band/engine/core/banks[4].unit/allocator/ep_4_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.184,
+      "launch": "band/engine/core/banks[4].unit/allocator/ep_1_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.185,
+      "launch": "band/engine/core/electronic_singer/notes/allocator/ep_0_s0",
+      "capture": "band/engine/core/electronic_singer/notes/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.186,
+      "launch": "band/engine/local_inputs.performer/performer/manual_serial_20_s0",
+      "capture": "band/engine/local_inputs.performer/performer/gowin_add_SDPX9B_serials_serials_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.186,
+      "launch": "band/engine/local_inputs.performer/performer/manual_epoch_0_s0",
+      "capture": "band/engine/local_inputs.performer/performer/serials_serials_0_1_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.187,
+      "launch": "band/engine/local_inputs.performer/performer/manual_serial_23_s0",
+      "capture": "band/engine/local_inputs.performer/performer/gowin_add_SDPX9B_serials_serials_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.187,
+      "launch": "band/engine/local_inputs.performer/performer/manual_epoch_1_s0",
+      "capture": "band/engine/local_inputs.performer/performer/serials_serials_0_1_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.187,
+      "launch": "band/engine/core/banks[4].unit/allocator/seq_24_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.187,
+      "launch": "band/engine/core/banks[6].unit/allocator/seq_18_s0",
+      "capture": "band/engine/core/banks[6].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.187,
+      "launch": "band/engine/core/banks[4].unit/allocator/src_0_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.191,
+      "launch": "band/engine/core/banks[4].unit/allocator/ep_9_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.193,
+      "launch": "band/engine/local_inputs.performer/performer/manual_serial_21_s0",
+      "capture": "band/engine/local_inputs.performer/performer/gowin_add_SDPX9B_serials_serials_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.193,
+      "launch": "band/engine/core/banks[4].unit/allocator/ep_2_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.194,
+      "launch": "band/engine/core/electronic_singer/notes/allocator/vel_4_s0",
+      "capture": "band/engine/core/electronic_singer/notes/allocator/note_note_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.195,
+      "launch": "band/engine/receiver/payload_69_s0",
+      "capture": "band/engine/core/score/storage/times_times_0_10_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.196,
+      "launch": "band/engine/core/banks[4].unit/allocator/seq_22_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.197,
+      "launch": "band/engine/core/banks[7].unit/allocator/seq_20_s0",
+      "capture": "band/engine/core/banks[7].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.201,
+      "launch": "band/engine/core/banks[4].unit/allocator/ep_15_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/gowin_add_SDPB_source_source_0_0_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.201,
+      "launch": "band/engine/core/banks[6].unit/allocator/seq_25_s0",
+      "capture": "band/engine/core/banks[6].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.203,
+      "launch": "band/engine/core/banks[2].unit/allocator/next_generation_16_s0",
+      "capture": "band/engine/core/banks[2].unit/allocator/gowin_add_SDPB_generation_generation_0_0_s0",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.205,
+      "launch": "band/engine/core/banks[6].unit/allocator/seq_31_s0",
+      "capture": "band/engine/core/banks[6].unit/allocator/source_source_0_2_s",
+      "classification": "unclassified"
+    },
+    {
+      "check": "HOLD",
+      "slack_ns": 0.205,
+      "launch": "band/engine/core/banks[4].unit/allocator/src_2_s0",
+      "capture": "band/engine/core/banks[4].unit/allocator/source_source_0_0_s",
+      "classification": "unclassified"
+    }
+  ],
+  "sources": {
+    "combined_workstation.timing_paths": "bdaa3d4b4df7ddf82f367848bcd78e056fd0e5b810d6c93d760655e1a24b5070",
+    "combined_workstation_tr_content.html": "db8252bede0eaae2447f1a896324b8150d0ba0ca220df58c9ce402a4ba16d38d",
+    "analyze_stage_paths.py": "3bba0bbe49ce1f995712794c7d859bdc8b1815c0f712df01982faec02f892c61"
+  }
+}

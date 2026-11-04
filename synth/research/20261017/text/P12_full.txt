@@ -1,0 +1,863 @@
+=== PAGE 1 ===
+The Synthesis of Complex Audio Spectra by Means of Frequency Modulation
+Author(s): JOHN M. CHOWNING
+Source: Computer Music Journal, Vol. 1, No. 2 (April, 1977), pp. 46-54
+Published by: The MIT Press
+Stable URL: http://www.jstor.org/stable/23320142 .
+Accessed: 09/01/2015 01:36
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at .
+http://www.jstor.org/page/info/about/policies/terms.jsp
+ .
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of
+content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms
+of scholarship. For more information about JSTOR, please contact support@jstor.org.
+ .
+The MIT Press is collaborating with JSTOR to digitize, preserve and extend access to Computer Music
+Journal.
+http://www.jstor.org 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 2 ===
+The Synthesis of Complex Audio Spectra 
+by Means of Frequency Modulation* 
+JOHN M. CHOWNING 
+Stanford Artificial Intelligence Laboratory, Stanford. California 
+An application of the well-known process of frequency 
+modulation is shown to result in a surprising control of 
+audio spectra. The technique provides a means of great 
+simplicity to control the spectral components and their 
+evolution in time. Such dynamic spectra are diverse in 
+their subjective impressions and include sounds both 
+known and unknown. 
+INTRODUCTION: Of interest in both acoustical re 
+search and electronic music is the synthesis of natural 
+sound. For the researcher, it is the ultimate test of acous 
+tical theory, while for the composer of electronic music 
+it is an extraordinarily rich point of departure in the 
+domain of timbre, or tone quality. The synthesis of natur 
+al sounds has been elusive; however, recent research in 
+computer analysis and synthesis of some tones of mu 
+sical instruments [1] has yielded an insight which may 
+prove to have general relevance in all natural sounds: the 
+character of the temporal evolution of the spectral com 
+ponents is of critical importance in the determination of 
+timbre. 
+In natural sounds the amplitudes of the frequency com 
+ponents of the spectrum are time-variant, or dynamic. 
+The energy of the components often evolve in compli 
+cated ways; in particular, during the attack and decay 
+portions of the sound. The temporal evolution of the 
+spectrum is in some cases easily followed as with bells, 
+whereas in other cases not, because the evolution oc 
+curs in a very short time period, but it is nevertheless 
+perceived and is an important cue in the recognition of 
+timbre. Many natural sounds seem to have characteris 
+tic spectral evolutions which, in addition to providing 
+their "signature," are largely responsible for what we 
+judge to be their lively quality. In contrast, it is large 
+ly the fixed proportion spectrum of most synthesized 
+sounds that so readily imparts to the listener the elec 
+tronic cue and lifeless quality. 
+The special application of the equation for frequency 
+modulation, described below, allows the production of 
+complex spectra with very great simplicity. The fact 
+that the temporal evolution of the frequency compo 
+nents of the spectrum can be easily controlled is perhaps 
+the most striking attribute of the technique, for dy 
+namic spectra are achieved only with considerable dif 
+ficulty using current techniques of synthesis. At the end 
+of this paper some simulations of brass, woodwind, and 
+percussive sounds are given. The importance of these 
+simulations is as much in their elegance and simplicity 
+as it is in their accuracy. This frequency modulation 
+technique, although not a physical model for natural 
+sound, is shown to be a very powerful perceptual model 
+for at least some. 
+FREQUENCY MODULATION 
+Frequency modulation (FM) is well-understood as ap 
+plied in radio transmission, but the relevant equations 
+have not been applied in any significant way to the 
+generation of audio spectra where both the carrier and 
+the modulating frequencies are in the audio band and 
+the side frequencies form the spectrum directly. 
+In FM, the instantaneous frequency of a carrier wave 
+is varied according to a modulating wave, such that the 
+rate at which the carrier varies is the frequency of the 
+modulating wave, or modulating frequency. The amount 
+the carrier varies around its average, or peak frequency 
+deviation, is proportional to the amplitude of the modu 
+lating wave. The parameters of a frequency-modulated 
+signal are . 
+c = carrier frequency or average frequency 
+m = modulating frequency 
+d = peak deviation. 
+AMPLITUDE 
+1a 
+1*0 .5 
+1=1 .5 
+f I , 
+c-3m c-2m c-m c c+m c+2m c+3m 
+1=2 .5 
+11111 
+c-2m c c+2m 
+1=3 .5 
+1 T r T 1 
+I«4 .5 - 
+t T 1 T , 1 . 1 1 T t 
+c-5m c c+5m 
+e. 
+Fig. 1. Example to show increasing bandwidth with in 
+creasing modulation index, J. The upper and lower side fre 
+quencies are at intervals of the modulating frequency, m, and 
+are symmetrical around the carrier, c. 
+* Reprinted with permission from the Journal of the Audio Engi 
+neering Society, Volume 21, No. 7, September 1973. Copyright 
+1973 by the Audio Engineering Society. 
+Page 46 Computer Music Journal, Box E, Menlo Park, CA 94025 April, 1977 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 3 ===
+The equation for a frequency-modulated wave of peak 
+amplitude A where both the carrier and modulating 
+waves are sinusoids is 
+e = A sin (a/ + I sin/8/) (1) 
+where 
+e = the instantaneous amplitude of the modu 
+lated carrier 
+a = the carrier frequency in rad/s 
+ß = the modulating frequency in rad/s 
+1 = d/m = the modulation index, the ratio of 
+the peak deviation to the modulating fre 
+quency. 
+It is obvious that when 1 = 0 the frequency deviation 
+must also be zero and there is no modulation. When I is 
+greater than zero, however, frequencies occur above and 
+below the carrier frequency at intervals of the modulat 
+ing frequency. The number of side frequencies which oc 
+cur is related to the modulation index in such a way that 
+as I increases from zero, energy is "stolen" from the car 
+rier and distributed among an increasing number of side 
+frequencies. This increasing bandwidth as I increases, is 
+shown in Fig. 1, with a constant-modulating frequency. 
+The amplitudes of the carrier and sideband components 
+are determined by Bessel functions of the first kind and 
+nth order, /„(/), the argument to which is the modula 
+tion index. The first six Bessel functions, J0 through J5, 
+are shown in Fig. 2. The Oth order Bessel function and 
+index I, yields an amplitude scaling coefficient for 
+the carrier frequency; the 1st order, /i(/), yields a scaling 
+coefficient for the first upper- and lower-side frequen 
+cies; the 2nd order, J2(I), for the second upper- and 
+lower-side frequencies; and so forth. The higher the or 
+der of the side frequency the larger the index must be 
+for that side frequency to have significant amplitude. 
+The total bandwidth is approximately equal to twice the 
+sum of the frequency deviation and the modulating fre 
+quency. or 
+BW « 2(d+m). 
+All of the above relationships are expressed in the 
+trigonometric expansion of Eq. [2] 
+e = A { Jn(I) sina/ 
+-t-ZjC/) [sin(a+ ß)t — sin(a— /S)] 
++ /,(/) [sin(a + 2ß)t + sin(a — 2ß) ] 
++ /3(/) [sin(a + 3/3) f — sin(a —• 3/8) ] 
++ }• (2) 
+It can be seen in Eq. 2 that the odd-order lower-side 
+frequencies, sin(a-/3), sin(a-3/3), etc., are preceded by a 
+negative sign, and that for an index greater than 2.5, the 
+Bessel functions (Fig. 2) will yield a negative scaling co 
+efficient for some components. Ordinarily, these negative 
+signs are ignored in plotting spectra, as in Fig. 1, since 
+they simply indicate a phase inversion of the frequency 
+component, — sin(0) = sin(— 8). In the application of 
+FM described below, this phase information is significant 
+and must be considered in plotting spectra. 
+By way of demonstration, Fig. le is plotted, but with 
+the phase information included, in Fig. 3. The carrier and 
+the first upper-side frequency are plotted with a down 
+ward bar representing the phase inversion resulting from 
+the negative Bessel coefficients. The importance in noting 
+the phase inversions will be seen in the following section. 
+Q. CO 
+E° 
+<"§ CD £ > — 
+JO -q 
+a> o 
+CC E. c 
+D 
+Modulation Index 
+Fourth-order sideband components (Jjt 
+Modulation Index 
+Q. CO 
+E ° 
+J2 "o 
+a> o 
+CC E -0.1 
+-0.2 
+0.7 
+0') 
+05 
+04 
+0.3 
+02 
+0.1 
+Modulation Index 
+i,- Second-order sideband components (J2) 
+- Third-order sideband components (Jg, 
+Fig. 2. Bessel functions which determine the amplitudes 
+of the sideband components. 
+AMPLITUDE 
+I , I 
+< 
+t . FREQ. 
+1 c-2m c-m ^ C+2m c+3m 
+c+m 
+C-3m 
+Fig. 3. Plot of Fig. le with phase information included 
+(modulation index = 4). The bars extending downward 
+represent spectral components whose phases differ by 180°. 
+John M. Chowning: The Synthesis of Complex Audio Spectra by Means of Frequency Modulation Page 47 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 4 ===
+REFLECTED SIDE FREQUENCIES 
+The special richness of this FM technique lies in the 
+fact that there are ratios of the carrier and modulating 
+frequencies and values of the index which will produce 
+sideband components that fall in the negative frequency 
+domain of the spectrum. These negative components re 
+flect around 0 Hz and "mix" with the components in the 
+positive domain. The variety of frequency relations which 
+result from this mix is vast and includes both harmonic 
+and inharmonic spectra. 
+A simple but very useful example of reflected side 
+frequencies occurs if the ratio of the carrier to modulat 
+ing frequencies is unity. For the values 
+c = 100 Hz 
+m = 100 Hz 
+1 = 4 
+a plot of the spectrum is shown in Fig. 4a. The com 
+ponent at 0 Hz represents a constant in the wave. The 
+remaining lower-side frequencies are reflected into the 
+positive frequency domain with a change of sign (in 
+version of phase) and add algebraically to the com 
+ponents which are already there as shown in Fig. 4b. 
+For example, the second lower-side frequency will add 
+to the carrier with like signs, therefore increasing the 
+energy at 100 Hz, while the third lower-side frequency 
+will add to the first upper-side frequency with unlike 
+signs, decreasing the energy at 200 Hz. The spectrum, 
+adjusted for the reflected frequency components and 
+with the bars all up to reveal the spectral envelope, is 
+shown in Fig. 4c. 
+HARMONIC AND INHARMONIC SPECTRA 
+The significance of the case above, where the ratio 
+of the carrier to the modulating frequencies is 1/1, is 
+that it is a member of the class of ratios of integers 
+(rational numbers), thus 
+c!m = 
+and JVj and iV2 are integers. These ratios result in har 
+monic spectra. If in addition, all common factors have 
+been divided out of Nt and N2, then the fundamental 
+frequency of the modulated wave will be 
+f0 = c/Nj = m/N2. 
+The position of the side frequencies in the harmonic 
+series can be determined from the following relations, 
+k — N1 ± nNn for n = 0,1,2,3,4 .... 
+where 
+k = the harmonic number 
+and 
+n — the order side frequency. 
+Except for n = 0, the carrier, there are two values for 
+k for each order, corresponding to the upper and lower 
+side frequencies. 
+FREQ. 
+Fig. 4. Fig. 4a shows spectrum with components which lie 
+in the negative frequency domain; b shows plot from a in 
+which the frequencies in the negative domain are reflected 
+around 0 Hz with an inversion of phase and added to the 
+components in the positive domain; c is plot of the magni 
+tude of the components of b. 
+Some useful generalizations can be made in regard to 
+simple ratios. 
+1) The carrier is always the A^th harmonic in the 
+series. 
+2) If N2 — 1, the spectrum contains all harmonics and 
+the fundamental is at the modulating frequency, e.g., 
+1/1,2/1. 
+3) When Ns is an even number, the spectrum contains 
+cnly odd numbered harmonics, e.g., 1/2,1/4,3/2, 
+3/4,5/2. 
+4) If N2 — 3, every third harmonic is missing from 
+the series, e.g., 1/3,2/3,4/3,5/3. 
+As noted before, the actual number of harmonics which 
+will have significant amplitude is dependent on the modu 
+lation index. For small indexes and ratios where N, ^ 1, 
+the fundamental may not be present in the spectrum. 
+This can be seen in the spectra plotted in Fig. 5, where 
+the ratio c/m = 4/1. Adjusted for the reflected side fre 
+quencies, the spectra show the filling out of the harmon 
+ics with an increasing index. The fundamental only be 
+comes significant when the index is greater than two. 
+Inharmonic spectra will result from ratios of irrational 
+numbers, e.g., c/m = l/\/2, ir/\/3, 1/e. In this case, 
+Page 48 Computer Music Journal, Box E, Menlo Park, CA 94025 April, 1977 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 5 ===
+the reflected side frequencies will fall between the posi 
+tive components, thus forming a spectrum whose com 
+ponents are not in a relation of simple ratios. Fig. 6 shows 
+an adjusted spectrum where the ratio dm ss l/\/2 
+and the index = 5. 
+In summary, the ratio of the carrier and modulat 
+ing frequencies (dm) determines the position of the 
+components in the spectrum when there are reflected 
+side frequencies, while the modulation index (dim) 
+determines the number of components which will have 
+significant amplitude. 
+AMPLITUDE 
+1=0 
+FREQ. 
+0 f 2f 3f 4f Ef 6f 7f 8f 9f 
+m c a. 
+1 = 1 
+. . I —I * A 
+b. 
+1=2 
+..nil. 
+1 = 3 
+t 1 I I t 1 t . 
+c-3m c+3m 
+1 = 4 
+t ■ i ■ i I > . 
+e. 
+Fig. 5. Plot of spectrum where the ratio of c/m is 4/1. 
+As the index increases, the reflected lower side frequencies 
+begin to affect the spectrum when 1 = 3, where the funda 
+mental, c—3m, is noticeably greater than the 7th harmonic, 
+c+3m. In e, the symmetry around the carrier is no longer 
+apparent. 
+AMPLITUDE 
+T=S .5 
+c m c+m 
+[j,t * I T I T t 
+! c i i 
+*>100 
+tt JO 
+i 
+; 
+300l 
+3 
+1 1 1 "" 
+j i I 500 700 900 
+10 
+240 
+Fig. 6. Inharmonic spectrum where the ratio c/m 
+l/\ 2 and the modulation index = 5. The reflected compo 
+nents, represented here with the bar at the top, fall in be 
+tween the other components. 
+DYNAMIC SPECTRA 
+As demonstrated above, the equation for FM has an 
+inherent and, as will be shown, most useful charac 
+teristic: the complexity of the spectrum is related to 
+the modulation index in such a way that as the index 
+increases, the bandwidth of the spectrum also increases 
+(see Fig. 5). If, then, the modulation index were made 
+to be a function of time, the evolution of the band 
+width of the spectrum could be generally described by 
+the shape of the function. The evolution of each of the 
+AMPLITUDE 
+INDEX 
+(time) 
+Fig. 7. Dynamic spectrum where the ratio c/m = 1/1 
+and the modulation index increases from 0 to 4 continuously. 
+The increasing bandwidth is easily seen, but because the spec 
+trum includes the reflected side frequencies, the evolution of 
+the individual components is not always intuitively clear. 
+components of the spectrum, however, is determined by 
+the shape of the Bessel functions. Therefore, if the in 
+dex increases with time the overall bandwidth will also 
+increase, but a given component will either increase 
+or decrease in amplitude depending on the slope of the 
+Bessel function at that index range. Fig. 7 is a three 
+dimensional representation of a dynamic FM spectrum 
+where dm = 1/1 and the modulation index increases 
+in time from 0 to 4. If the index sweeps over a very 
+large range, for example from 2 to 10, the amplitudes 
+of the components will oscillate around 0 amplitude 
+as the bandwidth of the spectrum increases. 
+The presence of reflected side frequencies in a dy 
+namic spectrum enormously complicates the evolution 
+of the individual components, to the extent that it is 
+difficult to visualize the amplitude functions with any 
+precision. It is possible to gain an intuitive feeling for 
+their tendency of change, which in the research presented 
+here, has proven to be largely sufficient.1 
+Certainly the complexity in the evolution of each of 
+the components of the spectrum makes an important 
+contribution to the lively quality of FM sounds. Be 
+cause this complexity is a function of the laws of the 
+equation, it is surprising that while the evolution of the 
+components is rigidly determined, they can still produce 
+such rich and varied subjective impressions. 
+1 A dynamic computer display program was very helpful in 
+visualizing the spsctra which result from a changing index 
+and reflected side frequencies. Given a ratio of carrier to 
+modulating frequencies and an initial and terminal index, 
+the program plots the changing spectrum. 
+John M. Chowning: The Synthetis of Complex Audio Spectra by Means of Frequency Modulation Page 49 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 6 ===
+Fig. 8. Bessel functions. J through . and indexes 0 through 20. This representation allows a rapid determination of 
+the bandwidth resulting from a given index. 
+In visualizing the effect of sweeping the modulation 
+index, a careful study of Fig. 8 is helpful [3]. This is a 
+three-dimensional representation of the orders •/„ through 
+for an index range of 0 through 20 and is a suffi 
+cient range of orders and indexes for many useful dy 
+namic spectra. Contour lines A, B, and C represent con 
+stant values of the functions at •/„(/) = .01, .001. and 
+.0001 respectively. Line A then, indicates which order 
+side frequency is just significant at a given index. Line D 
+represents the order of the function which is equal to the 
+argument, or J„(I) where n = I. This relation shows 
+that any orders of side frequencies greater than the 
+value of the index decrease rapidly in importance. Line 
+E is the absolute maximum amplitude for each order. 
+Lines F, G, H, I, J, and K show the zero crossings of 
+the functions and, therefore, values of the index which 
+will produce a null or zero amplitude for various or 
+ders of side frequencies. 
+IMPLEMENTATION 
+The research described here was done using a Digi 
+tal Equipment Corporation PDP-10 computer for which 
+there is a special sound synthesis program designed to 
+make optimum use of the time-sharing capability of 
+the machine. Implementation of this research, however, 
+will be described for MUSIC V, a sound synthesis pro 
+gram which is both well-documented and generally 
+available [4], 
+MUSIC V is a program which generates samples or a 
+numerical representation of a sound pressure wave ac 
+cording to data which specify the physical character 
+istics of the sound. The samples are stored on a mem 
+ory device as they are computed. On completion of the 
+computation, the samples are passed at a fixed rate 
+(sampling rate, which is typically 10 000 to 30 000 
+samples/sec) to a digital-to-analog converter, which gen 
+erates a sequency of voltage pulses whose amplitudes 
+are proportional to the samples. The pulses arc smoothed 
+by a low-pass filter and passed to an audio system. 
+P4 P5 P7 P6 
+CARRIER FREQ. MODULATING AMPLITUDE FREQ. DEVIATION FREQ. 
+Fig. 9. Simple FM circuit as represented in MUSIC V 
+notation. 
+The program is designed so that the computation of 
+the samples is done by program blocks called unit gen 
+erators. A typical unit generator is the oscillator which 
+has two inputs, an output, and a stored waveshape 
+function. The first input specifies the amplitude of the 
+output, the second input the frequency of the output, 
+and the function determines the shape of the output. 
+The value of an input can either be specified by the 
+user or can be the output from another unit generator, 
+thereby allowing multilevel operations on waveforms. A 
+collection of interconnected unit generators is called an 
+instrument, which is supplied data through a set of 
+parameters, P, to P,v set by the user. and P3 are re 
+served for beginning time and duration of the note the 
+instrument is to play and P2 is reserved for the instru 
+ment number. The remaining parameters are assigned 
+their function by the user. 
+Shown in Fig. 9, is an instrument diagram which con 
+sists of three unit generators, two oscillators and an 
+Page 50 Computer Music Journal, Box E, Menlo Park, CA 94025 April, 1977 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 7 ===
+adder. The function for each oscillator is defined to be 
+a sinusoid. This instrument is capable of producing com 
+plex FM spectra such as the one in Fig. 4 where the 
+values are now assigned to parameters. 
+Pi — 1000 = amplitude of modulated carrier 
+(arbitrary scaling) 
+P5 = 100 Hz = carrier frequency 
+P0 — 100 Hz = modulating frequency 
+P7 = 400 Hz = frequency deviation, for 7 = 4. 
+Since I — dim, then d = 1m and for 7 = 4 the peak 
+deviation = 400 Hz. Oscillator 1 produces a sinusoidal 
+output whose amplitude is scaled by P- to be 400 Hz 
+at a frequency of 100 Hz given by 
+In the case above, which is typical for this applica 
+tion of FM, the instantaneous frequency of the modu 
+lated carrier at times becomes negative. That is, from 
+Eq. 1. the sum of at, a ramp function, and 7 sin ßt, a 
+sinusoid with amplitude 7, can produce a curve which 
+has a negative slope at certain points and, therefore, 
+a phase angle which decreases with time! This condi 
+tion occurs when either the ratio of the carrier to the 
+modulating frequency is very small or the modulation 
+index is very large. The oscillator, u.g. 3, in Fig. 9 
+P3 
+P4 j P5 P7-P6 (P8-P7) P6 
+NOTE CARRIER npv,. -w, AMPLITUDE DURATION FREQ. 2 
+J" 
+C3 u. g.4 
+1 
+u.g.5 
+fu-9-6 
+u. g. 1 
+u. g. 2 
+u.g. 3 
+OUTPUT 
+P6 
+Fig. 10. FM circuit to produce dynamic spectra. Two 
+function generators are added, u.g. 4 and u.g. 5, to produce 
+an amplitude envelope and a modulation index envelope 
+which causes the bandwidth to vary. 
+Fig. 11. Envelope function for brass-like tones. 
+above, must be able to produce a wave which results 
+from taking the sine of an angle which decreases as 
+well as increases with time.2 
+In order to specify the modulation index as a func 
+tion of time and control the attack and decay of the 
+modulated carrier, it is necessary to alter the instru 
+ment. Fig. 9, by adding three more unit generators. 
+In Fig. 10, u.g. 4 and u.g. 5 are time-domain function 
+generators (oscillators or envelope generators in 
+MUSIC V). U.g. 4 imposes an amplitude envelope on 
+the modulated carrier and u.g. 5 and u.g. 6 together 
+allow a dynamic control of the modulation index. The 
+parameters for this instrument will have the following 
+function : 
+P1 = Begin time of instrument 
+P2 = Instrument number 
+P3 = Duration of the "note" 
+P4 = Amplitude of the output wave 
+P5 = Carrier frequency 
+Pß = Modulating frequency 
+P7 = Modulation index 1, /t 
+P8 = Modulation index 2, /2 
+Since the bandwidth is related directly to the modulation 
+index (and only indirectly to the deviation), a special 
+routine can be used to produce the required deviation, 
+deviation = P, X P6 or deviation = (P8 
+— P7) X P6. 
+The same routine can also generate the frequency in 
+puts for u.g. 4 and u.g. 5, such that P9 = 1 /P3 where the 
+relation 1/note-duration causes the functions associated 
+with these generators to be sampled at a rate so that one 
+period is completed in the duration P3. The oscillator and 
+adder, u.g. 5 and u.g. 6, are related in such a way that 
+P7 becomes the value of the modulation index when the 
+output of u.g. 5 is zero and P8 is the modulation index 
+when the output of u.g. 5 is one. For example, if Fig. 11 
+represents the function for the oscillator u.g. 5 and 
+.6 seconds 
+100 Hz 
+2 
+8 
+first, P^ and P8 
+— P7 are multiplied by P6 to convert to 
+deviation, then the function is scaled by 600 and added 
+to the constant input to the adder of 200. The output of 
+- The change in code to the oscillator in MUSIC V to al 
+low for a decreasing angle is: 
+for 
+290 IF(SUM-XNFUN) 288, 287, 287 
+287 SUM=SUM -XNFUN 
+substitute 
+290 1F ( SU M .GE.XNFUN ) GO TO 287 
+IF(SUM.LT. 0.0) GO TO 289 
+and for 
+GO TO 293 
+292 J6=L1+J3—1 
+substitute 
+GO TO 293 
+287 SUM=SUM—XNFUN 
+GO TO 288 
+289 SUM=SUM+XNFUN 
+GO TO 288 
+292 J6=L1+J3—1. 
+John M. Chowning: The Synthesis of Complex Audio Spectra by Means of Frequency Modulation 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 8 ===
+the adder, then, is a deviation increasing from 200 to 
+800 in the first 1/6 seconds, decreasing from 800 to 650 
+in the next 1/6 seconds, etc. If the values of P7 and Ps 
+are reversed, the function is inverted but between the 
+same limits. Having this capability of scaling the devia 
+tion in direct or inverse proportion to the function and 
+between any two values for Ix and 1<< is useful in gener 
+ating various dynamic spectra. 
+SIMULATIONS OF INSTRUMENT TONES 
+In this section, techniques for simulating three classes 
+of instrument tones will be defined, using the computer 
+instrument shown in Fig. 10. 
+Brass-like Tones 
+Risset demonstrated in his revealing analysis of trum 
+pet tones [5] a fundamental characteristic of this class 
+of timbres; the amount of energy in the spectrum is dis 
+tributed over an increasing band in approximate propor 
+tion to the increase of intensity. A simulation of this 
+class of timbres is developed around the following 
+premises: 
+1) The frequencies in the spectrum are in the har 
+monic series, 
+2) Both odd and even numbered harmonics are at 
+some times present, 
+3) The higher harmonics increase in significance with 
+intensity, 
+4) The rise-time of the amplitude is rapid for a typi 
+cal attack and may "overshoot" the steady state. 
+Oscillators, u.g. 4 and u.g. 5, in Fig. 10, control the am 
+plitude and modulation index (deviation indirectly), and 
+both use the time domain function shown in Fig. 11. 
+The parameter values for a brass-like tone can be: 
+P3 = .6 
+P4 = 1000 (amplitude scaling) 
+Pr, = 440 Hz 
+P6 = 440 Hz "(ratio of cf m =1/1) 
+P7 = 0 
+?8 = 5. 
+The modulation index (therefore deviation) changes in 
+direct proportion to the amplitude of the modulated 
+carrier wave; the result being an increase or decrease in 
+significance of the side frequencies in proportion to the 
+amplitude envelope function. The ratio, c/m = 1/1, pro 
+duces components that fall in the harmonic series. By 
+changing the values of the indexes by small amounts 
+and the shape of the function, a large number of varia 
+tions can be achieved. 
+Woodwind-like Tones 
+It is sometimes the case with woodwinds and organ 
+pipes that the first frequencies to become prominent dur 
+ing the attack are the higher harmonics, which then de 
+crease in prominence as the lower harmonics increase 
+during the steady state. This type of spectral evolution 
+can be achieved in several ways, for example, by setting 
+the carrier frequency to be an integral multiple of the 
+modulating frequency, or by making the index function 
+inversely proportional to the amplitude function. A sim 
+ulation of this class of timbres is developed around the 
+following premises: 
+1) The frequencies in the spectrum are in the har 
+monic series and for some woodwind tones are pre 
+dominantly odd numbered harmonics, 
+2) The higher harmonics may decrease in significance 
+with the attack. 
+In the first example, the carrier frequency is three times 
+the modulating frequency, or c/m = 3/1, and the am 
+plitude and index function is shown in Fig. 12. Since 
+during the attack the index increases from 0 to 2, the 
+carrier (3rd harmonic) will be apparent at the onset of 
+the tone and then quickly decrease as the side frequen 
+cies fill out the spectrum. The parameters are: 
+P5 = 900 Hz 
+P6 = 300 Hz 
+P7 = 0 
+Pb = 2. 
+A ratio of c/m = 5/1 will produce a bassoon-like timbre 
+in the lower octaves. The functions remain as above and 
+the parameters are: 
+P3 = 500 Hz 
+P6 = 100 Hz 
+P7 = 0 
+Pa = 1.5. 
+Another reed quality can be produced by choosing a 
+ratio of c/m which yields the odd harmonics. The 
+parameters 
+P5 = 900 Hz 
+P6 = 600 Hz 
+PT = 4 
+P8 = 2 
+will produce a clarinet-like timbre where 300 Hz is the 
+fundamental and the index is inversely proportional to 
+the amplitude function. The bandwidth of the spectrum 
+will decrease as the amplitude increases during the 
+attack. 
+In all of the above examples, small alterations can be 
+made which make the sounds more interesting and/or 
+realistic. A particularly useful alteration is the addition 
+of a small constant to the modulating frequency. If the 
+value .5 Hz were added, for example, the reflected lower 
+SEC 
+Fig. 12. Envelope function for woodwind-like tones. 
+sec 
+Fig. 13. Special envelope function for modulation index 
+to achieve a better approximation to a woodwind timbre. 
+Page 52 Computer Music Journal, Box E, Menlo Park, CA 94025 April, 1977 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 9 ===
+side frequencies would not fall exactly on the upper-side 
+frequencies, producing a beat frequency or tremulant of 
+1 c/s. The realism can be further improved by making 
+the function controlling the index the same as the am 
+plitude function only through the attack and steady state 
+and, thereafter, remaining constant. If Fig. 12 is the 
+shape of the amplitude function, then Fig. 13 would be 
+the shape of the index function. The evolution of the 
+spectrum during the attack is apparently not always re 
+versed during the decay. 
+Percussive Sounds 
+A general characteristic of percussive sounds is that 
+the decay shape of the envelope is roughly exponential 
+as shown in Fig. 14. A simulation of this class of 
+timbres would be developed around the premises: 
+1) The spectral components are not usually in the 
+harmonic series, 
+2) The evolution of the spectrum is from the complex 
+to the simple. 
+Fig. 14. Exponential decaying envelope for bell-like 
+timbres. 
+Bell-like sounds can be produced by making the change 
+of the index directly proportional to the amplitude en 
+velope. Fig. 14, then, is the function for the amplitude 
+and index. The parameters can be the following: 
+P:i = 15 seconds 
+P4 = 1000 
+P5 = 200 Hz 
+P6 = 280 Hz 
+P7 = 0 
+Fig. 15. Modification of exponential envelope to obtain 
+drum-like sound. 
+The ratio dm = 1/1.4 results in an inharmonic relation 
+of the frequency components. With the large initial 
+index, the spectrum is dense and as the amplitude 
+decreases the spectrum becomes gradually simple. As the 
+amplitude approaches 0, the predominant frequency is 
+the carrier at 200 Hz. By changing the amplitude func 
+tion to that shown in Fig. 15, and with the following 
+parameters, a drum-like sound can be produced. 
+P3 = . 2 
+Ps = 200 Hz 
+P0 = 280 Hz 
+P7 = 0 
+The principal difference from the bell sound, in addition 
+to the short duration, is the vastly reduced initial band 
+width of the spectrum. 
+A wood drum sound is produced by keeping the pre 
+vious amplitude function, but modulating the index ac 
+cording to the function shown in Fig. 16. The param 
+eters are: 
+P, = -2 
+P-a = 80 Hz 
+P8 = 55 Hz 
+P7 = 0 
+P8 = 25. 
+The change of the index causes a burst of energy dis 
+tributed over a wide frequency band at the onset, fol 
+lowed by rapid decrease of the bandwidth to a sinusoid 
+which has the perceptual effect of a strong resonance. It 
+should be noted that a complex amplitude modulation 
+also occurs in this case. Because the Bessel functions 
+are quasi-periodic around 0, the components undergo 
+an asynchronous modulation due to the rapid sweep of 
+the index over the wide range. 
+Fig. 16. Envelope for wood-drum sound. 
+The above examples are intended to give some feeling 
+for the power and economy of means in FM synthesis, 
+although they by no means exhaust the potential of this 
+instrument. With an additional five unit generators, as 
+shown in Fig. 17, further control can be gained over the 
+spectrum. U.g. 10 provides another carrier wave, but 
+uses the same modulating oscillator. The frequency de 
+viation (proportional to the index) can be scaled up or 
+down by the multiplier, u.g. 8. Since the second-carrier 
+frequency, P12, is independent, it can be set to be a 
+P5 P7-P6 (P8-P7) P6 55 P6 
+Fig. 17. FM circuit which allows" greater control over the 
+spectrum. The additional carrier wave uses the same modu 
+lating wave but the deviation can be scaled up or down by 
+the multiplier. A formant peak can be placed at an arbitrary 
+point in the spectrum. 
+John M. Chowning: The Synthesis of Complex Audio Spectra by Means of Frequency Modulation Page 53 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 10 ===
+multiple of the first-carrier frequency and therefore add 
+components in another region of the spectrum. The pro 
+portion of the two modulated carriers is determined by 
+the multiplier, u.g. 7, which scales the amplitude before 
+it is applied to the second carrier. The outputs are mixed 
+by the adder, u.g. 11. With the parameters 
+P- = 300 Hz 
+Pn = 300 Hz 
+P- = 1 
+P* = 3 
+Pro = -2 
+Pn = -5 
+P12 = 2100 Hz 
+the second carrier will add components centered around 
+the 7th harmonic (c2/m = 7/l), where the index 
+ranges between .5 and 1.5 and at an amplitude ratio of 
+5/1. The effect is that of a formant region added to 
+the spectrum. 
+CONCLUSION 
+The technique of FM synthesis provided a very simple 
+temporal control over the bandwidth of spectra whose 
+component frequencies can have a variety of relation 
+ships. Because "nature" is doing most of the "work," the 
+technique is far simpler than additive or subtractive 
+synthesis techniques which can produce similar spectra. 
+Perhaps the most surprising aspect of the FM technique, 
+is that the seemingly limited control imposed by "nature" 
+over the evolution of the individual spectral components, 
+proves to be no limitation at all as far as subjective im 
+pression is concerned. This suggests that the precise am 
+plitude curve for each frequency component in a com 
+plex dynamic spectrum is not nearly as important, 
+perceptually, as the general character of evolution of the 
+components as a group. 
+A full understanding of, and comprehensive applica 
+tion of the FM technique will certainly take a number 
+of years. The applications are surely more numerous in 
+the unknown timbrai space than they are in the known. 
+There is, however, great informative value in first limit 
+ing oneself to the simulation of natural timbres since we 
+have such well-formed perceptual images against which 
+one can measure success. What can be learned in this 
+process are those subtle attributes of natural spectra 
+which so distinctively separate them from most synthe 
+sized spectra and which can then be applied to the un 
+known, "composed" timbrai space with the result of a 
+vastly enriched domain in which the composer can work. 
+ACKNOWLEDGMENTS 
+The author wishes to express his appreciation to 
+George Gucker for the initial insight into reflected side 
+frequencies and to Max Mathews, David Poole, Gary 
+Goodman, Martin Bresnick, John Gray, Loren Rush, and 
+Andy Moorer for their help in this research. 
+REFERENCES 
+[1] Jean-Claude Risset and Max V. Mathews. "Analy 
+sis of Musical Instrument Tones," Physics Today, vol. 22, 
+no. 2, pp. 23-30 (1969). 
+[2] Frederick E. Terman, Radio Engineering, pp. 483 
+489 (McGraw-Hill, New York, 1947). 
+[3] Murlan S. Corrington, "Variation of Bandwidth 
+with Modulation Index in Frequency Modulation," Se 
+lected Papers on Frequency Modulation, edited by Klap 
+per (Dover Publications, 1970). 
+[4] Max V. Mathews, The Technology of Computer 
+Music (The MIT Press, Boston, 1969). 
+[5] Jean-Claude Risset, op. cit. 
+THE AUTHOR 
+John M. Chovvning was born in Salem, N.J.. in 1934. 
+He received the B.Mus. degree in composition from 
+Wittenberg University in 1959 after military service. 
+He studied composition in Paris for three years with 
+Nadia Boulanger. In 1966. he received the doctorate 
+in composition from Stanford University, where he 
+studied with Leland Smith. With the help of Max 
+Mathews of Bell Telephone Laboratories, in 1964 he 
+set up a computer music program at Stanford. Dr. 
+Chowning currently teaches music theory and com 
+puter-sound synthesis and composition at Stanford's 
+Department of Music. 
+Page 54 Computer Music Journal, Box E, Menlo Park, CA 94025 April, 1977 
+This content downloaded from 134.87.170.129 on Fri, 9 Jan 2015 01:36:27 AM
+All use subject to JSTOR Terms and Conditions

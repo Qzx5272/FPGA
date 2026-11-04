@@ -1,0 +1,193 @@
+{
+  "scope": "control-only original phrase; no claim of intelligible rendered voice",
+  "text": "星光照亮远方",
+  "fs": 48000,
+  "bpm": 96,
+  "pre_roll_samples": 48000,
+  "end_sample": 288000,
+  "phonemes": [
+    {
+      "syllable": "星",
+      "phoneme": "x",
+      "start_sample": 48000,
+      "duration_samples": 2407,
+      "voiced": false,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "星",
+      "phoneme": "i",
+      "start_sample": 50407,
+      "duration_samples": 6065,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "星",
+      "phoneme": "ng",
+      "start_sample": 56472,
+      "duration_samples": 21528,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "光",
+      "phoneme": "g",
+      "start_sample": 78000,
+      "duration_samples": 2446,
+      "voiced": false,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "光",
+      "phoneme": "u",
+      "start_sample": 80446,
+      "duration_samples": 12388,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "光",
+      "phoneme": "ang",
+      "start_sample": 92834,
+      "duration_samples": 45166,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "照",
+      "phoneme": "zh",
+      "start_sample": 138000,
+      "duration_samples": 2494,
+      "voiced": false,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "照",
+      "phoneme": "ao",
+      "start_sample": 140494,
+      "duration_samples": 27506,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "亮",
+      "phoneme": "l",
+      "start_sample": 168000,
+      "duration_samples": 2407,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "亮",
+      "phoneme": "i",
+      "start_sample": 170407,
+      "duration_samples": 6065,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "亮",
+      "phoneme": "ang",
+      "start_sample": 176472,
+      "duration_samples": 21528,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "远",
+      "phoneme": "y",
+      "start_sample": 198000,
+      "duration_samples": 2621,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "远",
+      "phoneme": "uan",
+      "start_sample": 200621,
+      "duration_samples": 57379,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "方",
+      "phoneme": "f",
+      "start_sample": 258000,
+      "duration_samples": 2494,
+      "voiced": false,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    },
+    {
+      "syllable": "方",
+      "phoneme": "ang",
+      "start_sample": 260494,
+      "duration_samples": 27506,
+      "voiced": true,
+      "trajectory_id": "needs_licensed_or_self_designed_parameter_table"
+    }
+  ],
+  "notes": [
+    {
+      "start_sample": 48000,
+      "duration_samples": 30000,
+      "midi": 67,
+      "syllable": "星",
+      "rearticulate_consonant": true
+    },
+    {
+      "start_sample": 78000,
+      "duration_samples": 30000,
+      "midi": 69,
+      "syllable": "光",
+      "rearticulate_consonant": true
+    },
+    {
+      "start_sample": 108000,
+      "duration_samples": 30000,
+      "midi": 71,
+      "syllable": "光",
+      "rearticulate_consonant": false
+    },
+    {
+      "start_sample": 138000,
+      "duration_samples": 30000,
+      "midi": 72,
+      "syllable": "照",
+      "rearticulate_consonant": true
+    },
+    {
+      "start_sample": 168000,
+      "duration_samples": 30000,
+      "midi": 71,
+      "syllable": "亮",
+      "rearticulate_consonant": true
+    },
+    {
+      "start_sample": 198000,
+      "duration_samples": 30000,
+      "midi": 69,
+      "syllable": "远",
+      "rearticulate_consonant": true
+    },
+    {
+      "start_sample": 228000,
+      "duration_samples": 30000,
+      "midi": 67,
+      "syllable": "远",
+      "rearticulate_consonant": false
+    },
+    {
+      "start_sample": 258000,
+      "duration_samples": 30000,
+      "midi": 64,
+      "syllable": "方",
+      "rearticulate_consonant": true
+    }
+  ],
+  "limitations": [
+    "coarticulation trajectories and Mandarin parameter library remain to build",
+    "vowel-onset alignment must move initial consonants into available pre-roll",
+    "voiced flags are simplified design labels, not a linguistic ground-truth corpus"
+  ]
+}

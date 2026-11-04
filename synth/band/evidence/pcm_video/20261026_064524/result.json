@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "scope": "Synthetic PCM through actual FFT and full640x480 logical RGB raster. Test clock25MHz (59.524fps);25.2MHz target gives60fps. No PLL/HDMI serialization/electrical/fullband acceptance.",
+  "sources": {
+    "synth\\band\\experimental\\audio_visual\\pcm_snapshot.v": "4d233ed38948b78fdd68b7cf8915a1f9228d1aef474aabdc5c8c0e117f37a040",
+    "synth\\band\\experimental\\audio_visual\\fft_fixed.v": "cdd3bf4b43fddd3113d341b284ec50bce43c013e6a098ab7f6987ffdb6012645",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum.v": "081b8ae87f997cb4a53a54678af14460168ac69a8e1a7bcad7822a565cb2d58c",
+    "synth\\band\\experimental\\audio_visual\\spectrum_snapshot.v": "92281da2d833c9e991a5a9b1be93cf9474fd3940de62576e8023322a72181259",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum_buffered.v": "aa9b2822484333c8360a14a7c77155c62b847d9f7e3be4ee4a18fde081cc37f0",
+    "synth\\band\\experimental\\audio_visual\\spectrum_bars.v": "a32fe503ff3ded4466b2dc370021fc9fcc8fef8cabbfc57685cd899c8cae2792",
+    "synth\\band\\experimental\\audio_visual\\pcm_spectrum_display.v": "6888cb837dae95ca1effbda0417c5ac1cf0d233b876307f64589be43ac73cf1b",
+    "synth\\band\\experimental\\audio_visual\\video_timing_640x480.v": "1aaa4968aff1a6a1bffa3fd4d6c476c92f7268e30bad00b2f7c38a284061e073",
+    "synth\\band\\experimental\\audio_visual\\pcm_video_640x480.v": "738f5b285b19b373b15adf5a85fe1c080ad05afa45a32943f355d3f36b031cca",
+    "synth\\band\\evidence\\pcm_video\\20261026_064524\\tb.v": "d980e1fd5ecfecf7b6ec09445366fba0ebda98191963b12a1897a1cd15acf547",
+    "synth\\band\\experimental\\audio_visual\\fft_twiddle_2048.mem": "9a1c8a4363f3b0e7513b8a52ca70b6462a09a3bdfa2a232159d781c57816a276",
+    "synth\\band\\experimental\\audio_visual\\hann_2048.mem": "3dba4e5f039afdd19d9519e8fb772fb04e7626a856f3460ac725650b62e4b8bc",
+    "synth\\band\\tools\\test_pcm_video.py": "47b428952b15528156dc08aa81c02c813c31bf63d58ea98176df859fcefd4a89"
+  },
+  "log": "FATAL: C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pcm_video\\20261026_064524\\tb.v:44: timeout\n       Time: 50000000000  Scope: tb\n"
+}

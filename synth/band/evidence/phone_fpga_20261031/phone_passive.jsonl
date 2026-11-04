@@ -1,0 +1,538 @@
+{"time": 1793385082.132302, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 0, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385083.334958, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 0, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385083.443153, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385083.6608567, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385083.8783586, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385083.9892645, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385084.208363, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385084.4242566, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385084.751126, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385084.969206, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385085.293802, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385085.6205845, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385085.8396864, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385085.949336, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385086.1662245, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385086.4951456, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385086.603126, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385086.9308574, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385087.148174, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385087.3669276, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385087.5847907, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385087.6939461, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385087.803426, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385088.0204136, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385088.2389145, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385088.458264, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385088.7869365, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385088.8972075, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385089.0071104, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385089.3347275, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385089.554126, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385089.6642725, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385089.8828955, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.1010473, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 9354, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.209255, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 18714, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.4276352, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 28074, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.6466076, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 1, "cycles": 94, "epoch": 1, "song_sample": 37473, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.8649254, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 46833, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385090.973974, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 53889, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385091.30245, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 67857, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385091.630652, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 81922, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385091.7391026, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385092.0663779, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 102960, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385092.176057, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 110002, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385092.395062, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 119363, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385092.5037947, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 128723, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385092.8303788, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 140435, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385093.0500066, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 154499, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385093.3782685, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 166163, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385093.5959563, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 177840, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385093.8137567, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385093.922827, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 196559, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385094.1417732, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 205918, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385094.2517273, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 210659, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385094.5799994, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 227029, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385094.7977338, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 236340, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385095.1228497, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 250404, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385095.3419845, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 3, "cycles": 94, "epoch": 1, "song_sample": 264469, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385095.5611434, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 273828, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385095.7807384, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385095.997881, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 292549, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385096.1061149, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 297205, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385096.3236954, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 311269, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385096.6515875, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 322933, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385096.8701875, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 2, "cycles": 94, "epoch": 1, "song_sample": 336957, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385097.0909848, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 1, "cycles": 94, "epoch": 1, "song_sample": 348710, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385097.417202, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 3, "cycles": 94, "epoch": 1, "song_sample": 360374, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385097.6338067, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 1, "cycles": 94, "epoch": 1, "song_sample": 372134, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385097.8511732, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385098.069134, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 1, "cycles": 94, "epoch": 1, "song_sample": 390854, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385098.1784077, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 1, "cycles": 94, "epoch": 1, "song_sample": 400215, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385098.3978133, "kind": 129, "profile": "band", "playing": true, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 411878, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385098.613149, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 0, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385098.829859, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.0476296, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.1587121, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.378123, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.4874263, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.5978057, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 6, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385099.8142412, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385100.031674, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385100.2479744, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385100.3573446, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385100.5757859, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385100.79508, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.0152833, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.1242802, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.2342985, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.4514298, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.6687293, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385101.7771933, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385101.995316, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385102.213626, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385102.4310713, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385102.6460187, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385102.7552984, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385102.8642561, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.0802364, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.1911678, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.4111168, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.6298444, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.8470898, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385103.9565578, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385104.1726613, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385104.3915875, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385104.5011425, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385104.610546, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385104.9345415, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385105.0437996, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385105.261481, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385105.4810047, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385105.5896158, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385105.8101182, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385106.0265698, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385106.2450883, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385106.3542676, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385106.4634225, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385106.6812055, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385106.8987134, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385107.0081942, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385107.2250564, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385107.4437802, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385107.6607757, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385107.8795686, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385108.0971706, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385108.2059515, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385108.4228308, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385108.6419563, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385108.969482, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385109.1876476, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385109.5169332, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385109.626143, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385109.8448582, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385110.0639415, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385110.2819433, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385110.499668, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385110.7183263, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385110.938234, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385111.263852, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385111.479538, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385111.8064036, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385111.9146457, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385112.1338048, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385112.3519132, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385112.5703726, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385112.7895002, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385113.0076718, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385113.2262115, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385113.4449568, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385113.7710721, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385113.9890587, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385114.2073398, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385114.3164792, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385114.5364535, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385114.7532709, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385115.0775745, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385115.2964964, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385115.6193154, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385115.836564, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385115.945329, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385116.0542004, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385116.2724292, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385116.599398, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385116.8169296, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385117.036491, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385117.3639514, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385117.5796773, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385117.906274, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385118.0165343, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385118.125973, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385118.3449535, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385118.67269, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385118.8910196, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385119.108497, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385119.3248246, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385119.6521292, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385119.8706863, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385120.0889091, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385120.3066032, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385120.5280113, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385120.6377473, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385120.8543046, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385121.1787312, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385121.398034, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385121.724405, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385121.724405, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385121.9429147, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 7056, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385122.0521653, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385122.2706864, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 25777, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385122.488401, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 35137, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385122.7082012, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 44449, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385122.9267213, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 53809, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385123.1452794, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 65568, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385123.3628237, "kind": 129, "profile": "band", "playing": true, "owner": 3, "part": 6, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 74929, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385123.471605, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 0, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385123.6877801, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385123.906525, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385124.1248486, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385124.3441222, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385124.4523816, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385124.7799344, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385124.889209, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385125.1057935, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385125.3238487, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385125.543214, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385125.762466, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385125.870886, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385126.08858, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385126.3054454, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385126.4145389, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385126.742102, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385126.9600143, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385127.1779146, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385127.5059736, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385127.7245314, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385127.9423559, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385128.1605453, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385128.379681, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385128.4900193, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385128.7081869, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385129.0346267, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385129.2522976, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385129.4708388, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385129.800141, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385129.9093091, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385130.1271245, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385130.3448298, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385130.563171, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385130.7812989, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385130.892427, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385131.1112106, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385131.3311357, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385131.5492947, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385131.766736, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385132.0935931, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385132.2014177, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385132.421535, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385132.6412685, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385132.8581665, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385133.0768468, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385133.2950418, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385133.512963, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385133.7310276, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385134.0582013, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385134.2764719, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385134.3855343, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385134.6002464, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385134.8182976, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385135.0374255, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385135.2539155, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 6, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385135.4729257, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 9, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385135.6916242, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 9, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385135.8014004, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 9, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385136.0194788, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 9, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385136.2365668, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385136.4537942, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385136.5634212, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385136.780105, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385136.9990947, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385137.2172494, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385137.3260715, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385137.545004, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385137.7627776, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385137.9834328, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.0908136, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.1997156, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.4180863, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.6355608, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.7432733, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385138.9591181, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385139.1795323, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385139.39605, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385139.5060585, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385139.726618, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385139.8366477, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385139.9451625, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385140.1611667, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385140.3787868, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385140.5990372, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385140.818052, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385140.9274538, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385141.1450415, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385141.3635304, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385141.582287, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385141.6907573, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385141.7997575, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385142.016449, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385142.2355814, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385142.3438468, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385142.56043, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385142.7775905, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385142.9950447, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385143.1035397, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385143.2126422, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385143.4298694, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385143.64815, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385143.7575448, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385143.9744427, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385144.19202, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385144.4091272, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385144.6283872, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385144.7374814, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385144.9556653, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385145.0644412, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385145.1734743, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385145.3931062, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385145.6074674, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385145.828536, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385146.0480149, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385146.1569264, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385146.3745615, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385146.5929651, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385146.7011611, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385146.8113737, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385147.0298288, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385147.2481222, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385147.3558998, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385147.575659, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385147.7948682, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.0106843, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.229311, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.337676, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.4461324, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.6645448, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.7733376, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385148.9919739, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385149.2102458, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385149.4300845, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385149.648884, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385149.7588754, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385149.9788058, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.1975424, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.3058982, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.414166, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.6346762, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.8530157, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385150.9619653, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385151.1787832, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385151.3950667, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385151.6134212, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385151.7234228, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385151.831542, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385152.0511847, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385152.2702923, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385152.3784518, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385152.5982442, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385152.8165345, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385153.0324283, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385153.2493548, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385153.3591175, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385153.4675357, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385153.6865566, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385153.7951405, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.0129404, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.2328951, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.4491453, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.5591455, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.777197, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385154.9960566, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385155.104909, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385155.2138107, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385155.4315422, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385155.6504366, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385155.8679812, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385156.0855522, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385156.1950107, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385156.4125032, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385156.6277702, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385156.7375767, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385156.8468556, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385157.065949, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385157.2847228, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385157.5045397, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385157.6140246, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385157.8348598, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385158.0524447, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385158.2712705, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385158.3789062, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385158.4860146, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385158.7051904, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385158.8146327, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385159.0334232, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385159.2490885, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385159.468065, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385159.687534, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385159.7970777, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385160.0148408, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385160.1241572, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385160.2327967, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385160.4515107, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385160.6701243, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385160.8893394, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385161.1092649, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385161.217604, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385161.435881, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385161.654138, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385161.8712766, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385162.0897086, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385162.3065362, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385162.4155345, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385162.6335347, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 9, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385162.9603636, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 10, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.0687985, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 10, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.288448, "kind": 128, "profile": "band", "playing": false, "owner": 0, "part": 10, "voices": 0, "cycles": 70, "epoch": 1, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.3979428, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.5066922, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.7251055, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385163.8334208, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385164.0512874, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385164.2700403, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385164.4874368, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385164.7066493, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385164.8153496, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385165.0334208, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385165.1431997, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385165.2524261, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385165.47311, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385165.6894078, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385165.9046361, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.1224244, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.2311325, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.4476058, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.6666434, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.8850524, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385166.9950674, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385167.1040857, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385167.3208969, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385167.4294977, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385167.6484284, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385167.8663325, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.0860002, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.3047266, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.4131563, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.5239007, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.741577, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385168.960351, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385169.0687923, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385169.2874892, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385169.5050628, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385169.723401, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385169.8325279, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.0521863, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.1607628, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.2698593, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.4863894, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.7057936, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385170.9244952, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385171.1432762, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385171.2528493, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385171.4695938, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385171.5795088, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385171.68816, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385171.9055316, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385172.122947, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385172.3406107, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385172.5604732, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 1, "cycles": 94, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385172.6699498, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385172.888858, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385173.1059446, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385173.3241026, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385173.4332352, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385173.6533997, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385173.8710763, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385173.9794166, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385174.1969166, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385174.4149542, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385174.6309557, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385174.850962, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385174.9608283, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385175.1794116, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385175.2888455, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385175.5081062, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385175.7245839, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385175.9433436, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385176.1605291, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385176.2700753, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385176.488381, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385176.706561, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385176.9245374, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385177.033457, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385177.1428401, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385177.3604233, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385177.5781865, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385177.687931, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385177.9060354, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385178.1244051, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385178.3452747, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385178.5627027, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385178.5627027, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385178.7807558, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385178.889384, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385179.108291, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385179.3265908, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385179.544836, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385179.7633002, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385179.8721619, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385180.0899117, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385180.3070347, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385180.4169226, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385180.524128, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385180.7412095, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385180.9601479, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385181.177564, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385181.2876241, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385181.5060008, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385181.7227101, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385181.941074, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385182.0505812, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385182.2686796, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385182.4867237, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385182.5940557, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385182.810705, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385183.0287888, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385183.2470505, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385183.4637632, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385183.574657, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385183.7924407, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385184.0107517, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385184.1204224, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385184.3390758, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385184.5567274, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385184.7749312, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385184.8845632, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385185.1014266, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385185.318401, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385185.4273162, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385185.5365348, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385185.754255, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385185.9724655, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385186.190183, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385186.2988465, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385186.5184042, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385186.7347696, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385186.9524243, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385187.0615451, "kind": 161, "build_id": 539365425, "features": 2147487868}
+{"time": 1793385187.1699076, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"time": 1793385187.3902497, "kind": 128, "profile": "band", "playing": false, "owner": 3, "part": 10, "voices": 0, "cycles": 70, "epoch": 2, "song_sample": 0, "rejected": 0, "deadline_miss": 0, "clips": 0}
+{"passive": true, "frames": {"128": 441, "161": 52, "129": 44}, "bad_crc": 0}

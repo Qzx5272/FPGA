@@ -1,0 +1,21 @@
+{
+  "hardware_profile": "workstation-i2s-rgb-v1",
+  "clocks": {
+    "core_clk": [
+      "clk",
+      20.0
+    ],
+    "mic_clk": [
+      "mic_bck",
+      325.520833
+    ],
+    "audio_clk": [
+      "audio_clk",
+      40.690104
+    ],
+    "display_clk": [
+      "pixel_clk",
+      39.68254
+    ]
+  }
+}

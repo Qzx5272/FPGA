@@ -1,0 +1,6915 @@
+US6304846B1 - Singing voice synthesis 
+        - Google Patents
+US6304846B1 - Singing voice synthesis 
+        - Google Patents
+Singing voice synthesis
+Download PDF
+Info
+Publication number
+US6304846B1
+US6304846B1
+US09/161,799
+US16179998A
+US6304846B1
+US 6304846 B1
+US6304846 B1
+US 6304846B1
+US 16179998 A
+US16179998 A
+US 16179998A
+US 6304846 B1
+US6304846 B1
+US 6304846B1
+Authority
+US
+United States
+Prior art keywords
+synthesis
+pitch
+units
+model
+sinusoidal
+Prior art date
+1997-10-22
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+Expired - Lifetime
+Application number
+US09/161,799
+Inventor
+E. Bryan George
+Michael W. Macon
+Leslie Jensen-Link
+James Oliverio
+Mark Clements
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+Texas Instruments Inc
+Original Assignee
+Texas Instruments Inc
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+1997-10-22
+Filing date
+1998-09-28
+Publication date
+2001-10-16
+1998-09-28
+Application filed by Texas Instruments Inc
+filed
+Critical
+Texas Instruments Inc
+1998-09-28
+Priority to US09/161,799
+priority
+Critical
+patent/US6304846B1/en
+1998-09-28
+Assigned to TEXAS INSTRUMENTS INCORPORATED
+reassignment
+TEXAS INSTRUMENTS INCORPORATED
+ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).
+Assignors: GEORGE, E. BRYAN
+2001-10-16
+Application granted
+granted
+Critical
+2001-10-16
+Publication of US6304846B1
+publication
+Critical
+patent/US6304846B1/en
+2018-09-28
+Anticipated expiration
+legal-status
+Critical
+Status
+Expired - Lifetime
+legal-status
+Critical
+Current
+Links
+USPTO
+USPTO PatentCenter
+USPTO Assignment
+Espacenet
+Global Dossier
+Discuss
+238000003786
+synthesis reaction
+Methods
+0.000
+title
+claims
+abstract
+description
+60
+230000015572
+biosynthetic process
+Effects
+0.000
+title
+claims
+abstract
+description
+55
+238000000034
+method
+Methods
+0.000
+claims
+abstract
+description
+38
+230000003595
+spectral effect
+Effects
+0.000
+claims
+abstract
+description
+26
+238000009499
+grossing
+Methods
+0.000
+claims
+description
+14
+238000003066
+decision tree
+Methods
+0.000
+claims
+description
+13
+230000001419
+dependent effect
+Effects
+0.000
+claims
+description
+7
+238000012545
+processing
+Methods
+0.000
+abstract
+description
+6
+239000011295
+pitch
+Substances
+0.000
+description
+70
+238000012986
+modification
+Methods
+0.000
+description
+30
+230000004048
+modification
+Effects
+0.000
+description
+29
+230000001755
+vocal effect
+Effects
+0.000
+description
+26
+230000000694
+effects
+Effects
+0.000
+description
+17
+238000004458
+analytical method
+Methods
+0.000
+description
+16
+230000006870
+function
+Effects
+0.000
+description
+14
+230000007704
+transition
+Effects
+0.000
+description
+13
+239000013598
+vector
+Substances
+0.000
+description
+10
+238000001228
+spectrum
+Methods
+0.000
+description
+8
+238000013459
+approach
+Methods
+0.000
+description
+7
+230000008569
+process
+Effects
+0.000
+description
+7
+MQJKPEGWNLWLTK-UHFFFAOYSA-N
+Dapsone
+Chemical compound
+C1=CC(N)=CC=C1S(=O)(=O)C1=CC=C(N)C=C1
+MQJKPEGWNLWLTK-UHFFFAOYSA-N
+0.000
+description
+6
+230000008859
+change
+Effects
+0.000
+description
+5
+230000008901
+benefit
+Effects
+0.000
+description
+4
+230000005284
+excitation
+Effects
+0.000
+description
+4
+230000007246
+mechanism
+Effects
+0.000
+description
+4
+238000010606
+normalization
+Methods
+0.000
+description
+4
+238000012360
+testing method
+Methods
+0.000
+description
+4
+238000010586
+diagram
+Methods
+0.000
+description
+3
+238000004519
+manufacturing process
+Methods
+0.000
+description
+3
+239000011159
+matrix material
+Substances
+0.000
+description
+3
+238000011160
+research
+Methods
+0.000
+description
+3
+238000003860
+storage
+Methods
+0.000
+description
+3
+230000002459
+sustained effect
+Effects
+0.000
+description
+3
+241000282412
+Homo
+Species
+0.000
+description
+2
+208000005392
+Spasm
+Diseases
+0.000
+description
+2
+238000012937
+correction
+Methods
+0.000
+description
+2
+230000001351
+cycling effect
+Effects
+0.000
+description
+2
+239000010432
+diamond
+Substances
+0.000
+description
+2
+238000002474
+experimental method
+Methods
+0.000
+description
+2
+239000000284
+extract
+Substances
+0.000
+description
+2
+238000013507
+mapping
+Methods
+0.000
+description
+2
+230000008447
+perception
+Effects
+0.000
+description
+2
+230000033764
+rhythmic process
+Effects
+0.000
+description
+2
+238000001308
+synthesis method
+Methods
+0.000
+description
+2
+244000000188
+Vaccinium ovalifolium
+Species
+0.000
+description
+1
+230000004075
+alteration
+Effects
+0.000
+description
+1
+238000003491
+array
+Methods
+0.000
+description
+1
+239000006227
+byproduct
+Substances
+0.000
+description
+1
+230000001427
+coherent effect
+Effects
+0.000
+description
+1
+238000005520
+cutting process
+Methods
+0.000
+description
+1
+238000009795
+derivation
+Methods
+0.000
+description
+1
+238000013461
+design
+Methods
+0.000
+description
+1
+238000001514
+detection method
+Methods
+0.000
+description
+1
+238000010348
+incorporation
+Methods
+0.000
+description
+1
+230000002452
+interceptive effect
+Effects
+0.000
+description
+1
+238000011835
+investigation
+Methods
+0.000
+description
+1
+238000002372
+labelling
+Methods
+0.000
+description
+1
+238000005259
+measurement
+Methods
+0.000
+description
+1
+230000000116
+mitigating effect
+Effects
+0.000
+description
+1
+239000000203
+mixture
+Substances
+0.000
+description
+1
+239000011306
+natural pitch
+Substances
+0.000
+description
+1
+230000007935
+neutral effect
+Effects
+0.000
+description
+1
+230000036961
+partial effect
+Effects
+0.000
+description
+1
+230000000737
+periodic effect
+Effects
+0.000
+description
+1
+230000008288
+physiological mechanism
+Effects
+0.000
+description
+1
+238000013139
+quantization
+Methods
+0.000
+description
+1
+230000004044
+response
+Effects
+0.000
+description
+1
+230000001020
+rhythmical effect
+Effects
+0.000
+description
+1
+238000005070
+sampling
+Methods
+0.000
+description
+1
+230000007103
+stamina
+Effects
+0.000
+description
+1
+238000006467
+substitution reaction
+Methods
+0.000
+description
+1
+239000013589
+supplement
+Substances
+0.000
+description
+1
+230000001052
+transient effect
+Effects
+0.000
+description
+1
+210000001260
+vocal cord
+Anatomy
+0.000
+description
+1
+Images
+Classifications
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10L
+—
+SPEECH ANALYSIS TECHNIQUES OR SPEECH SYNTHESIS; SPEECH RECOGNITION; SPEECH OR VOICE PROCESSING TECHNIQUES; SPEECH OR AUDIO CODING OR DECODING
+G10L13/00
+—
+Speech synthesis; Text to speech systems
+G10L13/02
+—
+Methods for producing synthetic speech; Speech synthesisers
+G10L13/033
+—
+Voice editing, e.g. manipulating the voice of the synthesiser
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H1/00
+—
+Details of electrophonic musical instruments
+G10H1/0033
+—
+Recording/reproducing or transmission of music for electrophonic musical instruments
+G10H1/0041
+—
+Recording/reproducing or transmission of music for electrophonic musical instruments in coded form
+G10H1/0058
+—
+Transmission between separate instruments or between individual components of a musical system
+G10H1/0066
+—
+Transmission between separate instruments or between individual components of a musical system using a MIDI interface
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10L
+—
+SPEECH ANALYSIS TECHNIQUES OR SPEECH SYNTHESIS; SPEECH RECOGNITION; SPEECH OR VOICE PROCESSING TECHNIQUES; SPEECH OR AUDIO CODING OR DECODING
+G10L13/00
+—
+Speech synthesis; Text to speech systems
+G10L13/02
+—
+Methods for producing synthetic speech; Speech synthesisers
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H2250/00
+—
+Aspects of algorithms or signal processing methods without intrinsic musical character, yet specifically adapted for or used in electrophonic musical processing
+G10H2250/025
+—
+Envelope processing of music signals in, e.g. time domain, transform domain or cepstrum domain
+G10H2250/031
+—
+Spectrum envelope processing
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10H
+—
+ELECTROPHONIC MUSICAL INSTRUMENTS; INSTRUMENTS IN WHICH THE TONES ARE GENERATED BY ELECTROMECHANICAL MEANS OR ELECTRONIC GENERATORS, OR IN WHICH THE TONES ARE SYNTHESISED FROM A DATA STORE
+G10H2250/00
+—
+Aspects of algorithms or signal processing methods without intrinsic musical character, yet specifically adapted for or used in electrophonic musical processing
+G10H2250/315
+—
+Sound category-dependent sound synthesis processes [Gensound] for musical use; Sound category-specific synthesis-controlling parameters or control means therefor
+G10H2250/455
+—
+Gensound singing voices, i.e. generation of human voices for musical applications, vocal singing sounds or intelligible words at a desired pitch or with desired vocal effects, e.g. by phoneme synthesis
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10L
+—
+SPEECH ANALYSIS TECHNIQUES OR SPEECH SYNTHESIS; SPEECH RECOGNITION; SPEECH OR VOICE PROCESSING TECHNIQUES; SPEECH OR AUDIO CODING OR DECODING
+G10L13/00
+—
+Speech synthesis; Text to speech systems
+G10L13/06
+—
+Elementary speech units used in speech synthesisers; Concatenation rules
+G
+—
+PHYSICS
+G10
+—
+MUSICAL INSTRUMENTS; ACOUSTICS
+G10L
+—
+SPEECH ANALYSIS TECHNIQUES OR SPEECH SYNTHESIS; SPEECH RECOGNITION; SPEECH OR VOICE PROCESSING TECHNIQUES; SPEECH OR AUDIO CODING OR DECODING
+G10L13/00
+—
+Speech synthesis; Text to speech systems
+G10L13/02
+—
+Methods for producing synthetic speech; Speech synthesisers
+G10L2013/021
+—
+Overlap-add techniques
+Definitions
+This invention
+relates to singing voice synthesis and more particularly to synthesis by concatenation of waveform segments.
+Speech and singing
+differ significantly in terms of their production and perception by humans.
+the intelligibility of the phonemic message
+is often secondary to the intonation and musical qualities of the voice.
+Vowels
+are often sustained much longer in singing than in speech, and precise, independent control of pitch and loudness over a large range is required. These requirements significantly differentiate synthesis of singing from speech synthesis.
+Sinusoidal signal models
+are somewhat more general representations that are capable of high-quality modeling, modification, and synthesis of both speech and music signals. The success of previous work in speech and music synthesis motivates the application of sinusoidal modeling to the synthesis of singing voice.
+Wavetable synthesis
+is a low complexity method that involves filling a buffer with one period of a periodic waveform, and then cycling through this buffer to choose output samples. Pitch modification is made possible by cycling through the buffer at various rates. The waveform evolution is handled by updating samples of the buffer with new values as time evolves.
+Experiments
+were conducted to determine the perceptual necessity of the amplitude modulation which arises from frequency modulating a source that excites a fixed-formant filter—a more difficult effect to achieve in wavetable synthesis than in source/filter schemes. They found that this timbral/amplitude modulation was a critical component of naturalness, and should be included in the model.
+a singing voice synthesis
+is provided by providing a signal model and modifying said signal model using concatenated segments of singing voice units and musical control information to produce concatenated waveform segments.
+FIG. 1
+is a block diagram of the system according to one embodiment of the present invention.
+FIG. 2 A and FIG. 2B
+is a catalog of variable-size units available to represent a given phoneme
+FIG. 3
+illustrates a decision tree for context matching
+FIG. 4
+illustrates decision tree for phonemes preceded by an already-chosen diphone or triphone
+FIG. 5
+illustrates decision tree phonemes followed by an already-chosen diphone or triphone
+FIG. 6
+is a transition matrix for all unit-unit combinations
+FIG. 7
+illustrates concatenation of segments using sinusoidal model parameters
+FIG. 8A
+is the fundamental frequency
+FIG. 8B
+is the gain envelope plots for the phrase “ . . . sunshine shimmers . . . ” and
+FIG. 8C
+is a plot of these two quantities against to each other
+FIG. 9
+illustrates the voicing decision result,  ⁇  0 contour and phonetic annotation for the phrase “ . . . sunshine shimmers . . . ” using nearest neighbor clustering method
+FIG. 10
+illustrates short-time energy smoothing
+FIG. 11
+illustrates Cepstral envelope smoothing
+FIG. 12
+illustrates pitch pulse alignment in absence of modification
+FIG. 13
+illustrates pitch pulse alignment after modification
+FIG. 14
+illustrates spectral tilt modification as a function of frequency and parameter T in .
+FIG. 15
+illustrates spectral characteristics of the glottal source in model (normal) and breathy speech wherein top is a vocal fold configuration, middle is time domain waveform and bottom is short-time spectrum.
+the system 10 shown in FIG. 1
+uses, for example, a commercially-available MIDI-based (Musical Instrument Digital Interface) music composition software as a user interface 13 .
+the user
+specifies a musical score and phonetically-spelled lyrics, as well as other musically interesting control parameters such as vibrato and vocal effort from MIDI file 11 .
+This control information
+is stored in a standard MIDI file format that contains all information necessary to synthesize the vocal passage.
+the MIDI file interpreter 13
+provides separately the linguistic control information for the words and the musical control information such as vibrato, vocal effect and vocal tract length, etc.
+linguistic processor 17 of the system 10
+selects synthesis model parameters from an inventory 15 of voice data that has been analyzed off-line by the sinusoidal model. Units are selected at linguistic processor 17 to represent segmental phonetic characteristics of the utterance, including coarticulation effects caused by the context of each phoneme. These units are applied to concatenator/smoother processor 19 .
+processor 19
+algorithms as described in Macon, et al. “Speech Concatenation and Synthesis using Overlap-Add Sinusoidal Model” in Proc. of International Conference on Acoustics, Speech and Signal Processing (Vol. 1, pp.361-364, May 1996) are applied to the modeled segments to remove disfluencies in the signal at the joined boundaries.
+the sinusoidal model parameters
+are then used to modify the pitch, duration, and spectral characteristics of the concatenated voice units as specified by the musical score and MIDI control information. Finally, the output waveform is synthesized at signal model 20 using the ABS/OLA sinusoidal model. This output of model 20 is applied via a digital to analog converter 22 to the speaker 21 .
+the MIDI file interpreter 13 and processor 17
+can be part of a workstation PC 16 and processor 19 and signal model 20 can be part of a workstation or a Digital Signal Processing (DSP) 18 .
+DSP
+Digital Signal Processing
+Separate MIDI files 13
+can be coupled into the workstation 16 .
+the interpreter 13
+converts to machine information.
+the inventory 15
+is also coupled to the workstation 16 as shown.
+the output from the model 20
+may also be provided to files for later use.
+the signal model 20 used
+is an extension of the Analysis-by-Synthesis/Overlap-Add (ABS/OLA) sinusoidal model of E. Bryan George, et al. in Journal of the Audio Engineering Society (Vol. 40, pp.497-516, June 1992) entitled, “An Analysis-by-Synthesis Approach to Sinusoidal Modeling Applied to the Analysis and Synthesis of Musical Tones.”
+ABS/OLA
+the input signal s[n] is represented by a sum of overlapping short-time signal frames sk[n].
+N s
+is the frame length
+w[n]
+is a window function
+⁇ [n]
+is a slowly time-varying gain envelope
+S k [n]
+represents the kth frame contribution to the synthesized signal.
+Each signal contribution S k [n]
+consists of the sum of a small number of constant-frequency, constant-amplitude sinusoidal components.
+Synthesis
+is performed by an overlap-add procedure that uses the inverse fast Fourier transform to compute each contribution S k [n], rather than sets of oscillator functions.
+Time-scale modification of the signal
+is achieved by changing the synthesis frame duration and pitch modification is performed by altering the sinusoidal components such that the fundamental frequency is modified while the speech formant structure is maintained.
+signal model of the present invention
+is the preferred ABS/OLA sinusoidal model
+other sinusoidal models
+as well as sampler models, wavetable models, formant synthesis model and physical models such as waveguide model may also be used.
+Some of these models with referenced
+are discussed in the background. For more details on the ABS/OLA model, see E. Bryan George, et al. U.S. Pat. No. 5,327,518.
+the synthesis system presented in this application
+relies on an inventory of recorded singing voice data 15 to represent the phonetic content of the sung passage.
+an important step
+is the design of a corpus of singing voice data that adequately covers allophonic variations of phonemes in various contexts.
+the inventory
+should be made as large as possible.
+This goal
+must be balanced with constraints of (a) the time and expense involved in collecting the inventory, (b) stamina of the vocalist, and (c) storage and memory constraints of the synthesis computer hardware.
+Consonant clusters
+are difficult to model using concatenation, due to coarticulation and rapidly varying signal characteristics.
+consonants
+can be grouped into “classes” that have somewhat similar coarticulatory effects on neighboring vowels.
+a set of nonsense syllable tokens
+was designed with a focus on providing adequate coverage of vowels in a minimal amount of recording.
+All vowels V
+were presented within the contexts C L V and VC R , where C L and C R are classes of consonants (e.g. voiced stops, unvoiced fricatives, etc.) located to the left and right of a vowel as listed in Table 1 of Appendix A.
+the actual phonemes selected from each class
+were chosen sequentially such that each consonant in a class appeared a roughly equal number of times across all tokens.
+These C L V and VC R units
+were then paired arbitrarily to form C L VC R units, then embedded in a “carrier” phonetic context to avoid word boundary effects.
+This carrier context
+consisted of the neutral vowel /ax/ (in ARPAbet notation), resulting in units of the form /ax/C L VC R /ax/.
+Two nonsense word tokens for each /ax/C L VC R /ax/ unit
+were generated, and sung at high and low pitches within the vocalist's natural range.
+a set of 500 inventory tokens
+was sung by a classically-trained male vocalist to generate the inventory data. Half of these 500 units were sung at a pitch above the vocalist's normal pitch, and half at a lower pitch. This inventory was then phonetically annotated and trimmed of silences, mistakes, etc. using Entropic x-waves and a simple file cutting program resulting in about ten minutes of continuous singing data used as input to the off-line sinusoidal model analysis. (It should be noted that this is a rather small inventory size, in comparison to established practices in concatenative speech synthesis.)
+the task at hand during the online synthesis process
+is to select a set of units from this inventory to represent the input lyrics. This is done at processor 17 .
+unit selection
+is a dynamic programming problem that finds an optimal path through a lattice of all possible units based on acoustic “costs,” (e.g., Hunt, et al. “Unit Selection in a Concatenative Speech Synthesis System Using a large Speech Database,” in Proc. of International Conference on Acoustics, Speech and Signal Processing, Vol. 1, pp. 373-376, 1996) the approach taken here is a simpler one designed with the constraints of the inventory in mind: best-context vowel units are selected first, and consonant units are selected in a second pass to complete the unit sequence.
+the method used for choosing the each unit
+involves evaluating a “context decision tree” for each input phoneme.
+the terminal nodes of the tree
+specify variable-size concatenation units ranging from one to three phonemes in length. These units are each given a “context score” that orders them in terms of their agreement with the desired phonetic context, and the unit with the best context score is chosen as the unit to be concatenated. Since longer units generally result in improved speech quality at the output, the method places a priority on finding longer units that match the desired phonetic context. For example, if an exact match of a phoneme and its two neighbors is found, this triphone is used directly as a synthesis unit.
+each extracted unit
+consists of an instance of the target phoneme and one or both of its neighboring phonemes (i.e., it extracts a monophone, diphone, or triphone).
+FIG. 2
+shows a catalog of all possible combinations of monophones, diphones, and triphones, including class ma tch properties, ordered by their preference for synthesis.
+the system
+In addition to searching for phonemes in an exact phonemic context , however, the system also is capable of finding phonemes that have a context similar, but not identical, to the desired triphone context. For example, if a desired triphone cannot be found in the inventory, a diphone or monop hone taken from an acoustically similar context is used instead.
+the monophone /ae/ taken from the context /b/-/ae/-/b/
+can be used instead, since /b/ and /d/ have a similar effect on the neighboring vowel.
+the notation of FIG. 2
+indicates the resulting unit output, along with a description of the context rules satisfied by the units.
+x L P 1 x R
+indicates a phoneme with an exact triphone context match (as /d/-/ae/-/d/ would be for the case described above).
+the label c L P 1 c R
+indicates a match of phoneme class on the left and right, as for /b/-/ae/-/b/ above.
+Labels with the symbol P 2
+indicate a second unit is used to provide the final output phonemic unit. For example, if /b/-/ae/-/k/ and /k/-/ae/-/b/ can be found, the two lael monophones can be joined to produce an /ae/ with the proper class context match on either side.
+a binary decision tree
+was used (shown in FIG. 3 ). Nodes in this tree indicate a test defined by the context label next to each node. The right branch out of each node indicates a “no” response; downward branches indicate “yes”. Terminal node numbers correspond to the outputs defined in FIG. 2 . Diamonds on the node branches indicate storage arrays that must be maintained during the processing of each phoneme. Regions enclosed in dashed lines refer to a second search for phonemes with a desired right context to supplement the first choice (the case described at the end of the previous paragraph). The smaller tree at the bottom right of the diagram describes all tests that must be conducted to find this second phoneme.
+the storage locations here
+are computed once and used directly in the dashed boxes. To save computation at runtime, the first few tests in the decision tree are performed off-line and stored in a file. The results of the precomputed branches are represented by filled diamonds on the branches.
+the (nonempty) output node representing the lowest score in FIG. 2
+is selected. All units residing in this output node are then ranked according to their closeness to the desired pitch (as input in the MIDI file). A rough pitch estimate is included in the phonetic labeling process for this purpose. Thus the unit with the best phonetic context match and the closest pitch to the desired unit is selected.
+a diphone or triphone
+has been specified on the left side of the phoneme of interest.
+Result
+The pruned decision tree in FIG. 4 is used to specify the remaining portion of the phoneme.
+a diphone or triphone
+has been specified on the right side of the phoneme of interest.
+Result
+The pruned decision tree in FIG. 5 is used to specify the remaining portion of the phoneme.
+This inexact matching
+is incorporated into the context decision tree by looking for units that match the context in terms of phoneme class (as defined above).
+the nominal pitch of each unit
+is used as a secondary selection criterion when more than one “best-context” unit is available.
+Each pair of units
+is joined by either a cutting/smoothing operation or an “abutting” of one unit to another.
+the type of unit-to-unit transition
+uniquely specifies whether units are joined (cut and smoothed) or abutted.
+FIG. 6
+shows a “transition matrix” of possible unit-unit sequences and their proper join method. It should be noted that the NULL unit has zero length—it serves as a mechanism for altering the type of join in certain situations.
+the ABS/OLA sinusoidal model analysis
+generates several quantities that represent each input signal frame, including (i) a set of quasi-harmonic sinusoidal parameters for each frame (with an implied fundamental frequency estimate), (ii) a slowly time-varying gain envelope, and (iii) a spectral envelope for each frame.
+Disjoint modeled speech segments
+can be concatenated by simply stringing together these sets of model parameters and re-synthesizing, as shown in FIG. 7 .
+the jointed segments
+are analyzed from disjoint utterances, substantial variations between the time- or frequency-domain characteristics of the signals may occur at the boundaries. These differences manifest themselves in the sinusoidal model parameters.
+the goal of the algorithms descibed here
+is to make discontinuities at the concatenation points inaudible by altering the sinusoidal model components in the neighborhood of the boundaries.
+the units extracted from the inventory
+may vary in short-time signal energy, depending on the characteristics of the utterances from which they were extracted. This variation gives the output speech a very stilted, unnatural rhythm. For this reason, it is necessary to normalize the energy of the units. However, it is not straightforward to adjust units that contain a mix of voiced and unvoiced speech and/or silence, since the RMS energy of such segments varies considerably depending on the character of the unit.
+the approach taken here
+is to normalize only the voiced sections of the synthesized speech.
+a global RMS energy for all voiced sounds in the inventory
+is found.
+voiced sections of the unit
+are multiplied by a gain term that modifies the RMS value of each section to match the target. This can be performed by operating directly on the sinusoidal model parameters for the unit.
+⁇ overscore ( ⁇ ) ⁇  2
+is the square of the average of  ⁇ [n] over the fiame. This energy estimate can be found for the voiced sections of the unit, and a suitable gain adjustment can be easily found. In practice, the applied gain function is smoothed to avoid abrupt discontinuities in the synthesized signal energy.
+FIG. 8A
+shows fundamental frequency
+FIG. 8B
+shows the gain contour plots for the phrase “sunshine shimmers,” spoken by a female, with a plot of the two against each other in FIG. 8C to the right. It is clear from this plot (and even the  ⁇  0 plot alone) that the voiced and unvoiced sections of the signal are quite discernible based on these values due to the clustering of data.
+Each of the feature vectors
+is clustered with one of the K centroids to which it is “closest,” as defined by a distance measure, d(v, c).
+the centroids
+are updated by choosing as the new centroid the vector that minimizes the average distortion between it and the other vectors in the cluster (e.g., the mean if a Euclidean distance is used).
+⁇  0
+is the fundamental frequency estimate for the frame
+⁇ overscore ( ⁇ ) ⁇
+is the average of the time envelope  ⁇ [n] over the frame
+H NSR
+is the ratio of the signal energy to the energy in the difference between the “quasiharmonic” sinusoidal components in the model and the same components with frequencies forced to be harmonically related. This is a measure of the degree to which the components are harmonically related to each other. Since these quantities are not expressed in terms of units that have the same order of magnitude, a weighted distance measure is used:
+C
+is a diagonal matrix containing the variance of each element of v on its main diagonal.
+This general framework for discrimination voiced and unvoiced frames
+has two benefits: (i) it eliminates the problem of manually setting thresholds that may or may not be valid across different talkers; and (ii) it adds robustness to the system, since several parameters are used in the V/UV discrimination. For instance, the inclusion of energy values in addition to fundamental frequency makes the method more robust to pitch estimation errors.
+the output of the voicing decision algorithm for an example phrase
+is shown in FIG. 9 .
+the unit normalization method described above
+removes much of the energy variation between adjacent segments extracted from the inventory. However, since this normalization is performed on a fairly macroscopic level, perceptually significant short-time signal energy mismatches across concatenation boundaries remain.
+Equation (3)
+The frame-by-frame energies of N smooth frames (typically on the order of 50 ms) around the concatenation point are found using Equation (3).
+a target value, E target
+for the energy at the concatenation point is determined.
+the average E L and E R in the previous step
+is a reasonable assumption for such a target value.
+Linear gain correction functions
+that interpolate from a value of 1 and the ends of the smoothing region to G L and G R at the respective concatenation points are created, as shown in FIG. 10 . These functions are then factored into the gain envelopes  ⁇  L [n] and  ⁇  R [n].
+x[n]
+w s [n] ⁇  L [n]s L [n]+(1 ⁇ w s [n]) ⁇  R [n]s R [n].
+This algorithm
+is very effective for smoothing energy mismatches in vowels and sustained consonants.
+the smoothing effect
+is undesirable for concatenations that occur in the neighborhood of transient portions of the signal (e.g. plosive phonemes like /k/), since “burst” events are smoothed in time.
+This
+can be overcome by using phonetic label information available in the TTS system to vary N smooth based on the phonetic context of the unit concatenation point.
+spectral shape
+Another source of perceptible discontinuity in concatenated signal segments is mismatch in spectral shape across boundaries.
+the segments being joined
+are somewhat similar to each other in basic formant structure, due to matching of the phonetic context in unit selection.
+differences in spectral shape
+are often still present because of voice quality (e.g., spectral tilt) variation and other factors.
+spectral envelope estimate
+represented as a set of low-order cepstral coefficients. This envelope is used to maintain formant locations and spectral shape while frequencies of sinusoids in the model are altered.
+An “excitation model”
+is computed by dividing the lth complex sinusoidal amplitude a l e j ⁇ l by the complex spectral envelope estimate H( ⁇ )evaluated at the sinusoid frequency  ⁇  l . These excitation sinusoids are then shifted in frequency by a factor  ⁇ , and the spectral envelope is re-multiplied by H( ⁇  l ) to obtain the pitch-shifted signal.
+This operation
+also provides a mechanism for smoothing spectral differences over the concatenation boundary, since a different spectral envelope may be reintroduced after pitch-shifting the excitation sinusoids.
+cepstral differences across concatenation points
+are smoothed by adding weighted versions of the cepstral feature vector from one segment boundary to cepstral feature vectors from the other segment, and vice-versa, to compute a new set of cepstral feature vectors.
+cepstral features for the left-side segment  ⁇  . . . , L2, L 1 , L 0  ⁇  and features for the right-side segment  ⁇ R 0 , R 1 , R 2 . . .  ⁇
+are to be concatenated as shown in FIG. 11, smoothed cepstral features L k s for the left segment and R k s for the right segment are found by:
+L k s and R k s
+are generated, they are input to the synthesis routine as an auxiliary set of cepstral feature vectors.
+Sets of spectral envelopes H k ( ⁇ ) and H k s ( ⁇ )
+are generated from  ⁇ L k , R k  ⁇  and  ⁇ L k s ,R k s  ⁇ , respectively.
+the sinusoidal components
+are multiplied by H k s ( ⁇ ) for each frame k to impart the spectral shape derived from the smoothed cepstral features.
+One of the most important functions of the sinusoidal model in this synthesis method
+is a means of performing prosody modification on the speech units.
+a sequence of pitch modification factors  ⁇  k  ⁇  for each frame
+can be found by simply computing the ratio of the desired fundamental frequency to the fundamental frequency of the concatenated unit.
+time scale modification factors  ⁇  k  ⁇
+can be found by using the ratio of the desired duration of each phone (based on phonetic annotations in the inventory) to the unit duration.
+the set of pitch modification factors generated in this manner
+will generally have discontinuities at the concatenated unit boundaries. However, when these-pitch modification factors are applied to the sinusoidal model frames, the resulting pitch contour will be continuous across the boundaries.
+Proper alignment of adjacent frames
+is essential to producing high quality synthesized speech or singing. If the pitch pulses of adjacent frames do not add coherently in the overlap-add process a “garbled” character is clearly perceivable in the re-synthesized speech or singing. There are two tasks involved in properly aligning the pitch pulses: (i) finding points of reference in the adjacent synthesized frames, and (ii) shifting frames to properly align pitch pulses, based on these points of reference.
+the first of these requirements
+is fulfilled by the pitch pulse onset time estimation algorithm described in E. Bryan George, et al. U.S. Pat. No. 5,327,518. This algorithm attempts to find the time at which a pitch pulse occurs in the analyzed frame.
+the second requirement, aligning the pitch pulse onset times
+must be viewed differently depending on whether the frames to be aligned come from continuous speech or concatenated disjoint utterances.
+the time shift equation for continuous speech
+will be now be briefly reviewed in order to set up the problem for the concatenated voice case.
+FIGS. 12 and 13
+depict the locations of pitch pulses involved in the overlap-add synthesis of one frame.
+Analysis frames k and k +1
+each contribute to the synthesized frame, which runs from 0 to N s  ⁇ 1.
+the pitch pulse onset times  ⁇  k and  ⁇  k +1
+describe the locations of the pitch pulse closest to the center of analysis frames k and k+1, respectively.
+the time-scale modification factor  ⁇
+is incorporated by changing the length of the synthesis frame to  ⁇ N s
+pitch modification factors  ⁇  k and  ⁇  k+1
+are applied to change the pitch of each of the analysis frame contributions.
+a time shift  ⁇
+is also applied to each analysis frame. We assume that time shift  ⁇  k has already been applied, and the goal is to find  ⁇  k+1 to shift the pitch pulses such that they coherently sum in the overlap-add process.
+t k [ ⁇ circumflex over (l) ⁇  k ] and t k+1 [ ⁇ circumflex over (l) ⁇  k+1 ]
+are the time locations of the pitch pulses adjacent to the center of the synthesis frame.
+⁇  k + 1
+⁇  k + (  ⁇  k - 1 /  ⁇  av )  ⁇  N s +  ⁇  k -  ⁇  k + 1 2  ⁇   ⁇  av  ⁇  (  ⁇  k  ⁇  k +  ⁇  k + 1  ⁇  k + 1 ) - l  ⁇  k  ⁇  k  ⁇  T 0 k + ( i k  ⁇  T 0 k - i k + 1  ⁇  T 0 k + 1 /  ⁇  av . ( 15 )
+the frames
+will naturally line up correctly in the no-modification case since they are overlapped and added in a manner equivalent oto that of the analysis method.
+This behavior
+is advantageous, since it implies that even if the pitch pulse onset time estimate is in error, the speech will not be significantly affected when the modification factors  ⁇ ,  ⁇  k , and  ⁇  k+1 are close to 1.
+the goal of the frame alignment process
+is to shift frame k+1 such that the pitch pulses of the two frames line up and the waveforms add coherently.
+a reasonable way to achieve this
+is to force the time difference  ⁇  between the pitch pulses adjacent to the frame center to be the average of the modified pitch periods in the two frames. It should be noted that this approach, unlike that above, makes no assumptions about the coherence of the pulses prior to modification.
+the modified pitch periods T 0 k / ⁇  k and T 0 k+1 / ⁇  k+1
+will be approximately equal, thus,
+T  ⁇  0 avg
+( T 0 k  ⁇  k + T 0 k + 1  ⁇  k + 1 ) / 2.
+Equation (17)
+does indeed result in coherent overlap of pitch pulses at the concatenation boundaries in speech synthesis.
+this method
+is critically dependent on the pitch pulse onset time estimates  ⁇  k and  ⁇  k+1 . If either of these estimates is in error, the pitch pulses will not overlap correctly, distorting the output waveform.
+the onset estimation algorithm
+described in E. Bryan George, et al. U.S. Pat. No. 5,327,518.
+the onset time accuracy
+is less important, since poor frame overlap only occurs due to an onset time error when  ⁇  is not close to 1.0, and only when the difference between two onset time estimates is not an integer multiple of a pitch pulse.
+onset errors
+nearly always result in audible distortion, since Equation (17) is completely reliant on the correct estimation of pitch pulse-onset times to either side of the concatenation point.
+Pitchrmarks derived from an electroglottograph
+can be used as initial estimates of the pitch onset time. Instead of relying on the onset time estimator to search over the entire range [ ⁇ T 0 /2, T 0 /2], the pitchmark closest to each frame center can be used to derive a rough estimate of the onset time, which can then be refined using the estimator function described earlier.
+the electroglottograph
+produces a measurement of glottal activity that can be used to find instants of glottal closure. This rough estimate dramatically improves the performance of the onset estimator and the output voice quality.
+the musical control information
+such as vibrato, pitch, vocal effect scaling, and vocal tract scaling is provided from the MIDI file 11 via the MIDI file interpreter 13 to the concatenator/smoother 19 in FIG. 1 to perform modification to the units from the inventory.
+the prosody modification step in the sinusoidal synthesis algorithm
+transforms the pitch of every frame to match a target, the result is a signal that does not exhibit the natural pitch fluctuations of the human voice.
+the natural “quantal unit” of rhythm in vocal music
+is the syllable.
+Each syllable of lyric
+is associated with one or more notes of the melody.
+vocalists
+do not execute the onsets of notes at the beginnings of the leading consonant in a syllable, but rather at the beginning of the vowel. This effect has been cited in the study of rhythmic characteristics of singing and speech.
+Applicants' system 10
+employs rules that align the beginning of the first note in a syllable with the onset of the vowel in that syllable.
+D n
+are the desired durations of the N notes notes associated with the syllable and D m are the durations of the N phon phonemes extracted from the inventory to compose the desired syllable. If  ⁇  syll >1, then the vowel in the syllable is looped by repeating a set of frames extracted from the stationary portion of the vowel, until  ⁇  syll  ⁇ 1. This preserves the duration of the consonants, and avoids unnatural time-stretching effects. If  ⁇ syll ⁇ 1, the entire syllable is compressed in time by setting the time-scale modification factor  ⁇  for all frames in the syllable equal to  ⁇  syll .
+a more sophisticated approach to the problem
+involves phoneme-and context-dependent rules for scaling phoneme durations in each syllable to more accurately represent the manner in which humans perform this adjustment.
+H( ⁇ )
+is the spectral envelope and  ⁇  is a global frequency scaling factor dependent on the average pitch modification factor.
+the factor  ⁇
+typically lies in the range 0.75 ⁇ 1.0.
+This frequency warping
+has the added benefit of slightly narrowing the bandwidths of the formant resonances, mitigating the buzzy character of pitch-lowered sounds. Values of  ⁇ >1.0 can be used to simulate a more child-like voice, as well. In tests of this method, it was found that this frequency warping gives the synthesized bass voice a much more rich-sounding, realistic character.
+spectral tilt
+Another important attribute of the vocal source in singing is the variation of spectral tilt with loudness. Crescendo of the voice is accompanied by a leveling of the usual downward tilt of the source spectrum. Since the sinusoidal model is a frequency-domain representation, spectral tilt changes can be quite easily implemented by adjusting the slope of the sinusoidal amplitudes. Breathiness, which manifests itself as high-frequency noise in the speech spectrum, is another acoustic correlate of vocal intensity. This frequency-dependent noise energy can be generated within the ABS/OLA model framework by employing a phase modulation technique during synthesis.
+F l
+is the frequency of the lth sinusoidal component and T in is a spectral tilt parameter controlled by a MIDI “vocal effort” control function input by the user.
+This function
+produces a frequency-dependent gain scaling function parameterized by T in as shown in FIG. 14
+Landscapes
+Engineering & Computer Science
+(
+AREA
+)
+Physics & Mathematics
+(
+AREA
+)
+Acoustics & Sound
+(
+AREA
+)
+Multimedia
+(
+AREA
+)
+Computational Linguistics
+(
+AREA
+)
+Health & Medical Sciences
+(
+AREA
+)
+Audiology, Speech & Language Pathology
+(
+AREA
+)
+Human Computer Interaction
+(
+AREA
+)
+Electrophonic Musical Instruments
+(
+AREA
+)
+Abstract
+A method of singing voice synthesis uses commercially-available MIDI-based music composition software as a user interface (13). The user specifies a musical score and lyrics; as well as other music control parameters. The control information is stored in a MIDI file (11). Based on the input to the MIDI file (11) the system selects synthesis model parameters from an inventory (15) of linguistic voice data units. The units are selected and concatenated in a linguistic processor (17). The units are smoothed in the processing and are modified according to the music control parameters in musical processor (19) to modify the pitch, duration, and spectral characteristics of the concatenated voice units as specified by the musical score. The output waveform is synthesized using a sinusoidal model 20.
+Description
+This application claims priority under 35 USC § 119(e)(1) of provisional application No. 60/062,712, filed Oct. 22, 1997.
+TECHNICAL FIELD OF THE INVENTION
+This invention relates to singing voice synthesis and more particularly to synthesis by concatenation of waveform segments.
+BACKGROUND OF THE INVENTION
+Speech and singing differ significantly in terms of their production and perception by humans. In singing, for example, the intelligibility of the phonemic message is often secondary to the intonation and musical qualities of the voice. Vowels are often sustained much longer in singing than in speech, and precise, independent control of pitch and loudness over a large range is required. These requirements significantly differentiate synthesis of singing from speech synthesis.
+Most previous approaches to synthesis of singing have relied on models that attempt to accurately characterize the human speech production mechanism. For example, the SPASM system developed by Cook (P. R. Cook, “SPASM, A Real Time Vocal Tract Physical Model Controller And Singer, The Companion Software Synthesis System,” Computer Music Journal, Vol. 17, pp. 30-43, Spring 1993.) employs an articulator-based tube representation of the vocal tract and a time-domain glottal pulse input. Formant synthesizers such as the CHANT system (Bennett, et al., “Synthesis of the Singing Voice,” in Current Directions in Computer Music Research, pp. 19-49, MIT Press 1989.) rely on direct representation and control of the resonances produced by the shape of the vocal tract. Each of these techniques relies, to a degree, on accurate modeling of the dynamic characteristics of the speech production process by an approximation to the articulartory system. Sinusoidal signal models are somewhat more general representations that are capable of high-quality modeling, modification, and synthesis of both speech and music signals. The success of previous work in speech and music synthesis motivates the application of sinusoidal modeling to the synthesis of singing voice.
+In the article entitled, “Frequency Modulation Synthesis of the Singing Voice,” in Current Directions in Computer Research, (pp. 57-64, MIT Press, 1989) John Chowning has experimented with frequency modulation (FM) synthesis of the singing voice. This technique, which has been a popular method of music synthesis for over 20 years, relies on creating complex spectra with a small number of simple FM oscillators. Although this method offers a low-complexity method of producing rich spectra and musically interesting sounds, it has little or no correspondence to the acoustics of the voice, and seems difficult to control. The methods Chowning has devised resemble the “formant waveform” synthesis method of CHANT, where each formant waveform is created by an FM oscillator.
+Mather and Beauchamp in an article entitled, “An Investigation of Vocal Vibrato for Synthesis,” in Applied Acoustics, (Vol. 30, pp. 219-245, 1990) have experimented with wavetable synthesis of singing voice. Wavetable synthesis is a low complexity method that involves filling a buffer with one period of a periodic waveform, and then cycling through this buffer to choose output samples. Pitch modification is made possible by cycling through the buffer at various rates. The waveform evolution is handled by updating samples of the buffer with new values as time evolves. Experiments were conducted to determine the perceptual necessity of the amplitude modulation which arises from frequency modulating a source that excites a fixed-formant filter—a more difficult effect to achieve in wavetable synthesis than in source/filter schemes. They found that this timbral/amplitude modulation was a critical component of naturalness, and should be included in the model.
+In much previous singing synthesis work, the transitions from one phonetic segment to another have been represented by stylization of control parameter contours (e.g., formant tracks) through rules or interpolation schemes. Although many characteristics of the voice can be approximated with such techniques after painstaking hand-tuning of rules, very natural-sounding synthesis has remained an elusive goal.
+In the speech synthesis field, many current systems back away from specification of such formant transition rules, and instead model phonetic transitions by concatenating segments from an inventory of collected speech data. For example, this is described by Macon, et al. in article in Proc. of International Conference on Acoustics, Speech and Signal Processing (Vol. 1, pp. 361-364, May 1996) entitled, “Speech Concatenation and Synthesis Using Overlap-Add Sinusoidal Model.”
+For Patents see, E. Bryan George, et al. U.S. Pat. No. 5,327,518 entitled, “Audio Analysis/Synthesis System” and E. Bryan George, et al. U.S. Pat. No. 5,504,833 entitled, “Speech Approximation Using Successive Sinusoidal Overlap-Add Models and Pitch-Scale Modifications.” These patents are incorporated herein by reference.
+SUMMARY OF THE INVENTION
+In accordance with one embodiment of the present invention a singing voice synthesis is provided by providing a signal model and modifying said signal model using concatenated segments of singing voice units and musical control information to produce concatenated waveform segments.
+These and other features of the invention will be apparent to those skilled in the art from the following detailed description of the invention, taken together with the accompanying drawings.
+DESCRIPTION OF THE DRAWINGS
+FIG. 1 is a block diagram of the system according to one embodiment of the present invention;
+FIG.
+2
+A and FIG. 2B is a catalog of variable-size units available to represent a given phoneme;
+FIG. 3 illustrates a decision tree for context matching;
+FIG. 4 illustrates decision tree for phonemes preceded by an already-chosen diphone or triphone;
+FIG. 5 illustrates decision tree phonemes followed by an already-chosen diphone or triphone;
+FIG. 6 is a transition matrix for all unit-unit combinations;
+FIG. 7 illustrates concatenation of segments using sinusoidal model parameters;
+FIG. 8A is the fundamental frequency,
+FIG. 8B is the gain envelope plots for the phrase “ . . . sunshine shimmers . . . ” and
+FIG. 8C is a plot of these two quantities against to each other;
+FIG. 9 illustrates the voicing decision result, ω
+0
+contour and phonetic annotation for the phrase “ . . . sunshine shimmers . . . ” using nearest neighbor clustering method;
+FIG. 10 illustrates short-time energy smoothing;
+FIG. 11 illustrates Cepstral envelope smoothing;
+FIG. 12 illustrates pitch pulse alignment in absence of modification;
+FIG. 13 illustrates pitch pulse alignment after modification;
+FIG. 14 illustrates spectral tilt modification as a function of frequency and parameter T
+in
+; and
+FIG. 15 illustrates spectral characteristics of the glottal source in model (normal) and breathy speech wherein top is a vocal fold configuration, middle is time domain waveform and bottom is short-time spectrum.
+DESCRIPTION OF THE PREFERRED EMBODIMENT
+The
+system
+10
+shown in FIG. 1 uses, for example, a commercially-available MIDI-based (Musical Instrument Digital Interface) music composition software as a
+user interface
+13
+. The user specifies a musical score and phonetically-spelled lyrics, as well as other musically interesting control parameters such as vibrato and vocal effort from
+MIDI file
+11
+. This control information is stored in a standard MIDI file format that contains all information necessary to synthesize the vocal passage. The
+MIDI file interpreter
+13
+provides separately the linguistic control information for the words and the musical control information such as vibrato, vocal effect and vocal tract length, etc.
+Based on this input MIDI file,
+linguistic processor
+17
+of the
+system
+10
+selects synthesis model parameters from an
+inventory
+15
+of voice data that has been analyzed off-line by the sinusoidal model. Units are selected at
+linguistic processor
+17
+to represent segmental phonetic characteristics of the utterance, including coarticulation effects caused by the context of each phoneme. These units are applied to concatenator/
+smoother processor
+19
+. At
+processor
+19
+, algorithms as described in Macon, et al. “Speech Concatenation and Synthesis using Overlap-Add Sinusoidal Model” in Proc. of International Conference on Acoustics, Speech and Signal Processing (Vol. 1, pp.361-364, May 1996) are applied to the modeled segments to remove disfluencies in the signal at the joined boundaries. The sinusoidal model parameters are then used to modify the pitch, duration, and spectral characteristics of the concatenated voice units as specified by the musical score and MIDI control information. Finally, the output waveform is synthesized at
+signal model
+20
+using the ABS/OLA sinusoidal model. This output of
+model
+20
+is applied via a digital to
+analog converter
+22
+to the
+speaker
+21
+. The
+MIDI file interpreter
+13
+and
+processor
+17
+can be part of a
+workstation PC
+16
+and
+processor
+19
+and
+signal model
+20
+can be part of a workstation or a Digital Signal Processing (DSP)
+18
+. Separate MIDI files
+13
+can be coupled into the
+workstation
+16
+. The
+interpreter
+13
+converts to machine information. The
+inventory
+15
+is also coupled to the
+workstation
+16
+as shown. The output from the
+model
+20
+may also be provided to files for later use.
+The
+signal model
+20
+used is an extension of the Analysis-by-Synthesis/Overlap-Add (ABS/OLA) sinusoidal model of E. Bryan George, et al. in Journal of the Audio Engineering Society (Vol. 40, pp.497-516, June 1992) entitled, “An Analysis-by-Synthesis Approach to Sinusoidal Modeling Applied to the Analysis and Synthesis of Musical Tones.” In the ABS/OLA model, the input signal s[n] is represented by a sum of overlapping short-time signal frames sk[n].
+s
+
+[
+n
+]
+=
+σ
+
+[
+n
+]
+
+∑
+k
+
+w
+
+[
+n
+-
+k
+
+
+N
+s
+]
+
+s
+k
+
+[
+n
+]
+(
+1
+)
+where N
+s
+is the frame length, w[n] is a window function, σ[n] is a slowly time-varying gain envelope, and S
+k
+[n] represents the kth frame contribution to the synthesized signal. Each signal contribution S
+k
+[n] consists of the sum of a small number of constant-frequency, constant-amplitude sinusoidal components. An interactive analysis-by-synthesis procedure is performed to find the optimal parameters to represent each signal frame. See U.S. Pat. No. 5,327,518 of E. Bryan George, et al. incorporated herein by reference.
+Synthesis is performed by an overlap-add procedure that uses the inverse fast Fourier transform to compute each contribution S
+k
+[n], rather than sets of oscillator functions. Time-scale modification of the signal is achieved by changing the synthesis frame duration and pitch modification is performed by altering the sinusoidal components such that the fundamental frequency is modified while the speech formant structure is maintained.
+The flexibility of this synthesis model enables the incorporation of vocal qualities such as vibrato and spectral tilt variation, adding greatly to the musical expressiveness of the synthesizer output.
+While the signal model of the present invention is the preferred ABS/OLA sinusoidal model, other sinusoidal models as well as sampler models, wavetable models, formant synthesis model and physical models such as waveguide model may also be used. Some of these models with referenced are discussed in the background. For more details on the ABS/OLA model, see E. Bryan George, et al. U.S. Pat. No. 5,327,518.
+The synthesis system presented in this application relies on an inventory of recorded
+singing voice data
+15
+to represent the phonetic content of the sung passage. Hence an important step is the design of a corpus of singing voice data that adequately covers allophonic variations of phonemes in various contexts. As the number of “phonetic contexts” represented in the inventory increases, better synthesis results will be obtained, since more accurate modeling of coarticulatory effects will occur. This implies that the inventory should be made as large as possible. This goal, however, must be balanced with constraints of (a) the time and expense involved in collecting the inventory, (b) stamina of the vocalist, and (c) storage and memory constraints of the synthesis computer hardware. Other assumptions are:
+a.) For any given voiced speech segment, re-synthesis with small pitch modifications produces the most natural-sounding result. Thus, using an inventory containing vowels sung at several pitches will result in better-sounding synthesis, since units close to the desired pitch will usually be found.
+b.) Accurate modeling of transitions to and from silence contributes significantly to naturalness of the synthesized segments.
+c.) Consonant clusters are difficult to model using concatenation, due to coarticulation and rapidly varying signal characteristics.
+To make best use of available resources, the assumption can be made that the musical quality of the voice is more critical than intelligibility of the lyrics. Thus, the fidelity of sustained vowels is more important than that of consonants. Also, it can be assumed that, based on features such as place and manner of articulation and voicing, consonants can be grouped into “classes” that have somewhat similar coarticulatory effects on neighboring vowels.
+Thus, a set of nonsense syllable tokens was designed with a focus on providing adequate coverage of vowels in a minimal amount of recording. All vowels V were presented within the contexts C
+L
+V and VC
+R
+, where C
+L
+and C
+R
+are classes of consonants (e.g. voiced stops, unvoiced fricatives, etc.) located to the left and right of a vowel as listed in Table 1 of Appendix A. The actual phonemes selected from each class were chosen sequentially such that each consonant in a class appeared a roughly equal number of times across all tokens. These C
+L
+V and VC
+R
+units were then paired arbitrarily to form C
+L
+VC
+R
+units, then embedded in a “carrier” phonetic context to avoid word boundary effects.
+This carrier context consisted of the neutral vowel /ax/ (in ARPAbet notation), resulting in units of the form /ax/C
+L
+VC
+R
+/ax/. Two nonsense word tokens for each /ax/C
+L
+VC
+R
+/ax/ unit were generated, and sung at high and low pitches within the vocalist's natural range.
+Transitions of each phoneme to and from silence were generated as well.
+For vowels, these units were sung at both high and low pitches. The affixes _/s/ and _/z/ were also generated in the context of all valid phonemes. The complete list of nonsense words is given in Tables 2 and 3 of Appendix A.
+A set of 500 inventory tokens was sung by a classically-trained male vocalist to generate the inventory data. Half of these 500 units were sung at a pitch above the vocalist's normal pitch, and half at a lower pitch. This inventory was then phonetically annotated and trimmed of silences, mistakes, etc. using Entropic x-waves and a simple file cutting program resulting in about ten minutes of continuous singing data used as input to the off-line sinusoidal model analysis. (It should be noted that this is a rather small inventory size, in comparison to established practices in concatenative speech synthesis.)
+Given this phonetically-annotated inventory of voice data, the task at hand during the online synthesis process is to select a set of units from this inventory to represent the input lyrics. This is done at
+processor
+17
+. Although it is possible to formulate unit selection as a dynamic programming problem that finds an optimal path through a lattice of all possible units based on acoustic “costs,” (e.g., Hunt, et al. “Unit Selection in a Concatenative Speech Synthesis System Using a large Speech Database,” in Proc. of International Conference on Acoustics, Speech and Signal Processing, Vol. 1, pp. 373-376, 1996) the approach taken here is a simpler one designed with the constraints of the inventory in mind: best-context vowel units are selected first, and consonant units are selected in a second pass to complete the unit sequence.
+The method used for choosing the each unit involves evaluating a “context decision tree” for each input phoneme. The terminal nodes of the tree specify variable-size concatenation units ranging from one to three phonemes in length. These units are each given a “context score” that orders them in terms of their agreement with the desired phonetic context, and the unit with the best context score is chosen as the unit to be concatenated. Since longer units generally result in improved speech quality at the output, the method places a priority on finding longer units that match the desired phonetic context. For example, if an exact match of a phoneme and its two neighbors is found, this triphone is used directly as a synthesis unit.
+For a given ph oneme P in the input phone tic string and its left and right neighbors, P
+L
+and P
+R
+, the selection algorithm attempts to find P in a context most closely matched to P
+L
+P P
+R
+. When exact context matches are found, the algorithm extracts the matching adjacent phoneme(s) as well, to preserve the transition between these phonemes. Thus, each extracted unit consists of an instance of the target phoneme and one or both of its neighboring phonemes (i.e., it extracts a monophone, diphone, or triphone). FIG. 2 shows a catalog of all possible combinations of monophones, diphones, and triphones, including class ma tch properties, ordered by their preference for synthesis.
+In addition to searching for phonemes in an exact phonemic context , however, the system also is capable of finding phonemes that have a context similar, but not identical, to the desired triphone context. For example, if a desired triphone cannot be found in the inventory, a diphone or monop hone taken from an acoustically similar context is used instead.
+For example, if the algorithm is searching for lael in the context /d/-/ae/-/d/, but this triphone cannot be found in the inventory, the monophone /ae/ taken from the context /b/-/ae/-/b/ can be used instead, since /b/ and /d/ have a similar effect on the neighboring vowel. The notation of FIG. 2 indicates the resulting unit output, along with a description of the context rules satisfied by the units. In the notation of this figure, x
+L
+P
+1
+x
+R
+indicates a phoneme with an exact triphone context match (as /d/-/ae/-/d/ would be for the case described above). The label c
+L
+P
+1
+c
+R
+indicates a match of phoneme class on the left and right, as for /b/-/ae/-/b/ above. Labels with the symbol P
+2
+indicate a second unit is used to provide the final output phonemic unit. For example, if /b/-/ae/-/k/ and /k/-/ae/-/b/ can be found, the two lael monophones can be joined to produce an /ae/ with the proper class context match on either side.
+In order to find the unit with the most appropriate available context, a binary decision tree was used (shown in FIG.
+3
+). Nodes in this tree indicate a test defined by the context label next to each node. The right branch out of each node indicates a “no” response; downward branches indicate “yes”. Terminal node numbers correspond to the outputs defined in FIG.
+2
+. Diamonds on the node branches indicate storage arrays that must be maintained during the processing of each phoneme. Regions enclosed in dashed lines refer to a second search for phonemes with a desired right context to supplement the first choice (the case described at the end of the previous paragraph). The smaller tree at the bottom right of the diagram describes all tests that must be conducted to find this second phoneme. The storage locations here are computed once and used directly in the dashed boxes. To save computation at runtime, the first few tests in the decision tree are performed off-line and stored in a file. The results of the precomputed branches are represented by filled diamonds on the branches.
+After the decision tree is evaluated for every instance of the target phoneme, the (nonempty) output node representing the lowest score in FIG. 2 is selected. All units residing in this output node are then ranked according to their closeness to the desired pitch (as input in the MIDI file). A rough pitch estimate is included in the phonetic labeling process for this purpose. Thus the unit with the best phonetic context match and the closest pitch to the desired unit is selected.
+The decision to develop this method instead of implementing the dynamic programming method is based on the following rationale: Because the inventory was constructed with emphasis on providing a good coverage of the necessary vowel contexts, “target costs” of phonemes in dynamic programming should be biased such that units representing vowels will be chosen more or less independently of each other. Thus a slightly suboptimal, but equally effective, method is to choose units for all vowels first, then go back to choose the remaining units, leaving the already-specified units unchanged. Given this, three scenarios must be addressed to “fill in the blanks”:
+1. Diphones or triphones have been specified on both sides of the phoneme of interest. Result: a complete specification of the desired phoneme has already been found, and no units are necessary.
+2. A diphone or triphone has been specified on the left side of the phoneme of interest. Result: The pruned decision tree in FIG. 4 is used to specify the remaining portion of the phoneme.
+3. A diphone or triphone has been specified on the right side of the phoneme of interest. Result: The pruned decision tree in FIG. 5 is used to specify the remaining portion of the phoneme.
+If no units have been specified on either side, or if monophone only have been specified, then the general decision tree in FIG. 3 can be used.
+This inexact matching is incorporated into the context decision tree by looking for units that match the context in terms of phoneme class (as defined above). The nominal pitch of each unit is used as a secondary selection criterion when more than one “best-context” unit is available.
+Once the sequence of units has been specified using the decision tree method described above, concatenation and smoothing of the units takes place.
+Each pair of units is joined by either a cutting/smoothing operation or an “abutting” of one unit to another. The type of unit-to-unit transition uniquely specifies whether units are joined (cut and smoothed) or abutted. FIG. 6 shows a “transition matrix” of possible unit-unit sequences and their proper join method. It should be noted that the NULL unit has zero length—it serves as a mechanism for altering the type of join in certain situations.
+The rest of this section will describe in greater detail the normalization, smoothing and prosody modification stages.
+The ABS/OLA sinusoidal model analysis generates several quantities that represent each input signal frame, including (i) a set of quasi-harmonic sinusoidal parameters for each frame (with an implied fundamental frequency estimate), (ii) a slowly time-varying gain envelope, and (iii) a spectral envelope for each frame. Disjoint modeled speech segments can be concatenated by simply stringing together these sets of model parameters and re-synthesizing, as shown in FIG.
+7
+. However, since the jointed segments are analyzed from disjoint utterances, substantial variations between the time- or frequency-domain characteristics of the signals may occur at the boundaries. These differences manifest themselves in the sinusoidal model parameters. Thus, the goal of the algorithms descibed here is to make discontinuities at the concatenation points inaudible by altering the sinusoidal model components in the neighborhood of the boundaries.
+The units extracted from the inventory may vary in short-time signal energy, depending on the characteristics of the utterances from which they were extracted. This variation gives the output speech a very stilted, unnatural rhythm. For this reason, it is necessary to normalize the energy of the units. However, it is not straightforward to adjust units that contain a mix of voiced and unvoiced speech and/or silence, since the RMS energy of such segments varies considerably depending on the character of the unit.
+The approach taken here is to normalize only the voiced sections of the synthesized speech. In the analysis process, a global RMS energy for all voiced sounds in the inventory is found. Using this global target value, voiced sections of the unit are multiplied by a gain term that modifies the RMS value of each section to match the target. This can be performed by operating directly on the sinusoidal model parameters for the unit. The average energy (power) of a single synthesized frame of length N
+s
+can be written as
+E
+fr
+2
+=
+1
+N
+s
+
+∑
+n
+=
+0
+N
+s
+-
+1
+
+
+s
+
+[
+n
+]
+
+2
+=
+1
+N
+s
+
+∑
+n
+=
+0
+N
+s
+-
+1
+
+
+σ
+
+[
+n
+]
+
+∑
+k
+
+a
+k
+
+cos
+
+(
+ω
+k
+
+n
++
+φ
+k
+)
+
+2
+.
+(
+2
+)
+Assuming that σ[n] is relatively constant over the duration of the frame, Equation (2) can be reduced to
+E
+fr
+2
+=
+
+σ
+_
+2
+1
+
+N
+s
+
+∑
+k
+
+a
+k
+2
+
+∑
+n
+=
+0
+N
+s
+-
+1
+
+
+cos
+
+(
+ω
+k
+
+n
++
+φ
+k
+)
+
+2
+≈
+
+1
+2
+
+σ
+_
+2
+
+∑
+k
+
+a
+k
+2
+,
+(
+3
+)
+where {overscore (σ)}
+2
+is the square of the average of σ[n] over the fiame. This energy estimate can be found for the voiced sections of the unit, and a suitable gain adjustment can be easily found. In practice, the applied gain function is smoothed to avoid abrupt discontinuities in the synthesized signal energy.
+In the energy normalization described above, only voiced segments are adjusted. This implies that a voiced/unvoiced decision must be incorporated into the analysis. Since several parameters of the sinusoidal model are already available as a byproduct of the analysis, it is reasonable to attempt to use these to make a voicing decision. For instance, the pitch detection algorithm of the ABS/OLA model (described in detail in cited article and patent of George, typically defaults to a low frequency estimate below the speaker's normal pitch range when applied to unvoiced speech. FIG. 8A shows fundamental frequency and FIG. 8B shows the gain contour plots for the phrase “sunshine shimmers,” spoken by a female, with a plot of the two against each other in FIG. 8C to the right. It is clear from this plot (and even the ω
+0
+plot alone) that the voiced and unvoiced sections of the signal are quite discernible based on these values due to the clustering of data.
+For this analyzed phrase, it is easy to choose thresholds of pitch or energy to discriminate between voiced and unvoiced frames, but it is difficult to choose global thresholds that will work for different talkers, sampling rates, etc. By taking advantage of the fact that this analysis is performed off-line, it is possible to choose automatically such thresholds for each utterance, and at the same time make the V/UV decision more robust (to pitch errors, etc.) by including more data in the V/UV classification.
+This can be achieved by viewing the problem as a “nearest-neighbor” clustering of the data from each frame, where feature vectors consisting of ω
+0
+estimates, frame energy, and other data are defined. The centroids of the clusters can be found by employing the K-means (or LBG) algorithm commonly used in vector quantization, with K=2 (a voiced class and an unvoiced class). This algorithm consists of two steps:
+1. Each of the feature vectors is clustered with one of the K centroids to which it is “closest,” as defined by a distance measure, d(v, c).
+2. The centroids are updated by choosing as the new centroid the vector that minimizes the average distortion between it and the other vectors in the cluster (e.g., the mean if a Euclidean distance is used).
+These steps are repeated until the clusters/centroids no longer change. In this case the feature vector used in the voicing decision is
+v=[ω
+0
+{overscore (σ)}H
+SNR
+]
+T
+,  (4)
+where ω
+0
+is the fundamental frequency estimate for the frame, {overscore (σ)} is the average of the time envelope σ[n] over the frame, and H
+NSR
+is the ratio of the signal energy to the energy in the difference between the “quasiharmonic” sinusoidal components in the model and the same components with frequencies forced to be harmonically related. This is a measure of the degree to which the components are harmonically related to each other. Since these quantities are not expressed in terms of units that have the same order of magnitude, a weighted distance measure is used:
+d(v, c)=(v−c)
+T
+C
+−1
+(v−c),  (5)
+where C is a diagonal matrix containing the variance of each element of v on its main diagonal.
+This general framework for discrimination voiced and unvoiced frames has two benefits: (i) it eliminates the problem of manually setting thresholds that may or may not be valid across different talkers; and (ii) it adds robustness to the system, since several parameters are used in the V/UV discrimination. For instance, the inclusion of energy values in addition to fundamental frequency makes the method more robust to pitch estimation errors. The output of the voicing decision algorithm for an example phrase is shown in FIG.
+9
+.
+The unit normalization method described above removes much of the energy variation between adjacent segments extracted from the inventory. However, since this normalization is performed on a fairly macroscopic level, perceptually significant short-time signal energy mismatches across concatenation boundaries remain.
+An algorithm for smoothing the energy mismatch at the boundary of disjoint speech segments is described as follows:
+1. The frame-by-frame energies of N
+smooth
+frames (typically on the order of 50 ms) around the concatenation point are found using Equation (3).
+2. The average frame energies for the left and right segments, given by E
+L
+and E
+R
+, respectively, are found.
+3. A target value, E
+target
+, for the energy at the concatenation point is determined. The average E
+L
+and E
+R
+in the previous step is a reasonable assumption for such a target value.
+4. Gain corrections G
+L
+and G
+R
+are found by
+G
+L
+=
+E
+target
+E
+L
+
+
+G
+R
+=
+E
+target
+E
+R
+.
+
+5. Linear gain correction functions that interpolate from a value of 1 and the ends of the smoothing region to G
+L
+and G
+R
+at the respective concatenation points are created, as shown in FIG.
+10
+. These functions are then factored into the gain envelopes σ
+L
+[n] and σ
+R
+[n].
+It should be noted that incorporating these gain smoothing functions into σ
+L
+[n] and σ
+R
+[n] requires a slight change in methodology. In the original model, the gain envelope σ[n] is applied after the overlap-add of adjacent frames, i.e.,
+x[n]=σ[n](w
+s
+[n]s
+L
+[n]+(1−w
+s
+[n])s
+R
+[n]),
+where w
+s
+[n] is the window function, and S
+L
+[n] and S
+R
+[n] are the left and right synthetic contributions, respectively. However, both σ
+L
+[n] and σ
+R
+[n] should be included in the equation for the disjoint segments case. This can be achieved by splitting σ[n] into 2 factors in the previous equation and then incorporating the left and right time-varying gain envelopes σ
+L
+[n] and σ
+R
+[n] as follows:
+x[n]=w
+s
+[n]σ
+L
+[n]s
+L
+[n]+(1−w
+s
+[n])σ
+R
+[n]s
+R
+[n].
+This algorithm is very effective for smoothing energy mismatches in vowels and sustained consonants. However, the smoothing effect is undesirable for concatenations that occur in the neighborhood of transient portions of the signal (e.g. plosive phonemes like /k/), since “burst” events are smoothed in time. This can be overcome by using phonetic label information available in the TTS system to vary N
+smooth
+based on the phonetic context of the unit concatenation point.
+Another source of perceptible discontinuity in concatenated signal segments is mismatch in spectral shape across boundaries. The segments being joined are somewhat similar to each other in basic formant structure, due to matching of the phonetic context in unit selection. However, differences in spectral shape are often still present because of voice quality (e.g., spectral tilt) variation and other factors.
+One input to the ABS/OLA pitch modification algorithm is a spectral envelope estimate represented as a set of low-order cepstral coefficients. This envelope is used to maintain formant locations and spectral shape while frequencies of sinusoids in the model are altered. An “excitation model” is computed by dividing the lth complex sinusoidal amplitude a
+l
+e
+jφl
+by the complex spectral envelope estimate H(ω)evaluated at the sinusoid frequency ω
+l
+. These excitation sinusoids are then shifted in frequency by a factor β, and the spectral envelope is re-multiplied by H(βω
+l
+) to obtain the pitch-shifted signal. This operation also provides a mechanism for smoothing spectral differences over the concatenation boundary, since a different spectral envelope may be reintroduced after pitch-shifting the excitation sinusoids.
+Spectral differences across concatenation points are smoothed by adding weighted versions of the cepstral feature vector from one segment boundary to cepstral feature vectors from the other segment, and vice-versa, to compute a new set of cepstral feature vectors. Assuming that cepstral features for the left-side segment { . . . , L2, L
+1
+, L
+0
+} and features for the right-side segment {R
+0
+, R
+1
+, R
+2
+. . . } are to be concatenated as shown in FIG. 11, smoothed cepstral features L
+k
+s
+for the left segment and R
+k
+s
+for the right segment are found by:
+L
+k
+s
+=w
+k
+L
+k
++(1−w
+k
+)R
+0
+(7)
+R
+k
+s
+=w
+k
+R
+k
++(1−w
+k
+)L
+0
+(8)
+where
+w
+k
+=
+0.5
++
+k
+2
+
+N
+smooth
+,
+k=1,2, . . . , N
+smooth
+and where N
+smooth
+frames to the left and right of the boundary are incorporated into the smoothing. It can be shown that this linear interpolation of cepstral features is equivalent to linear interpolation of log spectral magnitudes.
+Once L
+k
+s
+and R
+k
+s
+are generated, they are input to the synthesis routine as an auxiliary set of cepstral feature vectors. Sets of spectral envelopes H
+k
+(ω) and H
+k
+s
+(ω) are generated from {L
+k
+, R
+k
+} and {L
+k
+s
+,R
+k
+s
+}, respectively. After the sinusoidal excitation components have been pitch-modified, the sinusoidal components are multiplied by H
+k
+s
+(ω) for each frame k to impart the spectral shape derived from the smoothed cepstral features.
+One of the most important functions of the sinusoidal model in this synthesis method is a means of performing prosody modification on the speech units.
+It is assumed that higher levels of the system have provided the following inputs: a sequence of concatenationed, sinusoidal-modeled speech units; a desired pitch contour; and desired segmental durations (e.g., phone durations).
+Given these inputs, a sequence of pitch modification factors {β
+k
+} for each frame can be found by simply computing the ratio of the desired fundamental frequency to the fundamental frequency of the concatenated unit. Similarly, time scale modification factors {ρ
+k
+} can be found by using the ratio of the desired duration of each phone (based on phonetic annotations in the inventory) to the unit duration.
+The set of pitch modification factors generated in this manner will generally have discontinuities at the concatenated unit boundaries. However, when these-pitch modification factors are applied to the sinusoidal model frames, the resulting pitch contour will be continuous across the boundaries.
+Proper alignment of adjacent frames is essential to producing high quality synthesized speech or singing. If the pitch pulses of adjacent frames do not add coherently in the overlap-add process a “garbled” character is clearly perceivable in the re-synthesized speech or singing. There are two tasks involved in properly aligning the pitch pulses: (i) finding points of reference in the adjacent synthesized frames, and (ii) shifting frames to properly align pitch pulses, based on these points of reference.
+The first of these requirements is fulfilled by the pitch pulse onset time estimation algorithm described in E. Bryan George, et al. U.S. Pat. No. 5,327,518. This algorithm attempts to find the time at which a pitch pulse occurs in the analyzed frame. The second requirement, aligning the pitch pulse onset times, must be viewed differently depending on whether the frames to be aligned come from continuous speech or concatenated disjoint utterances. The time shift equation for continuous speech will be now be briefly reviewed in order to set up the problem for the concatenated voice case.
+The diagrams in FIGS. 12 and 13 depict the locations of pitch pulses involved in the overlap-add synthesis of one frame. Analysis frames k and k +1 each contribute to the synthesized frame, which runs from 0 to N
+s
+−1. The pitch pulse onset times τ
+k
+and τ
+k
++1 describe the locations of the pitch pulse closest to the center of analysis frames k and k+1, respectively. In FIG. 13, the time-scale modification factor ρ is incorporated by changing the length of the synthesis frame to ρN
+s
+, while pitch modification factors β
+k
+and β
+k+1
+are applied to change the pitch of each of the analysis frame contributions. A time shift δ is also applied to each analysis frame. We assume that time shift δ
+k
+has already been applied, and the goal is to find δ
+k+1
+to shift the pitch pulses such that they coherently sum in the overlap-add process.
+From the schematic representation in FIG. 12, an equation for the time location of the pitch pulses in the original, unmodified frames k and k+1 can be written as follows:
+t
+k
+[i]=τ
+k
++iT
+0
+k
+t
+k+1
+[i]=τ
+k+1
++iT
+0
+k+1
+,  (9)
+while the indices I that refer to the pitch pulses closet to the center of the frame are given by:
+l
+^
+k
+=
+⌊
+τ
+k
++
+N
+s
+2
+T
+0
+k
+⌋
+(
+10
+)
+l
+^
+k
++
+1
+=
+-
+⌊
+τ
+k
++
+1
++
+N
+s
+2
+T
+0
+k
++
+1
+⌋
+Thus t
+k
+[{circumflex over (l)}
+k
+] and t
+k+1
+[{circumflex over (l)}
+k+1
+] are the time locations of the pitch pulses adjacent to the center of the synthesis frame.
+Referring to FIG. 13, equations for these same quantities can be found for the case where the time-scale/pitch modifications are applied:
+t
+k
+
+[
+i
+]
+=
+τ
+k
+β
+k
+-
+δ
+k
++
+i
+
+(
+T
+0
+k
+β
+0
+)
+(
+11
+)
+t
+k
++
+1
+
+[
+i
+]
+=
+τ
+k
++
+1
+β
+k
++
+1
+-
+δ
+k
++
+1
++
+i
+
+(
+T
+0
+k
++
+1
+β
+k
++
+1
+)
+(
+12
+)
+l
+^
+k
+=
+⌊
+-
+τ
+k
++
+β
+k
+
+(
+δ
+k
++
+ρ
+
+
+N
+s
+2
+)
+T
+0
+k
+⌋
+(
+13
+)
+l
+^
+k
++
+1
+=
+-
+λ
+
+⌊
+τ
+k
++
+1
++
+ρβ
+k
++
+1
+
+N
+s
+2
+T
+0
+k
++
+1
+⌋
+(
+14
+)
+Since the analysis frames k and k+1 were analyzed from continuous speech, we can assume that the pitch pulses will naturally line up coherently when β=ρ=1. Thus the time difference Δ in FIG. 13 will be approximately the average of the pitch periods T
+0
+k
+and T
+0
+k+1
+. To find δ
+k+1
+after modification, then, it is reasonable to assume that this time shift should become {circumflex over (Δ)}=Δ/β
+av
+, where β
+av
+is the average of β
+k
+and β
+k+1
+.
+Letting {circumflex over (Δ)}=Δ/β
+av
+and using Equations (11) through (14) to solve for δ
+k+1
+results in the time shift equation.
+δ
+k
++
+1
+=
+δ
+k
++
+(
+ρ
+k
+-
+1
+/
+β
+av
+)
+
+N
+s
++
+β
+k
+-
+β
+k
++
+1
+2
+
+β
+av
+
+(
+τ
+k
+β
+k
++
+τ
+k
++
+1
+β
+k
++
+1
+)
+-
+l
+^
+k
+β
+k
+
+T
+0
+k
++
+(
+i
+k
+
+T
+0
+k
+-
+i
+k
++
+1
+
+T
+0
+k
++
+1
+)
+/
+β
+av
+.
+(
+15
+)
+It can easily be verified that Equation (15) results in δ
+k+1
+=δ
+k
+for the case ρ=β
+k
+=β
+k+1
+=1. In other words, the frames will naturally line up correctly in the no-modification case since they are overlapped and added in a manner equivalent oto that of the analysis method. This behavior is advantageous, since it implies that even if the pitch pulse onset time estimate is in error, the speech will not be significantly affected when the modification factors ρ, β
+k
+, and β
+k+1
+are close to 1.
+The approach to finding δ
+k+1
+given above is not valid, however, when finding the time shift necessary for the frame occurring just after a concatenation point, since even the condition ρ=β
+k
+=β
+k+1
+=1 (no modifications) does not assure that the adjacent frames will naturally overlap correctly. This is, again, due to the fact that the locations of pitch pulses (hence, onset times) of the adjacent frames across the boundary are essentially unrelated. In this case, a new derivation is necessary.
+The goal of the frame alignment process is to shift frame k+1 such that the pitch pulses of the two frames line up and the waveforms add coherently. A reasonable way to achieve this is to force the time difference Δ between the pitch pulses adjacent to the frame center to be the average of the modified pitch periods in the two frames. It should be noted that this approach, unlike that above, makes no assumptions about the coherence of the pulses prior to modification. Typically, the modified pitch periods T
+0
+k
+/β
+k
+and T
+0
+k+1
+/β
+k+1
+will be approximately equal, thus,
+Δ={tilde over (T)}
+0
+avg
+=t
+k+1
+[{circumflex over (l)}
+k+1
+]+ρN
+s
+−t
+k
+[{circumflex over (l)}
+k
+],  (16)
+where
+T
+~
+0
+avg
+=
+(
+T
+0
+k
+β
+k
++
+T
+0
+k
++
+1
+β
+k
++
+1
+)
+/
+2.
+Substituting Equations (11) through (14) into Equation (16) and solving for δ
+k+1
+, we obtain
+δ
+k
++
+1
+=
+δ
+k
++
+τ
+k
++
+1
+β
+k
++
+1
+-
+τ
+k
+β
+k
++
+l
+^
+k
++
+1
+
+(
+T
+0
+k
++
+1
+β
+k
++
+1
+)
+-
+l
+^
+k
+
+(
+T
+0
+k
+β
+k
+)
++
+ρ
+
+
+N
+s
+-
+T
+~
+0
+avg
+.
+(
+17
+)
+This gives an expression for the time shift of the sinusoidal components in frame k+1. This time shift (which need not be an integer) can be implemented directly in the frequency domain by modifying the sinusoid phases φ
+i
+prior to re-synthesis:
+{tilde over (φ)}
+i
+=φ
+i
++iβω
+0
+δ.  (18)
+It has been confirmed experimentally that applying Equation (17) does indeed result in coherent overlap of pitch pulses at the concatenation boundaries in speech synthesis. However, it should be noted that this method is critically dependent on the pitch pulse onset time estimates τ
+k
+and τ
+k+1
+. If either of these estimates is in error, the pitch pulses will not overlap correctly, distorting the output waveform. This underscores the importance of the onset estimation algorithm described in E. Bryan George, et al. U.S. Pat. No. 5,327,518. For modification of continuous speech, the onset time accuracy is less important, since poor frame overlap only occurs due to an onset time error when β is not close to 1.0, and only when the difference between two onset time estimates is not an integer multiple of a pitch pulse. However, in the concatenation case, onset errors nearly always result in audible distortion, since Equation (17) is completely reliant on the correct estimation of pitch pulse-onset times to either side of the concatenation point.
+Pitchrmarks derived from an electroglottograph can be used as initial estimates of the pitch onset time. Instead of relying on the onset time estimator to search over the entire range [−T
+0
+/2, T
+0
+/2], the pitchmark closest to each frame center can be used to derive a rough estimate of the onset time, which can then be refined using the estimator function described earlier. The electroglottograph produces a measurement of glottal activity that can be used to find instants of glottal closure. This rough estimate dramatically improves the performance of the onset estimator and the output voice quality.
+The musical control information such as vibrato, pitch, vocal effect scaling, and vocal tract scaling is provided from the
+MIDI file
+11
+via the
+MIDI file interpreter
+13
+to the concatenator/smoother
+19
+in FIG. 1 to perform modification to the units from the inventory.
+Since the prosody modification step in the sinusoidal synthesis algorithm transforms the pitch of every frame to match a target, the result is a signal that does not exhibit the natural pitch fluctuations of the human voice.
+In an article by Klatt, et al., entitled, “Analysis, Synthesis, and Perception of Voice Quality Variations Among Female and Male Talkers,” Journal of the Acoustical Society of America (Vol. 87, pp. 820-857, February 1990), a simple equation for “quasirandom” pitch fluctuations in speech is proposed:
+Δ
+
+
+F
+0
+=
+F
+0
+100
+
+(
+sin
+
+(
+12.7
+
+π
+
+
+t
+)
++
+sin
+
+(
+7.1
+
+π
+
+
+t
+)
++
+sin
+
+(
+4.7
+
+π
+
+
+t
+)
+)
+/
+3.
+(
+19
+)
+The addition of this fluctuation to the desired pitch contour gives the voice a more “human” feel, since a slight wavering is present in the voice. A global scaling of ΔF
+0
+is incorporated as a controllable parameter to the user, so that more or less fluctuation can be synthesized.
+Abrupt transitions of one note to another at a different pitch are not a natural phenomena. Rather, singers tend to transition somewhat gradually from one note to another. This effect can be modeled by applying a smoothing at note-to-note transitions in the target pitch contour. Timing of the pitch change by human vocalists is usually such that the transition between two notes takes place before the onset of the second note, rather than dividing evenly between the two notes.
+The natural “quantal unit” of rhythm in vocal music is the syllable. Each syllable of lyric is associated with one or more notes of the melody. However, it is easily demonstrated that vocalists do not execute the onsets of notes at the beginnings of the leading consonant in a syllable, but rather at the beginning of the vowel. This effect has been cited in the study of rhythmic characteristics of singing and speech. Applicants'
+system
+10
+employs rules that align the beginning of the first note in a syllable with the onset of the vowel in that syllable.
+In this work, a simple model for scaling durations of syllables is used. First an average time scaling factor ρ
+syll
+is computed:
+ρ
+syll
+=
+∑
+n
+=
+1
+N
+notes
+
+D
+n
+∑
+m
+=
+1
+N
+phon
+
+D
+m
+,
+(
+20
+)
+where the values D
+n
+are the desired durations of the N
+notes
+notes associated with the syllable and D
+m
+are the durations of the N
+phon
+phonemes extracted from the inventory to compose the desired syllable. If ρ
+syll
+>1, then the vowel in the syllable is looped by repeating a set of frames extracted from the stationary portion of the vowel, until ρ
+syll
+≈1. This preserves the duration of the consonants, and avoids unnatural time-stretching effects. If ρsyll<1, the entire syllable is compressed in time by setting the time-scale modification factor ρ for all frames in the syllable equal to ρ
+syll
+.
+A more sophisticated approach to the problem involves phoneme-and context-dependent rules for scaling phoneme durations in each syllable to more accurately represent the manner in which humans perform this adjustment.
+The physiological mechanism of the pitch, amplitude, and timbral variation referred to as vibrato is somewhat in debate. However, frequency modulation of the glottal source waveform is capable of producing many of the observed effects of vibrato. As the source harmonics are swept across the vocal tract resonances, timbre and amplitude modulations as well as frequency modulation take place. These modulations can be implemented quite effectively via the sinusoidal model synthesis by modulating the fundamental frequency of the components after removing the spectral envelope shape due to the vocal tract (an inherent part of the pitch modification process).
+Most trained vocalists produce a 5-6 Hz near-sinusoidal vibrato. As mentioned, pure frequency modulation of the glottal source can represent many of the observed effects of vibrato, since amplitude modulation will automatically occur as the partials “sweep by” the formant resonances. This effect is also easily implemented within the sinusoidal model framework by adding a sinusoidal modulation to the target pitch of each note. Vocalists usually are not able to vary the rate of vibrato, but rather modify the modulation depth to create expressive changes in the voice.
+Using the graphical MIDI-based input to the system, users can draw contours that control vibrato depth over the course of the musical phrase, thus providing a mechanism for adding expressiveness to the vocal passage. A global setting of the vibrato rate is also possible.
+In synthesis of bass voices using a voice inventory recorded from a baritone male vocalist, it was found that the voice took on an artificial-sounding “buzzy” quality, caused by extreme lowering of the fundamental frequency. Through analysis of a simple tube model of the human vocal tract, it can be shown that the nominal formant frequencies associated with a longer vocal tract are lower than those associated with a shorter vocal tract. Because of this, larger people usually have voices with a “deeper” quality; bass vocalists are typically males with vocal tracts possessing this characteristic.
+To approximate the differences in vocal tract configuration between the recorded and “desired” vocalists, a frequency-scale warping of the spectral envelope (fit to the set of sinusoidal amplitudes in each frame) was performed, such that
+H(ω)=H(ω/μ),
+where H(ω) is the spectral envelope and μ is a global frequency scaling factor dependent on the average pitch modification factor. The factor μ typically lies in the range 0.75<μ<1.0. This frequency warping has the added benefit of slightly narrowing the bandwidths of the formant resonances, mitigating the buzzy character of pitch-lowered sounds. Values of μ>1.0 can be used to simulate a more child-like voice, as well. In tests of this method, it was found that this frequency warping gives the synthesized bass voice a much more rich-sounding, realistic character.
+Another important attribute of the vocal source in singing is the variation of spectral tilt with loudness. Crescendo of the voice is accompanied by a leveling of the usual downward tilt of the source spectrum. Since the sinusoidal model is a frequency-domain representation, spectral tilt changes can be quite easily implemented by adjusting the slope of the sinusoidal amplitudes. Breathiness, which manifests itself as high-frequency noise in the speech spectrum, is another acoustic correlate of vocal intensity. This frequency-dependent noise energy can be generated within the ABS/OLA model framework by employing a phase modulation technique during synthesis.
+Simply scaling the overall amplitude of the signal to produce changes in loudness has the same perceptual effect as turning the “volume knob” of an amplifier; it is quite different from a change in vocal effort by the vocalist. Nearly all studies of singing mention the fact that the downward tilt of the vocal spectrum increases as the voice becomes softer. This effect is conveniently implemented in a frequency-domain representation such as the sinusoidal model, since scaling of the sinusoid amplitudes can be performed. In the present system, an amplitude scaling function based on the work of Bennett, et al. in Current Directions in Computer Research (pp. 19-44) MIT Press, entitled, “Synthesis of the Singing Voice” is used:
+G
+dB
+=
+T
+i
+
+
+n
+
+log
+10
+
+(
+F
+l
+/
+500
+)
+log
+10
+
+(
+3000
+/
+500
+)
+,
+(
+21
+)
+where F
+l
+is the frequency of the lth sinusoidal component and T
+in
+is a spectral tilt parameter controlled by a MIDI “vocal effort” control function input by the user. This function produces a frequency-dependent gain scaling function parameterized by T
+in
+as shown in FIG. 14
+In studies of acoustic correlates of perceived voice qualities, it has been shown that utterances perceived as “soft” and “breathy” also exhibit a higher level of high frequency aspiration noise than fully phonated utterances, especially in females. This effect on glottal pulse shape and spectrum is shown in FIG.
+15
+. It is possible to introduce a frequency-dependent noise-like character to the signal by employing the subframe phase randomization method. In this system, this capability has been used to model aspiration noise. The degree to which the spectrum is made noise-like is controlled by a mapping from the MIDI-controlled vocal effort parameter to the amount of phase dithering introduced.
+Informal experiments with mapping the amount of randomization to (i) a cut-off frequency above which phases are dithered, and (ii) the scaling of the amount of dithering within a fixed band, have been performed. Employing either of these strategies results in a more natural, breathy, soft voice, although careful adjustment of the model parameters is necessary to avoid an unnaturally noisy quality in the output. A refined model that more closely represents the acoustics of loudness scaling and breathiness in singing is a topic for more extensive study in the future.
+Although the present invention and its advantages have been described in detail, it should be understood that various changes, substitutions and alterations can be made herein without departing from the spirit and scope of the invention as defined by the appended claims.
+Claims (
+5
+)
+What is claimed is:
+1. A method of singing voice synthesis comprising the steps of:
+providing a musical score and lyrics and musical control parameters;
+providing an inventory of recorded linguistic singing voice data units that have been analyzed off-line by a sinusoidal model representing segmented phonetic characteristics of an utterance;
+selecting said recorded linguistic singing voice data units dependent on lyrics;
+joining said recorded linguistic singing voice data units and smoothing boundaries of said joined data units selected;
+modifying the recorded linguistic singing voice data units that have been joined and smoothed according to musical score and other musical control parameters to provide directives for a signal model; and
+performing signal model synthesis using said directives.
+2. The method of claim
+1
+wherein said signal model is a sinusoidal model.
+3. The method of claim
+2
+wherein said sinusoidal model is an analysis-by-synthesis/overlap-add sinusoidal model.
+4. The method of claim
+1
+wherein said selection of data units is by a decision tree method.
+5. The method of claim
+1
+wherein said modifying step includes modifying the pitch, duration and spectral characteristics of the concatenated recorded linguistic singing voice data units as specified by the musical score and MIDI control information.
+US09/161,799
+1997-10-22
+1998-09-28
+Singing voice synthesis
+Expired - Lifetime
+US6304846B1
+(
+en
+)
+Priority Applications (1)
+Application Number
+Priority Date
+Filing Date
+Title
+US09/161,799
+US6304846B1
+(
+en
+)
+1997-10-22
+1998-09-28
+Singing voice synthesis
+Applications Claiming Priority (2)
+Application Number
+Priority Date
+Filing Date
+Title
+US6271297P
+1997-10-22
+1997-10-22
+US09/161,799
+US6304846B1
+(
+en
+)
+1997-10-22
+1998-09-28
+Singing voice synthesis
+Publications (1)
+Publication Number
+Publication Date
+US6304846B1
+true
+US6304846B1
+              (
+en
+)
+2001-10-16
+Family
+ID=26742608
+Family Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+US09/161,799
+Expired - Lifetime
+US6304846B1
+(
+en
+)
+1997-10-22
+1998-09-28
+Singing voice synthesis
+Country Status (1)
+Country
+Link
+US
+(
+1
+)
+US6304846B1
+(
+en
+)
+Cited By (191)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US20020184012A1
+(
+en
+)
+*
+1996-02-06
+2002-12-05
+The Regents Of The University Of California
+System and method for characterizing voiced excitations of speech and acoustic signals, removing acoustic noise from speech, and synthesizing speech
+US6505158B1
+(
+en
+)
+*
+2000-07-05
+2003-01-07
+At&T Corp.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US20030009344A1
+(
+en
+)
+*
+2000-12-28
+2003-01-09
+Hiraku Kayama
+Singing voice-synthesizing method and apparatus and storage medium
+US20030009336A1
+(
+en
+)
+*
+2000-12-28
+2003-01-09
+Hideki Kenmochi
+Singing voice synthesizing apparatus, singing voice synthesizing method, and program for realizing singing voice synthesizing method
+US20030046079A1
+(
+en
+)
+*
+2001-09-03
+2003-03-06
+Yasuo Yoshioka
+Voice synthesizing apparatus capable of adding vibrato effect to synthesized voice
+US20030061051A1
+(
+en
+)
+*
+2001-09-27
+2003-03-27
+Nec Corporation
+Voice synthesizing system, segment generation apparatus for generating segments for voice synthesis, voice synthesizing method and storage medium storing program therefor
+US20030083878A1
+(
+en
+)
+*
+2001-10-31
+2003-05-01
+Samsung Electronics Co., Ltd.
+System and method for speech synthesis using a smoothing filter
+US20030149553A1
+(
+en
+)
+*
+1998-12-02
+2003-08-07
+The Regents Of The University Of California
+Characterizing, synthesizing, and/or canceling out acoustic signals from sound sources
+US6664460B1
+(
+en
+)
+*
+2001-01-05
+2003-12-16
+Harman International Industries, Incorporated
+System for customizing musical effects using digital signal processing techniques
+US20040006472A1
+(
+en
+)
+*
+2002-07-08
+2004-01-08
+Yamaha Corporation
+Singing voice synthesizing apparatus, singing voice synthesizing method and program for synthesizing singing voice
+US20040019485A1
+(
+en
+)
+*
+2002-03-15
+2004-01-29
+Kenichiro Kobayashi
+Speech synthesis method and apparatus, program, recording medium and robot apparatus
+US6738457B1
+(
+en
+)
+*
+1999-10-27
+2004-05-18
+International Business Machines Corporation
+Voice processing system
+US20040133425A1
+(
+en
+)
+*
+2002-12-24
+2004-07-08
+Yamaha Corporation
+Apparatus and method for reproducing voice in synchronism with music piece
+US20040172249A1
+(
+en
+)
+*
+2001-05-25
+2004-09-02
+Taylor Paul Alexander
+Speech synthesis
+US20040173084A1
+(
+en
+)
+*
+2002-11-06
+2004-09-09
+Masao Tomizawa
+Music playback unit and method for correcting musical score data
+US20040231499A1
+(
+en
+)
+*
+2003-03-20
+2004-11-25
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US20040243413A1
+(
+en
+)
+*
+2003-03-20
+2004-12-02
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US20050049875A1
+(
+en
+)
+*
+1999-10-21
+2005-03-03
+Yamaha Corporation
+Voice converter for assimilation by frame synthesis with temporal alignment
+US20050065784A1
+(
+en
+)
+*
+2003-07-31
+2005-03-24
+Mcaulay Robert J.
+Modification of acoustic signals using sinusoidal analysis and synthesis
+US20050137881A1
+(
+en
+)
+*
+2003-12-17
+2005-06-23
+International Business Machines Corporation
+Method for generating and embedding vocal performance data into a music file format
+US20050197827A1
+(
+en
+)
+*
+2004-03-05
+2005-09-08
+Russ Ross
+In-context exact (ICE) matching
+US20060156909A1
+(
+en
+)
+*
+2003-03-20
+2006-07-20
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot
+US20060185504A1
+(
+en
+)
+*
+2003-03-20
+2006-08-24
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot
+US20070061139A1
+(
+en
+)
+*
+2005-09-14
+2007-03-15
+Delta Electronics, Inc.
+Interactive speech correcting method
+US20070289432A1
+(
+en
+)
+*
+2006-06-15
+2007-12-20
+Microsoft Corporation
+Creating music via concatenative synthesis
+US20080077395A1
+(
+en
+)
+*
+2006-09-21
+2008-03-27
+Sdl Plc
+Computer-implemented method, computer software and apparatus for use in a translation system
+US7409347B1
+(
+en
+)
+*
+2003-10-23
+2008-08-05
+Apple Inc.
+Data-driven global boundary optimization
+US7460997B1
+(
+en
+)
+2000-06-30
+2008-12-02
+At&T Intellectual Property Ii, L.P.
+Method and system for preselection of suitable units for concatenative speech
+US20090204395A1
+(
+en
+)
+*
+2007-02-19
+2009-08-13
+Yumiko Kato
+Strained-rough-voice conversion device, voice conversion device, voice synthesis device, voice conversion method, voice synthesis method, and program
+US20090208913A1
+(
+en
+)
+*
+2007-01-23
+2009-08-20
+Infoture, Inc.
+System and method for expressive language, developmental disorder, and emotion assessment
+US20090217805A1
+(
+en
+)
+*
+2005-12-21
+2009-09-03
+Lg Electronics Inc.
+Music generating device and operating method thereof
+US20090222268A1
+(
+en
+)
+*
+2008-03-03
+2009-09-03
+Qnx Software Systems (Wavemakers), Inc.
+Speech synthesis system having artificial excitation signal
+US20090314155A1
+(
+en
+)
+*
+2008-06-20
+2009-12-24
+Microsoft Corporation
+Synthesized singing voice waveform generator
+US20100070283A1
+(
+en
+)
+*
+2007-10-01
+2010-03-18
+Yumiko Kato
+Voice emphasizing device and voice emphasizing method
+US20100145691A1
+(
+en
+)
+*
+2003-10-23
+2010-06-10
+Bellegarda Jerome R
+Global boundary-centric feature extraction and associated discontinuity metrics
+US20100162879A1
+(
+en
+)
+*
+2008-12-29
+2010-07-01
+International Business Machines Corporation
+Automated generation of a song for process learning
+US20100318353A1
+(
+en
+)
+*
+2009-06-16
+2010-12-16
+Bizjak Karl M
+Compressor augmented array processing
+US20110004476A1
+(
+en
+)
+*
+2009-07-02
+2011-01-06
+Yamaha Corporation
+Apparatus and Method for Creating Singing Synthesizing Database, and Pitch Curve Generation Apparatus and Method
+US20110230987A1
+(
+en
+)
+*
+2010-03-11
+2011-09-22
+Telefonica, S.A.
+Real-Time Music to Music-Video Synchronization Method and System
+US20120123782A1
+(
+en
+)
+*
+2009-04-16
+2012-05-17
+Geoffrey Wilfart
+Speech synthesis and coding methods
+US20120310651A1
+(
+en
+)
+*
+2011-06-01
+2012-12-06
+Yamaha Corporation
+Voice Synthesis Apparatus
+US20130151256A1
+(
+en
+)
+*
+2010-07-20
+2013-06-13
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis capable of reflecting timbre changes
+US8620793B2
+(
+en
+)
+1999-03-19
+2013-12-31
+Sdl International America Incorporated
+Workflow management system
+US20140006031A1
+(
+en
+)
+*
+2012-06-27
+2014-01-02
+Yamaha Corporation
+Sound synthesis method and sound synthesis apparatus
+US8719030B2
+(
+en
+)
+*
+2012-09-24
+2014-05-06
+Chengjun Julian Chen
+System and method for speech synthesis
+US20140136207A1
+(
+en
+)
+*
+2012-11-14
+2014-05-15
+Yamaha Corporation
+Voice synthesizing method and voice synthesizing apparatus
+US8744847B2
+(
+en
+)
+2007-01-23
+2014-06-03
+Lena Foundation
+System and method for expressive language assessment
+US20140167968A1
+(
+en
+)
+*
+2011-03-11
+2014-06-19
+Johnson Controls Automotive Electronics Gmbh
+Method and apparatus for monitoring and control alertness of a driver
+US20140330567A1
+(
+en
+)
+*
+1999-04-30
+2014-11-06
+At&T Intellectual Property Ii, L.P.
+Speech synthesis from acoustic units with default values of concatenation cost
+US8892446B2
+(
+en
+)
+2010-01-18
+2014-11-18
+Apple Inc.
+Service orchestration for intelligent automated assistant
+US8930192B1
+(
+en
+)
+*
+2010-07-27
+2015-01-06
+Colvard Learning Systems, Llc
+Computer-based grapheme-to-speech conversion using a pointing device
+US8935150B2
+(
+en
+)
+2009-03-02
+2015-01-13
+Sdl Plc
+Dynamic generation of auto-suggest dictionary for natural language translation
+US8935148B2
+(
+en
+)
+2009-03-02
+2015-01-13
+Sdl Plc
+Computer-assisted natural language translation
+US9128929B2
+(
+en
+)
+2011-01-14
+2015-09-08
+Sdl Language Technologies
+Systems and methods for automatically estimating a translation time including preparation time in addition to the translation itself
+US20150310850A1
+(
+en
+)
+*
+2012-12-04
+2015-10-29
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis
+US9240188B2
+(
+en
+)
+2004-09-16
+2016-01-19
+Lena Foundation
+System and method for expressive language, developmental disorder, and emotion assessment
+US9262612B2
+(
+en
+)
+2011-03-21
+2016-02-16
+Apple Inc.
+Device access using voice authentication
+US9300784B2
+(
+en
+)
+2013-06-13
+2016-03-29
+Apple Inc.
+System and method for emergency calls initiated by voice command
+US20160111083A1
+(
+en
+)
+*
+2014-10-15
+2016-04-21
+Yamaha Corporation
+Phoneme information synthesis device, voice synthesis device, and phoneme information synthesis method
+US9330720B2
+(
+en
+)
+2008-01-03
+2016-05-03
+Apple Inc.
+Methods and apparatus for altering audio output signals
+US9338493B2
+(
+en
+)
+2014-06-30
+2016-05-10
+Apple Inc.
+Intelligent automated assistant for TV user interactions
+US9355651B2
+(
+en
+)
+2004-09-16
+2016-05-31
+Lena Foundation
+System and method for expressive language, developmental disorder, and emotion assessment
+US9368114B2
+(
+en
+)
+2013-03-14
+2016-06-14
+Apple Inc.
+Context-sensitive handling of interruptions
+US9430463B2
+(
+en
+)
+2014-05-30
+2016-08-30
+Apple Inc.
+Exemplar-based natural language processing
+US9483461B2
+(
+en
+)
+2012-03-06
+2016-11-01
+Apple Inc.
+Handling speech synthesis of content for multiple languages
+US9495129B2
+(
+en
+)
+2012-06-29
+2016-11-15
+Apple Inc.
+Device, method, and user interface for voice-activated navigation and browsing of a document
+US9502031B2
+(
+en
+)
+2014-05-27
+2016-11-22
+Apple Inc.
+Method for supporting dynamic grammars in WFST-based ASR
+US9535906B2
+(
+en
+)
+2008-07-31
+2017-01-03
+Apple Inc.
+Mobile device having human language translation capability with positional feedback
+CN106356055A
+(
+en
+)
+*
+2016-09-09
+2017-01-25
+华南理工大学
+System and method for synthesizing variable-frequency voice on basis of sinusoidal models
+US9576574B2
+(
+en
+)
+2012-09-10
+2017-02-21
+Apple Inc.
+Context-sensitive handling of interruptions by intelligent digital assistant
+US9582608B2
+(
+en
+)
+2013-06-07
+2017-02-28
+Apple Inc.
+Unified ranking with entropy-weighted information for phrase-based semantic auto-completion
+US9600472B2
+(
+en
+)
+1999-09-17
+2017-03-21
+Sdl Inc.
+E-services translation utilizing machine translation and translation memory
+US9620104B2
+(
+en
+)
+2013-06-07
+2017-04-11
+Apple Inc.
+System and method for user-specified pronunciation of words for speech synthesis and recognition
+US9620105B2
+(
+en
+)
+2014-05-15
+2017-04-11
+Apple Inc.
+Analyzing audio input for efficient speech and music recognition
+US9626955B2
+(
+en
+)
+2008-04-05
+2017-04-18
+Apple Inc.
+Intelligent text-to-speech conversion
+US9633660B2
+(
+en
+)
+2010-02-25
+2017-04-25
+Apple Inc.
+User profiling for voice input processing
+US9633674B2
+(
+en
+)
+2013-06-07
+2017-04-25
+Apple Inc.
+System and method for detecting errors in interactions with a voice-based digital assistant
+US9633004B2
+(
+en
+)
+2014-05-30
+2017-04-25
+Apple Inc.
+Better resolution when referencing to concepts
+US9646609B2
+(
+en
+)
+2014-09-30
+2017-05-09
+Apple Inc.
+Caching apparatus for serving phonetic pronunciations
+US9646614B2
+(
+en
+)
+2000-03-16
+2017-05-09
+Apple Inc.
+Fast, language-independent method for user authentication by voice
+US9668121B2
+(
+en
+)
+2014-09-30
+2017-05-30
+Apple Inc.
+Social reminders
+US9697820B2
+(
+en
+)
+2015-09-24
+2017-07-04
+Apple Inc.
+Unit-selection text-to-speech synthesis using concatenation-sensitive neural networks
+US9697822B1
+(
+en
+)
+2013-03-15
+2017-07-04
+Apple Inc.
+System and method for updating an adaptive speech recognition model
+US9711141B2
+(
+en
+)
+2014-12-09
+2017-07-18
+Apple Inc.
+Disambiguating heteronyms in speech synthesis
+US9715875B2
+(
+en
+)
+2014-05-30
+2017-07-25
+Apple Inc.
+Reducing the need for manual start/end-pointing and trigger phrases
+US9721566B2
+(
+en
+)
+2015-03-08
+2017-08-01
+Apple Inc.
+Competing devices responding to voice triggers
+US9734193B2
+(
+en
+)
+2014-05-30
+2017-08-15
+Apple Inc.
+Determining domain salience ranking from ambiguous words in natural speech
+US9760559B2
+(
+en
+)
+2014-05-30
+2017-09-12
+Apple Inc.
+Predictive text input
+US9785630B2
+(
+en
+)
+2014-05-30
+2017-10-10
+Apple Inc.
+Text prediction using combined word N-gram and unigram language models
+US9798393B2
+(
+en
+)
+2011-08-29
+2017-10-24
+Apple Inc.
+Text correction processing
+US9818400B2
+(
+en
+)
+2014-09-11
+2017-11-14
+Apple Inc.
+Method and apparatus for discovering trending terms in speech requests
+US9842105B2
+(
+en
+)
+2015-04-16
+2017-12-12
+Apple Inc.
+Parsimonious continuous-space phrase representations for natural language processing
+US9842101B2
+(
+en
+)
+2014-05-30
+2017-12-12
+Apple Inc.
+Predictive conversion of language input
+US9858925B2
+(
+en
+)
+2009-06-05
+2018-01-02
+Apple Inc.
+Using context information to facilitate processing of commands in a virtual assistant
+US9865280B2
+(
+en
+)
+2015-03-06
+2018-01-09
+Apple Inc.
+Structured dictation using intelligent automated assistants
+US9886953B2
+(
+en
+)
+2015-03-08
+2018-02-06
+Apple Inc.
+Virtual assistant activation
+US9886432B2
+(
+en
+)
+2014-09-30
+2018-02-06
+Apple Inc.
+Parsimonious handling of word inflection via categorical stem + suffix N-gram language models
+US9899019B2
+(
+en
+)
+2015-03-18
+2018-02-20
+Apple Inc.
+Systems and methods for structured stem and suffix language models
+US9922642B2
+(
+en
+)
+2013-03-15
+2018-03-20
+Apple Inc.
+Training an at least partial voice command system
+US9934775B2
+(
+en
+)
+2016-05-26
+2018-04-03
+Apple Inc.
+Unit-selection text-to-speech synthesis based on predicted concatenation parameters
+US9953088B2
+(
+en
+)
+2012-05-14
+2018-04-24
+Apple Inc.
+Crowd sourcing information to fulfill user requests
+US9959870B2
+(
+en
+)
+2008-12-11
+2018-05-01
+Apple Inc.
+Speech recognition involving a mobile device
+US9966068B2
+(
+en
+)
+2013-06-08
+2018-05-08
+Apple Inc.
+Interpreting and acting upon commands that involve sharing information with remote devices
+US9966065B2
+(
+en
+)
+2014-05-30
+2018-05-08
+Apple Inc.
+Multi-command single utterance input method
+US9971774B2
+(
+en
+)
+2012-09-19
+2018-05-15
+Apple Inc.
+Voice-based media searching
+US9972304B2
+(
+en
+)
+2016-06-03
+2018-05-15
+Apple Inc.
+Privacy preserving distributed evaluation framework for embedded personalized systems
+US10043516B2
+(
+en
+)
+2016-09-23
+2018-08-07
+Apple Inc.
+Intelligent automated assistant
+US10049668B2
+(
+en
+)
+2015-12-02
+2018-08-14
+Apple Inc.
+Applying neural network language models to weighted finite state transducers for automatic speech recognition
+US10049663B2
+(
+en
+)
+2016-06-08
+2018-08-14
+Apple, Inc.
+Intelligent automated assistant for media exploration
+US10057736B2
+(
+en
+)
+2011-06-03
+2018-08-21
+Apple Inc.
+Active transport based notifications
+US10067938B2
+(
+en
+)
+2016-06-10
+2018-09-04
+Apple Inc.
+Multilingual word prediction
+US10074360B2
+(
+en
+)
+2014-09-30
+2018-09-11
+Apple Inc.
+Providing an indication of the suitability of speech recognition
+US10079014B2
+(
+en
+)
+2012-06-08
+2018-09-18
+Apple Inc.
+Name recognition system
+US10078631B2
+(
+en
+)
+2014-05-30
+2018-09-18
+Apple Inc.
+Entropy-guided text prediction using combined word and character n-gram language models
+US10083688B2
+(
+en
+)
+2015-05-27
+2018-09-25
+Apple Inc.
+Device voice control for selecting a displayed affordance
+US10089072B2
+(
+en
+)
+2016-06-11
+2018-10-02
+Apple Inc.
+Intelligent device arbitration and control
+US10101822B2
+(
+en
+)
+2015-06-05
+2018-10-16
+Apple Inc.
+Language input correction
+US10127220B2
+(
+en
+)
+2015-06-04
+2018-11-13
+Apple Inc.
+Language identification from short strings
+US10127911B2
+(
+en
+)
+2014-09-30
+2018-11-13
+Apple Inc.
+Speaker identification and unsupervised speaker adaptation techniques
+US10134385B2
+(
+en
+)
+2012-03-02
+2018-11-20
+Apple Inc.
+Systems and methods for name pronunciation
+US10170123B2
+(
+en
+)
+2014-05-30
+2019-01-01
+Apple Inc.
+Intelligent assistant for home automation
+US10176167B2
+(
+en
+)
+2013-06-09
+2019-01-08
+Apple Inc.
+System and method for inferring user intent from speech inputs
+US10186254B2
+(
+en
+)
+2015-06-07
+2019-01-22
+Apple Inc.
+Context-based endpoint detection
+US10185542B2
+(
+en
+)
+2013-06-09
+2019-01-22
+Apple Inc.
+Device, method, and graphical user interface for enabling conversation persistence across two or more instances of a digital assistant
+US10192552B2
+(
+en
+)
+2016-06-10
+2019-01-29
+Apple Inc.
+Digital assistant providing whispered speech
+US10199051B2
+(
+en
+)
+2013-02-07
+2019-02-05
+Apple Inc.
+Voice trigger for a digital assistant
+US10223066B2
+(
+en
+)
+2015-12-23
+2019-03-05
+Apple Inc.
+Proactive assistance based on dialog communication between devices
+US10223934B2
+(
+en
+)
+2004-09-16
+2019-03-05
+Lena Foundation
+Systems and methods for expressive language, developmental disorder, and emotion assessment, and contextual feedback
+US10241752B2
+(
+en
+)
+2011-09-30
+2019-03-26
+Apple Inc.
+Interface for a virtual digital assistant
+US10241644B2
+(
+en
+)
+2011-06-03
+2019-03-26
+Apple Inc.
+Actionable reminder entries
+US10249300B2
+(
+en
+)
+2016-06-06
+2019-04-02
+Apple Inc.
+Intelligent list reading
+US10249321B2
+(
+en
+)
+*
+2012-11-20
+2019-04-02
+Adobe Inc.
+Sound rate modification
+US10255907B2
+(
+en
+)
+2015-06-07
+2019-04-09
+Apple Inc.
+Automatic accent detection using acoustic models
+US10262646B2
+(
+en
+)
+2017-01-09
+2019-04-16
+Media Overkill, LLC
+Multi-source switched sequence oscillator waveform compositing system
+US10269345B2
+(
+en
+)
+2016-06-11
+2019-04-23
+Apple Inc.
+Intelligent task discovery
+US10276170B2
+(
+en
+)
+2010-01-18
+2019-04-30
+Apple Inc.
+Intelligent automated assistant
+US10283110B2
+(
+en
+)
+2009-07-02
+2019-05-07
+Apple Inc.
+Methods and apparatuses for automatic speech recognition
+US10289433B2
+(
+en
+)
+2014-05-30
+2019-05-14
+Apple Inc.
+Domain specific language for encoding assistant dialog
+US10297253B2
+(
+en
+)
+2016-06-11
+2019-05-21
+Apple Inc.
+Application integration with a digital assistant
+CN109817191A
+(
+en
+)
+*
+2019-01-04
+2019-05-28
+平安科技（深圳）有限公司
+Trill modeling method, device, computer equipment and storage medium
+US10318871B2
+(
+en
+)
+2005-09-08
+2019-06-11
+Apple Inc.
+Method and apparatus for building an intelligent automated assistant
+US10356243B2
+(
+en
+)
+2015-06-05
+2019-07-16
+Apple Inc.
+Virtual assistant aided communication with 3rd party service in a communication session
+US10354011B2
+(
+en
+)
+2016-06-09
+2019-07-16
+Apple Inc.
+Intelligent automated assistant in a home environment
+US10366158B2
+(
+en
+)
+2015-09-29
+2019-07-30
+Apple Inc.
+Efficient word encoding for recurrent neural network language models
+US10410637B2
+(
+en
+)
+2017-05-12
+2019-09-10
+Apple Inc.
+User-specific acoustic models
+US10446143B2
+(
+en
+)
+2016-03-14
+2019-10-15
+Apple Inc.
+Identification of voice inputs providing credentials
+US10446141B2
+(
+en
+)
+2014-08-28
+2019-10-15
+Apple Inc.
+Automatic speech recognition based on user feedback
+US10455219B2
+(
+en
+)
+2012-11-30
+2019-10-22
+Adobe Inc.
+Stereo correspondence and depth sensors
+US10482874B2
+(
+en
+)
+2017-05-15
+2019-11-19
+Apple Inc.
+Hierarchical belief states for digital assistants
+US10490187B2
+(
+en
+)
+2016-06-10
+2019-11-26
+Apple Inc.
+Digital assistant providing automated status report
+US10496753B2
+(
+en
+)
+2010-01-18
+2019-12-03
+Apple Inc.
+Automatically adapting user interfaces for hands-free interaction
+US10509862B2
+(
+en
+)
+2016-06-10
+2019-12-17
+Apple Inc.
+Dynamic phrase expansion of language input
+US10521466B2
+(
+en
+)
+2016-06-11
+2019-12-31
+Apple Inc.
+Data driven natural language event detection and classification
+US10529357B2
+(
+en
+)
+2017-12-07
+2020-01-07
+Lena Foundation
+Systems and methods for automatic determination of infant cry and discrimination of cry from fussiness
+US10552013B2
+(
+en
+)
+2014-12-02
+2020-02-04
+Apple Inc.
+Data detection
+US10553209B2
+(
+en
+)
+2010-01-18
+2020-02-04
+Apple Inc.
+Systems and methods for hands-free notification summaries
+US10567477B2
+(
+en
+)
+2015-03-08
+2020-02-18
+Apple Inc.
+Virtual assistant continuity
+US10568032B2
+(
+en
+)
+2007-04-03
+2020-02-18
+Apple Inc.
+Method and system for operating a multi-function portable electronic device using voice-activation
+US10593346B2
+(
+en
+)
+2016-12-22
+2020-03-17
+Apple Inc.
+Rank-reduced token representation for automatic speech recognition
+US10592095B2
+(
+en
+)
+2014-05-23
+2020-03-17
+Apple Inc.
+Instantaneous speaking of content on touch devices
+US10607141B2
+(
+en
+)
+2010-01-25
+2020-03-31
+Newvaluexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US10638221B2
+(
+en
+)
+2012-11-13
+2020-04-28
+Adobe Inc.
+Time interval sound alignment
+US10635863B2
+(
+en
+)
+2017-10-30
+2020-04-28
+Sdl Inc.
+Fragment recall and adaptive automated translation
+US20200143779A1
+(
+en
+)
+*
+2017-11-21
+2020-05-07
+Guangzhou Kugou Computer Technology Co., Ltd.
+Audio signal processing method and apparatus, and storage medium thereof
+US10659851B2
+(
+en
+)
+2014-06-30
+2020-05-19
+Apple Inc.
+Real-time digital assistant knowledge updates
+US10671428B2
+(
+en
+)
+2015-09-08
+2020-06-02
+Apple Inc.
+Distributed personal assistant
+US10679605B2
+(
+en
+)
+2010-01-18
+2020-06-09
+Apple Inc.
+Hands-free list-reading by intelligent automated assistant
+US10691473B2
+(
+en
+)
+2015-11-06
+2020-06-23
+Apple Inc.
+Intelligent automated assistant in a messaging environment
+US10706373B2
+(
+en
+)
+2011-06-03
+2020-07-07
+Apple Inc.
+Performing actions associated with task items that represent tasks to perform
+US10705794B2
+(
+en
+)
+2010-01-18
+2020-07-07
+Apple Inc.
+Automatically adapting user interfaces for hands-free interaction
+US10733993B2
+(
+en
+)
+2016-06-10
+2020-08-04
+Apple Inc.
+Intelligent digital assistant in a multi-tasking environment
+US10747498B2
+(
+en
+)
+2015-09-08
+2020-08-18
+Apple Inc.
+Zero latency digital assistant
+US10755703B2
+(
+en
+)
+2017-05-11
+2020-08-25
+Apple Inc.
+Offline personal assistant
+US10762293B2
+(
+en
+)
+2010-12-22
+2020-09-01
+Apple Inc.
+Using parts-of-speech tagging and named entity recognition for spelling correction
+US10789041B2
+(
+en
+)
+2014-09-12
+2020-09-29
+Apple Inc.
+Dynamic thresholds for always listening speech trigger
+US10791176B2
+(
+en
+)
+2017-05-12
+2020-09-29
+Apple Inc.
+Synchronization and task delegation of a digital assistant
+US10791216B2
+(
+en
+)
+2013-08-06
+2020-09-29
+Apple Inc.
+Auto-activating smart responses based on activities from remote devices
+US10810274B2
+(
+en
+)
+2017-05-15
+2020-10-20
+Apple Inc.
+Optimizing dialogue policy decisions for digital assistants using implicit feedback
+US10817676B2
+(
+en
+)
+2017-12-27
+2020-10-27
+Sdl Inc.
+Intelligent routing services and systems
+CN112614477A
+(
+en
+)
+*
+2020-11-16
+2021-04-06
+北京百度网讯科技有限公司
+Multimedia audio synthesis method and device, electronic equipment and storage medium
+US11010550B2
+(
+en
+)
+2015-09-29
+2021-05-18
+Apple Inc.
+Unified language modeling framework for word prediction, auto-completion and auto-correction
+US11025565B2
+(
+en
+)
+2015-06-07
+2021-06-01
+Apple Inc.
+Personalized prediction of responses for instant messaging
+US20210256960A1
+(
+en
+)
+*
+2018-11-06
+2021-08-19
+Yamaha Corporation
+Information processing method and information processing system
+WO2021218138A1
+(
+en
+)
+*
+2020-04-28
+2021-11-04
+平安科技（深圳）有限公司
+Song synthesis method, apparatus and device, and storage medium
+US11217255B2
+(
+en
+)
+2017-05-16
+2022-01-04
+Apple Inc.
+Far-field extension for digital assistant services
+US11256867B2
+(
+en
+)
+2018-10-09
+2022-02-22
+Sdl Inc.
+Systems and methods of machine learning for digital assets and message creation
+US20220223127A1
+(
+en
+)
+*
+2021-01-14
+2022-07-14
+Agora Lab, Inc.
+Real-Time Speech To Singing Conversion
+US11455985B2
+(
+en
+)
+*
+2016-04-26
+2022-09-27
+Sony Interactive Entertainment Inc.
+Information processing apparatus
+US11587559B2
+(
+en
+)
+2015-09-30
+2023-02-21
+Apple Inc.
+Intelligent device identification
+WO2023068042A1
+(
+en
+)
+*
+2021-10-18
+2023-04-27
+ヤマハ株式会社
+Sound processing method, sound processing system, and program
+US11842720B2
+(
+en
+)
+2018-11-06
+2023-12-12
+Yamaha Corporation
+Audio processing method and audio processing system
+Citations (6)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US4731847A
+(
+en
+)
+*
+1982-04-26
+1988-03-15
+Texas Instruments Incorporated
+Electronic apparatus for simulating singing of song
+US5235124A
+(
+en
+)
+*
+1991-04-19
+1993-08-10
+Pioneer Electronic Corporation
+Musical accompaniment playing apparatus having phoneme memory for chorus voices
+US5321794A
+(
+en
+)
+*
+1989-01-01
+1994-06-14
+Canon Kabushiki Kaisha
+Voice synthesizing apparatus and method and apparatus and method used as part of a voice synthesizing apparatus and method
+US5471009A
+(
+en
+)
+*
+1992-09-21
+1995-11-28
+Sony Corporation
+Sound constituting apparatus
+US5703311A
+(
+en
+)
+*
+1995-08-03
+1997-12-30
+Yamaha Corporation
+Electronic musical apparatus for synthesizing vocal sounds using format sound synthesis techniques
+US6006175A
+(
+en
+)
+*
+1996-02-06
+1999-12-21
+The Regents Of The University Of California
+Methods and apparatus for non-acoustic speech characterization and recognition
+1998
+1998-09-28
+US
+US09/161,799
+patent/US6304846B1/en
+not_active
+Expired - Lifetime
+Patent Citations (6)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US4731847A
+(
+en
+)
+*
+1982-04-26
+1988-03-15
+Texas Instruments Incorporated
+Electronic apparatus for simulating singing of song
+US5321794A
+(
+en
+)
+*
+1989-01-01
+1994-06-14
+Canon Kabushiki Kaisha
+Voice synthesizing apparatus and method and apparatus and method used as part of a voice synthesizing apparatus and method
+US5235124A
+(
+en
+)
+*
+1991-04-19
+1993-08-10
+Pioneer Electronic Corporation
+Musical accompaniment playing apparatus having phoneme memory for chorus voices
+US5471009A
+(
+en
+)
+*
+1992-09-21
+1995-11-28
+Sony Corporation
+Sound constituting apparatus
+US5703311A
+(
+en
+)
+*
+1995-08-03
+1997-12-30
+Yamaha Corporation
+Electronic musical apparatus for synthesizing vocal sounds using format sound synthesis techniques
+US6006175A
+(
+en
+)
+*
+1996-02-06
+1999-12-21
+The Regents Of The University Of California
+Methods and apparatus for non-acoustic speech characterization and recognition
+Cited By (312)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US20020184012A1
+(
+en
+)
+*
+1996-02-06
+2002-12-05
+The Regents Of The University Of California
+System and method for characterizing voiced excitations of speech and acoustic signals, removing acoustic noise from speech, and synthesizing speech
+US6999924B2
+(
+en
+)
+1996-02-06
+2006-02-14
+The Regents Of The University Of California
+System and method for characterizing voiced excitations of speech and acoustic signals, removing acoustic noise from speech, and synthesizing speech
+US20050278167A1
+(
+en
+)
+*
+1996-02-06
+2005-12-15
+The Regents Of The University Of California
+System and method for characterizing voiced excitations of speech and acoustic signals, removing acoustic noise from speech, and synthesizing speech
+US7089177B2
+(
+en
+)
+1996-02-06
+2006-08-08
+The Regents Of The University Of California
+System and method for characterizing voiced excitations of speech and acoustic signals, removing acoustic noise from speech, and synthesizing speech
+US7191105B2
+(
+en
+)
+1998-12-02
+2007-03-13
+The Regents Of The University Of California
+Characterizing, synthesizing, and/or canceling out acoustic signals from sound sources
+US20030149553A1
+(
+en
+)
+*
+1998-12-02
+2003-08-07
+The Regents Of The University Of California
+Characterizing, synthesizing, and/or canceling out acoustic signals from sound sources
+US8620793B2
+(
+en
+)
+1999-03-19
+2013-12-31
+Sdl International America Incorporated
+Workflow management system
+US20140330567A1
+(
+en
+)
+*
+1999-04-30
+2014-11-06
+At&T Intellectual Property Ii, L.P.
+Speech synthesis from acoustic units with default values of concatenation cost
+US9236044B2
+(
+en
+)
+*
+1999-04-30
+2016-01-12
+At&T Intellectual Property Ii, L.P.
+Recording concatenation costs of most common acoustic unit sequential pairs to a concatenation cost database for speech synthesis
+US9691376B2
+(
+en
+)
+1999-04-30
+2017-06-27
+Nuance Communications, Inc.
+Concatenation cost in speech synthesis for acoustic unit sequential pair using hash table and default concatenation cost
+US9600472B2
+(
+en
+)
+1999-09-17
+2017-03-21
+Sdl Inc.
+E-services translation utilizing machine translation and translation memory
+US10216731B2
+(
+en
+)
+1999-09-17
+2019-02-26
+Sdl Inc.
+E-services translation utilizing machine translation and translation memory
+US10198438B2
+(
+en
+)
+1999-09-17
+2019-02-05
+Sdl Inc.
+E-services translation utilizing machine translation and translation memory
+US20050049875A1
+(
+en
+)
+*
+1999-10-21
+2005-03-03
+Yamaha Corporation
+Voice converter for assimilation by frame synthesis with temporal alignment
+US7464034B2
+(
+en
+)
+*
+1999-10-21
+2008-12-09
+Yamaha Corporation
+Voice converter for assimilation by frame synthesis with temporal alignment
+US6738457B1
+(
+en
+)
+*
+1999-10-27
+2004-05-18
+International Business Machines Corporation
+Voice processing system
+US9646614B2
+(
+en
+)
+2000-03-16
+2017-05-09
+Apple Inc.
+Fast, language-independent method for user authentication by voice
+US7460997B1
+(
+en
+)
+2000-06-30
+2008-12-02
+At&T Intellectual Property Ii, L.P.
+Method and system for preselection of suitable units for concatenative speech
+US20090094035A1
+(
+en
+)
+*
+2000-06-30
+2009-04-09
+At&T Corp.
+Method and system for preselection of suitable units for concatenative speech
+US8566099B2
+(
+en
+)
+2000-06-30
+2013-10-22
+At&T Intellectual Property Ii, L.P.
+Tabulating triphone sequences by 5-phoneme contexts for speech synthesis
+US8224645B2
+(
+en
+)
+2000-06-30
+2012-07-17
+At+T Intellectual Property Ii, L.P.
+Method and system for preselection of suitable units for concatenative speech
+US20070282608A1
+(
+en
+)
+*
+2000-07-05
+2007-12-06
+At&T Corp.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US7565291B2
+(
+en
+)
+2000-07-05
+2009-07-21
+At&T Intellectual Property Ii, L.P.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US7233901B2
+(
+en
+)
+2000-07-05
+2007-06-19
+At&T Corp.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US6505158B1
+(
+en
+)
+*
+2000-07-05
+2003-01-07
+At&T Corp.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US7013278B1
+(
+en
+)
+2000-07-05
+2006-03-14
+At&T Corp.
+Synthesis-based pre-selection of suitable units for concatenative speech
+US7124084B2
+(
+en
+)
+*
+2000-12-28
+2006-10-17
+Yamaha Corporation
+Singing voice-synthesizing method and apparatus and storage medium
+US7249022B2
+(
+en
+)
+*
+2000-12-28
+2007-07-24
+Yamaha Corporation
+Singing voice-synthesizing method and apparatus and storage medium
+US20060085196A1
+(
+en
+)
+*
+2000-12-28
+2006-04-20
+Yamaha Corporation
+Singing voice-synthesizing method and apparatus and storage medium
+US20060085198A1
+(
+en
+)
+*
+2000-12-28
+2006-04-20
+Yamaha Corporation
+Singing voice-synthesizing method and apparatus and storage medium
+US20060085197A1
+(
+en
+)
+*
+2000-12-28
+2006-04-20
+Yamaha Corporation
+Singing voice-synthesizing method and apparatus and storage medium
+US20030009336A1
+(
+en
+)
+*
+2000-12-28
+2003-01-09
+Hideki Kenmochi
+Singing voice synthesizing apparatus, singing voice synthesizing method, and program for realizing singing voice synthesizing method
+US7016841B2
+(
+en
+)
+*
+2000-12-28
+2006-03-21
+Yamaha Corporation
+Singing voice synthesizing apparatus, singing voice synthesizing method, and program for realizing singing voice synthesizing method
+US20030009344A1
+(
+en
+)
+*
+2000-12-28
+2003-01-09
+Hiraku Kayama
+Singing voice-synthesizing method and apparatus and storage medium
+US20040159222A1
+(
+en
+)
+*
+2001-01-05
+2004-08-19
+Harman International Industries, Incorporated
+Musical effect customization system
+US7026539B2
+(
+en
+)
+2001-01-05
+2006-04-11
+Harman International Industries, Incorporated
+Musical effect customization system
+US6664460B1
+(
+en
+)
+*
+2001-01-05
+2003-12-16
+Harman International Industries, Incorporated
+System for customizing musical effects using digital signal processing techniques
+US20040172249A1
+(
+en
+)
+*
+2001-05-25
+2004-09-02
+Taylor Paul Alexander
+Speech synthesis
+US7389231B2
+(
+en
+)
+*
+2001-09-03
+2008-06-17
+Yamaha Corporation
+Voice synthesizing apparatus capable of adding vibrato effect to synthesized voice
+US20030046079A1
+(
+en
+)
+*
+2001-09-03
+2003-03-06
+Yasuo Yoshioka
+Voice synthesizing apparatus capable of adding vibrato effect to synthesized voice
+US20030061051A1
+(
+en
+)
+*
+2001-09-27
+2003-03-27
+Nec Corporation
+Voice synthesizing system, segment generation apparatus for generating segments for voice synthesis, voice synthesizing method and storage medium storing program therefor
+US7089187B2
+(
+en
+)
+*
+2001-09-27
+2006-08-08
+Nec Corporation
+Voice synthesizing system, segment generation apparatus for generating segments for voice synthesis, voice synthesizing method and storage medium storing program therefor
+US7277856B2
+(
+en
+)
+*
+2001-10-31
+2007-10-02
+Samsung Electronics Co., Ltd.
+System and method for speech synthesis using a smoothing filter
+US20030083878A1
+(
+en
+)
+*
+2001-10-31
+2003-05-01
+Samsung Electronics Co., Ltd.
+System and method for speech synthesis using a smoothing filter
+US20040019485A1
+(
+en
+)
+*
+2002-03-15
+2004-01-29
+Kenichiro Kobayashi
+Speech synthesis method and apparatus, program, recording medium and robot apparatus
+US7062438B2
+(
+en
+)
+*
+2002-03-15
+2006-06-13
+Sony Corporation
+Speech synthesis method and apparatus, program, recording medium and robot apparatus
+EP1381028A1
+(
+en
+)
+*
+2002-07-08
+2004-01-14
+Yamaha Corporation
+Singing voice synthesizing apparatus, singing voice synthesizing method and program for synthesizing singing voice
+US20040006472A1
+(
+en
+)
+*
+2002-07-08
+2004-01-08
+Yamaha Corporation
+Singing voice synthesizing apparatus, singing voice synthesizing method and program for synthesizing singing voice
+US7379873B2
+(
+en
+)
+2002-07-08
+2008-05-27
+Yamaha Corporation
+Singing voice synthesizing apparatus, singing voice synthesizing method and program for synthesizing singing voice
+US20040173084A1
+(
+en
+)
+*
+2002-11-06
+2004-09-09
+Masao Tomizawa
+Music playback unit and method for correcting musical score data
+US7060886B2
+(
+en
+)
+2002-11-06
+2006-06-13
+Oki Electric Industry Co., Ltd.
+Music playback unit and method for correcting musical score data
+US20040133425A1
+(
+en
+)
+*
+2002-12-24
+2004-07-08
+Yamaha Corporation
+Apparatus and method for reproducing voice in synchronism with music piece
+US7365260B2
+(
+en
+)
+*
+2002-12-24
+2008-04-29
+Yamaha Corporation
+Apparatus and method for reproducing voice in synchronism with music piece
+US7183482B2
+(
+en
+)
+*
+2003-03-20
+2007-02-27
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot apparatus
+EP1605435A4
+(
+en
+)
+*
+2003-03-20
+2009-12-30
+Sony Corp
+SINGLE VOICE SYNTHESIS METHOD, SINGLE VOICE SYNTHESIS DEVICE, PROGRAM, RECORDING MEDIUM, AND CORRESPONDING ROBOT
+US20040231499A1
+(
+en
+)
+*
+2003-03-20
+2004-11-25
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US20060156909A1
+(
+en
+)
+*
+2003-03-20
+2006-07-20
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot
+US20040243413A1
+(
+en
+)
+*
+2003-03-20
+2004-12-02
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US7241947B2
+(
+en
+)
+*
+2003-03-20
+2007-07-10
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US20060185504A1
+(
+en
+)
+*
+2003-03-20
+2006-08-24
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot
+US7173178B2
+(
+en
+)
+*
+2003-03-20
+2007-02-06
+Sony Corporation
+Singing voice synthesizing method and apparatus, program, recording medium and robot apparatus
+US7189915B2
+(
+en
+)
+*
+2003-03-20
+2007-03-13
+Sony Corporation
+Singing voice synthesizing method, singing voice synthesizing device, program, recording medium, and robot
+US20050065784A1
+(
+en
+)
+*
+2003-07-31
+2005-03-24
+Mcaulay Robert J.
+Modification of acoustic signals using sinusoidal analysis and synthesis
+US8015012B2
+(
+en
+)
+*
+2003-10-23
+2011-09-06
+Apple Inc.
+Data-driven global boundary optimization
+US20100145691A1
+(
+en
+)
+*
+2003-10-23
+2010-06-10
+Bellegarda Jerome R
+Global boundary-centric feature extraction and associated discontinuity metrics
+US7409347B1
+(
+en
+)
+*
+2003-10-23
+2008-08-05
+Apple Inc.
+Data-driven global boundary optimization
+US7930172B2
+(
+en
+)
+2003-10-23
+2011-04-19
+Apple Inc.
+Global boundary-centric feature extraction and associated discontinuity metrics
+US20090048836A1
+(
+en
+)
+*
+2003-10-23
+2009-02-19
+Bellegarda Jerome R
+Data-driven global boundary optimization
+US20050137881A1
+(
+en
+)
+*
+2003-12-17
+2005-06-23
+International Business Machines Corporation
+Method for generating and embedding vocal performance data into a music file format
+US9342506B2
+(
+en
+)
+2004-03-05
+2016-05-17
+Sdl Inc.
+In-context exact (ICE) matching
+US20050197827A1
+(
+en
+)
+*
+2004-03-05
+2005-09-08
+Russ Ross
+In-context exact (ICE) matching
+US8874427B2
+(
+en
+)
+*
+2004-03-05
+2014-10-28
+Sdl Enterprise Technologies, Inc.
+In-context exact (ICE) matching
+US10248650B2
+(
+en
+)
+*
+2004-03-05
+2019-04-02
+Sdl Inc.
+In-context exact (ICE) matching
+US20120095747A1
+(
+en
+)
+*
+2004-03-05
+2012-04-19
+Russ Ross
+In-context exact (ice) matching
+US7983896B2
+(
+en
+)
+*
+2004-03-05
+2011-07-19
+SDL Language Technology
+In-context exact (ICE) matching
+US9355651B2
+(
+en
+)
+2004-09-16
+2016-05-31
+Lena Foundation
+System and method for expressive language, developmental disorder, and emotion assessment
+US9899037B2
+(
+en
+)
+2004-09-16
+2018-02-20
+Lena Foundation
+System and method for emotion assessment
+US10573336B2
+(
+en
+)
+2004-09-16
+2020-02-25
+Lena Foundation
+System and method for assessing expressive language development of a key child
+US9240188B2
+(
+en
+)
+2004-09-16
+2016-01-19
+Lena Foundation
+System and method for expressive language, developmental disorder, and emotion assessment
+US10223934B2
+(
+en
+)
+2004-09-16
+2019-03-05
+Lena Foundation
+Systems and methods for expressive language, developmental disorder, and emotion assessment, and contextual feedback
+US9799348B2
+(
+en
+)
+2004-09-16
+2017-10-24
+Lena Foundation
+Systems and methods for an automatic language characteristic recognition system
+US10318871B2
+(
+en
+)
+2005-09-08
+2019-06-11
+Apple Inc.
+Method and apparatus for building an intelligent automated assistant
+US20070061139A1
+(
+en
+)
+*
+2005-09-14
+2007-03-15
+Delta Electronics, Inc.
+Interactive speech correcting method
+US20090217805A1
+(
+en
+)
+*
+2005-12-21
+2009-09-03
+Lg Electronics Inc.
+Music generating device and operating method thereof
+US7737354B2
+(
+en
+)
+2006-06-15
+2010-06-15
+Microsoft Corporation
+Creating music via concatenative synthesis
+US20070289432A1
+(
+en
+)
+*
+2006-06-15
+2007-12-20
+Microsoft Corporation
+Creating music via concatenative synthesis
+US8930191B2
+(
+en
+)
+2006-09-08
+2015-01-06
+Apple Inc.
+Paraphrasing of user requests and results by automated digital assistant
+US8942986B2
+(
+en
+)
+2006-09-08
+2015-01-27
+Apple Inc.
+Determining user intent based on ontologies of domains
+US9117447B2
+(
+en
+)
+2006-09-08
+2015-08-25
+Apple Inc.
+Using event alert text as input to an automated assistant
+US9400786B2
+(
+en
+)
+2006-09-21
+2016-07-26
+Sdl Plc
+Computer-implemented method, computer software and apparatus for use in a translation system
+US8521506B2
+(
+en
+)
+2006-09-21
+2013-08-27
+Sdl Plc
+Computer-implemented method, computer software and apparatus for use in a translation system
+US20080077395A1
+(
+en
+)
+*
+2006-09-21
+2008-03-27
+Sdl Plc
+Computer-implemented method, computer software and apparatus for use in a translation system
+US8938390B2
+(
+en
+)
+*
+2007-01-23
+2015-01-20
+Lena Foundation
+System and method for expressive language and developmental disorder assessment
+US8744847B2
+(
+en
+)
+2007-01-23
+2014-06-03
+Lena Foundation
+System and method for expressive language assessment
+US20090208913A1
+(
+en
+)
+*
+2007-01-23
+2009-08-20
+Infoture, Inc.
+System and method for expressive language, developmental disorder, and emotion assessment
+US8898062B2
+(
+en
+)
+*
+2007-02-19
+2014-11-25
+Panasonic Intellectual Property Corporation Of America
+Strained-rough-voice conversion device, voice conversion device, voice synthesis device, voice conversion method, voice synthesis method, and program
+US20090204395A1
+(
+en
+)
+*
+2007-02-19
+2009-08-13
+Yumiko Kato
+Strained-rough-voice conversion device, voice conversion device, voice synthesis device, voice conversion method, voice synthesis method, and program
+US10568032B2
+(
+en
+)
+2007-04-03
+2020-02-18
+Apple Inc.
+Method and system for operating a multi-function portable electronic device using voice-activation
+US8311831B2
+(
+en
+)
+*
+2007-10-01
+2012-11-13
+Panasonic Corporation
+Voice emphasizing device and voice emphasizing method
+US20100070283A1
+(
+en
+)
+*
+2007-10-01
+2010-03-18
+Yumiko Kato
+Voice emphasizing device and voice emphasizing method
+US10381016B2
+(
+en
+)
+2008-01-03
+2019-08-13
+Apple Inc.
+Methods and apparatus for altering audio output signals
+US9330720B2
+(
+en
+)
+2008-01-03
+2016-05-03
+Apple Inc.
+Methods and apparatus for altering audio output signals
+US20090222268A1
+(
+en
+)
+*
+2008-03-03
+2009-09-03
+Qnx Software Systems (Wavemakers), Inc.
+Speech synthesis system having artificial excitation signal
+US9865248B2
+(
+en
+)
+2008-04-05
+2018-01-09
+Apple Inc.
+Intelligent text-to-speech conversion
+US9626955B2
+(
+en
+)
+2008-04-05
+2017-04-18
+Apple Inc.
+Intelligent text-to-speech conversion
+US20110231193A1
+(
+en
+)
+*
+2008-06-20
+2011-09-22
+Microsoft Corporation
+Synthesized singing voice waveform generator
+US20090314155A1
+(
+en
+)
+*
+2008-06-20
+2009-12-24
+Microsoft Corporation
+Synthesized singing voice waveform generator
+US7977562B2
+(
+en
+)
+2008-06-20
+2011-07-12
+Microsoft Corporation
+Synthesized singing voice waveform generator
+US9535906B2
+(
+en
+)
+2008-07-31
+2017-01-03
+Apple Inc.
+Mobile device having human language translation capability with positional feedback
+US10108612B2
+(
+en
+)
+2008-07-31
+2018-10-23
+Apple Inc.
+Mobile device having human language translation capability with positional feedback
+US9959870B2
+(
+en
+)
+2008-12-11
+2018-05-01
+Apple Inc.
+Speech recognition involving a mobile device
+US20100162879A1
+(
+en
+)
+*
+2008-12-29
+2010-07-01
+International Business Machines Corporation
+Automated generation of a song for process learning
+US7977560B2
+(
+en
+)
+*
+2008-12-29
+2011-07-12
+International Business Machines Corporation
+Automated generation of a song for process learning
+US8935150B2
+(
+en
+)
+2009-03-02
+2015-01-13
+Sdl Plc
+Dynamic generation of auto-suggest dictionary for natural language translation
+US9262403B2
+(
+en
+)
+2009-03-02
+2016-02-16
+Sdl Plc
+Dynamic generation of auto-suggest dictionary for natural language translation
+US8935148B2
+(
+en
+)
+2009-03-02
+2015-01-13
+Sdl Plc
+Computer-assisted natural language translation
+US8862472B2
+(
+en
+)
+*
+2009-04-16
+2014-10-14
+Universite De Mons
+Speech synthesis and coding methods
+US20120123782A1
+(
+en
+)
+*
+2009-04-16
+2012-05-17
+Geoffrey Wilfart
+Speech synthesis and coding methods
+US9858925B2
+(
+en
+)
+2009-06-05
+2018-01-02
+Apple Inc.
+Using context information to facilitate processing of commands in a virtual assistant
+US11080012B2
+(
+en
+)
+2009-06-05
+2021-08-03
+Apple Inc.
+Interface for a virtual digital assistant
+US10475446B2
+(
+en
+)
+2009-06-05
+2019-11-12
+Apple Inc.
+Using context information to facilitate processing of commands in a virtual assistant
+US10795541B2
+(
+en
+)
+2009-06-05
+2020-10-06
+Apple Inc.
+Intelligent organization of tasks items
+US20100318353A1
+(
+en
+)
+*
+2009-06-16
+2010-12-16
+Bizjak Karl M
+Compressor augmented array processing
+US10283110B2
+(
+en
+)
+2009-07-02
+2019-05-07
+Apple Inc.
+Methods and apparatuses for automatic speech recognition
+US8423367B2
+(
+en
+)
+*
+2009-07-02
+2013-04-16
+Yamaha Corporation
+Apparatus and method for creating singing synthesizing database, and pitch curve generation apparatus and method
+US20110004476A1
+(
+en
+)
+*
+2009-07-02
+2011-01-06
+Yamaha Corporation
+Apparatus and Method for Creating Singing Synthesizing Database, and Pitch Curve Generation Apparatus and Method
+US8892446B2
+(
+en
+)
+2010-01-18
+2014-11-18
+Apple Inc.
+Service orchestration for intelligent automated assistant
+US9318108B2
+(
+en
+)
+2010-01-18
+2016-04-19
+Apple Inc.
+Intelligent automated assistant
+US10706841B2
+(
+en
+)
+2010-01-18
+2020-07-07
+Apple Inc.
+Task flow identification based on user intent
+US10705794B2
+(
+en
+)
+2010-01-18
+2020-07-07
+Apple Inc.
+Automatically adapting user interfaces for hands-free interaction
+US9548050B2
+(
+en
+)
+2010-01-18
+2017-01-17
+Apple Inc.
+Intelligent automated assistant
+US10679605B2
+(
+en
+)
+2010-01-18
+2020-06-09
+Apple Inc.
+Hands-free list-reading by intelligent automated assistant
+US12087308B2
+(
+en
+)
+2010-01-18
+2024-09-10
+Apple Inc.
+Intelligent automated assistant
+US11423886B2
+(
+en
+)
+2010-01-18
+2022-08-23
+Apple Inc.
+Task flow identification based on user intent
+US8903716B2
+(
+en
+)
+2010-01-18
+2014-12-02
+Apple Inc.
+Personalized vocabulary for digital assistant
+US10276170B2
+(
+en
+)
+2010-01-18
+2019-04-30
+Apple Inc.
+Intelligent automated assistant
+US10496753B2
+(
+en
+)
+2010-01-18
+2019-12-03
+Apple Inc.
+Automatically adapting user interfaces for hands-free interaction
+US10553209B2
+(
+en
+)
+2010-01-18
+2020-02-04
+Apple Inc.
+Systems and methods for hands-free notification summaries
+US10984326B2
+(
+en
+)
+2010-01-25
+2021-04-20
+Newvaluexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US12307383B2
+(
+en
+)
+2010-01-25
+2025-05-20
+Newvaluexchange Global Ai Llp
+Apparatuses, methods and systems for a digital conversation management platform
+US10984327B2
+(
+en
+)
+2010-01-25
+2021-04-20
+New Valuexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US10607141B2
+(
+en
+)
+2010-01-25
+2020-03-31
+Newvaluexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US11410053B2
+(
+en
+)
+2010-01-25
+2022-08-09
+Newvaluexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US10607140B2
+(
+en
+)
+2010-01-25
+2020-03-31
+Newvaluexchange Ltd.
+Apparatuses, methods and systems for a digital conversation management platform
+US10049675B2
+(
+en
+)
+2010-02-25
+2018-08-14
+Apple Inc.
+User profiling for voice input processing
+US9633660B2
+(
+en
+)
+2010-02-25
+2017-04-25
+Apple Inc.
+User profiling for voice input processing
+US20110230987A1
+(
+en
+)
+*
+2010-03-11
+2011-09-22
+Telefonica, S.A.
+Real-Time Music to Music-Video Synchronization Method and System
+US9009052B2
+(
+en
+)
+*
+2010-07-20
+2015-04-14
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis capable of reflecting voice timbre changes
+US20130151256A1
+(
+en
+)
+*
+2010-07-20
+2013-06-13
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis capable of reflecting timbre changes
+US8930192B1
+(
+en
+)
+*
+2010-07-27
+2015-01-06
+Colvard Learning Systems, Llc
+Computer-based grapheme-to-speech conversion using a pointing device
+US10762293B2
+(
+en
+)
+2010-12-22
+2020-09-01
+Apple Inc.
+Using parts-of-speech tagging and named entity recognition for spelling correction
+US9128929B2
+(
+en
+)
+2011-01-14
+2015-09-08
+Sdl Language Technologies
+Systems and methods for automatically estimating a translation time including preparation time in addition to the translation itself
+US9139087B2
+(
+en
+)
+*
+2011-03-11
+2015-09-22
+Johnson Controls Automotive Electronics Gmbh
+Method and apparatus for monitoring and control alertness of a driver
+US20140167968A1
+(
+en
+)
+*
+2011-03-11
+2014-06-19
+Johnson Controls Automotive Electronics Gmbh
+Method and apparatus for monitoring and control alertness of a driver
+US10102359B2
+(
+en
+)
+2011-03-21
+2018-10-16
+Apple Inc.
+Device access using voice authentication
+US9262612B2
+(
+en
+)
+2011-03-21
+2016-02-16
+Apple Inc.
+Device access using voice authentication
+US9230537B2
+(
+en
+)
+*
+2011-06-01
+2016-01-05
+Yamaha Corporation
+Voice synthesis apparatus using a plurality of phonetic piece data
+US20120310651A1
+(
+en
+)
+*
+2011-06-01
+2012-12-06
+Yamaha Corporation
+Voice Synthesis Apparatus
+US10241644B2
+(
+en
+)
+2011-06-03
+2019-03-26
+Apple Inc.
+Actionable reminder entries
+US10706373B2
+(
+en
+)
+2011-06-03
+2020-07-07
+Apple Inc.
+Performing actions associated with task items that represent tasks to perform
+US10057736B2
+(
+en
+)
+2011-06-03
+2018-08-21
+Apple Inc.
+Active transport based notifications
+US11120372B2
+(
+en
+)
+2011-06-03
+2021-09-14
+Apple Inc.
+Performing actions associated with task items that represent tasks to perform
+US9798393B2
+(
+en
+)
+2011-08-29
+2017-10-24
+Apple Inc.
+Text correction processing
+US10241752B2
+(
+en
+)
+2011-09-30
+2019-03-26
+Apple Inc.
+Interface for a virtual digital assistant
+US10134385B2
+(
+en
+)
+2012-03-02
+2018-11-20
+Apple Inc.
+Systems and methods for name pronunciation
+US9483461B2
+(
+en
+)
+2012-03-06
+2016-11-01
+Apple Inc.
+Handling speech synthesis of content for multiple languages
+US9953088B2
+(
+en
+)
+2012-05-14
+2018-04-24
+Apple Inc.
+Crowd sourcing information to fulfill user requests
+US10079014B2
+(
+en
+)
+2012-06-08
+2018-09-18
+Apple Inc.
+Name recognition system
+US20140006031A1
+(
+en
+)
+*
+2012-06-27
+2014-01-02
+Yamaha Corporation
+Sound synthesis method and sound synthesis apparatus
+US9489938B2
+(
+en
+)
+*
+2012-06-27
+2016-11-08
+Yamaha Corporation
+Sound synthesis method and sound synthesis apparatus
+US9495129B2
+(
+en
+)
+2012-06-29
+2016-11-15
+Apple Inc.
+Device, method, and user interface for voice-activated navigation and browsing of a document
+US9576574B2
+(
+en
+)
+2012-09-10
+2017-02-21
+Apple Inc.
+Context-sensitive handling of interruptions by intelligent digital assistant
+US9971774B2
+(
+en
+)
+2012-09-19
+2018-05-15
+Apple Inc.
+Voice-based media searching
+US8719030B2
+(
+en
+)
+*
+2012-09-24
+2014-05-06
+Chengjun Julian Chen
+System and method for speech synthesis
+US10638221B2
+(
+en
+)
+2012-11-13
+2020-04-28
+Adobe Inc.
+Time interval sound alignment
+US10002604B2
+(
+en
+)
+*
+2012-11-14
+2018-06-19
+Yamaha Corporation
+Voice synthesizing method and voice synthesizing apparatus
+US20140136207A1
+(
+en
+)
+*
+2012-11-14
+2014-05-15
+Yamaha Corporation
+Voice synthesizing method and voice synthesizing apparatus
+US10249321B2
+(
+en
+)
+*
+2012-11-20
+2019-04-02
+Adobe Inc.
+Sound rate modification
+US10880541B2
+(
+en
+)
+2012-11-30
+2020-12-29
+Adobe Inc.
+Stereo correspondence and depth sensors
+US10455219B2
+(
+en
+)
+2012-11-30
+2019-10-22
+Adobe Inc.
+Stereo correspondence and depth sensors
+US9595256B2
+(
+en
+)
+*
+2012-12-04
+2017-03-14
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis
+US20150310850A1
+(
+en
+)
+*
+2012-12-04
+2015-10-29
+National Institute Of Advanced Industrial Science And Technology
+System and method for singing synthesis
+US10978090B2
+(
+en
+)
+2013-02-07
+2021-04-13
+Apple Inc.
+Voice trigger for a digital assistant
+US10199051B2
+(
+en
+)
+2013-02-07
+2019-02-05
+Apple Inc.
+Voice trigger for a digital assistant
+US9368114B2
+(
+en
+)
+2013-03-14
+2016-06-14
+Apple Inc.
+Context-sensitive handling of interruptions
+US9922642B2
+(
+en
+)
+2013-03-15
+2018-03-20
+Apple Inc.
+Training an at least partial voice command system
+US9697822B1
+(
+en
+)
+2013-03-15
+2017-07-04
+Apple Inc.
+System and method for updating an adaptive speech recognition model
+US9582608B2
+(
+en
+)
+2013-06-07
+2017-02-28
+Apple Inc.
+Unified ranking with entropy-weighted information for phrase-based semantic auto-completion
+US9620104B2
+(
+en
+)
+2013-06-07
+2017-04-11
+Apple Inc.
+System and method for user-specified pronunciation of words for speech synthesis and recognition
+US9633674B2
+(
+en
+)
+2013-06-07
+2017-04-25
+Apple Inc.
+System and method for detecting errors in interactions with a voice-based digital assistant
+US9966060B2
+(
+en
+)
+2013-06-07
+2018-05-08
+Apple Inc.
+System and method for user-specified pronunciation of words for speech synthesis and recognition
+US10657961B2
+(
+en
+)
+2013-06-08
+2020-05-19
+Apple Inc.
+Interpreting and acting upon commands that involve sharing information with remote devices
+US9966068B2
+(
+en
+)
+2013-06-08
+2018-05-08
+Apple Inc.
+Interpreting and acting upon commands that involve sharing information with remote devices
+US10185542B2
+(
+en
+)
+2013-06-09
+2019-01-22
+Apple Inc.
+Device, method, and graphical user interface for enabling conversation persistence across two or more instances of a digital assistant
+US10176167B2
+(
+en
+)
+2013-06-09
+2019-01-08
+Apple Inc.
+System and method for inferring user intent from speech inputs
+US9300784B2
+(
+en
+)
+2013-06-13
+2016-03-29
+Apple Inc.
+System and method for emergency calls initiated by voice command
+US10791216B2
+(
+en
+)
+2013-08-06
+2020-09-29
+Apple Inc.
+Auto-activating smart responses based on activities from remote devices
+US9620105B2
+(
+en
+)
+2014-05-15
+2017-04-11
+Apple Inc.
+Analyzing audio input for efficient speech and music recognition
+US10592095B2
+(
+en
+)
+2014-05-23
+2020-03-17
+Apple Inc.
+Instantaneous speaking of content on touch devices
+US9502031B2
+(
+en
+)
+2014-05-27
+2016-11-22
+Apple Inc.
+Method for supporting dynamic grammars in WFST-based ASR
+US9785630B2
+(
+en
+)
+2014-05-30
+2017-10-10
+Apple Inc.
+Text prediction using combined word N-gram and unigram language models
+US11257504B2
+(
+en
+)
+2014-05-30
+2022-02-22
+Apple Inc.
+Intelligent assistant for home automation
+US9842101B2
+(
+en
+)
+2014-05-30
+2017-12-12
+Apple Inc.
+Predictive conversion of language input
+US9734193B2
+(
+en
+)
+2014-05-30
+2017-08-15
+Apple Inc.
+Determining domain salience ranking from ambiguous words in natural speech
+US10078631B2
+(
+en
+)
+2014-05-30
+2018-09-18
+Apple Inc.
+Entropy-guided text prediction using combined word and character n-gram language models
+US10083690B2
+(
+en
+)
+2014-05-30
+2018-09-25
+Apple Inc.
+Better resolution when referencing to concepts
+US9715875B2
+(
+en
+)
+2014-05-30
+2017-07-25
+Apple Inc.
+Reducing the need for manual start/end-pointing and trigger phrases
+US10169329B2
+(
+en
+)
+2014-05-30
+2019-01-01
+Apple Inc.
+Exemplar-based natural language processing
+US11133008B2
+(
+en
+)
+2014-05-30
+2021-09-28
+Apple Inc.
+Reducing the need for manual start/end-pointing and trigger phrases
+US10170123B2
+(
+en
+)
+2014-05-30
+2019-01-01
+Apple Inc.
+Intelligent assistant for home automation
+US9966065B2
+(
+en
+)
+2014-05-30
+2018-05-08
+Apple Inc.
+Multi-command single utterance input method
+US9430463B2
+(
+en
+)
+2014-05-30
+2016-08-30
+Apple Inc.
+Exemplar-based natural language processing
+US10497365B2
+(
+en
+)
+2014-05-30
+2019-12-03
+Apple Inc.
+Multi-command single utterance input method
+US10289433B2
+(
+en
+)
+2014-05-30
+2019-05-14
+Apple Inc.
+Domain specific language for encoding assistant dialog
+US9760559B2
+(
+en
+)
+2014-05-30
+2017-09-12
+Apple Inc.
+Predictive text input
+US9633004B2
+(
+en
+)
+2014-05-30
+2017-04-25
+Apple Inc.
+Better resolution when referencing to concepts
+US9338493B2
+(
+en
+)
+2014-06-30
+2016-05-10
+Apple Inc.
+Intelligent automated assistant for TV user interactions
+US10659851B2
+(
+en
+)
+2014-06-30
+2020-05-19
+Apple Inc.
+Real-time digital assistant knowledge updates
+US10904611B2
+(
+en
+)
+2014-06-30
+2021-01-26
+Apple Inc.
+Intelligent automated assistant for TV user interactions
+US9668024B2
+(
+en
+)
+2014-06-30
+2017-05-30
+Apple Inc.
+Intelligent automated assistant for TV user interactions
+US10446141B2
+(
+en
+)
+2014-08-28
+2019-10-15
+Apple Inc.
+Automatic speech recognition based on user feedback
+US10431204B2
+(
+en
+)
+2014-09-11
+2019-10-01
+Apple Inc.
+Method and apparatus for discovering trending terms in speech requests
+US9818400B2
+(
+en
+)
+2014-09-11
+2017-11-14
+Apple Inc.
+Method and apparatus for discovering trending terms in speech requests
+US10789041B2
+(
+en
+)
+2014-09-12
+2020-09-29
+Apple Inc.
+Dynamic thresholds for always listening speech trigger
+US9986419B2
+(
+en
+)
+2014-09-30
+2018-05-29
+Apple Inc.
+Social reminders
+US9646609B2
+(
+en
+)
+2014-09-30
+2017-05-09
+Apple Inc.
+Caching apparatus for serving phonetic pronunciations
+US10074360B2
+(
+en
+)
+2014-09-30
+2018-09-11
+Apple Inc.
+Providing an indication of the suitability of speech recognition
+US9886432B2
+(
+en
+)
+2014-09-30
+2018-02-06
+Apple Inc.
+Parsimonious handling of word inflection via categorical stem + suffix N-gram language models
+US9668121B2
+(
+en
+)
+2014-09-30
+2017-05-30
+Apple Inc.
+Social reminders
+US10127911B2
+(
+en
+)
+2014-09-30
+2018-11-13
+Apple Inc.
+Speaker identification and unsupervised speaker adaptation techniques
+US20160111083A1
+(
+en
+)
+*
+2014-10-15
+2016-04-21
+Yamaha Corporation
+Phoneme information synthesis device, voice synthesis device, and phoneme information synthesis method
+US11556230B2
+(
+en
+)
+2014-12-02
+2023-01-17
+Apple Inc.
+Data detection
+US10552013B2
+(
+en
+)
+2014-12-02
+2020-02-04
+Apple Inc.
+Data detection
+US9711141B2
+(
+en
+)
+2014-12-09
+2017-07-18
+Apple Inc.
+Disambiguating heteronyms in speech synthesis
+US9865280B2
+(
+en
+)
+2015-03-06
+2018-01-09
+Apple Inc.
+Structured dictation using intelligent automated assistants
+US11087759B2
+(
+en
+)
+2015-03-08
+2021-08-10
+Apple Inc.
+Virtual assistant activation
+US9721566B2
+(
+en
+)
+2015-03-08
+2017-08-01
+Apple Inc.
+Competing devices responding to voice triggers
+US9886953B2
+(
+en
+)
+2015-03-08
+2018-02-06
+Apple Inc.
+Virtual assistant activation
+US10311871B2
+(
+en
+)
+2015-03-08
+2019-06-04
+Apple Inc.
+Competing devices responding to voice triggers
+US10567477B2
+(
+en
+)
+2015-03-08
+2020-02-18
+Apple Inc.
+Virtual assistant continuity
+US9899019B2
+(
+en
+)
+2015-03-18
+2018-02-20
+Apple Inc.
+Systems and methods for structured stem and suffix language models
+US9842105B2
+(
+en
+)
+2015-04-16
+2017-12-12
+Apple Inc.
+Parsimonious continuous-space phrase representations for natural language processing
+US10083688B2
+(
+en
+)
+2015-05-27
+2018-09-25
+Apple Inc.
+Device voice control for selecting a displayed affordance
+US10127220B2
+(
+en
+)
+2015-06-04
+2018-11-13
+Apple Inc.
+Language identification from short strings
+US10356243B2
+(
+en
+)
+2015-06-05
+2019-07-16
+Apple Inc.
+Virtual assistant aided communication with 3rd party service in a communication session
+US10101822B2
+(
+en
+)
+2015-06-05
+2018-10-16
+Apple Inc.
+Language input correction
+US10255907B2
+(
+en
+)
+2015-06-07
+2019-04-09
+Apple Inc.
+Automatic accent detection using acoustic models
+US11025565B2
+(
+en
+)
+2015-06-07
+2021-06-01
+Apple Inc.
+Personalized prediction of responses for instant messaging
+US10186254B2
+(
+en
+)
+2015-06-07
+2019-01-22
+Apple Inc.
+Context-based endpoint detection
+US11500672B2
+(
+en
+)
+2015-09-08
+2022-11-15
+Apple Inc.
+Distributed personal assistant
+US10747498B2
+(
+en
+)
+2015-09-08
+2020-08-18
+Apple Inc.
+Zero latency digital assistant
+US10671428B2
+(
+en
+)
+2015-09-08
+2020-06-02
+Apple Inc.
+Distributed personal assistant
+US9697820B2
+(
+en
+)
+2015-09-24
+2017-07-04
+Apple Inc.
+Unit-selection text-to-speech synthesis using concatenation-sensitive neural networks
+US11010550B2
+(
+en
+)
+2015-09-29
+2021-05-18
+Apple Inc.
+Unified language modeling framework for word prediction, auto-completion and auto-correction
+US10366158B2
+(
+en
+)
+2015-09-29
+2019-07-30
+Apple Inc.
+Efficient word encoding for recurrent neural network language models
+US11587559B2
+(
+en
+)
+2015-09-30
+2023-02-21
+Apple Inc.
+Intelligent device identification
+US11526368B2
+(
+en
+)
+2015-11-06
+2022-12-13
+Apple Inc.
+Intelligent automated assistant in a messaging environment
+US10691473B2
+(
+en
+)
+2015-11-06
+2020-06-23
+Apple Inc.
+Intelligent automated assistant in a messaging environment
+US10049668B2
+(
+en
+)
+2015-12-02
+2018-08-14
+Apple Inc.
+Applying neural network language models to weighted finite state transducers for automatic speech recognition
+US10223066B2
+(
+en
+)
+2015-12-23
+2019-03-05
+Apple Inc.
+Proactive assistance based on dialog communication between devices
+US10446143B2
+(
+en
+)
+2016-03-14
+2019-10-15
+Apple Inc.
+Identification of voice inputs providing credentials
+US11455985B2
+(
+en
+)
+*
+2016-04-26
+2022-09-27
+Sony Interactive Entertainment Inc.
+Information processing apparatus
+US9934775B2
+(
+en
+)
+2016-05-26
+2018-04-03
+Apple Inc.
+Unit-selection text-to-speech synthesis based on predicted concatenation parameters
+US9972304B2
+(
+en
+)
+2016-06-03
+2018-05-15
+Apple Inc.
+Privacy preserving distributed evaluation framework for embedded personalized systems
+US10249300B2
+(
+en
+)
+2016-06-06
+2019-04-02
+Apple Inc.
+Intelligent list reading
+US11069347B2
+(
+en
+)
+2016-06-08
+2021-07-20
+Apple Inc.
+Intelligent automated assistant for media exploration
+US10049663B2
+(
+en
+)
+2016-06-08
+2018-08-14
+Apple, Inc.
+Intelligent automated assistant for media exploration
+US10354011B2
+(
+en
+)
+2016-06-09
+2019-07-16
+Apple Inc.
+Intelligent automated assistant in a home environment
+US10490187B2
+(
+en
+)
+2016-06-10
+2019-11-26
+Apple Inc.
+Digital assistant providing automated status report
+US10509862B2
+(
+en
+)
+2016-06-10
+2019-12-17
+Apple Inc.
+Dynamic phrase expansion of language input
+US10067938B2
+(
+en
+)
+2016-06-10
+2018-09-04
+Apple Inc.
+Multilingual word prediction
+US10192552B2
+(
+en
+)
+2016-06-10
+2019-01-29
+Apple Inc.
+Digital assistant providing whispered speech
+US11037565B2
+(
+en
+)
+2016-06-10
+2021-06-15
+Apple Inc.
+Intelligent digital assistant in a multi-tasking environment
+US10733993B2
+(
+en
+)
+2016-06-10
+2020-08-04
+Apple Inc.
+Intelligent digital assistant in a multi-tasking environment
+US10521466B2
+(
+en
+)
+2016-06-11
+2019-12-31
+Apple Inc.
+Data driven natural language event detection and classification
+US10089072B2
+(
+en
+)
+2016-06-11
+2018-10-02
+Apple Inc.
+Intelligent device arbitration and control
+US10297253B2
+(
+en
+)
+2016-06-11
+2019-05-21
+Apple Inc.
+Application integration with a digital assistant
+US10269345B2
+(
+en
+)
+2016-06-11
+2019-04-23
+Apple Inc.
+Intelligent task discovery
+US11152002B2
+(
+en
+)
+2016-06-11
+2021-10-19
+Apple Inc.
+Application integration with a digital assistant
+CN106356055A
+(
+en
+)
+*
+2016-09-09
+2017-01-25
+华南理工大学
+System and method for synthesizing variable-frequency voice on basis of sinusoidal models
+CN106356055B
+(
+en
+)
+*
+2016-09-09
+2019-12-10
+华南理工大学
+variable frequency speech synthesis system and method based on sine model
+US10043516B2
+(
+en
+)
+2016-09-23
+2018-08-07
+Apple Inc.
+Intelligent automated assistant
+US10553215B2
+(
+en
+)
+2016-09-23
+2020-02-04
+Apple Inc.
+Intelligent automated assistant
+US10593346B2
+(
+en
+)
+2016-12-22
+2020-03-17
+Apple Inc.
+Rank-reduced token representation for automatic speech recognition
+US10262646B2
+(
+en
+)
+2017-01-09
+2019-04-16
+Media Overkill, LLC
+Multi-source switched sequence oscillator waveform compositing system
+US10755703B2
+(
+en
+)
+2017-05-11
+2020-08-25
+Apple Inc.
+Offline personal assistant
+US10791176B2
+(
+en
+)
+2017-05-12
+2020-09-29
+Apple Inc.
+Synchronization and task delegation of a digital assistant
+US10410637B2
+(
+en
+)
+2017-05-12
+2019-09-10
+Apple Inc.
+User-specific acoustic models
+US11405466B2
+(
+en
+)
+2017-05-12
+2022-08-02
+Apple Inc.
+Synchronization and task delegation of a digital assistant
+US10810274B2
+(
+en
+)
+2017-05-15
+2020-10-20
+Apple Inc.
+Optimizing dialogue policy decisions for digital assistants using implicit feedback
+US10482874B2
+(
+en
+)
+2017-05-15
+2019-11-19
+Apple Inc.
+Hierarchical belief states for digital assistants
+US11217255B2
+(
+en
+)
+2017-05-16
+2022-01-04
+Apple Inc.
+Far-field extension for digital assistant services
+US10635863B2
+(
+en
+)
+2017-10-30
+2020-04-28
+Sdl Inc.
+Fragment recall and adaptive automated translation
+US11321540B2
+(
+en
+)
+2017-10-30
+2022-05-03
+Sdl Inc.
+Systems and methods of adaptive automated translation utilizing fine-grained alignment
+US20200143779A1
+(
+en
+)
+*
+2017-11-21
+2020-05-07
+Guangzhou Kugou Computer Technology Co., Ltd.
+Audio signal processing method and apparatus, and storage medium thereof
+US10964300B2
+(
+en
+)
+*
+2017-11-21
+2021-03-30
+Guangzhou Kugou Computer Technology Co., Ltd.
+Audio signal processing method and apparatus, and storage medium thereof
+US11328738B2
+(
+en
+)
+2017-12-07
+2022-05-10
+Lena Foundation
+Systems and methods for automatic determination of infant cry and discrimination of cry from fussiness
+US10529357B2
+(
+en
+)
+2017-12-07
+2020-01-07
+Lena Foundation
+Systems and methods for automatic determination of infant cry and discrimination of cry from fussiness
+US10817676B2
+(
+en
+)
+2017-12-27
+2020-10-27
+Sdl Inc.
+Intelligent routing services and systems
+US11475227B2
+(
+en
+)
+2017-12-27
+2022-10-18
+Sdl Inc.
+Intelligent routing services and systems
+US11256867B2
+(
+en
+)
+2018-10-09
+2022-02-22
+Sdl Inc.
+Systems and methods of machine learning for digital assets and message creation
+US11842720B2
+(
+en
+)
+2018-11-06
+2023-12-12
+Yamaha Corporation
+Audio processing method and audio processing system
+US20210256960A1
+(
+en
+)
+*
+2018-11-06
+2021-08-19
+Yamaha Corporation
+Information processing method and information processing system
+US11942071B2
+(
+en
+)
+*
+2018-11-06
+2024-03-26
+Yamaha Corporation
+Information processing method and information processing system for sound synthesis utilizing identification data associated with sound source and performance styles
+CN109817191B
+(
+en
+)
+*
+2019-01-04
+2023-06-06
+平安科技（深圳）有限公司
+Tremolo modeling method, device, computer equipment and storage medium
+CN109817191A
+(
+en
+)
+*
+2019-01-04
+2019-05-28
+平安科技（深圳）有限公司
+Trill modeling method, device, computer equipment and storage medium
+WO2021218138A1
+(
+en
+)
+*
+2020-04-28
+2021-11-04
+平安科技（深圳）有限公司
+Song synthesis method, apparatus and device, and storage medium
+CN112614477B
+(
+en
+)
+*
+2020-11-16
+2023-09-12
+北京百度网讯科技有限公司
+Multimedia audio synthesis method, device, electronic equipment and storage medium
+CN112614477A
+(
+en
+)
+*
+2020-11-16
+2021-04-06
+北京百度网讯科技有限公司
+Multimedia audio synthesis method and device, electronic equipment and storage medium
+US20220223127A1
+(
+en
+)
+*
+2021-01-14
+2022-07-14
+Agora Lab, Inc.
+Real-Time Speech To Singing Conversion
+US11495200B2
+(
+en
+)
+*
+2021-01-14
+2022-11-08
+Agora Lab, Inc.
+Real-time speech to singing conversion
+WO2023068042A1
+(
+en
+)
+*
+2021-10-18
+2023-04-27
+ヤマハ株式会社
+Sound processing method, sound processing system, and program
+Similar Documents
+Publication
+Publication Date
+Title
+Macon et al.
+1997
+A singing voice synthesis system based on sinusoidal modeling
+US10008193B1
+(
+en
+)
+2018-06-26
+Method and system for speech-to-singing voice conversion
+Arslan
+1999
+Speaker transformation algorithm using segmental codebooks (STASC)
+US7016841B2
+(
+en
+)
+2006-03-21
+Singing voice synthesizing apparatus, singing voice synthesizing method, and program for realizing singing voice synthesizing method
+JP3838039B2
+(
+en
+)
+2006-10-25
+Speech synthesizer
+US6253182B1
+(
+en
+)
+2001-06-26
+Method and apparatus for speech synthesis with efficient spectral smoothing
+US20040030555A1
+(
+en
+)
+2004-02-12
+System and method for concatenating acoustic contours for speech synthesis
+JP2016161919A
+(
+en
+)
+2016-09-05
+Voice synthesis device
+Macon et al.
+1997
+Concatenation-based midi-to-singing voice synthesis
+Ardaillon et al.
+2015
+A multi-layer F0 model for singing voice synthesis using a B-spline representation with intuitive controls
+EP1246163B1
+(
+en
+)
+2005-08-10
+Speech synthesis method and speech synthesizer
+JP3711880B2
+(
+en
+)
+2005-11-02
+Speech analysis and synthesis apparatus, method and program
+US11183169B1
+(
+en
+)
+2021-11-23
+Enhanced virtual singers generation by incorporating singing dynamics to personalized text-to-speech-to-singing
+JP2904279B2
+(
+en
+)
+1999-06-14
+Voice synthesis method and apparatus
+JP4304934B2
+(
+en
+)
+2009-07-29
+CHORAL SYNTHESIS DEVICE, CHORAL SYNTHESIS METHOD, AND PROGRAM
+Rodet et al.
+2007
+Spectral envelopes and additive+ residual analysis/synthesis
+JP5573529B2
+(
+en
+)
+2014-08-20
+Voice processing apparatus and program
+Bonada et al.
+2001
+Spectral approach to the modeling of the singing voice
+Hamza et al.
+2000
+Concatenative arabic speech synthesis using large speech database.
+Cheng et al.
+2013
+HMM-based mandarin singing voice synthesis using tailored synthesis units and question sets
+Bonada et al.
+2006
+Improvements to a sample-concatenation based singing voice synthesizer
+Bonada et al.
+2003
+Sample-based singing voice synthesizer using spectral models and source-filter decomposition.
+Macon et al.
+1997
+E. Bryan George** School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332-0250
+Siivola
+2002
+A survey of methods for the synthesis of the singing voice
+JP4353174B2
+(
+en
+)
+2009-10-28
+Speech synthesizer
+Legal Events
+Date
+Code
+Title
+Description
+1998-09-28
+AS
+Assignment
+Owner name
+:
+TEXAS INSTRUMENTS INCORPORATED, TEXAS
+Free format text
+:
+ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:GEORGE, E. BRYAN;REEL/FRAME:009493/0215
+Effective date
+:
+19971024
+2001-09-27
+STCF
+Information on status: patent grant
+Free format text
+:
+PATENTED CASE
+2005-03-29
+FPAY
+Fee payment
+Year of fee payment
+:
+4
+2009-03-20
+FPAY
+Fee payment
+Year of fee payment
+:
+8
+2013-03-18
+FPAY
+Fee payment
+Year of fee payment
+:
+12

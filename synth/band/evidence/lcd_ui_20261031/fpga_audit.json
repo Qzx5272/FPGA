@@ -1,0 +1,64 @@
+{
+  "status": "passed_setup_hold_pulse_pins_constraints_sources",
+  "build": "D:\\StarclusterBuilds\\lcd_ui_20261031_c",
+  "build_id": 539365457,
+  "features": 2147487868,
+  "resolution": [
+    800,
+    480
+  ],
+  "clock_MHz": 25,
+  "clocks": {
+    "core_clk": 20.0,
+    "lcd_pixel": 40.0,
+    "lcd_forward": 40.0
+  },
+  "external_timing_assumption": "5ns setup / 1ns hold budget relative to inverted forwarded pixel clock; physical color-bar geometry verified, panel datasheet unidentified",
+  "bitstream_sha256": "33bec1a9b77d19cc1c6b260e93d322a2caf5401ef0ba1d67a90fbdc5208a40b1",
+  "pins": {
+    "clk": "P16",
+    "uart_rx_pin": "N16",
+    "uart_tx_pin": "P15",
+    "HP_BCK": "E22",
+    "HP_WS": "F24",
+    "HP_DIN": "G24",
+    "PA_EN": "H17",
+    "key_play_n": "K16",
+    "key_stop_n": "F15",
+    "key_panic_n": "G15",
+    "ble_rx": "U16",
+    "ble_tx": "V16",
+    "lcd_g[5]": "J16",
+    "lcd_g[4]": "K15",
+    "lcd_g[3]": "F22",
+    "lcd_g[2]": "G22",
+    "lcd_g[1]": "G21",
+    "lcd_g[0]": "G20",
+    "lcd_b[5]": "F20",
+    "lcd_b[4]": "G19",
+    "lcd_b[3]": "F19",
+    "lcd_b[2]": "F18",
+    "lcd_b[1]": "M17",
+    "lcd_b[0]": "M16",
+    "lcd_r[5]": "H19",
+    "lcd_r[4]": "J19",
+    "lcd_r[3]": "G25",
+    "lcd_r[2]": "H18",
+    "lcd_r[1]": "J18",
+    "lcd_r[0]": "K17",
+    "lcd_en": "A24",
+    "lcd_clk": "H21",
+    "lcd_hs": "H22",
+    "lcd_vs": "A23",
+    "lcd_bl": "F25"
+  },
+  "integrity": {
+    "file_bytes": 42340877,
+    "termination_checked": true,
+    "vendor_checksum_decoded": false
+  },
+  "routing_warnings": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "flash_written": false
+}

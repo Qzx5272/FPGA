@@ -1,0 +1,9 @@
+{
+  "release": "pt8211_dvi_59c963cc2112",
+  "build_id": 2874385776,
+  "bitstream_sha256": "59c963cc21122f3ae4f4e530dddefb225181426b7a4d37aa81550e6d98f1d05e",
+  "snapshot_files": 93,
+  "status": "passed_current_and_previous_release_offline_preflight",
+  "driver_sha256": "bd51fc41bf8f6658f721c908bc09e436ea875480dfd38d9def3359e746a60cbb",
+  "usb_accessed": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "timestamp": "2026-10-25T19:52:47.449050",
+  "command": ".venv/Scripts/python.exe -m unittest discover -s synth/band/tests -p test_host.py",
+  "tests": 25,
+  "scope": "Qt offscreen plus mocked serial; no physical disconnect claim",
+  "log": "Ran 25 tests in 3.306s; OK",
+  "sources": {
+    "synth\\band\\host\\app.py": "601b72a036df5c3858fb3581f8ea638a405a4d2e94f252acb8a6f250ec5daecf",
+    "synth\\band\\tests\\test_host.py": "98298466d66b7a265a61a40b69102edda95f11f3eca1d49122962eb6c440f9a7"
+  }
+}

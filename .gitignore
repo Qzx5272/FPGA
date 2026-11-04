@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+synth/build/
+synth/impl/
+synth/test-output/
+synth/host/settings.json
+*.lic
+tmp/oss-cad-suite/
+tmp/oss-cad-suite.tgz
+tmp/official-examples/
+tmp/innoextract/
+tmp/innoextract.zip
+tmp/iverilog-portable/
+tmp/iverilog_setup.exe
+
+# Local temporary files and generated delivery packages
+/tmp/
+/output/
+/synth/research/**/cache/
+**/build/
+**/impl/
+**/test-output/
+**/.gradle/
+**/local.properties
+*.log
+*.lnk
+.env
+.env.*
+!.env.example
+
+# Large raw endurance telemetry; summaries remain versioned
+/synth/band/evidence/endurance_central256_20261026/hardware_8h.json

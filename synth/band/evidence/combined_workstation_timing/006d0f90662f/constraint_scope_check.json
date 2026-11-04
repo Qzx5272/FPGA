@@ -1,0 +1,51 @@
+{
+  "status": "passed_constraint_scope_only",
+  "scope": "31 requested SDC commands active;four clocks,12 bounded maxdelay,12mindelay,3hold-only exceptions. Not external IO/CDC MTBF/physical acceptance.",
+  "active_commands": [
+    "create_clock -name core_clk -period 20.000000 [get_ports {clk}]",
+    "create_clock -name mic_clk -period 325.520833 [get_ports {mic_bck}]",
+    "create_clock -name audio_clk -period 40.690104 [get_ports {audio_clk}]",
+    "create_clock -name display_clk -period 20.000000 [get_ports {display_clk}]",
+    "set_max_delay -from [get_clocks {core_clk}] -to [get_clocks {mic_clk}] 20.000",
+    "set_min_delay -from [get_clocks {core_clk}] -to [get_clocks {mic_clk}] 0.000",
+    "set_max_delay -from [get_clocks {core_clk}] -to [get_clocks {audio_clk}] 20.000",
+    "set_min_delay -from [get_clocks {core_clk}] -to [get_clocks {audio_clk}] 0.000",
+    "set_max_delay -from [get_clocks {core_clk}] -to [get_clocks {display_clk}] 20.000",
+    "set_min_delay -from [get_clocks {core_clk}] -to [get_clocks {display_clk}] 0.000",
+    "set_max_delay -from [get_clocks {mic_clk}] -to [get_clocks {core_clk}] 20.000",
+    "set_min_delay -from [get_clocks {mic_clk}] -to [get_clocks {core_clk}] 0.000",
+    "set_max_delay -from [get_clocks {mic_clk}] -to [get_clocks {audio_clk}] 20.000",
+    "set_min_delay -from [get_clocks {mic_clk}] -to [get_clocks {audio_clk}] 0.000",
+    "set_max_delay -from [get_clocks {mic_clk}] -to [get_clocks {display_clk}] 20.000",
+    "set_min_delay -from [get_clocks {mic_clk}] -to [get_clocks {display_clk}] 0.000",
+    "set_max_delay -from [get_clocks {audio_clk}] -to [get_clocks {core_clk}] 20.000",
+    "set_min_delay -from [get_clocks {audio_clk}] -to [get_clocks {core_clk}] 0.000",
+    "set_max_delay -from [get_clocks {audio_clk}] -to [get_clocks {mic_clk}] 20.000",
+    "set_min_delay -from [get_clocks {audio_clk}] -to [get_clocks {mic_clk}] 0.000",
+    "set_max_delay -from [get_clocks {audio_clk}] -to [get_clocks {display_clk}] 20.000",
+    "set_min_delay -from [get_clocks {audio_clk}] -to [get_clocks {display_clk}] 0.000",
+    "set_max_delay -from [get_clocks {display_clk}] -to [get_clocks {core_clk}] 20.000",
+    "set_min_delay -from [get_clocks {display_clk}] -to [get_clocks {core_clk}] 0.000",
+    "set_max_delay -from [get_clocks {display_clk}] -to [get_clocks {mic_clk}] 20.000",
+    "set_min_delay -from [get_clocks {display_clk}] -to [get_clocks {mic_clk}] 0.000",
+    "set_max_delay -from [get_clocks {display_clk}] -to [get_clocks {audio_clk}] 20.000",
+    "set_min_delay -from [get_clocks {display_clk}] -to [get_clocks {audio_clk}] 0.000",
+    "set_false_path -hold -from [get_clocks {mic_clk}] -to [get_regs {band/input_audio/transport/fifo/wgray_r1* band/input_audio/latest* band/input_audio/held*}]",
+    "set_false_path -hold -from [get_clocks {audio_clk}] -to [get_regs {band/output_audio/fifo/rgray_w1* band/output_audio/request1* band/clock_watch/sync1*}]",
+    "set_false_path -hold -from [get_clocks {display_clk}] -to [get_regs {band/analyzer/display_frame/ack1*}]"
+  ],
+  "core_fmax_mhz": 50.038,
+  "physical_resources": {
+    "logic": 68169,
+    "ff": 38524,
+    "cls": 47775,
+    "ram": 245,
+    "dsp": 169
+  },
+  "sources": {
+    "combined_workstation_tr_content.html": "db8252bede0eaae2447f1a896324b8150d0ba0ca220df58c9ce402a4ba16d38d",
+    "stage.sdc": "1e7d1f10fe01272a01e64e57e5ad0c4d77408540e72a451dce4af28a0c856aea",
+    "combined_workstation.rpt.txt": "694108fe358c1b66ac23e0cac1175ea3e2dfa93f5ee63f4239289f1fec347102",
+    "audit_combined_timing.py": "ac9839e9c0aa83da8d53e599bd92ee0c823083a9ac44780096e23d53d5cc4bcf"
+  }
+}

@@ -1,0 +1,1144 @@
+=== PAGE 1 ===
+([WHQVLRQVRIWKH.DUSOXV6WURQJ3OXFNHG6WULQJ$OJRULWKP
+$XWKRUV'DYLG$-DIIHDQG-XOLXV26PLWK
+5HYLHZHGZRUNV
+6RXUFH&RPSXWHU0XVLF-RXUQDO9RO1R6XPPHUSS
+3XEOLVKHGE\The MIT Press
+6WDEOH85/http://www.jstor.org/stable/3680063 .
+$FFHVVHG
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at .
+http://www.jstor.org/page/info/about/policies/terms.jsp
+ .
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of
+content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms
+of scholarship. For more information about JSTOR, please contact support@jstor.org.
+ .
+The MIT Press is collaborating with JSTOR to digitize, preserve and extend access to Computer Music
+Journal.
+http://www.jstor.org 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 2 ===
+David A. Jaffe and Julius 0. Smith 
+Center for Computer Research in Music and 
+Acoustics (CCRMA) 
+Stanford University 
+Stanford, California 94305 
+Introduction 
+In 1960, an efficient computational model for vi- 
+brating strings, based on physical resonating, was 
+proposed by McIntyre and Woodhouse (1960). This 
+model plays a crucial role in their recent work on 
+bowed strings (McIntyre, Schumacher, and Wood- 
+house 1981; 1983), and methods for calibrating the 
+model to recorded data have been developed (Smith 
+1983). 
+Independently, in 1978, Alex Strong devised an 
+efficient special case of the McIntyre-Woodhouse 
+string model that produces remarkably rich and re- 
+alistic timbres despite its simplicity (Karplus and 
+Strong 1983). Since then, Strong and Kevin Karplus 
+have explored several variations and refinements of 
+the algorithm, with an emphasis on small-system 
+implementations. We have found that the Karplus- 
+Strong algorithm can be used with equally impres- 
+sive results on fast, high-power equipment. The 
+availability of multiplies, for example, allows sev- 
+eral modifications and extensions that increase its 
+usefulness and flexibility. These extensions are de- 
+scribed in this paper. The developments were moti- 
+vated by musical needs that arose during the 
+composition of May All Your Children Be Acrobats 
+(1981) for computer-generated tape, eight guitars, 
+and voice and Silicon Valley Breakdown (1982) for 
+four-channel, computer-generated tape, both writ- 
+ten by David Jaffe. Our theoretical approach and 
+the extensions based on it have also been applied to 
+the McIntyre-Woodhouse algorithm (Smith 1983). 
+David A. Jaffe is also affiliated with the Music Department at 
+Stanford University, and Julius O. Smith is also affiliated with 
+the Electrical Engineering Department there. 
+Computer Music Journal, Vol. 7, No. 2, 
+Summer 1983, 0148-9267/83/020056-14 $04.00/0, 
+? 1983 Massachusetts Institute of Technology. 
+Extensions of the 
+Karplus-Strong 
+Plucked-String 
+Algorithm 
+The String-Simulation Algorithm 
+The Karplus-Strong plucked-string algorithm is pre- 
+sented in this issue of Computer Music Journal. 
+From our point of view, the algorithm consists of 
+a high-order digital filter, which represents the 
+string; and a short noise burst, which represents 
+the "pluck." The digital filter is given by the dif- 
+ference equation 
+(1) Yn = Yn-N + yn-(N+1) Yn = Xn + Yn-N + YN+ 
+2 
+where x. is the input signal amplitude at sample n, 
+y, is the output amplitude at sample n, and N is 
+the (approximate) desired pitch period of the note in 
+samples. The noise burst is defined by 
+Au, n = 0, 1, 2,...,N- 1 xn = 0, n N, 
+where A is the desired amplitude, and un, [-1,1] is 
+the output of a random-number generator. The out- 
+put yn is taken beginning at time n = N in our 
+implementation. 
+Analysis of the String Simulator 
+Before proceeding to practical extensions of the al- 
+gorithm, we will describe the theory on which 
+many of them are based. Various concepts from 
+digital filter theory are employed. For a tutorial in- 
+troduction to digital filter theory, see the works by 
+Smith (1982b) and Steiglitz (1974). 
+The input-output relation of Eq. (1) may be ex- 
+1. In some situations, the sound more closely resembles a string 
+struck with a hammer or mallet than one plucked with a pick, 
+but we will always use the term pluck when referring to the 
+excitation. 
+Computer Music Journal 56 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 3 ===
+Fig. 1. Block diagram for 
+the basic string simulator. 
+pressed differently by means of delay-operator nota- 
+tion. We define the unit-sample delay operator d by 
+the relation 
+dkx A- Xn-k, 
+where x, is an arbitrary signal, and k is an integer. 
+(The symbol A means "is defined as.") Thus, multi- 
+plying a signal by dk delays the signal in time by k 
+samples. In these terms, Eq. (1) becomes 
+yn = dNy + dN+lyn 
+=x+n L+ d 2 
+Solving for yn yields 
+(2) Xn1 
+Yn XI+d' 1- dN 2 
+We can convert linear delay-operator equations 
+immediately to z-transform equations by replacing 
+each time signal with its z-transform, and replacing 
+d with z-'. It is customary to denote a time signal 
+in lowercase letters (e.g., x) and the corresponding 
+z-transform in uppercase letters (e.g., X(z)). The 
+transfer function of a (linear, time-invariant) digital 
+filter is the z-transform of the output signal divided 
+by the z-transform of the input. The transfer func- 
+tion of the string simulator is then found to be 
+Y(z) _ 1 
+H(Z) A Y = X H X(z)x 1 l+z - 
+2 
+1 
+1 - Ha(z)Hb(z)' 
+where 
+1 + z- Ha(z) Q 2 2 
+Hb(z) z-N 
+This form of the description is shown in Fig. 1. The 
+feedback loop consists of a length N delay line 
+Hb(z) in series with a two-point average Ha(z). Cor- 
+responding to this breakdown of the string simula- 
+tor is the following set of difference equations: 
+Vn = Yn-N 
+V= n + Vn- 
+2 
+yn = xn + Wn 
+The frequency response of a digital filter is de- 
+fined as the transfer function evaluated at z = 
+e's = cos(oT,) + j sin(o Ts), where T, is the sam- 
+pling period in seconds (Ts is the inverse of the sam- 
+pling rate fj, o = 27rf is radian frequency, f is 
+frequency in Hz, and j = \-7. The frequency re- 
+sponse of the string simulator is then 
+1 
+H(e,Ts) = 
+He ') 1 - Ha eiw sHb(e s)' 
+where 
+1 + e- 'T T 
+H|(e 2Ts) = e e-' 2cos(coT,/2) 
+= e-fTscos(rfTs) 
+Hb(es s ) = e- iN = e- if.NT 
+In this paper it is necessary to consider the am- 
+plitude response and phase delay of the feedback fil- 
+ters separately. The amplitude response is defined 
+as the magnitude of the frequency response, and 
+it gives the gain of the filter as a function of fre- 
+quency. The phase delay is defined as minus the 
+complex angle of the frequency response divided 
+by radian frequency, and it gives the time delay 
+(in seconds) experienced by a sinusoid at each 
+frequency. 
+The amplitude response of each component filter 
+is given by 
+Jaffe and Smith 57 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 4 ===
+Ga(f) A IHa(eiTs)I = cos(oT,/2)l = Icos(T7fT)l 
+Gb(f) A IHblee ws)I 1. 
+Thus the delay line Hb is lossless, and the two- 
+point average Ha exhibits a gain that decreases with 
+frequency according to the first quadrant of a co- 
+sine. We will assume hereafter that all frequencies 
+are restricted to the Nyquist limit, that is, If l 
+fs/2. In this range, we have (cos(i7fTj) = cos(1rfTs). 
+It is convenient to define phase delay in units 
+consisting of samples rather than seconds. The 
+phase delays of Ha and Hb in samples are given by 
+Pa(f) - / H(e'2) =1 "- ~oT, 2' 
+Pb(f) A - / Hb(e'S) = N. 
+PfT, 
+(Lz denotes the complex angle of z). The two-point 
+average has a phase delay equal to half a sample, 
+and the delay line has a phase delay equal to its 
+length. 
+Since the total loop consists of Ha and Hb in se- 
+ries, the loop gain and effective loop length are 
+loop gain = G(f) Gb(f) = cos(rfT,), 
+and 
+loop length = Pa(f) + Pb(f) = N + 1/2 (samples) 
+for each sinusoidal frequency f Hz. 
+In synthesizing a single plucked-string note, we 
+feed in N samples of white noise at amplitude A 
+and listen to the output immediately afterward. It 
+is equivalent to initialize the delay line Hb with 
+sealed random numbers at time 0 and employ no 
+input signal. Since the two-point average Ha is con- 
+stantly changing the contents of the loop, the out- 
+put signal is not periodic. It is close to periodic, 
+however, and we use the term period in this loose 
+sense. Each period of the synthetic string sound 
+corresponds to the contents of the delay line at a 
+particular time, and each period equals a somewhat 
+lowpass version of the previous period. More pre- 
+cisely, a running two-point average of the samples 
+comprising one period gives the next period in the 
+output waveform. Since the effective loop length is 
+N + 1/2 samples, the period is best defined to be 
+NTs + Ts/2 sec. Experience shows this to corre- 
+spond well with perceived pitch. 
+Decay of "Harmonics" 
+Since the signal is only quasi-periodic, it does not 
+consist of discrete sinusoids. Essentially, we have 
+many narrow "bands" of energy decaying to zero at 
+different rates. When these energy bands are cen- 
+tered at frequencies that are an integer multiple of a 
+lowest frequency, they will be referred to as har- 
+monics. When the frequency components are not 
+necessarily uniformly spaced, the term partial will 
+be used to emphasize the possibility of inharmo- 
+nicity. Consider, then, a partial at frequency f Hz 
+circulating in the loop. On each pass through the 
+loop, it suffers an attenuation equal to the loop- 
+amplitude response, Ga(f)Gb(f) = cos(IrfTs); that is, 
+one period's attenuation = cos(rfTs). 
+Since the round-trip time in the loop equals N + 
+1/2 samples, the number of trips through the loop 
+after n samples (nTs sec) is equal to n/(N + 1/2) = 
+tfS/(N + 1/2). Thus the attenuation factor at time 
+t = nT, is given by 
+tf5 
+af(t) A [cos(7rfTs)] N + 2. 
+For example, an initial partial amplitude A at time 
+0 becomes amplitude Aaf(t) at time t seconds, 
+where f is the frequency of the partial. 
+The time constant of an exponential decay is tra- 
+ditionally defined as the time when the amplitude 
+has decayed to l/e - 0.37 times its initial value. 
+The time constant at frequency f is found by equat- 
+ing Eq. (3) to e-'/f and solving for rf, which gives 
+Zs 
+-t ( ) Tf = = - 
+ncos(rfT (seconds). (4) In af(t) In cos(rTrfT) 
+For audio, it is normally more useful to define the 
+time constant of decay as the time it takes to decay 
+-60 db, or to 0.001 times the initial value. In this 
+case, we equate Eq. (3) to 0.001 and solve for t. This 
+value of t is often called t6o. Conversion from f to 
+Computer Music Journal 
+_ __ 
+(3) 
+58 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 5 ===
+t60(/) is accomplished by 
+t6o(f) = ln(1000),rf 6.91 f. 
+For example, if a sinusoid at frequency f Hz has 
+amplitude A at time 0, then at time t,o(f) it has am- 
+plitude Aaf(t6o (f)) = A/1000, or it is 60 db below its 
+starting level. 
+The above analysis describes the attenuation due 
+to "propagation" around the loop. It does not, how- 
+ever, incorporate the fact that sinusoids that do 
+not "fit" in the loop are quickly destroyed by self- 
+interference. This situation is analogous to making 
+an actual string vibrate. Any signal may be "fed 
+into" the string, but after the input ceases, the re- 
+maining energy quickly assumes a quasi-periodic 
+nature. Thus, even though the loop is initialized 
+with random numbers, after a very short time the 
+primary frequencies present in the loop are those 
+that have an integral number of periods in N + 1/2 
+samples. These frequencies are all multiples of the 
+frequency whose period exactly matches the loop 
+length N + 1/2. This lowest frequency provides the 
+fundamental, or pitch frequency, of the note: 
+A (6)fs 
+2 12 (N+2) T~ N4+- 
+Setting f to the harmonic series beginning with f,, 
+f, = la, E k fs k = 2, ... N/2, (7) 
+N+ 2 2 
+gives the decay factor at time t for the kth harmonic 
+to be 
+ak(t) = [costlrfkTs)]ft. (8) 
+Similarly, the time contrast per harmonic is 
+given by 
+_-t 1 k In ak(t) f In cos(rfkT,) (seconds. (9 
+Figure 2 shows the spectral evaluation during the 
+first 16 periods of a note having a period of 128 
+samples. A 128 length Fast Fourier Transform (FFT) 
+was computed every other period. Each curve in the 
+figure is interpreted as the envelope of the har- 
+monic amplitudes, since a straight line is drawn 
+from one harmonic amplitude to the next. 
+In certain extensions to the algorithm, HA is 
+other than a two-point average. In such a case, the 
+attenuation factor of the kth harmonic after t sec- 
+onds is approximately 
+tf, 
+ak(t) = G,(fk )N + Plfk), (10) 
+where we require Ga(fl) 1 for stability. The phase 
+delay Pa(fk) of Ha may be used to create inharmonic 
+spectra (Smith 1983). The spectrum is harmonic 
+only when Pa,fk) is the same at all harmonic 
+frequencies fk. 
+Similarly, when Ha is more general, the time con- 
+stant of decay for each harmonic becomes 
+T 
+N + P,(fk) t 
+seconds. Tk = - f In G(2rfkT) 
+econ (11) 
+Having provided an analytic vocabulary, we now 
+proceed to a detailed examination of our additions 
+to the Karplus-Strong algorithm. 
+Tuning 
+The fact that the delay-line length N must be an 
+integer causes tuning problems. Since the funda- 
+mental frequency is f, = f/(N + 1/2), the allowed 
+pitches are quantized, especially at high frequency. 
+For large values of N (low pitches), the difference 
+Jaffe and Smith 
+Fig. 2. Spectral evolution 
+during the first 16 periods. 
+(5) 
+59 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 6 ===
+Fig. 3. Desired pitch versus 
+resulting pitch for a 50- 
+KHz sampling rate. 
+- 20- 
+a -/ 
+4 10- / 
+N 
+CO 0 
+O - 
+5 10 15 20 25 
+Desired frequency (KHz) 
+between the pitch at N and N + 1 is very slight. 
+However, for high pitches, N and N + 1 yield very 
+different pitches and tuning becomes crude. Figure 
+3 shows the distortion in frequency for the sam- 
+pling rate 50 KHz. For lower sampling rates, the 
+curve is identical in form, and the distortion occurs 
+at proportionately lower frequencies. 
+The key to a solution for this problem lies in the 
+expression for loop length in terms of phase delay. 
+The fundamental frequency is given by 
+_ = fs 
+f N+Pa(fl)' 
+where Pa(f) = 1/2 when the two-point average is 
+used for Ha. To make up the difference between f 
+and the desired frequency, we need to introduce 
+into the feedback loop a filter that can contribute a 
+small delay without altering the loop gain. The fil- 
+ter we introduce has the difference equation 
+Yn = CXn + Xn-1 - CYn- (12) 
+and transfer function 
+H,(z)A 1 + Cz-' 
+where C is the only coefficient to be set. For sta- 
+bility, we must have ICI < 1. It can be shown that 
+when the input x, is bounded by 1, the output is 
+bounded by 21CI + 1. The transfer function of the 
+whole string is now 
+H(z) A ) 1 - Ha(z)Hb(z)Hc(z) 
+The filter H, is a first-order allpass filter, and as 
+such it has a constant amplitude response. Indeed, 
+the amplitude response is simply 
+Gc(f) - IHc(e s)l= 1 + Ce -7T| 1 
+The use of an allpass filter ensures that no modi- 
+fication of the decay rate will take place. The loop 
+gain is G,(f)Gb(f)G,(f) = cos(rTfTs) as before. 
+We will select the phase delay of H, so as to tune 
+fl to the precise desired frequency. This requires 
+only the ability to select phase delays between 0 
+and T, sec, or one sample's worth. 
+The phase delay of the first-order allpass H, is 
+given by 
+PC(f) A _ /Hc (e's) 
+coTT 
+-1 C + e-'"T 
+coTs 1 + Ce-'T 
+L(1 + Ce-"T) _ (C + e-'"T) 
+coTs coT 
+= 1tan(- C sinlT) 
+oT tanI -sin(cT) 
+oT,s tn C + cos( oTj ) (13) 
+When the arguments to the arc tangent above have 
+magnitude less than unity, we can use the power- 
+series expansion (Abramowitz and Stegun 1966), 
+X3 XS X7 
+tan-'(x) = x -- + + ., Ix< 1. 
+Thus we can approximate the low-frequency phase 
+delay by 
+Pcf ) = sin(oT,) C sin(co T 
+cT,()C + cos(oT,)) oT,(1 + C cos(oTj)) 
+1 C 1-C 
+C+ 1 +C 1+C' (14) 
+A plot of the exact phase delay is given in Fig. 4 for 
+Computer Music Journal 60 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 7 ===
+Fig. 4. Phase delay for the 
+fine-tuning allpass filter 
+H,(z) = (C + z-')/ 
+(1 +C z-). 
+2- 
+c : 
+cn 
+- ' 1 
+C 
+n 
+0 Frequency F,/2 
+17 values of C equally spaced between -0.999 and 
+0.999. Note that delays between 0 and 1 sample can 
+be provided somewhat uniformly across the fre- 
+quency axis. A delay of 0 samples corresponds to 
+C = 1, where the pole and zero of Hc(z) cancel to 
+give Hc(z) 1. However, pole-zero cancellation on 
+the unit circle is not a good thing in practice, since 
+round-off errors may yield an unstable filter. There- 
+fore, it is preferable to shift the range of one-sample 
+delay control to the region s < Pc < (1 + e) for 
+some small nonnegative e (0 < < 1). It is best not 
+to shift very far, since the phase-delay curves are 
+less flat in the region beyond one sample's delay. 
+Note that the delay curves below the one-sample 
+level in Fig. 4 correspond to slightly flattened up- 
+per partials, while the delay curves above the one- 
+sample level correspond to slightly sharpened upper 
+partials. The timbre change due to slight systemat- 
+ic shifting of the upper partials, of an amount less 
+than one sample period, was found to be hardly no- 
+ticeable. It may even be desirable as a source of sub- 
+tle timbral variation. In any case, it is important to 
+get the perceived pitch right. 
+To tune the instrument precisely to a desired 
+fundamental frequency f, let P1 equal fs/f, the real 
+value for the period of the first partial, in samples, 
+which would give perfect tuning. Then we desire 
+N + Pa(fi) + P,(fl) = P. The integer buffer length N 
+and the delay Pc(fL) required from the allpass filter 
+become 
+N A Floor(P, - P(f,) - ) (15) 
+Pc(fl) A Pi - N - P,(f), 
+where s > 0 is the offset that shifts Pc(fl) into the 
+range [e, 1 +e], and Pa(f,) is the delay in samples due 
+to the filter Ha. In the simple case where Ha is a 
+two-point average, Pa(f,) = 1/2. 
+We next solve for the filter coefficient in Eq. (13) 
+as a function of Pc(f,). Taking the tangent of both 
+sides, and using an identity for the tangent of a 
+difference leads to the quadratic equation in C, 
+C2 sin(co1TJP,(f,) + cw,Tj + 2C sin(co,TPc(fA)) + 
+sin(co,TP,(fl) - coTj) = 0, 
+where co A_ 27rf. The solution is found, after some 
+manipulation (Mont-Reynaud 1982), to be 
+-sin(ol TsP(fL)) + sin(olTs) 
+sin(wol TsP(f ) + coTj ) 
+We have introduced an extra root by producing a 
+quadratic equation. The previous approximation 
+Eq. (14) indicates that the + sign should be taken. 
+Therefore, the final solution is 
+- sin(c, Tj - sin(o, TsP,c(f)) 
+sin(cl TsPc(fl) + c Ts) 
+-sin( 
+co T - o, 
+TsPc(fl) 
+= 
+i( TT,+co, TsPff, 
+(16) 
+which can be approximated, at low frequencies, by 
+1 - Pc(f,) 
+i + Pc(AM) (17) 
+Although this technique provides a precise funda- 
+mental frequency, it does not guarantee an in-tune 
+percept, since the perceived pitch does not always 
+coincide with the fundamental frequency. An ad- 
+ditional mapping onto a perceptual tuning dimen- 
+sion may be needed for the very high notes. In our 
+case, it was found that tuning the octaves slightly 
+stretched, as is done in piano tuning, gives a more 
+satisfying in-tune percept. 
+Jaffe and Smith 
+_ ...-~ 
+I. I I I ? I 
+4 
+j 
+61 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 8 ===
+Decay-time Alteration 
+The basic algorithm naturally results in a shorter 
+decay time for high pitches than for low pitches, 
+reflecting the behavior of real strings. This is due 
+to two effects. First, higher frequencies are more 
+attenuated by the two-point average Ha; second, 
+higher pitch means more trips through the atten- 
+uating loop in a given time. This may be seen in 
+Eq. (3). 
+Unfortunately, the range of decay times between 
+the high and low pitches is too extreme. The high- 
+pitched notes die away so fast that only a click is 
+perceived, while the low-pitched notes last for an 
+unnaturally long time. In addition, the decay time 
+of real strings varies with many factors such as ten- 
+sion, length, thickness, and material. Consequently, 
+we have found it useful to add a means for altering 
+the note duration. The ability to control decay time 
+is essential for a realistic simulation as well as for 
+musical flexibility. 
+On systems that have separate control of the 
+sampling rate of each voice, sampling-rate change 
+can be used to control decay time. On other sys- 
+tems, however, it is necessary to use other methods 
+to alter decay time. 
+Decay Shortening 
+To shorten the decay time, a loss factor p can be in- 
+troduced in the feedback loop. With the loss factor, 
+the difference Eq. (1) for the string becomes 
+Yn = X -N + Yn-(N+)18 
+y,=fx,,+ p (18) 
+The amplitude envelope of a sinusoid at frequency 
+f, previously given by Eq. (8), is now proportional to 
+a,(t, p) = |p cos(TrfTs)jfl = IPIM'taf(t). 
+Thus all partials are affected equally: the relative 
+decay rates are unchanged. 
+Note that p cannot be used to lengthen the decay 
+time, since the amplitude at 0 Hz would increase 
+exponentially. In general, we must have Ipl - 1 if 
+the string is to be stable. Thus p is used to shorten 
+the low-pitched notes to make them more compa- 
+rable in duration with notes from a real string. With 
+the loss factor operative, the decay-time constant 
+for the fundamental frequency becomes 
+1 
+r(p) = - 
+f, In lp cos(rTf, Tj)I ' (19) 
+Decay shortening produces a damped version of the 
+algorithm, analogous to substitution of a soft mate- 
+rial for the bridge of a string instrument. 
+Decay Stretching 
+To stretch the decay, the feedback average (Ha) can 
+be changed to a two-point weighted average. This 
+reduces the amount of loss at high frequencies. 
+Thus, we replace H(z}) by 
+H,(z, S) = (1 - S) + Sz-, (20) 
+where S, the stretching factor, is between 0 and 1. 
+The gain of this filter is 
+G,(f, S) = (1 - S) + Se-' it 
+= V ((1 - S) + S cos oTJ)2 + (S sin(w)T,))2 
+= V (1 - S)2 + S2 + 2S(1 - S) cos wTr 
+(21) 
+With S = 1/2, Ha(z, S) reduces to the previous case 
+Ha(z). For stability of the overall string, we must have 
+0 < S < 1. If S = 0 or 1, the frequency-dependent 
+term disappears, and the gain response is unity for 
+all f; in this case, the initial white-noise burst cir- 
+culates forever in the loop, producing harmonics 
+that never decay. At intermediate values, 0 < S < 1, 
+the effective note duration (t60) is finite, and it is 
+minimum for S = 1/2. The amplitude trajectory 
+and the decay-time constant for each partial can be 
+obtained by substituting Eq. (21) into Eqs. (10) and 
+(11), respectively. 
+For the greatest control, both the uniform-loss 
+method and the weighted two-point-average method 
+may be used for decay-time alteration. The result- 
+ing decay time is then a function of loss factor p 
+and stretch factor S. Karplus and Strong (1983) de- 
+scribe a method of decay stretching that uses no 
+multiplies. 
+Computer Music Journal 62 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 9 ===
+Fig. 5. Phase delay for the 
+decay-stretching, one-zero 
+filter Ha(z, S) = (1 - S) + 
+S z-'. 
+-s /4 - / 
+0 
+0 Frequency F,/2 
+Effect of Decay Stretching on Tuning 
+Changing S changes the effective loop length as a 
+function of frequency, since it changes the phase 
+delay of the overall loop. We must therefore com- 
+pute Pa(f,) for use in Eq. (15) when fine tuning with 
+the allpass filter H,. The phase delay of the weighted 
+two-point average is given by 
+Pa(f, S) - ?Ha(e'TS, S) 
+coT, 
+((L - S) + Se-' T) 
+coT, 
+_ tan-' -Ssin(oT) ,2 - 
+, tan- (1 - S)+ S cos(ouT) ) (22) 
+and for low frequencies, relative to the sampling 
+rate, we may use the approximation 
+P(f, S) T -S sin(oTs) 
+Pa( f T,({1 - S) + ScoTs cos()oT,) 
+- S, O < S 1. 
+For S = 1/2, we have the basic string algorithm, 
+and the phase delay of Ha is 1/2, as given by the 
+above approximation. For other values of S the 
+approximation is always precise at f = 0. Figure 5 
+shows the true phase-delay curves of H,(z, S) as S 
+is stepped uniformly through 17 values from 0 to 1. 
+Note that for S > 0 the phase delay is quite flat 
+over most of the frequency axis. Another point 
+of interest is that since Ga(z, S) = Ga(z, 1 - S), 
+we may choose the case that yields the best phase 
+delay curve for the fine-tuning allpass H,. 
+Since the tuning calculation needs to be done 
+only once per note, the precise form of Eq. (22) 
+can be used for each new frequency without much 
+computational expense. 
+Dynamics 
+The loudness of the signal output by the algorithm 
+is a function of the amplitude of the input noise 
+burst. However, this is an unsatisfactory control in 
+simulating the timbral effect of dynamic level as it 
+occurs in the case of a real string instrument. The 
+effect of varying initial amplitude gives the impres- 
+sion of a change more in the distance between the 
+listener and the apparent source than in dynamics. 
+Since strings plucked hard have more energy in the 
+higher partials than strings plucked lightly (due to 
+nonlinearities becoming important), the dynamic 
+simulation is based on modeling this difference in 
+spectral balance. We therefore change the effective 
+spectral bandwidth of a note to modulate its appar- 
+ent intensity. 
+The bandwidth is controlled by means of a one- 
+pole, lowpass filter applied to the initial noise burst 
+(before it is fed into the string). This filter will be 
+referred to as the dynamics filter. The difference 
+equation of the dynamics filter is 
+yn = (1 - R)xn + Ryn-, 
+and its transfer function is 
+1-R Hd(z) = 1 - Rz-' (23) 
+where R is a real number between 0 and 1, com- 
+puted as a function of fundamental frequency fl and 
+the desired dynamic level L. When a series of notes 
+at pitch f, is played while R is moved gradually to- 
+ward 1, a diminuendo is approximated in terms of 
+both decreasing loudness and spectral bandwidth 
+reduction. 
+We define the dynamic level L as a bandwidth be- 
+Jaffe and Smith 
+2/ 
+63 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 10 ===
+Fig. 6. Frequency response 
+of H(z) = (1 - R) 
+(1 - R z-l) computed at 
+dynamic level L = 100 for 
+six values of f,. 
+tween 0 and f/2. If L is small, the spectrum is more 
+lowpass filtered, corresponding to a softer dynamic 
+level. Conversely, large L gives a bright spectrum 
+corresponding to louder notes. It is not sufficient to 
+use a fixed lowpass filter for all pitches, since low- 
+pitched notes would then be louder than high-pitched 
+notes. Rather, for a given dynamic level, R must be 
+changed with pitch to yield a uniform perceived 
+loudness. While this is a difficult problem in gen- 
+eral, a good approximation is obtained by varying R 
+so that the amplitude of the fundamental frequency 
+is constant. 
+It remains to be shown how R is computed for a 
+given pitch fl and dynamic level L. The main steps 
+are as follows. First, a one-pole, lowpass filter is de- 
+signed having bandwidth L. Second, the gain of this 
+filter at a "middle" frequency is computed. Third, 
+the dynamics filter is computed as a one-pole, low- 
+pass filter having this gain at the desired fundamen- 
+tal f,. The remainder of this section gives the equa- 
+tions needed for these steps. 
+The reference frequency fm is chosen as the loga- 
+rithmic middle (geometric mean) of the range to 
+be used (a function of the particular musical con- 
+text and the sampling frequency): 
+fm= e(l/2)(log(f)+ log(fl)) = /-f 
+where f, is the upper pitch limit (< f/2), and fi is 
+the lower pitch limit. 
+The one-pole lowpass filter having bandwidth L 
+is given by 
+HL(Z) A I - RL 
+L 1 - RZ-' 
+where 
+RL A e- LTs. 
+The substitution RL = e- LT is a somewhat stan- 
+dard approximate formula for mapping bandwidth 
+to pole radius. 
+The gain of the lowpass filter HL at the reference 
+frequency is defined as 
+GL A IHL(e"7sfms) 
+1 - RL 
+11 - RLe-'21rmTs' 
+o -25t1 -- 25 
+-50 = 100 Hz 
+50123I .... 
+0 1 2 3 4 
+fi fm Frequency (KHz) f. 
+Now, for any desired fundamental frequency fL, R 
+is computed so as to provide gain Gd(fl) = GL. In other 
+words, all fundamental frequencies are made to have 
+the same amplitude. The value of R is found by 
+solving 
+GL = R l - R GL |I1 - Re-i2fI Ts 
+Squaring both sides of this equation and solving the 
+resulting quadratic polynomial in R yield 
+R 1 - GL cos(2rfr Ts) R= 1 - GL 
+V' 1 - G2 COS2( rTf, Ts) + 2GL sinr T rf V T1 L ) 
+1- G- 
+We use whichever value is < 1 in magnitude to en- 
+sure stability. 
+A family of frequency-response curves for Hd is 
+shown in Fig. 6 for six fundamental frequencies in 
+octave steps from f, = 100 Hz to fl = 3,200 Hz. The 
+dynamic level in each case is L = 100 Hz. A verti- 
+cal line is drawn to each curve at the fundamental 
+frequency to which it applies. The reference fre- 
+quency fm is set to 282.84 Hz (the geometric mean 
+of f, = 20 Hz and fu = f,/2), and the sampling rate is 
+fs = 8,000 Hz. 
+To add to the effect of simulated dynamics, it is 
+sometimes helpful to do a bit of decay shortening 
+on the low soft notes, using a loss factor p as de- 
+scribed previously. It is also possible to simulate 
+the spectral characteristics of soft notes by simply 
+Computer Music Journal 64 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 11 ===
+turning the output of the algorithm on late, after 
+some of the high-frequency energy has died away. 
+This latter method has the effect of diminishing the 
+attack noise, corresponding to a milder pluck. For 
+other decay-softening techniques, see the section 
+entitled Varying Attack Characteristics. 
+Rests and the Ends of Notes 
+In the case of a real string instrument, the player 
+often plays two notes on the same string, playing 
+the second note before the first has died away. The 
+basic algorithm handles this without a problem for 
+all but very high pitches, since the discontinuity at 
+the beginning of the new note is perceived as a new 
+pluck rather than as a click. (With a real instrument, 
+there is a short time when the pick has muted the 
+vibration for the previous note but has not yet set 
+the string again into vibration, but this brief silence 
+was not found to be necessary for realism in the 
+synthetic model.) A problem arises, however, when 
+there is a rest after a note. If the output of the algo- 
+rithm is abruptly turned off (replaced by zeros), a 
+discontinuity in the waveform results, causing a 
+click. 
+Even if the note is allowed to decay for a very 
+long time, a note turned off abruptly may cause a 
+click because the feedback loop has unity gain at 
+0 Hz. To see this, note that Ga(O) = cos(O) = 1. Thus 
+the final value of the waveform is the mean of the 
+initial noise burst. Since the pseudo-random-number 
+sequence used to initially excite the filter has a 
+mean of zero only in special cases or when an in- 
+finite number of samples is taken, the 0 Hz compo- 
+nent can be significant. For uniform pseudorandom 
+white noise at amplitude A, the statistical variance 
+is A2/3, which implies a variance in sample mean 
+over N samples equal to A2/(3N). Thus the stan- 
+dard deviation of the mean in a length of N sam- 
+ples is A/\V3N. As N decreases, the probability of 
+having a large amount of energy at 0 Hz becomes 
+greater. Karplus and Strong describe a technique 
+they call "dithering" to handle this problem, but 
+this technique was not economical in our context. 
+Our solution to the discontinuity problem is as 
+follows: the loss factor p, as was discussed for de- 
+cay shortening, is set to a relatively small value in 
+the last few milliseconds of the note. The duration 
+of the decay is dependent on the loss factor chosen. 
+A loss factor close to 1 simulates a string being 
+damped with a soft material such as the flesh of the 
+finger, while a smaller loss factor simulates damp- 
+ing with a hard material, such as a pick. It is useful 
+to compute p as a function of a desired t60. Substi- 
+tuting Eq. (19) into Eq. (5) and solving for p yields 
+e- l/fT 
+t6o p(t60) = . A 
+cot6 s(= ICOSfT)I' = ln(1000)' 
+For pitches above about 3 KHz, clicks can appear 
+even at the onset of notes. Onset clicks can also 
+occur when a pianissimo setting of the dynamics 
+filter is used, since the masking effect of the on- 
+set noise burst is weakened by the dynamic filter. 
+To alleviate this problem, it may be necessary to 
+multiply the output of the algorithm by an expo- 
+nential or linear envelope, rather than switching it 
+on abruptly. 
+Glissandi and Slurs 
+A slur can be simulated by changing the order of 
+the filter without reexciting it; that is, by chang- 
+ing the delay buffer length N. The result is analo- 
+gous to a performer's refretting a string without re- 
+plucking it (what guitarists call the "hammer-on" 
+and "pull-off" technique). A rapid alternation of as- 
+cending and descending pitch changes gives a good 
+left-hand-trill effect. 
+If the buffer length is gradually changed over 
+time, a crude glissando results. For low pitches and 
+high sampling rates, it can be quite smooth, but for 
+higher pitches and lower sampling rates, the pitch 
+quantization resulting from the integer-delay lengths 
+becomes noticeable. In the upper range, the effect 
+is similar to a glissando on a fretted instrument, 
+where the pitch changes in discrete steps, and it 
+can be musically useful. Of course, the synthetic 
+quantization is not in semitone intervals. 
+A perfectly smooth glissando can be created by 
+ramping C, the tuning coefficient, during the time 
+between buffer-length changes. This technique can 
+also be used to create vibrato. 
+Jaffe and Smith 65 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 12 ===
+Sympathetic String Simulation 
+In a real string instrument, sympathetic vibrations 
+of other open strings, as well as resonances in the 
+instrument body, give each pitch in the range of the 
+instrument an individual character and thus give 
+the instrument as a whole a distinctive identifi- 
+able character. In comparison, the basic form of the 
+Karplus-Strong algorithm, like many instrument- 
+simulation algorithms, has an excessive homogene- 
+ity of character throughout its range. One way to 
+remedy this situation is to feed the output of the 
+string into a body resonator. This technique has 
+produced impressive results, but its discussion is 
+beyond the scope of this paper (see Smith 1983). 
+Another way to combat unnatural uniformity is 
+to create the effect of an instrument with sym- 
+pathetic strings, using a modified version of the 
+basic algorithm. 
+Just as a sympathetic string is set into motion by 
+the vibration of another string, the illusion of a 
+sympathetically vibrating string can be created by 
+exciting one copy of the string simulator by a small 
+percentage of the output from another (plucked) 
+string, tuned to a different pitch. 
+In the discussion that follows, the algorithm that 
+is excited with the noise burst is referred to as the 
+plucked string and the algorithm that is excited 
+only by the plucked string is referred to as the sym- 
+pathetic string. All partials of the plucked string 
+that do not coincide with those of the sympathetic 
+string will be highly attenuated. Thus the sympa- 
+thetic string acts as a bank of very narrow bandpass 
+filters with center frequencies at the partial fre- 
+quencies of the sympathetic string. The partials of 
+the plucked string that will strongly resonate are 
+those for which 
+fi = fA, 
+where fk is the frequency of the kth partial of the 
+sympathetically resonating string, and f, is the fre- 
+quency of the jth partial of the plucked string. 
+A problem can arise after several successive noise 
+bursts have excited the plucked string. The repeated 
+reintroduction of energy into the sympathetic string 
+may cause it to overflow. Therefore, it is essential 
+that a loss factor p, such as was introduced with 
+reference to decay shortening, be used to provide 
+energy dissipation. 
+The effect of several sympathetic strings can be 
+created simply by a bank of parallel sympathetic 
+strings, as defined above, each tuned to a different 
+frequency. The resulting overall string-transfer func- 
+tion (omitting fine tuning and decay alteration for 
+clarity) is then 
+H(z) = l+z 1- 2 2 
+(1 
+M -i 
+i I - 
+p) 2 z- N "il-p." z-) 
+where y is the fractional part of the plucked-string 
+signal sent to the sympathetic strings, M is the 
+number of sympathetic strings, pi is the loss factor 
+for the ith sympathetic string, Ni = fJ/fi where f, is 
+the fundamental frequency of the ith sympathetic 
+string, and fs/N is the pitch of the plucked string 
+and hence of the played note. 
+The sympathetic-string version of the algorithm 
+is also helpful in creating a stereo or quadraphonic 
+image. By distributing around the room the outputs 
+of several banks of differently tuned sympathetic 
+strings, all fed with the same plucked string, the 
+effect of being inside a huge guitar can be created. 
+Attractive musical results have been created by 
+replacing the plucked string with another computer 
+instrument, so that the bank of sympathetic strings 
+is used as a "reverberator." One can achieve the 
+effect, for example, of a clarinet being played into 
+an open grand piano with the pedal down. 
+Simulation of a Moving Pick 
+An effective means of simulating pick position is to 
+introduce zeros uniformly distributed over the spec- 
+trum of the noise burst. This can quite accurately 
+simulate the effect of plucking a string at varying 
+distances from the bridge. The noise burst is fil- 
+tered with a comb filter, H,, having the difference 
+Computer Music Journal 66 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 13 ===
+equation 
+Yn = x, - Xn-,,N 
+where /, is the fraction of the string between the 
+bridge and pluck point. When /u = 1/2, the even 
+harmonics are removed, and the effect is that of 
+plucking a string at its midpoint. Similarly, when 
+A = 1/10, every tenth harmonic is suppressed, and 
+the effect is like plucking a tenth of the way up the 
+string. With /A = 1/N, the filter approximates a dif- 
+ferentiator, creating a sharp sul ponticello sound. 
+For the theory behind the simulation of pick loca- 
+tion, see Smith's paper (1982a). 
+Varying the Character and Number of Attacks 
+Since the attack is very important in perception of 
+timbre, it is advantageous to be able to alter its 
+character. To give a noticeably more noisy attack, 
+approximating the sound of a snap or "Bart6k pizzi- 
+cato," the duration of the noise burst x, can simply 
+be increased from tx = NTs to some tx > NTs. Simi- 
+larly, the attack can be subdued by making 0 < tx < 
+NT,, though for very small tx the pluck illusion (as 
+well as loudness) fades. 
+A variety of other methods can soften the attack. 
+The string can be excited with a rich harmonic 
+spectrum rather than a noise spectrum, or with 
+some mixture of the two, with the sum of their am- 
+plitudes not exceeding 1. Another possibility is to 
+lowpass filter the noise burst. Yet another way to 
+soften the attack is to turn on the output of the 
+algorithm late, after some of the high-frequency en- 
+ergy has been filtered out. 
+A realistic simulation of the up-and-down pick- 
+ing pattern characteristic of a mandolin tremolo 
+has been created by using a one-pole, lowpass filter, 
+H,, to mellow the "up" picks while using the stan- 
+dard unfiltered noise burst for the "down" picks. 
+A crude simulation of instruments having multi- 
+ple strings tuned in unison, such as the mandolin 
+or bazooki, can be created by simply exciting the 
+string with two successive noise bursts separated by 
+a short amount of time, on the order of .05 sec. 
+While multiple attacks can be achieved in this man- 
+ner, the steady state fuses into a single note. In a 
+real mandolin, the strings are never perfectly tuned, 
+and the beating effect of the slightly mistuned strings 
+is a strong recognition cue. A better mandolin sim- 
+ulation simply uses two parallel forms of the algo- 
+rithm, differing in pitch by a few cents and excited 
+at slightly different times. 
+Use of Other Filters in Feedback Loop 
+The use of filters other than a one-zero for Ha will 
+give a different decay characteristic and, in turn, a 
+different timbre. However, care must be taken that 
+the amplitude response G, does not reach unity near 
+any partial frequency. Energy at any frequency fk 
+for which Ga(fk) = 1 will never decay, and if G,(fk) 
+> 1, the amplitude will grow exponentially until 
+overflow. 
+For example, a one-pole filter with the pole be- 
+tween 0 and 1 gives a tone with the same attack 
+and a more mellow decay than with a one-zero fil- 
+ter; that is, the higher partials decay more rapidly. 
+Placing the pole at z = Q and normalizing the peak- 
+amplitude response of the one-pole filter to unity 
+yield the transfer function 
+- IQI H() = 1 - Ql" 
+where IQI < 1 is required for stability of the one- 
+pole filter. The transfer function of the whole string 
+becomes 
+1 H(z) = H 
+1z-z 1-IQI 1 - Qz- 
+1 - Qz-' 
+1 - Qz- - (1 - IQI)z- 
+Thus the difference equation is 
+Yn = Xn - Qx,n- + QYn-1 + (1 - IQI)yn-N 
+This version of the algorithm, with 0 < Q < 1 is 
+useful for pitches in the lower half of the range. In 
+the upper range, the notes die away too fast to be of 
+use. This is because the one-pole, lowpass filter, 
+with Q > 0, filters out the high-frequency energy 
+Jaffe and Smith 67 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 14 ===
+Fig. 7. Block diagram con- 
+taining algorithm exten- 
+sions discussed in this 
+paper. 
+To sympathetic strings 
+0 n) 
+X(n) HeHfO 0 Ha 
+Hg H, 
+in the loop much more drastically than does the 
+one-zero, lowpass filter. A technique similar to that 
+used in dynamics simulation could be used to com- 
+pensate for this trend. 
+Simulation of Stiff Strings 
+The spectral components of the basic algorithm 
+that have significant amplitude are almost perfectly 
+harmonic after the attack noise has been filtered 
+away, corresponding, in the real world, to a per- 
+fectly flexible string. But since real strings always 
+have some degree of stiffness, it is desirable to alter 
+the spectrum of the algorithm accordingly. The the- 
+ory of stiff strings (Morse 1976) indicates that stiff- 
+ness creates a stretching of the partials according to 
+the approximate formula 
+fk = kfo 1 + 1 + k2 Tr 
+282) A kfos(k), 8 
+4 k = 1, 2,..., k2 < 2 
+where fo is near the fundamental frequency, and k 
+is the partial number. The parameter 8 has been 
+called the coefficient of inharmonicity; if 8 = 0, 
+then perfect harmonicity results. 
+This effect can be created, in principle, by intro- 
+ducing an allpass filter Hg(z) in the string loop (Al- 
+len 1982) much as was done for the fine tuning of 
+pitch. The phase delay in samples desired for an all- 
+pass filter inserted in the feedback loop of a harmonic 
+string simulator tuned to fl is given by solving 
+fk 
+k _ kf,s(k) 
+Po + Pg(fk) s(l) 
+sl) _ p Pg(fk) = f s( ) I f1s(k) 
+where Po is the length of the loop in the absence of 
+the allpass Hg (typically P + 1/2). Methods for de- 
+signing allpass filters with prescribed phase delay 
+are reviewed by Smith (1983). 
+Summary 
+Figure 7 shows a block diagram of the string simu- 
+lator with some of our revisions, where Ha is the 
+feedback lowpass filter, Hb is the delay line, H, is 
+the allpass filter used for tuning, Hd is the lowpass 
+filter used to simulate dynamics, He is the comb fil- 
+ter that simulates pick position, Hf is the filter that 
+simulates the difference between "up" and "down" 
+picking, and Hg is the allpass filter used to simulate 
+string stiffness. 
+The simulator provides a high degree of flexibil- 
+ity that begins to approach that of a skilled player 
+performing on a real musical instrument. Many as- 
+pects of a real string instrument have been simu- 
+lated. Pitch can be precisely specified, and articula- 
+tion can be finely tuned. An expressive vocabulary 
+is provided by a wide variety of performance nu- 
+ances, including such "left-hand" techniques as 
+glissandi, slurs, and trills, as well as such "right- 
+hand" techniques as variation in dynamic level, 
+pick position, and attack characteristics. These pa- 
+rameters were found to be sufficient to create shaped 
+musical phrases. Furthermore, parameters such as 
+sustain time, body resonance, string flexibility, 
+bridge and pick hardness, and degree of sympathetic 
+string excitation, which, in the case of real instru- 
+ments, are usually fixed at the time of instrument 
+construction, are available as performance parame- 
+ters. It is important to point out that this variety is 
+at no time achieved at the expense of the integrity 
+of the basic sound. Rather, as is the case with a real 
+musical instrument, the diversity exists within the 
+bounds of a clearly defined sound domain. 
+Computer Music Journal 68 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions
+=== PAGE 15 ===
+Conclusion 
+The algorithm originated by Karplus and Strong 
+and extended by the methods outlined here has 
+proven very useful as a computer instrument. In 
+the process of composing May All Your Children 
+Be Acrobats and Silicon Valley Breakdown, it was 
+found to be sufficiently flexible to allow for a wide 
+range of musical expression and sufficiently idio- 
+syncratic to maintain a characteristic identity. We 
+expect that new refinements of the algorithm will 
+continue to arise. 
+References 
+Abramowitz, M., and I. A. Stegun, eds. 1966. Handbook 
+of Mathematical Functions. Washington, D.C.: Na- 
+tional Bureau of Standards. 
+Allen, J. B. 1982. Private communication. 
+Karplus, K., and A. Strong. 1983. "Digital Synthesis of 
+Plucked-String and Drum Timbres." Computer Music 
+Journal 7(2): 43- 55. 
+McIntyre, M. E., and J. Woodhouse. 1960. "On the Fun- 
+damentals of Bowed String Dynamics." Acustica 43(2): 
+93-108. 
+McIntyre, M. E., R. T. Schumacher, and J. Woodhouse. 
+1981. "Aperiodicity in Bowed-String Motion." Acustica 
+49(1): 13-32. 
+McIntyre, M. E., R. T. Schumacher, and J. Woodhouse. In 
+press. "On the Oscillations of Musical Instruments." 
+Journal of the Acoustical Society of America. 
+Mont-Reynaud, B. 1982. Private communication. 
+Morse, P. M. 1976. Vibration and Sound. New York: 
+American Institute of Physics for the Acoustical So- 
+ciety of America. (Originally published in two editions 
+[1936 and 1948].) 
+Smith, J. 0. 1982a. "Synthesis of Bowed Strings." Paper 
+presented at the Acoustical Society of America Con- 
+ference, Chicago, Illinois. (Reprints available upon 
+request.) 
+Smith, J. 0. 1982b. "Introduction to Digital Filters." 
+Typescript. (Copies available upon request.) 
+Smith, J. 0. 1983. "Techniques for Digital Filter Design 
+and System Identification with Application to the Vio- 
+lin." Ph.D. Diss., Electrical Engineering Department, 
+Stanford University. 
+Steiglitz, K. 1974. An Introduction to Discrete Systems. 
+New York: Wiley. 
+Jaffe and Smith 
+I 
+69 
+This content downloaded  on Wed, 9 Jan 2013 14:25:21 PM
+All use subject to JSTOR Terms and Conditions

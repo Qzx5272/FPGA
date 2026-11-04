@@ -1,0 +1,1 @@
+NEVER PROGRAM:auto-placed peripheral IO. Targeted asynchronous FIFO hold exceptions, no physical CDC/MTBF or external timing acceptance.

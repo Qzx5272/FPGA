@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "evidence_level": "exported HDL cold-start simulation only; no Flash write",
+  "source_project": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\tmp\\offline_validation_20261024_225051",
+  "export_manifest_sha256": "d0da4008df834e87d3e333805c9cb8a20323662d87d6806cef460e729c08c13c",
+  "log": "PASS exported offline project: autonomous cold-start, four phrase syllables reach actual choir allocator with correct vowel/pitch and separate gates, vowel restoration, transpose/mix/ADSR and per-pad calibration defaults, correct releases and zero deadline misses\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\tmp\\offline_validation_20261024_225051\\tb_offline.v:38: $finish called at 21487720000 (1ps)\n"
+}

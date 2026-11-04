@@ -1,0 +1,18 @@
+{
+  "status": "passed_isolated_structure_and_negative_checks",
+  "valid": {
+    "status": "passed_synthesized_connectivity_only",
+    "stages": 16,
+    "serializer_reset_endpoints": 3,
+    "source_sha256": "07e54af00ed5cb92a59742f1b12728dc01abab5e73902effc813739cae3f547b",
+    "netlist_sha256": "bfc2149a5b95474046fbb67366aa4c4c56502402c2e3211ee6713c74150b283b",
+    "scope": "16even LUT1 inversions preserved; not proof of physical cell retention or native recovery/removal margins"
+  },
+  "rejected_mutations": [
+    "disconnected_stage",
+    "wrong_polarity",
+    "endpoint_bypass"
+  ],
+  "scope": "Actual isolated synthesized netlist. Does not establish fulltop preservation, physical timing or release readiness.",
+  "checker_sha256": "0b96fa135011105fa41be9505bd5904f63eb478825b4a0f4892d920f4c60a1a9"
+}

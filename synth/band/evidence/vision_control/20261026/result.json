@@ -1,0 +1,14 @@
+{
+  "status": "passed_synthetic_model_and_GUI_regression_only",
+  "sources": {
+    "host/vision_selection.py": "a566381d4e5200023bdbfa7ef64d822ea0d1778daf77d1b7d775e8ddf11138eb",
+    "host/vision_control.py": "fb0fc3c320d0cc7b0fdb7bdc2ca8dc21f12c0ffb8872f33c20dc4d21c9311875",
+    "host/app.py": "104a183e14ee15c8891e563de4a475ca0131d901adcca32278152e2c7c6d2071",
+    "tests/test_vision_control.py": "f517c6acd7559f47451aeef0289fd974feddd3da4afa5389f3983f02952e1130"
+  },
+  "host_tests_sha256": "4f90c11e0b126c38aec077c1f0404f48a005502be1d436a2d2e1c5c666ae6400",
+  "host_test_count": 68,
+  "vision_test_count": 11,
+  "camera_opened": false,
+  "scope": "Synthetic RGBA marker frames and GUI checks, dwell/expiry/conflict/hide/error/panic. Real camera, illumination, latency, false triggers, RK3588 deployment and physical multimodal performance not verified. No RTL or board change."
+}

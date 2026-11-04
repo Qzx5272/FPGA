@@ -1,0 +1,117 @@
+{
+  "rows": [
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool16384_verilated.json",
+      "report_sha256": "c10389d23b6e05d08992ba97a1be6bb2f960b9681a82bcd331454ed750bf9170",
+      "partials": 16384,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": true,
+        "partial_pool.v": false,
+        "partial_ram16.v": true,
+        "pool_driver.cpp": false,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": true,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 16384,
+      "maximum_relative_error": 1.2630140793741494e-05,
+      "maximum_frequency_hz": 18017.2119140625,
+      "sample_sha256": "3017a64471258da056c30efc123c09ff38604faacbcce01aa0ad84b7a7b549f8"
+    },
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool32768_verilated.json",
+      "report_sha256": "f742ae358efe89ca29571d82e2e2ebd70a519b56a163be9110dd0cac64cfc385",
+      "partials": 32768,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": true,
+        "partial_pool.v": false,
+        "partial_ram16.v": true,
+        "pool_driver.cpp": false,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": true,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 32768,
+      "maximum_relative_error": 2.695714783174416e-05,
+      "maximum_frequency_hz": 12017.9443359375,
+      "sample_sha256": "c9d792ad82163408f046cab0738eec1e0d581f8231f0b45aa260c890b2542d94"
+    },
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool37888_diverse_verilated.json",
+      "report_sha256": "3d3a2db257411825188f268556cab3f0cf9a12e5e6bcdfc8fcb1f73d3756a688",
+      "partials": 37888,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": true,
+        "partial_pool.v": true,
+        "partial_ram16.v": true,
+        "pool_driver.cpp": true,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": true,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 37888,
+      "maximum_relative_error": 5.2899847974729927e-05,
+      "maximum_frequency_hz": 13892.9443359375,
+      "sample_sha256": "c68a113ec2ea906447dafb2aea692eb330276b7d2d1702a329ccb18717a67fbb"
+    },
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool37888_verilated.json",
+      "report_sha256": "0feefb691df7c3d0722a5ba9d907bbc06b62e20d35474d38b2dcf1f6b39e78a4",
+      "partials": 37888,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": true,
+        "partial_pool.v": true,
+        "partial_ram16.v": true,
+        "pool_driver.cpp": false,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": true,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 37888,
+      "maximum_relative_error": 4.3929439828374336e-05,
+      "maximum_frequency_hz": 13892.9443359375,
+      "sample_sha256": "528fdec7a33298e9111e29530616404ca2f99608cec55b6bb021800968a7c03e"
+    },
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool4096_verilated.json",
+      "report_sha256": "1106fba290d8d69b42fed8d0a854ba64b4078d7d36eec3de446bdb98151ded7e",
+      "partials": 4096,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": false,
+        "partial_pool.v": false,
+        "pool_driver.cpp": false,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": false,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 4096,
+      "maximum_relative_error": 5.316249367690012e-06,
+      "maximum_frequency_hz": 7516.4794921875,
+      "sample_sha256": "74c23b633232fdbe0b122d5cee4ac10e3152a6dc0f68940632d984f04803cc74"
+    },
+    {
+      "report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\pool8192_verilated.json",
+      "report_sha256": "7e5bae0be10ca4235ebd94015987e03ac5da3be69004b54cc5c426470297cf2b",
+      "partials": 8192,
+      "current_recorded_sources": {
+        "hq_sine_quarter.v": true,
+        "partial_lane.v": false,
+        "partial_pool.v": false,
+        "pool_driver.cpp": false,
+        "sine_quarter_init.vh": true
+      },
+      "source_coverage_complete": false,
+      "status": "passed_raw_spectrum",
+      "verified_peaks": 8192,
+      "maximum_relative_error": 7.236503009747781e-06,
+      "maximum_frequency_hz": 15016.4794921875,
+      "sample_sha256": "4248a9a748838a9eecfb2250b69cda9b69c34b1c6a02458a3f4bad92a8758c00"
+    }
+  ],
+  "scope": "Recomputed diagnostic raw spectra. Source mismatches or incomplete source coverage prevent current-RTL acceptance. No physical, full-band, fixed sample cadence or interactive-control proof."
+}

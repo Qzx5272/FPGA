@@ -1,0 +1,20 @@
+{
+  "status": "source_comparison_only",
+  "changed": [
+    "licenses/dvi_README.txt",
+    "project.json",
+    "rtl/band_board_engine.v",
+    "rtl/band_core.v",
+    "rtl/band_singer_board_engine.sv",
+    "rtl/band_singer_core.sv",
+    "rtl/band_stage_engine.sv",
+    "rtl/band_stage_i2s_engine.sv",
+    "rtl/band_stage_pt8211_engine.sv",
+    "rtl/build_identity.vh",
+    "rtl/offline_patch_defaults.vh",
+    "rtl/song_config.vh",
+    "rtl/song_events.vh",
+    "rtl/song_storage_init.vh"
+  ],
+  "scope": "Pressure-fixture song/patch/configuration differs; cannot claim same ordinary collaborative performance. RTL transport changes must be reviewed individually."
+}

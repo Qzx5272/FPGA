@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "Digital simulation; stereo test carrier only, no real ADC/microphone/pin acceptance",
+  "log": "PASS128 exact I2S/CDC/vocoder samples; physical BCK-stop simulation, watchdog zero, resume, panic\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\vocoder_input\\tb.sv:38: $finish called at 2747920000 (1ps)\n",
+  "sha256": {
+    "synth\\band\\experimental\\vocoder\\ported\\double_biquad.sv": "2fd41daadb3e5ce0072fdc90fd6352ae9eb474a2d31d99dce212d4e5f9c58ca6",
+    "synth\\band\\experimental\\vocoder\\ported\\filterbank.sv": "d240ebeb726d269fc8a4bda18de72e26f7e8d7718620d968a67449b72b73f992",
+    "synth\\band\\experimental\\vocoder\\ported\\vocoder_mixer.sv": "394941484c50c91246c2dccd2fb276d0ace507eab7d104145d5e3015487ff73c",
+    "synth\\band\\experimental\\vocoder\\ported\\vocoder_core.sv": "98366afbe5d606ba270478817d740e9fa44338bc6e38df4b5ad66cab90660a87",
+    "synth\\band\\experimental\\vocoder\\ported\\vocoder_i2s_frontend.sv": "dcc39c690c63c18715d09da21a3ebe3f04ea2964d7442777d586b11831762aa2",
+    "synth\\band\\experimental\\audio_input\\i2s24_rx.v": "3415f51bdbebc47296f2e9b2c6d2af993f240da6236e5903b68514409eb44d2b",
+    "synth\\band\\experimental\\audio_input\\i2s_input_bridge.v": "775921afdc4da0f013ea661f8badb3a7cae4686de461120f07d6432cc84de6cb",
+    "synth\\band\\rtl\\audio_cdc_fifo.v": "6205e88112c6ccfd41666f13b89712f760b5d66f6c934884676eec19412a8782",
+    "synth\\band\\experimental\\vocoder\\ported\\coeffs.mem": "118de0e26834e6183c0227dd0833f6f65704385d7a1ff8b8a456d039aff494ab",
+    "synth\\band\\tools\\test_vocoder_input.py": "e875873149b56fa2abf969fca2b0cd81635bfdc8ef2042f616ad47203c90f0cb"
+  }
+}

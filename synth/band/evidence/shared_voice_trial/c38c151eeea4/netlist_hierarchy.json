@@ -1,0 +1,44 @@
+{
+  "status": "passed_netlist_shared_hierarchy",
+  "netlist_sha256": "d90f83a37a9fab0770ab50020d3df7caa9c4385f423d5786a0dd45c8ee3815f4",
+  "core": "band_singer_core",
+  "instances": [
+    [
+      "shared_bank_dispatch",
+      "router"
+    ],
+    [
+      "shared_voice_bank",
+      "\\banks[0].unit"
+    ],
+    [
+      "shared_voice_bank_0",
+      "\\banks[1].unit"
+    ],
+    [
+      "shared_voice_bank_1",
+      "\\banks[2].unit"
+    ],
+    [
+      "shared_voice_bank_2",
+      "\\banks[3].unit"
+    ],
+    [
+      "shared_voice_bank_3",
+      "\\banks[4].unit"
+    ],
+    [
+      "shared_voice_bank_4",
+      "\\banks[5].unit"
+    ],
+    [
+      "shared_voice_bank_5",
+      "\\banks[6].unit"
+    ],
+    [
+      "shared_voice_bank_6",
+      "\\banks[7].unit"
+    ]
+  ],
+  "scope": "Actual synthesized singer core contains8universal banks andshared dispatcher;notpostroute timing,netlist equivalence or physical proof"
+}

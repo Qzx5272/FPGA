@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "mode": "burst",
+  "requests": 100,
+  "valid_frames": 25,
+  "bad_crc": 33,
+  "unique_frames": 1,
+  "identities": [
+    "04a10001314b4e4c0000000080bb000080f0fa02000000000000000019b0d21e"
+  ],
+  "bytes": 1906
+}

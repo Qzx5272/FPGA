@@ -1,0 +1,30 @@
+{
+  "status": "passed_raw_evidence_audit",
+  "raw_frames": 99451,
+  "health_frames": 3540,
+  "raw_bad_crc": 0,
+  "observed_256slot_statuses": 94131,
+  "observed_256slot_span_seconds": 3600.0,
+  "max_observation_gap_seconds": 0.0940000000409782,
+  "max_cycles": 966,
+  "final_status": {
+    "profile": "band",
+    "playing": false,
+    "owner": 0,
+    "part": 4,
+    "voices": 0,
+    "cycles": 70,
+    "epoch": 3,
+    "song_sample": 0,
+    "rejected": 0,
+    "deadline_miss": 0,
+    "clips": 0,
+    "time_monotonic": 405239.171
+  },
+  "sources": {
+    "hardware_pt8211_dvi_1h_20261026.json": "9cd9a787d5b85701857f0e726152c9f23ee50c1c3ce7b5f7903877f3d7beba16",
+    "hardware_pt8211_dvi_1h_20261026.raw": "0d2615085663ac16554fa8541223096cc32fdf51e3a7c5b8a76aa90de65e6ea6",
+    "hardware_pt8211_dvi_1h_20261026.driver.txt": "9a7c146d675126090548d868608bf3caa5039cbb1001ab5d4ab4515ad9fffb01"
+  },
+  "scope": "Silent real-board telemetry and raw CRC audit;polling is not a per-sample waveform capture or temperature/analog/MIDI/display/cold-start proof."
+}

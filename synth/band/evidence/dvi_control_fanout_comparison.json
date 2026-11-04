@@ -1,0 +1,70 @@
+{
+  "status": "structural_analysis_only",
+  "scope": "Exact net references in synthesized filterbank modules;pin counts are not physical congestion or proven failure cause",
+  "data": {
+    "previous_routed": {
+      "vg_sha256": "51fad59cddf9a93d980388a00ad70881a7b90db5214959b38aae94e3b87e13d9",
+      "modules": {
+        "filterbank": {
+          "state_1_13": {
+            "I3": 989,
+            "I1": 6,
+            "I2": 2,
+            "I0": 3,
+            "Q": 1
+          },
+          "state_1_14": {
+            "I3": 1000,
+            "Q": 1
+          },
+          "state_0_13": {
+            "I2": 993,
+            "I3": 1,
+            "I1": 5,
+            "I0": 1,
+            "Q": 1
+          },
+          "state_0_14": {
+            "I2": 1000,
+            "Q": 1
+          }
+        }
+      }
+    },
+    "current_unrouted": {
+      "vg_sha256": "a6646d85e248f460128e3003c6ad1e744b39fbc34038a958a2955f19c1998eab",
+      "modules": {
+        "filterbank": {
+          "state_1_13": {
+            "I3": 983,
+            "I1": 6,
+            "I2": 8,
+            "I0": 3,
+            "Q": 1
+          },
+          "state_1_14": {
+            "I3": 1000,
+            "Q": 1
+          },
+          "state_0_13": {
+            "I2": 987,
+            "I3": 1,
+            "I1": 11,
+            "I0": 1,
+            "Q": 1
+          },
+          "state_0_14": {
+            "I2": 1000,
+            "Q": 1
+          }
+        }
+      }
+    }
+  },
+  "conclusion": "All four inspected state nets each have1000 LUT-input references in both previous-routed andcurrent-unrouted synthesis. High fanout is a pressure point,not established rootcause;do not claim removingit fixes routing.",
+  "possible_followup_not_executed": {
+    "reference": "Gowin SUG550-2.4E5.11,p57;SUG1220-2.0Eroute_maxfan,p42",
+    "candidate": "Targeted syn_maxfan on filterbank state may replicate drivers;requires checking actual synthesis pin fanout,resources,numerical netlist gate andfullrouting. Attribute excludes clock,CE andreset/set signals.",
+    "alternative": "route_maxfan is a different placement/routing knob,range1..100,default23 on thisdevice;not changed in current route_option1 trial."
+  }
+}

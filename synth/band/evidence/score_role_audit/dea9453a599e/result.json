@@ -1,0 +1,20 @@
+{
+  "status": "score_structure_audited_not_audio_acceptance",
+  "export": "output\\final_workstation_20261022\\offline_workstation_reset_buffer_dea9453a599e",
+  "project_sha256": "15fed5b6c383189e738ff3458e3b6d75014449fed043c4e51b04877631f98b13",
+  "duration_samples": 4608000,
+  "note_ons_by_part": {
+    "0": 184,
+    "2": 368,
+    "1": 105,
+    "3": 176,
+    "4": 228,
+    "5": 96,
+    "6": 168,
+    "7": 30,
+    "15": 96
+  },
+  "vowel_choir_part7_notes": 30,
+  "external_modulator_part15_notes": 96,
+  "scope": "Part7 additive vowel choir remains in standalone score. Part15 vocoder requires live microphone; synthetic mic in render is a test stimulus, not offline lyrics or hardware microphone evidence."
+}

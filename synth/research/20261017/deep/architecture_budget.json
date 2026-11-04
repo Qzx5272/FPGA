@@ -1,0 +1,113 @@
+{
+  "hardware": {
+    "BSRAM18k": 340,
+    "DSP27x18": 298,
+    "clock_hz": 50000000,
+    "audio_fs": 48000
+  },
+  "source": "Gowin DS1239E device resource and BSRAM/DSP tables; isolated HQ DDS synthesis",
+  "profiles": [
+    {
+      "partials": 4096,
+      "lanes": 8,
+      "musical_voice_slots": 64,
+      "state_depth_per_lane": 512,
+      "bsram18k": {
+        "partial_state_278logical_288physical_banked": 64,
+        "quarter_sine_paired_ROM_synthesized": 16,
+        "eight_string_delay_units_2048x36": 32,
+        "eight_FDN_delays_2048x36": 32,
+        "stereo_slapback_4096x36": 16,
+        "event_FIFO_release_mailboxes_track_state": 16,
+        "voice_cache_and_patch_parameters": 16,
+        "vocal_source_tables": 8,
+        "modal_state_control_scratch": 16,
+        "clock_initialization_CDC_audio_FIFO_reserve": 4
+      },
+      "bsram_total": 220,
+      "bsram_margin": 120,
+      "dsp27x18": {
+        "partial_lanes_assumed_7_each": 56,
+        "voice_pan_assumed_2_each": 16,
+        "modal_rotation_and_input_gain": 9,
+        "vocal_cascade_shared": 6,
+        "parallel_consonant_filter_core": 6,
+        "string_filters_shared": 8,
+        "effects": 12,
+        "master": 8,
+        "control_reserve": 8
+      },
+      "dsp_total": 129,
+      "dsp_margin": 169,
+      "critical_path_cycle_reservations": {
+        "partial_scan": 512,
+        "per_voice_pan_and_bus": 48,
+        "pipeline_flush": 18,
+        "dependent_four_voice_six_section_vocal_path": 144,
+        "mix_FDN_limiter_IO_reservation": 160
+      },
+      "sample_cycles_required": 882,
+      "sample_cycles_minimum_at_50MHz_48k": 1041,
+      "cycle_margin": 159,
+      "with_half_second_stereo_delay_bram_total": 298,
+      "benchmark_oscillator_samples_per_second": 196608000,
+      "qualifier": "budget, not full design synthesis or timing closure; phase/frequency/envelope required per counted unit"
+    },
+    {
+      "partials": 8192,
+      "lanes": 16,
+      "musical_voice_slots": 256,
+      "state_depth_per_lane": 512,
+      "bsram18k": {
+        "partial_state_278logical_288physical_banked": 128,
+        "quarter_sine_paired_ROM_synthesized": 32,
+        "eight_string_delay_units_2048x36": 32,
+        "eight_FDN_delays_2048x36": 32,
+        "stereo_slapback_4096x36": 16,
+        "event_FIFO_release_mailboxes_track_state": 16,
+        "voice_cache_and_patch_parameters": 16,
+        "vocal_source_tables": 8,
+        "modal_state_control_scratch": 16,
+        "clock_initialization_CDC_audio_FIFO_reserve": 4
+      },
+      "bsram_total": 300,
+      "bsram_margin": 40,
+      "dsp27x18": {
+        "partial_lanes_assumed_7_each": 112,
+        "voice_pan_assumed_2_each": 32,
+        "modal_rotation_and_input_gain": 9,
+        "vocal_cascade_shared": 6,
+        "parallel_consonant_filter_core": 6,
+        "string_filters_shared": 8,
+        "effects": 12,
+        "master": 8,
+        "control_reserve": 8
+      },
+      "dsp_total": 201,
+      "dsp_margin": 97,
+      "critical_path_cycle_reservations": {
+        "partial_scan": 512,
+        "per_voice_pan_and_bus": 96,
+        "pipeline_flush": 18,
+        "dependent_four_voice_six_section_vocal_path": 144,
+        "mix_FDN_limiter_IO_reservation": 160
+      },
+      "sample_cycles_required": 930,
+      "sample_cycles_minimum_at_50MHz_48k": 1041,
+      "cycle_margin": 111,
+      "with_half_second_stereo_delay_bram_total": 378,
+      "benchmark_oscillator_samples_per_second": 393216000,
+      "qualifier": "budget, not full design synthesis or timing closure; phase/frequency/envelope required per counted unit"
+    }
+  ],
+  "assumptions": [
+    "8 delay units mean 4 dual-polarization strings, not 8 dual-polarization voices",
+    "singers and FM operators consume the common partial/voice pool",
+    "envelopes are independent exponential segments with per-partial target/rate/timer",
+    "quarter-sine, modal rotation and envelope step have isolated synthesis; full lanes and effects remain estimates",
+    "278-bit partial state (32-bit generation and 25-bit envelope remainder) uses 288 bits in 8 x 36-bit banks",
+    "27-bit Q24 envelope coefficient times signed 25-bit delta uses two base DSPs per lane",
+    "all arithmetic multipliers use explicit signed-width handling",
+    "external DDR, full vocoder and long convolution are excluded"
+  ]
+}

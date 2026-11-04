@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "tests": 72,
+  "scope": "Independent performance snapshots; injected fsync/replace failures preserve existing score and unrelated temporary files; final partial-measure roundtrip. Host-only; no new hardware acceptance.",
+  "files": {
+    "synth/band/host/app.py": "42a45fae3f20a1b840bd8e6c60ec90345693034f3d318008f03c42cb324adb3e",
+    "synth/band/host/score.py": "f94f7f3e4450d19ad84912a633921b951e6a4a095373465b01099d3da5cc09de",
+    "synth/band/host/editor.py": "0c6327f0a355b604e88966223abdf7db71db612109b83afb59ddf13bc7a1a3a0",
+    "synth/band/tests/test_host.py": "0a7aa6ea7f1789f48ef0117e7379d3d640b508af4b4a0e0721412f91c51b7b50"
+  },
+  "final_accepted": false
+}

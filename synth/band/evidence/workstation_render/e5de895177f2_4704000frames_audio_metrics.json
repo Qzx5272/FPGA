@@ -1,0 +1,1487 @@
+{
+  "scope": "Digital PCM descriptive measurements; not perceptual or physical audio acceptance",
+  "source_report": "C:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\evidence\\workstation_render\\e5de895177f2_4704000frames.json",
+  "source_scope": "Full-clock combined exported top: exact 50MHz/24.576MHz clocks, autonomous score, I2S queue and stalled FFT display; microphone absent, no physical or serial-pin equality claim",
+  "pcm_sha256": "e93f5d87411702cab42f4804359c23791015bdf414e649d1c85b7a872dbc787b",
+  "frames": 4704000,
+  "peak": 6136,
+  "rail_samples": 0,
+  "segments": [
+    {
+      "start_seconds": 0.0,
+      "frames": 48000,
+      "peak": 1602,
+      "rms_dbfs": [
+        -50.81513094063374,
+        -50.47745010125209
+      ],
+      "dc_mean": [
+        0.7854583333333334,
+        0.7837083333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 1.0,
+      "frames": 48000,
+      "peak": 1816,
+      "rms_dbfs": [
+        -50.725544997872056,
+        -50.34748195880556
+      ],
+      "dc_mean": [
+        1.3195625,
+        1.3183333333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 2.0,
+      "frames": 48000,
+      "peak": 1912,
+      "rms_dbfs": [
+        -50.49471882614409,
+        -50.133923567802405
+      ],
+      "dc_mean": [
+        1.359625,
+        1.3581458333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 3.0,
+      "frames": 48000,
+      "peak": 1816,
+      "rms_dbfs": [
+        -50.730006744059835,
+        -50.36257756016242
+      ],
+      "dc_mean": [
+        1.3193125,
+        1.3195416666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 4.0,
+      "frames": 48000,
+      "peak": 2239,
+      "rms_dbfs": [
+        -50.124369193363414,
+        -49.92247985532275
+      ],
+      "dc_mean": [
+        1.6564791666666667,
+        1.5534791666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 5.0,
+      "frames": 48000,
+      "peak": 2271,
+      "rms_dbfs": [
+        -50.33291412405903,
+        -50.12107082215928
+      ],
+      "dc_mean": [
+        1.6409583333333333,
+        1.5359791666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 6.0,
+      "frames": 48000,
+      "peak": 2320,
+      "rms_dbfs": [
+        -50.10608011388246,
+        -49.893408571532476
+      ],
+      "dc_mean": [
+        1.6826041666666667,
+        1.57475
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 7.0,
+      "frames": 48000,
+      "peak": 2260,
+      "rms_dbfs": [
+        -50.33217323815105,
+        -50.12636537631799
+      ],
+      "dc_mean": [
+        1.6420208333333333,
+        1.5365
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 8.0,
+      "frames": 48000,
+      "peak": 3310,
+      "rms_dbfs": [
+        -37.009625275824796,
+        -36.998746359774294
+      ],
+      "dc_mean": [
+        7.8663541666666665,
+        7.7603333333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 9.0,
+      "frames": 48000,
+      "peak": 3081,
+      "rms_dbfs": [
+        -36.78306210815474,
+        -36.772690807024105
+      ],
+      "dc_mean": [
+        7.825125,
+        7.721854166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 10.0,
+      "frames": 48000,
+      "peak": 3353,
+      "rms_dbfs": [
+        -36.95562097144483,
+        -36.94512040441837
+      ],
+      "dc_mean": [
+        8.0791875,
+        7.9755416666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 11.0,
+      "frames": 48000,
+      "peak": 3083,
+      "rms_dbfs": [
+        -36.783213686004295,
+        -36.774119384299695
+      ],
+      "dc_mean": [
+        7.833770833333333,
+        7.725708333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 12.0,
+      "frames": 48000,
+      "peak": 3333,
+      "rms_dbfs": [
+        -37.69820356172196,
+        -37.6862108089878
+      ],
+      "dc_mean": [
+        7.384645833333333,
+        7.277145833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 13.0,
+      "frames": 48000,
+      "peak": 2961,
+      "rms_dbfs": [
+        -37.52729699260708,
+        -37.515142133552715
+      ],
+      "dc_mean": [
+        6.756770833333333,
+        6.651604166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 14.0,
+      "frames": 48000,
+      "peak": 3145,
+      "rms_dbfs": [
+        -37.64582729706309,
+        -37.63316844662374
+      ],
+      "dc_mean": [
+        7.361458333333333,
+        7.257916666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 15.0,
+      "frames": 48000,
+      "peak": 2962,
+      "rms_dbfs": [
+        -37.52593506862052,
+        -37.51344686731103
+      ],
+      "dc_mean": [
+        6.758333333333334,
+        6.6544791666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 16.0,
+      "frames": 48000,
+      "peak": 5647,
+      "rms_dbfs": [
+        -33.891334789866214,
+        -35.51365255406312
+      ],
+      "dc_mean": [
+        11.636208333333334,
+        10.6275
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 17.0,
+      "frames": 48000,
+      "peak": 5713,
+      "rms_dbfs": [
+        -33.868475349943886,
+        -35.4694423460505
+      ],
+      "dc_mean": [
+        10.629583333333333,
+        9.629166666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 18.0,
+      "frames": 48000,
+      "peak": 5613,
+      "rms_dbfs": [
+        -33.94121073838648,
+        -35.57483508586805
+      ],
+      "dc_mean": [
+        11.875770833333334,
+        10.8774375
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 19.0,
+      "frames": 48000,
+      "peak": 5711,
+      "rms_dbfs": [
+        -33.86866773069287,
+        -35.47087047505927
+      ],
+      "dc_mean": [
+        10.622645833333333,
+        9.624666666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 20.0,
+      "frames": 48000,
+      "peak": 5463,
+      "rms_dbfs": [
+        -33.78361791532208,
+        -35.48093793038812
+      ],
+      "dc_mean": [
+        7.8675625,
+        6.8922083333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 21.0,
+      "frames": 48000,
+      "peak": 5292,
+      "rms_dbfs": [
+        -33.76409481648005,
+        -35.44126784882365
+      ],
+      "dc_mean": [
+        6.5546875,
+        5.5769166666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 22.0,
+      "frames": 48000,
+      "peak": 5778,
+      "rms_dbfs": [
+        -33.741000765467135,
+        -35.41619115971149
+      ],
+      "dc_mean": [
+        7.8053125,
+        6.829020833333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 23.0,
+      "frames": 48000,
+      "peak": 5294,
+      "rms_dbfs": [
+        -33.76364573838573,
+        -35.440365103018515
+      ],
+      "dc_mean": [
+        6.5515,
+        5.58025
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 24.0,
+      "frames": 48000,
+      "peak": 5924,
+      "rms_dbfs": [
+        -31.468764837540245,
+        -31.20323814116322
+      ],
+      "dc_mean": [
+        5.524979166666666,
+        4.791604166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 25.0,
+      "frames": 48000,
+      "peak": 5506,
+      "rms_dbfs": [
+        -32.254989456790256,
+        -32.20669327739043
+      ],
+      "dc_mean": [
+        5.070041666666667,
+        4.345416666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 26.0,
+      "frames": 48000,
+      "peak": 5978,
+      "rms_dbfs": [
+        -31.41189524976118,
+        -31.19989612510932
+      ],
+      "dc_mean": [
+        5.109729166666667,
+        4.35975
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 27.0,
+      "frames": 48000,
+      "peak": 5505,
+      "rms_dbfs": [
+        -32.25508092276315,
+        -32.20660722625428
+      ],
+      "dc_mean": [
+        5.067083333333334,
+        4.3405
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 28.0,
+      "frames": 48000,
+      "peak": 6025,
+      "rms_dbfs": [
+        -31.11259294104835,
+        -30.70017880756485
+      ],
+      "dc_mean": [
+        4.626916666666666,
+        3.6591875
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 29.0,
+      "frames": 48000,
+      "peak": 5472,
+      "rms_dbfs": [
+        -31.99514393096925,
+        -31.66268367846586
+      ],
+      "dc_mean": [
+        4.433270833333333,
+        3.7161666666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 30.0,
+      "frames": 48000,
+      "peak": 5666,
+      "rms_dbfs": [
+        -31.09313850467554,
+        -30.68539888563511
+      ],
+      "dc_mean": [
+        4.605854166666667,
+        3.6536458333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 31.0,
+      "frames": 48000,
+      "peak": 5475,
+      "rms_dbfs": [
+        -31.992911997009863,
+        -31.660701287647196
+      ],
+      "dc_mean": [
+        4.4345,
+        3.7145208333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 32.0,
+      "frames": 48000,
+      "peak": 5039,
+      "rms_dbfs": [
+        -30.885349472946476,
+        -30.27212080605907
+      ],
+      "dc_mean": [
+        6.951291666666667,
+        6.444520833333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 33.0,
+      "frames": 48000,
+      "peak": 4642,
+      "rms_dbfs": [
+        -31.429152228306826,
+        -30.92690920322465
+      ],
+      "dc_mean": [
+        5.953291666666667,
+        5.351854166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 34.0,
+      "frames": 48000,
+      "peak": 4854,
+      "rms_dbfs": [
+        -30.929556624515318,
+        -30.326116132315747
+      ],
+      "dc_mean": [
+        7.107208333333333,
+        6.597291666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 35.0,
+      "frames": 48000,
+      "peak": 4640,
+      "rms_dbfs": [
+        -31.428581020899916,
+        -30.92674591300732
+      ],
+      "dc_mean": [
+        5.943395833333334,
+        5.3458125
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 36.0,
+      "frames": 48000,
+      "peak": 4892,
+      "rms_dbfs": [
+        -30.803055266008737,
+        -30.23368404879006
+      ],
+      "dc_mean": [
+        3.1273333333333335,
+        2.6509583333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 37.0,
+      "frames": 48000,
+      "peak": 4571,
+      "rms_dbfs": [
+        -31.448964110683086,
+        -31.020962316388644
+      ],
+      "dc_mean": [
+        1.8391875,
+        1.2459791666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 38.0,
+      "frames": 48000,
+      "peak": 6136,
+      "rms_dbfs": [
+        -31.570399676451842,
+        -31.28960185657149
+      ],
+      "dc_mean": [
+        4.096770833333333,
+        3.3932291666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 39.0,
+      "frames": 48000,
+      "peak": 5074,
+      "rms_dbfs": [
+        -32.84314015736584,
+        -32.671237758717496
+      ],
+      "dc_mean": [
+        2.9283125,
+        2.108833333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 40.0,
+      "frames": 48000,
+      "peak": 5363,
+      "rms_dbfs": [
+        -30.597590273996957,
+        -30.070867810806373
+      ],
+      "dc_mean": [
+        4.2469166666666665,
+        3.7408333333333332
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 41.0,
+      "frames": 48000,
+      "peak": 4892,
+      "rms_dbfs": [
+        -31.08843112110534,
+        -30.746061757432173
+      ],
+      "dc_mean": [
+        4.062104166666667,
+        3.5627916666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 42.0,
+      "frames": 48000,
+      "peak": 5326,
+      "rms_dbfs": [
+        -30.64626929368918,
+        -30.120840511863122
+      ],
+      "dc_mean": [
+        3.930041666666667,
+        3.40925
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 43.0,
+      "frames": 48000,
+      "peak": 4873,
+      "rms_dbfs": [
+        -31.088946869960786,
+        -30.746505790816716
+      ],
+      "dc_mean": [
+        4.0605625,
+        3.5612916666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 44.0,
+      "frames": 48000,
+      "peak": 5194,
+      "rms_dbfs": [
+        -30.504736138663922,
+        -29.83782210394566
+      ],
+      "dc_mean": [
+        3.504208333333333,
+        2.7777708333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 45.0,
+      "frames": 48000,
+      "peak": 4735,
+      "rms_dbfs": [
+        -30.972794707556957,
+        -30.425821104428117
+      ],
+      "dc_mean": [
+        3.290958333333333,
+        2.8201666666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 46.0,
+      "frames": 48000,
+      "peak": 5582,
+      "rms_dbfs": [
+        -31.09240746324915,
+        -30.68414588779722
+      ],
+      "dc_mean": [
+        4.5190625,
+        3.5642916666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 47.0,
+      "frames": 48000,
+      "peak": 5477,
+      "rms_dbfs": [
+        -31.99365611453117,
+        -31.661785003679505
+      ],
+      "dc_mean": [
+        4.430854166666666,
+        3.710958333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 48.0,
+      "frames": 48000,
+      "peak": 5110,
+      "rms_dbfs": [
+        -29.984203757548208,
+        -29.351912348632258
+      ],
+      "dc_mean": [
+        4.709708333333333,
+        4.198854166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 49.0,
+      "frames": 48000,
+      "peak": 4720,
+      "rms_dbfs": [
+        -30.325945649367032,
+        -29.81440726760856
+      ],
+      "dc_mean": [
+        4.1405,
+        3.5441041666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 50.0,
+      "frames": 48000,
+      "peak": 5530,
+      "rms_dbfs": [
+        -29.872243117319005,
+        -29.221683758191396
+      ],
+      "dc_mean": [
+        4.80175,
+        4.2904375
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 51.0,
+      "frames": 48000,
+      "peak": 4707,
+      "rms_dbfs": [
+        -30.50864297522118,
+        -29.928601022483498
+      ],
+      "dc_mean": [
+        4.097,
+        3.4985208333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 52.0,
+      "frames": 48000,
+      "peak": 5224,
+      "rms_dbfs": [
+        -29.92109910799972,
+        -29.310345451653067
+      ],
+      "dc_mean": [
+        0.8178333333333333,
+        0.3423541666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 53.0,
+      "frames": 48000,
+      "peak": 4793,
+      "rms_dbfs": [
+        -30.76339184394364,
+        -30.28491665667408
+      ],
+      "dc_mean": [
+        0.0218125,
+        -0.5696666666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 54.0,
+      "frames": 48000,
+      "peak": 6123,
+      "rms_dbfs": [
+        -31.58162714522552,
+        -31.302181416923652
+      ],
+      "dc_mean": [
+        4.008916666666667,
+        3.3
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 55.0,
+      "frames": 48000,
+      "peak": 5074,
+      "rms_dbfs": [
+        -32.81686039885704,
+        -32.654833677191704
+      ],
+      "dc_mean": [
+        3.685625,
+        2.5771041666666665
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 56.0,
+      "frames": 48000,
+      "peak": 5643,
+      "rms_dbfs": [
+        -29.70589564986514,
+        -29.140063453936534
+      ],
+      "dc_mean": [
+        2.2584791666666666,
+        1.7425208333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 57.0,
+      "frames": 48000,
+      "peak": 5007,
+      "rms_dbfs": [
+        -30.62156372384989,
+        -30.17681431823022
+      ],
+      "dc_mean": [
+        2.122729166666667,
+        1.6202708333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 58.0,
+      "frames": 48000,
+      "peak": 5323,
+      "rms_dbfs": [
+        -29.805709145972756,
+        -29.266477253680993
+      ],
+      "dc_mean": [
+        1.7210416666666666,
+        1.199625
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 59.0,
+      "frames": 48000,
+      "peak": 4998,
+      "rms_dbfs": [
+        -30.714391247419247,
+        -30.286587733033397
+      ],
+      "dc_mean": [
+        2.104229166666667,
+        1.6030208333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 60.0,
+      "frames": 48000,
+      "peak": 5207,
+      "rms_dbfs": [
+        -29.667655850162173,
+        -28.968954234821563
+      ],
+      "dc_mean": [
+        1.1677708333333334,
+        0.444
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 61.0,
+      "frames": 48000,
+      "peak": 4899,
+      "rms_dbfs": [
+        -30.2758481307048,
+        -29.697488455601334
+      ],
+      "dc_mean": [
+        1.4882083333333334,
+        1.0151875
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 62.0,
+      "frames": 48000,
+      "peak": 5585,
+      "rms_dbfs": [
+        -31.106128548347122,
+        -30.697419819551545
+      ],
+      "dc_mean": [
+        4.432541666666666,
+        3.480354166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 63.0,
+      "frames": 48000,
+      "peak": 5478,
+      "rms_dbfs": [
+        -31.97176367075788,
+        -31.64944013164652
+      ],
+      "dc_mean": [
+        5.189104166666667,
+        4.185708333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 64.0,
+      "frames": 48000,
+      "peak": 5424,
+      "rms_dbfs": [
+        -29.591587456948826,
+        -28.927091548608978
+      ],
+      "dc_mean": [
+        4.8236875,
+        4.307791666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 65.0,
+      "frames": 48000,
+      "peak": 4770,
+      "rms_dbfs": [
+        -30.065935685832088,
+        -29.508648653306892
+      ],
+      "dc_mean": [
+        4.163708333333333,
+        3.5658333333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 66.0,
+      "frames": 48000,
+      "peak": 5598,
+      "rms_dbfs": [
+        -29.60114551136474,
+        -28.938988166348288
+      ],
+      "dc_mean": [
+        4.792229166666667,
+        4.279270833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 67.0,
+      "frames": 48000,
+      "peak": 4706,
+      "rms_dbfs": [
+        -30.161111768933807,
+        -29.574001801353475
+      ],
+      "dc_mean": [
+        4.123145833333333,
+        3.5227708333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 68.0,
+      "frames": 48000,
+      "peak": 5529,
+      "rms_dbfs": [
+        -29.614548337471405,
+        -29.012396973290482
+      ],
+      "dc_mean": [
+        0.7964166666666667,
+        0.3199166666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 69.0,
+      "frames": 48000,
+      "peak": 4843,
+      "rms_dbfs": [
+        -30.665724927983913,
+        -30.169218381508323
+      ],
+      "dc_mean": [
+        0.0358125,
+        -0.5558333333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 70.0,
+      "frames": 48000,
+      "peak": 6111,
+      "rms_dbfs": [
+        -31.581986768075936,
+        -31.303402250267798
+      ],
+      "dc_mean": [
+        4.006770833333333,
+        3.2992083333333335
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 71.0,
+      "frames": 48000,
+      "peak": 5074,
+      "rms_dbfs": [
+        -32.81708272051789,
+        -32.65521897829947
+      ],
+      "dc_mean": [
+        3.6781041666666665,
+        2.568979166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 72.0,
+      "frames": 48000,
+      "peak": 5398,
+      "rms_dbfs": [
+        -30.01197077220684,
+        -29.446253637014674
+      ],
+      "dc_mean": [
+        2.2377291666666665,
+        1.7240625
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 73.0,
+      "frames": 48000,
+      "peak": 5083,
+      "rms_dbfs": [
+        -30.709480528045532,
+        -30.296697998760283
+      ],
+      "dc_mean": [
+        2.147625,
+        1.6496875
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 74.0,
+      "frames": 48000,
+      "peak": 5297,
+      "rms_dbfs": [
+        -29.71900214840986,
+        -29.165453190616752
+      ],
+      "dc_mean": [
+        1.727625,
+        1.2051875
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 75.0,
+      "frames": 48000,
+      "peak": 5078,
+      "rms_dbfs": [
+        -30.637536414165957,
+        -30.19504525786688
+      ],
+      "dc_mean": [
+        2.098125,
+        1.5980208333333332
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 76.0,
+      "frames": 48000,
+      "peak": 5203,
+      "rms_dbfs": [
+        -29.34170694526407,
+        -28.634227954352156
+      ],
+      "dc_mean": [
+        1.1532708333333332,
+        0.4253958333333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 77.0,
+      "frames": 48000,
+      "peak": 4813,
+      "rms_dbfs": [
+        -30.035602263948633,
+        -29.442413566062214
+      ],
+      "dc_mean": [
+        1.5150833333333333,
+        1.0443958333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 78.0,
+      "frames": 48000,
+      "peak": 5584,
+      "rms_dbfs": [
+        -31.11045116332665,
+        -30.701517498416454
+      ],
+      "dc_mean": [
+        4.432145833333333,
+        3.4791458333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 79.0,
+      "frames": 48000,
+      "peak": 5478,
+      "rms_dbfs": [
+        -31.97212501276477,
+        -31.65015906775505
+      ],
+      "dc_mean": [
+        5.1824375,
+        4.178020833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 80.0,
+      "frames": 48000,
+      "peak": 5349,
+      "rms_dbfs": [
+        -29.828372160828366,
+        -29.170357774699642
+      ],
+      "dc_mean": [
+        4.8800625,
+        4.360354166666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 81.0,
+      "frames": 48000,
+      "peak": 4714,
+      "rms_dbfs": [
+        -30.50931931332594,
+        -29.92865468826615
+      ],
+      "dc_mean": [
+        4.106583333333333,
+        3.5063125
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 82.0,
+      "frames": 48000,
+      "peak": 5461,
+      "rms_dbfs": [
+        -29.832914418296532,
+        -29.17699081426292
+      ],
+      "dc_mean": [
+        4.850791666666667,
+        4.335770833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 83.0,
+      "frames": 48000,
+      "peak": 4664,
+      "rms_dbfs": [
+        -30.605777342419067,
+        -29.99231787688945
+      ],
+      "dc_mean": [
+        4.066958333333333,
+        3.4685
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 84.0,
+      "frames": 48000,
+      "peak": 5459,
+      "rms_dbfs": [
+        -29.56027695360962,
+        -28.94098635346388
+      ],
+      "dc_mean": [
+        0.7797916666666667,
+        0.30614583333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 85.0,
+      "frames": 48000,
+      "peak": 4891,
+      "rms_dbfs": [
+        -30.498959855507536,
+        -30.005805005313334
+      ],
+      "dc_mean": [
+        0.05210416666666667,
+        -0.5420416666666666
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 86.0,
+      "frames": 48000,
+      "peak": 6118,
+      "rms_dbfs": [
+        -31.58587000915516,
+        -31.306512791910098
+      ],
+      "dc_mean": [
+        4.005,
+        3.2952291666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 87.0,
+      "frames": 48000,
+      "peak": 5074,
+      "rms_dbfs": [
+        -32.817075084235455,
+        -32.65471811051245
+      ],
+      "dc_mean": [
+        3.6847916666666665,
+        2.576020833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 88.0,
+      "frames": 48000,
+      "peak": 5948,
+      "rms_dbfs": [
+        -33.20546020443795,
+        -34.71148458990728
+      ],
+      "dc_mean": [
+        8.728458333333334,
+        7.761354166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 89.0,
+      "frames": 48000,
+      "peak": 5469,
+      "rms_dbfs": [
+        -33.21090593735417,
+        -34.64667901973399
+      ],
+      "dc_mean": [
+        8.853770833333334,
+        7.900145833333333
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 90.0,
+      "frames": 48000,
+      "peak": 5653,
+      "rms_dbfs": [
+        -32.95507145722454,
+        -34.31450881307937
+      ],
+      "dc_mean": [
+        9.309020833333333,
+        8.354958333333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 91.0,
+      "frames": 48000,
+      "peak": 5459,
+      "rms_dbfs": [
+        -33.20775981497404,
+        -34.6426776491584
+      ],
+      "dc_mean": [
+        8.862020833333334,
+        7.903604166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 92.0,
+      "frames": 48000,
+      "peak": 2695,
+      "rms_dbfs": [
+        -37.20883195217092,
+        -37.216636369084426
+      ],
+      "dc_mean": [
+        7.889354166666666,
+        7.78775
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 93.0,
+      "frames": 48000,
+      "peak": 2384,
+      "rms_dbfs": [
+        -37.41373595483165,
+        -37.422997960177526
+      ],
+      "dc_mean": [
+        7.058166666666667,
+        6.955104166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 94.0,
+      "frames": 48000,
+      "peak": 2590,
+      "rms_dbfs": [
+        -36.99403203306247,
+        -36.99423573732961
+      ],
+      "dc_mean": [
+        7.1673125,
+        7.164729166666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 95.0,
+      "frames": 48000,
+      "peak": 2387,
+      "rms_dbfs": [
+        -37.44201383906075,
+        -37.44201391901485
+      ],
+      "dc_mean": [
+        6.73075,
+        6.730770833333334
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 96.0,
+      "frames": 48000,
+      "peak": 220,
+      "rms_dbfs": [
+        -56.494857804942896,
+        -56.49485686507039
+      ],
+      "dc_mean": [
+        0.0480625,
+        0.04804166666666667
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    },
+    {
+      "start_seconds": 97.0,
+      "frames": 48000,
+      "peak": 4,
+      "rms_dbfs": [
+        -91.04000333250967,
+        -91.04000333250967
+      ],
+      "dc_mean": [
+        -0.28275,
+        -0.28275
+      ],
+      "rail_samples": 0,
+      "all_zero": false
+    }
+  ],
+  "final_stereo_sample": [
+    0,
+    0
+  ],
+  "last_100ms_peak": 0,
+  "final_second_all_zero": false
+}

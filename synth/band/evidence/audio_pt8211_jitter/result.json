@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "RTL serial decoding, not physical DAC acceptance",
+  "log": "PASS PT8211 prefill:12 decoded frames alternating200/1090cycle completion,no silence/drop/underrun\nC:\\Users\\Qzx\\Documents\\ChatGPT\\FPGA\\synth\\band\\experimental\\vocoder\\tb_audio_pt8211_jitter.v:26: $finish called at 312590000 (1ps)\n",
+  "sha256": {
+    "synth\\band\\experimental\\vocoder\\integration\\audio_pt8211_queue.v": "54c6dbabfe3e4adb3c61cec7d671a4df926e0156ceb2907faf530f019acf0bb1",
+    "synth\\rtl\\audio_serial.v": "ed01cb20a8ff51237e01a2ebc4829b51b42f348333d04dc9def768c311ff7b6a",
+    "synth\\band\\experimental\\vocoder\\tb_audio_pt8211_jitter.v": "dcdbd81c5623076ad41e8b10140685adfe784f3733bc727c5036e90c685d891a"
+  }
+}
